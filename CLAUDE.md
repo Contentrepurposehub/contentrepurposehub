@@ -30,3 +30,35 @@ This is a Next.js 16 marketing site for ContentRepurposeHub (a webinar repurposi
 ### Environment Variables
 
 - `ANTHROPIC_API_KEY` - Required for the chat API endpoint (add to `.env.local`)
+
+## Content Generation Skills
+
+**IMPORTANT:** When the user requests content generation, automatically invoke the appropriate skill. Do not just write content manually—use these skills.
+
+### Skill Mapping
+
+| Request Type | Skill to Use |
+|-------------|--------------|
+| Landing pages, sales copy, CTAs, headlines | `/direct-response-copy` |
+| Blog posts, SEO articles | `/seo-content` |
+| Email sequences, welcome series, nurture campaigns | `/email-sequences` |
+| Newsletters | `/newsletter` |
+| Lead magnets, opt-in ideas, freebies | `/lead-magnet` |
+| Repurpose content for social platforms | `/content-atomizer` |
+| Define/extract brand voice | `/brand-voice` |
+| Positioning, angles, hooks, differentiation | `/positioning-angles` |
+| Keyword research, content strategy, topic clusters | `/keyword-research` |
+| Product photography | `/ai-product-photo` |
+| Product videos, reveals, hero shots | `/ai-product-video` |
+| Social graphics, thumbnails, Instagram/LinkedIn images | `/ai-social-graphics` |
+| Talking head videos, UGC, lip-sync | `/ai-talking-head` |
+| General AI image generation | `/ai-image-generation` |
+| Creative strategy, briefs, visual direction | `/ai-creative-strategist` |
+| Unsure which skill / need routing | `/orchestrator` |
+
+### Usage Pattern
+
+1. Identify what the user is asking for
+2. Match to the appropriate skill from the table above
+3. Invoke the skill immediately using the Skill tool
+4. Follow the skill's workflow and outputs

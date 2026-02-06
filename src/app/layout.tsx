@@ -68,6 +68,12 @@ export default function RootLayout({
       <body className="antialiased">
         {children}
         
+        {/* Beehiiv Attribution Tracking */}
+        <Script
+          src="https://subscribe-forms.beehiiv.com/attribution.js"
+          strategy="afterInteractive"
+        />
+
         {/* Botsonic Chat Widget */}
         <Script
           id="botsonic-widget"

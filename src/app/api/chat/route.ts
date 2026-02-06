@@ -41,8 +41,8 @@ export async function POST(request: NextRequest) {
 
     const text =
       response.content
-        ?.filter((block): block is { type: "text"; text: string } => block.type === "text")
-        .map((block) => block.text)
+        ?.filter((block) => block.type === "text")
+        .map((block) => (block as { type: "text"; text: string }).text)
         .join("") ?? "";
 
     return NextResponse.json({ reply: text });
