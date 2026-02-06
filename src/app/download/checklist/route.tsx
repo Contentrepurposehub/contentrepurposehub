@@ -467,24 +467,30 @@ function ContentPage({
       </View>
       {sections.map((section) => (
         <View key={section.category}>
-          <View style={styles.sectionHeader}>
-            <Text style={styles.sectionTitle}>{section.category}</Text>
-          </View>
-          {section.items.map((item) => (
-            <View key={item.number} style={styles.item} wrap={false}>
-              <View style={styles.itemHeader}>
-                <View style={styles.itemNumber}>
-                  <Text style={styles.itemNumberText}>{item.number}</Text>
+          {section.items.map((item, index) => (
+            <View key={item.number} wrap={false}>
+              {/* Show section header only before first item, keep them together */}
+              {index === 0 && (
+                <View style={styles.sectionHeader}>
+                  <Text style={styles.sectionTitle}>{section.category}</Text>
                 </View>
-                <View style={styles.itemTitleGroup}>
-                  <Text style={styles.itemTitle}>{item.title}</Text>
-                  <Text style={styles.itemSubtitle}>{item.subtitle}</Text>
+              )}
+
+              <View style={styles.item}>
+                <View style={styles.itemHeader}>
+                  <View style={styles.itemNumber}>
+                    <Text style={styles.itemNumberText}>{item.number}</Text>
+                  </View>
+                  <View style={styles.itemTitleGroup}>
+                    <Text style={styles.itemTitle}>{item.title}</Text>
+                    <Text style={styles.itemSubtitle}>{item.subtitle}</Text>
+                  </View>
                 </View>
-              </View>
-              <Text style={styles.itemDescription}>{item.description}</Text>
-              <View style={styles.tipBox}>
-                <Text style={styles.tipLabel}>How To Do It</Text>
-                <Text style={styles.tipText}>{item.tip}</Text>
+                <Text style={styles.itemDescription}>{item.description}</Text>
+                <View style={styles.tipBox}>
+                  <Text style={styles.tipLabel}>How To Do It</Text>
+                  <Text style={styles.tipText}>{item.tip}</Text>
+                </View>
               </View>
             </View>
           ))}
