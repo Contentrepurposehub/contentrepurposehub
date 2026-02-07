@@ -30,7 +30,7 @@ export default function Home() {
           '@type': 'ContactPoint',
           contactType: 'sales',
           email: 'hello@contentrepurposehub.com',
-          url: 'https://calendly.com/contentrepurposehub/strategy-call'
+          url: 'https://cal.com/contentrepurposehub/30min'
         }
       },
       {
@@ -238,7 +238,7 @@ export default function Home() {
               <a href="#pricing" className="text-gray-600 hover:text-gray-900 transition">Pricing</a>
               <a href="#faq" className="text-gray-600 hover:text-gray-900 transition">FAQ</a>
               <a 
-                href="https://calendly.com/contentrepurposehub/strategy-call" 
+                href="https://cal.com/contentrepurposehub/30min" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition font-medium"
@@ -267,7 +267,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
-                href="https://calendly.com/contentrepurposehub/strategy-call" 
+                href="https://cal.com/contentrepurposehub/30min" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="gradient-bg text-white px-8 py-4 rounded-lg hover:opacity-90 transition font-semibold text-lg"
@@ -563,7 +563,7 @@ export default function Home() {
                   ))}
                 </ul>
                 <a 
-                  href="https://calendly.com/contentrepurposehub/strategy-call" 
+                  href="https://cal.com/contentrepurposehub/30min" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="block text-center border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:border-gray-400 transition font-medium"
@@ -600,7 +600,7 @@ export default function Home() {
                   ))}
                 </ul>
                 <a 
-                  href="https://calendly.com/contentrepurposehub/strategy-call" 
+                  href="https://cal.com/contentrepurposehub/30min" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="block text-center gradient-bg text-white px-6 py-3 rounded-lg hover:opacity-90 transition font-medium"
@@ -638,7 +638,7 @@ export default function Home() {
                   ))}
                 </ul>
                 <a 
-                  href="https://calendly.com/contentrepurposehub/strategy-call" 
+                  href="https://cal.com/contentrepurposehub/30min" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="block text-center border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:border-gray-400 transition font-medium"
@@ -750,7 +750,7 @@ export default function Home() {
               Book a free strategy call. We will show you exactly how to turn your existing webinars into a content machine that ranks on Google and AI search.
             </p>
             <a 
-              href="https://calendly.com/contentrepurposehub/strategy-call" 
+              href="https://cal.com/contentrepurposehub/30min" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition text-lg"
@@ -775,7 +775,7 @@ export default function Home() {
                 <a href="#pricing" className="hover:text-white transition">Pricing</a>
                 <a href="#faq" className="hover:text-white transition">FAQ</a>
                 <a 
-                  href="https://calendly.com/contentrepurposehub/strategy-call" 
+                  href="https://cal.com/contentrepurposehub/30min" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="hover:text-white transition"
