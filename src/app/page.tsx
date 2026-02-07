@@ -326,6 +326,43 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Lead Magnet / Email Capture Section */}
+        <section id="free-checklist" className="py-20 px-4">
+          <div className="max-w-2xl mx-auto">
+            <div className="bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl p-8 md:p-12 card-shadow">
+              <div className="text-center">
+                <div className="inline-block bg-white/20 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
+                  Free Resource
+                </div>
+                <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
+                  Not Ready to Book? Get the Free Checklist
+                </h2>
+                <p className="text-xl text-blue-100 font-semibold mb-4">
+                  14 Content Ideas from Your Next Webinar
+                </p>
+                <p className="text-blue-100 mb-8 max-w-lg mx-auto">
+                  See exactly what content you could be creating from every webinar you run. We&apos;ll send you the checklist our clients use.
+                </p>
+
+                {/* Beehiiv Embed Form */}
+                <div className="mb-6 bg-white rounded-xl p-6">
+                  <BeehiivSubscribeForm />
+                </div>
+
+                {/* Trust Indicators */}
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-blue-100">
+                  <span className="flex items-center gap-1">
+                    <span className="text-green-300">✓</span> Instant PDF download
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <span className="text-green-300">✓</span> No spam, unsubscribe anytime
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Solution Section */}
         <section id="what-you-get" className="py-20 px-4">
           <div className="max-w-6xl mx-auto">
@@ -441,43 +478,6 @@ export default function Home() {
             <p className="text-white mt-8 text-lg font-medium">
               Every piece of content we create is optimized for both. No extra charge.
             </p>
-          </div>
-        </section>
-
-        {/* Lead Magnet / Email Capture Section */}
-        <section id="free-checklist" className="py-20 px-4 bg-gray-50">
-          <div className="max-w-2xl mx-auto">
-            <div className="bg-white rounded-2xl p-8 md:p-12 card-shadow border border-gray-100">
-              <div className="text-center">
-                <div className="inline-block bg-green-100 text-green-700 px-4 py-1 rounded-full text-sm font-medium mb-4">
-                  Free Resource
-                </div>
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
-                  Not Ready to Book? Get the Free Checklist
-                </h2>
-                <p className="text-xl text-blue-600 font-semibold mb-4">
-                  14 Content Ideas from Your Next Webinar
-                </p>
-                <p className="text-gray-600 mb-8 max-w-lg mx-auto">
-                  See exactly what content you could be creating from every webinar you run. We&apos;ll send you the checklist our clients use.
-                </p>
-
-                {/* Beehiiv Embed Form */}
-                <div className="mb-6">
-                  <BeehiivSubscribeForm />
-                </div>
-
-                {/* Trust Indicators */}
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-gray-500">
-                  <span className="flex items-center gap-1">
-                    <span className="text-green-500">✓</span> Instant PDF download
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <span className="text-green-500">✓</span> No spam, unsubscribe anytime
-                  </span>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
 
