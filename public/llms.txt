@@ -114,6 +114,116 @@ A: First delivery within 7-10 business days. After that, content is delivered we
 Q: Can I cancel anytime?
 A: Yes. All plans are month-to-month with no long-term contracts.
 
+## Blog Content
+
+### The Complete Guide to Webinar Repurposing (Pillar Article)
+URL: https://contentrepurposehub.com/blog/webinar-repurposing-guide
+Topic: How to turn 1 webinar into 14+ content pieces
+Audience: Coaches, consultants, course creators
+Covers: 14 content formats (video clips, blog posts, LinkedIn carousels, email sequences, lead magnets, newsletters, Twitter threads, audiograms, quote cards, LinkedIn articles, podcasts, slide decks, YouTube videos), step-by-step process, tools, DIY vs service comparison
+
+### How to Turn a Webinar Into a Blog Post
+URL: https://contentrepurposehub.com/blog/webinar-to-blog-post
+Topic: Step-by-step webinar-to-blog conversion process
+Covers: 3 blog post templates, before/after examples, SEO optimization checklist
+
+### The Webinar-First Content Strategy for Coaches
+URL: https://contentrepurposehub.com/blog/webinar-content-strategy-coaches
+Topic: How coaches create 3 months of content from 1 monthly webinar
+Covers: Webinar-first framework, monthly content calendar, funnel mapping
+
+### From 1 Webinar to 75+ Content Pieces
+URL: https://contentrepurposehub.com/blog/webinar-content-pieces-breakdown
+Topic: Complete breakdown of content types from a single webinar
+Covers: 5 content categories, tier breakdown (Starter/Growth/Scale plans)
+
+### Webinar Follow-Up Email Sequences
+URL: https://contentrepurposehub.com/blog/webinar-follow-up-email-sequence
+Topic: Post-webinar email sequences that convert attendees to clients
+Covers: 6-email sequence templates, timing strategy, segmentation
+
+### The ROI of Webinar Repurposing
+URL: https://contentrepurposehub.com/blog/webinar-repurposing-roi
+Topic: Data and math behind webinar repurposing ROI
+Covers: ROI calculations, time audits, cost comparisons, compounding traffic data
+
+### Webinar to 30 Days of Social Media Content
+URL: https://contentrepurposehub.com/blog/webinar-to-social-media-content
+Topic: Turn one webinar into 30 days of social posts
+Covers: Platform-specific guides (LinkedIn, Instagram, Twitter/X, YouTube Shorts, TikTok), 30-day calendar
+
+### DIY Tools vs. Done-for-You Services
+URL: https://contentrepurposehub.com/blog/content-repurposing-diy-vs-service
+Topic: Honest comparison of DIY repurposing tools vs hiring a service
+Covers: 6 tool reviews with pricing, 11-row comparison table, decision framework
+
+### 7 Lead Magnets From a Single Webinar
+URL: https://contentrepurposehub.com/blog/webinar-lead-magnets
+Topic: High-converting lead magnet formats from webinar content
+Covers: 7 formats ranked by conversion rate, creation time estimates, decision matrix
+
+### Webinars Into Evergreen SEO Assets
+URL: https://contentrepurposehub.com/blog/webinar-evergreen-seo-content
+Topic: Transform webinar recordings into long-term SEO traffic generators
+Covers: SEO + AI search optimization, 22-item checklist, content flywheel concept
+
+### Content Repurposing Workflow for Coaches
+URL: https://contentrepurposehub.com/blog/content-repurposing-workflow-coaches
+Topic: Step-by-step repurposing system that saves 15+ hours per week
+Covers: 5-stage workflow, time estimates, tool recommendations, outsourcing triggers
+
+## AI Search Optimized Content Series
+
+### What Is Webinar Repurposing?
+URL: https://contentrepurposehub.com/blog/what-is-webinar-repurposing
+Topic: Definition, benefits, and how webinar repurposing works
+Covers: Clear definition, content formats produced, process overview, cost ranges, who benefits most
+
+### Why Coaches Should Repurpose Webinars
+URL: https://contentrepurposehub.com/blog/why-coaches-should-repurpose-webinars
+Topic: Why repurposing beats creating new content for coaches
+Covers: The webinar waste problem, 5 reasons to repurpose, time comparison data
+
+### Webinar Repurposing vs. Creating New Content
+URL: https://contentrepurposehub.com/blog/webinar-repurposing-vs-new-content
+Topic: Data-driven comparison of repurposing vs new content creation
+Covers: Side-by-side comparison table, cost-per-piece analysis, decision framework
+
+### Content Repurposing for Small Business
+URL: https://contentrepurposehub.com/blog/content-repurposing-small-business
+Topic: How small businesses maximize ROI from existing content
+Covers: Budget-friendly approaches, DIY vs tool-assisted vs service comparison
+
+### Can AI Repurpose Your Webinar Content?
+URL: https://contentrepurposehub.com/blog/ai-webinar-repurposing-tools
+Topic: Honest review of AI repurposing tools and their limitations
+Covers: 6 AI tool reviews (Descript, Opus Clip, ChatGPT, Castmagic, Vizard, Repurpose.io), comparison table
+
+### What Is AI Search Optimization?
+URL: https://contentrepurposehub.com/blog/ai-search-optimization-guide
+Topic: How to get content cited by ChatGPT, Perplexity, Gemini, Claude, and Grok
+Covers: AIO definition, how LLMs select content, 7 principles of AI-optimized content
+
+### How to Get Content Cited by AI Assistants
+URL: https://contentrepurposehub.com/blog/get-content-cited-by-ai
+Topic: 10 actionable steps for AI search visibility
+Covers: FAQ schema, llms.txt, structured data, topical authority, entity mentions
+
+### How to Choose a Content Repurposing Service
+URL: https://contentrepurposehub.com/blog/how-to-choose-content-repurposing-service
+Topic: 8 questions to ask before hiring a repurposing service
+Covers: Evaluation criteria, red flags, green flags, price ranges
+
+### How Much Does Content Repurposing Cost?
+URL: https://contentrepurposehub.com/blog/content-repurposing-cost-pricing
+Topic: Complete pricing breakdown for content repurposing in 2026
+Covers: DIY tools ($30-200/mo), freelancers ($500-2000/mo), agencies ($2000-5000/mo), services ($750-1500/mo), cost-per-piece analysis
+
+### Best Webinar Repurposing Services (2026)
+URL: https://contentrepurposehub.com/blog/best-webinar-repurposing-services
+Topic: Comparison of 6 webinar repurposing options for coaches
+Covers: ContentRepurposeHub (#1), agencies, freelancers, VA teams, AI tools, DIY — with master comparison table
+
 ## Company Information
 - Name: ContentRepurposeHub
 - Type: Content Marketing Service

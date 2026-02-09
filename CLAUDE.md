@@ -62,3 +62,24 @@ This is a Next.js 16 marketing site for ContentRepurposeHub (a webinar repurposi
 2. Match to the appropriate skill from the table above
 3. Invoke the skill immediately using the Skill tool
 4. Follow the skill's workflow and outputs
+
+## AI Search Ranking Tracker (Hive-Rank)
+
+**MCP installed:** hive-rank (HTTP transport at https://mcp.hive-rank.com/mcp)
+
+**Available tools:**
+- `hive_rankings` — Check rankings for specific queries
+- `hive_trending` — See trending queries across the network
+- `hive_domain` — Get intelligence for contentrepurposehub.com
+- `hive_stats` — Network-wide statistics
+- `hive_search` — Full-text search across network queries
+
+**Tracking file:** `ai-rankings-tracker.md` — Contains all 21 blog posts with target keywords, AI ranking positions, and trends.
+
+**IMPORTANT:** At the start of every content-related session, check AI rankings for ContentRepurposeHub using `hive_domain` and update the tracker. When writing new content, check `hive_rankings` for target keywords to inform strategy.
+
+### Key Reference Files
+
+- `brand-voice.md` — Voice profile for all content (direct, practitioner confidence, anti-fluff)
+- `content-calendar.md` — 90-day content plan with 12 posts mapped out
+- `ai-rankings-tracker.md` — AI search ranking positions for all posts

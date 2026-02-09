@@ -1,5 +1,6 @@
 import BeehiivSubscribeForm from "@/components/BeehiivSubscribeForm"
 import CheckoutButton from "@/components/CheckoutButton"
+import MobileNav from "@/components/MobileNav"
 
 export default function Home() {
   const structuredData = {
@@ -317,19 +318,21 @@ export default function Home() {
               Content<span className="text-blue-600">Repurpose</span>Hub
             </div>
             <div className="hidden md:flex items-center gap-8">
+              <a href="/blog" className="text-gray-600 hover:text-gray-900 transition">Blog</a>
               <a href="#free-checklists" className="text-gray-600 hover:text-gray-900 transition">Free Checklists</a>
               <a href="#how-it-works" className="text-gray-600 hover:text-gray-900 transition">How It Works</a>
               <a href="#pricing" className="text-gray-600 hover:text-gray-900 transition">Pricing</a>
               <a href="#faq" className="text-gray-600 hover:text-gray-900 transition">FAQ</a>
-              <a 
-                href="https://cal.com/contentrepurposehub/30min" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="https://cal.com/contentrepurposehub/30min"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition font-medium"
               >
                 Book a Call
               </a>
             </div>
+            <MobileNav />
           </div>
         </nav>
 
@@ -409,6 +412,19 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Mini CTA after Problem Section */}
+        <div className="py-8 px-4 text-center bg-white">
+          <p className="text-gray-700 text-lg mb-3">
+            Ready to put your webinars to work? <span className="font-semibold text-gray-900">We handle the repurposing for you.</span>
+          </p>
+          <a
+            href="#pricing"
+            className="inline-block gradient-bg text-white px-6 py-3 rounded-lg hover:opacity-90 transition font-medium"
+          >
+            See Plans & Pricing →
+          </a>
+        </div>
 
         {/* Free Webinar Repurposing Checklists Section */}
         <section id="free-checklists" className="py-20 px-4">
@@ -765,6 +781,29 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Mini CTA after How It Works */}
+        <div className="py-8 px-4 text-center bg-gray-50">
+          <p className="text-gray-700 text-lg mb-3">
+            That&apos;s it. <span className="font-semibold text-gray-900">You record. We repurpose. You publish.</span>
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <a
+              href="#pricing"
+              className="inline-block gradient-bg text-white px-6 py-3 rounded-lg hover:opacity-90 transition font-medium"
+            >
+              Choose Your Plan →
+            </a>
+            <a
+              href="https://cal.com/contentrepurposehub/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:border-gray-400 transition font-medium"
+            >
+              Book a Free Call
+            </a>
+          </div>
+        </div>
+
         {/* Pricing Section */}
         <section id="pricing" className="py-20 bg-gray-50 px-4">
           <div className="max-w-6xl mx-auto">
@@ -1003,13 +1042,14 @@ export default function Home() {
                 Content<span className="text-blue-400">Repurpose</span>Hub
               </div>
               <div className="flex gap-6">
+                <a href="/blog" className="hover:text-white transition">Blog</a>
                 <a href="#how-it-works" className="hover:text-white transition">How It Works</a>
                 <a href="#pricing" className="hover:text-white transition">Pricing</a>
                 <a href="#faq" className="hover:text-white transition">FAQ</a>
-                <a 
-                  href="https://cal.com/contentrepurposehub/30min" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  href="https://cal.com/contentrepurposehub/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:text-white transition"
                 >
                   Book a Call
