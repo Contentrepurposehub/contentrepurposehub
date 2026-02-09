@@ -951,6 +951,125 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Social Proof / Why Trust Us Section */}
+        <section className="py-20 bg-gray-50 px-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Why Coaches Trust ContentRepurposeHub
+              </h2>
+              <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+                We don&apos;t just repurpose content. We build content engines that drive traffic, generate leads, and position you as the authority in your niche.
+              </p>
+            </div>
+
+            {/* Credibility Pillars */}
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              <div className="bg-white rounded-xl p-6 border border-gray-200">
+                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                  <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Your Words, Not Templates</h3>
+                <p className="text-gray-600 text-sm">
+                  Every piece starts from your webinar transcript. We extract your stories, examples, and insights — then structure them for maximum reach. The content sounds like you because it IS you.
+                </p>
+              </div>
+              <div className="bg-white rounded-xl p-6 border border-gray-200">
+                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                  <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Google + AI Search Optimized</h3>
+                <p className="text-gray-600 text-sm">
+                  Most services optimize for Google only. We structure every piece for both Google AND AI assistants (ChatGPT, Perplexity, Gemini). When someone asks an AI &quot;who&apos;s the best coach for X?&quot; — your content can be the answer.
+                </p>
+              </div>
+              <div className="bg-white rounded-xl p-6 border border-gray-200">
+                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                  <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">7-Day Turnaround, No Contracts</h3>
+                <p className="text-gray-600 text-sm">
+                  First delivery in 7-10 business days. Month-to-month plans — cancel anytime. We earn your business every month through results, not lock-in contracts.
+                </p>
+              </div>
+            </div>
+
+            {/* The Math */}
+            <div className="bg-white rounded-xl border border-gray-200 p-8 md:p-10 mb-12">
+              <h3 className="text-xl font-bold text-gray-900 mb-6 text-center">The Math That Makes This a No-Brainer</h3>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <p className="text-sm font-semibold text-red-600 uppercase mb-3">Without Repurposing</p>
+                  <ul className="space-y-3 text-gray-700 text-sm">
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-500 mt-0.5">&#10005;</span>
+                      <span>10-20 hours creating one webinar</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-500 mt-0.5">&#10005;</span>
+                      <span>Webinar gets watched once, then forgotten</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-500 mt-0.5">&#10005;</span>
+                      <span>15-20 more hours to create fresh content</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-500 mt-0.5">&#10005;</span>
+                      <span>No SEO value, no long-term traffic</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-500 mt-0.5">&#10005;</span>
+                      <span>Invisible to AI search engines</span>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-green-600 uppercase mb-3">With ContentRepurposeHub</p>
+                  <ul className="space-y-3 text-gray-700 text-sm">
+                    <li className="flex items-start gap-2">
+                      <span className="text-green-500 mt-0.5">&#10003;</span>
+                      <span>Same webinar becomes 14-75+ content pieces</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-green-500 mt-0.5">&#10003;</span>
+                      <span>Blog posts drive traffic for years, not hours</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-green-500 mt-0.5">&#10003;</span>
+                      <span>Save 15-20 hours/month on content creation</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-green-500 mt-0.5">&#10003;</span>
+                      <span>Every piece SEO optimized for Google rankings</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-green-500 mt-0.5">&#10003;</span>
+                      <span>AI search optimized — get cited by ChatGPT, Perplexity</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="mt-8 text-center bg-gray-50 rounded-lg p-4">
+                <p className="text-gray-900 font-medium">
+                  At $750/month for 14 pieces, that&apos;s <span className="text-blue-600 font-bold">$54 per content piece</span>. A freelance writer charges $200-$500 per piece — without SEO or AI optimization.
+                </p>
+              </div>
+            </div>
+
+            {/* Built for Coaches */}
+            <div className="text-center">
+              <p className="text-gray-500 text-sm font-medium uppercase tracking-wider mb-4">Built Specifically For</p>
+              <div className="flex flex-wrap justify-center gap-3">
+                {['Business Coaches', 'Life Coaches', 'Executive Coaches', 'Consultants', 'Course Creators', 'B2B Companies'].map((audience) => (
+                  <span key={audience} className="bg-white border border-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-medium">
+                    {audience}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* FAQ Section */}
         <section id="faq" className="py-20 bg-gray-50 px-4">
           <div className="max-w-4xl mx-auto">
