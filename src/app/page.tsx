@@ -205,6 +205,14 @@ export default function Home() {
               '@type': 'Answer',
               text: 'Yes. All plans are month-to-month with no long-term contracts. Cancel before your next billing date and you will not be charged. We earn your business every month through results.'
             }
+          },
+          {
+            '@type': 'Question',
+            name: 'Is ContentRepurposeHub a new service?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Yes. ContentRepurposeHub launched in 2026. Early clients get more personal attention, faster turnaround, and direct access to the founder. Every content piece gets hands-on review. All plans include a 30-day satisfaction guarantee.'
+            }
           }
         ]
       },
@@ -347,7 +355,7 @@ export default function Home() {
               <span className="gradient-text">75+ Content Pieces</span>
             </h1>
             <p className="text-xl text-gray-600 mb-4 max-w-2xl mx-auto">
-              We repurpose your webinars into lead magnets, LinkedIn posts, blog articles, newsletters, email sequences, and more.
+              Stop creating content from scratch. We turn your webinars into lead magnets, LinkedIn posts, blog articles, newsletters, and email sequences — ready to publish.
             </p>
             <p className="text-lg text-blue-600 font-medium mb-8">
               All content optimized for Google + AI Search (ChatGPT, Perplexity, Gemini)
@@ -390,17 +398,17 @@ export default function Home() {
                 { 
                   emoji: '📁', 
                   title: 'Content Graveyard', 
-                  desc: "Amazing webinars with 200+ attendees sitting in folders, never to be seen again. That's hours of expertise wasted." 
+                  desc: "You spent hours preparing and delivering that webinar. Real frameworks. Real stories. Hours of your best thinking — now sitting in a Zoom folder while you create content from scratch next week." 
                 },
                 { 
                   emoji: '⏰', 
                   title: 'No Time to Repurpose', 
-                  desc: "You know you should turn that webinar into posts and articles. But who has 10+ hours to do it properly?" 
+                  desc: "Between client sessions, business development, and actually having a life — who has 15-20 hours to properly turn a webinar into posts, articles, and lead magnets?" 
                 },
                 { 
                   emoji: '📉', 
                   title: 'Invisible to AI Search', 
-                  desc: "People are asking ChatGPT and Perplexity for recommendations in your niche. Your content is nowhere to be found." 
+                  desc: "Someone is asking ChatGPT right now: 'who's the best coach for [your topic]?' If your content isn't structured for AI search, you're invisible to them." 
                 },
               ].map((item, i) => (
                 <div key={i} className="bg-white p-8 rounded-xl card-shadow">
@@ -633,55 +641,55 @@ export default function Home() {
                 { 
                   icon: '📚', 
                   title: 'Lead Magnets', 
-                  desc: 'PDF guides, checklists, and frameworks that capture emails and establish authority.',
+                  desc: 'Your best framework, packaged as a downloadable PDF. Builds your email list on autopilot — every download is a potential client who found you through search.',
                   tag: 'Google + AI Optimized'
                 },
                 { 
                   icon: '💼', 
                   title: 'LinkedIn Posts', 
-                  desc: 'Thought leadership posts, stories, and carousel-ready content that builds your brand.',
+                  desc: 'Written from your actual webinar words — your stories, your frameworks, your one-liners. They sound like you because they came from you.',
                   tag: 'Algorithm Optimized'
                 },
                 { 
                   icon: '📝', 
                   title: 'SEO Blog Posts', 
-                  desc: '1,500-2,500 word articles that rank on Google and get cited by AI assistants.',
+                  desc: 'Long-form articles that rank on Google and get cited by AI assistants like ChatGPT and Perplexity. One post can drive traffic for years.',
                   tag: 'Google + AI Optimized'
                 },
                 { 
                   icon: '📧', 
                   title: 'Email Newsletters', 
-                  desc: 'Ready-to-send newsletters that keep your list engaged and drive traffic.',
+                  desc: 'Ready-to-send editions that keep your list engaged and drive them back to your offers. Consistent publishing without the weekly scramble.',
                   tag: 'Conversion Optimized'
                 },
                 { 
                   icon: '📨', 
                   title: 'Email Sequences', 
-                  desc: 'Welcome sequences and nurture campaigns that convert subscribers to clients.',
+                  desc: 'Automated sequences that turn new subscribers into clients while you focus on coaching. Set up once, converts on repeat.',
                   tag: 'Conversion Optimized'
                 },
                 { 
                   icon: '🐦', 
                   title: 'Twitter/X Threads', 
-                  desc: 'Viral-ready threads optimized for the X algorithm and engagement.',
+                  desc: 'Your webinar insights broken into viral-ready threads. Built for the X algorithm and designed to get saves and retweets.',
                   tag: 'Algorithm Optimized'
                 },
                 { 
                   icon: '📸', 
                   title: 'Instagram Captions', 
-                  desc: 'Engaging captions with hooks that stop the scroll and drive profile visits.',
+                  desc: 'Scroll-stopping hooks that drive profile visits and DMs. Each caption pulls from real moments in your webinar.',
                   tag: 'Algorithm Optimized'
                 },
                 { 
                   icon: '🎬', 
                   title: 'YouTube Short Scripts', 
-                  desc: 'Scripts for short-form video content derived from your webinar insights.',
+                  desc: 'Short-form video scripts that turn your webinar insights into discoverable content on YouTube Shorts.',
                   tag: 'Video Optimized'
                 },
                 { 
                   icon: '📄', 
                   title: 'Landing Page Copy', 
-                  desc: 'High-converting landing page copy for your offers and lead magnets.',
+                  desc: 'Pages that turn visitors into leads. Written to convert, optimized for search.',
                   tag: 'Conversion Optimized'
                 },
               ].map((item, i) => (
@@ -850,7 +858,7 @@ export default function Home() {
               {/* Growth - Featured */}
               <div className="bg-white border-2 border-blue-600 rounded-2xl p-8 relative">
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-medium">
-                  Most Popular
+                  Recommended
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-1">Growth</h3>
                 <p className="text-gray-600 text-sm mb-4">2 Webinars Repurposed</p>
@@ -922,10 +930,10 @@ export default function Home() {
             {/* Guarantee */}
             <div className="text-center mt-12 bg-white p-6 rounded-xl max-w-2xl mx-auto card-shadow">
               <p className="text-gray-900 font-semibold text-lg mb-2">
-                30-Day Satisfaction Guarantee
+                30-Day &quot;Sounds Like Me&quot; Guarantee
               </p>
               <p className="text-gray-600">
-                Not happy with the content? Full refund within the first 30 days. No questions asked.
+                If your first delivery doesn&apos;t capture your voice and expertise, full refund. You keep everything we created.
               </p>
             </div>
           </div>
@@ -956,7 +964,7 @@ export default function Home() {
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Why Coaches Trust ContentRepurposeHub
+                Why This Works for Coaches
               </h2>
               <p className="text-gray-600 text-lg max-w-2xl mx-auto">
                 We don&apos;t just repurpose content. We build content engines that drive traffic, generate leads, and position you as the authority in your niche.
@@ -1120,6 +1128,10 @@ export default function Home() {
                   q: 'How is this different from hiring a VA or writer?',
                   a: 'A VA might transcribe your webinar. A writer might create a few posts. We transform your webinar into a complete content system — lead magnets, posts, articles, emails — all optimized for search. Plus, we handle the SEO and AI optimization that most writers cannot do.',
                 },
+                {
+                  q: 'Is ContentRepurposeHub a new service?',
+                  a: 'Yes — we launched in 2026, and that actually works in your favor. Early clients get more personal attention, faster turnaround, and direct access to the founder. Every piece gets hands-on review. Plus there\'s zero risk: our 30-day guarantee means you get a full refund if the content doesn\'t meet your standards.',
+                },
               ].map((item, i) => (
                 <div key={i} className="bg-white p-6 rounded-xl border border-gray-200">
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">{item.q}</h3>
@@ -1134,21 +1146,24 @@ export default function Home() {
         <section className="py-20 gradient-bg px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Stop Letting Your Webinars Collect Dust
+              Your Webinars Already Have the Content. Let Us Prove It.
             </h2>
-            <p className="text-blue-100 text-lg mb-8">
-              Book a free strategy call. We will show you exactly how to turn your existing webinars into a content machine that ranks on Google and AI search.
+            <p className="text-blue-100 text-lg mb-4">
+              Book a free 20-minute strategy call. We&apos;ll look at your webinars and show you exactly what content is hiding in them.
             </p>
-            <a 
-              href="https://cal.com/contentrepurposehub/30min" 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <p className="text-blue-200 text-sm mb-8">
+              We&apos;re building this service right now — early clients get more personal attention than any agency juggling 50 accounts. That window won&apos;t last forever.
+            </p>
+            <a
+              href="https://cal.com/contentrepurposehub/30min"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition text-lg"
             >
               Book Free Strategy Call →
             </a>
             <p className="text-blue-200 text-sm mt-4">
-              ✓ 20 minutes &nbsp; ✓ No commitment &nbsp; ✓ See sample content
+              ✓ 20 minutes &nbsp; ✓ 30-day money-back guarantee &nbsp; ✓ No contracts
             </p>
           </div>
         </section>
