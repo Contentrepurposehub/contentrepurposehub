@@ -13,7 +13,7 @@ export default function ChecklistPage() {
       subtitle: "3-5 clips per webinar",
       problem: "You spent an hour delivering insights on camera. The next day, you're staring at a blank screen trying to think of something to post on Instagram or TikTok.",
       solution: "Your webinar already has the content. Pull 30 to 60 second moments where you explained something clearly, told a story, or dropped a memorable line. Add captions. Post to Reels, TikTok, YouTube Shorts, and LinkedIn.",
-      example: "A client ran a webinar on pricing strategies. We pulled four clips: one where she explained why discounting kills perceived value, one story about a client who tripled their prices, and two quick tips. Those four clips generated more engagement than her last month of original content combined.",
+      example: "Say you run a webinar on pricing strategies. You'd pull four clips: one where you explain why discounting kills perceived value, one story about a client who tripled their prices, and two quick tips. Those four clips can generate more engagement than a month of original content — because they're real moments, not scripted posts.",
     },
     {
       number: 2,
@@ -21,7 +21,7 @@ export default function ChecklistPage() {
       subtitle: "1,500-2,500 words",
       problem: "You want to rank on Google for topics in your niche. But writing long-form content takes hours, and you keep pushing it to next week.",
       solution: "Your webinar is already a rough draft of a blog post. Transcribe it, clean up the spoken-word rambling, add headers and structure, and you have a comprehensive article. The content exists. It just needs reformatting.",
-      example: "One coach had a webinar called 'How to Land Your First Coaching Client.' We turned it into a 2,100-word blog post targeting that exact search phrase. Six months later, that post brings in 400 organic visitors per month. Each visitor is someone actively searching for what she sells.",
+      example: "Say you run a webinar called 'How to Land Your First Coaching Client.' That transcription becomes a 2,000+ word blog post targeting that exact search phrase. Now you have an article working for you on Google 24/7 — every visitor is someone actively searching for what you sell.",
     },
     {
       number: 3,
@@ -29,7 +29,7 @@ export default function ChecklistPage() {
       subtitle: "8-12 slides",
       problem: "Carousels perform well on LinkedIn, but designing them takes forever. You've got client work to do. The carousel idea sits in your notes app, untouched.",
       solution: "Take a framework or process from your webinar and break it into slides. Each slide covers one step or one point. You already explained it verbally. Now it becomes visual content that gets saved and shared.",
-      example: "A consultant explained a 6-step client onboarding process in her webinar. We turned those six steps into a carousel with one step per slide, plus an intro and a CTA slide. That single carousel got 47 saves and brought her two discovery calls from people who found it weeks after she posted.",
+      example: "Say you explain a 6-step client onboarding process in your webinar. Those six steps become a carousel — one step per slide, plus an intro and a CTA slide. Carousels get saved and shared because people want to reference them later. One post, working for weeks.",
     },
     {
       number: 4,
@@ -37,7 +37,7 @@ export default function ChecklistPage() {
       subtitle: "3-5 emails",
       problem: "Someone downloads your lead magnet. They get one email with the PDF. Then silence. You know you should nurture them, but writing email sequences feels like a project you never start.",
       solution: "Your webinar contains stories, insights, and teaching moments. Pull them out and spread them across a sequence. Each email delivers value from content you already created. The subscriber gets nurtured. You get leads who actually remember you when they're ready to buy.",
-      example: "We took a webinar on building online courses and created a 5-email sequence. Email one delivered the lead magnet. Emails two through four shared insights from the webinar. Email five invited them to a strategy call. Open rates stayed above 45% through the whole sequence because every email had something useful.",
+      example: "Say you have a webinar on building online courses. Email one delivers your lead magnet. Emails two through four share specific insights from the webinar. Email five invites them to a strategy call. Every email has real substance because it's pulled from content you already created — not filler.",
     },
     {
       number: 5,
@@ -45,7 +45,7 @@ export default function ChecklistPage() {
       subtitle: "Checklist, guide, or framework",
       problem: "You need something to offer in exchange for emails. Creating a lead magnet from scratch means research, writing, design. It keeps getting delayed.",
       solution: "Look at your webinar. Did you share a framework? A checklist? A step-by-step process? That becomes your lead magnet. Pull it out, format it cleanly, and you have a PDF that captures emails and demonstrates your expertise.",
-      example: "A business coach mentioned a '7-question discovery call framework' in minute 34 of her webinar. She almost forgot she said it. We turned those seven questions into a one-page PDF. That lead magnet now generates 60 to 80 new email subscribers per month.",
+      example: "Say you mention a '7-question discovery call framework' in minute 34 of your webinar. You almost forgot you said it. Those seven questions become a one-page PDF that captures emails and demonstrates your expertise — all from something you said off the cuff.",
     },
   ]
 
@@ -104,7 +104,7 @@ export default function ChecklistPage() {
             </p>
             <p className="text-lg text-gray-700 leading-relaxed mt-4">
               This checklist shows you exactly what to extract. Below are 5 content types you can create from any webinar,
-              with real examples of how they work.
+              with examples of how each one works.
             </p>
           </div>
         </div>
@@ -142,7 +142,7 @@ export default function ChecklistPage() {
                   </div>
 
                   <div className="bg-blue-50 rounded-lg p-4">
-                    <p className="text-sm font-semibold text-blue-700 uppercase tracking-wide mb-1">Real Example</p>
+                    <p className="text-sm font-semibold text-blue-700 uppercase tracking-wide mb-1">How This Works</p>
                     <p className="text-gray-700 text-sm">{item.example}</p>
                   </div>
                 </div>
@@ -202,6 +202,9 @@ export default function ChecklistPage() {
                 </span>
                 <span className="flex items-center gap-1">
                   <span className="text-green-500">✓</span> No spam, unsubscribe anytime
+                </span>
+                <span className="flex items-center gap-1">
+                  <span className="text-green-500">✓</span> Just the checklist, nothing else
                 </span>
               </div>
             </div>

@@ -246,8 +246,8 @@ export default function FullChecklistPage() {
             Want Us to Do This for You?
           </h2>
           <p className="text-gray-600 mb-6">
-            Send us your webinar recording. We&apos;ll extract everything and deliver 14 to 75 ready-to-post content pieces.
-            All optimized for Google and AI search.
+            Send us your webinar recording. We&apos;ll turn it into 14 to 75 ready-to-publish content pieces —
+            blog posts, social content, email sequences, lead magnets — all optimized for Google and AI search.
           </p>
           <a
             href="https://cal.com/contentrepurposehub/30min"
@@ -259,6 +259,9 @@ export default function FullChecklistPage() {
           </a>
           <p className="text-gray-500 text-sm mt-4">
             20 minutes. No pressure. See what we&apos;d create from your content.
+          </p>
+          <p className="text-gray-400 text-sm mt-2">
+            No contracts. 30-day guarantee. Cancel anytime.
           </p>
         </div>
       </section>
