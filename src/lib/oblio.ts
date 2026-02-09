@@ -52,16 +52,24 @@ export async function createOblioInvoice({
   let mentions = '';
 
   if (isRomania) {
-    vatPercentage = 19;
+    // Romanian client → 21% TVA (as of 2025)
+    vatPercentage = 21;
     vatName = 'Normala';
   } else if (isEU && customerVatId) {
+    // EU B2B client with valid VAT ID → 0% reverse charge
     vatPercentage = 0;
     vatName = 'SDD';
-    mentions = 'Reverse charge - VAT to be accounted for by the recipient (art. 196 EU VAT Directive)';
+    mentions = 'Reverse charge - VAT to be accounted for by the recipient (art. 196 EU VAT Directive). Taxare inversa conform art. 150 Cod Fiscal.';
+  } else if (isEU && !customerVatId) {
+    // EU B2C client without VAT ID → Romanian VAT rate applies
+    vatPercentage = 21;
+    vatName = 'Normala';
+    mentions = 'VAT charged at Romanian rate for B2C intra-community service supply.';
   } else {
+    // Non-EU client (US, UK, etc.) → 0% no VAT
     vatPercentage = 0;
     vatName = 'SDD';
-    mentions = 'Export of services - not subject to Romanian VAT';
+    mentions = 'Export of services outside the EU - not subject to Romanian VAT (art. 133 Cod Fiscal).';
   }
 
   const data = {
