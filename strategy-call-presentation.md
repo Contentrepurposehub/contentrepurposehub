@@ -82,15 +82,33 @@ And every webinar sitting in a folder = 14-75 content pieces nobody's creating.
 
 No learning new tools. No hiring writers. No spending weekends on content.
 
-We watch your webinar, pull out every valuable moment, and create content in your voice — because we use your actual words, stories, and examples.
-
-Everything is optimized for two things:
-1. **Google** — so new people find you when they search
-2. **AI search** — so ChatGPT, Perplexity, and Gemini recommend you
+But we don't just cut your webinar into clips. There's a process behind it.
 
 ---
 
-## SLIDE 7: What You Get Back (from one webinar)
+## SLIDE 7: How We Actually Create Your Content
+
+Most repurposing services transcribe your webinar, chop it up, and send you back generic posts. That's editing, not strategy.
+
+Here's what we do differently:
+
+**1. We capture your voice first**
+Before we create anything, we study how you speak — your phrases, your rhythm, the way you explain things. Every piece we create sounds like you wrote it. Not a freelancer. Not AI. You.
+
+**2. We find your strongest angles**
+Your webinar has dozens of ideas. Some are good. A few are great. We identify which ones your audience will respond to most and build content around those first.
+
+**3. We research what your audience actually searches**
+The blog post isn't just a cleaned-up transcription. We find the exact keywords your ideal clients type into Google and write the post to rank for those terms.
+
+**4. We build each piece for the platform it lives on**
+A LinkedIn post follows LinkedIn patterns. An email sequence follows proven conversion frameworks. A lead magnet is designed to capture emails, not just summarize your slides. Each piece is built for where it works, not copy-pasted across platforms.
+
+**The result:** Content that sounds like you, ranks on Google, gets found by AI search tools, and actually converts — all from a webinar you already delivered.
+
+---
+
+## SLIDE 8: What You Get Back (from one webinar)
 
 | Content Type | What It Does For You |
 |-------------|---------------------|
@@ -106,7 +124,7 @@ All in your voice. All optimized for search. Delivered in 7-10 business days.
 
 ---
 
-## SLIDE 8: The AI Search Advantage
+## SLIDE 9: The AI Search Advantage
 
 This is the part most people miss.
 
@@ -120,7 +138,7 @@ If your content isn't set up for AI to find and cite you, you're invisible to al
 
 ---
 
-## SLIDE 9: Why Now Matters
+## SLIDE 10: Why Now Matters
 
 **You're in a unique spot right now.**
 
@@ -134,7 +152,7 @@ Content compounds. The earlier you start, the bigger your head start.
 
 ---
 
-## SLIDE 10: Three Plans
+## SLIDE 11: Three Plans
 
 | | Starter | Growth | Scale |
 |---|---------|--------|-------|
@@ -157,7 +175,7 @@ Month-to-month. No contracts. Cancel anytime.
 
 ---
 
-## SLIDE 11: Compare Your Options
+## SLIDE 12: Compare Your Options
 
 | Option | Cost | Pieces | Google Optimized? | AI Search Optimized? |
 |--------|------|--------|-------------------|---------------------|
@@ -172,7 +190,7 @@ A freelancer charges $200-$500 for one piece. Without the optimization.
 
 ---
 
-## SLIDE 12: What I'd Recommend For You
+## SLIDE 13: What I'd Recommend For You
 
 **Based on what you told me:**
 
@@ -188,7 +206,7 @@ First month is a test. If the content doesn't sound like you or the quality isn'
 
 ---
 
-## SLIDE 13: How It Works
+## SLIDE 14: How It Works
 
 **Step 1:** You send us your webinar recording (Zoom, YouTube, Loom — any format)
 
@@ -202,10 +220,10 @@ That's it. You keep doing webinars. We handle the content.
 
 ---
 
-## SLIDE 14: Common Questions
+## SLIDE 15: Common Questions
 
 **How do you match my voice?**
-We use your actual words from the webinar. We don't make stuff up — we extract and restructure what you said. It sounds like you because it IS you.
+Before we create a single piece, we analyze how you speak — your phrases, your tone, how you explain things. We build a voice profile from your webinar. Then every piece is written through that filter. It sounds like you because it's built from the way you actually talk.
 
 **What if I don't like something?**
 You approve everything before it goes anywhere. Unlimited revisions on each delivery.
@@ -218,7 +236,7 @@ They work great. Some coaches start by repurposing their backlog — 3, 5, even 
 
 ---
 
-## SLIDE 15: What Happens Next
+## SLIDE 16: What Happens Next
 
 If this feels right:
 
@@ -232,7 +250,7 @@ If this feels right:
 
 ---
 
-## SLIDE 16: Let's Talk
+## SLIDE 17: Let's Talk
 
 **ContentRepurposeHub**
 
