@@ -14,65 +14,65 @@
 
 ---
 
-## SLIDE 2: Today's Agenda
+## SLIDE 2: How This Call Works
 
 Here's what we'll do in the next 20 minutes:
 
-1. I'll learn about your situation (your webinars, your content, your goals)
-2. I'll show you what's possible with what you already have
-3. If it makes sense, I'll show you how we can help
-4. You'll leave with a clear picture either way
+1. I'll ask about your situation — your webinars, your content, your goals
+2. We'll look at what you're leaving on the table
+3. If I see a way to help, I'll show you how
+4. If I don't think we're a fit, I'll tell you
 
-This is a conversation. Ask questions anytime.
+This is a conversation, not a pitch. Ask me anything along the way.
 
 ---
 
-## SLIDE 3: What Brought You Here?
+## SLIDE 3: Tell Me About You
 
-**Tell me about your content situation right now.**
+**What's going on with your content right now?**
 
-[Listen. Take notes. Use their exact words later.]
+[Listen. Take notes. Write down their exact words — you'll use them later.]
 
 What to listen for:
 - How many webinars they've done
 - What happens to recordings after
-- Current content creation process
-- Time spent on content per week
+- How they're creating content now
+- How much time they spend on it per week
 - What's frustrating them
 
 ---
 
 ## SLIDE 4: The Problem
 
-You already did the hard work.
+You already did the hard part.
 
-You spent 4-6 hours preparing and delivering a webinar. The thinking, the teaching, the stories, the frameworks — all captured on a recording.
+You spent hours preparing and delivering a webinar. The thinking, the teaching, the stories, the frameworks — all captured on a recording.
 
 Then what happened?
 
-It went into a folder. Maybe you uploaded the replay. Then you moved on and started creating content from scratch again.
+It went into a folder. Maybe you posted the replay. Then you went back to creating content from scratch.
 
-**That recording contains enough material for 14-75 content pieces.** Blog posts, LinkedIn posts, lead magnets, email sequences, newsletters.
+**That recording has enough material for 14-75 content pieces.** Blog posts, LinkedIn posts, lead magnets, email sequences, newsletters.
 
-You're not missing content. You're missing extraction.
+You don't have a content problem. You have an extraction problem.
 
 ---
 
 ## SLIDE 5: What This Actually Costs You
 
-Let's do the math with your numbers.
+Let's do the math with YOUR numbers.
 
-**The opportunity cost of DIY content creation:**
+**The time you're spending on content instead of coaching:**
 
-| Your hourly rate | Hours on content/month | Monthly cost |
-|-----------------|----------------------|--------------|
+| Your hourly rate | Hours on content/month | What that costs you |
+|-----------------|----------------------|---------------------|
 | $200/hour | 15 hours | **$3,000/month** |
 | $300/hour | 15 hours | **$4,500/month** |
 | $500/hour | 15 hours | **$7,500/month** |
 
-That's $36,000-$90,000 per year in time you could spend coaching clients.
+That's $36,000-$90,000 a year in time you could spend on clients.
 
-Meanwhile, one webinar sitting in a folder = 14-75 content pieces nobody's creating.
+And every webinar sitting in a folder = 14-75 content pieces nobody's creating.
 
 ---
 
@@ -80,31 +80,29 @@ Meanwhile, one webinar sitting in a folder = 14-75 content pieces nobody's creat
 
 **You send us a webinar recording. We send you back ready-to-publish content.**
 
-No learning new tools. No hiring writers. No spending your weekends repurposing.
+No learning new tools. No hiring writers. No spending weekends on content.
 
-We watch your webinar, extract every valuable moment, and create content pieces in your voice — because we're using your actual words, stories, and examples.
+We watch your webinar, pull out every valuable moment, and create content in your voice — because we use your actual words, stories, and examples.
 
-Every piece is optimized for two things:
-1. **Google search** — so new people find you
-2. **AI search** — so ChatGPT, Perplexity, and Gemini cite you
+Everything is optimized for two things:
+1. **Google** — so new people find you when they search
+2. **AI search** — so ChatGPT, Perplexity, and Gemini recommend you
 
 ---
 
-## SLIDE 7: What You Get Back (Starter Example)
-
-**From one 60-minute webinar:**
+## SLIDE 7: What You Get Back (from one webinar)
 
 | Content Type | What It Does For You |
 |-------------|---------------------|
 | 1 Lead Magnet (PDF) | Builds your email list on autopilot |
-| 10 LinkedIn Posts | Positions you as the authority, drives engagement |
-| 1 SEO Blog Post (1,500-2,500 words) | Ranks on Google, drives traffic for years |
-| 1 Newsletter Edition | Nurtures your existing audience |
-| 1 Landing Page Copy | Converts visitors into leads |
+| 10 LinkedIn Posts | Positions you as the go-to person, drives engagement |
+| 1 SEO Blog Post (1,500-2,500 words) | Shows up on Google, drives traffic for years |
+| 1 Newsletter Edition | Keeps your existing audience warm |
+| 1 Landing Page Copy | Turns visitors into leads |
 
 **14 pieces. From content you already created.**
 
-All written in your voice. All optimized for search. Delivered in 7-10 business days.
+All in your voice. All optimized for search. Delivered in 7-10 business days.
 
 ---
 
@@ -114,25 +112,25 @@ This is the part most people miss.
 
 **How people find experts is changing.**
 
-Right now, someone looking for a coach asks Google. Soon — and increasingly already — they ask ChatGPT, Perplexity, or Gemini: "Who's the best coach for [your topic]?"
+Right now, someone looking for a coach searches Google. But more and more, they're asking ChatGPT, Perplexity, or Gemini: "Who's a good coach for [your topic]?"
 
-If your content isn't structured for AI citation, you're invisible to that entire channel.
+If your content isn't set up for AI to find and cite you, you're invisible to all those people.
 
-**We structure every piece for both Google AND AI search engines.** This is not something freelancers or generic agencies do. We're the only webinar repurposing service with dual search optimization built in.
+**We build every piece for Google AND AI search.** This is not something freelancers or agencies do. We're the only webinar repurposing service that does this.
 
 ---
 
-## SLIDE 9: The Market Reality
+## SLIDE 9: Why Now Matters
 
-**You're in a unique position right now.**
+**You're in a unique spot right now.**
 
-- 122,974 coaches globally. 58% use webinars. Almost none repurpose them properly.
-- The "webinar repurposing" keyword space has near-zero competition.
-- Nobody has claimed the authority position for webinar repurposing for coaches.
+- 122,974 coaches globally. 58% use webinars. Almost none repurpose them well.
+- The "webinar repurposing" space has almost zero competition online.
+- Nobody has claimed the authority position for webinar content in your niche yet.
 
-The coaches who build their content library now — optimized for Google and AI search — will be the ones people find in 6 months, 12 months, 2 years.
+The coaches who build their content library now — optimized for Google and AI — will be the ones people find in 6 months, 12 months, 2 years.
 
-Content compounds. The earlier you start, the bigger the advantage.
+Content compounds. The earlier you start, the bigger your head start.
 
 ---
 
@@ -159,34 +157,34 @@ Month-to-month. No contracts. Cancel anytime.
 
 ---
 
-## SLIDE 11: The Math That Matters
+## SLIDE 11: Compare Your Options
 
-**What you're comparing this to:**
-
-| Option | Cost | Content Pieces | SEO Optimized? | AI Search Optimized? |
-|--------|------|---------------|----------------|---------------------|
+| Option | Cost | Pieces | Google Optimized? | AI Search Optimized? |
+|--------|------|--------|-------------------|---------------------|
 | Freelance writer | $200-$500/piece | 1 | Maybe | No |
 | Generic agency | $2,000-$5,000/mo | 8-12 | Yes | No |
 | DIY with AI tools | $100/mo + 15-20 hrs | Varies | If you know how | No |
 | **ContentRepurposeHub** | **$750-$1,500/mo** | **14-75+** | **Yes** | **Yes** |
 
-At $750/month, you get 14 pieces at $54 each — with Google AND AI optimization included.
+At $750/month you get 14 pieces at $54 each — with Google AND AI optimization.
 
-A freelance writer charges $200-$500 for one piece. Without SEO. Without AI optimization.
+A freelancer charges $200-$500 for one piece. Without the optimization.
 
 ---
 
-## SLIDE 12: Which Plan Fits You?
+## SLIDE 12: What I'd Recommend For You
 
-**Based on what you told me, here's what I'd recommend:**
+**Based on what you told me:**
 
-[Recommend ONE plan based on their situation]
+[Pick ONE plan based on their situation]
 
-**Starter ($750/month)** — if you do one webinar per month and want to see how this works before going bigger.
+**Starter ($750/month)** — if you do one webinar a month and want to see how this works first.
 
-**Growth ($1,000/month)** — if you have multiple webinars or want the email sequences that convert your list into clients. This is where most coaches land.
+**Growth ($1,000/month)** — if you have multiple webinars or want email sequences that turn subscribers into clients. Where most coaches land.
 
-**Scale ($1,500/month)** — if you have a library of recordings and want content across every platform. Full content engine.
+**Scale ($1,500/month)** — if you have a library of recordings and want content everywhere. Full content engine.
+
+First month is a test. If the content doesn't sound like you or the quality isn't there, you cancel. No contract. You keep everything we made.
 
 ---
 
@@ -194,9 +192,9 @@ A freelance writer charges $200-$500 for one piece. Without SEO. Without AI opti
 
 **Step 1:** You send us your webinar recording (Zoom, YouTube, Loom — any format)
 
-**Step 2:** We watch it, extract every valuable moment, and create your content
+**Step 2:** We watch it, pull out every valuable moment, and create your content
 
-**Step 3:** You receive everything in a Google Doc within 7-10 business days
+**Step 3:** You get everything in a Google Doc within 7-10 business days
 
 **Step 4:** You review, request any changes, and publish
 
@@ -206,17 +204,17 @@ That's it. You keep doing webinars. We handle the content.
 
 ## SLIDE 14: Common Questions
 
-**Q: How do you match my voice?**
-We use your actual words from the webinar. We don't make things up — we extract and restructure what you said. The content sounds like you because it IS you.
+**How do you match my voice?**
+We use your actual words from the webinar. We don't make stuff up — we extract and restructure what you said. It sounds like you because it IS you.
 
-**Q: What if I don't like something?**
+**What if I don't like something?**
 You approve everything before it goes anywhere. Unlimited revisions on each delivery.
 
-**Q: What if my webinar wasn't that polished?**
-If you taught something useful, we can work with it. We're looking for your insights, not production quality.
+**What if my webinar wasn't that polished?**
+If you taught something useful, we can work with it. We're looking for your ideas, not production quality.
 
-**Q: What about older recordings?**
-They work great. Some coaches start by repurposing their backlog — 3, 5, even 10 webinars sitting unused.
+**What about older recordings?**
+They work great. Some coaches start by repurposing their backlog — 3, 5, even 10 webinars they never used.
 
 ---
 
@@ -227,14 +225,14 @@ If this feels right:
 1. You pick the plan that fits
 2. We send you a simple onboarding form (5 minutes)
 3. You upload your first webinar recording
-4. We deliver your first content batch in 7-10 business days
+4. We send your first content batch in 7-10 business days
 5. You review, publish, and start seeing results
 
-**Which plan are you leaning toward?**
+**Does this feel right for where you are?**
 
 ---
 
-## SLIDE 16: Contact
+## SLIDE 16: Let's Talk
 
 **ContentRepurposeHub**
 
