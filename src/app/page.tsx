@@ -1,4 +1,5 @@
 import BeehiivSubscribeForm from "@/components/BeehiivSubscribeForm"
+import CheckoutButton from "@/components/CheckoutButton"
 
 export default function Home() {
   const structuredData = {
@@ -799,14 +800,12 @@ export default function Home() {
                     </li>
                   ))}
                 </ul>
-                <a 
-                  href="https://cal.com/contentrepurposehub/30min" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="block text-center border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:border-gray-400 transition font-medium"
+                <CheckoutButton
+                  plan="starter"
+                  className="block w-full text-center border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:border-gray-400 transition font-medium cursor-pointer"
                 >
                   Get Started
-                </a>
+                </CheckoutButton>
               </div>
 
               {/* Growth - Featured */}
@@ -836,14 +835,12 @@ export default function Home() {
                     </li>
                   ))}
                 </ul>
-                <a 
-                  href="https://cal.com/contentrepurposehub/30min" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="block text-center gradient-bg text-white px-6 py-3 rounded-lg hover:opacity-90 transition font-medium"
+                <CheckoutButton
+                  plan="growth"
+                  className="block w-full text-center gradient-bg text-white px-6 py-3 rounded-lg hover:opacity-90 transition font-medium cursor-pointer"
                 >
                   Get Started
-                </a>
+                </CheckoutButton>
               </div>
 
               {/* Scale */}
@@ -874,17 +871,15 @@ export default function Home() {
                     </li>
                   ))}
                 </ul>
-                <a 
-                  href="https://cal.com/contentrepurposehub/30min" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="block text-center border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:border-gray-400 transition font-medium"
+                <CheckoutButton
+                  plan="scale"
+                  className="block w-full text-center border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:border-gray-400 transition font-medium cursor-pointer"
                 >
                   Get Started
-                </a>
+                </CheckoutButton>
               </div>
             </div>
-            
+
             {/* Guarantee */}
             <div className="text-center mt-12 bg-white p-6 rounded-xl max-w-2xl mx-auto card-shadow">
               <p className="text-gray-900 font-semibold text-lg mb-2">
