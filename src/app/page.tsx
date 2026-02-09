@@ -215,6 +215,89 @@ export default function Home() {
         isPartOf: { '@id': 'https://contentrepurposehub.com/#website' },
         about: { '@id': 'https://contentrepurposehub.com/#service' },
         mainEntity: { '@id': 'https://contentrepurposehub.com/#service' }
+      },
+      {
+        '@type': 'ItemList',
+        '@id': 'https://contentrepurposehub.com/#webinar-repurposing-checklist',
+        name: 'Webinar Repurposing Checklist: 14 Ways to Repurpose Your Webinar',
+        description: 'Free checklist for coaches and consultants showing 14 proven ways to repurpose a single webinar into 30+ pieces of content, including video clips, blog posts, carousels, email sequences, and YouTube videos.',
+        url: 'https://contentrepurposehub.com/#free-checklists',
+        numberOfItems: 14,
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Vertical Video Clips', description: 'Create 3-5 short-form video clips from key webinar moments for TikTok, Instagram Reels, and YouTube Shorts.' },
+          { '@type': 'ListItem', position: 2, name: 'Audiogram Clips', description: 'Create 2-3 audiogram clips with waveform animations for LinkedIn and Twitter.' },
+          { '@type': 'ListItem', position: 3, name: 'Quote Cards', description: 'Create 5-8 shareable quote cards from memorable webinar moments.' },
+          { '@type': 'ListItem', position: 4, name: 'Full Blog Post', description: 'Transform your webinar into a 1,500-2,500 word SEO-optimized blog post.' },
+          { '@type': 'ListItem', position: 5, name: 'LinkedIn Article', description: 'Write an 800-1,200 word LinkedIn article for thought leadership.' },
+          { '@type': 'ListItem', position: 6, name: 'Podcast Episode', description: 'Extract audio from your webinar and create a podcast episode with intro and outro.' },
+          { '@type': 'ListItem', position: 7, name: 'PDF Checklist or Guide', description: 'Create a 1-2 page PDF lead magnet that captures emails.' },
+          { '@type': 'ListItem', position: 8, name: 'Slide Deck Download', description: 'Clean up your presentation slides and offer as a downloadable resource.' },
+          { '@type': 'ListItem', position: 9, name: 'Twitter/X Thread', description: 'Break webinar insights into an 8-15 tweet thread that teaches.' },
+          { '@type': 'ListItem', position: 10, name: 'LinkedIn Carousel', description: 'Design 8-12 swipeable carousel slides from your webinar framework.' },
+          { '@type': 'ListItem', position: 11, name: 'Micro-Lesson Posts', description: 'Create 5-7 standalone social media posts from individual webinar sections.' },
+          { '@type': 'ListItem', position: 12, name: 'Welcome Email Sequence', description: 'Build a 3-5 email welcome sequence that nurtures leads.' },
+          { '@type': 'ListItem', position: 13, name: 'Newsletter Content', description: 'Turn webinar Q&A into 2-3 newsletter editions ready to send.' },
+          { '@type': 'ListItem', position: 14, name: 'YouTube Long-Form Video', description: 'Upload your full webinar to YouTube with chapters and keyword-rich description for search traffic.' }
+        ]
+      },
+      {
+        '@type': 'HowTo',
+        '@id': 'https://contentrepurposehub.com/#howto-vertical-video',
+        name: 'How to Create Vertical Video Clips from Your Webinar',
+        description: 'Turn key moments from your webinar into 3-5 short-form video clips for TikTok, Instagram Reels, and YouTube Shorts.',
+        step: [
+          { '@type': 'HowToStep', name: 'Watch and timestamp', text: 'Watch your webinar at 1.5x speed and timestamp the moments where you explained something perfectly or told a compelling story.' },
+          { '@type': 'HowToStep', name: 'Cut clips', text: 'Cut 30-60 second clips from each timestamped moment.' },
+          { '@type': 'HowToStep', name: 'Add captions', text: 'Add captions to each clip since 85% of viewers watch on mute.' },
+          { '@type': 'HowToStep', name: 'Distribute', text: 'Post clips to TikTok, Instagram Reels, and YouTube Shorts.' }
+        ]
+      },
+      {
+        '@type': 'HowTo',
+        '@id': 'https://contentrepurposehub.com/#howto-blog-post',
+        name: 'How to Turn Your Webinar into an SEO Blog Post',
+        description: 'Transform your webinar into a 1,500-2,500 word blog post optimized for Google and AI search engines.',
+        step: [
+          { '@type': 'HowToStep', name: 'Transcribe', text: 'Transcribe your webinar using Otter.ai or similar transcription tools.' },
+          { '@type': 'HowToStep', name: 'Clean up', text: 'Remove filler words, ums, and verbal tics from the transcript.' },
+          { '@type': 'HowToStep', name: 'Structure', text: 'Add H2 headers every 200-300 words and organize into logical sections.' },
+          { '@type': 'HowToStep', name: 'Optimize', text: 'Include your target keyword in the title and throughout the post. This becomes evergreen content.' }
+        ]
+      },
+      {
+        '@type': 'HowTo',
+        '@id': 'https://contentrepurposehub.com/#howto-linkedin-carousel',
+        name: 'How to Create a LinkedIn Carousel from Your Webinar',
+        description: 'Design 8-12 swipeable LinkedIn carousel slides from your webinar framework. Carousels outperform regular posts on LinkedIn.',
+        step: [
+          { '@type': 'HowToStep', name: 'Create hook slide', text: 'Design Slide 1 as a compelling hook that makes people want to swipe.' },
+          { '@type': 'HowToStep', name: 'One point per slide', text: 'Create Slides 2-10 with one key point from your webinar per slide.' },
+          { '@type': 'HowToStep', name: 'Add CTA', text: 'Design the last slide with a clear call-to-action.' },
+          { '@type': 'HowToStep', name: 'Design', text: 'Use Canva carousel templates to create professional-looking slides.' }
+        ]
+      },
+      {
+        '@type': 'HowTo',
+        '@id': 'https://contentrepurposehub.com/#howto-email-sequence',
+        name: 'How to Build a Welcome Email Sequence from Your Webinar',
+        description: 'Create a 3-5 email welcome sequence that nurtures leads using insights from your webinar.',
+        step: [
+          { '@type': 'HowToStep', name: 'Deliver value', text: 'Email 1: Deliver your lead magnet and set expectations.' },
+          { '@type': 'HowToStep', name: 'Share insights', text: 'Emails 2-4: Share one key insight from your webinar per email.' },
+          { '@type': 'HowToStep', name: 'Convert', text: 'Email 5: Include a soft call-to-action. Keep all emails short and actionable.' }
+        ]
+      },
+      {
+        '@type': 'HowTo',
+        '@id': 'https://contentrepurposehub.com/#howto-youtube-video',
+        name: 'How to Upload Your Webinar as YouTube Long-Form Video',
+        description: 'Upload your full webinar to YouTube with chapters and keyword-rich description for evergreen search traffic.',
+        step: [
+          { '@type': 'HowToStep', name: 'Edit', text: 'Edit out dead time and unnecessary pauses from your webinar recording.' },
+          { '@type': 'HowToStep', name: 'Add chapters', text: 'Add chapter markers so viewers can jump to specific sections.' },
+          { '@type': 'HowToStep', name: 'Optimize title', text: 'Write a searchable, keyword-rich title for YouTube SEO.' },
+          { '@type': 'HowToStep', name: 'Create thumbnail', text: 'Create an eye-catching thumbnail and let the YouTube algorithm work.' }
+        ]
       }
     ]
   };
@@ -233,7 +316,7 @@ export default function Home() {
               Content<span className="text-blue-600">Repurpose</span>Hub
             </div>
             <div className="hidden md:flex items-center gap-8">
-              <a href="#free-checklist" className="text-gray-600 hover:text-gray-900 transition">Free Checklist</a>
+              <a href="#free-checklists" className="text-gray-600 hover:text-gray-900 transition">Free Checklists</a>
               <a href="#how-it-works" className="text-gray-600 hover:text-gray-900 transition">How It Works</a>
               <a href="#pricing" className="text-gray-600 hover:text-gray-900 transition">Pricing</a>
               <a href="#faq" className="text-gray-600 hover:text-gray-900 transition">FAQ</a>
@@ -326,26 +409,180 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Free Webinar Repurposing Checklists Section */}
+        <section id="free-checklists" className="py-20 px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <div className="inline-block bg-green-100 text-green-700 px-4 py-1 rounded-full text-sm font-medium mb-4">
+                Free Resource — No Email Required
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Webinar Repurposing Checklist: 5 of 14 Ways to Repurpose Your Webinar
+              </h2>
+              <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+                Here are 5 proven content formats you can create from every webinar you run — with step-by-step instructions. Get all 14 by subscribing below.
+              </p>
+            </div>
+
+            {/* 5 Free Checklists */}
+            <div className="space-y-6">
+              {/* Checklist 1: Vertical Video Clips */}
+              <article className="bg-white rounded-xl p-6 md:p-8 border border-gray-200 card-shadow">
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="gradient-bg text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">1</span>
+                  <span className="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full font-medium">Short-Form Video</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-1">Vertical Video Clips</h3>
+                <p className="text-sm text-blue-600 font-medium mb-3">Create 3-5 clips per webinar</p>
+                <p className="text-gray-600 mb-4">
+                  Your webinar is full of gold. Those moments where you explained something perfectly or told a compelling story — those moments become TikToks, Reels, and YouTube Shorts.
+                </p>
+                <div className="bg-green-50 border-l-4 border-green-400 p-4 rounded-r-lg">
+                  <p className="text-xs font-bold text-green-700 uppercase tracking-wide mb-1">How To Do It</p>
+                  <p className="text-gray-700 text-sm">
+                    Watch at 1.5x speed. Timestamp the good moments. Cut 30-60 second clips. Add captions (85% watch on mute). Post everywhere.
+                  </p>
+                </div>
+              </article>
+
+              {/* Checklist 2: Full Blog Post */}
+              <article className="bg-white rounded-xl p-6 md:p-8 border border-gray-200 card-shadow">
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="gradient-bg text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">2</span>
+                  <span className="text-xs bg-purple-100 text-purple-700 px-3 py-1 rounded-full font-medium">Long-Form Content</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-1">Full Blog Post</h3>
+                <p className="text-sm text-blue-600 font-medium mb-3">1,500-2,500 words for SEO</p>
+                <p className="text-gray-600 mb-4">
+                  Your webinar is a rough draft of a blog post. The structure, examples, and expertise are already there. It just needs reformatting for readers.
+                </p>
+                <div className="bg-green-50 border-l-4 border-green-400 p-4 rounded-r-lg">
+                  <p className="text-xs font-bold text-green-700 uppercase tracking-wide mb-1">How To Do It</p>
+                  <p className="text-gray-700 text-sm">
+                    Transcribe with Otter.ai. Remove filler words. Add H2 headers every 200-300 words. Include target keyword in title. This becomes evergreen content.
+                  </p>
+                </div>
+              </article>
+
+              {/* Checklist 3: LinkedIn Carousel */}
+              <article className="bg-white rounded-xl p-6 md:p-8 border border-gray-200 card-shadow">
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="gradient-bg text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">3</span>
+                  <span className="text-xs bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full font-medium">Social Media</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-1">LinkedIn Carousel</h3>
+                <p className="text-sm text-blue-600 font-medium mb-3">8-12 swipeable slides</p>
+                <p className="text-gray-600 mb-4">
+                  Carousels outperform regular posts on LinkedIn. Take a framework from your webinar, design one slide per point, and watch the saves pile up.
+                </p>
+                <div className="bg-green-50 border-l-4 border-green-400 p-4 rounded-r-lg">
+                  <p className="text-xs font-bold text-green-700 uppercase tracking-wide mb-1">How To Do It</p>
+                  <p className="text-gray-700 text-sm">
+                    Slide 1: Hook. Slides 2-10: One point each. Last slide: CTA. Use Canva carousel templates.
+                  </p>
+                </div>
+              </article>
+
+              {/* Checklist 4: Welcome Email Sequence */}
+              <article className="bg-white rounded-xl p-6 md:p-8 border border-gray-200 card-shadow">
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="gradient-bg text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">4</span>
+                  <span className="text-xs bg-orange-100 text-orange-700 px-3 py-1 rounded-full font-medium">Email Content</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-1">Welcome Email Sequence</h3>
+                <p className="text-sm text-blue-600 font-medium mb-3">3-5 emails that nurture leads</p>
+                <p className="text-gray-600 mb-4">
+                  Someone downloads your lead magnet. Then what? A welcome sequence keeps you top of mind and builds the relationship that converts subscribers into clients.
+                </p>
+                <div className="bg-green-50 border-l-4 border-green-400 p-4 rounded-r-lg">
+                  <p className="text-xs font-bold text-green-700 uppercase tracking-wide mb-1">How To Do It</p>
+                  <p className="text-gray-700 text-sm">
+                    Email 1: Deliver the magnet. Emails 2-4: One insight from your webinar each. Email 5: Soft CTA. Keep emails short and valuable.
+                  </p>
+                </div>
+              </article>
+
+              {/* Checklist 5: YouTube Long-Form Video */}
+              <article className="bg-white rounded-xl p-6 md:p-8 border border-gray-200 card-shadow">
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="gradient-bg text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">5</span>
+                  <span className="text-xs bg-red-100 text-red-700 px-3 py-1 rounded-full font-medium">Evergreen Assets</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-1">YouTube Long-Form Video</h3>
+                <p className="text-sm text-blue-600 font-medium mb-3">Full webinar for search traffic</p>
+                <p className="text-gray-600 mb-4">
+                  Upload to YouTube with chapters and a keyword-rich description. Your webinar often becomes your top-performing content for organic search traffic.
+                </p>
+                <div className="bg-green-50 border-l-4 border-green-400 p-4 rounded-r-lg">
+                  <p className="text-xs font-bold text-green-700 uppercase tracking-wide mb-1">How To Do It</p>
+                  <p className="text-gray-700 text-sm">
+                    Edit out dead time. Add chapter markers. Write a searchable title. Create a thumbnail. Let the YouTube algorithm work for you.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            {/* 9 Locked Checklists */}
+            <div className="mt-16">
+              <div className="text-center mb-8">
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
+                  + 9 More Ways to Repurpose Your Webinar
+                </h3>
+                <p className="text-gray-600 mt-2 text-lg">
+                  Get the complete checklist with all 14 content formats — free.
+                </p>
+              </div>
+              <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+                {[
+                  { num: 6, title: 'Audiogram Clips', category: 'Short-Form Video', subtitle: '2-3 clips per webinar' },
+                  { num: 7, title: 'Quote Cards', category: 'Social Graphics', subtitle: '5-8 cards per webinar' },
+                  { num: 8, title: 'LinkedIn Article', category: 'Long-Form Content', subtitle: '800-1,200 words' },
+                  { num: 9, title: 'Podcast Episode', category: 'Long-Form Content', subtitle: 'Audio with intro/outro' },
+                  { num: 10, title: 'PDF Checklist or Guide', category: 'Lead Magnets', subtitle: '1-2 pages that capture emails' },
+                  { num: 11, title: 'Slide Deck Download', category: 'Lead Magnets', subtitle: 'Your slides as a resource' },
+                  { num: 12, title: 'Twitter/X Thread', category: 'Social Media', subtitle: '8-15 tweets that teach' },
+                  { num: 13, title: 'Micro-Lesson Posts', category: 'Social Media', subtitle: '5-7 standalone posts' },
+                  { num: 14, title: 'Newsletter Content', category: 'Email Content', subtitle: '2-3 editions ready to send' },
+                ].map((item) => (
+                  <div key={item.num} className="relative bg-white rounded-xl p-5 border border-gray-200 overflow-hidden">
+                    <div className="absolute inset-0 bg-white/60 backdrop-blur-[2px] z-10 flex items-center justify-center">
+                      <div className="text-center">
+                        <span className="text-2xl">🔒</span>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-2 mb-2">
+                      <span className="bg-gray-300 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0">{item.num}</span>
+                      <span className="text-xs text-gray-400 font-medium">{item.category}</span>
+                    </div>
+                    <h4 className="text-base font-semibold text-gray-900 mb-1">{item.title}</h4>
+                    <p className="text-xs text-gray-500">{item.subtitle}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Lead Magnet / Email Capture Section */}
-        <section id="free-checklist" className="py-20 px-4">
+        <section id="free-checklist" className="py-20 px-4 bg-gray-50">
           <div className="max-w-2xl mx-auto">
-            <div className="bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl p-8 md:p-12 card-shadow">
+            <div className="bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl p-6 sm:p-8 md:p-12 card-shadow">
               <div className="text-center">
                 <div className="inline-block bg-white/20 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
-                  Free Resource
+                  Free Download — All 14 Checklists
                 </div>
                 <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                  Not Ready to Book? Get the Free Checklist
+                  Get the Complete Webinar Repurposing Checklist
                 </h2>
                 <p className="text-xl text-blue-100 font-semibold mb-4">
-                  14 Content Ideas from Your Next Webinar
+                  All 14 Content Ideas + Step-by-Step Instructions
                 </p>
                 <p className="text-blue-100 mb-8 max-w-lg mx-auto">
-                  See exactly what content you could be creating from every webinar you run. We&apos;ll send you the checklist our clients use.
+                  You just saw 5 of the 14 ways to repurpose your webinar. Get the full checklist with all 14 content formats — including the 9 you haven&apos;t seen yet.
                 </p>
 
                 {/* Beehiiv Embed Form */}
-                <div className="mb-6 bg-white rounded-xl p-6">
+                <div className="mb-6 bg-white rounded-xl p-4 sm:p-6 overflow-hidden">
                   <BeehiivSubscribeForm />
                 </div>
 

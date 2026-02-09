@@ -20,7 +20,7 @@ export default function BeehiivSubscribeForm() {
         scrolling="no"
         style={{
           width: "100%",
-          maxWidth: "560px",
+          maxWidth: "100%",
           height: "291px",
           margin: "0 auto",
           borderRadius: "0px",
