@@ -397,7 +397,7 @@ export default function HowToChooseContentRepurposingService() {
                     { q: '2. How many pieces per webinar?', a: '14-75+ depending on your plan. Our Starter plan delivers 14+ pieces per webinar. Growth delivers 30+. Authority delivers 75+.' },
                     { q: '3. Google AND AI search?', a: 'Both. Every blog post includes target keywords, FAQ schema, Article schema, BreadcrumbList schema, and direct-answer formatting optimized for ChatGPT, Perplexity, and Gemini.' },
                     { q: '4. Turnaround time?', a: '7-10 business days from receiving your recording. Preview sent for approval before finalizing.' },
-                    { q: '5. Samples?', a: 'Yes. We share real client examples on our strategy call and can provide references from coaches and consultants in your niche.' },
+                    { q: '5. Samples?', a: 'Yes. We walk through sample content on our strategy call and show you exactly what your webinar would become.' },
                     { q: '6. Formats delivered?', a: 'Blog posts (Google Doc or HTML), LinkedIn text posts (ready to paste), carousel slides (designed PDF), vertical video clips (MP4 with captions), email sequences (subject lines + body), lead magnets (designed PDF), newsletter editions, quote cards, and more depending on your plan.' },
                     { q: '7. Minimum commitment?', a: 'Month-to-month. No contracts. Cancel anytime. We earn your business every delivery.' },
                     { q: '8. Revisions?', a: 'Two rounds included with every delivery, 2-3 business day turnaround. We want you happy with every piece.' },
@@ -562,6 +562,9 @@ export default function HowToChooseContentRepurposingService() {
             >
               Book Free Strategy Call &rarr;
             </a>
+            <p className="text-blue-200 text-sm mt-4">
+              No contracts. 30-day guarantee. Cancel anytime.
+            </p>
           </div>
         </section>
 

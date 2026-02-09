@@ -648,6 +648,9 @@ export default function WebinarEvergreenSeoContent() {
               >
                 Book Free Strategy Call
               </a>
+            <p className="text-blue-200 text-sm mt-4">
+              No contracts. 30-day guarantee. Cancel anytime.
+            </p>
             </div>
           </div>
         </section>

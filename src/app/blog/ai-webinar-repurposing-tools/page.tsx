@@ -452,7 +452,7 @@ export default function AIWebinarRepurposingTools() {
                   The best of both worlds.
                 </p>
                 <p className="text-gray-600 mb-4">
-                  AI speed + human quality. That&apos;s what our clients get every month.
+                  AI speed + human quality. That&apos;s what the service delivers every month.
                 </p>
                 <a
                   href="https://cal.com/contentrepurposehub/30min"
@@ -660,6 +660,9 @@ export default function AIWebinarRepurposingTools() {
             >
               Book Free Strategy Call &rarr;
             </a>
+            <p className="text-blue-200 text-sm mt-4">
+              No contracts. 30-day guarantee. Cancel anytime.
+            </p>
           </div>
         </section>
 

@@ -374,7 +374,7 @@ export default function WebinarContentPiecesBreakdown() {
                   That&apos;s already 58+ content pieces. And we are not done.
                 </p>
                 <p className="text-gray-600 mb-4">
-                  Imagine producing this volume every month without lifting a finger. That is what our clients get.
+                  Imagine producing this volume every month without lifting a finger. That is what the service is built to deliver.
                 </p>
                 <a
                   href="https://cal.com/contentrepurposehub/30min"
@@ -712,6 +712,9 @@ export default function WebinarContentPiecesBreakdown() {
             >
               Book Free Strategy Call &rarr;
             </a>
+            <p className="text-blue-200 text-sm mt-4">
+              No contracts. 30-day guarantee. Cancel anytime.
+            </p>
           </div>
         </section>
 

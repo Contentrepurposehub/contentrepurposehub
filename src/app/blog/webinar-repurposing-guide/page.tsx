@@ -388,7 +388,7 @@ export default function WebinarRepurposingGuide() {
                   That&apos;s 14 content pieces from one webinar.
                 </p>
                 <p className="text-gray-600 mb-4">
-                  Imagine doing this every month. That&apos;s what our clients get.
+                  Imagine doing this every month. That&apos;s what the service delivers.
                 </p>
                 <a
                   href="https://cal.com/contentrepurposehub/30min"
@@ -637,6 +637,9 @@ export default function WebinarRepurposingGuide() {
             >
               Book Free Strategy Call &rarr;
             </a>
+            <p className="text-blue-200 text-sm mt-4">
+              No contracts. 30-day guarantee. Cancel anytime.
+            </p>
           </div>
         </section>
 

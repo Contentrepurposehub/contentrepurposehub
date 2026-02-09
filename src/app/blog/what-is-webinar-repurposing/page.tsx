@@ -292,7 +292,7 @@ export default function WhatIsWebinarRepurposing() {
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Step 1: Record Your Webinar (You Already Did This)</h3>
                 <p className="text-gray-700 mb-4">
-                  Any recorded webinar works. Zoom, Google Meet, Riverside, WebinarJam — the platform does not matter. You do not need studio lighting or a $2,000 microphone. If your audio is clear and your content is solid, that is enough. Most of our clients send us standard Zoom recordings.
+                  Any recorded webinar works. Zoom, Google Meet, Riverside, WebinarJam — the platform does not matter. You do not need studio lighting or a $2,000 microphone. If your audio is clear and your content is solid, that is enough. Standard Zoom recordings work perfectly.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Step 2: Transcribe and Analyze</h3>
@@ -573,6 +573,9 @@ export default function WhatIsWebinarRepurposing() {
             >
               Book Free Strategy Call &rarr;
             </a>
+            <p className="text-blue-200 text-sm mt-4">
+              No contracts. 30-day guarantee. Cancel anytime.
+            </p>
           </div>
         </section>
 
