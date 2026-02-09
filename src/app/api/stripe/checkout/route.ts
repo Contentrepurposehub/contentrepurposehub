@@ -21,8 +21,6 @@ export async function POST(req: NextRequest) {
     const session = await stripe.checkout.sessions.create({
       mode: 'subscription',
       line_items: [{ price: priceId, quantity: 1 }],
-      automatic_tax: { enabled: true },
-      tax_id_collection: { enabled: true },
       customer_creation: 'always',
       billing_address_collection: 'required',
       success_url: `${req.nextUrl.origin}?session_id={CHECKOUT_SESSION_ID}&success=true`,
@@ -34,6 +32,7 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({ url: session.url });
   } catch (err) {
+    console.error('Stripe checkout error:', err);
     const message = err instanceof Error ? err.message : 'Unknown error';
     return NextResponse.json({ error: message }, { status: 500 });
   }
