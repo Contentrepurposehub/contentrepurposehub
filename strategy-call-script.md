@@ -158,9 +158,21 @@ That moment is gold. They just confirmed the problem in their own words. Now you
 
 ## Part 5: Show What You'd Do (3 minutes)
 
-### Keep it about THEIR specific webinar, not the general service.
+### Start with the process — this is what makes you different.
 
-"Here's what would happen. You'd send us that webinar you did about [topic they mentioned]. We watch it, pull out the key ideas, the stories, the frameworks. Then we turn it into:
+"So here's what we'd do with that webinar you did about [topic they mentioned]. And I want to explain the process, because we don't just chop it into clips. There's a strategy behind it.
+
+**First, we capture your voice.** Before we create anything, we study how you speak — your phrases, your rhythm, the way you explain things. So every piece sounds like you wrote it. Not a freelancer. Not AI. You.
+
+**Then we find your strongest angles.** Your webinar has a lot of ideas in it. Some are good, a few are great. We figure out which ones your audience will respond to most and build content around those first.
+
+**We also research what your audience actually searches.** So the blog post isn't just a cleaned-up transcript — it targets the exact keywords your ideal clients are typing into Google.
+
+**And we build each piece for the platform it lives on.** A LinkedIn post follows LinkedIn patterns. An email sequence follows proven conversion frameworks. A lead magnet is designed to capture emails, not just summarize your slides."
+
+### Then show the specific deliverables:
+
+"So from that one webinar about [their topic], you'd get back:
 
 - A lead magnet about [specific angle from their topic]
 - 10 LinkedIn posts that position you as the go-to person for [their thing]
@@ -168,15 +180,11 @@ That moment is gold. They just confirmed the problem in their own words. Now you
 - A newsletter for your existing list
 - A landing page for the lead magnet
 
-All in your voice. We use your actual words from the recording, so it sounds like you — because it is you. Everything is optimized for Google and AI search engines."
+14 pieces. All in your voice. All optimized for search. Delivered in 7-10 business days."
 
 ### The AI search part (use this — it's your differentiator):
 
 "Here's something worth knowing. More and more people are asking ChatGPT or Perplexity things like 'who's a good coach for [their niche].' If your content isn't set up for that, you're invisible to all those people. We structure everything so AI assistants can find and cite you. Nobody else doing webinar repurposing does this."
-
-### Quick proof:
-
-"This is what we do for coaches like you. The typical result is they go from creating content from scratch every week to having a full month of content from one webinar — and they get their time back."
 
 ---
 
@@ -277,7 +285,7 @@ Don't chase people who can't afford it. It never ends well.
 
 **"Can I see samples first?"**
 
-"Of course. I'll send you examples of LinkedIn posts, a blog post, and a lead magnet we've created. What format would be most useful to see?"
+"Of course. I'll send you sample LinkedIn posts, a blog post, and a lead magnet so you can see the quality and style. What format would be most useful to see?"
 
 Follow up within 1 hour with samples + a link to book another call if they want to continue.
 
