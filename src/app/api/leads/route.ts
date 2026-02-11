@@ -7,6 +7,16 @@ interface LeadPayload {
   source?: string
 }
 
+function toBase64Url(data: string | Uint8Array): string {
+  let b64: string
+  if (typeof data === 'string') {
+    b64 = btoa(data)
+  } else {
+    b64 = btoa(String.fromCharCode(...data))
+  }
+  return b64.replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '')
+}
+
 // Google Sheets API integration
 async function appendToGoogleSheet(lead: LeadPayload) {
   const privateKey = process.env.GOOGLE_SHEETS_PRIVATE_KEY?.replace(/\\n/g, '\n')
@@ -19,10 +29,10 @@ async function appendToGoogleSheet(lead: LeadPayload) {
     return { stored: 'logs' }
   }
 
-  // Create JWT for Google Sheets API
-  const header = btoa(JSON.stringify({ alg: 'RS256', typ: 'JWT' }))
+  // Create JWT for Google Sheets API (base64url encoded)
+  const header = toBase64Url(JSON.stringify({ alg: 'RS256', typ: 'JWT' }))
   const now = Math.floor(Date.now() / 1000)
-  const claimSet = btoa(
+  const claimSet = toBase64Url(
     JSON.stringify({
       iss: clientEmail,
       scope: 'https://www.googleapis.com/auth/spreadsheets',
@@ -49,8 +59,9 @@ async function appendToGoogleSheet(lead: LeadPayload) {
   )
 
   const signatureInput = encoder.encode(`${header}.${claimSet}`)
-  const signature = await crypto.subtle.sign('RSASSA-PKCS1-v1_5', cryptoKey, signatureInput)
-  const jwt = `${header}.${claimSet}.${btoa(String.fromCharCode(...new Uint8Array(signature)))}`
+  const signatureBuffer = await crypto.subtle.sign('RSASSA-PKCS1-v1_5', cryptoKey, signatureInput)
+  const signature = toBase64Url(new Uint8Array(signatureBuffer))
+  const jwt = `${header}.${claimSet}.${signature}`
 
   // Exchange JWT for access token
   const tokenRes = await fetch('https://oauth2.googleapis.com/token', {
@@ -61,11 +72,15 @@ async function appendToGoogleSheet(lead: LeadPayload) {
 
   const tokenData = await tokenRes.json()
   if (!tokenData.access_token) {
+    console.error('Google token error:', JSON.stringify(tokenData))
     throw new Error('Failed to get Google access token')
   }
 
-  // Append row to sheet
-  const sheetName = lead.client || 'Leads'
+  // Append row to sheet — tab names map to how they appear in Google Sheets
+  const SHEET_TAB_NAMES: Record<string, string> = {
+    'david-bach': 'David-Bach',
+  }
+  const sheetName = SHEET_TAB_NAMES[lead.client] || lead.client || 'Leads'
   const values = [[lead.name, lead.email, new Date().toISOString(), lead.source || 'direct', lead.client]]
 
   const sheetsRes = await fetch(

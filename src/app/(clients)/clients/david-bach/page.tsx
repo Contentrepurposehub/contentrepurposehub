@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import LeadCaptureForm from './LeadCaptureForm'
 
 export const metadata: Metadata = {
@@ -44,18 +45,48 @@ export default function DavidBachLanding() {
       <main className="min-h-screen">
         {/* Hero — Lead Capture */}
         <section className="py-16 md:py-24 px-4 bg-gradient-to-b from-[#1e3a5f]/5 to-white">
-          <div className="max-w-xl mx-auto text-center">
-            <p className="text-sm font-medium text-[#1e3a5f] uppercase tracking-wider mb-4">
-              Free 5-Minute Assessment
-            </p>
-            <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-5 leading-tight">
-              How Automatic Is Your Financial Life?
-            </h1>
-            <p className="text-lg text-gray-600 mb-8 max-w-md mx-auto">
-              Most people think they need more income to build wealth. They don&apos;t. They need a better system. Take the scorecard and find out where yours stands.
-            </p>
-            <div className="max-w-sm mx-auto">
-              <LeadCaptureForm source="hero" />
+          <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            {/* Left — Copy + Form */}
+            <div>
+              {/* Author identity */}
+              <div className="flex items-center gap-3 mb-6">
+                <Image
+                  src="/clients/david-bach/david-bach-headshot.jpg"
+                  alt="David Bach"
+                  width={48}
+                  height={48}
+                  className="rounded-full object-cover w-12 h-12"
+                />
+                <div>
+                  <p className="text-sm font-semibold text-gray-900">David Bach</p>
+                  <p className="text-xs text-gray-500">9x NYT Bestselling Author &middot; 10M+ books sold</p>
+                </div>
+              </div>
+
+              <p className="text-sm font-medium text-[#1e3a5f] uppercase tracking-wider mb-4">
+                Free 5-Minute Assessment
+              </p>
+              <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-5 leading-tight">
+                How Automatic Is Your Financial Life?
+              </h1>
+              <p className="text-lg text-gray-600 mb-8">
+                $27.40 a day invested = $4.4M in 40 years. How much of that are you capturing? Find out in 5 minutes.
+              </p>
+              <div className="max-w-sm">
+                <LeadCaptureForm source="hero" />
+              </div>
+            </div>
+
+            {/* Right — Photo */}
+            <div className="hidden md:block">
+              <Image
+                src="/clients/david-bach/david-bach-headshot.jpg"
+                alt="David Bach — 9x New York Times bestselling author and financial educator"
+                width={600}
+                height={400}
+                className="rounded-2xl object-cover w-full shadow-lg"
+                priority
+              />
             </div>
           </div>
         </section>
@@ -99,6 +130,16 @@ export default function DavidBachLanding() {
           </div>
         </section>
 
+        {/* Signature Quote */}
+        <section className="py-10 px-4 bg-[#1e3a5f]">
+          <div className="max-w-2xl mx-auto text-center">
+            <blockquote className="text-white text-lg md:text-xl italic font-medium leading-relaxed">
+              &ldquo;Your money and your investments should be boring. Your life should be interesting.&rdquo;
+            </blockquote>
+            <p className="text-white/60 text-sm mt-3">&mdash; David Bach</p>
+          </div>
+        </section>
+
         {/* Social Proof */}
         <section className="py-14 px-4 bg-gray-50">
           <div className="max-w-2xl mx-auto text-center">
@@ -108,7 +149,7 @@ export default function DavidBachLanding() {
             <p className="text-gray-600 text-lg mb-8">
               This scorecard is built on David Bach&apos;s Automatic Millionaire system &mdash; the framework behind nearly 10 million books sold and 33 years of financial advising.
             </p>
-            <div className="grid grid-cols-3 gap-6">
+            <div className="grid grid-cols-3 gap-6 mb-10">
               <div>
                 <p className="text-3xl font-bold text-[#1e3a5f]">10M+</p>
                 <p className="text-gray-500 text-sm">Books sold worldwide</p>
@@ -120,6 +161,22 @@ export default function DavidBachLanding() {
               <div>
                 <p className="text-3xl font-bold text-[#1e3a5f]">33</p>
                 <p className="text-gray-500 text-sm">Years of advising</p>
+              </div>
+            </div>
+
+            {/* As Featured In */}
+            <div className="border-t border-gray-200 pt-8">
+              <p className="text-xs uppercase tracking-wider text-gray-400 mb-4">As featured on</p>
+              <div className="flex items-center justify-center gap-6 md:gap-10 text-gray-400 text-sm font-medium">
+                <span>Oprah</span>
+                <span className="text-gray-200">|</span>
+                <span>The Today Show</span>
+                <span className="text-gray-200">|</span>
+                <span>CNN</span>
+                <span className="text-gray-200">|</span>
+                <span>GMA</span>
+                <span className="text-gray-200">|</span>
+                <span>CNBC</span>
               </div>
             </div>
           </div>
