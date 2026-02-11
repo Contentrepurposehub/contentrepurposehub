@@ -41,7 +41,7 @@ export default function LeadCaptureForm({ source = 'landing-page' }: { source?: 
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
+    <form onSubmit={handleSubmit} className="space-y-4" suppressHydrationWarning>
       <div>
         <input
           type="text"
@@ -49,6 +49,7 @@ export default function LeadCaptureForm({ source = 'landing-page' }: { source?: 
           value={name}
           onChange={(e) => setName(e.target.value)}
           required
+          suppressHydrationWarning
           className="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#1e3a5f] focus:border-transparent"
         />
       </div>
@@ -59,6 +60,7 @@ export default function LeadCaptureForm({ source = 'landing-page' }: { source?: 
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
+          suppressHydrationWarning
           className="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#1e3a5f] focus:border-transparent"
         />
       </div>
