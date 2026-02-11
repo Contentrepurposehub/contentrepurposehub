@@ -217,6 +217,15 @@ export default function AutomaticMillionaireBlog() {
               </p>
             </div>
 
+            {/* CTA: Scorecard */}
+            <div className="bg-[#1e3a5f] text-white rounded-xl p-6 mb-10 text-center">
+              <p className="text-lg font-semibold mb-2">Want to know where you stand?</p>
+              <p className="text-white/80 text-sm mb-4">Take the free 5-minute Automatic Millionaire Scorecard and find out how automatic your financial life really is.</p>
+              <a href="/clients/david-bach" className="inline-block bg-white text-[#1e3a5f] font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition">
+                Take the Free Scorecard &rarr;
+              </a>
+            </div>
+
             {/* Table of Contents */}
             <div className="bg-gray-50 rounded-xl p-6 mb-12 border border-gray-200">
               <h2 className="text-lg font-semibold text-gray-900 mb-3">Table of Contents</h2>
@@ -427,6 +436,15 @@ export default function AutomaticMillionaireBlog() {
                 <p className="text-gray-700 text-lg">
                   It&apos;s the financial equivalent of going to the gym. You don&apos;t start with 300 pounds on the bar. You start with the bar.
                 </p>
+
+                {/* Mid-article CTA */}
+                <div className="mt-8 bg-gray-50 border border-[#1e3a5f]/20 rounded-xl p-6 text-center">
+                  <p className="text-gray-900 font-semibold mb-1">How automatic is your financial life right now?</p>
+                  <p className="text-gray-600 text-sm mb-3">Take the free scorecard — 24 questions, 5 minutes, instant results.</p>
+                  <a href="/clients/david-bach" className="inline-block bg-[#1e3a5f] text-white font-medium px-5 py-2.5 rounded-lg hover:bg-[#162d4a] transition text-sm">
+                    Take the Free Scorecard &rarr;
+                  </a>
+                </div>
               </section>
 
               {/* The Latte Factor */}
@@ -932,6 +950,19 @@ export default function AutomaticMillionaireBlog() {
                   <p className="text-gray-700 text-lg italic">
                     David Bach is a 9x New York Times bestselling author whose books have sold nearly 10 million copies worldwide. He spent 9 years as Senior Vice President at Morgan Stanley and has dedicated the last 30 years to helping ordinary people with ordinary incomes become financially free. His updated book, The Automatic Millionaire, is available now.
                   </p>
+                </div>
+              </section>
+
+              {/* End-of-article CTA */}
+              <section className="mt-12">
+                <div className="bg-[#1e3a5f] text-white rounded-xl p-8 text-center">
+                  <h3 className="text-2xl font-bold mb-3">Ready to Put This Into Action?</h3>
+                  <p className="text-white/80 mb-6 max-w-md mx-auto">
+                    Take the free Automatic Millionaire Scorecard. 24 questions. 5 minutes. Find out exactly where your financial system needs work.
+                  </p>
+                  <a href="/clients/david-bach" className="inline-block bg-white text-[#1e3a5f] font-semibold px-8 py-3.5 rounded-lg hover:bg-gray-100 transition">
+                    Take the Free Scorecard &rarr;
+                  </a>
                 </div>
               </section>
 

@@ -20,27 +20,15 @@ export default function DavidBachLayout({
           <Link href="/clients/david-bach" className="font-bold text-xl text-gray-900">
             David <span className="text-[#1e3a5f]">Bach</span>
           </Link>
-          <div className="hidden md:flex items-center gap-6 text-sm">
+          <div className="flex items-center gap-6 text-sm">
             <Link href="/clients/david-bach/blog" className="text-gray-600 hover:text-gray-900 transition">
               Blog
             </Link>
-            <Link href="/clients/david-bach/scorecard" className="text-gray-600 hover:text-gray-900 transition">
-              Scorecard
-            </Link>
-            <Link href="/clients/david-bach/landing-page" className="text-gray-600 hover:text-gray-900 transition">
-              The Book
-            </Link>
-            <Link href="/clients/david-bach/newsletter" className="text-gray-600 hover:text-gray-900 transition">
-              Newsletter
-            </Link>
-            <Link href="/clients/david-bach/linkedin" className="text-gray-600 hover:text-gray-900 transition">
-              LinkedIn
-            </Link>
-          </div>
-          {/* Mobile menu toggle */}
-          <div className="md:hidden">
-            <Link href="/clients/david-bach" className="text-gray-600 text-sm">
-              Menu
+            <Link
+              href="/clients/david-bach"
+              className="bg-[#1e3a5f] text-white px-4 py-2 rounded-lg hover:bg-[#162d4a] transition font-medium"
+            >
+              Free Scorecard
             </Link>
           </div>
         </div>
