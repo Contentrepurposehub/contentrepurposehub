@@ -1,7 +1,42 @@
 import { MetadataRoute } from 'next'
+import { getAllClientSlugs, getClientBlogPosts } from '@/lib/clients'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://contentrepurposehub.com'
+
+  // Generate client URLs dynamically from the client registry
+  const clientUrls: MetadataRoute.Sitemap = getAllClientSlugs().flatMap((slug) => {
+    const posts = getClientBlogPosts(slug)
+    return [
+      {
+        url: `${baseUrl}/clients/${slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly' as const,
+        priority: 0.6,
+      },
+      {
+        url: `${baseUrl}/clients/${slug}/blog`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly' as const,
+        priority: 0.8,
+      },
+      {
+        url: `${baseUrl}/clients/${slug}/scorecard`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly' as const,
+        priority: 0.7,
+      },
+      // Add URLs for blog posts beyond the first (seriesOrder > 1)
+      ...posts
+        .filter((post) => post.seriesOrder > 1)
+        .map((post) => ({
+          url: `${baseUrl}/clients/${slug}/blog/${post.slug}`,
+          lastModified: new Date(),
+          changeFrequency: 'monthly' as const,
+          priority: 0.8,
+        })),
+    ]
+  })
 
   return [
     {
@@ -142,25 +177,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.9,
     },
-    // David Bach client deliverables
-    {
-      url: `${baseUrl}/clients/david-bach`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/clients/david-bach/blog`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/clients/david-bach/scorecard`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
+    // Client pages (auto-generated from client registry)
+    ...clientUrls,
     {
       url: `${baseUrl}/#pricing`,
       lastModified: new Date(),

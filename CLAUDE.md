@@ -711,11 +711,42 @@ Generates a report at `clients/[name]/report-month-N-[name].md` with content inv
 
 ### Adding a New Blog Post (Month 2+)
 
-1. Add the new post to `src/lib/clients.ts` in the client's `series.posts` array
-2. Create the content in `src/app/(clients)/clients/[name]/blog/[slug]/page.tsx`
-3. The sitemap auto-generates from the client registry
-4. Series navigation (prev/next) updates automatically
-5. Run `--mode append` on the Google Sheet
+**Step-by-step workflow for publishing the next post in a client's content series:**
+
+1. **Write the blog post** using `/seo-content` skill. Save as `clients/[name]/deliverables/0N-blog-post-month-N.md`. Use the existing `brief.md`, `brand-voice.md`, and `positioning-angles.md` from Month 1 — do NOT re-extract these.
+
+2. **Add the post to `src/lib/clients.ts`** in the client's `series.posts[]` array. Increment `seriesOrder`. Example:
+   ```ts
+   {
+     slug: 'how-to-finance-a-business-acquisition',
+     title: 'How to Finance a Business Acquisition: 7 Creative Structures',
+     date: '2026-03-12',
+     keyword: 'how to finance a business acquisition',
+     seriesOrder: 2,
+   },
+   ```
+
+3. **Build the blog content into the `[slug]/page.tsx` template.** The dynamic route at `src/app/(clients)/clients/[name]/blog/[slug]/page.tsx` exists but needs actual content for each new post. Manually build the JSX content following the same pattern as the first blog post (`blog/page.tsx`). Include:
+   - Series badge via `SeriesNav` (top position)
+   - Callback paragraph referencing previous post(s)
+   - 2-3 internal links to earlier posts + landing page CTA
+   - Open loop / cliffhanger at the end teasing the next topic
+   - Series navigation via `SeriesNav` (bottom position)
+
+   > **Future optimization:** Build an MDX loader to auto-render from the markdown deliverable, eliminating manual TSX. For now, manual TSX is the proven approach.
+
+4. **Sitemap auto-updates** — `src/app/sitemap.ts` dynamically reads from `clients.ts`. Posts with `seriesOrder > 1` get their own `/blog/[slug]` URL. No manual sitemap edits needed.
+
+5. **SeriesNav auto-updates** — `getSeriesNavigation()` in `clients.ts` calculates prev/next from the posts array. Post 1 will now show a "Next" link. The new post shows the series badge and "Previous" link. No component changes needed.
+
+6. **Append new content to Google Sheet** — Run with `--mode append` to add the new post's LinkedIn posts, newsletter, and updated posting schedule without wiping existing content:
+   ```bash
+   npx tsx scripts/create-client-deliverables.ts SPREADSHEET_ID \
+     --client [name] --tier starter --mode append --month N \
+     --source "Episode/webinar title"
+   ```
+
+7. **Deploy** — Push to main. Vercel auto-deploys. Verify the new post at `/clients/[name]/blog/[slug]` and check that series navigation works on all posts.
 
 ### Blog Serialization
 
