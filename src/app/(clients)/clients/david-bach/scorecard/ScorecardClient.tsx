@@ -426,7 +426,12 @@ function allCategoryAnswered(
 // Component
 // ---------------------------------------------------------------------------
 
-export default function ScorecardClient() {
+interface ScorecardClientProps {
+  conversionUrl?: string
+  conversionLabel?: string
+}
+
+export default function ScorecardClient({ conversionUrl, conversionLabel }: ScorecardClientProps) {
   const [scores, setScores] = useState<Record<string, number>>({})
   const [currentCategory, setCurrentCategory] = useState(-1) // -1 = intro
   const [showResults, setShowResults] = useState(false)
@@ -809,6 +814,29 @@ export default function ScorecardClient() {
               retirement is zero.
             </p>
           </div>
+
+          {/* Conversion CTA — shown when client has a conversion URL (replay or webinar) */}
+          {conversionUrl && conversionLabel && (
+            <div className="bg-gradient-to-br from-[#1e3a5f] to-[#2d5a8f] rounded-2xl p-8 md:p-10 text-center shadow-sm border-2 border-white/10">
+              <p className="text-sm text-white/60 uppercase tracking-wider font-medium mb-3">
+                Want the Complete Breakdown?
+              </p>
+              <h2 className="text-xl md:text-2xl font-bold text-white mb-3">
+                Watch David Bach&apos;s Full Training
+              </h2>
+              <p className="text-blue-100 text-sm md:text-base mb-6 max-w-lg mx-auto leading-relaxed">
+                This scorecard showed you where the gaps are. The training shows you exactly how to close them &mdash; with the same system that&apos;s created millions of automatic millionaires.
+              </p>
+              <a
+                href={conversionUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-white text-[#1e3a5f] font-semibold py-3.5 px-8 rounded-xl hover:bg-gray-100 transition-colors text-sm md:text-base"
+              >
+                {conversionLabel}
+              </a>
+            </div>
+          )}
 
           {/* CTA */}
           <div className="bg-[#1e3a5f] rounded-2xl p-8 md:p-10 text-center shadow-sm">

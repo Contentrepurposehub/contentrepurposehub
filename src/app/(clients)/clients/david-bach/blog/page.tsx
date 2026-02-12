@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import SeriesNav from '@/components/SeriesNav'
+import { getClient, getSeriesNavigation, getClientBlogPosts } from '@/lib/clients'
 
 export const metadata: Metadata = {
   title: 'How to Become an Automatic Millionaire: The Complete System (2026 Guide)',
@@ -24,6 +26,11 @@ export const metadata: Metadata = {
 }
 
 export default function AutomaticMillionaireBlog() {
+  const CLIENT_SLUG = 'david-bach'
+  const client = getClient(CLIENT_SLUG)!
+  const posts = getClientBlogPosts(CLIENT_SLUG)
+  const firstPost = posts[0]
+  const nav = getSeriesNavigation(CLIENT_SLUG, firstPost?.slug || '')
   const structuredData = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -185,6 +192,17 @@ export default function AutomaticMillionaireBlog() {
               <span className="mx-2">/</span>
               <span className="text-gray-700">Blog</span>
             </nav>
+
+            {/* Series badge */}
+            {nav.seriesName && (
+              <SeriesNav
+                clientSlug={CLIENT_SLUG}
+                seriesName={nav.seriesName}
+                currentOrder={firstPost?.seriesOrder || 1}
+                totalPosts={nav.totalPosts}
+                position="top"
+              />
+            )}
 
             {/* Header */}
             <header className="mb-10">
@@ -965,6 +983,19 @@ export default function AutomaticMillionaireBlog() {
                   </a>
                 </div>
               </section>
+
+              {/* Series navigation (bottom) */}
+              {nav.seriesName && (
+                <SeriesNav
+                  clientSlug={CLIENT_SLUG}
+                  seriesName={nav.seriesName}
+                  currentOrder={firstPost?.seriesOrder || 1}
+                  totalPosts={nav.totalPosts}
+                  prev={undefined}
+                  next={nav.next ? { slug: nav.next.slug, title: nav.next.title } : undefined}
+                  position="bottom"
+                />
+              )}
 
             </div>
           </div>

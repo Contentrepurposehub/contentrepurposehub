@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 
-export default function LeadCaptureForm({ source = 'landing-page', redirectUrl = '/clients/david-bach/scorecard' }: { source?: string; redirectUrl?: string }) {
+export default function LeadCaptureForm({ source = 'landing-page', redirectUrl = '/clients/chris-koerner/scorecard' }: { source?: string; redirectUrl?: string }) {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [status, setStatus] = useState<'idle' | 'submitting' | 'error'>('idle')
@@ -22,7 +22,7 @@ export default function LeadCaptureForm({ source = 'landing-page', redirectUrl =
         body: JSON.stringify({
           name,
           email,
-          client: 'david-bach',
+          client: 'chris-koerner',
           source,
         }),
       })
@@ -73,13 +73,13 @@ export default function LeadCaptureForm({ source = 'landing-page', redirectUrl =
         disabled={status === 'submitting'}
         className="w-full bg-[#1e3a5f] text-white font-semibold py-3.5 px-6 rounded-lg hover:bg-[#162d4a] transition disabled:opacity-60 disabled:cursor-not-allowed"
       >
-        {status === 'submitting' ? 'Getting Your Score...' : 'Get My Score →'}
+        {status === 'submitting' ? 'Getting Your Playbook...' : 'Send Me the Playbook \u2192'}
       </button>
       {status === 'error' && (
         <p className="text-red-600 text-sm text-center">{errorMsg}</p>
       )}
       <p className="text-gray-400 text-xs text-center">
-        Free. Takes 5 minutes. No spam — just your results.
+        Free. No spam. Just deal structures that actually work.
       </p>
     </form>
   )

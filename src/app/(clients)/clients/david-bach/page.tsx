@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import LeadCaptureForm from './LeadCaptureForm'
+import { getClient } from '@/lib/clients'
 
 export const metadata: Metadata = {
   title: 'How Automatic Is Your Financial Life? Free Scorecard | David Bach',
@@ -23,6 +24,9 @@ export const metadata: Metadata = {
 }
 
 export default function DavidBachLanding() {
+  const client = getClient('david-bach')
+  const redirectUrl = client?.postCaptureRedirect || '/clients/david-bach/scorecard'
+
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
@@ -73,7 +77,7 @@ export default function DavidBachLanding() {
                 $27.40 a day invested = $4.4M in 40 years. How much of that are you capturing? Find out in 5 minutes.
               </p>
               <div className="max-w-sm">
-                <LeadCaptureForm source="hero" />
+                <LeadCaptureForm source="hero" redirectUrl={redirectUrl} />
               </div>
             </div>
 
@@ -247,7 +251,7 @@ export default function DavidBachLanding() {
               Takes 5 minutes. Might change the next 40 years.
             </p>
             <div className="max-w-sm mx-auto">
-              <LeadCaptureForm source="footer" />
+              <LeadCaptureForm source="footer" redirectUrl={redirectUrl} />
             </div>
           </div>
         </section>

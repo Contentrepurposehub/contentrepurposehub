@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import ScorecardClient from './ScorecardClient'
+import { getClient } from '@/lib/clients'
 
 export const metadata: Metadata = {
   title: 'The Automatic Millionaire Scorecard — How Automatic Is Your Financial Life?',
@@ -26,6 +27,8 @@ export const metadata: Metadata = {
 }
 
 export default function ScorecardPage() {
+  const client = getClient('david-bach')
+
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
@@ -169,7 +172,10 @@ export default function ScorecardPage() {
         </p>
       </section>
 
-      <ScorecardClient />
+      <ScorecardClient
+        conversionUrl={client?.conversionUrl}
+        conversionLabel={client?.conversionLabel}
+      />
     </>
   )
 }
