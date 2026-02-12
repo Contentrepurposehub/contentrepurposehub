@@ -748,43 +748,73 @@ export default function Home() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                How Webinar Repurposing Works
+                How It Works Month Over Month
               </h2>
-              <p className="text-gray-600 text-lg">
-                From recorded webinar to published content in 4 simple steps
+              <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+                Month 1 builds the foundation. Every month after that builds on it &mdash; faster, cheaper for us to produce, and more valuable for you.
               </p>
             </div>
-            <div className="grid md:grid-cols-4 gap-8">
-              {[
-                { 
-                  step: '1', 
-                  title: 'Send Your Webinar', 
-                  desc: 'Share your recorded webinar (Zoom, YouTube, Vimeo — any format). We handle the rest.' 
-                },
-                { 
-                  step: '2', 
-                  title: 'We Extract Gold', 
-                  desc: 'Our team identifies key insights, stories, frameworks, and quotable moments from your content.' 
-                },
-                { 
-                  step: '3', 
-                  title: 'Content Creation', 
-                  desc: 'We transform your webinar into 14-75+ optimized content pieces based on your plan.' 
-                },
-                { 
-                  step: '4', 
-                  title: 'Publish & Rank', 
-                  desc: 'You receive ready-to-post content. Publish and watch your traffic grow from Google and AI search.' 
-                },
-              ].map((item, i) => (
-                <div key={i} className="text-center">
-                  <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
-                    {item.step}
+
+            {/* Month 1 */}
+            <div className="max-w-4xl mx-auto mb-12">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-10 h-10 gradient-bg rounded-full flex items-center justify-center text-white text-lg font-bold flex-shrink-0">1</div>
+                <h3 className="text-xl font-bold text-gray-900">Month 1: We Build Your Content Engine</h3>
+              </div>
+              <div className="grid sm:grid-cols-2 gap-4 ml-13 pl-0 sm:pl-[52px]">
+                {[
+                  { week: 'Week 1', items: 'Blog post (live on your page) + lead magnet (interactive scorecard) + landing page with email capture' },
+                  { week: 'Week 2', items: 'Newsletter edition + first 5 LinkedIn posts in your Google Sheet' },
+                  { week: 'Week 3', items: 'LinkedIn posts 6-10 + your posting schedule (Mon/Wed/Fri through next month)' },
+                  { week: 'Week 4', items: 'AI Ranking Report showing where your content appears in ChatGPT/Perplexity + next month planning' },
+                ].map((item, i) => (
+                  <div key={i} className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                    <p className="text-blue-600 font-semibold text-sm mb-1">{item.week}</p>
+                    <p className="text-gray-700 text-sm">{item.items}</p>
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">{item.title}</h3>
-                  <p className="text-gray-600">{item.desc}</p>
+                ))}
+              </div>
+              <p className="text-gray-500 text-sm mt-4 sm:pl-[52px] italic">
+                You receive something every week. Never a single dump.
+              </p>
+            </div>
+
+            {/* Month 2+ */}
+            <div className="max-w-4xl mx-auto mb-12">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center text-white text-lg font-bold flex-shrink-0">2+</div>
+                <h3 className="text-xl font-bold text-gray-900">Month 2+: Send Another Recording, We Add to the Engine</h3>
+              </div>
+              <div className="sm:pl-[52px]">
+                <p className="text-gray-600 mb-4">
+                  Send us your next webinar or podcast episode &mdash; or one from your back catalog. We skip the foundation work (already done) and go straight to content production:
+                </p>
+                <div className="grid sm:grid-cols-3 gap-3 mb-4">
+                  {[
+                    { label: 'New blog post', detail: 'Next chapter in your content series (accumulates on your page)' },
+                    { label: '10 new LinkedIn posts', detail: 'Appended to your existing Google Sheet' },
+                    { label: 'New newsletter', detail: 'Ready to paste into your email platform' },
+                  ].map((item, i) => (
+                    <div key={i} className="bg-white rounded-lg p-4 border border-gray-200">
+                      <p className="font-semibold text-gray-900 text-sm">{item.label}</p>
+                      <p className="text-gray-500 text-xs mt-1">{item.detail}</p>
+                    </div>
+                  ))}
                 </div>
-              ))}
+                <p className="text-gray-600 text-sm">
+                  Plus: updated posting schedule, AI Ranking Report, lead count summary, and your next month&apos;s plan. Same weekly cadence as Month 1.
+                </p>
+              </div>
+            </div>
+
+            {/* The key insight */}
+            <div className="max-w-3xl mx-auto bg-blue-50 border border-blue-200 rounded-xl p-6 text-center">
+              <p className="text-blue-900 font-semibold text-lg mb-2">
+                Your blog posts form a serialized content series
+              </p>
+              <p className="text-blue-800 text-sm">
+                Each monthly blog post is the next chapter in an ongoing series. Post 1 links to Post 2. Post 3 references Posts 1-2. A reader who finds Post 4 goes back and reads all of them. By Month 6, you have a 6-part deep dive that Google ranks as authoritative and AI assistants cite as comprehensive.
+              </p>
             </div>
           </div>
         </section>
@@ -792,7 +822,7 @@ export default function Home() {
         {/* Mini CTA after How It Works */}
         <div className="py-8 px-4 text-center bg-gray-50">
           <p className="text-gray-700 text-lg mb-3">
-            That&apos;s it. <span className="font-semibold text-gray-900">You record. We repurpose. You publish.</span>
+            That&apos;s it. <span className="font-semibold text-gray-900">You record. We repurpose. You publish. It compounds.</span>
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -817,33 +847,35 @@ export default function Home() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Webinar Repurposing Plans
+                Monthly Webinar Repurposing Plans
               </h2>
-              <p className="text-gray-600 text-lg">
-                All content is Google + AI Search optimized. No hidden fees.
+              <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+                Send us a webinar or podcast each month. We turn it into a content engine that compounds over time. All content is Google + AI Search optimized.
               </p>
             </div>
             <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
               {/* Starter */}
               <div className="bg-white border border-gray-200 rounded-2xl p-8">
                 <h3 className="text-xl font-semibold text-gray-900 mb-1">Starter</h3>
-                <p className="text-gray-600 text-sm mb-4">1 Webinar Repurposed</p>
-                <div className="mb-6">
+                <p className="text-gray-600 text-sm mb-4">1 Webinar or Podcast / Month</p>
+                <div className="mb-2">
                   <span className="text-4xl font-bold text-gray-900">$750</span>
                   <span className="text-gray-600">/month</span>
                 </div>
+                <p className="text-xs text-green-600 font-medium mb-4">$600/mo with 6-month commitment</p>
                 <div className="text-sm text-blue-600 font-medium mb-4">14 pieces/month</div>
                 <ul className="space-y-3 mb-8">
                   {[
-                    '1 Lead Magnet (PDF)',
+                    '1 Blog Post (serialized, SEO + AI optimized)',
+                    '1 Lead Magnet (interactive scorecard/quiz)',
                     '10 LinkedIn Posts',
-                    '1 Newsletter',
-                    '1 Blog Post (SEO + AI optimized)',
-                    '1 Landing Page Copy',
-                    'Google + AI Search Optimization'
+                    '1 Newsletter Edition',
+                    '1 Landing Page (hosted)',
+                    'Monthly AI Ranking Report',
+                    'Google + AI Search Optimization',
                   ].map((item, i) => (
                     <li key={i} className="flex items-start text-sm text-gray-600">
-                      <span className="text-green-500 mr-2 mt-0.5">✓</span>{item}
+                      <span className="text-green-500 mr-2 mt-0.5">&#10003;</span>{item}
                     </li>
                   ))}
                 </ul>
@@ -861,24 +893,27 @@ export default function Home() {
                   Recommended
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-1">Growth</h3>
-                <p className="text-gray-600 text-sm mb-4">2 Webinars Repurposed</p>
-                <div className="mb-6">
+                <p className="text-gray-600 text-sm mb-4">2 Webinars or Podcasts / Month</p>
+                <div className="mb-2">
                   <span className="text-4xl font-bold text-gray-900">$1,000</span>
                   <span className="text-gray-600">/month</span>
                 </div>
+                <p className="text-xs text-green-600 font-medium mb-4">$800/mo with 6-month commitment</p>
                 <div className="text-sm text-blue-600 font-medium mb-4">32+ pieces/month</div>
                 <ul className="space-y-3 mb-8">
                   {[
-                    '2 Lead Magnets (PDF)',
-                    '20 LinkedIn Posts',
+                    '1 Blog Post (serialized, brand-matched)',
+                    '20 LinkedIn Posts (voice-matched)',
                     '2 Newsletters',
-                    '2 Blog Posts (SEO + AI optimized)',
                     '2 Twitter/X Threads',
                     '3-Email Welcome Sequence',
-                    'Google + AI Search Optimization'
+                    'Brand Intelligence Report',
+                    'Keyword Gap Analysis + Monthly Refresh',
+                    'Monthly AI Ranking Report',
+                    'Google + AI Search Optimization',
                   ].map((item, i) => (
                     <li key={i} className="flex items-start text-sm text-gray-600">
-                      <span className="text-green-500 mr-2 mt-0.5">✓</span>{item}
+                      <span className="text-green-500 mr-2 mt-0.5">&#10003;</span>{item}
                     </li>
                   ))}
                 </ul>
@@ -893,28 +928,30 @@ export default function Home() {
               {/* Scale */}
               <div className="bg-white border border-gray-200 rounded-2xl p-8">
                 <h3 className="text-xl font-semibold text-gray-900 mb-1">Scale</h3>
-                <p className="text-gray-600 text-sm mb-4">4 Webinars Repurposed</p>
-                <div className="mb-6">
+                <p className="text-gray-600 text-sm mb-4">4 Webinars or Podcasts / Month</p>
+                <div className="mb-2">
                   <span className="text-4xl font-bold text-gray-900">$1,500</span>
                   <span className="text-gray-600">/month</span>
                 </div>
+                <p className="text-xs text-green-600 font-medium mb-4">$1,200/mo with 6-month commitment</p>
                 <div className="text-sm text-blue-600 font-medium mb-4">75+ pieces/month</div>
                 <ul className="space-y-3 mb-8">
                   {[
-                    '4 Lead Magnets (PDF)',
+                    '4 Blog Posts (serialized, brand-matched)',
                     '40 LinkedIn Posts',
                     '4 Newsletters',
-                    '4 Blog Posts (SEO + AI optimized)',
                     '4 Twitter/X Threads',
-                    '7-Email Full Sequence',
+                    '7-Email Nurture Sequence',
                     '8 Instagram Captions',
                     '4 YouTube Short Scripts',
-                    'Content Calendar',
+                    '30-Day Content Calendar',
                     'Brand Voice Document',
-                    'Google + AI Search Optimization'
+                    'Keyword Gap Analysis + Monthly Refresh',
+                    'Monthly AI Ranking Report',
+                    'Google + AI Search Optimization',
                   ].map((item, i) => (
                     <li key={i} className="flex items-start text-sm text-gray-600">
-                      <span className="text-green-500 mr-2 mt-0.5">✓</span>{item}
+                      <span className="text-green-500 mr-2 mt-0.5">&#10003;</span>{item}
                     </li>
                   ))}
                 </ul>
@@ -927,14 +964,136 @@ export default function Home() {
               </div>
             </div>
 
+            {/* Content Sprint Add-On */}
+            <div className="mt-10 max-w-3xl mx-auto bg-white border border-blue-200 rounded-xl p-6 text-center">
+              <p className="text-blue-600 font-semibold text-sm uppercase tracking-wide mb-2">Optional Add-On</p>
+              <p className="text-gray-900 font-bold text-lg mb-2">
+                Back Catalog Sprint &mdash; Process 3&ndash;5 extra recordings in Month 1
+              </p>
+              <p className="text-gray-600 text-sm mb-3">
+                Have 10+ webinars sitting in Zoom? We&apos;ll process 3 recordings for $500 or 5 for $750 alongside your regular delivery. Only available at signup.
+              </p>
+            </div>
+
             {/* Guarantee */}
-            <div className="text-center mt-12 bg-white p-6 rounded-xl max-w-2xl mx-auto card-shadow">
+            <div className="text-center mt-10 bg-white p-6 rounded-xl max-w-2xl mx-auto card-shadow">
               <p className="text-gray-900 font-semibold text-lg mb-2">
                 30-Day &quot;Sounds Like Me&quot; Guarantee
               </p>
               <p className="text-gray-600">
                 If your first delivery doesn&apos;t capture your voice and expertise, full refund. You keep everything we created.
               </p>
+            </div>
+          </div>
+        </section>
+
+        {/* How It Compounds Section */}
+        <section className="py-20 px-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Why Month 6 Is Worth More Than Month 1
+              </h2>
+              <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+                Content repurposing isn&apos;t a one-time project. It&apos;s an engine. Every month you stay, the engine gets more powerful.
+              </p>
+            </div>
+
+            {/* Compounding visualization */}
+            <div className="grid md:grid-cols-4 gap-6 mb-12">
+              {[
+                { month: 'Month 1', posts: '1 blog post', linkedin: '10 LinkedIn posts', extra: 'Foundation: landing page + lead magnet + brand voice' },
+                { month: 'Month 3', posts: '3 blog posts', linkedin: '30 LinkedIn posts', extra: 'Google starts seeing topical authority' },
+                { month: 'Month 6', posts: '6 blog posts', linkedin: '60 LinkedIn posts', extra: 'Post #1 ranks higher because #2-6 link to it' },
+                { month: 'Month 12', posts: '12 blog posts', linkedin: '120 LinkedIn posts', extra: 'Full content engine + growing email list' },
+              ].map((item, i) => (
+                <div key={i} className="bg-white rounded-xl p-5 border border-gray-200 text-center">
+                  <div className="text-blue-600 font-bold text-lg mb-2">{item.month}</div>
+                  <div className="text-gray-900 font-semibold text-sm">{item.posts}</div>
+                  <div className="text-gray-600 text-sm">{item.linkedin}</div>
+                  <div className="text-gray-500 text-xs mt-3 italic leading-snug">{item.extra}</div>
+                </div>
+              ))}
+            </div>
+
+            {/* What compounds */}
+            <div className="grid md:grid-cols-2 gap-6 mb-12">
+              {[
+                { title: 'SEO Topical Authority', desc: '6 blog posts in a serialized series tells Google you\'re THE authority on this topic. Post #1 ranks BETTER in Month 6 than it does alone in Month 1.' },
+                { title: 'AI Search Citations', desc: 'More pages with FAQ schema + direct answers = more chances ChatGPT, Perplexity, and Gemini cite your content. We track this monthly via our AI Ranking Report.' },
+                { title: 'Email List Growth', desc: 'More blog traffic = more signups through your landing page = larger newsletter list = more webinar attendees = more source material. The flywheel accelerates itself.' },
+                { title: 'LinkedIn Consistency', desc: 'LinkedIn\'s algorithm rewards consistent 3x/week posting. 10 posts last ~3.5 weeks. You need monthly refills. By Month 6, your reach is measurably higher.' },
+                { title: 'Internal Link Network', desc: 'Each new blog post links to your landing page + previous posts. Link equity distributes across your whole content library. Every new post makes every old post stronger.' },
+                { title: 'Content Freshness', desc: 'Google decays content that doesn\'t get updated. We keep adding to your series, refreshing older posts with new internal links and updated data. Your content stays alive.' },
+              ].map((item, i) => (
+                <div key={i} className="flex gap-3">
+                  <div className="flex-shrink-0 w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center mt-0.5">
+                    <svg className="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-gray-900 text-sm">{item.title}</p>
+                    <p className="text-gray-600 text-sm mt-1">{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* The cancel argument */}
+            <div className="max-w-3xl mx-auto bg-gray-900 text-white rounded-xl p-8 text-center">
+              <p className="text-lg font-bold mb-3">
+                The compounding return only works if you stay
+              </p>
+              <p className="text-gray-300 text-sm leading-relaxed">
+                Canceling after Month 2 means your blog post series stops at Chapter 2. Your reader never gets Chapters 3-12. Google never sees the topical cluster that makes Post 1 rank. Your LinkedIn runs out of posts in 3.5 weeks. The 6-month commitment discount exists because clients who stay 6 months see dramatically better results than clients who leave at Month 2.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Back Catalog Section */}
+        <section className="py-20 bg-gray-50 px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-10">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                You Don&apos;t Need to Create Anything New
+              </h2>
+              <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+                You already have recorded webinars and podcast episodes sitting in Zoom, Riverside, or YouTube doing nothing. Each one contains unique stories, frameworks, and data points that your audience has never seen as written content.
+              </p>
+            </div>
+
+            {/* The pitch */}
+            <div className="bg-white rounded-xl border border-gray-200 p-8 mb-8">
+              <p className="text-gray-900 text-lg leading-relaxed mb-6">
+                We process <strong>one recording per month</strong> (Starter), <strong>two per month</strong> (Growth), or <strong>four per month</strong> (Scale). At your current library size, that&apos;s months of content already waiting &mdash; and you don&apos;t need to record a single new thing.
+              </p>
+              <div className="grid sm:grid-cols-3 gap-4 mb-6">
+                {[
+                  { recordings: '5 recordings', months: '5 months', desc: 'of weekly content, live blog posts, and growing SEO authority' },
+                  { recordings: '10 recordings', months: '10 months', desc: 'enough to build a serious topical cluster Google can\'t ignore' },
+                  { recordings: '20 recordings', months: '20 months', desc: 'nearly 2 years of content from recordings you\'ve already done' },
+                ].map((item, i) => (
+                  <div key={i} className="bg-gray-50 rounded-lg p-4 text-center">
+                    <div className="text-2xl font-bold gradient-text">{item.recordings}</div>
+                    <div className="text-sm font-semibold text-gray-900 mt-1">= {item.months}</div>
+                    <div className="text-xs text-gray-500 mt-1">{item.desc}</div>
+                  </div>
+                ))}
+              </div>
+              <p className="text-gray-500 text-sm">
+                <strong>What counts as source material:</strong> Zoom webinars, YouTube videos, podcast episodes, conference talks, workshop recordings, live Q&amp;A sessions, training videos &mdash; any recording where you&apos;re speaking and teaching.
+              </p>
+            </div>
+
+            {/* Processing order */}
+            <div className="bg-white rounded-xl border border-gray-200 p-6">
+              <h3 className="font-bold text-gray-900 mb-3">Recommended processing order:</h3>
+              <ol className="space-y-2 text-sm text-gray-600">
+                <li className="flex gap-2"><span className="font-bold text-blue-600">1.</span> Most commercially relevant recording (closest to what you sell)</li>
+                <li className="flex gap-2"><span className="font-bold text-blue-600">2.</span> Most data-rich recording (numbers and frameworks = best blog content)</li>
+                <li className="flex gap-2"><span className="font-bold text-blue-600">3.</span> Most story-rich recording (personal stories = best LinkedIn content)</li>
+                <li className="flex gap-2"><span className="font-bold text-blue-600">4.</span> Evergreen topics before timely ones</li>
+              </ol>
             </div>
           </div>
         </section>
@@ -995,9 +1154,9 @@ export default function Home() {
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                   <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">7-Day Turnaround, No Contracts</h3>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Monthly Engine, Not a One-Off</h3>
                 <p className="text-gray-600 text-sm">
-                  First delivery in 7-10 business days. Month-to-month plans — cancel anytime. We earn your business every month through results, not lock-in contracts.
+                  First delivery in 7-10 days. Something new every week after that. Each month adds to a compounding content library &mdash; more blog posts, more LinkedIn posts, more SEO authority. Month 6 is worth more than Month 1.
                 </p>
               </div>
             </div>
@@ -1102,7 +1261,7 @@ export default function Home() {
                 },
                 {
                   q: 'Do I need to have webinars already?',
-                  a: 'Yes, you need at least one recorded webinar. Most coaches have webinars, workshop recordings, or training videos sitting unused. If you run webinars regularly, we repurpose them as you create them.',
+                  a: 'Yes, you need at least one recorded webinar or podcast episode. Most coaches have 5-20 recordings sitting unused in Zoom or YouTube. We process one per month (Starter), two per month (Growth), or four per month (Scale). That means 10 existing recordings = 10 months of content without creating anything new.',
                 },
                 {
                   q: 'Will the content sound like me?',
@@ -1110,15 +1269,23 @@ export default function Home() {
                 },
                 {
                   q: 'How long until I get my content?',
-                  a: 'First delivery within 7-10 business days. After that, content is delivered weekly. We recommend sending webinars in advance so we can work ahead of your publishing schedule.',
+                  a: 'First delivery within 7-10 business days. After that, you receive something every week — blog posts in Week 1, LinkedIn posts and newsletters in Weeks 2-3, and your AI Ranking Report in Week 4. Never a single dump.',
                 },
                 {
                   q: 'What formats do you accept?',
                   a: 'Zoom recordings, YouTube videos, Vimeo, Google Drive links, Loom — any video format. If you can share it, we can repurpose it.',
                 },
                 {
+                  q: 'What happens month over month?',
+                  a: 'Month 1 builds the foundation — your brand voice, positioning, landing page, lead magnet, and first blog post. Month 2+ we skip all of that (it\'s already done) and go straight to content production: new blog post, new LinkedIn posts, new newsletter, updated posting schedule, AI Ranking Report. Each month is faster because we already know your voice. Each month is more valuable because the content compounds.',
+                },
+                {
+                  q: 'What if I run out of webinars to send?',
+                  a: 'Three options: (1) Each webinar brief contains enough material for 3-4 blog posts, not just 1 — we can mine deeper angles from existing material. (2) We can refresh and expand existing blog posts with new data, which Google rewards. (3) Conference talks, guest podcast appearances, live Q&A sessions — any recording where you\'re speaking works. If you truly have no source material, we offer a 2-month pause to preserve the relationship.',
+                },
+                {
                   q: 'Can I cancel anytime?',
-                  a: 'Yes. All plans are month-to-month. Cancel before your next billing date and you will not be charged. We earn your business every month.',
+                  a: 'Yes. All plans are month-to-month. Cancel before your next billing date. That said, the compounding return only works over time — your Month 1 blog post ranks dramatically better in Month 6 when Posts 2-6 link back to it. The 6-month commitment discount (20% off) exists because clients who stay see the compounding return.',
                 },
                 {
                   q: 'Who is this for?',
@@ -1126,7 +1293,7 @@ export default function Home() {
                 },
                 {
                   q: 'How is this different from hiring a VA or writer?',
-                  a: 'A VA might transcribe your webinar. A writer might create a few posts. We transform your webinar into a complete content system — lead magnets, posts, articles, emails — all optimized for search. Plus, we handle the SEO and AI optimization that most writers cannot do.',
+                  a: 'A VA might transcribe your webinar. A writer might create a few disconnected posts. We build a compounding content system: serialized blog posts that form a topical cluster, a lead capture page that grows your email list, LinkedIn posts that reference each other and drive back to your blog, and monthly AI Ranking Reports no other service provides. Plus, everything is hosted on live pages we maintain — your brand voice, positioning, and content strategy are embedded in our system.',
                 },
                 {
                   q: 'Is ContentRepurposeHub a new service?',
@@ -1149,10 +1316,10 @@ export default function Home() {
               Your Webinars Already Have the Content. Let Us Prove It.
             </h2>
             <p className="text-blue-100 text-lg mb-4">
-              Book a free 20-minute strategy call. We&apos;ll look at your webinars and show you exactly what content is hiding in them.
+              Book a free 20-minute strategy call. Tell us how many webinars and podcast episodes you have recorded. We&apos;ll map out exactly how many months of content are already sitting in your back catalog &mdash; and which recording to process first.
             </p>
             <p className="text-blue-200 text-sm mb-8">
-              We&apos;re building this service right now — early clients get more personal attention than any agency juggling 50 accounts. That window won&apos;t last forever.
+              Early clients get direct access to the founder and more personal attention than any agency juggling 50 accounts. That window won&apos;t last forever.
             </p>
             <a
               href="https://cal.com/contentrepurposehub/30min"
