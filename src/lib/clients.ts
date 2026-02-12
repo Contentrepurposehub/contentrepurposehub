@@ -61,6 +61,10 @@ export interface ClientConfig {
    * - Replay promotion: "Watch the Free Masterclass" / "Watch the Replay"
    */
   conversionLabel?: string
+  /**
+   * Client's social media links. Displayed on the landing page for credibility.
+   */
+  socialLinks?: { platform: string, url: string }[]
   spreadsheetId?: string
   webhookUrl?: string
   sheetTabName?: string
@@ -75,59 +79,7 @@ export interface ClientConfig {
  * All registered clients. Add new clients here when onboarding.
  */
 export const clients: Record<string, ClientConfig> = {
-  'chris-koerner': {
-    slug: 'chris-koerner',
-    name: 'Chris Koerner',
-    tier: 'starter',
-    startDate: '2026-02-01',
-    currentMonth: 1,
-    funnelType: 'active-webinar',
-    postCaptureRedirect: '/clients/chris-koerner/scorecard',
-    // conversionUrl: 'https://zoom.us/webinar/register/...', // Set when client provides next webinar link
-    // conversionLabel: 'Register for the Live Training',
-    series: {
-      name: 'The Deal Structure Series',
-      description: 'How to buy a business with creative financing — from zero-down structures to stacking multiple sources.',
-      posts: [
-        {
-          slug: 'how-to-buy-a-business-with-no-money',
-          title: 'How to Buy a Business With No Money (10 Deal Structures I\'ve Actually Used)',
-          date: '2026-02-12',
-          keyword: 'how to buy a business with no money',
-          seriesOrder: 1,
-        },
-      ],
-    },
-    leadMagnetType: 'scorecard',
-    leadMagnetPath: '/clients/chris-koerner/scorecard',
-  },
-
-  'david-bach': {
-    slug: 'david-bach',
-    name: 'David Bach',
-    tier: 'starter',
-    startDate: '2026-02-01',
-    currentMonth: 1,
-    funnelType: 'replay-promotion',
-    postCaptureRedirect: '/clients/david-bach/scorecard',
-    conversionUrl: 'https://example.com/david-bach-masterclass-replay', // Replace with real replay URL
-    conversionLabel: 'Watch the Free Masterclass',
-    series: {
-      name: 'The Automatic Millionaire Series',
-      description: 'How to build wealth automatically — from the Latte Factor to full financial automation.',
-      posts: [
-        {
-          slug: 'how-to-become-an-automatic-millionaire',
-          title: 'How to Become an Automatic Millionaire: The Complete David Bach Method',
-          date: '2026-02-10',
-          keyword: 'how to become an automatic millionaire',
-          seriesOrder: 1,
-        },
-      ],
-    },
-    leadMagnetType: 'scorecard',
-    leadMagnetPath: '/clients/david-bach/scorecard',
-  },
+  // Add new clients here when onboarding. See CLAUDE.md "Starter Tier: Complete End-to-End Playbook" for the full workflow.
 }
 
 /**

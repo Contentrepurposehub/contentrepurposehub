@@ -481,22 +481,65 @@ The landing page `page.tsx` reads `postCaptureRedirect` from the client config a
 
 This is the standard landing page template for every Starter plan client. Follow this exactly.
 
-**Key principle:** SHORT, focused lead capture page. One goal: get the email. Even at Starter tier, scrape the client's website for a headshot photo + credentials/media appearances to make the page feel authentic and recognizable.
+**Key principle:** SHORT, focused lead capture page. One goal: get the email. Even at Starter tier, scrape the client's social profiles for a headshot photo + credentials/media appearances to make the page feel authentic and recognizable.
 
 **Color scheme:** Navy (#1e3a5f) + white. Clean professional template. No client brand matching at Starter tier.
+
+#### Photo Sourcing Procedure (Required — Never Ship a Landing Page Without a Photo)
+
+Try these sources in order until you get a clean headshot:
+
+1. **Primary: `unavatar.io/x/[twitter-handle]`** — Downloads the client's X/Twitter profile photo as a clean JPEG (400x400). This works for most clients and is the fastest method.
+   ```bash
+   curl -sL -o public/[client-slug]-headshot.jpg "https://unavatar.io/x/[twitter-handle]"
+   ```
+2. **Fallback: Client's website** — Check their about page, podcast page, or homepage for `<img>` tags with headshots.
+3. **Fallback: Podcast platforms** — Check Spotify, Apple Podcasts, Buzzsprout for podcast cover art (often has their face).
+4. **Fallback: `unavatar.io/[email]`** — If you have their email, this checks Gravatar and other avatar services.
+5. **Last resort: Ask the client** — "Can you send me a headshot for your landing page? Professional or casual works."
+
+**Save to:** `public/[client-slug]-headshot.jpg` — Use Next.js `Image` component with `src="/[client-slug]-headshot.jpg"`.
+
+#### Credential & Social Proof Scraping (Required)
+
+Before building the landing page, scrape the client's website and social profiles to extract:
+- **Key stats:** businesses started, revenue figures, followers, books sold, years of experience
+- **Media appearances:** podcasts featured on, publications, TV shows
+- **Social proof numbers:** community members, students, clients served, newsletter subscribers
+- **Specific deal/result numbers:** "$800K business for $50K down", "$63K to $4.3M/mo revenue"
+
+These populate the Social Proof section (3 key stats) and the credibility bar.
+
+#### Client Social Links (Required on All Tiers)
+
+Every landing page includes the client's social links. Place them in the **Social Proof / "Who Made This?" section**, below the bio paragraph and above the stats. Display as a row of icon links (X/Twitter, LinkedIn, YouTube, Instagram, podcast, website — whichever the client has). Style: muted gray icons, small, non-distracting. Purpose: adds credibility and lets visitors verify the client is real.
+
+```tsx
+{/* Social Links */}
+<div className="flex items-center justify-center gap-4 mb-8">
+  {socialLinks.map(link => (
+    <a key={link.platform} href={link.url} target="_blank" rel="noopener noreferrer"
+       className="text-gray-400 hover:text-[#1e3a5f] transition-colors">
+      {/* Icon for each platform */}
+    </a>
+  ))}
+</div>
+```
+
+The client provides social links during onboarding. Store them in `clients.ts` as `socialLinks: { platform: string, url: string }[]`.
 
 #### Section-by-Section Blueprint:
 
 **1. Hero (two-column grid layout)**
 - **Left column (copy + form):**
-  - Author identity badge: circular headshot (scraped from client website) + client name + one-liner credential (e.g., "9x New York Times Bestselling Author")
+  - Author identity badge: circular headshot (from photo sourcing above, 48x48 via `Image` component) + client name + one-liner credential (e.g., "75+ Businesses Started / 10 at 7-8 Figures")
   - Headline: Promise the lead magnet value (e.g., "How Automatic Is Your Financial Life?")
   - Subtext with signature stat hook: Pull the client's most compelling specific number from the source material (e.g., "$27.40 a day can make you a millionaire")
   - Lead capture form: Name field + Email field + CTA button (e.g., "Get My Free Score")
   - Privacy note below form (small text)
 - **Right column (visual):**
-  - Client photo (scraped from their website, sized large ~320x400px)
-  - Optional: book cover or other recognizable asset below/beside photo
+  - Client photo (from photo sourcing above, large via `Image` component with `priority` flag, `rounded-2xl object-cover shadow-lg`)
+  - Hidden on mobile (`hidden md:block`)
 
 **2. What the [Lead Magnet] Reveals**
 - Section heading: "What the [Lead Magnet Name] Reveals"
@@ -511,9 +554,12 @@ This is the standard landing page template for every Starter plan client. Follow
 - Italic quote from the source material (the most memorable/shareable line)
 - Attribution: "— [Client Name]"
 
-**4. Social Proof**
-- 3 key stats in a row (e.g., "9 New York Times Bestsellers", "7+ Million Books Sold", "Featured on Oprah 5x")
-- "As Featured In" credibility bar below: row of media outlet names in muted gray text (research from client's website which outlets have featured them)
+**4. Social Proof / "Who Made This?"**
+- Section heading: "Who Made This?"
+- Short first-person bio paragraph (2-3 sentences, in client's voice, with specific numbers)
+- **Client social links row** (X, LinkedIn, YouTube, podcast, website — icons, muted gray)
+- 3 key stats in a row (e.g., "75+ Businesses Started", "10 at 7-8+ Figures", "153K+ Followers")
+- Credibility bar below: specific deal numbers or media mentions in muted gray text
 
 **5. How It Works**
 - 3 numbered steps:
@@ -784,6 +830,148 @@ When a client has recorded webinars/podcasts sitting unused:
 | Scale | $1,500/mo | $1,200/mo |
 
 **Back Catalog Sprint (add-on):** $500 (3 recordings) or $750 (5 recordings). Month 1 only.
+
+---
+
+## Starter Tier: Complete End-to-End Playbook
+
+**This is the battle-tested, proven workflow. Follow it exactly for every new Starter client.**
+
+### What the User Provides
+
+1. **Transcript** — from a YouTube video, podcast episode, or webinar recording (any long-form content where the client is speaking and teaching)
+2. **Client's social links** — X/Twitter handle, LinkedIn, website, podcast URL, YouTube, Instagram (whatever they have)
+3. **Answers to onboarding questions** (Claude asks these automatically):
+   - Tier confirmation (Starter $750)
+   - Funnel type: live webinars or replay promotion?
+   - Webhook URL for email platform (or "Google Sheets only")
+   - Conversion URL (webinar registration or replay link)
+
+### What Gets Delivered (Checklist)
+
+| # | Deliverable | Output Location | Skill Used |
+|---|------------|----------------|------------|
+| 1 | Brief extraction | `clients/[name]/brief.md` | Manual analysis |
+| 2 | Brand voice profile | `clients/[name]/brand-voice.md` | `/brand-voice` |
+| 3 | Positioning angles | `clients/[name]/positioning-angles.md` | `/positioning-angles` |
+| 4 | Lead magnet content | `clients/[name]/deliverables/01-lead-magnet.md` | `/lead-magnet` |
+| 5 | Blog post content | `clients/[name]/deliverables/02-blog-post.md` | `/seo-content` |
+| 6 | Newsletter | `clients/[name]/deliverables/03-newsletter.md` | `/newsletter` |
+| 7 | Landing page copy | `clients/[name]/deliverables/04-landing-page-copy.md` | `/direct-response-copy` |
+| 8 | LinkedIn posts (10) | `clients/[name]/deliverables/05-linkedin-posts.md` | `/content-atomizer` |
+| 9 | Live landing page | `/clients/[name]` | Code implementation |
+| 10 | Live blog post | `/clients/[name]/blog` | Code implementation |
+| 11 | Live scorecard | `/clients/[name]/scorecard` | Code implementation |
+| 12 | Google Sheet | External (4 tabs: Playbook, LinkedIn, Newsletter, Schedule) | `create-client-deliverables.ts` |
+| 13 | Client config | `src/lib/clients.ts` entry | Manual |
+| 14 | Sitemap | Auto-generates from clients.ts | Automatic |
+| 15 | SEO indexing | Google Search Console submission | Manual |
+
+### Step-by-Step Execution Order
+
+**Phase 1: Research (Steps 1-3) — Do NOT skip. Do NOT create content without completing research first.**
+
+1. Read the entire transcript. Extract every key theme, framework, story, anecdote, data point, quote, pain point, transformation → `brief.md`
+2. Analyze how the client speaks. Capture vocabulary, tone, rhythm, sentence patterns → `brand-voice.md` (use `/brand-voice` Extract mode)
+3. Find 3-5 positioning angles from the source material → `positioning-angles.md` (use `/positioning-angles`)
+
+**Phase 2: Scrape Client's Online Presence (do this in parallel with Phase 1)**
+
+4. **Download headshot** using unavatar.io:
+   ```bash
+   curl -sL -o public/[client-slug]-headshot.jpg "https://unavatar.io/x/[twitter-handle]"
+   ```
+   Verify it's a valid JPEG with `file public/[client-slug]-headshot.jpg`. If it fails, try fallbacks (see Photo Sourcing Procedure above).
+
+5. **Scrape credentials** from client's website, about page, LinkedIn, X bio:
+   - Key stats (businesses, revenue, followers, years of experience)
+   - Media appearances and notable achievements
+   - Specific numbers for social proof section
+   - Social media URLs for the social links row
+
+**Phase 3: Content Creation (Steps 6-10)**
+
+6. Create lead magnet → `01-lead-magnet.md` (use `/lead-magnet`)
+7. Write blog post → `02-blog-post.md` (use `/seo-content`)
+8. Write newsletter → `03-newsletter.md` (use `/newsletter`)
+9. Write landing page copy → `04-landing-page-copy.md` (use `/direct-response-copy`)
+10. Write 10 LinkedIn posts → `05-linkedin-posts.md` (use `/content-atomizer`)
+
+**Phase 4: Build Live Pages (Steps 11-13)**
+
+11. Add client to `src/lib/clients.ts` (slug, name, tier, series, funnel type, etc.)
+12. Create app folder structure:
+    ```
+    src/app/(clients)/clients/[name]/
+      page.tsx              — Landing page (use template, add headshot + credentials + social links)
+      LeadCaptureForm.tsx   — Client component (copy from existing pattern)
+      layout.tsx            — Layout wrapper
+      blog/
+        page.tsx            — First blog post with SeriesNav
+        [slug]/
+          page.tsx          — Dynamic route for future posts
+      scorecard/
+        page.tsx            — Server component for lead magnet
+        ScorecardClient.tsx — Client component for interactive scorecard
+    ```
+13. Set up email platform integration (env vars in `.env.local`):
+    ```bash
+    [CLIENTSLUG]_EMAIL_PLATFORM=beehiiv|mailchimp|convertkit|activecampaign
+    [CLIENTSLUG]_EMAIL_API_KEY=...
+    [CLIENTSLUG]_EMAIL_LIST_ID=...
+    ```
+
+**Phase 5: Google Sheet (Step 14)**
+
+14. User creates a blank Google Sheet, shares with `leads-capture@contentrepurposehub-leads.iam.gserviceaccount.com` as Editor, provides the spreadsheet ID. Then run:
+    ```bash
+    npx tsx scripts/create-client-deliverables.ts SPREADSHEET_ID \
+      --client [client-name] --tier starter \
+      --source "Description of source content"
+    ```
+    This creates 4 tabs: Your Content Playbook, LinkedIn Posts, Newsletter, Posting Schedule.
+
+**Phase 6: Deploy & Index (Step 15)**
+
+15. Build, push, deploy:
+    ```bash
+    npm run build  # Verify no errors
+    git add -A && git commit -m "Add [client-name] Starter tier delivery"
+    git push       # Vercel auto-deploys
+    ```
+16. After deploy, verify:
+    - Landing page loads with headshot, credentials, social links, working form
+    - Blog post loads with SeriesNav
+    - Scorecard works end-to-end (form → email capture → scorecard)
+    - Sitemap includes all new client URLs (`/sitemap.xml`)
+17. Google Search Console:
+    - Resubmit sitemap (`https://contentrepurposehub.com/sitemap.xml`)
+    - Request indexing for client's 3 pages via URL Inspection
+    - Verify domain redirects: non-www must be primary, all redirects 308 permanent
+
+### Domain & SEO Requirements (Verified & Fixed)
+
+These are non-negotiable for every deployment:
+
+- **Primary domain:** `contentrepurposehub.com` (non-www) — serves 200 directly
+- **www redirect:** `www.contentrepurposehub.com` → 308 permanent → `contentrepurposehub.com`
+- **HTTP redirect:** `http://` → 308 permanent → `https://`
+- **Sitemap:** Auto-generated from `clients.ts` at `/sitemap.xml` — includes all agency blog posts + all client pages
+- **robots.txt:** Allows all crawlers (Google, Bing, GPTBot, Claude, Perplexity, etc.)
+- **After every deploy:** Resubmit sitemap in Google Search Console if new pages were added
+- **Daily limit:** ~10-12 URL inspection/indexing requests per day in Search Console
+
+### Lessons Learned (From Test Client Deliveries)
+
+These issues were discovered and fixed during the Chris Koerner and David Bach test deliveries. They are now handled by the standard workflow above, but documented here so they don't resurface:
+
+1. **www vs non-www redirect mismatch** — Vercel had `www` as primary domain, sitemap used non-www. Google got confused, only indexed 1 of 30+ pages. Fix: non-www must be primary in Vercel Domains settings, www redirects to non-www with 308.
+2. **307 vs 308 redirects** — Vercel defaulted to 307 (temporary) for domain redirect. Google treats 307 as "might change" and hesitates to index. Fix: always use 308 (permanent) for domain redirects.
+3. **Landing page without photo** — Initial build used "CK" initials instead of a real headshot. Looked unprofessional. Fix: always scrape a photo before building the page. `unavatar.io/x/[handle]` works for most clients.
+4. **Google Search Console sitemap showing only 5 pages** — Caused by the redirect issue above. Google gave up crawling after hitting 4xx/307 errors. Fix: fix redirects first, then resubmit sitemap.
+5. **Beehiiv double opt-in** — If the client uses Beehiiv and has double opt-in enabled, API-added subscribers get stuck in "validating" status. Fix: client must disable double opt-in in Beehiiv settings before we connect.
+6. **Browser hydration warnings** — Browser extensions inject attributes that cause React hydration mismatches. Fix: add `suppressHydrationWarning` on `<form>` and `<input>` elements.
+7. **Hardcoded sitemap** — Original sitemap had all URLs manually listed. Adding a new client required editing the sitemap file. Fix: sitemap now dynamically reads from `clients.ts` — new clients auto-appear.
 
 ---
 
