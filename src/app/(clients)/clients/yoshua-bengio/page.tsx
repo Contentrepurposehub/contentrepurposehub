@@ -240,7 +240,7 @@ export default function YoshuaBengioPage() {
               }}>
                 Take the AI Blind Spot Scorecard
               </Link>
-              <a href="https://youtu.be/stQiLvmgjns" target="_blank" rel="noopener noreferrer" style={{
+              <Link href="/clients/yoshua-bengio/blog" style={{
                 display: 'inline-block',
                 border: '2px solid rgba(255,255,255,0.3)',
                 color: '#fff',
@@ -251,8 +251,8 @@ export default function YoshuaBengioPage() {
                 textDecoration: 'none',
                 fontFamily: "'Inter', sans-serif",
               }}>
-                Watch the Full Episode Free
-              </a>
+                Read the Full Analysis
+              </Link>
             </div>
           </div>
 
@@ -857,12 +857,12 @@ export default function YoshuaBengioPage() {
                 Episode
               </span>
               <h3 style={{ ...heading, fontSize: '24px', color: '#fff', marginBottom: '12px' }}>
-                Watch the Full Conversation
+                How Much Are You Missing?
               </h3>
               <p style={{ fontSize: '16px', color: 'rgba(255,255,255,0.8)', marginBottom: '24px', lineHeight: 1.6, maxWidth: '400px' }}>
-                1 hour and 40 minutes with a Turing Award winner who helped create AI and now warns that we have roughly two years to get this right.
+                Take the 2-minute AI Blind Spot Scorecard. Based on insights from Yoshua Bengio, Turing Award winner and creator of deep learning.
               </p>
-              <a href="https://youtu.be/stQiLvmgjns" target="_blank" rel="noopener noreferrer" style={{
+              <Link href="/clients/yoshua-bengio/scorecard" style={{
                 background: '#fff',
                 color: PRIMARY,
                 padding: '14px 32px',
@@ -872,8 +872,8 @@ export default function YoshuaBengioPage() {
                 textDecoration: 'none',
                 fontFamily: "'Inter', sans-serif",
               }}>
-                Watch Free on YouTube
-              </a>
+                Take the Free Scorecard
+              </Link>
             </AnimatedCard>
           </div>
         </div>
@@ -1432,7 +1432,7 @@ export default function YoshuaBengioPage() {
                 { label: 'The Three Risks Framework', href: '#framework' },
                 { label: 'AI Blind Spot Scorecard', href: '#scorecard' },
                 { label: 'Blog: Full Analysis', href: '/clients/yoshua-bengio/blog' },
-                { label: 'Watch the Full Episode', href: 'https://youtu.be/stQiLvmgjns' },
+                { label: 'Take the Scorecard', href: '/clients/yoshua-bengio/scorecard' },
               ].map((link) => (
                 <a
                   key={link.label}
