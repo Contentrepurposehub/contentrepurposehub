@@ -324,13 +324,23 @@ export async function POST(request: NextRequest) {
 
     // Sync lead to client's email platform (non-blocking — don't fail if platform is down)
     let syncResult: Record<string, string> | null = null
+    const emailConfig = getClientEmailConfig(lead.client)
     try {
       syncResult = await sendToClientPlatform(lead)
     } catch (syncErr) {
       console.error('Email platform sync error:', syncErr)
     }
 
-    return NextResponse.json({ success: true, ...sheetResult, ...(syncResult || {}) })
+    return NextResponse.json({
+      success: true,
+      ...sheetResult,
+      ...(syncResult || {}),
+      _debug: {
+        hasEmailConfig: !!emailConfig,
+        platform: emailConfig?.platform || 'none',
+        envPrefix: lead.client.replace(/-/g, '_').toUpperCase(),
+      },
+    })
   } catch (err) {
     console.error('Lead capture error:', err)
     return NextResponse.json({ error: 'Failed to capture lead' }, { status: 500 })
