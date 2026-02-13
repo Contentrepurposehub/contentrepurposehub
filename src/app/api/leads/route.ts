@@ -236,9 +236,9 @@ const platformAdapters: Record<string, (lead: LeadPayload, apiKey: string, listI
 // Read client email platform config from env vars
 function getClientEmailConfig(clientSlug: string): { platform: string; apiKey: string; listId: string } | null {
   const prefix = clientSlug.replace(/-/g, '_').toUpperCase()
-  const platform = process.env[`${prefix}_EMAIL_PLATFORM`]
-  const apiKey = process.env[`${prefix}_EMAIL_API_KEY`]
-  const listId = process.env[`${prefix}_EMAIL_LIST_ID`]
+  const platform = process.env[`${prefix}_EMAIL_PLATFORM`]?.trim()
+  const apiKey = process.env[`${prefix}_EMAIL_API_KEY`]?.trim()
+  const listId = process.env[`${prefix}_EMAIL_LIST_ID`]?.trim()
 
   if (!platform || !apiKey || !listId) return null
   return { platform: platform.toLowerCase(), apiKey, listId }
@@ -324,23 +324,13 @@ export async function POST(request: NextRequest) {
 
     // Sync lead to client's email platform (non-blocking — don't fail if platform is down)
     let syncResult: Record<string, string> | null = null
-    const emailConfig = getClientEmailConfig(lead.client)
     try {
       syncResult = await sendToClientPlatform(lead)
     } catch (syncErr) {
       console.error('Email platform sync error:', syncErr)
     }
 
-    return NextResponse.json({
-      success: true,
-      ...sheetResult,
-      ...(syncResult || {}),
-      _debug: {
-        hasEmailConfig: !!emailConfig,
-        platform: emailConfig?.platform || 'none',
-        envPrefix: lead.client.replace(/-/g, '_').toUpperCase(),
-      },
-    })
+    return NextResponse.json({ success: true, ...sheetResult, ...(syncResult || {}) })
   } catch (err) {
     console.error('Lead capture error:', err)
     return NextResponse.json({ error: 'Failed to capture lead' }, { status: 500 })
