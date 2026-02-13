@@ -39,6 +39,7 @@ type RowType =
   | 'section'
   | 'subheader'
   | 'label'
+  | 'link'
   | 'note'
   | 'contact'
   | 'spacer'
@@ -59,7 +60,8 @@ function parseArgs() {
   Usage: npx tsx scripts/create-client-deliverables.ts SPREADSHEET_ID [options]
 
   Options:
-    --client NAME    Client folder name (default: david-bach)
+    --client NAME    Client folder name for reading deliverables (default: david-bach)
+    --slug SLUG      URL slug for live page links (default: same as --client)
     --tier TIER      starter | growth | scale (default: starter)
     --source TEXT    Source content description (default: "your webinar content")
     --mode MODE      create | append (default: create)
@@ -71,6 +73,7 @@ function parseArgs() {
   }
 
   let client = 'david-bach'
+  let slug = '' // URL slug override (defaults to client name)
   let tier: Tier = 'starter'
   let source = 'your webinar content'
   let mode: 'create' | 'append' = 'create'
@@ -78,11 +81,15 @@ function parseArgs() {
 
   for (let i = 1; i < args.length; i++) {
     if (args[i] === '--client' && args[i + 1]) client = args[++i]
+    else if (args[i] === '--slug' && args[i + 1]) slug = args[++i]
     else if (args[i] === '--tier' && args[i + 1]) tier = args[++i] as Tier
     else if (args[i] === '--source' && args[i + 1]) source = args[++i]
     else if (args[i] === '--mode' && args[i + 1]) mode = args[++i] as 'create' | 'append'
     else if (args[i] === '--month' && args[i + 1]) month = parseInt(args[++i])
   }
+
+  // Default slug to client name if not specified
+  if (!slug) slug = client
 
   if (!['starter', 'growth', 'scale'].includes(tier)) {
     console.error(`  Invalid tier: ${tier}. Use starter, growth, or scale.`)
@@ -94,7 +101,7 @@ function parseArgs() {
     process.exit(1)
   }
 
-  return { spreadsheetId, client, tier, source, mode, month }
+  return { spreadsheetId, client, slug, tier, source, mode, month }
 }
 
 // ─── Environment ──────────────────────────────────────────────────────
@@ -191,63 +198,103 @@ interface LinkedInPost {
 
 function parseLinkedInPosts(markdown: string): LinkedInPost[] {
   const posts: LinkedInPost[] = []
-  const headerRegex = /^## Post (\d+): (.+)$/gm
+  // Match both: ## Post N: Title  AND  ### Post N (no title)
+  const headerRegex = /^#{2,3} Post (\d+)(?::?\s*(.*))?$/gm
   const headers = [...markdown.matchAll(headerRegex)]
   const startDate = getNextMonday()
   const schedule = generateSchedule(startDate, headers.length)
 
+  // Detect format: does this file use "TYPE — Title" em-dash pattern?
+  const hasTypeDash = headers.some(h => h[2]?.includes(' \u2014 '))
+
+  // Find section boundaries: ## Comment CTA, ## Posting Notes, ## Posting Schedule
+  const endSections = ['## Comment CTA', '## Posting Notes', '## Posting Schedule']
+  let globalEndIdx = markdown.length
+  for (const marker of endSections) {
+    const idx = markdown.indexOf(marker)
+    if (idx !== -1 && idx < globalEndIdx) globalEndIdx = idx
+  }
+
   for (let i = 0; i < headers.length; i++) {
     const match = headers[i]
     const startIdx = match.index! + match[0].length
-    const fallback = markdown.indexOf('## Posting Schedule')
-    const endIdx = headers[i + 1]?.index ?? (fallback !== -1 ? fallback : markdown.length)
+    const endIdx = headers[i + 1]?.index ?? globalEndIdx
     if (endIdx <= startIdx) break
 
     const section = markdown.slice(startIdx, endIdx)
-    const typeTitle = match[2]
-    const dashIdx = typeTitle.indexOf(' \u2014 ')
-    const rawType = dashIdx !== -1 ? typeTitle.slice(0, dashIdx).trim() : typeTitle.trim()
-    const title = dashIdx !== -1 ? typeTitle.slice(dashIdx + 3).trim() : ''
+    const typeTitle = match[2] || ''
 
-    const typeMap: Record<string, string> = {
-      'THOUGHT LEADERSHIP': 'Thought Leadership',
-      'STORY-BASED': 'Story',
-      'FRAMEWORK/HOW-TO': 'Framework',
-      CONTRARIAN: 'Contrarian',
+    let type: string
+    let title: string
+
+    if (!typeTitle.trim()) {
+      // v2 format: ### Post N (no title) — extract **Type:** from body
+      const typeMatch = section.match(/\*\*Type:\*\*\s*(.+)/)
+      type = typeMatch?.[1]?.trim() || 'Post'
+      // Use first line of **Hook:** as title
+      const hookIdx = section.indexOf('**Hook:**')
+      if (hookIdx !== -1) {
+        const afterHook = section.slice(hookIdx + 9).trim()
+        title = afterHook.split('\n').find(l => l.trim())?.trim() || `Post ${match[1]}`
+      } else {
+        title = `Post ${match[1]}`
+      }
+    } else if (hasTypeDash) {
+      // Format: "THOUGHT LEADERSHIP — Title Here"
+      const dashIdx = typeTitle.indexOf(' \u2014 ')
+      const rawType = dashIdx !== -1 ? typeTitle.slice(0, dashIdx).trim() : typeTitle.trim()
+      title = dashIdx !== -1 ? typeTitle.slice(dashIdx + 3).trim() : ''
+      const typeMap: Record<string, string> = {
+        'THOUGHT LEADERSHIP': 'Thought Leadership',
+        'STORY-BASED': 'Story',
+        'FRAMEWORK/HOW-TO': 'Framework',
+        CONTRARIAN: 'Contrarian',
+      }
+      type = typeMap[rawType] || rawType
+    } else {
+      // Format: "The Creator's Confession (Primary hook)" — title IS the full string
+      // Extract parenthetical as type hint if present
+      const parenMatch = typeTitle.match(/^(.+?)\s*\((.+)\)\s*$/)
+      title = parenMatch ? parenMatch[1].trim() : typeTitle.trim()
+      type = parenMatch ? parenMatch[2].trim() : 'Post'
     }
 
-    // Extract the full post content, stripping markdown labels
-    const cleaned = section.replace(/^---+$/gm, '').trim()
-    // Pull hook text, body, CTA, and hashtags
+    // Extract the full post content, stripping markdown labels and section dividers
+    let cleaned = section.replace(/^---+$/gm, '').trim()
+
+    // Try structured format first (Hook/CTA/Hashtags markers)
     const hookMatch = cleaned.match(/\*\*Hook:\*\*\s*(.+)/)
     const ctaMatch = cleaned.match(/\*\*CTA:\*\*\s*(.+)/)
     const hashtagMatch = cleaned.match(/\*\*Hashtags:\*\*\s*(.+)/)
 
-    let body = cleaned
-    // Remove the label lines to get clean post copy
-    body = body.replace(/\*\*Hook:\*\*\s*.+\n?/, '')
-    body = body.replace(/\*\*CTA:\*\*\s*.+\n?/, '')
-    body = body.replace(/\*\*Hashtags:\*\*\s*.+\n?/, '')
-    body = body.trim()
+    if (hookMatch || ctaMatch || hashtagMatch) {
+      let body = cleaned
+      body = body.replace(/\*\*Hook:\*\*\s*.+\n?/, '')
+      body = body.replace(/\*\*CTA:\*\*\s*.+\n?/, '')
+      body = body.replace(/\*\*Hashtags:\*\*\s*.+\n?/, '')
+      body = body.trim()
 
-    // Assemble the full post: hook + body + CTA + hashtags
-    const fullPost = [
-      hookMatch?.[1]?.trim(),
-      '',
-      body,
-      '',
-      ctaMatch?.[1]?.trim(),
-      '',
-      hashtagMatch?.[1]?.trim(),
-    ]
-      .filter((line) => line !== undefined)
-      .join('\n')
+      cleaned = [
+        hookMatch?.[1]?.trim(),
+        '',
+        body,
+        '',
+        ctaMatch?.[1]?.trim(),
+        '',
+        hashtagMatch?.[1]?.trim(),
+      ]
+        .filter((line) => line !== undefined)
+        .join('\n')
+    }
+
+    // Strip any remaining markdown bold/italic for clean sheet output
+    cleaned = cleaned.replace(/\n{3,}/g, '\n\n').trim()
 
     posts.push({
       number: parseInt(match[1]),
-      type: typeMap[rawType] || rawType,
+      type,
       title,
-      content: fullPost,
+      content: cleaned,
       scheduledDate: schedule[i]?.date || '',
       scheduledDay: schedule[i]?.day || '',
     })
@@ -264,18 +311,69 @@ interface NewsletterContent {
 }
 
 function parseNewsletter(markdown: string): NewsletterContent {
-  const subjectMatch = markdown.match(/\*\*Subject Line:\*\*\s*(.+)/)
-  const previewMatch = markdown.match(/\*\*Preview Text:\*\*\s*(.+)/)
-  const fromMatch = markdown.match(/\*\*From:\*\*\s*(.+)/)
+  // If file has multiple editions (# Edition N:), use only the first one
+  let content = markdown
+  const editionHeaders = [...markdown.matchAll(/^# Edition \d+:/gm)]
+  if (editionHeaders.length > 1) {
+    content = markdown.slice(editionHeaders[0].index!, editionHeaders[1].index!)
+  } else if (editionHeaders.length === 1) {
+    content = markdown.slice(editionHeaders[0].index!)
+  }
 
-  // Try explicit "## Email Body" marker first; fall back to content after metadata block
-  const emailBodyMarker = markdown.indexOf('## Email Body')
+  // Try standard format first: **Subject Line:** ...
+  let subjectLine = content.match(/\*\*Subject Line:\*\*\s*(.+)/)?.[1] || ''
+  let previewText = content.match(/\*\*Preview Text:\*\*\s*(.+)/)?.[1] || ''
+  let from = content.match(/\*\*From:\*\*\s*(.+)/)?.[1] || ''
+
+  // Fallback: ## Subject Line Options with **Recommended:** marker
+  if (!subjectLine) {
+    const recMatch = content.match(/\*\*Recommended:\*\*\s*Option (\d+)/)
+    if (recMatch) {
+      const optNum = recMatch[1]
+      // Match numbered option: N. **"Subject line here"**
+      const optRegex = new RegExp(`${optNum}\\.\\s*\\*\\*"(.+?)"\\*\\*`)
+      const optMatch = content.match(optRegex)
+      if (optMatch) subjectLine = optMatch[1]
+      // Get preview text from same option block
+      const previewRegex = new RegExp(`${optNum}\\.\\s*\\*\\*".+?"\\*\\*\\s*\\n\\s*Preview:\\s*(.+)`)
+      const prevMatch = content.match(previewRegex)
+      if (prevMatch) previewText = prevMatch[1]
+    }
+    // If still no subject, grab the first quoted subject line option
+    if (!subjectLine) {
+      const firstOpt = content.match(/\d+\.\s*\*\*"(.+?)"\*\*/)
+      if (firstOpt) subjectLine = firstOpt[1]
+    }
+    // v2 fallback: plain numbered list under ## Subject Line Options (no bold/quotes)
+    if (!subjectLine) {
+      const slSection = content.match(/## Subject Line Options\s*\n+([\s\S]*?)(?=\n---|\n##)/)?.[1]
+      if (slSection) {
+        const firstLine = slSection.match(/\d+\.\s*(.+)/)
+        if (firstLine) subjectLine = firstLine[1].trim()
+      }
+    }
+  }
+
+  // Try "## Email Body" marker, then "## Newsletter Body", then "## Body Copy", then fallback
   let body = ''
-  if (emailBodyMarker !== -1) {
-    body = markdown.slice(emailBodyMarker + '## Email Body'.length).trim()
-  } else {
+  const bodyMarkers = ['## Email Body', '## Newsletter Body', '## Body Copy']
+  for (const marker of bodyMarkers) {
+    const idx = content.indexOf(marker)
+    if (idx !== -1) {
+      // Body goes until next # Edition or end of content
+      let endIdx = content.length
+      const nextEdition = content.indexOf('# Edition ', idx + marker.length)
+      if (nextEdition !== -1) endIdx = nextEdition
+      body = content.slice(idx + marker.length, endIdx).trim()
+      // Strip leading --- if present
+      body = body.replace(/^---\s*\n/, '')
+      break
+    }
+  }
+
+  if (!body) {
     // Find the end of the metadata block (after Subject Line, Preview Text, From, first ---)
-    const lines = markdown.split('\n')
+    const lines = content.split('\n')
     let bodyStartLine = 0
     let foundMeta = false
     for (let i = 0; i < lines.length; i++) {
@@ -292,6 +390,7 @@ function parseNewsletter(markdown: string): NewsletterContent {
     }
   }
 
+  // Clean markdown formatting for Google Sheet
   body = body
     .replace(/\*\*(.+?)\*\*/g, '$1')
     .replace(/\*(.+?)\*/g, '$1')
@@ -302,12 +401,157 @@ function parseNewsletter(markdown: string): NewsletterContent {
     .replace(/\n{3,}/g, '\n\n')
     .trim()
 
-  return {
-    subjectLine: subjectMatch?.[1] || '',
-    previewText: previewMatch?.[1] || '',
-    from: fromMatch?.[1] || '',
-    body,
+  return { subjectLine, previewText, from, body }
+}
+
+// ─── Twitter Thread Parser ──────────────────────────────────────────
+
+interface TwitterThread {
+  number: number
+  title: string
+  tweets: string[]
+}
+
+function parseTwitterThreads(markdown: string): TwitterThread[] {
+  const threads: TwitterThread[] = []
+  // Match both: # Thread N: Title  AND  ## Thread N: Title
+  const threadRegex = /^#{1,2} Thread (\d+):\s*(.+)$/gm
+  const headers = [...markdown.matchAll(threadRegex)]
+
+  for (let i = 0; i < headers.length; i++) {
+    const match = headers[i]
+    const startIdx = match.index! + match[0].length
+    const endIdx = headers[i + 1]?.index ?? markdown.length
+    const section = markdown.slice(startIdx, endIdx)
+
+    // Try v1 format first: **Tweet N (optional label):**
+    const tweetRegex = /\*\*Tweet \d+[^:]*:\*\*/g
+    const tweetHeaders = [...section.matchAll(tweetRegex)]
+
+    const tweets: string[] = []
+
+    if (tweetHeaders.length > 0) {
+      // v1 format
+      for (let j = 0; j < tweetHeaders.length; j++) {
+        const tStart = tweetHeaders[j].index! + tweetHeaders[j][0].length
+        const tEnd = tweetHeaders[j + 1]?.index ?? section.length
+        let tweet = section.slice(tStart, tEnd)
+          .replace(/^---+$/gm, '')
+          .replace(/\n{3,}/g, '\n\n')
+          .trim()
+        if (tweet) tweets.push(tweet)
+      }
+    } else {
+      // v2 format: tweets numbered as "N/ text" separated by ---
+      const v2TweetRegex = /^(\d+)\/ /gm
+      const v2Headers = [...section.matchAll(v2TweetRegex)]
+
+      for (let j = 0; j < v2Headers.length; j++) {
+        const tStart = v2Headers[j].index! + v2Headers[j][0].length
+        const tEnd = v2Headers[j + 1]?.index ?? section.length
+        let tweet = section.slice(tStart, tEnd)
+          .replace(/^---+$/gm, '')
+          .replace(/\n{3,}/g, '\n\n')
+          .trim()
+        if (tweet) tweets.push(tweet)
+      }
+    }
+
+    // Clean title: strip quotes and parenthetical angle info
+    let title = match[2].trim()
+    title = title.replace(/^[""]|[""]$/g, '').replace(/\s*\(.+\)\s*$/, '').trim()
+
+    threads.push({
+      number: parseInt(match[1]),
+      title,
+      tweets,
+    })
   }
+
+  return threads
+}
+
+// ─── Email Sequence Parser ──────────────────────────────────────────
+
+interface SequenceEmail {
+  number: number
+  title: string
+  subject: string
+  previewText: string
+  from: string
+  body: string
+}
+
+function parseEmailSequence(markdown: string): SequenceEmail[] {
+  const emails: SequenceEmail[] = []
+  // Match both: ### Email N: Title  AND  ## Email N: Title
+  const emailRegex = /^#{2,3} Email (\d+):\s*(.+)$/gm
+  const headers = [...markdown.matchAll(emailRegex)]
+
+  for (let i = 0; i < headers.length; i++) {
+    const match = headers[i]
+    const startIdx = match.index! + match[0].length
+    const endIdx = headers[i + 1]?.index ?? markdown.length
+    const section = markdown.slice(startIdx, endIdx)
+
+    // Try v1 single subject line first, then v2 subject line options (pick first)
+    let subject = section.match(/\*\*Subject line:\*\*\s*(.+)/)?.[1] || ''
+    if (!subject) {
+      const optSection = section.match(/\*\*Subject line options:\*\*\s*\n([\s\S]*?)(?=\n\*\*|\n---)/i)?.[1]
+      if (optSection) {
+        const firstOpt = optSection.match(/\d+\.\s*(.+)/)
+        if (firstOpt) subject = firstOpt[1].trim()
+      }
+    }
+    const preview = section.match(/\*\*Preview text:\*\*\s*(.+)/)?.[1] || ''
+    const from = section.match(/\*\*From:\*\*\s*(.+)/)?.[1] || ''
+
+    // Body: try **Body copy:** marker first, then fallback to --- after metadata
+    let body = ''
+    const bodyCopyIdx = section.indexOf('**Body copy:**')
+    if (bodyCopyIdx !== -1) {
+      body = section.slice(bodyCopyIdx + '**Body copy:**'.length).trim()
+      // Strip leading --- if present
+      body = body.replace(/^---\s*\n/, '')
+    } else {
+      const lines = section.split('\n')
+      let metaFound = false
+      let bodyStartLine = 0
+      for (let k = 0; k < lines.length; k++) {
+        const line = lines[k].trim()
+        if (line.startsWith('**Subject') || line.startsWith('**From:') || line.startsWith('**CTA:')) {
+          metaFound = true
+        } else if (metaFound && line === '---') {
+          bodyStartLine = k + 1
+          break
+        }
+      }
+      if (bodyStartLine > 0) {
+        body = lines.slice(bodyStartLine).join('\n')
+      }
+    }
+
+    // Clean markdown formatting for Google Sheet
+    body = body
+      .replace(/^---+$/gm, '')
+      .replace(/\*\*\[(.+?)\]\(.*?\)\*\*/g, '$1')
+      .replace(/\[(.+?)\]\(.*?\)/g, '$1')
+      .replace(/\*\*(.+?)\*\*/g, '$1')
+      .replace(/\*(.+?)\*/g, '$1')
+      .replace(/\n{3,}/g, '\n\n')
+      .trim()
+
+    emails.push({
+      number: parseInt(match[1]),
+      title: match[2].trim(),
+      subject,
+      previewText: preview,
+      from,
+      body,
+    })
+  }
+
+  return emails
 }
 
 // ─── Schedule Helpers ─────────────────────────────────────────────────
@@ -347,10 +591,12 @@ function generateSchedule(
 
 // ─── Playbook Generator ──────────────────────────────────────────────
 
-function generatePlaybook(tier: Tier, source: string): PlaybookRow[] {
+function generatePlaybook(tier: Tier, source: string, client: string): PlaybookRow[] {
   const rows: PlaybookRow[] = []
 
   const add = (type: RowType, a: string, b = '') => rows.push({ type, cells: [a, b] })
+
+  const baseUrl = 'https://contentrepurposehub.com/clients'
 
   // Title
   add('title', 'Your Content Playbook')
@@ -365,6 +611,14 @@ function generatePlaybook(tier: Tier, source: string): PlaybookRow[] {
   add('intro', intros[tier])
   add('spacer', '')
   add('cta', 'Your first post is ready to go today.')
+  add('spacer', '')
+
+  // YOUR LIVE PAGES (clickable links — rendered via Sheets API hyperlink property)
+  add('section', 'YOUR LIVE PAGES')
+  add('link', 'Landing Page', `${baseUrl}/${client}`)
+  add('link', 'Blog Post', `${baseUrl}/${client}/blog`)
+  add('link', 'Lead Magnet (Scorecard)', `${baseUrl}/${client}/scorecard`)
+  add('note', 'These pages are live and hosted by us. Share them anywhere \u2014 social bios, email signatures, link-in-bio tools.')
   add('spacer', '')
 
   // WHAT'S INSIDE
@@ -666,6 +920,51 @@ function getPlaybookFormatRequests(sheetId: number, rows: PlaybookRow[]): any[] 
     })
   }
 
+  // Link rows: bold navy label in column A, blue underlined URL in column B
+  const linkBlue = { red: 0.067, green: 0.333, blue: 0.8 }
+  for (const row of byType['link'] || []) {
+    // Column A: bold navy label (same as regular label)
+    requests.push({
+      repeatCell: {
+        range: { sheetId, startRowIndex: row, endRowIndex: row + 1, startColumnIndex: 0, endColumnIndex: 1 },
+        cell: {
+          userEnteredFormat: {
+            textFormat: { bold: true, fontSize: 10, foregroundColor: navy, fontFamily: 'Google Sans' },
+          },
+        },
+        fields: 'userEnteredFormat(textFormat)',
+      },
+    })
+    // Column B: blue underlined link text
+    requests.push({
+      repeatCell: {
+        range: { sheetId, startRowIndex: row, endRowIndex: row + 1, startColumnIndex: 1, endColumnIndex: 2 },
+        cell: {
+          userEnteredFormat: {
+            textFormat: { underline: true, fontSize: 10, foregroundColor: linkBlue, fontFamily: 'Google Sans' },
+          },
+        },
+        fields: 'userEnteredFormat(textFormat)',
+      },
+    })
+    // Set native hyperlink on the cell
+    requests.push({
+      updateCells: {
+        rows: [{
+          values: [{
+            hyperlink: rows[row].cells[1],
+            userEnteredValue: { stringValue: rows[row].cells[1] },
+            userEnteredFormat: {
+              textFormat: { underline: true, fontSize: 10, foregroundColor: linkBlue, fontFamily: 'Google Sans' },
+            },
+          }],
+        }],
+        range: { sheetId, startRowIndex: row, endRowIndex: row + 1, startColumnIndex: 1, endColumnIndex: 2 },
+        fields: 'hyperlink,userEnteredValue,userEnteredFormat.textFormat',
+      },
+    })
+  }
+
   // Hide gridlines
   requests.push({
     updateSheetProperties: {
@@ -820,6 +1119,75 @@ function getContentTabFormatRequests(
         range: { sheetId, startRowIndex: 5, endRowIndex: 6 },
         cell: { userEnteredFormat: { textFormat: { bold: true, fontSize: 11 }, backgroundColor: lightGray } },
         fields: 'userEnteredFormat(textFormat,backgroundColor)',
+      },
+    })
+  }
+
+  if (tabType === 'twitter') {
+    const cols = [100, 80, 700]
+    cols.forEach((px, i) =>
+      requests.push({
+        updateDimensionProperties: {
+          range: { sheetId, dimension: 'COLUMNS', startIndex: i, endIndex: i + 1 },
+          properties: { pixelSize: px },
+          fields: 'pixelSize',
+        },
+      })
+    )
+
+    requests.push({
+      repeatCell: {
+        range: { sheetId, startRowIndex: 1, startColumnIndex: 2, endColumnIndex: 3 },
+        cell: { userEnteredFormat: { wrapStrategy: 'WRAP', verticalAlignment: 'TOP', padding: { top: 8, bottom: 8, left: 8, right: 8 } } },
+        fields: 'userEnteredFormat(wrapStrategy,verticalAlignment,padding)',
+      },
+    })
+
+    requests.push({
+      repeatCell: {
+        range: { sheetId, startRowIndex: 1, startColumnIndex: 0, endColumnIndex: 2 },
+        cell: { userEnteredFormat: { horizontalAlignment: 'CENTER', verticalAlignment: 'TOP' } },
+        fields: 'userEnteredFormat(horizontalAlignment,verticalAlignment)',
+      },
+    })
+
+    for (let row = 2; row <= rowCount; row += 2) {
+      requests.push({
+        repeatCell: {
+          range: { sheetId, startRowIndex: row, endRowIndex: row + 1 },
+          cell: { userEnteredFormat: { backgroundColor: lightGray } },
+          fields: 'userEnteredFormat(backgroundColor)',
+        },
+      })
+    }
+  }
+
+  if (tabType === 'email-sequence') {
+    const cols = [80, 250, 700]
+    cols.forEach((px, i) =>
+      requests.push({
+        updateDimensionProperties: {
+          range: { sheetId, dimension: 'COLUMNS', startIndex: i, endIndex: i + 1 },
+          properties: { pixelSize: px },
+          fields: 'pixelSize',
+        },
+      })
+    )
+
+    requests.push({
+      repeatCell: {
+        range: { sheetId, startRowIndex: 1, startColumnIndex: 2, endColumnIndex: 3 },
+        cell: { userEnteredFormat: { wrapStrategy: 'WRAP', verticalAlignment: 'TOP', padding: { top: 8, bottom: 8, left: 8, right: 8 } } },
+        fields: 'userEnteredFormat(wrapStrategy,verticalAlignment,padding)',
+      },
+    })
+
+    // Bold email number column
+    requests.push({
+      repeatCell: {
+        range: { sheetId, startRowIndex: 1, startColumnIndex: 0, endColumnIndex: 1 },
+        cell: { userEnteredFormat: { textFormat: { bold: true }, horizontalAlignment: 'CENTER', verticalAlignment: 'TOP' } },
+        fields: 'userEnteredFormat(textFormat,horizontalAlignment,verticalAlignment)',
       },
     })
   }
@@ -1044,7 +1412,7 @@ async function appendContent(
 // ─── Main ─────────────────────────────────────────────────────────────
 
 async function main() {
-  const { spreadsheetId, client, tier, source, mode, month } = parseArgs()
+  const { spreadsheetId, client, slug, tier, source, mode, month } = parseArgs()
   const clientDir = join(ROOT, 'clients', client, 'deliverables')
 
   loadEnv()
@@ -1084,9 +1452,28 @@ async function main() {
     console.log('        Newsletter file not found, skipping')
   }
 
-  // TODO: Parse Growth/Scale files when they exist
-  // 06-twitter-threads.md, 07-email-sequence.md, 08-instagram-captions.md,
-  // 09-youtube-shorts.md, 10-content-calendar.md
+  // Parse Growth/Scale deliverables
+  let twitterThreads: TwitterThread[] = []
+  let emailSequence: SequenceEmail[] = []
+
+  if (tier === 'growth' || tier === 'scale') {
+    const twitterPath = join(clientDir, '06-twitter-threads.md')
+    const emailSeqPath = join(clientDir, '07-email-sequence.md')
+
+    if (existsSync(twitterPath)) {
+      twitterThreads = parseTwitterThreads(readFileSync(twitterPath, 'utf-8'))
+      console.log(`        ${twitterThreads.length} Twitter threads parsed (${twitterThreads.reduce((s, t) => s + t.tweets.length, 0)} tweets total)`)
+    } else {
+      console.log('        Twitter threads file not found, skipping')
+    }
+
+    if (existsSync(emailSeqPath)) {
+      emailSequence = parseEmailSequence(readFileSync(emailSeqPath, 'utf-8'))
+      console.log(`        ${emailSequence.length} email sequence emails parsed`)
+    } else {
+      console.log('        Email sequence file not found, skipping')
+    }
+  }
 
   console.log()
 
@@ -1105,12 +1492,11 @@ async function main() {
   if (newsletter)
     tabDefs.push({ title: 'Newsletter', cols: 2, frozen: 0 })
 
-  // Growth/Scale tabs would go here when content exists
-  // if (twitterThreads) tabDefs.push({ title: 'Twitter/X Threads', cols: 4, frozen: 1 })
-  // if (emailSequence) tabDefs.push({ title: 'Email Sequence', cols: 3, frozen: 1 })
-  // if (instagramCaptions) tabDefs.push({ title: 'Instagram Captions', cols: 3, frozen: 1 })
-  // if (youtubeShorts) tabDefs.push({ title: 'YouTube Short Scripts', cols: 3, frozen: 1 })
-  // if (contentCalendar) tabDefs.push({ title: 'Content Calendar', cols: 6, frozen: 1 })
+  // Growth/Scale tabs
+  if (twitterThreads.length > 0)
+    tabDefs.push({ title: 'Twitter/X Threads', cols: 3, frozen: 1 })
+  if (emailSequence.length > 0)
+    tabDefs.push({ title: 'Email Sequence', cols: 3, frozen: 1 })
 
   tabDefs.push({ title: 'Posting Schedule', cols: 6, frozen: 1 })
 
@@ -1160,9 +1546,9 @@ async function main() {
   let tabIdx = 0
 
   // Playbook
-  const playbookRows = generatePlaybook(tier, source)
+  const playbookRows = generatePlaybook(tier, source, slug)
   const playbookValues = playbookRows.map((r) => r.cells)
-  await sheetsApi(token, spreadsheetId, `/values/${encodeURIComponent("Your Content Playbook!A1")}?valueInputOption=RAW`, 'PUT', { values: playbookValues })
+  await sheetsApi(token, spreadsheetId, `/values/${encodeURIComponent("Your Content Playbook!A1")}?valueInputOption=USER_ENTERED`, 'PUT', { values: playbookValues })
   const playbookSheetId = sheetIds[tabIdx++]
 
   // LinkedIn Posts
@@ -1195,6 +1581,45 @@ async function main() {
       ['', newsletter.body],
     ]
     await sheetsApi(token, spreadsheetId, `/values/${encodeURIComponent("Newsletter!A1")}?valueInputOption=USER_ENTERED`, 'PUT', { values: nlRows })
+    tabIdx++
+  }
+
+  // Twitter/X Threads
+  if (twitterThreads.length > 0) {
+    const twitterRows: (string | number)[][] = [
+      ['Thread', 'Tweet #', 'Content (Copy & Paste)'],
+    ]
+    for (const thread of twitterThreads) {
+      for (let j = 0; j < thread.tweets.length; j++) {
+        twitterRows.push([
+          j === 0 ? `Thread ${thread.number}: ${thread.title}` : '',
+          j + 1,
+          thread.tweets[j],
+        ])
+      }
+      // Add spacer between threads
+      twitterRows.push(['', '', ''])
+    }
+    await sheetsApi(token, spreadsheetId, `/values/${encodeURIComponent("Twitter/X Threads!A1")}?valueInputOption=USER_ENTERED`, 'PUT', { values: twitterRows })
+    tabIdx++
+  }
+
+  // Email Sequence
+  if (emailSequence.length > 0) {
+    const emailRows: (string | number)[][] = [
+      ['Email #', 'Field', 'Content'],
+    ]
+    for (const email of emailSequence) {
+      emailRows.push([`Email ${email.number}`, 'Subject Line', email.subject])
+      emailRows.push(['', 'Preview Text', email.previewText])
+      emailRows.push(['', 'From', email.from])
+      emailRows.push(['', 'Title', email.title])
+      emailRows.push(['', '', ''])
+      emailRows.push(['', 'FULL EMAIL BODY', 'Copy the cell below and paste into your email platform'])
+      emailRows.push(['', '', email.body])
+      emailRows.push(['', '', '']) // spacer between emails
+    }
+    await sheetsApi(token, spreadsheetId, `/values/${encodeURIComponent("Email Sequence!A1")}?valueInputOption=USER_ENTERED`, 'PUT', { values: emailRows })
     tabIdx++
   }
 
@@ -1236,6 +1661,16 @@ async function main() {
     allFormatRequests.push(...getContentTabFormatRequests(sheetIds[contentTabIdx], 'newsletter', 7))
     contentTabIdx++
   }
+  if (twitterThreads.length > 0) {
+    const totalTweetRows = twitterThreads.reduce((s, t) => s + t.tweets.length + 1, 0)
+    allFormatRequests.push(...getContentTabFormatRequests(sheetIds[contentTabIdx], 'twitter', totalTweetRows))
+    contentTabIdx++
+  }
+  if (emailSequence.length > 0) {
+    const totalEmailRows = emailSequence.length * 8
+    allFormatRequests.push(...getContentTabFormatRequests(sheetIds[contentTabIdx], 'email-sequence', totalEmailRows))
+    contentTabIdx++
+  }
   allFormatRequests.push(...getContentTabFormatRequests(sheetIds[contentTabIdx], 'schedule', posts.length))
 
   await sheetsApi(token, spreadsheetId, ':batchUpdate', 'POST', { requests: allFormatRequests })
@@ -1257,6 +1692,8 @@ async function main() {
       tabNames[i] === 'Your Content Playbook' ? 'Strategy guide + how-to-use' :
       tabNames[i] === 'LinkedIn Posts' ? `${posts.length} posts, copy-paste ready` :
       tabNames[i] === 'Newsletter' ? 'Subject line + full email body' :
+      tabNames[i] === 'Twitter/X Threads' ? `${twitterThreads.length} threads, ${twitterThreads.reduce((s, t) => s + t.tweets.length, 0)} tweets` :
+      tabNames[i] === 'Email Sequence' ? `${emailSequence.length}-email automated sequence` :
       tabNames[i] === 'Posting Schedule' ? `Mon/Wed/Fri over ${Math.ceil(posts.length / 3)} weeks` :
       ''
     console.log(`    ${i + 1}. ${tabNames[i]}  \u2014 ${desc}`)

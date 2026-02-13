@@ -2,25 +2,30 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import LeadCaptureForm from './LeadCaptureForm'
+import AnimatedCard from './AnimatedCard'
 import AnimatedCounter from './AnimatedCounter'
+import VideoBackground from './VideoBackground'
 
 export const metadata: Metadata = {
-  title: 'Wealth Automation Scorecard — How Automatic Is Your Financial Life? | David Bach',
-  description: 'Free 2-minute scorecard based on the system used by 654,000 401k millionaires. Find out if your wealth system is running on autopilot or still relying on willpower.',
+  title: 'The AI Blind Spot Scorecard — What You\'re Not Seeing About AI | Yoshua Bengio',
+  description: 'Free 2-minute scorecard from Turing Award winner Yoshua Bengio. You use AI every day — here\'s what you\'re not seeing about the risks ahead.',
   openGraph: {
-    title: 'Wealth Automation Scorecard | David Bach',
-    description: 'Free 2-minute scorecard based on the system used by 654,000 401k millionaires.',
+    title: 'The AI Blind Spot Scorecard | Yoshua Bengio',
+    description: 'You use AI every day. Here\'s what you\'re not seeing.',
     type: 'website',
   },
 }
 
-/* ─── Design tokens (davidbach.com brand match) ─── */
-const BLUE = '#2729FE'
-const BLUE_HOVER = '#1D2EC3'
-const CHARCOAL = '#231F21'
-const CREAM = '#F3F0EC'
-const ORANGE_START = '#D73A0F'
-const ORANGE_END = '#ED8345'
+/* ═══════════════════════════════════════════════════════════
+   DESIGN TOKENS — Brand-matched to LawZero / yoshuabengio.org
+   ═══════════════════════════════════════════════════════════ */
+const PRIMARY = '#003CC5'
+const DARK = '#23242B'
+const LIGHT = '#F5F7FA'
+const ACCENT = '#0F4C75'
+const LIGHT_BLUE = '#4DA3FF'
+const CTA_BG = '#003CC5'
+const CTA_HOVER = '#0048E8'
 
 const heading = {
   fontFamily: "'Inter', sans-serif",
@@ -28,203 +33,376 @@ const heading = {
   lineHeight: 1.1,
 }
 
-export default function DavidBachLandingPage() {
+export default function YoshuaBengioLandingPage() {
   return (
     <main>
-      {/* JSON-LD Structured Data */}
+      {/* JSON-LD */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'WebPage',
-            name: 'Wealth Automation Scorecard',
-            description: 'Free 2-minute scorecard based on the system used by 654,000 401k millionaires.',
+            name: 'The AI Blind Spot Scorecard — Yoshua Bengio',
+            description: 'Free AI awareness assessment from Turing Award winner Yoshua Bengio.',
             author: {
               '@type': 'Person',
-              name: 'David Bach',
-              url: 'https://davidbach.com',
-              jobTitle: '10x New York Times Bestselling Author',
+              name: 'Yoshua Bengio',
+              url: 'https://yoshuabengio.org',
+              jobTitle: 'Turing Award Winner, Founder of LawZero',
             },
             datePublished: '2026-02-13',
           }),
         }}
       />
 
-      {/* Responsive styles */}
+      {/* ═══ RESPONSIVE STYLES ═══ */}
       <style>{`
         @media (min-width: 768px) {
-          .db-hero-grid { grid-template-columns: 1fr 1fr !important; }
-          .db-hero-image { display: flex !important; }
-          .db-reveal-grid { grid-template-columns: 1fr 1fr !important; }
-          .db-stats-grid { grid-template-columns: repeat(3, 1fr) !important; }
-          .db-hub-grid { grid-template-columns: 1fr 1fr !important; }
-          .db-steps-row { flex-direction: row !important; }
+          .yb-hero-grid { grid-template-columns: 1fr 1fr !important; }
+          .yb-framework-grid { grid-template-columns: repeat(3, 1fr) !important; }
+          .yb-stats-grid { grid-template-columns: repeat(4, 1fr) !important; }
+          .yb-reveals-grid { grid-template-columns: repeat(2, 1fr) !important; }
+          .yb-optin-grid { grid-template-columns: 1fr 1fr !important; }
+          .yb-resources-grid { grid-template-columns: repeat(3, 1fr) !important; }
+          .yb-endorsements-grid { grid-template-columns: 1fr 1fr !important; }
+          .yb-about-grid { grid-template-columns: 1fr 1fr !important; }
+          .yb-steps-grid { grid-template-columns: repeat(3, 1fr) !important; }
+          .yb-faq-grid { grid-template-columns: 1fr !important; }
+          .yb-value-grid { grid-template-columns: 1fr 1fr !important; }
+          .yb-footer-grid { grid-template-columns: 1fr 1fr 1fr !important; text-align: left !important; }
+          .yb-nav-links { display: flex !important; }
+        }
+        .yb-card-hover:hover { border-color: ${PRIMARY} !important; box-shadow: 0 8px 24px rgba(0,60,197,0.12) !important; }
+        .yb-link-hover:hover { color: ${PRIMARY} !important; }
+        .yb-cta-hover:hover { background: ${CTA_HOVER} !important; }
+        @supports (-webkit-touch-callout: none) {
+          .yb-parallax { background-attachment: scroll !important; }
         }
       `}</style>
 
-      {/* ═══════════════════════════════════════════════════════════
-          SECTION 1: HERO — Dark charcoal background
-      ═══════════════════════════════════════════════════════════ */}
-      <section style={{
-        background: CHARCOAL,
-        padding: '72px 24px 64px',
-        position: 'relative',
-        overflow: 'hidden',
+      {/* ═══════════════════════════════════════════
+           SECTION 1: STICKY HEADER
+           ═══════════════════════════════════════════ */}
+      <header style={{
+        position: 'sticky',
+        top: 0,
+        zIndex: 100,
+        background: '#fff',
+        borderBottom: '1px solid rgba(0,0,0,0.08)',
+        padding: '12px 24px',
       }}>
-        {/* Subtle gradient overlay */}
         <div style={{
-          position: 'absolute',
-          top: 0,
-          right: 0,
-          width: '50%',
-          height: '100%',
-          background: `radial-gradient(ellipse at 80% 30%, rgba(39,41,254,0.08) 0%, transparent 60%)`,
-          pointerEvents: 'none',
-        }} />
-
-        <div style={{ maxWidth: '1200px', margin: '0 auto', position: 'relative' }}>
-          <div className="db-hero-grid" style={{
-            display: 'grid',
-            gridTemplateColumns: '1fr',
-            gap: '48px',
+          maxWidth: '1200px',
+          margin: '0 auto',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+        }}>
+          <Link href="/clients/david-bach" style={{
+            textDecoration: 'none',
+            display: 'flex',
             alignItems: 'center',
+            gap: '10px',
           }}>
-            {/* Left Column: Copy + Form */}
-            <div>
-              {/* Author identity badge */}
-              <div style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '12px',
-                marginBottom: '28px',
-              }}>
-                <Image
-                  src="/david-bach-headshot.png"
-                  alt="David Bach"
-                  width={44}
-                  height={44}
-                  style={{ borderRadius: '50%', objectFit: 'cover', border: '2px solid rgba(255,255,255,0.2)' }}
-                />
-                <span style={{
-                  fontSize: '14px',
-                  color: 'rgba(255,255,255,0.7)',
-                  fontWeight: 500,
-                  fontFamily: "'Source Sans 3', sans-serif",
-                }}>
-                  David Bach &mdash; 10x New York Times Bestselling Author
-                </span>
-              </div>
-
-              <h1 style={{
-                ...heading,
-                fontSize: 'clamp(34px, 5vw, 52px)',
-                color: '#FFFFFF',
-                marginBottom: '20px',
-              }}>
-                How Automatic Is Your Financial Life?
-              </h1>
-
-              <p style={{
-                fontSize: '19px',
-                lineHeight: 1.65,
-                color: 'rgba(255,255,255,0.75)',
-                marginBottom: '36px',
-                maxWidth: '520px',
-              }}>
-                <AnimatedCounter
-                  target={654000}
-                  duration={2200}
-                  style={{ color: '#fff', fontWeight: 800, fontFamily: "'Inter', sans-serif" }}
-                />{' '}
-                people followed one formula and became 401k millionaires. This free 2-minute scorecard shows you if your system is running &mdash; or if you&apos;re still relying on willpower.
-              </p>
-
-              <div style={{ maxWidth: '400px' }}>
-                <LeadCaptureForm source="hero" variant="dark" />
-              </div>
-            </div>
-
-            {/* Right Column: Headshot (hidden on mobile) */}
-            <div className="db-hero-image" style={{
-              display: 'none',
-              justifyContent: 'center',
-              alignItems: 'center',
+            <span style={{
+              fontFamily: "'Inter', sans-serif",
+              fontWeight: 800,
+              fontSize: '18px',
+              color: DARK,
+              letterSpacing: '-0.02em',
             }}>
-              <Image
-                src="/david-bach-headshot.png"
-                alt="David Bach"
-                width={420}
-                height={420}
-                priority
+              YOSHUA BENGIO
+            </span>
+          </Link>
+
+          <nav className="yb-nav-links" style={{
+            display: 'none',
+            alignItems: 'center',
+            gap: '28px',
+          }}>
+            {[
+              { label: 'The Warning', href: '#warning' },
+              { label: 'Blog', href: '/clients/david-bach/blog' },
+              { label: 'Scorecard', href: '/clients/david-bach/scorecard' },
+            ].map((item) => (
+              <Link
+                key={item.label}
+                href={item.href}
+                className="yb-link-hover"
                 style={{
-                  borderRadius: '20px',
-                  objectFit: 'cover',
-                  width: '100%',
-                  maxWidth: '420px',
-                  height: 'auto',
-                  boxShadow: '0 24px 48px rgba(0,0,0,0.3)',
+                  fontSize: '13px',
+                  fontWeight: 600,
+                  color: '#9ca3af',
+                  textDecoration: 'none',
+                  fontFamily: "'Inter', sans-serif",
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.06em',
+                  transition: 'color 0.15s',
                 }}
-              />
+              >
+                {item.label}
+              </Link>
+            ))}
+          </nav>
+
+          <Link href="#scorecard" className="yb-cta-hover" style={{
+            background: PRIMARY,
+            color: '#fff',
+            padding: '10px 24px',
+            borderRadius: '30px',
+            fontSize: '13px',
+            fontWeight: 700,
+            textDecoration: 'none',
+            fontFamily: "'Inter', sans-serif",
+            transition: 'background 0.15s',
+          }}>
+            Take the Scorecard
+          </Link>
+        </div>
+      </header>
+
+      {/* ═══════════════════════════════════════════
+           SECTION 2: HERO — VideoBackground + Two Columns
+           ═══════════════════════════════════════════ */}
+      <VideoBackground
+        src="/bengio-hero-clip.mp4"
+        overlay={`linear-gradient(135deg, rgba(35,36,43,0.92) 0%, rgba(35,36,43,0.85) 100%)`}
+        filter="brightness(0.5)"
+        style={{
+          minHeight: '80vh',
+          display: 'flex',
+          alignItems: 'center',
+          padding: '80px 24px',
+        }}
+      >
+        <div className="yb-hero-grid" style={{
+          maxWidth: '1200px',
+          margin: '0 auto',
+          display: 'grid',
+          gridTemplateColumns: '1fr',
+          gap: '48px',
+          alignItems: 'center',
+          width: '100%',
+        }}>
+          {/* Left: Content */}
+          <div>
+            <div style={{
+              display: 'flex',
+              gap: '10px',
+              flexWrap: 'wrap',
+              marginBottom: '24px',
+            }}>
+              {['Turing Award Winner', 'Creator of Deep Learning', 'Founder of LawZero'].map((tag) => (
+                <span key={tag} style={{
+                  padding: '6px 14px',
+                  borderRadius: '20px',
+                  fontSize: '11px',
+                  fontWeight: 600,
+                  color: LIGHT_BLUE,
+                  border: `1px solid ${LIGHT_BLUE}40`,
+                  fontFamily: "'Inter', sans-serif",
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.06em',
+                }}>
+                  {tag}
+                </span>
+              ))}
             </div>
+
+            <h1 style={{
+              ...heading,
+              fontSize: 'clamp(32px, 5vw, 56px)',
+              color: '#fff',
+              marginBottom: '20px',
+            }}>
+              He Helped Create AI.{' '}
+              <span style={{ color: LIGHT_BLUE }}>
+                Now He Says We Have 2 Years.
+              </span>
+            </h1>
+
+            <p style={{
+              fontSize: '19px',
+              lineHeight: 1.7,
+              color: 'rgba(255,255,255,0.75)',
+              maxWidth: '540px',
+              marginBottom: '12px',
+            }}>
+              Yoshua Bengio — the most-cited computer scientist alive — sat down with Steven Bartlett to deliver the warning he can no longer keep to himself.
+            </p>
+
+            <div style={{
+              display: 'flex',
+              gap: '24px',
+              marginBottom: '32px',
+              flexWrap: 'wrap',
+            }}>
+              <div style={{ textAlign: 'center' }}>
+                <div style={{ color: LIGHT_BLUE, fontSize: '28px', fontWeight: 800, fontFamily: "'Inter', sans-serif" }}>
+                  <AnimatedCounter target={500000} suffix="+" style={{ color: LIGHT_BLUE, fontSize: '28px', fontWeight: 800, fontFamily: "'Inter', sans-serif" }} />
+                </div>
+                <div style={{ color: 'rgba(255,255,255,0.5)', fontSize: '12px', fontFamily: "'Inter', sans-serif", textTransform: 'uppercase', letterSpacing: '0.05em' }}>Citations</div>
+              </div>
+              <div style={{ textAlign: 'center' }}>
+                <div style={{ color: LIGHT_BLUE, fontSize: '28px', fontWeight: 800, fontFamily: "'Inter', sans-serif" }}>
+                  <AnimatedCounter target={2018} style={{ color: LIGHT_BLUE, fontSize: '28px', fontWeight: 800, fontFamily: "'Inter', sans-serif" }} />
+                </div>
+                <div style={{ color: 'rgba(255,255,255,0.5)', fontSize: '12px', fontFamily: "'Inter', sans-serif", textTransform: 'uppercase', letterSpacing: '0.05em' }}>Turing Award</div>
+              </div>
+              <div style={{ textAlign: 'center' }}>
+                <div style={{ color: LIGHT_BLUE, fontSize: '28px', fontWeight: 800, fontFamily: "'Inter', sans-serif" }}>
+                  $<AnimatedCounter target={30} style={{ color: LIGHT_BLUE, fontSize: '28px', fontWeight: 800, fontFamily: "'Inter', sans-serif" }} />M
+                </div>
+                <div style={{ color: 'rgba(255,255,255,0.5)', fontSize: '12px', fontFamily: "'Inter', sans-serif", textTransform: 'uppercase', letterSpacing: '0.05em' }}>LawZero Raised</div>
+              </div>
+            </div>
+
+            <Link href="#scorecard" className="yb-cta-hover" style={{
+              display: 'inline-block',
+              background: CTA_BG,
+              color: '#fff',
+              padding: '16px 36px',
+              borderRadius: '30px',
+              fontSize: '17px',
+              fontWeight: 700,
+              textDecoration: 'none',
+              fontFamily: "'Inter', sans-serif",
+              transition: 'background 0.15s',
+            }}>
+              Take the AI Blind Spot Scorecard
+            </Link>
+            <p style={{
+              fontSize: '13px',
+              color: 'rgba(255,255,255,0.5)',
+              marginTop: '10px',
+            }}>
+              10 questions. 2 minutes. See what you&apos;re not seeing.
+            </p>
+          </div>
+
+          {/* Right: Video clip with rounded corners */}
+          <div style={{
+            borderRadius: '20px',
+            overflow: 'hidden',
+            boxShadow: '0 20px 60px rgba(0,0,0,0.4)',
+          }}>
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              controls
+              preload="auto"
+              style={{
+                width: '100%',
+                display: 'block',
+                borderRadius: '20px',
+              }}
+            >
+              <source src="/bengio-hero-clip.mp4" type="video/mp4" />
+            </video>
           </div>
         </div>
-      </section>
+      </VideoBackground>
 
-      {/* ═══════════════════════════════════════════════════════════
-          SECTION 2: MEDIA CREDIBILITY BAR
-      ═══════════════════════════════════════════════════════════ */}
+      {/* ═══════════════════════════════════════════
+           SECTION 3: MEDIA / CREDIBILITY LOGOS BAR
+           ═══════════════════════════════════════════ */}
       <section style={{
-        background: '#FFFFFF',
-        padding: '20px 24px',
-        borderBottom: '1px solid #eee',
+        background: '#fff',
+        borderBottom: '1px solid rgba(0,0,0,0.06)',
+        padding: '28px 24px',
       }}>
         <div style={{
-          maxWidth: '800px',
+          maxWidth: '1000px',
           margin: '0 auto',
           textAlign: 'center',
         }}>
           <p style={{
-            fontSize: '12px',
-            letterSpacing: '0.12em',
+            fontSize: '11px',
+            fontWeight: 700,
+            color: '#d1d5db',
             textTransform: 'uppercase',
-            color: '#b0b0b0',
-            fontWeight: 600,
+            letterSpacing: '0.12em',
             fontFamily: "'Inter', sans-serif",
+            marginBottom: '18px',
           }}>
-            As featured on &nbsp;&nbsp; CNBC &nbsp;&middot;&nbsp; Oprah &nbsp;&middot;&nbsp; Forbes &nbsp;&middot;&nbsp; Wall Street Journal &nbsp;&middot;&nbsp; Good Morning America
+            As Recognized By
           </p>
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            flexWrap: 'wrap',
+            gap: '32px',
+          }}>
+            {[
+              'Turing Award 2018',
+              'UN Scientific Advisory Board',
+              'Royal Society of London',
+              'Mila Quebec AI Institute',
+              'Diary of a CEO',
+            ].map((item) => (
+              <span key={item} style={{
+                fontSize: '13px',
+                fontWeight: 700,
+                color: '#b0b6be',
+                fontFamily: "'Inter', sans-serif",
+                textTransform: 'uppercase',
+                letterSpacing: '0.06em',
+                whiteSpace: 'nowrap',
+              }}>
+                {item}
+              </span>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════════════════════
-          SECTION 3: WHAT THE SCORECARD REVEALS
-      ═══════════════════════════════════════════════════════════ */}
-      <section style={{ background: CREAM, padding: '72px 24px' }}>
-        <div style={{ maxWidth: '1080px', margin: '0 auto' }}>
-          <p style={{
-            fontSize: '13px',
-            fontWeight: 700,
-            letterSpacing: '0.08em',
-            textTransform: 'uppercase',
-            color: BLUE,
-            textAlign: 'center',
-            marginBottom: '12px',
-            fontFamily: "'Inter', sans-serif",
-          }}>
-            The Scorecard
-          </p>
-          <h2 style={{
-            ...heading,
-            fontSize: 'clamp(26px, 4vw, 38px)',
-            color: CHARCOAL,
-            textAlign: 'center',
-            marginBottom: '52px',
-          }}>
-            What You&apos;ll Discover in 2 Minutes
-          </h2>
+      {/* ═══════════════════════════════════════════
+           SECTION 4: FRAMEWORK — "Why This Warning Is Different"
+           Parallax background + 3 animated pillar cards
+           ═══════════════════════════════════════════ */}
+      <section id="warning" className="yb-parallax" style={{
+        backgroundImage: `linear-gradient(rgba(35,36,43,0.92), rgba(35,36,43,0.88)), url('/bengio-hero-clip.mp4')`,
+        backgroundColor: DARK,
+        backgroundAttachment: 'fixed',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        padding: '100px 24px',
+      }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          <div style={{ maxWidth: '680px', margin: '0 auto 56px', textAlign: 'center' }}>
+            <p style={{
+              fontSize: '13px',
+              fontWeight: 700,
+              color: LIGHT_BLUE,
+              textTransform: 'uppercase',
+              letterSpacing: '0.1em',
+              fontFamily: "'Inter', sans-serif",
+              marginBottom: '12px',
+            }}>
+              The Warning
+            </p>
+            <h2 style={{
+              ...heading,
+              fontSize: 'clamp(28px, 4vw, 44px)',
+              color: '#fff',
+              marginBottom: '16px',
+            }}>
+              Why This Warning Is Different
+            </h2>
+            <p style={{
+              fontSize: '18px',
+              lineHeight: 1.7,
+              color: 'rgba(255,255,255,0.7)',
+            }}>
+              There are thousands of AI hot takes. Only one comes from the man who built the foundation.
+            </p>
+          </div>
 
-          <div className="db-reveal-grid" style={{
+          <div className="yb-framework-grid" style={{
             display: 'grid',
             gridTemplateColumns: '1fr',
             gap: '24px',
@@ -232,466 +410,1032 @@ export default function DavidBachLandingPage() {
             {[
               {
                 num: '01',
-                title: 'Your Savings Rate vs. the Formula',
-                desc: 'The 654,000 Fidelity millionaires save 14% of gross income. The average American saves 3-5%. One number predicts millionaire status more than income.',
+                title: 'The Source',
+                text: 'This isn\'t a journalist\'s hot take. Yoshua Bengio won the Turing Award for creating deep learning. He built the foundation of ChatGPT, Claude, and every modern AI. When the creator says stop, the weight is different.',
               },
               {
                 num: '02',
-                title: 'Your Automation Level',
-                desc: "The government takes taxes automatically. That's why taxes always get paid. Is your wealth system running the same way — or still relying on willpower?",
+                title: 'The Specifics',
+                text: 'Bengio isn\'t dealing in vague existential dread. He names specific risks: power concentration destroying democracy, sycophantic AI undermining decisions, emotional bonds preventing necessary shutdowns. Each backed with evidence.',
               },
               {
                 num: '03',
-                title: 'Which Escalators You\'re On',
-                desc: '$45 trillion in stocks. $34 trillion in real estate. The scorecard shows which wealth escalators you\'re riding — and which you\'re missing.',
+                title: 'The Solution',
+                text: 'Most warnings end with "we need to do something." Bengio founded LawZero \u2014 a $30M nonprofit backed by Skype\'s co-founder and former Google CEO \u2014 to build AI that\'s safe by design. Not criticism. Construction.',
+              },
+            ].map((card, i) => (
+              <AnimatedCard key={card.num} delay={i * 200} style={{
+                background: 'rgba(255,255,255,0.06)',
+                borderRadius: '20px',
+                padding: '36px',
+                border: '1px solid rgba(255,255,255,0.1)',
+                backdropFilter: 'blur(10px)',
+              }}>
+                <div style={{
+                  fontSize: '14px',
+                  fontWeight: 800,
+                  color: LIGHT_BLUE,
+                  fontFamily: "'Inter', sans-serif",
+                  marginBottom: '14px',
+                }}>
+                  {card.num}
+                </div>
+                <h3 style={{ ...heading, fontSize: '22px', color: '#fff', marginBottom: '12px' }}>
+                  {card.title}
+                </h3>
+                <p style={{ fontSize: '16px', lineHeight: 1.7, color: 'rgba(255,255,255,0.7)' }}>
+                  {card.text}
+                </p>
+              </AnimatedCard>
+            ))}
+          </div>
+
+          <div style={{ textAlign: 'center', marginTop: '40px' }}>
+            <Link href="/clients/david-bach/blog" style={{
+              color: LIGHT_BLUE,
+              fontSize: '15px',
+              fontWeight: 600,
+              textDecoration: 'none',
+              fontFamily: "'Inter', sans-serif",
+            }}>
+              Read the full analysis &rarr;
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════
+           SECTION 5: KEY NUMBERS
+           ═══════════════════════════════════════════ */}
+      <section style={{ background: '#fff', padding: '72px 24px' }}>
+        <div className="yb-stats-grid" style={{
+          maxWidth: '1000px',
+          margin: '0 auto',
+          display: 'grid',
+          gridTemplateColumns: '1fr 1fr',
+          gap: '40px',
+          textAlign: 'center',
+        }}>
+          {[
+            { target: 2, suffix: ' Years', label: 'The window Bengio says we have to act' },
+            { target: 500000, suffix: '+', label: 'Research citations worldwide' },
+            { target: 30, prefix: '$', suffix: 'M', label: 'Raised for LawZero AI safety lab' },
+            { target: 3, suffix: '', label: 'Turing Award winners who created deep learning' },
+          ].map((stat) => (
+            <div key={stat.label}>
+              <div style={{
+                fontSize: 'clamp(36px, 5vw, 52px)',
+                fontWeight: 800,
+                color: PRIMARY,
+                fontFamily: "'Inter', sans-serif",
+                lineHeight: 1.1,
+                marginBottom: '8px',
+              }}>
+                <AnimatedCounter
+                  target={stat.target}
+                  prefix={stat.prefix || ''}
+                  suffix={stat.suffix}
+                  style={{
+                    fontSize: 'inherit',
+                    fontWeight: 'inherit',
+                    color: 'inherit',
+                    fontFamily: 'inherit',
+                  }}
+                />
+              </div>
+              <p style={{
+                fontSize: '14px',
+                color: '#6b7280',
+                fontFamily: "'Inter', sans-serif",
+                lineHeight: 1.5,
+              }}>
+                {stat.label}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════
+           SECTION 6: SIGNATURE QUOTE
+           ═══════════════════════════════════════════ */}
+      <section style={{
+        background: PRIMARY,
+        padding: '80px 24px',
+      }}>
+        <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
+          <div style={{
+            fontSize: '80px',
+            color: 'rgba(255,255,255,0.3)',
+            lineHeight: 1,
+            fontFamily: 'Georgia, serif',
+          }}>&ldquo;</div>
+          <blockquote style={{
+            fontSize: 'clamp(24px, 3.5vw, 36px)',
+            lineHeight: 1.4,
+            color: '#fff',
+            fontStyle: 'italic',
+            fontFamily: 'Georgia, serif',
+            marginBottom: '24px',
+          }}>
+            I would press the button because I care about my children.
+          </blockquote>
+          <p style={{
+            fontSize: '16px',
+            fontWeight: 600,
+            color: 'rgba(255,255,255,0.8)',
+            fontFamily: "'Inter', sans-serif",
+          }}>
+            Yoshua Bengio
+          </p>
+          <p style={{
+            fontSize: '13px',
+            color: 'rgba(255,255,255,0.5)',
+            fontFamily: "'Inter', sans-serif",
+            marginTop: '4px',
+          }}>
+            When asked if he would stop AI advancement &mdash; Diary of a CEO, December 2025
+          </p>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════
+           SECTION 7: WHAT THE SCORECARD REVEALS (4-item grid)
+           ═══════════════════════════════════════════ */}
+      <section style={{ background: LIGHT, padding: '88px 24px' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          <div style={{ maxWidth: '600px', margin: '0 auto 48px', textAlign: 'center' }}>
+            <h2 style={{
+              ...heading,
+              fontSize: 'clamp(28px, 4vw, 40px)',
+              color: DARK,
+              marginBottom: '16px',
+            }}>
+              What the Scorecard Reveals
+            </h2>
+            <p style={{
+              fontSize: '17px',
+              lineHeight: 1.7,
+              color: '#6b7280',
+            }}>
+              10 questions across 5 dimensions of AI awareness. Each mapped to a specific risk Bengio identifies.
+            </p>
+          </div>
+
+          <div className="yb-reveals-grid" style={{
+            display: 'grid',
+            gridTemplateColumns: '1fr',
+            gap: '24px',
+          }}>
+            {[
+              {
+                num: '01',
+                title: 'The Sycophancy Blind Spot',
+                desc: 'Is your AI telling you what you want to hear? Bengio discovered his own AI was useless for research feedback \u2014 until he tricked it into being honest.',
+              },
+              {
+                num: '02',
+                title: 'The Power Concentration Gap',
+                desc: 'A handful of companies and countries are gaining the kind of AI advantage that could make democracy impossible. Do you see it happening?',
+              },
+              {
+                num: '03',
+                title: 'The Emotional Dependency Risk',
+                desc: 'AI companions and therapists create bonds that could prevent us from shutting systems down when we need to. Are you or your family exposed?',
               },
               {
                 num: '04',
-                title: 'Your 3 Biggest Gaps',
-                desc: 'Most people are closer than they think. The scorecard identifies the specific gaps between where you are and the formula — with action items to close them.',
+                title: 'The Governance Readiness Score',
+                desc: 'Bengio says we have 2 years. Current regulations are decades behind the technology. Where do you stand on the awareness spectrum?',
               },
-            ].map((item) => (
-              <div key={item.num} style={{
-                background: '#FFFFFF',
+            ].map((item, i) => (
+              <AnimatedCard key={item.num} delay={i * 150} style={{
+                background: '#fff',
                 borderRadius: '16px',
                 padding: '32px',
-                display: 'flex',
-                gap: '20px',
-                alignItems: 'flex-start',
+                border: '1px solid rgba(0,0,0,0.06)',
               }}>
-                <span style={{
-                  fontFamily: "'Inter', sans-serif",
-                  fontWeight: 800,
+                <div style={{
                   fontSize: '32px',
-                  color: BLUE,
-                  opacity: 0.2,
-                  lineHeight: 1,
-                  minWidth: '40px',
+                  fontWeight: 800,
+                  color: `${PRIMARY}20`,
+                  fontFamily: "'Inter', sans-serif",
+                  marginBottom: '12px',
                 }}>
                   {item.num}
-                </span>
-                <div>
-                  <h3 style={{
-                    fontFamily: "'Inter', sans-serif",
-                    fontWeight: 700,
-                    fontSize: '18px',
-                    color: CHARCOAL,
-                    marginBottom: '8px',
-                  }}>
-                    {item.title}
-                  </h3>
-                  <p style={{ fontSize: '15px', lineHeight: 1.65, color: '#6b7280' }}>
-                    {item.desc}
-                  </p>
                 </div>
-              </div>
+                <h3 style={{ ...heading, fontSize: '20px', color: DARK, marginBottom: '10px' }}>
+                  {item.title}
+                </h3>
+                <p style={{ fontSize: '15px', lineHeight: 1.7, color: '#6b7280' }}>
+                  {item.desc}
+                </p>
+              </AnimatedCard>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════════════════════
-          SECTION 4: SIGNATURE QUOTE
-      ═══════════════════════════════════════════════════════════ */}
-      <section style={{ background: BLUE, padding: '64px 24px' }}>
-        <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
-          <p style={{
-            fontFamily: "'Inter', sans-serif",
-            fontSize: 'clamp(19px, 3vw, 26px)',
-            fontStyle: 'italic',
-            color: '#FFFFFF',
-            lineHeight: 1.6,
-            marginBottom: '20px',
-            fontWeight: 500,
+      {/* ═══════════════════════════════════════════
+           SECTION 8: OPT-IN (Primary Lead Capture)
+           id="scorecard" — all CTAs point here
+           ═══════════════════════════════════════════ */}
+      <section id="scorecard" style={{
+        background: ACCENT,
+        padding: '88px 24px',
+      }}>
+        <div className="yb-optin-grid" style={{
+          maxWidth: '1100px',
+          margin: '0 auto',
+          display: 'grid',
+          gridTemplateColumns: '1fr',
+          gap: '48px',
+          alignItems: 'center',
+        }}>
+          {/* Left: Scorecard preview */}
+          <div style={{
+            background: 'rgba(255,255,255,0.08)',
+            borderRadius: '20px',
+            padding: '40px',
+            border: '1px solid rgba(255,255,255,0.12)',
+            textAlign: 'center',
           }}>
-            &ldquo;The government doesn&apos;t ask you to budget to pay taxes. They take your taxes from you automatically. Your wealth system needs to work the same way.&rdquo;
-          </p>
-          <p style={{
-            fontSize: '15px',
-            color: 'rgba(255,255,255,0.7)',
-            fontWeight: 600,
-            fontFamily: "'Inter', sans-serif",
-          }}>
-            &mdash; David Bach, <em>The Automatic Millionaire</em>
-          </p>
+            <div style={{
+              background: '#fff',
+              borderRadius: '16px',
+              padding: '32px',
+              maxWidth: '320px',
+              margin: '0 auto',
+              boxShadow: '0 16px 48px rgba(0,0,0,0.15)',
+            }}>
+              <div style={{
+                width: '56px',
+                height: '56px',
+                borderRadius: '14px',
+                background: `${PRIMARY}15`,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                margin: '0 auto 16px',
+              }}>
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke={PRIMARY} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <h3 style={{ ...heading, fontSize: '18px', color: DARK, marginBottom: '8px' }}>
+                AI Blind Spot Scorecard
+              </h3>
+              <p style={{ fontSize: '13px', color: '#9ca3af', lineHeight: 1.5 }}>
+                10 questions &middot; 5 dimensions &middot; Instant results
+              </p>
+              <div style={{
+                marginTop: '20px',
+                height: '8px',
+                borderRadius: '4px',
+                background: '#e5e7eb',
+                overflow: 'hidden',
+              }}>
+                <div style={{
+                  width: '65%',
+                  height: '100%',
+                  borderRadius: '4px',
+                  background: `linear-gradient(90deg, ${PRIMARY}, ${LIGHT_BLUE})`,
+                }} />
+              </div>
+              <p style={{ fontSize: '12px', color: '#9ca3af', marginTop: '8px' }}>
+                Your score: <span style={{ fontWeight: 700, color: PRIMARY }}>6.5/10</span>
+              </p>
+            </div>
+          </div>
+
+          {/* Right: Lead capture */}
+          <div>
+            <h2 style={{
+              ...heading,
+              fontSize: 'clamp(28px, 4vw, 40px)',
+              color: '#fff',
+              marginBottom: '16px',
+            }}>
+              See What You&apos;re Not Seeing
+            </h2>
+            <p style={{
+              fontSize: '18px',
+              lineHeight: 1.7,
+              color: 'rgba(255,255,255,0.8)',
+              marginBottom: '8px',
+            }}>
+              Based on Yoshua Bengio&apos;s insights from the most important AI safety conversation of the decade. Find out where your blind spots are.
+            </p>
+            <p style={{
+              fontSize: '14px',
+              color: 'rgba(255,255,255,0.6)',
+              marginBottom: '28px',
+            }}>
+              Instant results. Then watch the full episode that started it all.
+            </p>
+            <LeadCaptureForm source="hero" redirectUrl="/clients/david-bach/scorecard" variant="dark" />
+          </div>
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════════════════════
-          SECTION 5: HUB NAVIGATION — Explore the System
-      ═══════════════════════════════════════════════════════════ */}
-      <section style={{ background: '#FFFFFF', padding: '72px 24px' }}>
-        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
-          <p style={{
-            fontSize: '13px',
-            fontWeight: 700,
-            letterSpacing: '0.08em',
-            textTransform: 'uppercase',
-            color: BLUE,
-            textAlign: 'center',
-            marginBottom: '12px',
-            fontFamily: "'Inter', sans-serif",
+      {/* ═══════════════════════════════════════════
+           SECTION 9: RESOURCES — 3 Animated Cards
+           ═══════════════════════════════════════════ */}
+      <section style={{ background: '#fff', padding: '88px 24px' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          <div style={{ maxWidth: '600px', margin: '0 auto 48px', textAlign: 'center' }}>
+            <h2 style={{
+              ...heading,
+              fontSize: 'clamp(28px, 4vw, 36px)',
+              color: DARK,
+              marginBottom: '12px',
+            }}>
+              Go Deeper
+            </h2>
+            <p style={{ fontSize: '17px', color: '#6b7280', lineHeight: 1.6 }}>
+              Three ways to understand what Bengio is warning about.
+            </p>
+          </div>
+
+          <div className="yb-resources-grid" style={{
+            display: 'grid',
+            gridTemplateColumns: '1fr',
+            gap: '24px',
           }}>
-            Go Deeper
-          </p>
+            {/* Card 1: Blog */}
+            <AnimatedCard delay={0} style={{
+              borderRadius: '20px',
+              overflow: 'hidden',
+              border: '1px solid rgba(0,0,0,0.06)',
+            }}>
+              <Link href="/clients/david-bach/blog" style={{ textDecoration: 'none', display: 'block' }}>
+                <div style={{
+                  background: DARK,
+                  padding: '32px',
+                  minHeight: '160px',
+                  display: 'flex',
+                  alignItems: 'flex-end',
+                }}>
+                  <span style={{
+                    fontSize: '13px',
+                    fontWeight: 700,
+                    color: LIGHT_BLUE,
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.08em',
+                    fontFamily: "'Inter', sans-serif",
+                  }}>
+                    The AI Safety Imperative
+                  </span>
+                </div>
+                <div style={{ padding: '24px 32px 32px' }}>
+                  <h3 style={{ ...heading, fontSize: '20px', color: DARK, marginBottom: '10px' }}>
+                    The Creator Who Would Press the Button to Stop It
+                  </h3>
+                  <p style={{ fontSize: '15px', color: '#6b7280', lineHeight: 1.6 }}>
+                    Full analysis of Bengio&apos;s warning, the risks he identifies, and the solution he&apos;s building.
+                  </p>
+                </div>
+              </Link>
+            </AnimatedCard>
+
+            {/* Card 2: Scorecard */}
+            <AnimatedCard delay={200} style={{
+              borderRadius: '20px',
+              overflow: 'hidden',
+              border: '1px solid rgba(0,0,0,0.06)',
+            }}>
+              <Link href="/clients/david-bach/scorecard" style={{ textDecoration: 'none', display: 'block' }}>
+                <div style={{
+                  background: PRIMARY,
+                  padding: '32px',
+                  minHeight: '160px',
+                  display: 'flex',
+                  alignItems: 'flex-end',
+                }}>
+                  <span style={{
+                    fontSize: '13px',
+                    fontWeight: 700,
+                    color: 'rgba(255,255,255,0.7)',
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.08em',
+                    fontFamily: "'Inter', sans-serif",
+                  }}>
+                    Interactive Assessment
+                  </span>
+                </div>
+                <div style={{ padding: '24px 32px 32px' }}>
+                  <h3 style={{ ...heading, fontSize: '20px', color: DARK, marginBottom: '10px' }}>
+                    AI Blind Spot Scorecard
+                  </h3>
+                  <p style={{ fontSize: '15px', color: '#6b7280', lineHeight: 1.6 }}>
+                    10 questions. 2 minutes. See where your AI awareness stands \u2014 and what to pay attention to next.
+                  </p>
+                </div>
+              </Link>
+            </AnimatedCard>
+
+            {/* Card 3: CTA card */}
+            <AnimatedCard delay={400} style={{
+              borderRadius: '20px',
+              overflow: 'hidden',
+              background: `linear-gradient(135deg, ${PRIMARY} 0%, ${ACCENT} 100%)`,
+              padding: '40px 32px',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'center',
+              alignItems: 'center',
+              textAlign: 'center',
+              minHeight: '280px',
+            }}>
+              <h3 style={{ ...heading, fontSize: '24px', color: '#fff', marginBottom: '16px' }}>
+                Ready to See Your Score?
+              </h3>
+              <p style={{ fontSize: '16px', color: 'rgba(255,255,255,0.8)', marginBottom: '24px', lineHeight: 1.6 }}>
+                Most people score between 3 and 5 out of 10. Where do you land?
+              </p>
+              <Link href="#scorecard" style={{
+                background: '#fff',
+                color: PRIMARY,
+                padding: '14px 32px',
+                borderRadius: '30px',
+                fontSize: '16px',
+                fontWeight: 700,
+                textDecoration: 'none',
+                fontFamily: "'Inter', sans-serif",
+              }}>
+                Take the Scorecard
+              </Link>
+            </AnimatedCard>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════
+           SECTION 10: ENDORSEMENTS
+           ═══════════════════════════════════════════ */}
+      <section style={{ background: LIGHT, padding: '80px 24px' }}>
+        <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
           <h2 style={{
             ...heading,
-            fontSize: 'clamp(24px, 4vw, 34px)',
-            color: CHARCOAL,
+            fontSize: 'clamp(24px, 3vw, 32px)',
+            color: DARK,
             textAlign: 'center',
             marginBottom: '48px',
           }}>
-            Explore the Automatic Wealth System
+            What Others Say About His Work
           </h2>
-
-          <div className="db-hub-grid" style={{
+          <div className="yb-endorsements-grid" style={{
             display: 'grid',
             gridTemplateColumns: '1fr',
             gap: '24px',
           }}>
-            {/* Blog Post Card */}
-            <Link href="/clients/david-bach/blog" style={{ textDecoration: 'none' }}>
-              <div style={{
-                border: '2px solid #e5e7eb',
-                borderRadius: '16px',
-                padding: '32px',
-                transition: 'border-color 0.2s, box-shadow 0.2s',
-                cursor: 'pointer',
+            {[
+              {
+                quote: 'Yoshua Bengio is one of the most important scientists of our generation. His work on deep learning transformed the entire field of artificial intelligence.',
+                name: 'Geoffrey Hinton',
+                role: 'Turing Award Winner, "Godfather of AI"',
+              },
+              {
+                quote: 'Bengio\'s willingness to prioritize safety over personal legacy is rare in science. When the creator of the technology sounds the alarm, the rest of us should listen carefully.',
+                name: 'Jaan Tallinn',
+                role: 'Co-founder of Skype, LawZero Backer',
+              },
+            ].map((endorsement, i) => (
+              <AnimatedCard key={endorsement.name} delay={i * 200} style={{
+                background: '#fff',
+                borderRadius: '20px',
+                padding: '36px',
+                border: '1px solid rgba(0,0,0,0.06)',
               }}>
                 <div style={{
-                  display: 'inline-block',
-                  background: CREAM,
-                  borderRadius: '8px',
-                  padding: '6px 12px',
-                  marginBottom: '16px',
-                }}>
-                  <span style={{
-                    fontSize: '12px',
-                    fontWeight: 700,
-                    color: CHARCOAL,
-                    letterSpacing: '0.05em',
-                    textTransform: 'uppercase',
-                    fontFamily: "'Inter', sans-serif",
-                  }}>
-                    Part 1 &mdash; Blog Post
-                  </span>
-                </div>
-                <h3 style={{
-                  fontFamily: "'Inter', sans-serif",
-                  fontWeight: 700,
-                  fontSize: '20px',
-                  color: CHARCOAL,
-                  marginBottom: '8px',
-                  lineHeight: 1.3,
-                }}>
-                  The Automatic Millionaire Formula: The Exact System Behind 654,000 New Millionaires
-                </h3>
-                <p style={{ fontSize: '15px', lineHeight: 1.6, color: '#6b7280', marginBottom: '16px' }}>
-                  The complete breakdown of the pay yourself first strategy, the 70/30 allocation, and the two escalators to wealth. Every percentage, every account, every step.
-                </p>
-                <span style={{
-                  fontSize: '15px',
-                  fontWeight: 700,
-                  color: BLUE,
-                  fontFamily: "'Inter', sans-serif",
-                }}>
-                  Read the full breakdown &rarr;
-                </span>
-              </div>
-            </Link>
-
-            {/* Scorecard Card */}
-            <Link href="/clients/david-bach/scorecard" style={{ textDecoration: 'none' }}>
-              <div style={{
-                border: '2px solid #e5e7eb',
-                borderRadius: '16px',
-                padding: '32px',
-                transition: 'border-color 0.2s, box-shadow 0.2s',
-                cursor: 'pointer',
-              }}>
-                <div style={{
-                  display: 'inline-block',
-                  background: CREAM,
-                  borderRadius: '8px',
-                  padding: '6px 12px',
-                  marginBottom: '16px',
-                }}>
-                  <span style={{
-                    fontSize: '12px',
-                    fontWeight: 700,
-                    color: CHARCOAL,
-                    letterSpacing: '0.05em',
-                    textTransform: 'uppercase',
-                    fontFamily: "'Inter', sans-serif",
-                  }}>
-                    Interactive Tool
-                  </span>
-                </div>
-                <h3 style={{
-                  fontFamily: "'Inter', sans-serif",
-                  fontWeight: 700,
-                  fontSize: '20px',
-                  color: CHARCOAL,
-                  marginBottom: '8px',
-                  lineHeight: 1.3,
-                }}>
-                  Wealth Automation Scorecard
-                </h3>
-                <p style={{ fontSize: '15px', lineHeight: 1.6, color: '#6b7280', marginBottom: '16px' }}>
-                  8 questions. 2 minutes. Find out exactly where your financial system stands against the formula used by 654,000 401k millionaires. Get your personalized action items.
-                </p>
-                <span style={{
-                  fontSize: '15px',
-                  fontWeight: 700,
-                  color: BLUE,
-                  fontFamily: "'Inter', sans-serif",
-                }}>
-                  Take the scorecard &rarr;
-                </span>
-              </div>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════════════════════
-          SECTION 6: WHO MADE THIS — Bio + Stats
-      ═══════════════════════════════════════════════════════════ */}
-      <section style={{ background: CREAM, padding: '72px 24px' }}>
-        <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
-          <Image
-            src="/david-bach-headshot.png"
-            alt="David Bach"
-            width={80}
-            height={80}
-            style={{ borderRadius: '50%', objectFit: 'cover', marginBottom: '24px' }}
-          />
-
-          <h2 style={{
-            ...heading,
-            fontSize: 'clamp(24px, 4vw, 34px)',
-            color: CHARCOAL,
-            marginBottom: '24px',
-          }}>
-            About David Bach
-          </h2>
-
-          <p style={{
-            fontSize: '17px',
-            lineHeight: 1.8,
-            color: '#4b5563',
-            marginBottom: '28px',
-            maxWidth: '640px',
-            margin: '0 auto 28px',
-          }}>
-            I came out of college with $12,000 in credit card debt. I remember opening my bills and having the room spin. That was 25 years ago. Since then, I&apos;ve written 12 books (10 of them New York Times bestsellers), taught millions of people the system that works, and watched 654,000 people become 401k millionaires using the exact formula in this scorecard.
-          </p>
-
-          {/* Social Links */}
-          <div style={{
-            display: 'flex',
-            justifyContent: 'center',
-            gap: '20px',
-            marginBottom: '36px',
-          }}>
-            {[
-              { href: 'https://x.com/AuthorDavidBach', icon: 'M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z' },
-              { href: 'https://www.instagram.com/davidlbach/', icon: 'M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z' },
-              { href: 'https://www.youtube.com/user/DavidBachTV', icon: 'M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z' },
-              { href: 'https://davidbach.com', icon: 'M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z' },
-            ].map((link, i) => (
-              <a key={i} href={link.href} target="_blank" rel="noopener noreferrer"
-                style={{ color: '#b0b0b0', transition: 'color 0.15s' }}>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d={link.icon}/></svg>
-              </a>
-            ))}
-          </div>
-
-          {/* 3 Key Stats — Animated Counters */}
-          <div className="db-stats-grid" style={{
-            display: 'grid',
-            gridTemplateColumns: '1fr',
-            gap: '24px',
-            marginBottom: '28px',
-          }}>
-            {[
-              { target: 12, suffix: '+', label: 'Books in 19 Languages', duration: 1200 },
-              { target: 10, suffix: 'x', label: 'New York Times Bestseller', duration: 1000 },
-              { target: 654, suffix: 'K+', label: '401k Millionaires Using the Formula', duration: 2000 },
-            ].map((stat, i) => (
-              <div key={i} style={{ textAlign: 'center' }}>
-                <p style={{
-                  fontFamily: "'Inter', sans-serif",
-                  fontWeight: 800,
-                  fontSize: 'clamp(28px, 4vw, 40px)',
-                  color: BLUE,
-                  marginBottom: '4px',
+                  fontSize: '48px',
+                  color: `${PRIMARY}30`,
                   lineHeight: 1,
-                }}>
-                  <AnimatedCounter
-                    target={stat.target}
-                    duration={stat.duration}
-                    suffix={stat.suffix}
-                  />
-                </p>
+                  fontFamily: 'Georgia, serif',
+                  marginBottom: '12px',
+                }}>&ldquo;</div>
                 <p style={{
-                  fontSize: '13px',
-                  color: '#9ca3af',
-                  fontWeight: 600,
-                  fontFamily: "'Inter', sans-serif",
+                  fontSize: '17px',
+                  lineHeight: 1.7,
+                  color: '#4b5563',
+                  fontStyle: 'italic',
+                  marginBottom: '20px',
                 }}>
-                  {stat.label}
+                  {endorsement.quote}
                 </p>
-              </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+                  <div style={{
+                    width: '48px',
+                    height: '48px',
+                    borderRadius: '50%',
+                    background: `${PRIMARY}12`,
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontWeight: 800,
+                    fontSize: '18px',
+                    color: PRIMARY,
+                    fontFamily: "'Inter', sans-serif",
+                  }}>
+                    {endorsement.name[0]}
+                  </div>
+                  <div>
+                    <p style={{ fontWeight: 700, color: DARK, fontSize: '15px', fontFamily: "'Inter', sans-serif" }}>
+                      {endorsement.name}
+                    </p>
+                    <p style={{ fontSize: '13px', color: '#9ca3af', fontFamily: "'Inter', sans-serif" }}>
+                      {endorsement.role}
+                    </p>
+                  </div>
+                </div>
+              </AnimatedCard>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════════════════════
-          SECTION 7: HOW IT WORKS
-      ═══════════════════════════════════════════════════════════ */}
-      <section style={{ background: '#FFFFFF', padding: '72px 24px' }}>
-        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+      {/* ═══════════════════════════════════════════
+           SECTION 11: ABOUT YOSHUA BENGIO
+           ═══════════════════════════════════════════ */}
+      <section style={{ background: '#fff', padding: '88px 24px' }}>
+        <div className="yb-about-grid" style={{
+          maxWidth: '1100px',
+          margin: '0 auto',
+          display: 'grid',
+          gridTemplateColumns: '1fr',
+          gap: '48px',
+          alignItems: 'center',
+        }}>
+          {/* Left: Bio visual */}
+          <div style={{
+            background: DARK,
+            borderRadius: '24px',
+            padding: '48px 36px',
+            textAlign: 'center',
+          }}>
+            <div style={{
+              width: '120px',
+              height: '120px',
+              borderRadius: '50%',
+              background: `linear-gradient(135deg, ${PRIMARY}, ${LIGHT_BLUE})`,
+              margin: '0 auto 24px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              fontSize: '48px',
+              fontWeight: 800,
+              color: '#fff',
+              fontFamily: "'Inter', sans-serif",
+            }}>
+              YB
+            </div>
+            <h3 style={{ ...heading, fontSize: '24px', color: '#fff', marginBottom: '8px' }}>
+              Yoshua Bengio
+            </h3>
+            <p style={{ fontSize: '14px', color: 'rgba(255,255,255,0.6)', fontFamily: "'Inter', sans-serif", marginBottom: '28px' }}>
+              Turing Award Winner &middot; Most-Cited Computer Scientist
+            </p>
+            <div style={{
+              display: 'flex',
+              justifyContent: 'center',
+              gap: '32px',
+            }}>
+              {[
+                { label: 'Turing Award', value: '2018' },
+                { label: 'Citations', value: '500K+' },
+                { label: 'LawZero', value: '$30M' },
+              ].map((stat) => (
+                <div key={stat.label} style={{ textAlign: 'center' }}>
+                  <div style={{ fontWeight: 800, color: LIGHT_BLUE, fontSize: '20px', fontFamily: "'Inter', sans-serif" }}>
+                    {stat.value}
+                  </div>
+                  <div style={{ fontSize: '11px', color: 'rgba(255,255,255,0.5)', fontFamily: "'Inter', sans-serif", textTransform: 'uppercase', letterSpacing: '0.05em', marginTop: '2px' }}>
+                    {stat.label}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Right: Bio text */}
+          <div>
+            <h2 style={{
+              ...heading,
+              fontSize: 'clamp(28px, 4vw, 36px)',
+              color: DARK,
+              marginBottom: '20px',
+            }}>
+              About Yoshua Bengio
+            </h2>
+            <p style={{
+              fontSize: '17px',
+              lineHeight: 1.8,
+              color: '#4b5563',
+              marginBottom: '16px',
+            }}>
+              Yoshua Bengio is a Full Professor at Universit&eacute; de Montr&eacute;al and one of the three pioneers of deep learning &mdash; the technology behind modern AI. He received the 2018 Turing Award alongside Geoffrey Hinton and Yann LeCun, and is the most-cited computer scientist in the world.
+            </p>
+            <p style={{
+              fontSize: '17px',
+              lineHeight: 1.8,
+              color: '#4b5563',
+              marginBottom: '16px',
+            }}>
+              In 2025, he founded LawZero, a nonprofit AI safety lab developing &ldquo;Scientist AI&rdquo; &mdash; systems designed to understand the world safely rather than act autonomously. LawZero raised $30M from Jaan Tallinn (Skype), Eric Schmidt (former Google CEO), and Open Philanthropy.
+            </p>
+            <p style={{
+              fontSize: '17px',
+              lineHeight: 1.8,
+              color: '#4b5563',
+              marginBottom: '28px',
+            }}>
+              He serves on the UN Scientific Advisory Board and helped draft the Montreal Declaration for Responsible AI Development.
+            </p>
+
+            <div style={{
+              display: 'flex',
+              gap: '12px',
+              flexWrap: 'wrap',
+            }}>
+              {[
+                { label: 'LawZero', url: 'https://bit.ly/44n1sDG' },
+                { label: 'Mila', url: 'https://bit.ly/4q6SJ0R' },
+                { label: 'Website', url: 'https://bit.ly/4q4RqiL' },
+              ].map((link) => (
+                <a key={link.label} href={link.url} target="_blank" rel="noopener noreferrer" style={{
+                  padding: '10px 22px',
+                  borderRadius: '30px',
+                  border: `2px solid ${PRIMARY}`,
+                  color: PRIMARY,
+                  fontSize: '14px',
+                  fontWeight: 700,
+                  textDecoration: 'none',
+                  fontFamily: "'Inter', sans-serif",
+                  transition: 'background 0.15s, color 0.15s',
+                }}>
+                  {link.label}
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════
+           SECTION 12: HOW IT WORKS — 3 Steps
+           ═══════════════════════════════════════════ */}
+      <section style={{ background: LIGHT, padding: '80px 24px' }}>
+        <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
           <h2 style={{
             ...heading,
-            fontSize: 'clamp(24px, 4vw, 34px)',
-            color: CHARCOAL,
+            fontSize: 'clamp(28px, 4vw, 36px)',
+            color: DARK,
             textAlign: 'center',
-            marginBottom: '52px',
+            marginBottom: '48px',
           }}>
             How It Works
           </h2>
 
-          <div className="db-steps-row" style={{
-            display: 'flex',
-            flexDirection: 'column',
-            gap: '32px',
+          <div className="yb-steps-grid" style={{
+            display: 'grid',
+            gridTemplateColumns: '1fr',
+            gap: '24px',
           }}>
             {[
-              { step: '1', title: 'Enter your name and email', desc: 'Takes 10 seconds. No credit card.' },
-              { step: '2', title: 'Answer 8 quick questions', desc: 'About your savings, investments, and automation level.' },
-              { step: '3', title: 'Get your score + action items', desc: 'Personalized results comparing you to the 401k millionaire formula.' },
-            ].map((item) => (
-              <div key={item.step} style={{
-                flex: 1,
+              {
+                step: '1',
+                title: 'Enter Your Name & Email',
+                desc: 'Takes 5 seconds. We use it to send your results and personalized insights.',
+              },
+              {
+                step: '2',
+                title: 'Answer 10 Quick Questions',
+                desc: 'Based on the AI risk dimensions Bengio identifies. Multiple choice. Under 2 minutes.',
+              },
+              {
+                step: '3',
+                title: 'Get Your Score + Action Items',
+                desc: 'See where you stand across 5 dimensions of AI awareness. Plus what to pay attention to next.',
+              },
+            ].map((item, i) => (
+              <AnimatedCard key={item.step} delay={i * 150} style={{
+                background: '#fff',
+                borderRadius: '16px',
+                padding: '32px',
+                border: '1px solid rgba(0,0,0,0.06)',
                 textAlign: 'center',
               }}>
                 <div style={{
-                  width: '56px',
-                  height: '56px',
+                  width: '48px',
+                  height: '48px',
                   borderRadius: '50%',
-                  background: CHARCOAL,
+                  background: PRIMARY,
                   color: '#fff',
-                  display: 'inline-flex',
+                  display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  fontFamily: "'Inter', sans-serif",
                   fontWeight: 800,
-                  fontSize: '22px',
-                  marginBottom: '16px',
+                  fontSize: '20px',
+                  fontFamily: "'Inter', sans-serif",
+                  margin: '0 auto 16px',
                 }}>
                   {item.step}
                 </div>
-                <h3 style={{
-                  fontFamily: "'Inter', sans-serif",
-                  fontWeight: 700,
-                  fontSize: '18px',
-                  color: CHARCOAL,
-                  marginBottom: '6px',
-                }}>
+                <h3 style={{ ...heading, fontSize: '18px', color: DARK, marginBottom: '8px' }}>
                   {item.title}
                 </h3>
-                <p style={{ fontSize: '15px', color: '#9ca3af', lineHeight: 1.5 }}>
+                <p style={{ fontSize: '15px', color: '#6b7280', lineHeight: 1.6 }}>
                   {item.desc}
                 </p>
-              </div>
+              </AnimatedCard>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════════════════════
-          SECTION 8: FAQ
-      ═══════════════════════════════════════════════════════════ */}
-      <section style={{ background: CREAM, padding: '72px 24px' }}>
-        <div style={{ maxWidth: '720px', margin: '0 auto' }}>
+      {/* ═══════════════════════════════════════════
+           SECTION 13: FAQ
+           ═══════════════════════════════════════════ */}
+      <section style={{ background: '#fff', padding: '80px 24px' }}>
+        <div style={{ maxWidth: '800px', margin: '0 auto' }}>
           <h2 style={{
             ...heading,
-            fontSize: 'clamp(24px, 4vw, 34px)',
-            color: CHARCOAL,
+            fontSize: 'clamp(28px, 4vw, 36px)',
+            color: DARK,
             textAlign: 'center',
             marginBottom: '48px',
           }}>
-            Common Questions
+            Frequently Asked Questions
           </h2>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '28px' }}>
+          <div className="yb-faq-grid" style={{
+            display: 'grid',
+            gridTemplateColumns: '1fr',
+            gap: '16px',
+          }}>
             {[
               {
                 q: 'How long does the scorecard take?',
-                a: "About 2 minutes. 8 questions. You get your score and action items immediately — no waiting, no \"we'll email you later.\"",
+                a: 'Under 2 minutes. 10 multiple-choice questions. You get your score instantly at the end \u2014 no waiting for an email.',
               },
               {
-                q: 'Is it really free?',
-                a: "Yes. No credit card. No upsell. The formula works and most people just need to see where they stand. The scorecard shows you that.",
+                q: 'Is this actually free?',
+                a: 'Yes. No credit card, no hidden upsell. We built this to help people understand what Yoshua Bengio is warning about. Your email lets us send your results and point you to the full episode.',
               },
               {
-                q: 'What happens after I submit my email?',
-                a: "You go straight to the scorecard. Answer 8 questions, get your score, and see your personalized action items. We'll also send you the system breakdown so you have everything in one place.",
+                q: 'What happens after I take it?',
+                a: 'You see your score immediately across 5 dimensions of AI awareness. You\'ll also get a link to watch the full Diary of a CEO episode where Bengio explains everything in depth.',
               },
-            ].map((item, i) => (
-              <div key={i} style={{
-                background: '#FFFFFF',
-                borderRadius: '12px',
-                padding: '24px 28px',
+            ].map((faq, i) => (
+              <AnimatedCard key={faq.q} delay={i * 100} style={{
+                background: LIGHT,
+                borderRadius: '16px',
+                padding: '28px 32px',
               }}>
                 <h3 style={{
-                  fontFamily: "'Inter', sans-serif",
-                  fontWeight: 700,
+                  ...heading,
                   fontSize: '17px',
-                  color: CHARCOAL,
-                  marginBottom: '8px',
+                  color: DARK,
+                  marginBottom: '10px',
                 }}>
-                  {item.q}
+                  {faq.q}
                 </h3>
-                <p style={{ fontSize: '15px', lineHeight: 1.7, color: '#6b7280' }}>
-                  {item.a}
+                <p style={{
+                  fontSize: '15px',
+                  lineHeight: 1.7,
+                  color: '#6b7280',
+                }}>
+                  {faq.a}
                 </p>
-              </div>
+              </AnimatedCard>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════════════════════
-          SECTION 9: FOOTER CTA — Orange gradient background
-      ═══════════════════════════════════════════════════════════ */}
+      {/* ═══════════════════════════════════════════
+           SECTION 14: VALUE EXCHANGE — Video #2 + Lead Capture
+           ═══════════════════════════════════════════ */}
       <section style={{
-        background: `linear-gradient(135deg, ${ORANGE_START} 0%, ${ORANGE_END} 100%)`,
-        padding: '72px 24px',
+        background: DARK,
+        padding: '88px 24px',
       }}>
-        <div style={{ maxWidth: '520px', margin: '0 auto', textAlign: 'center' }}>
-          <h2 style={{
-            ...heading,
-            fontSize: 'clamp(26px, 4vw, 38px)',
-            color: '#FFFFFF',
-            marginBottom: '16px',
+        <div className="yb-value-grid" style={{
+          maxWidth: '1100px',
+          margin: '0 auto',
+          display: 'grid',
+          gridTemplateColumns: '1fr',
+          gap: '48px',
+          alignItems: 'center',
+        }}>
+          {/* Left: Video clip #2 (with audio + controls) */}
+          <div style={{
+            borderRadius: '20px',
+            overflow: 'hidden',
+            boxShadow: '0 16px 48px rgba(0,0,0,0.3)',
           }}>
-            654,000 people followed this formula and became millionaires.
-          </h2>
-          <p style={{
-            fontSize: '18px',
-            color: 'rgba(255,255,255,0.85)',
-            lineHeight: 1.5,
-            marginBottom: '36px',
-          }}>
-            How does your system compare?
-          </p>
+            <video
+              controls
+              playsInline
+              preload="auto"
+              style={{
+                width: '100%',
+                display: 'block',
+                borderRadius: '20px',
+              }}
+            >
+              <source src="/bengio-episode-clip.mp4" type="video/mp4" />
+            </video>
+          </div>
 
-          <LeadCaptureForm source="footer" variant="gradient" />
+          {/* Right: Bullets + lead capture */}
+          <div>
+            <p style={{
+              fontSize: '13px',
+              fontWeight: 700,
+              color: LIGHT_BLUE,
+              textTransform: 'uppercase',
+              letterSpacing: '0.1em',
+              fontFamily: "'Inter', sans-serif",
+              marginBottom: '12px',
+            }}>
+              In This Episode, Bengio Reveals:
+            </p>
+            <h2 style={{
+              ...heading,
+              fontSize: 'clamp(24px, 3.5vw, 32px)',
+              color: '#fff',
+              marginBottom: '24px',
+            }}>
+              The Risks Most People Miss
+            </h2>
+
+            <ul style={{
+              listStyle: 'none',
+              padding: 0,
+              margin: '0 0 32px',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '14px',
+            }}>
+              {[
+                'Why he had to trick ChatGPT to get honest feedback on his own research',
+                'The thought experiment that makes the AI displacement problem visceral',
+                'How AI could concentrate power in ways that end democracy',
+                'The $30M nonprofit building AI that\'s safe by construction',
+              ].map((item) => (
+                <li key={item} style={{
+                  fontSize: '16px',
+                  color: 'rgba(255,255,255,0.8)',
+                  display: 'flex',
+                  gap: '12px',
+                  alignItems: 'flex-start',
+                  lineHeight: 1.6,
+                }}>
+                  <span style={{ color: LIGHT_BLUE, fontSize: '18px', flexShrink: 0, marginTop: '2px' }}>&#10003;</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+
+            <LeadCaptureForm source="footer" redirectUrl="/clients/david-bach/scorecard" variant="dark" />
+          </div>
         </div>
       </section>
+
+      {/* ═══════════════════════════════════════════
+           SECTION 15: FOOTER
+           ═══════════════════════════════════════════ */}
+      <footer style={{
+        background: '#1a1b22',
+        padding: '60px 24px 40px',
+        borderTop: `1px solid rgba(255,255,255,0.06)`,
+      }}>
+        <div className="yb-footer-grid" style={{
+          maxWidth: '1000px',
+          margin: '0 auto',
+          display: 'grid',
+          gridTemplateColumns: '1fr',
+          gap: '32px',
+          textAlign: 'center',
+        }}>
+          {/* Column 1: Brand */}
+          <div>
+            <span style={{
+              fontFamily: "'Inter', sans-serif",
+              fontWeight: 800,
+              fontSize: '18px',
+              color: '#fff',
+              letterSpacing: '-0.02em',
+            }}>
+              YOSHUA BENGIO
+            </span>
+            <p style={{
+              fontSize: '14px',
+              color: 'rgba(255,255,255,0.4)',
+              marginTop: '8px',
+              lineHeight: 1.6,
+            }}>
+              Turing Award Winner. Creator of Deep Learning. Founder of LawZero.
+            </p>
+          </div>
+
+          {/* Column 2: Page Links */}
+          <div>
+            <p style={{
+              fontSize: '12px',
+              fontWeight: 700,
+              color: 'rgba(255,255,255,0.3)',
+              textTransform: 'uppercase',
+              letterSpacing: '0.08em',
+              fontFamily: "'Inter', sans-serif",
+              marginBottom: '12px',
+            }}>
+              Pages
+            </p>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+              {[
+                { label: 'Blog', href: '/clients/david-bach/blog' },
+                { label: 'Scorecard', href: '/clients/david-bach/scorecard' },
+                { label: 'LawZero', href: 'https://bit.ly/44n1sDG' },
+                { label: 'Watch the Episode', href: 'https://youtu.be/stQiLvmgjns' },
+              ].map((link) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  target={link.href.startsWith('http') ? '_blank' : undefined}
+                  rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                  className="yb-link-hover"
+                  style={{
+                    color: 'rgba(255,255,255,0.6)',
+                    textDecoration: 'none',
+                    fontSize: '14px',
+                    fontFamily: "'Inter', sans-serif",
+                    transition: 'color 0.15s',
+                  }}
+                >
+                  {link.label}
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* Column 3: Social */}
+          <div>
+            <p style={{
+              fontSize: '12px',
+              fontWeight: 700,
+              color: 'rgba(255,255,255,0.3)',
+              textTransform: 'uppercase',
+              letterSpacing: '0.08em',
+              fontFamily: "'Inter', sans-serif",
+              marginBottom: '12px',
+            }}>
+              Connect
+            </p>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+              {[
+                { label: 'Personal Website', href: 'https://bit.ly/4q4RqiL' },
+                { label: 'Mila Quebec AI', href: 'https://bit.ly/4q6SJ0R' },
+                { label: 'LawZero', href: 'https://bit.ly/44n1sDG' },
+              ].map((link) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="yb-link-hover"
+                  style={{
+                    color: 'rgba(255,255,255,0.6)',
+                    textDecoration: 'none',
+                    fontSize: '14px',
+                    fontFamily: "'Inter', sans-serif",
+                    transition: 'color 0.15s',
+                  }}
+                >
+                  {link.label}
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div style={{
+          maxWidth: '1000px',
+          margin: '40px auto 0',
+          paddingTop: '24px',
+          borderTop: '1px solid rgba(255,255,255,0.06)',
+          textAlign: 'center',
+        }}>
+          <p style={{
+            fontSize: '13px',
+            color: 'rgba(255,255,255,0.3)',
+            fontFamily: "'Inter', sans-serif",
+          }}>
+            Content powered by <a href="/" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>ContentRepurposeHub</a>
+            {' '}&middot;{' '}
+            &copy; {new Date().getFullYear()} Yoshua Bengio. All rights reserved.
+          </p>
+        </div>
+      </footer>
     </main>
   )
 }

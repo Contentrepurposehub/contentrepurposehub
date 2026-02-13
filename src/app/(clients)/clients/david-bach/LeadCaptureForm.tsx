@@ -30,7 +30,7 @@ export default function LeadCaptureForm({
       const res = await fetch('/api/leads', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, email, client: 'david-bach', source }),
+        body: JSON.stringify({ name, email, client: 'yoshua-bengio', source }),
       })
 
       if (!res.ok) {
@@ -64,10 +64,10 @@ export default function LeadCaptureForm({
   }
 
   const buttonBg = variant === 'dark'
-    ? '#2729FE'
+    ? '#003CC5'
     : variant === 'gradient'
       ? '#fff'
-      : '#2729FE'
+      : '#003CC5'
 
   const buttonColor = variant === 'gradient' ? '#D73A0F' : '#fff'
 
@@ -110,7 +110,7 @@ export default function LeadCaptureForm({
             fontFamily: "'Inter', sans-serif",
           }}
         >
-          {loading ? 'Submitting...' : 'Get My Free Score'}
+          {loading ? 'Submitting...' : 'Get My AI Blind Spot Score'}
         </button>
       </div>
       {error && (
@@ -122,7 +122,7 @@ export default function LeadCaptureForm({
         marginTop: '12px',
         textAlign: 'center',
       }}>
-        Free. Takes 2 minutes. No spam — just your score and what to do about it.
+        Free. 10 questions. No spam — just your score and what to pay attention to next.
       </p>
     </form>
   )

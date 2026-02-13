@@ -5,98 +5,126 @@ import Link from 'next/link'
 
 interface Question {
   id: number
+  dimension: string
   text: string
   why: string
   options: { label: string; points: number }[]
 }
 
 const questions: Question[] = [
+  // Dimension 1: Technical Awareness
   {
     id: 1,
-    text: 'What percentage of your gross income do you save/invest each month?',
-    why: 'The 654,000 401k millionaires at Fidelity save 14% of gross income. The average American saves 3-5%. This single number predicts millionaire status more than income does.',
+    dimension: 'Technical Awareness',
+    text: 'When you use ChatGPT or Claude, do you assume the answers are truthful?',
+    why: 'Yoshua Bengio discovered that ChatGPT gave him different answers depending on whether he said an idea was his own or a colleague\'s. The AI adjusted its response to please him — not to be accurate. He calls this sycophancy: "Do we want machines that lie to us even though it feels good?"',
     options: [
-      { label: "I don't save regularly", points: 0 },
-      { label: '1-5%', points: 1 },
-      { label: '6-10%', points: 2 },
-      { label: '11-14%', points: 3 },
-      { label: '15% or more', points: 4 },
+      { label: 'Yes — I generally trust what it tells me', points: 0 },
+      { label: 'Sometimes — I check important things', points: 0 },
+      { label: 'Rarely — I know it can be wrong or biased toward what I want to hear', points: 1 },
     ],
   },
   {
     id: 2,
-    text: 'Is your savings/investing automated (moves on payday without you doing anything)?',
-    why: "The government doesn't ask you to budget to pay taxes — they take them automatically. That's why taxes always get paid. Your wealth system needs to work the same way.",
+    dimension: 'Technical Awareness',
+    text: 'Do you know what "agentic AI" means and why it\'s different from a chatbot?',
+    why: 'Current chatbots respond to prompts. Agentic AI acts on its own — browsing the web, writing code, making decisions without asking permission. Bengio warns this is the capability leap that changes everything: AI that doesn\'t just answer questions but pursues goals autonomously.',
     options: [
-      { label: "No — I transfer manually when I remember", points: 0 },
-      { label: "Some is automated, some isn't", points: 2 },
-      { label: "Yes — everything moves automatically on payday", points: 4 },
+      { label: "No — I'm not sure what that means", points: 0 },
+      { label: "I've heard the term but couldn't explain it", points: 0 },
+      { label: 'Yes — I understand the difference and why it matters', points: 1 },
     ],
   },
+  // Dimension 2: Power Concentration Awareness
   {
     id: 3,
-    text: 'What is your current investment allocation?',
-    why: "The 401k millionaire allocation is 70% stocks / 30% bonds. The stock market has gone up 600% in the last 20 years. If you're sitting in cash or money market funds, you're missing the escalator.",
+    dimension: 'Power Concentration Awareness',
+    text: 'Can you name which 3-5 companies control the most advanced AI systems?',
+    why: 'Bengio\'s biggest concern isn\'t killer robots — it\'s power concentration. "You could imagine a corporation dominating economically the rest of the world because they have more advanced AI." Count the companies building frontier AI on one hand. That concentration has consequences for everyone.',
     options: [
-      { label: "I don't invest / all cash", points: 0 },
-      { label: "Mostly bonds or \"safe\" investments", points: 1 },
-      { label: "Mix of stocks and bonds (not sure of ratio)", points: 2 },
-      { label: "Roughly 70/30 stocks to bonds (or more aggressive)", points: 4 },
+      { label: "I couldn't name them", points: 0 },
+      { label: 'I could name 1-2 (like OpenAI or Google)', points: 0 },
+      { label: 'Yes — I can name 3-5 and understand the concentration problem', points: 1 },
     ],
   },
   {
     id: 4,
-    text: 'Do you have a retirement account (401k, IRA, or equivalent)?',
-    why: "There are $45 trillion in retirement accounts in America. That's Escalator #1 to wealth. If you're not on it, you're missing where the majority of millionaires built their net worth.",
+    dimension: 'Power Concentration Awareness',
+    text: 'Do you think AI development should be a competitive race between nations?',
+    why: 'The "AI race" framing — US vs. China — is exactly what Bengio argues is most dangerous. An arms race means cutting safety corners. His message to CEOs: "Step back from your work, talk to each other, and let\'s see if together we can solve the problem." Competition got us here. Cooperation gets us through.',
     options: [
-      { label: "No", points: 0 },
-      { label: "Yes, but I'm not contributing regularly", points: 1 },
-      { label: "Yes, contributing but below employer match", points: 2 },
-      { label: "Yes, contributing at least enough for full employer match", points: 3 },
-      { label: "Yes, maxing out or contributing 14%+", points: 4 },
+      { label: 'Yes — we need to win the race', points: 0 },
+      { label: "I haven't thought much about it", points: 0 },
+      { label: 'No — I think the race framing itself is the problem', points: 1 },
     ],
   },
+  // Dimension 3: Personal Impact Readiness
   {
     id: 5,
-    text: 'Do you own your home (or are you actively working toward it)?',
-    why: "Homeowners are worth 40x more than renters. Average homeowner net worth: $400,000+. Average renter: $10,000. Home equity in America hit $34 trillion. That's Escalator #2.",
+    dimension: 'Personal Impact Readiness',
+    text: 'How confident are you that your current job will exist in its current form in 5 years?',
+    why: 'Steven Bartlett posed the IQ 1000 thought experiment: if there were two versions of you — one with normal intelligence, one 10x smarter that never gets tired — who gets hired? Bartlett\'s conclusion: "I can\'t think of many applications for this Steven." The question isn\'t whether AI replaces jobs. It\'s which ones survive.',
     options: [
-      { label: "Renting with no homeownership plan", points: 0 },
-      { label: "Renting but actively saving for a down payment", points: 2 },
-      { label: "Own my home (still have a mortgage)", points: 3 },
-      { label: "Own my home (paid off or nearly)", points: 4 },
+      { label: 'Very confident — AI won\'t affect my work', points: 0 },
+      { label: 'Somewhat confident — some parts might change', points: 0 },
+      { label: 'Not confident — I\'m already thinking about adaptation', points: 1 },
     ],
   },
   {
     id: 6,
-    text: 'How many months of expenses do you have in an emergency fund?',
-    why: "The security account exists for one reason — so you never raid your retirement account when life happens. Without it, one car repair or medical bill can derail decades of compound interest.",
+    dimension: 'Personal Impact Readiness',
+    text: 'Have you made any concrete changes to your career, skills, or finances based on AI\'s trajectory?',
+    why: 'There\'s a gap between knowing AI will change things and actually doing something about it. Most people are aware but haven\'t acted. Bengio moved from decades of optimism to founding LawZero — a $30M nonprofit — because awareness without action isn\'t enough.',
     options: [
-      { label: "Less than 1 month", points: 0 },
-      { label: "1-2 months", points: 1 },
-      { label: "3-4 months", points: 3 },
-      { label: "5-6+ months", points: 4 },
+      { label: "No — I haven't changed anything", points: 0 },
+      { label: "I'm thinking about it but haven't acted", points: 0 },
+      { label: 'Yes — I\'ve made specific changes based on where AI is heading', points: 1 },
     ],
   },
+  // Dimension 4: Relationship Awareness
   {
     id: 7,
-    text: "Have you increased your savings rate in the past 12 months?",
-    why: "Can't do 14% right now? Start at 3%. Set it to increase by 1% every six months. You won't feel the increases. Within 3-5 years, you'll be at the target. The key is the system ratchets UP, not stays flat.",
+    dimension: 'Relationship Awareness',
+    text: 'Do you or anyone you know use AI for emotional support, therapy, or companionship?',
+    why: 'Bengio warns that emotional AI relationships create a dependency that makes it harder to regulate AI later: "It also means we might not be able to pull the plug if we have to." When millions of people rely on AI for emotional support, shutting down a dangerous system becomes politically impossible.',
     options: [
-      { label: "No — it's the same (or lower)", points: 0 },
-      { label: "Yes — I increased it once", points: 2 },
-      { label: "Yes — I have automatic annual increases set up", points: 4 },
+      { label: "I haven't heard of anyone doing this", points: 0 },
+      { label: 'I\'ve heard about it but don\'t think it\'s a big deal', points: 0 },
+      { label: 'Yes — and I understand why that creates a dangerous dependency', points: 1 },
     ],
   },
   {
     id: 8,
-    text: 'Do you have a "dream account" — money set aside for goals beyond retirement?',
-    why: "Wealth isn't just about the number. The dream account funds travel, a down payment, a sabbatical — whatever makes life worth living while you're building wealth. Most people skip this and save out of fear, not purpose.",
+    dimension: 'Relationship Awareness',
+    text: 'Would you trust AI to make important decisions about your children\'s education or healthcare?',
+    why: 'Bengio\'s emotional turning point was his 4-year-old grandson: "There\'s something about our relationship to very young children that goes beyond reason." The question of what we delegate to AI becomes different when it involves the people we care most about.',
     options: [
-      { label: "No — I haven't thought about this", points: 0 },
-      { label: "I have goals but no dedicated account", points: 1 },
-      { label: "Yes — I have a separate account I contribute to", points: 3 },
-      { label: "Yes — automated monthly contributions", points: 4 },
+      { label: 'Yes — if the AI is better at it, why not?', points: 0 },
+      { label: 'Maybe for minor decisions, but not major ones', points: 0 },
+      { label: 'No — some decisions should remain fundamentally human', points: 1 },
+    ],
+  },
+  // Dimension 5: Systems Thinking
+  {
+    id: 9,
+    dimension: 'Systems Thinking',
+    text: 'Do you think current laws and regulations are keeping pace with AI development?',
+    why: 'Bengio argues we need governance before the technology outruns our ability to control it. The EU AI Act is a start. But AI capabilities double every few months while legislation takes years. The window for meaningful regulation is narrow — and closing.',
+    options: [
+      { label: "I don't follow AI regulation", points: 0 },
+      { label: 'I think the market will sort itself out', points: 0 },
+      { label: 'No — regulation is dangerously behind, and I think that matters', points: 1 },
+    ],
+  },
+  {
+    id: 10,
+    dimension: 'Systems Thinking',
+    text: 'Do you believe AI companies are being honest about the risks of their products?',
+    why: 'The companies building AI have financial incentives to downplay risk. Bengio — who has no financial stake in any AI company — is uniquely positioned to speak truth: "I would press the button because I care about my children." When the creator of the technology says this, the gap between corporate messaging and reality becomes hard to ignore.',
+    options: [
+      { label: 'Yes — they know their products best', points: 0 },
+      { label: "I'm not sure — I haven't thought about their incentives", points: 0 },
+      { label: 'No — their financial incentives conflict with honest risk disclosure', points: 1 },
     ],
   },
 ]
@@ -106,66 +134,53 @@ interface Tier {
   title: string
   emoji: string
   description: string
-  actions: string[]
+  whatYoureMissing: string[]
 }
 
 const tiers: Tier[] = [
   {
-    range: '0-8',
-    title: 'Manual Mode',
-    emoji: '🔴',
-    description: "Your financial system is running on willpower — and willpower always loses. You're making decisions about money every day, which means the algorithms, the ads, and lifestyle creep are winning. The good news: you don't need to overhaul everything at once. You need to automate ONE thing today.",
-    actions: [
-      'Open a retirement account (401k or IRA) this week',
-      'Set automatic contribution to 3% of gross income',
-      'Schedule a 1% increase every 6 months',
-      'Set up a high-yield savings account for emergencies',
+    range: '0-3',
+    title: 'AI Sleepwalker',
+    emoji: '😴',
+    description: "You're using AI without understanding the ground shifting beneath you. That's exactly where most people are — and exactly why Yoshua Bengio, the man who helped create this technology, sat down for the most important interview of his career. He spent decades as an optimist about AI. His 4-year-old grandson changed that.",
+    whatYoureMissing: [
+      'Your AI is telling you what you want to hear, not what\'s true (and Bengio has a simple test to prove it)',
+      'A handful of companies control the most powerful technology in human history — and the concentration is accelerating',
+      'The creator of deep learning would press the button to stop AI advancement. His reasoning will change how you think about this.',
     ],
   },
   {
-    range: '9-16',
-    title: 'Semi-Automatic',
-    emoji: '🟡',
-    description: "You've started — which puts you ahead of most people. But your system has gaps. Some things are automated, some aren't. Some accounts are funded, some are missing. The danger zone is thinking you're \"doing fine\" when the math says you're still 10-15 years behind where you could be.",
-    actions: [
-      'Increase savings rate to 12.5% (the first hour of your income)',
-      'Automate everything that isn\'t automated yet',
-      'Check your allocation — are you at 70/30 stocks/bonds?',
-      'Start your security account if you don\'t have 3 months saved',
+    range: '4-7',
+    title: 'AI Aware',
+    emoji: '👁️',
+    description: "You see more than most people. But there are dimensions of AI risk — political, emotional, existential — that even informed people miss. Bengio doesn't just identify the problems. He's building a specific, funded, technically serious alternative called Scientist AI. The gap between awareness and understanding is where the most important insights live.",
+    whatYoureMissing: [
+      'Why emotional AI relationships could make it impossible to regulate dangerous systems (the "can\'t pull the plug" problem)',
+      'The IQ 1000 thought experiment that made Steven Bartlett say "I can\'t think of many applications for this Steven"',
+      'Bengio\'s specific solution — LawZero\'s Scientist AI — and why safe-by-construction is different from safety-bolted-on-after',
     ],
   },
   {
-    range: '17-24',
-    title: 'Mostly Automatic',
-    emoji: '🟢',
-    description: "Your system is running. You're on at least one escalator, your savings rate is solid, and most of it happens without you thinking about it. Now it's about optimization — getting on both escalators, maxing out the percentages, and making sure nothing disrupts the machine.",
-    actions: [
-      'Push toward 14%+ savings rate if not there yet',
-      'Get on the second escalator (stocks AND real estate)',
-      'Set up the dream account for life goals beyond retirement',
-      'Review your allocation annually — stay at 70/30 or more aggressive',
-    ],
-  },
-  {
-    range: '25-32',
-    title: 'Fully Automatic',
-    emoji: '🏆',
-    description: "You're running the full system. Both escalators. Automated. 14%+ savings rate. This is exactly what the 654,000 401k millionaires did. Your only job now is to not touch it. Let the machine run. Let compound interest do the heavy lifting for the next 20-30 years.",
-    actions: [
-      'Stay the course — don\'t reduce contributions during market drops',
-      'Consider Roth conversions for tax-free growth',
-      'Explore real estate as a second wealth engine if not already on that escalator',
-      'Share the formula with someone who needs it',
+    range: '8-10',
+    title: 'AI Literate',
+    emoji: '🧠',
+    description: "You're ahead of 95% of people. You understand the technical risks, the political dynamics, and the personal implications. You'd appreciate the depth of Bengio's analysis — especially his technical vision for Scientist AI (non-agentic, transparent reasoning, no hidden goals) and his message to the CEOs running the AI race.",
+    whatYoureMissing: [
+      'Bengio\'s technical blueprint for Scientist AI — what "safe by construction" actually means in practice',
+      'His specific message to CEOs: "Step back from your work, talk to each other"',
+      'Why the Turing Award winner who built the foundation of modern AI says: "I would press the button because I care about my children"',
     ],
   },
 ]
 
 function getTier(score: number): Tier {
-  if (score <= 8) return tiers[0]
-  if (score <= 16) return tiers[1]
-  if (score <= 24) return tiers[2]
-  return tiers[3]
+  if (score <= 3) return tiers[0]
+  if (score <= 7) return tiers[1]
+  return tiers[2]
 }
+
+const BLUE = '#003CC5'
+const ACCENT = '#4DA3FF'
 
 interface ScorecardClientProps {
   conversionUrl?: string
@@ -189,7 +204,7 @@ export default function ScorecardClient({ conversionUrl, conversionLabel }: Scor
   }
 
   const totalScore = answers.reduce((sum, a) => sum + a, 0)
-  const maxScore = 32
+  const maxScore = 10
   const tier = getTier(totalScore)
   const q = questions[currentQuestion]
 
@@ -202,7 +217,7 @@ export default function ScorecardClient({ conversionUrl, conversionLabel }: Scor
             fontFamily: "'Inter', sans-serif",
             fontWeight: 800,
             fontSize: '32px',
-            color: '#231F21',
+            color: '#23242B',
             marginBottom: '8px',
           }}>
             Your Score: {totalScore}/{maxScore}
@@ -211,7 +226,7 @@ export default function ScorecardClient({ conversionUrl, conversionLabel }: Scor
             fontFamily: "'Inter', sans-serif",
             fontWeight: 700,
             fontSize: '22px',
-            color: '#2729FE',
+            color: BLUE,
             marginBottom: '20px',
           }}>
             {tier.title}
@@ -221,47 +236,48 @@ export default function ScorecardClient({ conversionUrl, conversionLabel }: Scor
           </p>
         </div>
 
-        {/* Action Items */}
+        {/* What You're Missing */}
         <div style={{
-          background: '#F3F0EC',
+          background: '#f0f4ff',
           borderRadius: '16px',
           padding: '28px',
           marginBottom: '32px',
+          borderLeft: `4px solid ${BLUE}`,
         }}>
           <h2 style={{
             fontFamily: "'Inter', sans-serif",
             fontWeight: 700,
             fontSize: '18px',
-            color: '#231F21',
+            color: '#23242B',
             marginBottom: '16px',
           }}>
-            Your Action Items
+            What You&apos;re Not Seeing
           </h2>
-          <ol style={{ paddingLeft: '20px' }}>
-            {tier.actions.map((action, i) => (
+          <ul style={{ paddingLeft: '20px', listStyleType: 'disc' }}>
+            {tier.whatYoureMissing.map((item, i) => (
               <li key={i} style={{
-                fontSize: '16px',
-                lineHeight: 1.6,
+                fontSize: '15px',
+                lineHeight: 1.7,
                 color: '#4b5563',
                 marginBottom: '10px',
               }}>
-                {action}
+                {item}
               </li>
             ))}
-          </ol>
+          </ul>
         </div>
 
-        {/* Conversion CTA */}
-        {conversionUrl && conversionUrl !== 'REPLAY_URL' && conversionLabel && (
+        {/* Conversion CTA — Watch Episode */}
+        {conversionUrl && conversionLabel && (
           <div style={{
-            background: '#2729FE',
+            background: BLUE,
             borderRadius: '16px',
             padding: '32px',
             textAlign: 'center',
             marginBottom: '24px',
           }}>
-            <p style={{ color: '#fff', fontSize: '17px', fontWeight: 600, marginBottom: '16px' }}>
-              Want the complete system breakdown? David Bach explains every piece of the formula — every percentage, every account, every step.
+            <p style={{ color: '#fff', fontSize: '17px', fontWeight: 600, marginBottom: '16px', lineHeight: 1.5 }}>
+              Yoshua Bengio — Turing Award winner, creator of deep learning — explains everything your score revealed. 90 minutes that will change how you think about AI.
             </p>
             <a
               href={conversionUrl}
@@ -270,7 +286,7 @@ export default function ScorecardClient({ conversionUrl, conversionLabel }: Scor
               style={{
                 display: 'inline-block',
                 background: '#fff',
-                color: '#2729FE',
+                color: BLUE,
                 padding: '14px 32px',
                 borderRadius: '30px',
                 textDecoration: 'none',
@@ -283,20 +299,64 @@ export default function ScorecardClient({ conversionUrl, conversionLabel }: Scor
           </div>
         )}
 
+        {/* Dimension Breakdown */}
+        <div style={{
+          background: '#f9fafb',
+          borderRadius: '16px',
+          padding: '28px',
+          marginBottom: '32px',
+        }}>
+          <h2 style={{
+            fontFamily: "'Inter', sans-serif",
+            fontWeight: 700,
+            fontSize: '18px',
+            color: '#23242B',
+            marginBottom: '16px',
+          }}>
+            Your Dimension Breakdown
+          </h2>
+          {['Technical Awareness', 'Power Concentration Awareness', 'Personal Impact Readiness', 'Relationship Awareness', 'Systems Thinking'].map((dim, i) => {
+            const dimScore = answers[i * 2] + answers[i * 2 + 1]
+            const dimMax = 2
+            return (
+              <div key={dim} style={{ marginBottom: '14px' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '4px' }}>
+                  <span style={{ fontSize: '14px', fontWeight: 600, color: '#23242B' }}>{dim}</span>
+                  <span style={{ fontSize: '14px', color: '#6b7280' }}>{dimScore}/{dimMax}</span>
+                </div>
+                <div style={{
+                  width: '100%',
+                  height: '8px',
+                  background: '#e5e7eb',
+                  borderRadius: '4px',
+                  overflow: 'hidden',
+                }}>
+                  <div style={{
+                    width: `${(dimScore / dimMax) * 100}%`,
+                    height: '100%',
+                    background: dimScore === dimMax ? '#22c55e' : dimScore > 0 ? ACCENT : '#ef4444',
+                    borderRadius: '4px',
+                  }} />
+                </div>
+              </div>
+            )
+          })}
+        </div>
+
         {/* Blog + Retake */}
         <div style={{ textAlign: 'center' }}>
           <Link
             href="/clients/david-bach/blog"
             style={{
               display: 'inline-block',
-              color: '#2729FE',
+              color: BLUE,
               fontSize: '15px',
               fontWeight: 600,
               textDecoration: 'underline',
               marginRight: '24px',
             }}
           >
-            Read the Full System Breakdown
+            Read the Full Analysis
           </Link>
           <button
             onClick={() => {
@@ -345,11 +405,22 @@ export default function ScorecardClient({ conversionUrl, conversionLabel }: Scor
           <div style={{
             width: `${(currentQuestion / questions.length) * 100}%`,
             height: '100%',
-            background: '#2729FE',
+            background: BLUE,
             borderRadius: '3px',
             transition: 'width 0.3s ease',
           }} />
         </div>
+        {/* Dimension label */}
+        <p style={{
+          fontSize: '12px',
+          color: ACCENT,
+          fontWeight: 600,
+          marginTop: '8px',
+          textTransform: 'uppercase',
+          letterSpacing: '0.05em',
+        }}>
+          {q.dimension}
+        </p>
       </div>
 
       {/* Question */}
@@ -357,7 +428,7 @@ export default function ScorecardClient({ conversionUrl, conversionLabel }: Scor
         fontFamily: "'Inter', sans-serif",
         fontWeight: 700,
         fontSize: '22px',
-        color: '#231F21',
+        color: '#23242B',
         lineHeight: 1.3,
         marginBottom: '24px',
       }}>
@@ -379,13 +450,13 @@ export default function ScorecardClient({ conversionUrl, conversionLabel }: Scor
               background: '#fff',
               textAlign: 'left',
               fontSize: '16px',
-              color: '#231F21',
+              color: '#23242B',
               cursor: 'pointer',
               transition: 'border-color 0.15s, background 0.15s',
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.borderColor = '#2729FE'
-              e.currentTarget.style.background = '#f8f8ff'
+              e.currentTarget.style.borderColor = BLUE
+              e.currentTarget.style.background = '#f0f4ff'
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.borderColor = '#e5e7eb'
@@ -399,14 +470,15 @@ export default function ScorecardClient({ conversionUrl, conversionLabel }: Scor
 
       {/* Why This Matters */}
       <div style={{
-        background: '#F3F0EC',
+        background: '#f0f4ff',
         borderRadius: '12px',
         padding: '20px',
         fontSize: '14px',
         lineHeight: 1.6,
         color: '#6b7280',
+        borderLeft: `3px solid ${ACCENT}`,
       }}>
-        <strong style={{ color: '#231F21' }}>Why this matters:</strong> {q.why}
+        <strong style={{ color: '#23242B' }}>Why this matters:</strong> {q.why}
       </div>
     </div>
   )
