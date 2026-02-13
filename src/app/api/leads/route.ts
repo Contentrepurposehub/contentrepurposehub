@@ -80,11 +80,13 @@ async function appendToGoogleSheet(lead: LeadPayload) {
   // Add new clients here: 'client-slug': 'Sheet-Tab-Name'
   const SHEET_TAB_NAMES: Record<string, string> = {
   }
-  const sheetName = SHEET_TAB_NAMES[lead.client] || lead.client || 'Leads'
+  const sheetName = SHEET_TAB_NAMES[lead.client] || ''
   const values = [[lead.name, lead.email, new Date().toISOString(), lead.source || 'direct', lead.client]]
 
+  // Use sheet tab name if specified, otherwise just use column range (defaults to first tab)
+  const range = sheetName ? `${encodeURIComponent(sheetName)}!A:E` : 'A:E'
   const sheetsRes = await fetch(
-    `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${encodeURIComponent(sheetName)}!A:E:append?valueInputOption=USER_ENTERED`,
+    `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${range}:append?valueInputOption=USER_ENTERED`,
     {
       method: 'POST',
       headers: {
