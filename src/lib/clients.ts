@@ -79,7 +79,44 @@ export interface ClientConfig {
  * All registered clients. Add new clients here when onboarding.
  */
 export const clients: Record<string, ClientConfig> = {
-  // Add new clients here when onboarding. See CLAUDE.md "Starter Tier: Complete End-to-End Playbook" for the full workflow.
+  'david-bach': {
+    slug: 'david-bach',
+    name: 'David Bach',
+    tier: 'growth',
+    startDate: '2026-02-13',
+    currentMonth: 1,
+    series: {
+      name: 'The Automatic Wealth System',
+      description: 'The complete system behind 654,000 401k millionaires — every percentage, every account, every step.',
+      posts: [
+        {
+          slug: 'index',
+          title: 'The Automatic Millionaire Formula: The Exact System Behind 654,000 New Millionaires',
+          date: '2026-02-13',
+          keyword: 'automatic millionaire formula',
+          seriesOrder: 1,
+        },
+      ],
+    },
+    leadMagnetType: 'scorecard',
+    leadMagnetPath: '/clients/david-bach/scorecard',
+    funnelType: 'replay-promotion',
+    postCaptureRedirect: '/clients/david-bach/scorecard',
+    conversionUrl: 'REPLAY_URL',
+    conversionLabel: 'Watch the Full Episode Free',
+    socialLinks: [
+      { platform: 'x', url: 'https://x.com/AuthorDavidBach' },
+      { platform: 'instagram', url: 'https://www.instagram.com/davidlbach/' },
+      { platform: 'youtube', url: 'https://www.youtube.com/user/DavidBachTV' },
+      { platform: 'website', url: 'https://davidbach.com' },
+    ],
+    sheetTabName: 'david-bach',
+    brandColors: {
+      primary: '#2729FE',
+      secondary: '#231F21',
+      accent: '#D73A0F',
+    },
+  },
 }
 
 /**
