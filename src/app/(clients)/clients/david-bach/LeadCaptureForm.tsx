@@ -6,9 +6,15 @@ import { useRouter } from 'next/navigation'
 interface LeadCaptureFormProps {
   source: 'hero' | 'footer'
   redirectUrl?: string
+  /** Visual variant: 'light' (white bg), 'dark' (charcoal bg), 'gradient' (orange gradient bg) */
+  variant?: 'light' | 'dark' | 'gradient'
 }
 
-export default function LeadCaptureForm({ source, redirectUrl = '/clients/david-bach/scorecard' }: LeadCaptureFormProps) {
+export default function LeadCaptureForm({
+  source,
+  redirectUrl = '/clients/david-bach/scorecard',
+  variant = 'light',
+}: LeadCaptureFormProps) {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [loading, setLoading] = useState(false)
@@ -32,7 +38,6 @@ export default function LeadCaptureForm({ source, redirectUrl = '/clients/david-
         throw new Error(data.error || 'Something went wrong')
       }
 
-      // Redirect: internal paths use router.push, external URLs use window.location
       if (redirectUrl.startsWith('http')) {
         window.location.href = redirectUrl
       } else {
@@ -44,7 +49,27 @@ export default function LeadCaptureForm({ source, redirectUrl = '/clients/david-
     }
   }
 
-  const isFooter = source === 'footer'
+  const isDark = variant === 'dark' || variant === 'gradient'
+
+  const inputStyle: React.CSSProperties = {
+    padding: '14px 18px',
+    borderRadius: '12px',
+    border: isDark ? '2px solid rgba(255,255,255,0.25)' : '2px solid #e5e7eb',
+    fontSize: '16px',
+    outline: 'none',
+    background: isDark ? 'rgba(255,255,255,0.1)' : '#fff',
+    color: isDark ? '#fff' : '#231F21',
+    width: '100%',
+    boxSizing: 'border-box' as const,
+  }
+
+  const buttonBg = variant === 'dark'
+    ? '#2729FE'
+    : variant === 'gradient'
+      ? '#fff'
+      : '#2729FE'
+
+  const buttonColor = variant === 'gradient' ? '#D73A0F' : '#fff'
 
   return (
     <form onSubmit={handleSubmit} suppressHydrationWarning>
@@ -56,17 +81,7 @@ export default function LeadCaptureForm({ source, redirectUrl = '/clients/david-
           onChange={(e) => setName(e.target.value)}
           required
           suppressHydrationWarning
-          style={{
-            padding: '14px 18px',
-            borderRadius: '12px',
-            border: isFooter ? '2px solid rgba(255,255,255,0.3)' : '2px solid #e5e7eb',
-            fontSize: '16px',
-            outline: 'none',
-            background: isFooter ? 'rgba(255,255,255,0.15)' : '#fff',
-            color: isFooter ? '#fff' : '#231F21',
-            width: '100%',
-            boxSizing: 'border-box',
-          }}
+          style={inputStyle}
         />
         <input
           type="email"
@@ -75,17 +90,7 @@ export default function LeadCaptureForm({ source, redirectUrl = '/clients/david-
           onChange={(e) => setEmail(e.target.value)}
           required
           suppressHydrationWarning
-          style={{
-            padding: '14px 18px',
-            borderRadius: '12px',
-            border: isFooter ? '2px solid rgba(255,255,255,0.3)' : '2px solid #e5e7eb',
-            fontSize: '16px',
-            outline: 'none',
-            background: isFooter ? 'rgba(255,255,255,0.15)' : '#fff',
-            color: isFooter ? '#fff' : '#231F21',
-            width: '100%',
-            boxSizing: 'border-box',
-          }}
+          style={inputStyle}
         />
         <button
           type="submit"
@@ -94,14 +99,15 @@ export default function LeadCaptureForm({ source, redirectUrl = '/clients/david-
             padding: '16px 32px',
             borderRadius: '30px',
             border: 'none',
-            background: isFooter ? '#fff' : '#2729FE',
-            color: isFooter ? '#2729FE' : '#fff',
+            background: buttonBg,
+            color: buttonColor,
             fontSize: '17px',
             fontWeight: 700,
             cursor: loading ? 'not-allowed' : 'pointer',
             opacity: loading ? 0.7 : 1,
             width: '100%',
             transition: 'opacity 0.15s',
+            fontFamily: "'Inter', sans-serif",
           }}
         >
           {loading ? 'Submitting...' : 'Get My Free Score'}
@@ -112,7 +118,7 @@ export default function LeadCaptureForm({ source, redirectUrl = '/clients/david-
       )}
       <p style={{
         fontSize: '13px',
-        color: isFooter ? 'rgba(255,255,255,0.7)' : '#9ca3af',
+        color: isDark ? 'rgba(255,255,255,0.6)' : '#9ca3af',
         marginTop: '12px',
         textAlign: 'center',
       }}>

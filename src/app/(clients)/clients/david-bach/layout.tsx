@@ -11,8 +11,16 @@ export default function DavidBachLayout({
   children: React.ReactNode
 }) {
   return (
-    <div style={{ fontFamily: "'Source Sans Pro', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif" }}>
-      {children}
-    </div>
+    <>
+      {/* Google Fonts: Inter (headlines - proxy for Neue Haas) + Source Sans 3 (body - matches davidbach.com) */}
+      {/* eslint-disable-next-line @next/next/no-page-custom-font */}
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+      />
+      <div style={{ fontFamily: "'Source Sans 3', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, sans-serif" }}>
+        {children}
+      </div>
+    </>
   )
 }
