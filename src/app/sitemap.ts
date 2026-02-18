@@ -46,6 +46,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
+      url: `${baseUrl}/privacy`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/terms`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
       url: `${baseUrl}/blog`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
@@ -177,25 +189,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.9,
     },
-    // Client pages (auto-generated from client registry)
-    ...clientUrls,
     {
-      url: `${baseUrl}/#pricing`,
+      url: `${baseUrl}/blog/chopcast-alternative`,
       lastModified: new Date(),
-      changeFrequency: 'weekly',
+      changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/#how-it-works`,
+      url: `${baseUrl}/blog/repurpose-my-webinar-alternative`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
-      priority: 0.7,
+      priority: 0.8,
     },
     {
-      url: `${baseUrl}/#faq`,
+      url: `${baseUrl}/blog/komet-media-vs-contentrepurposehub`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
-      priority: 0.7,
+      priority: 0.8,
     },
+    {
+      url: `${baseUrl}/blog/webinar-repurposing-benchmarks-2026`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    // Client pages (auto-generated from client registry)
+    ...clientUrls,
   ]
 }

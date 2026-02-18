@@ -14,12 +14,21 @@ export const metadata: Metadata = {
     url: 'https://contentrepurposehub.com/blog/webinar-to-social-media-content',
     siteName: 'ContentRepurposeHub',
     type: 'article',
-    publishedTime: '2026-03-30T00:00:00.000Z',
+    publishedTime: '2026-02-13T00:00:00.000Z',
+    images: [
+      {
+        url: 'https://contentrepurposehub.com/api/og?title=How%20to%20Turn%20Your%20Webinar%20Into%2030%20Days%20of%20Social%20Media%20Content',
+        width: 1200,
+        height: 630,
+        alt: 'How to Turn Your Webinar Into 30 Days of Social Media Content',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Turn 1 Webinar Into 30 Days of Social Media Content',
     description: 'Platform-by-platform guide for LinkedIn, Instagram, Twitter/X, YouTube Shorts, and TikTok. Includes a ready-to-use 30-day calendar.',
+    images: ['https://contentrepurposehub.com/api/og?title=How%20to%20Turn%20Your%20Webinar%20Into%2030%20Days%20of%20Social%20Media%20Content'],
   },
 }
 
@@ -32,8 +41,8 @@ export default function WebinarToSocialMediaContent() {
         '@id': 'https://contentrepurposehub.com/blog/webinar-to-social-media-content#article',
         headline: 'How to Turn Your Webinar Into 30 Days of Social Media Content (LinkedIn, Instagram, and More)',
         description: 'Learn how to repurpose a single webinar into 30 days of social media content for LinkedIn, Instagram, Twitter/X, YouTube Shorts, and TikTok.',
-        datePublished: '2026-03-30',
-        dateModified: '2026-03-30',
+        datePublished: '2026-02-13',
+        dateModified: '2026-02-13',
         author: {
           '@type': 'Organization',
           name: 'ContentRepurposeHub',

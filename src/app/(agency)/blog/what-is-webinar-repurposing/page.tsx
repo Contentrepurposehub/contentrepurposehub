@@ -15,11 +15,20 @@ export const metadata: Metadata = {
     siteName: 'ContentRepurposeHub',
     type: 'article',
     publishedTime: '2026-02-09T00:00:00.000Z',
+    images: [
+      {
+        url: 'https://contentrepurposehub.com/api/og?title=What%20Is%20Webinar%20Repurposing%3F%20Definition%2C%20Benefits%2C%20and%20How%20It%20Works',
+        width: 1200,
+        height: 630,
+        alt: 'What Is Webinar Repurposing? Definition, Benefits, and How It Works',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'What Is Webinar Repurposing? Definition, Benefits & How It Works',
     description: 'A single 60-minute webinar becomes 14-75+ content pieces. Here is exactly how webinar repurposing works.',
+    images: ['https://contentrepurposehub.com/api/og?title=What%20Is%20Webinar%20Repurposing%3F%20Definition%2C%20Benefits%2C%20and%20How%20It%20Works'],
   },
 }
 
@@ -227,6 +236,80 @@ export default function WhatIsWebinarRepurposing() {
                 </div>
               </section>
 
+              {/* Infographic 1: Before vs After */}
+              <figure className="my-12">
+                <div
+                  role="img"
+                  aria-label="Before vs After comparison. Without repurposing: 1 webinar, watched once, forgotten, create content from scratch next week. With repurposing: 1 webinar, 14 plus pieces, months of content, leads on autopilot."
+                  className="rounded-xl shadow-lg overflow-hidden border border-gray-200"
+                >
+                  <div className="grid grid-cols-1 md:grid-cols-2">
+                    {/* Left Side — Without Repurposing */}
+                    <div className="bg-gray-100 p-6 md:p-8 relative">
+                      <div className="absolute top-0 left-0 w-full h-1 bg-gray-400" />
+                      <h3 className="text-lg font-bold text-gray-500 mb-6 uppercase tracking-wide">Without Repurposing</h3>
+                      <div className="flex flex-col items-center gap-4">
+                        <div className="w-16 h-16 rounded-full bg-gray-300 flex items-center justify-center text-2xl shrink-0">
+                          <span role="presentation" aria-hidden="true">🎥</span>
+                        </div>
+                        <p className="text-gray-600 font-semibold text-center">1 Webinar</p>
+                        <svg className="w-6 h-8 text-gray-400" fill="none" viewBox="0 0 24 32" aria-hidden="true">
+                          <path d="M12 0v24m0 0l-6-6m6 6l6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                        <div className="bg-gray-200 rounded-lg px-4 py-3 text-center w-full">
+                          <p className="text-gray-500 font-medium">Watched once</p>
+                        </div>
+                        <svg className="w-6 h-8 text-gray-400" fill="none" viewBox="0 0 24 32" aria-hidden="true">
+                          <path d="M12 0v24m0 0l-6-6m6 6l6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                        <div className="bg-gray-200 rounded-lg px-4 py-3 text-center w-full">
+                          <p className="text-gray-500 font-medium">Forgotten in a folder</p>
+                        </div>
+                        <svg className="w-6 h-8 text-gray-400" fill="none" viewBox="0 0 24 32" aria-hidden="true">
+                          <path d="M12 0v24m0 0l-6-6m6 6l6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                        <div className="bg-gray-300 rounded-lg px-4 py-3 text-center w-full">
+                          <p className="text-gray-500 font-medium">Create from scratch next week</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Right Side — With Repurposing */}
+                    <div className="bg-blue-50 p-6 md:p-8 relative">
+                      <div className="absolute top-0 left-0 w-full h-1 bg-blue-600" />
+                      <h3 className="text-lg font-bold text-blue-600 mb-6 uppercase tracking-wide">With Repurposing</h3>
+                      <div className="flex flex-col items-center gap-4">
+                        <div className="w-16 h-16 rounded-full bg-blue-600 flex items-center justify-center text-2xl text-white shrink-0">
+                          <span role="presentation" aria-hidden="true">🎥</span>
+                        </div>
+                        <p className="text-blue-700 font-semibold text-center">1 Webinar</p>
+                        <svg className="w-6 h-8 text-blue-400" fill="none" viewBox="0 0 24 32" aria-hidden="true">
+                          <path d="M12 0v24m0 0l-6-6m6 6l6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                        <div className="bg-blue-100 border border-blue-300 rounded-lg px-4 py-3 text-center w-full">
+                          <p className="text-blue-700 font-semibold">14+ content pieces</p>
+                        </div>
+                        <svg className="w-6 h-8 text-blue-400" fill="none" viewBox="0 0 24 32" aria-hidden="true">
+                          <path d="M12 0v24m0 0l-6-6m6 6l6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                        <div className="bg-blue-100 border border-blue-300 rounded-lg px-4 py-3 text-center w-full">
+                          <p className="text-blue-700 font-semibold">Months of content</p>
+                        </div>
+                        <svg className="w-6 h-8 text-blue-400" fill="none" viewBox="0 0 24 32" aria-hidden="true">
+                          <path d="M12 0v24m0 0l-6-6m6 6l6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                        <div className="bg-blue-600 rounded-lg px-4 py-3 text-center w-full">
+                          <p className="text-white font-semibold">Leads on autopilot</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption className="text-center text-sm text-gray-500 mt-3">
+                  The difference between letting your webinar collect dust and turning it into a content engine.
+                </figcaption>
+              </figure>
+
               {/* Section 2: Content Formats */}
               <section id="content-formats" className="mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">What Content Formats You Get From a Single Webinar</h2>
@@ -320,6 +403,79 @@ export default function WhatIsWebinarRepurposing() {
                   You receive all content pieces ready to publish. Blog posts are formatted with proper HTML. Social posts are written with hooks and CTAs. Video clips are captioned. Email sequences are drafted. You (or your team) publish on a 2-4 week cadence to maximize algorithmic reach.
                 </p>
               </section>
+
+              {/* Infographic 2: 3-Step Process */}
+              <figure className="my-12">
+                <div
+                  role="img"
+                  aria-label="3-step webinar repurposing process. Step 1: Record your webinar. Step 2: We extract and transform your content. Step 3: Publish and grow your audience."
+                  className="bg-white rounded-xl shadow-lg border border-gray-200 p-6 md:p-10"
+                >
+                  <h3 className="text-xl md:text-2xl font-bold text-gray-900 text-center mb-8">How It Works in 3 Steps</h3>
+                  <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-6 md:gap-4">
+                    {/* Step 1 */}
+                    <div className="flex flex-col items-center text-center flex-1 max-w-[220px]">
+                      <div className="w-20 h-20 rounded-full bg-blue-600 text-white flex items-center justify-center text-3xl font-bold shadow-md mb-4">
+                        1
+                      </div>
+                      <div className="text-3xl mb-2" aria-hidden="true">🎙️</div>
+                      <p className="text-lg font-bold text-gray-900 mb-1">Record Your Webinar</p>
+                      <p className="text-sm text-gray-600">Use Zoom, Meet, or any platform. Standard quality is all you need.</p>
+                    </div>
+
+                    {/* Connector 1 */}
+                    <div className="hidden md:flex items-center flex-shrink-0 pt-10" aria-hidden="true">
+                      <svg className="w-16 h-4 text-blue-300" viewBox="0 0 64 16" fill="none">
+                        <line x1="0" y1="8" x2="52" y2="8" stroke="currentColor" strokeWidth="2" strokeDasharray="6 4" />
+                        <path d="M52 2l10 6-10 6" fill="currentColor" />
+                      </svg>
+                    </div>
+                    <div className="flex md:hidden items-center justify-center" aria-hidden="true">
+                      <svg className="w-4 h-12 text-blue-300" viewBox="0 0 16 48" fill="none">
+                        <line x1="8" y1="0" x2="8" y2="36" stroke="currentColor" strokeWidth="2" strokeDasharray="6 4" />
+                        <path d="M2 36l6 10 6-10" fill="currentColor" />
+                      </svg>
+                    </div>
+
+                    {/* Step 2 */}
+                    <div className="flex flex-col items-center text-center flex-1 max-w-[220px]">
+                      <div className="w-20 h-20 rounded-full bg-blue-600 text-white flex items-center justify-center text-3xl font-bold shadow-md mb-4">
+                        2
+                      </div>
+                      <div className="text-3xl mb-2" aria-hidden="true">⚙️</div>
+                      <p className="text-lg font-bold text-gray-900 mb-1">We Extract &amp; Transform</p>
+                      <p className="text-sm text-gray-600">Your webinar becomes blog posts, social content, emails, and lead magnets.</p>
+                    </div>
+
+                    {/* Connector 2 */}
+                    <div className="hidden md:flex items-center flex-shrink-0 pt-10" aria-hidden="true">
+                      <svg className="w-16 h-4 text-blue-300" viewBox="0 0 64 16" fill="none">
+                        <line x1="0" y1="8" x2="52" y2="8" stroke="currentColor" strokeWidth="2" strokeDasharray="6 4" />
+                        <path d="M52 2l10 6-10 6" fill="currentColor" />
+                      </svg>
+                    </div>
+                    <div className="flex md:hidden items-center justify-center" aria-hidden="true">
+                      <svg className="w-4 h-12 text-blue-300" viewBox="0 0 16 48" fill="none">
+                        <line x1="8" y1="0" x2="8" y2="36" stroke="currentColor" strokeWidth="2" strokeDasharray="6 4" />
+                        <path d="M2 36l6 10 6-10" fill="currentColor" />
+                      </svg>
+                    </div>
+
+                    {/* Step 3 */}
+                    <div className="flex flex-col items-center text-center flex-1 max-w-[220px]">
+                      <div className="w-20 h-20 rounded-full bg-blue-600 text-white flex items-center justify-center text-3xl font-bold shadow-md mb-4">
+                        3
+                      </div>
+                      <div className="text-3xl mb-2" aria-hidden="true">🚀</div>
+                      <p className="text-lg font-bold text-gray-900 mb-1">Publish &amp; Grow</p>
+                      <p className="text-sm text-gray-600">Content goes live across 6+ platforms. Leads come in on autopilot.</p>
+                    </div>
+                  </div>
+                </div>
+                <figcaption className="text-center text-sm text-gray-500 mt-3">
+                  From recording to published content in 7-10 business days. You handle step 1 -- we handle the rest.
+                </figcaption>
+              </figure>
 
               {/* Section 4: Who Benefits */}
               <section id="who-benefits" className="mb-12">

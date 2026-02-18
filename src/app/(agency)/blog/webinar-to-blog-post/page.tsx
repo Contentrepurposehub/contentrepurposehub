@@ -14,12 +14,21 @@ export const metadata: Metadata = {
     url: 'https://contentrepurposehub.com/blog/webinar-to-blog-post',
     siteName: 'ContentRepurposeHub',
     type: 'article',
-    publishedTime: '2026-02-16T00:00:00.000Z',
+    publishedTime: '2026-02-11T00:00:00.000Z',
+    images: [
+      {
+        url: 'https://contentrepurposehub.com/api/og?title=How%20to%20Turn%20a%20Webinar%20Into%20a%20Blog%20Post%20%28Step-by-Step%20Process%20With%20Examples%29',
+        width: 1200,
+        height: 630,
+        alt: 'How to Turn a Webinar Into a Blog Post (Step-by-Step Process With Examples)',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'How to Turn a Webinar Into a Blog Post (Step-by-Step)',
     description: 'The complete process for coaches and consultants. Templates, examples, and SEO tips included.',
+    images: ['https://contentrepurposehub.com/api/og?title=How%20to%20Turn%20a%20Webinar%20Into%20a%20Blog%20Post%20%28Step-by-Step%20Process%20With%20Examples%29'],
   },
 }
 
@@ -32,8 +41,8 @@ export default function WebinarToBlogPost() {
         '@id': 'https://contentrepurposehub.com/blog/webinar-to-blog-post#article',
         headline: 'How to Turn a Webinar Into a Blog Post (Step-by-Step Process With Examples)',
         description: 'Learn how to repurpose webinar into blog posts with this step-by-step guide. Includes templates, before-and-after examples, and SEO tips for coaches and consultants.',
-        datePublished: '2026-02-16',
-        dateModified: '2026-02-16',
+        datePublished: '2026-02-11',
+        dateModified: '2026-02-11',
         author: {
           '@type': 'Organization',
           name: 'ContentRepurposeHub',

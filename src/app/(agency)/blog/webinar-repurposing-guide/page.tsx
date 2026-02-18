@@ -15,11 +15,20 @@ export const metadata: Metadata = {
     siteName: 'ContentRepurposeHub',
     type: 'article',
     publishedTime: '2026-02-09T00:00:00.000Z',
+    images: [
+      {
+        url: 'https://contentrepurposehub.com/api/og?title=Webinar%20Repurposing%3A%20How%20to%20Turn%201%20Webinar%20Into%2014%2B%20Content%20Pieces',
+        width: 1200,
+        height: 630,
+        alt: 'Webinar Repurposing: How to Turn 1 Webinar Into 14+ Content Pieces',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Webinar Repurposing: 1 Webinar → 14+ Content Pieces',
     description: 'The complete guide for coaches and consultants. 14 formats, step-by-step process.',
+    images: ['https://contentrepurposehub.com/api/og?title=Webinar%20Repurposing%3A%20How%20to%20Turn%201%20Webinar%20Into%2014%2B%20Content%20Pieces'],
   },
 }
 
@@ -166,6 +175,89 @@ export default function WebinarRepurposingGuide() {
               </p>
             </header>
 
+            {/* --- INFOGRAPHIC 1: "1 Webinar = 14+ Pieces" Hero Card --- */}
+            <figure className="my-10">
+              <div
+                role="img"
+                aria-label="Infographic showing how 1 webinar recording becomes 14 or more content pieces across 10 different formats including blog posts, LinkedIn posts, newsletters, email sequences, lead magnets, Twitter threads, Instagram captions, YouTube Short scripts, landing pages, and content calendars"
+                className="bg-gradient-to-br from-blue-600 via-blue-700 to-purple-700 rounded-2xl shadow-xl overflow-hidden"
+              >
+                {/* Top header bar */}
+                <div className="bg-white/10 backdrop-blur-sm px-6 py-3 border-b border-white/10">
+                  <p className="text-blue-100 text-xs font-semibold tracking-widest uppercase text-center">The Content Multiplier Effect</p>
+                </div>
+
+                <div className="p-6 md:p-8">
+                  {/* Source and output side by side */}
+                  <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
+                    {/* Left: Source */}
+                    <div className="flex-shrink-0 text-center">
+                      <div className="bg-white/15 backdrop-blur-sm rounded-xl p-5 border border-white/20 inline-block">
+                        <div className="text-5xl mb-2" aria-hidden="true">🎙️</div>
+                        <p className="text-white font-bold text-lg">1 Webinar</p>
+                        <p className="text-blue-200 text-sm">60 min recording</p>
+                      </div>
+                    </div>
+
+                    {/* Arrow */}
+                    <div className="flex-shrink-0 text-white text-2xl font-bold" aria-hidden="true">
+                      <span className="hidden md:block">→</span>
+                      <span className="md:hidden">↓</span>
+                    </div>
+
+                    {/* Right: Output grid */}
+                    <div className="flex-1 w-full">
+                      <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/15">
+                        <p className="text-white font-bold text-lg mb-3 text-center md:text-left">14+ Content Pieces</p>
+                        <div className="grid grid-cols-2 gap-2">
+                          {[
+                            { icon: '📝', label: 'Blog Post', count: '1' },
+                            { icon: '💼', label: 'LinkedIn Posts', count: '10' },
+                            { icon: '📧', label: 'Newsletter', count: '2' },
+                            { icon: '📨', label: 'Email Sequence', count: '3-5' },
+                            { icon: '📚', label: 'Lead Magnet', count: '1' },
+                            { icon: '🐦', label: 'Twitter Threads', count: '2' },
+                            { icon: '📸', label: 'IG Captions', count: '8' },
+                            { icon: '🎬', label: 'YT Short Scripts', count: '4' },
+                            { icon: '📄', label: 'Landing Page', count: '1' },
+                            { icon: '📅', label: 'Content Calendar', count: '30 days' },
+                          ].map((item, i) => (
+                            <div
+                              key={i}
+                              className="flex items-center gap-2 bg-white/10 rounded-lg px-3 py-2"
+                            >
+                              <span className="text-lg flex-shrink-0" aria-hidden="true">{item.icon}</span>
+                              <div className="min-w-0">
+                                <p className="text-white text-sm font-medium leading-tight truncate">{item.label}</p>
+                                <p className="text-blue-200 text-xs">{item.count}</p>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Bottom stat bar */}
+                  <div className="mt-6 pt-5 border-t border-white/15 flex flex-wrap justify-center gap-6 md:gap-10">
+                    {[
+                      { stat: '1 hr', desc: 'of your time' },
+                      { stat: '14-75+', desc: 'content pieces' },
+                      { stat: '30 days', desc: 'of content' },
+                    ].map((item, i) => (
+                      <div key={i} className="text-center">
+                        <p className="text-white text-2xl font-bold">{item.stat}</p>
+                        <p className="text-blue-200 text-xs">{item.desc}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <figcaption className="text-center text-sm text-gray-500 mt-3">
+                A single 60-minute webinar contains enough material for 14 or more content pieces across every major platform.
+              </figcaption>
+            </figure>
+
             {/* Table of Contents */}
             <div className="bg-gray-50 rounded-xl p-6 mb-10 border border-gray-200">
               <h2 className="text-lg font-semibold text-gray-900 mb-3">Table of Contents</h2>
@@ -231,6 +323,80 @@ export default function WebinarRepurposingGuide() {
                   For coaches and consultants who run webinars regularly, repurposing turns each recording into a lead-generation machine. Your webinar content reaches people on LinkedIn who missed the live event, on Google when they search for answers you already gave, and in their inbox through email sequences built from your teaching.
                 </p>
               </section>
+
+              {/* --- INFOGRAPHIC 2: Time Comparison Card --- */}
+              <figure className="my-10">
+                <div
+                  role="img"
+                  aria-label="Side-by-side comparison showing creating content from scratch requires 15 to 20 hours per week, starts from zero every week, and content dies after posting, versus repurposing 1 webinar which requires only 1 hour of your time, produces 14 or more pieces delivered, and content compounds over months"
+                  className="rounded-2xl shadow-xl overflow-hidden border border-gray-200"
+                >
+                  {/* Header */}
+                  <div className="bg-gray-900 px-6 py-3">
+                    <p className="text-gray-300 text-xs font-semibold tracking-widest uppercase text-center">The Real Cost of Content Creation</p>
+                  </div>
+
+                  <div className="grid md:grid-cols-2">
+                    {/* Left column: From scratch (red) */}
+                    <div className="bg-gradient-to-b from-red-50 to-red-100/50 p-6 md:p-8 border-b md:border-b-0 md:border-r border-gray-200">
+                      <div className="flex items-center gap-2 mb-5">
+                        <div className="w-3 h-3 rounded-full bg-red-500 flex-shrink-0" aria-hidden="true"></div>
+                        <h3 className="text-lg font-bold text-red-900">Creating From Scratch</h3>
+                      </div>
+                      <div className="space-y-4">
+                        <div className="bg-white rounded-xl p-4 border border-red-200 shadow-sm">
+                          <p className="text-red-700 text-xs font-semibold uppercase tracking-wide mb-1">Time Required</p>
+                          <p className="text-red-900 text-2xl font-bold">15-20 hrs<span className="text-base font-normal text-red-600">/week</span></p>
+                        </div>
+                        <div className="bg-white rounded-xl p-4 border border-red-200 shadow-sm">
+                          <p className="text-red-700 text-xs font-semibold uppercase tracking-wide mb-1">Process</p>
+                          <p className="text-red-900 font-medium">Starts from zero every week</p>
+                          <p className="text-red-600 text-sm mt-1">Research, write, design, edit, repeat</p>
+                        </div>
+                        <div className="bg-white rounded-xl p-4 border border-red-200 shadow-sm">
+                          <p className="text-red-700 text-xs font-semibold uppercase tracking-wide mb-1">Content Lifespan</p>
+                          <p className="text-red-900 font-medium">Dies after posting</p>
+                          <p className="text-red-600 text-sm mt-1">No compounding, no evergreen value</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Right column: Repurposing (green) */}
+                    <div className="bg-gradient-to-b from-emerald-50 to-emerald-100/50 p-6 md:p-8">
+                      <div className="flex items-center gap-2 mb-5">
+                        <div className="w-3 h-3 rounded-full bg-emerald-500 flex-shrink-0" aria-hidden="true"></div>
+                        <h3 className="text-lg font-bold text-emerald-900">Repurposing 1 Webinar</h3>
+                      </div>
+                      <div className="space-y-4">
+                        <div className="bg-white rounded-xl p-4 border border-emerald-200 shadow-sm">
+                          <p className="text-emerald-700 text-xs font-semibold uppercase tracking-wide mb-1">Time Required</p>
+                          <p className="text-emerald-900 text-2xl font-bold">~1 hr<span className="text-base font-normal text-emerald-600"> of your time</span></p>
+                        </div>
+                        <div className="bg-white rounded-xl p-4 border border-emerald-200 shadow-sm">
+                          <p className="text-emerald-700 text-xs font-semibold uppercase tracking-wide mb-1">Output</p>
+                          <p className="text-emerald-900 font-medium">14+ pieces delivered</p>
+                          <p className="text-emerald-600 text-sm mt-1">Blog, LinkedIn, email, social, video</p>
+                        </div>
+                        <div className="bg-white rounded-xl p-4 border border-emerald-200 shadow-sm">
+                          <p className="text-emerald-700 text-xs font-semibold uppercase tracking-wide mb-1">Content Lifespan</p>
+                          <p className="text-emerald-900 font-medium">Compounds over months</p>
+                          <p className="text-emerald-600 text-sm mt-1">SEO ranks higher, email nurtures forever</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Bottom verdict bar */}
+                  <div className="bg-gray-900 px-6 py-4 text-center">
+                    <p className="text-white text-sm font-medium">
+                      Same expertise. <span className="text-emerald-400 font-bold">95% less time.</span> Exponentially more reach.
+                    </p>
+                  </div>
+                </div>
+                <figcaption className="text-center text-sm text-gray-500 mt-3">
+                  Repurposing eliminates the weekly content creation grind by extracting maximum value from work you already did.
+                </figcaption>
+              </figure>
 
               {/* CTA 1 */}
               <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl p-6 md:p-8 text-center my-10">
@@ -437,6 +603,94 @@ export default function WebinarRepurposingGuide() {
                   Spread your content over 2-4 weeks. Do not publish everything at once. A consistent publishing cadence signals to algorithms (and your audience) that you are active and authoritative.
                 </p>
               </section>
+
+              {/* --- INFOGRAPHIC 3: Process Flow --- */}
+              <figure className="my-10">
+                <div
+                  role="img"
+                  aria-label="Horizontal process flow diagram showing 6 steps of webinar repurposing: Step 1 Record your webinar, Step 2 Transcribe the recording, Step 3 Extract key insights and frameworks, Step 4 Map content to formats, Step 5 Produce each piece, Step 6 Optimize and publish across platforms"
+                  className="bg-gradient-to-br from-slate-50 to-blue-50 rounded-2xl shadow-xl border border-gray-200 overflow-hidden"
+                >
+                  {/* Header */}
+                  <div className="bg-gradient-to-r from-blue-600 to-purple-600 px-6 py-3">
+                    <p className="text-white text-xs font-semibold tracking-widest uppercase text-center">The 6-Step Repurposing Pipeline</p>
+                  </div>
+
+                  <div className="p-6 md:p-8">
+                    {/* Desktop: Horizontal flow */}
+                    <div className="hidden md:block">
+                      <div className="flex items-start justify-between gap-2">
+                        {[
+                          { step: 1, title: 'Record', desc: 'Deliver your webinar as usual' },
+                          { step: 2, title: 'Transcribe', desc: 'AI-powered transcript cleanup' },
+                          { step: 3, title: 'Extract', desc: 'Pull insights, stories, frameworks' },
+                          { step: 4, title: 'Map', desc: 'Match content blocks to formats' },
+                          { step: 5, title: 'Produce', desc: 'Create each piece for its platform' },
+                          { step: 6, title: 'Publish', desc: 'Optimize, schedule, distribute' },
+                        ].map((item, i) => (
+                          <div key={i} className="flex items-start flex-1">
+                            {/* Step card */}
+                            <div className="text-center flex-1">
+                              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-600 to-purple-600 text-white text-lg font-bold flex items-center justify-center mx-auto shadow-lg shadow-blue-200">
+                                {item.step}
+                              </div>
+                              <p className="text-gray-900 font-bold text-sm mt-3">{item.title}</p>
+                              <p className="text-gray-500 text-xs mt-1 leading-snug px-1">{item.desc}</p>
+                            </div>
+                            {/* Connector arrow (not after last item) */}
+                            {i < 5 && (
+                              <div className="flex items-center pt-5 flex-shrink-0 text-blue-300" aria-hidden="true">
+                                <div className="w-4 h-0.5 bg-blue-300"></div>
+                                <svg className="w-3 h-3 -ml-px" fill="currentColor" viewBox="0 0 12 12"><path d="M4 1l5 5-5 5V1z" /></svg>
+                              </div>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Mobile: Vertical flow */}
+                    <div className="md:hidden space-y-1">
+                      {[
+                        { step: 1, title: 'Record', desc: 'Deliver your webinar as usual' },
+                        { step: 2, title: 'Transcribe', desc: 'AI-powered transcript cleanup' },
+                        { step: 3, title: 'Extract', desc: 'Pull insights, stories, frameworks' },
+                        { step: 4, title: 'Map', desc: 'Match content blocks to formats' },
+                        { step: 5, title: 'Produce', desc: 'Create each piece for its platform' },
+                        { step: 6, title: 'Publish', desc: 'Optimize, schedule, distribute' },
+                      ].map((item, i) => (
+                        <div key={i}>
+                          <div className="flex items-center gap-4">
+                            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-600 to-purple-600 text-white text-sm font-bold flex items-center justify-center flex-shrink-0 shadow-lg shadow-blue-200">
+                              {item.step}
+                            </div>
+                            <div>
+                              <p className="text-gray-900 font-bold text-sm">{item.title}</p>
+                              <p className="text-gray-500 text-xs">{item.desc}</p>
+                            </div>
+                          </div>
+                          {/* Vertical connector */}
+                          {i < 5 && (
+                            <div className="flex justify-start ml-5 py-1" aria-hidden="true">
+                              <div className="w-0.5 h-4 bg-blue-300"></div>
+                            </div>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Result bar */}
+                    <div className="mt-6 pt-5 border-t border-gray-200 text-center">
+                      <p className="text-gray-900 text-sm font-semibold">
+                        Result: <span className="text-blue-600">14-75+ content pieces</span> from a single recording
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <figcaption className="text-center text-sm text-gray-500 mt-3">
+                  The webinar repurposing pipeline: 6 steps from recording to a full month of published content.
+                </figcaption>
+              </figure>
 
               {/* Section 5 */}
               <section id="tools" className="mb-12">

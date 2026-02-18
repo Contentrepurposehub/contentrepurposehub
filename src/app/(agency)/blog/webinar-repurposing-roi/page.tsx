@@ -14,12 +14,21 @@ export const metadata: Metadata = {
     url: 'https://contentrepurposehub.com/blog/webinar-repurposing-roi',
     siteName: 'ContentRepurposeHub',
     type: 'article',
-    publishedTime: '2026-03-23T00:00:00.000Z',
+    publishedTime: '2026-02-14T00:00:00.000Z',
+    images: [
+      {
+        url: 'https://contentrepurposehub.com/api/og?title=The%20ROI%20of%20Webinar%20Repurposing%3A%20Data%2C%20Math%2C%20and%20What%20It%20Actually%20Saves%20You',
+        width: 1200,
+        height: 630,
+        alt: 'The ROI of Webinar Repurposing: Data, Math, and What It Actually Saves You',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'The ROI of Webinar Repurposing: Data, Math, and Real Numbers',
     description: 'Is content repurposing worth the investment? The data says yes. Here is the math.',
+    images: ['https://contentrepurposehub.com/api/og?title=The%20ROI%20of%20Webinar%20Repurposing%3A%20Data%2C%20Math%2C%20and%20What%20It%20Actually%20Saves%20You'],
   },
 }
 
@@ -32,8 +41,8 @@ export default function WebinarRepurposingROI() {
         '@id': 'https://contentrepurposehub.com/blog/webinar-repurposing-roi#article',
         headline: 'The ROI of Webinar Repurposing: Data, Math, and What It Actually Saves You',
         description: 'Is content repurposing worth it? See the real ROI numbers, cost comparisons, and break-even analysis for webinar repurposing. Data-backed framework for coaches and consultants.',
-        datePublished: '2026-03-23',
-        dateModified: '2026-03-23',
+        datePublished: '2026-02-14',
+        dateModified: '2026-02-14',
         author: {
           '@type': 'Organization',
           name: 'ContentRepurposeHub',

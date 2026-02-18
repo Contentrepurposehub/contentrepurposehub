@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://contentrepurposehub.com/og-image.png",
+        url: "https://contentrepurposehub.com/api/og?title=Turn%201%20Webinar%20Into%2075%2B%20Content%20Pieces",
         width: 1200,
         height: 630,
         alt: "ContentRepurposeHub - Webinar Repurposing Service",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Webinar Repurposing | 1 Webinar → 75+ Content Pieces",
     description: "Turn your webinars into lead magnets, LinkedIn posts, blog articles, and more. Google + AI search optimized.",
-    images: ["https://contentrepurposehub.com/og-image.png"],
+    images: ["https://contentrepurposehub.com/api/og?title=Turn%201%20Webinar%20Into%2075%2B%20Content%20Pieces"],
   },
   robots: {
     index: true,
@@ -46,6 +46,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://contentrepurposehub.com",
   },
+  other: {
+    'ai-content-type': 'service-page',
+    'service-type': 'webinar repurposing',
+    'pricing': '$750-$1500/month',
+    'service-area': 'United States',
+    'target-audience': 'coaches, consultants, course creators',
+  },
 };
 
 export default function AgencyLayout({
@@ -55,14 +62,6 @@ export default function AgencyLayout({
 }>) {
   return (
     <>
-      {/* LLM Discovery Tags */}
-      <meta name="ai-content-type" content="service-page" />
-      <meta name="service-type" content="webinar repurposing" />
-      <meta name="pricing" content="$750-$1500/month" />
-      <meta name="service-area" content="United States" />
-      <meta name="target-audience" content="coaches, consultants, course creators" />
-      <link rel="llms" href="/llms.txt" />
-
       {children}
 
       {/* Google Analytics 4 */}

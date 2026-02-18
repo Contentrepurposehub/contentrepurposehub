@@ -14,12 +14,21 @@ export const metadata: Metadata = {
     url: 'https://contentrepurposehub.com/blog/webinar-follow-up-email-sequence',
     siteName: 'ContentRepurposeHub',
     type: 'article',
-    publishedTime: '2026-03-16T00:00:00.000Z',
+    publishedTime: '2026-02-13T00:00:00.000Z',
+    images: [
+      {
+        url: 'https://contentrepurposehub.com/api/og?title=Webinar%20Follow-Up%20Email%20Sequences%20That%20Convert%3A%20Templates%20%26%20Strategy%20for%20Coaches',
+        width: 1200,
+        height: 630,
+        alt: 'Webinar Follow-Up Email Sequences That Convert: Templates & Strategy for Coaches',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Webinar Follow-Up Email Sequences That Convert',
     description: '6-email post-webinar sequence with copy-and-paste templates for coaches.',
+    images: ['https://contentrepurposehub.com/api/og?title=Webinar%20Follow-Up%20Email%20Sequences%20That%20Convert%3A%20Templates%20%26%20Strategy%20for%20Coaches'],
   },
 }
 
@@ -32,8 +41,8 @@ export default function WebinarFollowUpEmailSequence() {
         '@id': 'https://contentrepurposehub.com/blog/webinar-follow-up-email-sequence#article',
         headline: 'Webinar Follow-Up Email Sequences That Convert: Templates and Strategy for Coaches',
         description: 'Get a proven 6-email post-webinar follow-up sequence with copy-and-paste templates. Learn how coaches turn webinar attendees into paying clients with strategic email nurture sequences.',
-        datePublished: '2026-03-16',
-        dateModified: '2026-03-16',
+        datePublished: '2026-02-13',
+        dateModified: '2026-02-13',
         author: {
           '@type': 'Organization',
           name: 'ContentRepurposeHub',

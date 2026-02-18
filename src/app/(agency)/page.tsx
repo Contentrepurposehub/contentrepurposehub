@@ -1358,6 +1358,11 @@ export default function Home() {
               </div>
             </div>
             <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
+              <div className="flex justify-center gap-4 mb-4">
+                <a href="/privacy" className="hover:text-white transition">Privacy Policy</a>
+                <span>·</span>
+                <a href="/terms" className="hover:text-white transition">Terms of Service</a>
+              </div>
               <p>© 2026 ContentRepurposeHub. All rights reserved.</p>
               <p className="mt-2 text-gray-500">
                 Webinar repurposing service for coaches and consultants. Content optimized for Google and AI search engines.

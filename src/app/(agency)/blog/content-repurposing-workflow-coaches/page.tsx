@@ -14,12 +14,21 @@ export const metadata: Metadata = {
     url: 'https://contentrepurposehub.com/blog/content-repurposing-workflow-coaches',
     siteName: 'ContentRepurposeHub',
     type: 'article',
-    publishedTime: '2026-04-27T00:00:00.000Z',
+    publishedTime: '2026-02-17T00:00:00.000Z',
+    images: [
+      {
+        url: 'https://contentrepurposehub.com/api/og?title=The%20Content%20Repurposing%20Workflow%20for%20Coaches%3A%20A%20Step-by-Step%20System',
+        width: 1200,
+        height: 630,
+        alt: 'The Content Repurposing Workflow for Coaches: A Step-by-Step System',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Content Repurposing Workflow for Coaches (5-Stage System)',
     description: 'A repeatable 5-stage system with time estimates and tool recommendations for every step.',
+    images: ['https://contentrepurposehub.com/api/og?title=The%20Content%20Repurposing%20Workflow%20for%20Coaches%3A%20A%20Step-by-Step%20System'],
   },
 }
 
@@ -32,8 +41,8 @@ export default function ContentRepurposingWorkflowCoaches() {
         '@id': 'https://contentrepurposehub.com/blog/content-repurposing-workflow-coaches#article',
         headline: 'The Content Repurposing Workflow for Coaches: A Step-by-Step System (With Templates)',
         description: 'A 5-stage content repurposing workflow built for coaches. Includes time estimates, tool recommendations, and templates for turning one webinar into weeks of content.',
-        datePublished: '2026-04-27',
-        dateModified: '2026-04-27',
+        datePublished: '2026-02-17',
+        dateModified: '2026-02-17',
         author: {
           '@type': 'Organization',
           name: 'ContentRepurposeHub',

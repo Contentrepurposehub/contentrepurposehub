@@ -14,12 +14,21 @@ export const metadata: Metadata = {
     url: 'https://contentrepurposehub.com/blog/webinar-content-strategy-coaches',
     siteName: 'ContentRepurposeHub',
     type: 'article',
-    publishedTime: '2026-02-23T00:00:00.000Z',
+    publishedTime: '2026-02-12T00:00:00.000Z',
+    images: [
+      {
+        url: 'https://contentrepurposehub.com/api/og?title=The%20Webinar-First%20Content%20Strategy%3A%203%20Months%20of%20Content%20From%201%20Webinar',
+        width: 1200,
+        height: 630,
+        alt: 'The Webinar-First Content Strategy: 3 Months of Content From 1 Webinar',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'The Webinar-First Content Strategy for Coaches and Consultants',
     description: 'Create 3 months of content from 1 monthly webinar. Framework, calendar, and real math inside.',
+    images: ['https://contentrepurposehub.com/api/og?title=The%20Webinar-First%20Content%20Strategy%3A%203%20Months%20of%20Content%20From%201%20Webinar'],
   },
 }
 
@@ -32,8 +41,8 @@ export default function WebinarContentStrategyCoaches() {
         '@id': 'https://contentrepurposehub.com/blog/webinar-content-strategy-coaches#article',
         headline: 'The Webinar-First Content Strategy: How Coaches and Consultants Can Create 3 Months of Content From 1 Monthly Webinar',
         description: 'Learn how coaches and consultants can build a complete content marketing plan powered by a single monthly webinar. Framework, calendar, and real math included.',
-        datePublished: '2026-02-23',
-        dateModified: '2026-02-23',
+        datePublished: '2026-02-12',
+        dateModified: '2026-02-12',
         author: {
           '@type': 'Organization',
           name: 'ContentRepurposeHub',

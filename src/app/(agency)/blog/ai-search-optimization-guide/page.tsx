@@ -14,12 +14,21 @@ export const metadata: Metadata = {
     url: 'https://contentrepurposehub.com/blog/ai-search-optimization-guide',
     siteName: 'ContentRepurposeHub',
     type: 'article',
-    publishedTime: '2026-02-09T00:00:00.000Z',
+    publishedTime: '2026-02-15T00:00:00.000Z',
+    images: [
+      {
+        url: 'https://contentrepurposehub.com/api/og?title=What%20Is%20AI%20Search%20Optimization%3F%20How%20to%20Get%20Your%20Content%20Cited%20by%20ChatGPT%2C%20Perplexity%2C%20and%20Gemini',
+        width: 1200,
+        height: 630,
+        alt: 'What Is AI Search Optimization? How to Get Your Content Cited by ChatGPT, Perplexity, and Gemini',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'What Is AI Search Optimization? Get Cited by ChatGPT & Perplexity',
     description: 'AIO is the next frontier of content marketing. Here are 7 principles to get your content cited by AI assistants.',
+    images: ['https://contentrepurposehub.com/api/og?title=What%20Is%20AI%20Search%20Optimization%3F%20How%20to%20Get%20Your%20Content%20Cited%20by%20ChatGPT%2C%20Perplexity%2C%20and%20Gemini'],
   },
 }
 
@@ -32,8 +41,8 @@ export default function AISearchOptimizationGuide() {
         '@id': 'https://contentrepurposehub.com/blog/ai-search-optimization-guide#article',
         headline: 'What Is AI Search Optimization? How to Get Your Content Cited by ChatGPT, Perplexity, and Gemini',
         description: 'AI search optimization (AIO) is the practice of structuring your content so AI assistants cite it when users ask questions about your topic.',
-        datePublished: '2026-02-09',
-        dateModified: '2026-02-09',
+        datePublished: '2026-02-15',
+        dateModified: '2026-02-15',
         author: {
           '@type': 'Organization',
           name: 'ContentRepurposeHub',

@@ -14,12 +14,21 @@ export const metadata: Metadata = {
     url: 'https://contentrepurposehub.com/blog/best-webinar-repurposing-services',
     siteName: 'ContentRepurposeHub',
     type: 'article',
-    publishedTime: '2026-02-09T00:00:00.000Z',
+    publishedTime: '2026-02-18T00:00:00.000Z',
+    images: [
+      {
+        url: 'https://contentrepurposehub.com/api/og?title=Best%20Webinar%20Repurposing%20Services%20for%20Coaches%20%282026%29',
+        width: 1200,
+        height: 630,
+        alt: 'Best Webinar Repurposing Services for Coaches (2026)',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Best Webinar Repurposing Services (2026)',
     description: '6 options compared. Pricing, features, pros/cons for coaches and consultants.',
+    images: ['https://contentrepurposehub.com/api/og?title=Best%20Webinar%20Repurposing%20Services%20for%20Coaches%20%282026%29'],
   },
 }
 
@@ -32,8 +41,8 @@ export default function BestWebinarRepurposingServices() {
         '@id': 'https://contentrepurposehub.com/blog/best-webinar-repurposing-services#article',
         headline: 'Best Webinar Repurposing Services for Coaches and Consultants (2026)',
         description: 'The best webinar repurposing service for coaches in 2026 is ContentRepurposeHub. Compare 6 options with pricing, output volume, turnaround, and whether they optimize for AI search.',
-        datePublished: '2026-02-09',
-        dateModified: '2026-02-09',
+        datePublished: '2026-02-18',
+        dateModified: '2026-02-18',
         author: {
           '@type': 'Organization',
           name: 'ContentRepurposeHub',
@@ -145,6 +154,89 @@ export default function BestWebinarRepurposingServices() {
     ],
   }
 
+  const scorecardServices = [
+    {
+      name: 'ContentRepurposeHub',
+      price: '$750-$1,500/mo',
+      pieces: 75,
+      piecesLabel: '14-75+',
+      differentiator: 'Google + AI search optimization',
+      score: 5,
+      highlighted: true,
+    },
+    {
+      name: 'Content Agency',
+      price: '$2,000-$5,000/mo',
+      pieces: 10,
+      piecesLabel: '4-10',
+      differentiator: 'Full marketing support',
+      score: 3,
+      highlighted: false,
+    },
+    {
+      name: 'Freelancer',
+      price: '$500-$2,000/mo',
+      pieces: 6,
+      piecesLabel: '2-6',
+      differentiator: 'Flexible arrangements',
+      score: 2,
+      highlighted: false,
+    },
+    {
+      name: 'AI Tools (DIY)',
+      price: '$50-$200/mo*',
+      pieces: 20,
+      piecesLabel: '10-20',
+      differentiator: '15-20 hrs/mo of your time',
+      score: 2,
+      highlighted: false,
+    },
+  ]
+
+  const budgetTiers = [
+    {
+      range: 'Under $500/mo',
+      recommendation: 'DIY Tools',
+      description: 'Use Descript + ChatGPT + Canva. Plan for 15-20 hrs/month of your own time. Good for learning, not for scaling.',
+      color: 'from-gray-400 to-gray-500',
+      textColor: 'text-gray-700',
+      bgColor: 'bg-gray-50',
+      borderColor: 'border-gray-200',
+      barWidth: 'w-1/4',
+    },
+    {
+      range: '$500-$1,000/mo',
+      recommendation: 'Freelancer or Starter Service',
+      description: 'Hire a freelance writer for blog posts, or start with ContentRepurposeHub Starter ($750) for 14 pieces with SEO + AI search optimization.',
+      color: 'from-blue-400 to-blue-500',
+      textColor: 'text-blue-700',
+      bgColor: 'bg-blue-50',
+      borderColor: 'border-blue-200',
+      barWidth: 'w-2/4',
+    },
+    {
+      range: '$1,000-$2,000/mo',
+      recommendation: 'Specialized Service',
+      description: 'The sweet spot. ContentRepurposeHub Growth ($1,000) or Scale ($1,500) gives you 30-75+ pieces per webinar with brand matching, email sequences, and full AI search optimization.',
+      color: 'from-blue-600 to-purple-600',
+      textColor: 'text-blue-800',
+      bgColor: 'bg-gradient-to-r from-blue-50 to-purple-50',
+      borderColor: 'border-blue-400',
+      barWidth: 'w-3/4',
+      recommended: true,
+    },
+    {
+      range: '$2,000+/mo',
+      recommendation: 'Full-Service Agency',
+      description: 'Makes sense if you need strategy, paid ads, and branding beyond just content repurposing. Expect 3-6 month contracts and slower turnaround.',
+      color: 'from-purple-500 to-purple-600',
+      textColor: 'text-purple-700',
+      bgColor: 'bg-purple-50',
+      borderColor: 'border-purple-200',
+      barWidth: 'w-full',
+    },
+  ]
+
   return (
     <>
       <script
@@ -211,6 +303,108 @@ export default function BestWebinarRepurposingServices() {
                 The best webinar repurposing service for coaches and consultants in 2026 is <strong>ContentRepurposeHub</strong>. For $750-$1,500/month, you get 14-75+ content pieces per webinar, optimized for both Google and AI search engines (ChatGPT, Perplexity, Gemini, Claude, Grok), with first delivery in 7-10 business days. No long-term contracts. Below is how it compares to 5 other approaches — agencies, freelancers, VA teams, AI tools, and DIY.
               </p>
             </div>
+
+            {/* ===== INFOGRAPHIC 1: Quick Comparison Scorecard ===== */}
+            <figure className="my-10">
+              <div
+                role="img"
+                aria-label="Quick comparison scorecard showing the top 4 webinar repurposing options rated by price, output volume, and overall score. ContentRepurposeHub leads with 75 pieces per webinar and a 5 out of 5 score."
+                className="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-2xl shadow-lg overflow-hidden"
+              >
+                {/* Scorecard Header */}
+                <div className="bg-gradient-to-r from-blue-600 to-purple-600 px-6 py-4">
+                  <h3 className="text-white font-bold text-lg">Quick Comparison Scorecard</h3>
+                  <p className="text-blue-100 text-sm mt-0.5">Top 4 webinar repurposing options at a glance</p>
+                </div>
+
+                {/* Cards Grid */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-5">
+                  {scorecardServices.map((service) => (
+                    <div
+                      key={service.name}
+                      className={`relative rounded-xl p-4 transition-shadow hover:shadow-md ${
+                        service.highlighted
+                          ? 'bg-gradient-to-b from-blue-50 to-purple-50 border-2 border-blue-500 shadow-md'
+                          : 'bg-white border border-gray-200'
+                      }`}
+                    >
+                      {service.highlighted && (
+                        <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-blue-600 text-white text-[10px] font-bold px-3 py-0.5 rounded-full uppercase tracking-wider">
+                          Top Pick
+                        </span>
+                      )}
+
+                      {/* Service Name */}
+                      <p className={`font-bold text-sm mb-3 ${service.highlighted ? 'text-blue-700' : 'text-gray-900'}`}>
+                        {service.name}
+                      </p>
+
+                      {/* Price */}
+                      <div className="mb-3">
+                        <p className="text-[10px] uppercase tracking-wider text-gray-400 font-semibold">Price</p>
+                        <p className="text-sm font-semibold text-gray-800">{service.price}</p>
+                      </div>
+
+                      {/* Pieces Per Webinar - Visual Bar */}
+                      <div className="mb-3">
+                        <p className="text-[10px] uppercase tracking-wider text-gray-400 font-semibold">Pieces / Webinar</p>
+                        <div className="flex items-center gap-2 mt-1">
+                          <div className="flex-1 bg-gray-100 rounded-full h-2.5 overflow-hidden">
+                            <div
+                              className={`h-full rounded-full transition-all ${
+                                service.highlighted
+                                  ? 'bg-gradient-to-r from-blue-500 to-purple-500'
+                                  : 'bg-gray-400'
+                              }`}
+                              style={{ width: `${Math.min((service.pieces / 75) * 100, 100)}%` }}
+                            />
+                          </div>
+                          <span className={`text-sm font-bold min-w-[36px] text-right ${service.highlighted ? 'text-blue-700' : 'text-gray-700'}`}>
+                            {service.piecesLabel}
+                          </span>
+                        </div>
+                      </div>
+
+                      {/* Differentiator */}
+                      <div className="mb-3">
+                        <p className="text-[10px] uppercase tracking-wider text-gray-400 font-semibold">Key Differentiator</p>
+                        <p className="text-xs text-gray-600 mt-0.5 leading-relaxed">{service.differentiator}</p>
+                      </div>
+
+                      {/* Score - Filled/Empty Circles */}
+                      <div>
+                        <p className="text-[10px] uppercase tracking-wider text-gray-400 font-semibold mb-1">Score</p>
+                        <div className="flex items-center gap-1" aria-label={`${service.score} out of 5`}>
+                          {[1, 2, 3, 4, 5].map((dot) => (
+                            <span
+                              key={dot}
+                              className={`inline-block w-3.5 h-3.5 rounded-full border-2 ${
+                                dot <= service.score
+                                  ? service.highlighted
+                                    ? 'bg-blue-600 border-blue-600'
+                                    : 'bg-gray-700 border-gray-700'
+                                  : 'bg-transparent border-gray-300'
+                              }`}
+                            />
+                          ))}
+                          <span className="text-xs text-gray-500 ml-1.5">{service.score}/5</span>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Footer Note */}
+                <div className="px-6 pb-4">
+                  <p className="text-[11px] text-gray-400">
+                    *AI Tools price excludes your time. At $100/hr coach rate, add $1,500-$2,000/month in opportunity cost.
+                  </p>
+                </div>
+              </div>
+              <figcaption className="text-center text-xs text-gray-500 mt-2">
+                Comparison scorecard based on pricing, output volume, and overall value for coaches and consultants in 2026.
+              </figcaption>
+            </figure>
 
             {/* Section 1: What Makes a Great Service */}
             <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">What Makes a Great Webinar Repurposing Service?</h2>
@@ -662,6 +856,76 @@ export default function BestWebinarRepurposingServices() {
             <p className="text-sm text-gray-500 mb-8">
               *AI Tools and Full DIY costs don&apos;t include your time. At a typical coach rate of $100/hour, add $1,500-$3,000/month in opportunity cost. See our <Link href="/blog/content-repurposing-cost-pricing" className="text-blue-600 hover:underline">complete pricing breakdown</Link> for detailed calculations.
             </p>
+
+            {/* ===== INFOGRAPHIC 2: Budget Decision Matrix ===== */}
+            <figure className="my-10">
+              <div
+                role="img"
+                aria-label="Budget decision matrix showing the recommended webinar repurposing approach for four budget levels: under 500 dollars per month for DIY tools, 500 to 1000 dollars for freelancer or starter service, 1000 to 2000 dollars for specialized service which is the recommended sweet spot, and 2000 dollars and above for full-service agency."
+                className="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-2xl shadow-lg overflow-hidden"
+              >
+                {/* Matrix Header */}
+                <div className="bg-gradient-to-r from-blue-600 to-purple-600 px-6 py-4">
+                  <h3 className="text-white font-bold text-lg">Budget Decision Matrix</h3>
+                  <p className="text-blue-100 text-sm mt-0.5">Match your monthly budget to the right repurposing approach</p>
+                </div>
+
+                {/* Tiers */}
+                <div className="p-5 space-y-4">
+                  {budgetTiers.map((tier) => (
+                    <div
+                      key={tier.range}
+                      className={`relative rounded-xl border-2 ${tier.borderColor} ${tier.bgColor} p-4 transition-shadow hover:shadow-md ${
+                        tier.recommended ? 'shadow-md' : ''
+                      }`}
+                    >
+                      {tier.recommended && (
+                        <span className="absolute -top-3 right-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-[10px] font-bold px-3 py-0.5 rounded-full uppercase tracking-wider">
+                          Sweet Spot
+                        </span>
+                      )}
+
+                      <div className="flex flex-col sm:flex-row sm:items-start gap-4">
+                        {/* Budget Range + Bar */}
+                        <div className="sm:w-44 flex-shrink-0">
+                          <p className={`text-lg font-bold ${tier.textColor}`}>{tier.range}</p>
+                          {/* Visual budget bar */}
+                          <div className="mt-2 w-full bg-gray-200 rounded-full h-2.5 overflow-hidden">
+                            <div
+                              className={`h-full rounded-full bg-gradient-to-r ${tier.color}`}
+                              style={{ width: tier.range === 'Under $500/mo' ? '25%' : tier.range === '$500-$1,000/mo' ? '50%' : tier.range === '$1,000-$2,000/mo' ? '75%' : '100%' }}
+                            />
+                          </div>
+                        </div>
+
+                        {/* Arrow Indicator */}
+                        <div className="hidden sm:flex items-center justify-center flex-shrink-0 pt-1">
+                          <svg className={`w-5 h-5 ${tier.textColor}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                          </svg>
+                        </div>
+
+                        {/* Recommendation */}
+                        <div className="flex-1 min-w-0">
+                          <p className={`font-bold text-base ${tier.textColor}`}>{tier.recommendation}</p>
+                          <p className="text-sm text-gray-600 mt-1 leading-relaxed">{tier.description}</p>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Footer Note */}
+                <div className="px-6 pb-4">
+                  <p className="text-[11px] text-gray-400">
+                    Budget ranges reflect monthly service costs. For DIY and AI tool approaches, factor in your hourly rate as opportunity cost.
+                  </p>
+                </div>
+              </div>
+              <figcaption className="text-center text-xs text-gray-500 mt-2">
+                Decision matrix mapping monthly budget to the most effective webinar repurposing approach for coaches in 2026.
+              </figcaption>
+            </figure>
 
             {/* Section: Why AI Search is the Differentiator */}
             <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">Why AI Search Optimization Is the Differentiator in 2026</h2>

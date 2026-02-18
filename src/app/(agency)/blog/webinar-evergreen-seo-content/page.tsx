@@ -14,12 +14,21 @@ export const metadata: Metadata = {
     url: 'https://contentrepurposehub.com/blog/webinar-evergreen-seo-content',
     siteName: 'ContentRepurposeHub',
     type: 'article',
-    publishedTime: '2026-04-20T00:00:00.000Z',
+    publishedTime: '2026-02-17T00:00:00.000Z',
+    images: [
+      {
+        url: 'https://contentrepurposehub.com/api/og?title=How%20to%20Turn%20Your%20Webinars%20Into%20Evergreen%20SEO%20Assets%20That%20Drive%20Traffic%20for%20Years',
+        width: 1200,
+        height: 630,
+        alt: 'How to Turn Your Webinars Into Evergreen SEO Assets That Drive Traffic for Years',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Webinars Into Evergreen SEO Assets: The Complete Strategy',
     description: 'Turn your webinar recordings into content that drives organic traffic for years. Google + AI search optimization.',
+    images: ['https://contentrepurposehub.com/api/og?title=How%20to%20Turn%20Your%20Webinars%20Into%20Evergreen%20SEO%20Assets%20That%20Drive%20Traffic%20for%20Years'],
   },
 }
 
@@ -32,8 +41,8 @@ export default function WebinarEvergreenSeoContent() {
         '@id': 'https://contentrepurposehub.com/blog/webinar-evergreen-seo-content#article',
         headline: 'How to Turn Your Webinars Into Evergreen SEO Assets That Drive Traffic for Years',
         description: 'Learn how to transform webinar recordings into evergreen content that ranks on Google and AI search engines like ChatGPT, Perplexity, and Gemini.',
-        datePublished: '2026-04-20',
-        dateModified: '2026-04-20',
+        datePublished: '2026-02-17',
+        dateModified: '2026-02-17',
         author: {
           '@type': 'Organization',
           name: 'ContentRepurposeHub',

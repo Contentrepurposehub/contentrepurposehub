@@ -14,12 +14,21 @@ export const metadata: Metadata = {
     url: 'https://contentrepurposehub.com/blog/webinar-content-pieces-breakdown',
     siteName: 'ContentRepurposeHub',
     type: 'article',
-    publishedTime: '2026-03-09T00:00:00.000Z',
+    publishedTime: '2026-02-11T00:00:00.000Z',
+    images: [
+      {
+        url: 'https://contentrepurposehub.com/api/og?title=From%201%20Webinar%20to%2075%2B%20Content%20Pieces%3A%20The%20Complete%20Breakdown',
+        width: 1200,
+        height: 630,
+        alt: 'From 1 Webinar to 75+ Content Pieces: The Complete Breakdown',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'From 1 Webinar to 75+ Content Pieces: Complete Breakdown',
     description: 'Every content piece you can create from one webinar, organized by category. The math behind the webinar content multiplier.',
+    images: ['https://contentrepurposehub.com/api/og?title=From%201%20Webinar%20to%2075%2B%20Content%20Pieces%3A%20The%20Complete%20Breakdown'],
   },
 }
 
@@ -32,8 +41,8 @@ export default function WebinarContentPiecesBreakdown() {
         '@id': 'https://contentrepurposehub.com/blog/webinar-content-pieces-breakdown#article',
         headline: 'From 1 Webinar to 75+ Content Pieces: The Complete Breakdown of What You Can Create',
         description: 'See exactly how many content pieces you can create from one webinar. Full breakdown of 75+ written, visual, audio/video, lead gen, and SEO content pieces organized by category and tier.',
-        datePublished: '2026-03-09',
-        dateModified: '2026-03-09',
+        datePublished: '2026-02-11',
+        dateModified: '2026-02-11',
         author: {
           '@type': 'Organization',
           name: 'ContentRepurposeHub',

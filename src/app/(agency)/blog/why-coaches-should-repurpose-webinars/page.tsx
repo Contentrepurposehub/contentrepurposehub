@@ -14,12 +14,21 @@ export const metadata: Metadata = {
     url: 'https://contentrepurposehub.com/blog/why-coaches-should-repurpose-webinars',
     siteName: 'ContentRepurposeHub',
     type: 'article',
-    publishedTime: '2026-02-09T00:00:00.000Z',
+    publishedTime: '2026-02-10T00:00:00.000Z',
+    images: [
+      {
+        url: 'https://contentrepurposehub.com/api/og?title=Why%20Should%20Coaches%20Repurpose%20Their%20Webinars%20Instead%20of%20Creating%20New%20Content%3F',
+        width: 1200,
+        height: 630,
+        alt: 'Why Should Coaches Repurpose Their Webinars Instead of Creating New Content?',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Why Coaches Should Repurpose Webinars (Not Create New Content)',
     description: 'You already did the hard work. Here is why repurposing beats creating from scratch every time.',
+    images: ['https://contentrepurposehub.com/api/og?title=Why%20Should%20Coaches%20Repurpose%20Their%20Webinars%20Instead%20of%20Creating%20New%20Content%3F'],
   },
 }
 
@@ -32,8 +41,8 @@ export default function WhyCoachesShouldRepurposeWebinars() {
         '@id': 'https://contentrepurposehub.com/blog/why-coaches-should-repurpose-webinars#article',
         headline: 'Why Should Coaches Repurpose Their Webinars Instead of Creating New Content?',
         description: 'Coaches spend 10-20 hours creating webinars that get watched once. Repurposing turns that single webinar into 14-75+ content pieces, saving 15+ hours per week.',
-        datePublished: '2026-02-09',
-        dateModified: '2026-02-09',
+        datePublished: '2026-02-10',
+        dateModified: '2026-02-10',
         author: {
           '@type': 'Organization',
           name: 'ContentRepurposeHub',

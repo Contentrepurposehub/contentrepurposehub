@@ -14,12 +14,21 @@ export const metadata: Metadata = {
     url: 'https://contentrepurposehub.com/blog/content-repurposing-small-business',
     siteName: 'ContentRepurposeHub',
     type: 'article',
-    publishedTime: '2026-02-09T00:00:00.000Z',
+    publishedTime: '2026-02-12T00:00:00.000Z',
+    images: [
+      {
+        url: 'https://contentrepurposehub.com/api/og?title=Content%20Repurposing%20for%20Small%20Business%3A%20Maximum%20ROI%20From%20Existing%20Content',
+        width: 1200,
+        height: 630,
+        alt: 'Content Repurposing for Small Business: Maximum ROI From Existing Content',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Content Repurposing for Small Business: Maximum ROI',
     description: 'How small businesses turn existing content into 14-75+ marketing assets. DIY, tool-assisted, and done-for-you approaches compared.',
+    images: ['https://contentrepurposehub.com/api/og?title=Content%20Repurposing%20for%20Small%20Business%3A%20Maximum%20ROI%20From%20Existing%20Content'],
   },
 }
 
@@ -32,8 +41,8 @@ export default function ContentRepurposingSmallBusiness() {
         '@id': 'https://contentrepurposehub.com/blog/content-repurposing-small-business#article',
         headline: 'Content Repurposing for Small Business: How to Get Maximum ROI From Content You Already Have',
         description: 'Small businesses waste 60-70% of the content they create. Content repurposing turns existing webinars, videos, and presentations into 14-75+ marketing assets.',
-        datePublished: '2026-02-09',
-        dateModified: '2026-02-09',
+        datePublished: '2026-02-12',
+        dateModified: '2026-02-12',
         author: {
           '@type': 'Organization',
           name: 'ContentRepurposeHub',

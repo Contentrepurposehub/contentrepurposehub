@@ -220,6 +220,8 @@ https://contentrepurposehub.com/clients/[name]/scorecard
 - **Anti-slop test** — No buzzwords, no "in today's fast-paced...", no "game-changer", no "unlock your potential"
 - **All LinkedIn/social CTAs** -> landing page (not book purchase or external links)
 - **Blog CTAs** -> landing page throughout (top, middle, end)
+- **ZERO external links on CTAs** — No YouTube, no podcast platforms, no external video links. ALL CTAs keep traffic on-site within the funnel (scorecard, blog, landing page). The ONLY exception is the "About" section with client's official org links.
+- **Google Sheet links must be clickable** — Playbook tab live page URLs must open in one click (HYPERLINK formulas, not plain text)
 
 ### Landing Page Design Standards — Growth & Scale Tiers (Non-Negotiable)
 
@@ -234,10 +236,44 @@ https://contentrepurposehub.com/clients/[name]/scorecard
 5. **Lead capture in 3 positions** — (a) Header CTA button linking to `#scorecard`, (b) mid-page opt-in section with `id="scorecard"`, (c) value exchange section at bottom with second LeadCaptureForm.
 6. **15 sections minimum** — Sticky Header, Hero, Media Bar, Framework, Key Numbers, Signature Quote, What It Reveals, Opt-in, Resources, Endorsements, About, How It Works, FAQ, Value Exchange, Footer.
 7. **Brand-matched colors** — Extracted from the client's actual website, stored as design tokens (`PRIMARY`, `DARK`, `LIGHT`, `ACCENT`, `CTA_BG`) at the top of `page.tsx`.
+8. **ZERO YouTube/external links on ANY CTA** — Every button and call-to-action keeps traffic on-site. Hero CTAs go to `#scorecard` or `/clients/[name]/blog`. Episode section goes to `/clients/[name]/scorecard`. Footer links go to internal pages. External links ONLY in About section for client's official sites.
 
 **These are STRUCTURAL, not client-specific.** When building a new client page or overwriting an existing one, ONLY the content (text, quotes, stats, links) changes. The design framework (VideoBackground, AnimatedCard, AnimatedCounter, video clips, 15-section structure, 3 lead capture positions) ALWAYS stays.
 
-**Post-build verification:** After writing the page, check every item above before running `npm run build`. If any is missing, fix it before proceeding.
+**Post-build verification:** After writing the page, run the full checklist in `.claude/landing-page-template.md` (CTA audit, cross-linking, integration test). If any item fails, fix it before proceeding.
+
+### End-to-End Delivery Checklist (Run After Every Client Build)
+
+After building all pages and content, verify the full pipeline works before telling the client it's ready:
+
+```
+PAGES LIVE
+[ ] Landing page loads at contentrepurposehub.com/clients/[name]
+[ ] Blog loads at contentrepurposehub.com/clients/[name]/blog
+[ ] Scorecard loads at contentrepurposehub.com/clients/[name]/scorecard
+[ ] All cross-links work (landing -> blog, landing -> scorecard, blog -> landing)
+
+LEAD CAPTURE WORKING
+[ ] Submit test email on live scorecard page
+[ ] API returns {"success":true,"stored":"google_sheets","synced":"[platform]"}
+[ ] Email appears in client's email platform (Beehiiv/Mailchimp/etc.)
+[ ] Lead appears in Google Sheets
+
+GOOGLE SHEET COMPLETE
+[ ] All tabs populated (Playbook, LinkedIn, Newsletter, Twitter, Email, Schedule)
+[ ] Playbook tab has clickable links to all 3 live pages
+[ ] Content is correct and matches deliverable markdown files
+
+EMAIL PLATFORM
+[ ] Double Opt-In is OFF (subscribers go active immediately)
+[ ] Env vars set on Vercel production (not just .env.local)
+[ ] Fresh deployment triggered AFTER env vars were added
+
+NO TRAFFIC LEAKS
+[ ] Zero YouTube links on any CTA
+[ ] Zero external links on any button
+[ ] All CTAs point to: #scorecard, /blog, /scorecard, or internal anchors
+```
 
 ## Trend Research with /last30days
 

@@ -14,12 +14,21 @@ export const metadata: Metadata = {
     url: 'https://contentrepurposehub.com/blog/content-repurposing-diy-vs-service',
     siteName: 'ContentRepurposeHub',
     type: 'article',
-    publishedTime: '2026-04-06T00:00:00.000Z',
+    publishedTime: '2026-02-18T00:00:00.000Z',
+    images: [
+      {
+        url: 'https://contentrepurposehub.com/api/og?title=Content%20Repurposing%3A%20DIY%20Tools%20vs.%20Done-for-You%20Services',
+        width: 1200,
+        height: 630,
+        alt: 'Content Repurposing: DIY Tools vs. Done-for-You Services',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'DIY Tools vs. Done-for-You Content Repurposing Services',
     description: 'Honest comparison with real pricing, time costs, and a 5-question decision framework for coaches.',
+    images: ['https://contentrepurposehub.com/api/og?title=Content%20Repurposing%3A%20DIY%20Tools%20vs.%20Done-for-You%20Services'],
   },
 }
 
@@ -32,8 +41,8 @@ export default function ContentRepurposingDIYvsService() {
         '@id': 'https://contentrepurposehub.com/blog/content-repurposing-diy-vs-service#article',
         headline: 'Content Repurposing: DIY Tools vs. Done-for-You Services -- Which Is Right for Your Coaching Business?',
         description: 'Honest comparison of DIY content repurposing tools vs. done-for-you services with real pricing, time costs, and a 5-question decision framework for coaches and consultants.',
-        datePublished: '2026-04-06',
-        dateModified: '2026-04-06',
+        datePublished: '2026-02-18',
+        dateModified: '2026-02-18',
         author: {
           '@type': 'Organization',
           name: 'ContentRepurposeHub',
@@ -215,6 +224,111 @@ export default function ContentRepurposingDIYvsService() {
                   Here is the thing -- most comparison articles on this topic are written by agencies trying to sell you their service, or by tool companies trying to sell you software. This one is going to be honest about when each option makes sense. Because the right answer depends entirely on where your coaching business is right now.
                 </p>
               </section>
+
+              {/* Infographic 1: Quick Verdict Comparison Card */}
+              <figure className="my-12" role="img" aria-label="Quick verdict comparison: DIY Tools cost $30-200 per month and 15-20 hours per week of your time with basic output and no SEO strategy. Done-for-You Service costs $750-1,500 per month and 1 hour per month of your time with professional output and full SEO plus AI optimization. The winner for coaches billing $100 or more per hour is Done-for-You Service.">
+                <div className="rounded-xl shadow-lg overflow-hidden border border-gray-200">
+                  {/* Header */}
+                  <div className="bg-gray-900 px-6 py-4 text-center">
+                    <h3 className="text-white text-lg md:text-xl font-bold">Quick Verdict: DIY vs. Done-for-You</h3>
+                    <p className="text-gray-400 text-sm mt-1">The real costs side by side</p>
+                  </div>
+
+                  {/* Comparison Columns */}
+                  <div className="grid grid-cols-1 md:grid-cols-2">
+                    {/* Left Column: DIY Tools */}
+                    <div className="bg-gray-50 p-6 md:p-8 border-b md:border-b-0 md:border-r border-gray-200">
+                      <div className="text-center mb-6">
+                        <span className="inline-block bg-gray-200 text-gray-700 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide mb-3">DIY Tools</span>
+                        <p className="text-3xl font-bold text-gray-900">$30-200<span className="text-base font-normal text-gray-500">/mo</span></p>
+                      </div>
+
+                      <div className="space-y-4">
+                        <div className="flex items-start gap-3">
+                          <span className="text-red-500 text-lg font-bold mt-0.5 shrink-0" aria-hidden="true">&times;</span>
+                          <div>
+                            <p className="font-semibold text-gray-900 text-sm">15-20 hrs/week your time</p>
+                            <p className="text-gray-500 text-xs">Per webinar, after learning curve</p>
+                          </div>
+                        </div>
+                        <div className="flex items-start gap-3">
+                          <span className="text-red-500 text-lg font-bold mt-0.5 shrink-0" aria-hidden="true">&times;</span>
+                          <div>
+                            <p className="font-semibold text-gray-900 text-sm">Basic output quality</p>
+                            <p className="text-gray-500 text-xs">Limited by your editing skills</p>
+                          </div>
+                        </div>
+                        <div className="flex items-start gap-3">
+                          <span className="text-red-500 text-lg font-bold mt-0.5 shrink-0" aria-hidden="true">&times;</span>
+                          <div>
+                            <p className="font-semibold text-gray-900 text-sm">No SEO strategy</p>
+                            <p className="text-gray-500 text-xs">Unless you learn SEO yourself</p>
+                          </div>
+                        </div>
+                        <div className="flex items-start gap-3">
+                          <span className="text-red-500 text-lg font-bold mt-0.5 shrink-0" aria-hidden="true">&times;</span>
+                          <div>
+                            <p className="font-semibold text-gray-900 text-sm">Consistency drops off</p>
+                            <p className="text-gray-500 text-xs">When client work gets busy</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Right Column: Done-for-You Service */}
+                    <div className="relative bg-blue-50 p-6 md:p-8 ring-2 ring-blue-500 ring-inset">
+                      {/* Winner Badge */}
+                      <div className="absolute -top-0 right-4 md:right-6">
+                        <div className="bg-blue-600 text-white text-xs font-bold px-4 py-1.5 rounded-b-lg shadow-md">
+                          BEST FOR $100+/HR COACHES
+                        </div>
+                      </div>
+
+                      <div className="text-center mb-6 mt-2 md:mt-0">
+                        <span className="inline-block bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide mb-3">Done-for-You Service</span>
+                        <p className="text-3xl font-bold text-gray-900">$750-1,500<span className="text-base font-normal text-gray-500">/mo</span></p>
+                      </div>
+
+                      <div className="space-y-4">
+                        <div className="flex items-start gap-3">
+                          <svg className="w-5 h-5 text-blue-600 mt-0.5 shrink-0" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+                          <div>
+                            <p className="font-semibold text-gray-900 text-sm">~1 hr/month your time</p>
+                            <p className="text-gray-500 text-xs">Send recording, review drafts</p>
+                          </div>
+                        </div>
+                        <div className="flex items-start gap-3">
+                          <svg className="w-5 h-5 text-blue-600 mt-0.5 shrink-0" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+                          <div>
+                            <p className="font-semibold text-gray-900 text-sm">Professional output</p>
+                            <p className="text-gray-500 text-xs">14-75+ pieces, platform-optimized</p>
+                          </div>
+                        </div>
+                        <div className="flex items-start gap-3">
+                          <svg className="w-5 h-5 text-blue-600 mt-0.5 shrink-0" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+                          <div>
+                            <p className="font-semibold text-gray-900 text-sm">Full SEO + AI optimization</p>
+                            <p className="text-gray-500 text-xs">Google, ChatGPT, Perplexity</p>
+                          </div>
+                        </div>
+                        <div className="flex items-start gap-3">
+                          <svg className="w-5 h-5 text-blue-600 mt-0.5 shrink-0" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+                          <div>
+                            <p className="font-semibold text-gray-900 text-sm">Consistent every month</p>
+                            <p className="text-gray-500 text-xs">Delivers regardless of your schedule</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Bottom Bar */}
+                  <div className="bg-gray-900 px-6 py-3 text-center">
+                    <p className="text-gray-300 text-xs">At $150/hr, 15 hours of DIY = <span className="text-white font-semibold">$2,250 in lost billable time</span> -- more than the service costs.</p>
+                  </div>
+                </div>
+                <figcaption className="text-center text-xs text-gray-400 mt-3">Quick Verdict: The true cost of DIY goes beyond tool subscriptions.</figcaption>
+              </figure>
 
               {/* Section 2 */}
               <section id="diy-path" className="mb-12">
@@ -446,6 +560,103 @@ export default function ContentRepurposingDIYvsService() {
                   A service delivers regardless of how busy you are. That consistency compounds. Algorithms reward accounts that post regularly. SEO rewards sites that publish regularly. Your audience starts expecting and looking for your content. And then you skip two weeks and all that momentum stalls.
                 </p>
               </section>
+
+              {/* Infographic 2: Decision Framework Flowchart */}
+              <figure className="my-12" role="img" aria-label="Decision framework flowchart: What is your hourly rate? Under $50 per hour leads to DIY tools make sense. $50 to $100 per hour leads to consider a freelancer or hybrid approach. Over $100 per hour leads to a done-for-you service that pays for itself, which is the recommended path.">
+                <div className="rounded-xl shadow-lg overflow-hidden border border-gray-200 bg-white">
+                  {/* Header */}
+                  <div className="bg-gray-900 px-6 py-4 text-center">
+                    <h3 className="text-white text-lg md:text-xl font-bold">Decision Framework</h3>
+                    <p className="text-gray-400 text-sm mt-1">Find your path in 10 seconds</p>
+                  </div>
+
+                  <div className="p-6 md:p-8">
+                    {/* Top Question */}
+                    <div className="flex justify-center mb-6">
+                      <div className="bg-gray-900 text-white rounded-xl px-6 py-4 text-center max-w-sm w-full shadow-md">
+                        <p className="text-xs uppercase tracking-wider text-gray-400 mb-1">Start Here</p>
+                        <p className="font-bold text-lg">What is your hourly rate?</p>
+                      </div>
+                    </div>
+
+                    {/* Connecting Lines - Top */}
+                    <div className="flex justify-center mb-6">
+                      <div className="flex items-end gap-0 w-full max-w-2xl">
+                        {/* Left branch line */}
+                        <div className="flex-1 flex flex-col items-center">
+                          <div className="w-px h-6 bg-gray-300" aria-hidden="true"></div>
+                        </div>
+                        {/* Center branch line */}
+                        <div className="flex-1 flex flex-col items-center">
+                          <div className="w-px h-6 bg-gray-300" aria-hidden="true"></div>
+                        </div>
+                        {/* Right branch line */}
+                        <div className="flex-1 flex flex-col items-center">
+                          <div className="w-px h-6 bg-blue-400" aria-hidden="true"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Three Branches */}
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-2xl mx-auto">
+                      {/* Branch 1: Under $50/hr */}
+                      <div className="rounded-xl border-2 border-gray-200 bg-gray-50 p-5 text-center">
+                        <div className="inline-block bg-gray-200 text-gray-700 text-xs font-bold px-3 py-1 rounded-full mb-3">
+                          Under $50/hr
+                        </div>
+                        {/* Arrow */}
+                        <div className="flex justify-center my-3" aria-hidden="true">
+                          <svg className="w-5 h-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" /></svg>
+                        </div>
+                        <div className="bg-white rounded-lg border border-gray-200 p-4">
+                          <p className="font-bold text-gray-900 text-sm mb-1">DIY tools make sense</p>
+                          <p className="text-gray-500 text-xs">Your time cost is lower than a service. Invest in tools and learn the workflow.</p>
+                        </div>
+                      </div>
+
+                      {/* Branch 2: $50-$100/hr */}
+                      <div className="rounded-xl border-2 border-amber-200 bg-amber-50 p-5 text-center">
+                        <div className="inline-block bg-amber-200 text-amber-800 text-xs font-bold px-3 py-1 rounded-full mb-3">
+                          $50 - $100/hr
+                        </div>
+                        {/* Arrow */}
+                        <div className="flex justify-center my-3" aria-hidden="true">
+                          <svg className="w-5 h-5 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" /></svg>
+                        </div>
+                        <div className="bg-white rounded-lg border border-amber-200 p-4">
+                          <p className="font-bold text-gray-900 text-sm mb-1">Consider a freelancer</p>
+                          <p className="text-gray-500 text-xs">Hybrid approach -- handle social yourself, outsource blogs and SEO.</p>
+                        </div>
+                      </div>
+
+                      {/* Branch 3: Over $100/hr (Highlighted) */}
+                      <div className="rounded-xl border-2 border-blue-500 bg-blue-50 p-5 text-center relative ring-2 ring-blue-500/20">
+                        {/* Recommended Tag */}
+                        <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                          <span className="bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider whitespace-nowrap shadow-sm">Recommended</span>
+                        </div>
+                        <div className="inline-block bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full mb-3 mt-1">
+                          Over $100/hr
+                        </div>
+                        {/* Arrow */}
+                        <div className="flex justify-center my-3" aria-hidden="true">
+                          <svg className="w-5 h-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" /></svg>
+                        </div>
+                        <div className="bg-white rounded-lg border border-blue-300 p-4 shadow-sm">
+                          <p className="font-bold text-blue-900 text-sm mb-1">A service pays for itself</p>
+                          <p className="text-gray-500 text-xs">15 hrs x $100+/hr = $1,500+ in lost revenue. The service costs less.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Bottom Note */}
+                    <div className="mt-6 text-center">
+                      <p className="text-gray-500 text-xs">Most coaches billing $100+/hr recoup their investment in the first month through freed-up billable hours.</p>
+                    </div>
+                  </div>
+                </div>
+                <figcaption className="text-center text-xs text-gray-400 mt-3">Decision Framework: Your hourly rate determines which repurposing path delivers the best ROI.</figcaption>
+              </figure>
 
               {/* Section 5 */}
               <section id="hybrid" className="mb-12">

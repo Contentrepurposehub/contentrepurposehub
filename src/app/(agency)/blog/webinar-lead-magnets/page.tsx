@@ -14,12 +14,21 @@ export const metadata: Metadata = {
     url: 'https://contentrepurposehub.com/blog/webinar-lead-magnets',
     siteName: 'ContentRepurposeHub',
     type: 'article',
-    publishedTime: '2026-04-13T00:00:00.000Z',
+    publishedTime: '2026-02-16T00:00:00.000Z',
+    images: [
+      {
+        url: 'https://contentrepurposehub.com/api/og?title=7%20High-Converting%20Lead%20Magnets%20From%20a%20Single%20Webinar',
+        width: 1200,
+        height: 630,
+        alt: '7 High-Converting Lead Magnets From a Single Webinar',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: '7 Lead Magnets From 1 Webinar — No Starting From Scratch',
     description: 'Cheat sheets convert at 34%. Checklists at 27%. And your webinar already has the raw material for both.',
+    images: ['https://contentrepurposehub.com/api/og?title=7%20High-Converting%20Lead%20Magnets%20From%20a%20Single%20Webinar'],
   },
 }
 
@@ -32,8 +41,8 @@ export default function WebinarLeadMagnets() {
         '@id': 'https://contentrepurposehub.com/blog/webinar-lead-magnets#article',
         headline: '7 High-Converting Lead Magnets You Can Create From a Single Webinar (Without Starting From Scratch)',
         description: 'Turn your existing webinar into 7 proven lead magnets with step-by-step instructions. Includes conversion rate data and a decision matrix for choosing which to create first.',
-        datePublished: '2026-04-13',
-        dateModified: '2026-04-13',
+        datePublished: '2026-02-16',
+        dateModified: '2026-02-16',
         author: {
           '@type': 'Organization',
           name: 'ContentRepurposeHub',

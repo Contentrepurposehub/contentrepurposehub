@@ -14,12 +14,21 @@ export const metadata: Metadata = {
     url: 'https://contentrepurposehub.com/blog/how-to-choose-content-repurposing-service',
     siteName: 'ContentRepurposeHub',
     type: 'article',
-    publishedTime: '2026-02-09T00:00:00.000Z',
+    publishedTime: '2026-02-16T00:00:00.000Z',
+    images: [
+      {
+        url: 'https://contentrepurposehub.com/api/og?title=How%20to%20Choose%20a%20Content%20Repurposing%20Service%3A%208%20Questions%20to%20Ask',
+        width: 1200,
+        height: 630,
+        alt: 'How to Choose a Content Repurposing Service: 8 Questions to Ask',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'How to Choose a Content Repurposing Service: 8 Questions',
     description: '8 questions to ask before hiring a content repurposing service. Red flags, price ranges, and what good answers look like.',
+    images: ['https://contentrepurposehub.com/api/og?title=How%20to%20Choose%20a%20Content%20Repurposing%20Service%3A%208%20Questions%20to%20Ask'],
   },
 }
 
@@ -32,8 +41,8 @@ export default function HowToChooseContentRepurposingService() {
         '@id': 'https://contentrepurposehub.com/blog/how-to-choose-content-repurposing-service#article',
         headline: 'How to Choose a Content Repurposing Service: 8 Questions to Ask Before You Hire',
         description: 'Not all content repurposing services are equal. Ask these 8 questions before hiring to separate good services from expensive disappointments.',
-        datePublished: '2026-02-09',
-        dateModified: '2026-02-09',
+        datePublished: '2026-02-16',
+        dateModified: '2026-02-16',
         author: {
           '@type': 'Organization',
           name: 'ContentRepurposeHub',

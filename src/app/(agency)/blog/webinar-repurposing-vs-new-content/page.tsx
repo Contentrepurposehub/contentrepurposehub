@@ -14,12 +14,21 @@ export const metadata: Metadata = {
     url: 'https://contentrepurposehub.com/blog/webinar-repurposing-vs-new-content',
     siteName: 'ContentRepurposeHub',
     type: 'article',
-    publishedTime: '2026-02-09T00:00:00.000Z',
+    publishedTime: '2026-02-10T00:00:00.000Z',
+    images: [
+      {
+        url: 'https://contentrepurposehub.com/api/og?title=Webinar%20Repurposing%20vs.%20Creating%20New%20Content%3A%20Which%20Is%20Better%20for%20Coaches%3F',
+        width: 1200,
+        height: 630,
+        alt: 'Webinar Repurposing vs. Creating New Content: Which Is Better for Coaches?',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Webinar Repurposing vs. Creating New Content: Which Is Better?',
     description: 'Data-driven comparison: repurposing produces 14-75+ pieces for $750-$1,500/month vs. 60-80 hours and $3,000-$8,000 from scratch.',
+    images: ['https://contentrepurposehub.com/api/og?title=Webinar%20Repurposing%20vs.%20Creating%20New%20Content%3A%20Which%20Is%20Better%20for%20Coaches%3F'],
   },
 }
 
@@ -32,8 +41,8 @@ export default function WebinarRepurposingVsNewContent() {
         '@id': 'https://contentrepurposehub.com/blog/webinar-repurposing-vs-new-content#article',
         headline: 'Webinar Repurposing vs. Creating New Content: Which Is Better for Coaches?',
         description: 'Repurposing one webinar produces 14-75+ content pieces in 7-10 days for $750-$1,500/month. Creating equivalent content from scratch takes 60-80 hours and costs $3,000-$8,000.',
-        datePublished: '2026-02-09',
-        dateModified: '2026-02-09',
+        datePublished: '2026-02-10',
+        dateModified: '2026-02-10',
         author: {
           '@type': 'Organization',
           name: 'ContentRepurposeHub',

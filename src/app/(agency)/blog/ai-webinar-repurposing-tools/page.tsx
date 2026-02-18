@@ -14,7 +14,15 @@ export const metadata: Metadata = {
     url: 'https://contentrepurposehub.com/blog/ai-webinar-repurposing-tools',
     siteName: 'ContentRepurposeHub',
     type: 'article',
-    publishedTime: '2026-02-09T00:00:00.000Z',
+    publishedTime: '2026-02-14T00:00:00.000Z',
+    images: [
+      {
+        url: 'https://contentrepurposehub.com/api/og?title=Can%20AI%20Repurpose%20Your%20Webinar%20Content%3F%20Tools%2C%20Limitations%2C%20and%20What%20Still%20Needs%20a%20Human',
+        width: 1200,
+        height: 630,
+        alt: 'Can AI Repurpose Your Webinar Content? Tools, Limitations, and What Still Needs a Human',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
@@ -32,8 +40,8 @@ export default function AIWebinarRepurposingTools() {
         '@id': 'https://contentrepurposehub.com/blog/ai-webinar-repurposing-tools#article',
         headline: 'Can AI Repurpose Your Webinar Content? Tools, Limitations, and What Still Needs a Human',
         description: 'AI tools like Descript, Opus Clip, and ChatGPT can handle transcription and basic reformatting, but they can\'t match your voice, understand your audience, or build a content strategy.',
-        datePublished: '2026-02-09',
-        dateModified: '2026-02-09',
+        datePublished: '2026-02-14',
+        dateModified: '2026-02-14',
         author: {
           '@type': 'Organization',
           name: 'ContentRepurposeHub',

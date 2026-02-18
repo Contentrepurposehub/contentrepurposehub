@@ -14,12 +14,21 @@ export const metadata: Metadata = {
     url: 'https://contentrepurposehub.com/blog/content-repurposing-cost-pricing',
     siteName: 'ContentRepurposeHub',
     type: 'article',
-    publishedTime: '2026-02-09T00:00:00.000Z',
+    publishedTime: '2026-02-17T00:00:00.000Z',
+    images: [
+      {
+        url: 'https://contentrepurposehub.com/api/og?title=How%20Much%20Does%20Content%20Repurposing%20Cost%3F%20Complete%20Pricing%20Breakdown%20for%202026',
+        width: 1200,
+        height: 630,
+        alt: 'How Much Does Content Repurposing Cost? Complete Pricing Breakdown for 2026',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'How Much Does Content Repurposing Cost? (2026 Pricing)',
     description: '$500-$3,000/month for services. $30-$200/month DIY. Full breakdown inside.',
+    images: ['https://contentrepurposehub.com/api/og?title=How%20Much%20Does%20Content%20Repurposing%20Cost%3F%20Complete%20Pricing%20Breakdown%20for%202026'],
   },
 }
 
@@ -32,8 +41,8 @@ export default function ContentRepurposingCostPricing() {
         '@id': 'https://contentrepurposehub.com/blog/content-repurposing-cost-pricing#article',
         headline: 'How Much Does Content Repurposing Cost? Complete Pricing Breakdown for 2026',
         description: 'Content repurposing services cost $500-$3,000/month in 2026. DIY tools cost $30-$200/month but require 15-20 hours of your time. Complete pricing breakdown with cost-per-piece analysis.',
-        datePublished: '2026-02-09',
-        dateModified: '2026-02-09',
+        datePublished: '2026-02-17',
+        dateModified: '2026-02-17',
         author: {
           '@type': 'Organization',
           name: 'ContentRepurposeHub',
@@ -189,6 +198,89 @@ export default function ContentRepurposingCostPricing() {
                 Content repurposing costs between $500-$3,000/month for done-for-you services, or $30-$200/month for DIY tools (plus 15-20 hours of your time). The sweet spot for most coaches is $750-$1,500/month, which produces 14-75+ content pieces per webinar. At $750/month for 14 pieces, that&apos;s roughly $54 per content piece — compared to $200-$500 per piece from a freelance writer.
               </p>
             </header>
+
+            {/* Infographic 1: Pricing Range Overview */}
+            <figure className="my-10">
+              <div
+                role="img"
+                aria-label="Content repurposing pricing spectrum showing four tiers: DIY Tools at $0 to $200 per month, Freelancers at $500 to $2,000 per month, Specialized Services at $750 to $1,500 per month highlighted as best value, and Full-service Agencies at $2,000 to $5,000+ per month"
+                className="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden"
+              >
+                {/* Header */}
+                <div className="bg-gray-900 px-6 py-4">
+                  <h2 className="text-white text-lg md:text-xl font-bold text-center">
+                    Content Repurposing Pricing Spectrum (2026)
+                  </h2>
+                  <p className="text-gray-400 text-sm text-center mt-1">Monthly cost ranges by provider type</p>
+                </div>
+
+                {/* Spectrum Bar */}
+                <div className="px-4 md:px-6 pt-6 pb-2">
+                  {/* The continuous bar */}
+                  <div className="relative h-4 rounded-full overflow-hidden flex mb-2">
+                    <div className="h-full bg-sky-300" style={{ width: '20%' }} />
+                    <div className="h-full bg-blue-400" style={{ width: '25%' }} />
+                    <div className="h-full bg-emerald-500" style={{ width: '25%' }} />
+                    <div className="h-full bg-blue-700" style={{ width: '30%' }} />
+                  </div>
+                  {/* Price markers */}
+                  <div className="flex justify-between text-[10px] md:text-xs text-gray-400 px-1 mb-6">
+                    <span>$0</span>
+                    <span>$500</span>
+                    <span>$1,000</span>
+                    <span>$2,000</span>
+                    <span>$5,000+</span>
+                  </div>
+                </div>
+
+                {/* Tier Cards */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 px-4 md:px-6 pb-6">
+                  {/* DIY Tools */}
+                  <div className="rounded-lg border-2 border-sky-200 bg-sky-50 p-4 relative">
+                    <div className="w-3 h-3 rounded-full bg-sky-300 absolute top-3 right-3" />
+                    <p className="text-xs font-semibold text-sky-700 uppercase tracking-wide mb-1">DIY Tools</p>
+                    <p className="text-xl md:text-2xl font-bold text-gray-900">$0-$200<span className="text-sm font-normal text-gray-500">/mo</span></p>
+                    <p className="text-xs text-gray-500 mt-2">5-10 pieces/webinar</p>
+                    <p className="text-xs text-gray-500">15-20 hrs of your time</p>
+                  </div>
+
+                  {/* Freelancers */}
+                  <div className="rounded-lg border-2 border-blue-200 bg-blue-50 p-4 relative">
+                    <div className="w-3 h-3 rounded-full bg-blue-400 absolute top-3 right-3" />
+                    <p className="text-xs font-semibold text-blue-700 uppercase tracking-wide mb-1">Freelancers</p>
+                    <p className="text-xl md:text-2xl font-bold text-gray-900">$500-$2,000<span className="text-sm font-normal text-gray-500">/mo</span></p>
+                    <p className="text-xs text-gray-500 mt-2">8-14 pieces/webinar</p>
+                    <p className="text-xs text-gray-500">5-8 hrs managing</p>
+                  </div>
+
+                  {/* Specialized Services — Best Value */}
+                  <div className="rounded-lg border-2 border-emerald-500 bg-emerald-50 p-4 relative ring-2 ring-emerald-300 ring-offset-2">
+                    <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                      <span className="bg-emerald-600 text-white text-[10px] md:text-xs font-bold px-3 py-0.5 rounded-full shadow-md whitespace-nowrap">
+                        Best Value
+                      </span>
+                    </div>
+                    <div className="w-3 h-3 rounded-full bg-emerald-500 absolute top-3 right-3" />
+                    <p className="text-xs font-semibold text-emerald-700 uppercase tracking-wide mb-1 mt-1">Specialized Services</p>
+                    <p className="text-xl md:text-2xl font-bold text-gray-900">$750-$1,500<span className="text-sm font-normal text-gray-500">/mo</span></p>
+                    <p className="text-xs text-gray-500 mt-2">14-75+ pieces/webinar</p>
+                    <p className="text-xs text-emerald-700 font-medium">~1 hr of your time</p>
+                  </div>
+
+                  {/* Full-Service Agencies */}
+                  <div className="rounded-lg border-2 border-blue-800/30 bg-blue-900/5 p-4 relative">
+                    <div className="w-3 h-3 rounded-full bg-blue-700 absolute top-3 right-3" />
+                    <p className="text-xs font-semibold text-blue-800 uppercase tracking-wide mb-1">Full-Service Agencies</p>
+                    <p className="text-xl md:text-2xl font-bold text-gray-900">$2,000-$5,000+<span className="text-sm font-normal text-gray-500">/mo</span></p>
+                    <p className="text-xs text-gray-500 mt-2">10-20 pieces/webinar</p>
+                    <p className="text-xs text-gray-500">2-4 hrs of your time</p>
+                  </div>
+                </div>
+              </div>
+              <figcaption className="text-center text-sm text-gray-500 mt-3">
+                Content repurposing pricing ranges by provider type in 2026. Specialized services deliver the most pieces per dollar with the least time required.
+              </figcaption>
+            </figure>
 
             {/* Table of Contents */}
             <div className="bg-gray-50 rounded-xl p-6 mb-10 border border-gray-200">
@@ -474,6 +566,123 @@ export default function ContentRepurposingCostPricing() {
                 <p className="text-sm text-gray-500 mb-4">
                   *DIY cost per piece excludes your time. Factor in 15-20 hours at your hourly rate and DIY becomes the most expensive option on this list.
                 </p>
+
+                {/* Infographic 2: Cost Per Piece Visual Comparison */}
+                <figure className="my-10">
+                  <div
+                    role="img"
+                    aria-label="Cost per piece comparison showing DIY Tools at $100 per month for 8 pieces equals $12.50 per piece but requires your time, Freelancers at $2,500 per month for 12 pieces equals $208 per piece, Content Agency at $3,500 per month for 16 pieces equals $219 per piece, and ContentRepurposeHub at $750 per month for 14 pieces equals $54 per piece which is best value"
+                    className="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden"
+                  >
+                    {/* Header */}
+                    <div className="bg-gray-900 px-6 py-4">
+                      <h3 className="text-white text-lg md:text-xl font-bold text-center">
+                        Cost Per Piece: The Real Math
+                      </h3>
+                      <p className="text-gray-400 text-sm text-center mt-1">Monthly cost / pieces produced = what you actually pay per content piece</p>
+                    </div>
+
+                    {/* Four cards */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-4 md:p-6">
+
+                      {/* DIY Tools */}
+                      <div className="rounded-xl border-2 border-amber-300 bg-amber-50 p-4 flex flex-col items-center text-center relative">
+                        {/* Value indicator bar */}
+                        <div className="w-full h-1.5 rounded-full bg-amber-400 mb-4" />
+                        <p className="text-xs font-bold text-amber-700 uppercase tracking-wider mb-3">DIY Tools</p>
+                        <p className="text-sm text-gray-600 mb-1">Monthly cost</p>
+                        <p className="text-lg font-bold text-gray-900 mb-3">$100/mo</p>
+                        <div className="w-10 border-t border-gray-300 mb-3" />
+                        <p className="text-sm text-gray-600 mb-1">Pieces produced</p>
+                        <p className="text-lg font-bold text-gray-900 mb-3">~8 pieces</p>
+                        <div className="w-10 border-t border-gray-300 mb-3" />
+                        <p className="text-xs text-gray-500 mb-1">Cost per piece</p>
+                        <p className="text-3xl font-extrabold text-amber-600">$12.50</p>
+                        <p className="text-[10px] text-amber-700 font-medium mt-2 bg-amber-100 rounded-full px-2 py-0.5">+ 15-20 hrs of your time</p>
+                        {/* Value label */}
+                        <div className="mt-3 flex items-center gap-1.5">
+                          <span className="w-2.5 h-2.5 rounded-full bg-amber-400" />
+                          <span className="text-xs font-semibold text-amber-700">Misleading Value</span>
+                        </div>
+                      </div>
+
+                      {/* Freelancers */}
+                      <div className="rounded-xl border-2 border-red-200 bg-red-50 p-4 flex flex-col items-center text-center relative">
+                        {/* Value indicator bar */}
+                        <div className="w-full h-1.5 rounded-full bg-red-400 mb-4" />
+                        <p className="text-xs font-bold text-red-700 uppercase tracking-wider mb-3">Freelancers</p>
+                        <p className="text-sm text-gray-600 mb-1">Monthly cost</p>
+                        <p className="text-lg font-bold text-gray-900 mb-3">$2,500/mo</p>
+                        <div className="w-10 border-t border-gray-300 mb-3" />
+                        <p className="text-sm text-gray-600 mb-1">Pieces produced</p>
+                        <p className="text-lg font-bold text-gray-900 mb-3">~12 pieces</p>
+                        <div className="w-10 border-t border-gray-300 mb-3" />
+                        <p className="text-xs text-gray-500 mb-1">Cost per piece</p>
+                        <p className="text-3xl font-extrabold text-red-600">$208</p>
+                        <p className="text-[10px] text-red-700 font-medium mt-2 bg-red-100 rounded-full px-2 py-0.5">+ 5-8 hrs managing</p>
+                        {/* Value label */}
+                        <div className="mt-3 flex items-center gap-1.5">
+                          <span className="w-2.5 h-2.5 rounded-full bg-red-400" />
+                          <span className="text-xs font-semibold text-red-700">Expensive</span>
+                        </div>
+                      </div>
+
+                      {/* Content Agency */}
+                      <div className="rounded-xl border-2 border-red-200 bg-red-50 p-4 flex flex-col items-center text-center relative">
+                        {/* Value indicator bar */}
+                        <div className="w-full h-1.5 rounded-full bg-red-400 mb-4" />
+                        <p className="text-xs font-bold text-red-700 uppercase tracking-wider mb-3">Content Agency</p>
+                        <p className="text-sm text-gray-600 mb-1">Monthly cost</p>
+                        <p className="text-lg font-bold text-gray-900 mb-3">$3,500/mo</p>
+                        <div className="w-10 border-t border-gray-300 mb-3" />
+                        <p className="text-sm text-gray-600 mb-1">Pieces produced</p>
+                        <p className="text-lg font-bold text-gray-900 mb-3">~16 pieces</p>
+                        <div className="w-10 border-t border-gray-300 mb-3" />
+                        <p className="text-xs text-gray-500 mb-1">Cost per piece</p>
+                        <p className="text-3xl font-extrabold text-red-600">$219</p>
+                        <p className="text-[10px] text-red-700 font-medium mt-2 bg-red-100 rounded-full px-2 py-0.5">+ 3-6 month contract</p>
+                        {/* Value label */}
+                        <div className="mt-3 flex items-center gap-1.5">
+                          <span className="w-2.5 h-2.5 rounded-full bg-red-400" />
+                          <span className="text-xs font-semibold text-red-700">Expensive</span>
+                        </div>
+                      </div>
+
+                      {/* ContentRepurposeHub */}
+                      <div className="rounded-xl border-2 border-emerald-500 bg-emerald-50 p-4 flex flex-col items-center text-center relative ring-2 ring-emerald-300 ring-offset-2">
+                        {/* Value indicator bar */}
+                        <div className="w-full h-1.5 rounded-full bg-emerald-500 mb-4" />
+                        <p className="text-xs font-bold text-emerald-700 uppercase tracking-wider mb-3">ContentRepurposeHub</p>
+                        <p className="text-sm text-gray-600 mb-1">Monthly cost</p>
+                        <p className="text-lg font-bold text-gray-900 mb-3">$750/mo</p>
+                        <div className="w-10 border-t border-gray-300 mb-3" />
+                        <p className="text-sm text-gray-600 mb-1">Pieces produced</p>
+                        <p className="text-lg font-bold text-gray-900 mb-3">14 pieces</p>
+                        <div className="w-10 border-t border-gray-300 mb-3" />
+                        <p className="text-xs text-gray-500 mb-1">Cost per piece</p>
+                        <p className="text-3xl font-extrabold text-emerald-600">$54</p>
+                        <p className="text-[10px] text-emerald-700 font-medium mt-2 bg-emerald-100 rounded-full px-2 py-0.5">~1 hr/mo, no contract</p>
+                        {/* Value label */}
+                        <div className="mt-3 flex items-center gap-1.5">
+                          <span className="w-2.5 h-2.5 rounded-full bg-emerald-500" />
+                          <span className="text-xs font-semibold text-emerald-700">Best Value</span>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    {/* Bottom comparison callout */}
+                    <div className="bg-gray-50 border-t border-gray-200 px-6 py-4">
+                      <p className="text-center text-sm text-gray-600">
+                        <span className="font-semibold text-gray-900">The takeaway:</span> ContentRepurposeHub delivers each piece for <span className="font-bold text-emerald-700">$54</span> — that is <span className="font-bold text-emerald-700">74% less</span> than a freelancer and <span className="font-bold text-emerald-700">75% less</span> than an agency, with SEO + AI search optimization included.
+                      </p>
+                    </div>
+                  </div>
+                  <figcaption className="text-center text-sm text-gray-500 mt-3">
+                    Cost per piece calculated using median monthly cost and median pieces produced for each provider type.
+                  </figcaption>
+                </figure>
+
                 <p className="text-gray-700">
                   The math is simple. At $54 per content piece (Growth plan), ContentRepurposeHub costs less than one-third of what a freelancer charges per piece — and delivers SEO and AI search optimization included. At the Authority level ($20/piece), you are getting professional, optimized content for roughly the cost of a cup of coffee.
                 </p>

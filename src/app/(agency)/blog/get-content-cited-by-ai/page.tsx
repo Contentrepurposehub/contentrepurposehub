@@ -14,12 +14,21 @@ export const metadata: Metadata = {
     url: 'https://contentrepurposehub.com/blog/get-content-cited-by-ai',
     siteName: 'ContentRepurposeHub',
     type: 'article',
-    publishedTime: '2026-02-09T00:00:00.000Z',
+    publishedTime: '2026-02-15T00:00:00.000Z',
+    images: [
+      {
+        url: 'https://contentrepurposehub.com/api/og?title=How%20to%20Get%20Your%20Content%20Cited%20by%20AI%20Assistants%3A%20A%20Practical%20Guide',
+        width: 1200,
+        height: 630,
+        alt: 'How to Get Your Content Cited by AI Assistants: A Practical Guide',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'How to Get Cited by AI Assistants: 10 Steps for Coaches',
     description: '10 actionable steps to get your content cited by ChatGPT, Perplexity, and Gemini.',
+    images: ['https://contentrepurposehub.com/api/og?title=How%20to%20Get%20Your%20Content%20Cited%20by%20AI%20Assistants%3A%20A%20Practical%20Guide'],
   },
 }
 
@@ -32,8 +41,8 @@ export default function GetContentCitedByAI() {
         '@id': 'https://contentrepurposehub.com/blog/get-content-cited-by-ai#article',
         headline: 'How to Get Your Content Cited by AI Assistants: A Practical Guide for Coaches and Consultants',
         description: 'AI assistants like ChatGPT and Perplexity cite content that answers questions directly, uses structured data, and demonstrates topical authority. Here are 10 actionable steps.',
-        datePublished: '2026-02-09',
-        dateModified: '2026-02-09',
+        datePublished: '2026-02-15',
+        dateModified: '2026-02-15',
         author: {
           '@type': 'Organization',
           name: 'ContentRepurposeHub',

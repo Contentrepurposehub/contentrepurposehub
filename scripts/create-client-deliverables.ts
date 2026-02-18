@@ -947,22 +947,8 @@ function getPlaybookFormatRequests(sheetId: number, rows: PlaybookRow[]): any[] 
         fields: 'userEnteredFormat(textFormat)',
       },
     })
-    // Set native hyperlink on the cell
-    requests.push({
-      updateCells: {
-        rows: [{
-          values: [{
-            hyperlink: rows[row].cells[1],
-            userEnteredValue: { stringValue: rows[row].cells[1] },
-            userEnteredFormat: {
-              textFormat: { underline: true, fontSize: 10, foregroundColor: linkBlue, fontFamily: 'Google Sans' },
-            },
-          }],
-        }],
-        range: { sheetId, startRowIndex: row, endRowIndex: row + 1, startColumnIndex: 1, endColumnIndex: 2 },
-        fields: 'hyperlink,userEnteredValue,userEnteredFormat.textFormat',
-      },
-    })
+    // Hyperlink is set via =HYPERLINK() formula in the data write phase
+    // The repeatCell above handles blue underline styling
   }
 
   // Hide gridlines
@@ -1547,7 +1533,13 @@ async function main() {
 
   // Playbook
   const playbookRows = generatePlaybook(tier, source, slug)
-  const playbookValues = playbookRows.map((r) => r.cells)
+  const playbookValues = playbookRows.map((r) => {
+    // Convert link URLs to HYPERLINK formulas so they're clickable in one click
+    if (r.type === 'link' && r.cells[1]) {
+      return [r.cells[0], `=HYPERLINK("${r.cells[1]}","${r.cells[1]}")`]
+    }
+    return r.cells
+  })
   await sheetsApi(token, spreadsheetId, `/values/${encodeURIComponent("Your Content Playbook!A1")}?valueInputOption=USER_ENTERED`, 'PUT', { values: playbookValues })
   const playbookSheetId = sheetIds[tabIdx++]
 
