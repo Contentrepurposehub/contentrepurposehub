@@ -1365,6 +1365,7 @@ export default function Home() {
                 <span>·</span>
                 <a href="/terms" className="hover:text-white transition">Terms of Service</a>
               </div>
+              <p className="mb-2">Founded by <a href="/about" className="text-white hover:text-blue-400 transition">Marius Galatan</a></p>
               <p>© 2026 ContentRepurposeHub. All rights reserved.</p>
               <p className="mt-2 text-gray-500">
                 Webinar repurposing service for coaches and consultants. Content optimized for Google and AI search engines.

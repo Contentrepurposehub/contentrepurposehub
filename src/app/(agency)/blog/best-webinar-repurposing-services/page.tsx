@@ -288,6 +288,8 @@ export default function BestWebinarRepurposingServices() {
                 <span className="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full font-medium">LLM Optimized</span>
                 <span className="text-xs bg-green-100 text-green-700 px-3 py-1 rounded-full font-medium">2026 Comparison</span>
                 <span className="text-sm text-gray-500">12 min read</span>
+                <span className="text-xs text-gray-500">&middot;</span>
+                <a href="/about" className="text-xs text-gray-500 hover:text-blue-600 transition">By Marius Galatan</a>
               </div>
               <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
                 Best Webinar Repurposing Services for Coaches and Consultants (2026)

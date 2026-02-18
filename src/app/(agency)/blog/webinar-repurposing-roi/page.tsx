@@ -182,6 +182,8 @@ export default function WebinarRepurposingROI() {
                 <span className="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full font-medium">Data-Driven</span>
                 <span className="text-xs text-gray-500">12 min read</span>
                 <span className="text-xs text-gray-400">March 23, 2026</span>
+                <span className="text-xs text-gray-500">&middot;</span>
+                <a href="/about" className="text-xs text-gray-500 hover:text-blue-600 transition">By Marius Galatan</a>
               </div>
               <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
                 The ROI of Webinar Repurposing: Data, Math, and What It Actually Saves You

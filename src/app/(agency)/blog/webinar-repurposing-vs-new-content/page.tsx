@@ -182,6 +182,8 @@ export default function WebinarRepurposingVsNewContent() {
                 <span className="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full font-medium">Comparison</span>
                 <span className="text-xs text-gray-500">12 min read</span>
                 <span className="text-xs text-gray-400">February 9, 2026</span>
+                <span className="text-xs text-gray-500">&middot;</span>
+                <a href="/about" className="text-xs text-gray-500 hover:text-blue-600 transition">By Marius Galatan</a>
               </div>
               <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
                 Webinar Repurposing vs. Creating New Content: Which Is Better for Coaches?
