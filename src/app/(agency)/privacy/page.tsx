@@ -130,11 +130,6 @@ export default function PrivacyPolicy() {
                 <td className="border border-gray-200 px-4 py-2">Website hosting</td>
                 <td className="border border-gray-200 px-4 py-2">Server logs, IP addresses</td>
               </tr>
-              <tr>
-                <td className="border border-gray-200 px-4 py-2">Writesonic (Botsonic)</td>
-                <td className="border border-gray-200 px-4 py-2">Chat widget</td>
-                <td className="border border-gray-200 px-4 py-2">Chat messages</td>
-              </tr>
             </tbody>
           </table>
         </div>
