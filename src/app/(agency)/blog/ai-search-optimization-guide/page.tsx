@@ -44,9 +44,9 @@ export default function AISearchOptimizationGuide() {
         datePublished: '2026-02-15',
         dateModified: '2026-02-15',
         author: {
-          '@type': 'Organization',
-          name: 'ContentRepurposeHub',
-          url: 'https://contentrepurposehub.com',
+          '@type': 'Person',
+          name: 'Marius Galatan',
+          url: 'https://contentrepurposehub.com/about',
         },
         publisher: {
           '@type': 'Organization',

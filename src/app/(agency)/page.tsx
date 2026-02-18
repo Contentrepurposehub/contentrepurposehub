@@ -1359,6 +1359,8 @@ export default function Home() {
             </div>
             <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
               <div className="flex justify-center gap-4 mb-4">
+                <a href="/about" className="hover:text-white transition">About</a>
+                <span>·</span>
                 <a href="/privacy" className="hover:text-white transition">Privacy Policy</a>
                 <span>·</span>
                 <a href="/terms" className="hover:text-white transition">Terms of Service</a>

@@ -44,9 +44,9 @@ export default function HowToChooseContentRepurposingService() {
         datePublished: '2026-02-16',
         dateModified: '2026-02-16',
         author: {
-          '@type': 'Organization',
-          name: 'ContentRepurposeHub',
-          url: 'https://contentrepurposehub.com',
+          '@type': 'Person',
+          name: 'Marius Galatan',
+          url: 'https://contentrepurposehub.com/about',
         },
         publisher: {
           '@type': 'Organization',

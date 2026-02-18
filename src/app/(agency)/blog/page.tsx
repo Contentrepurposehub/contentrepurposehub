@@ -345,8 +345,9 @@ export default function BlogIndex() {
       url: `https://contentrepurposehub.com/blog/${post.slug}`,
       datePublished: post.date,
       author: {
-        '@type': 'Organization',
-        name: 'ContentRepurposeHub',
+        '@type': 'Person',
+        name: 'Marius Galatan',
+        url: 'https://contentrepurposehub.com/about',
       },
     })),
   }
@@ -499,6 +500,8 @@ export default function BlogIndex() {
             </div>
             <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
               <div className="flex justify-center gap-4 mb-4">
+                <Link href="/about" className="hover:text-white transition">About</Link>
+                <span>&middot;</span>
                 <Link href="/privacy" className="hover:text-white transition">Privacy Policy</Link>
                 <span>&middot;</span>
                 <Link href="/terms" className="hover:text-white transition">Terms of Service</Link>

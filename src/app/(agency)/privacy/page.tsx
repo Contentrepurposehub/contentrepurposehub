@@ -261,6 +261,7 @@ export default function PrivacyPolicy() {
           <div className="flex justify-center gap-6 mt-4">
             <a href="/" className="hover:text-white transition">Home</a>
             <a href="/blog" className="hover:text-white transition">Blog</a>
+            <a href="/about" className="hover:text-white transition">About</a>
             <a href="/privacy" className="text-white transition">Privacy Policy</a>
             <a href="/terms" className="hover:text-white transition">Terms of Service</a>
           </div>

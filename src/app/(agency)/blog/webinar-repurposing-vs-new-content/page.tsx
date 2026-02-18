@@ -44,9 +44,9 @@ export default function WebinarRepurposingVsNewContent() {
         datePublished: '2026-02-10',
         dateModified: '2026-02-10',
         author: {
-          '@type': 'Organization',
-          name: 'ContentRepurposeHub',
-          url: 'https://contentrepurposehub.com',
+          '@type': 'Person',
+          name: 'Marius Galatan',
+          url: 'https://contentrepurposehub.com/about',
         },
         publisher: {
           '@type': 'Organization',
