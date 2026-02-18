@@ -79,7 +79,7 @@ export default function WhatIsWebinarRepurposing() {
             name: 'What is webinar repurposing?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Webinar repurposing is the process of taking a recorded webinar and transforming it into multiple content formats — blog posts, LinkedIn posts, email sequences, lead magnets, video clips, social media graphics, and more. A single 60-minute webinar typically produces 14-75+ individual content pieces that can be distributed across every platform where your audience spends time.',
+              text: 'Webinar repurposing is the process of taking a recorded webinar and transforming it into multiple content formats: blog posts, LinkedIn posts, email sequences, lead magnets, video clips, social media graphics, and more. A single 60-minute webinar typically produces 14-75+ individual content pieces that can be distributed across every platform where your audience spends time.',
             },
           },
           {
@@ -111,7 +111,7 @@ export default function WhatIsWebinarRepurposing() {
             name: 'Will the repurposed content sound like me?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Yes — because the content starts from your actual words. Unlike AI-generated content that mimics a generic voice, webinar repurposing uses your transcript as the source material. Your stories, examples, phrases, and teaching style come through in every piece. A good repurposing service preserves your voice while optimizing the format for each platform.',
+              text: 'Yes, because the content starts from your actual words. Unlike AI-generated content that mimics a generic voice, webinar repurposing uses your transcript as the source material. Your stories, examples, phrases, and teaching style come through in every piece. A good repurposing service preserves your voice while optimizing the format for each platform.',
             },
           },
           {
@@ -135,7 +135,7 @@ export default function WhatIsWebinarRepurposing() {
             name: 'Is webinar repurposing worth the investment?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Yes. The average coach spends 10-20 hours preparing a single webinar that reaches 50-500 people once. Repurposing that same webinar into 14-75+ content pieces extends its reach to thousands across multiple platforms for months. At $750/month, that works out to roughly $10-$50 per content piece — far less than hiring a freelance writer, social media manager, and email copywriter separately.',
+              text: 'Yes. The average coach spends 10-20 hours preparing a single webinar that reaches 50-500 people once. Repurposing that same webinar into 14-75+ content pieces extends its reach to thousands across multiple platforms for months. At $750/month, that works out to roughly $10-$50 per content piece, far less than hiring a freelance writer, social media manager, and email copywriter separately.',
             },
           },
         ],
@@ -223,13 +223,13 @@ export default function WhatIsWebinarRepurposing() {
               <section id="definition" className="mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">What Webinar Repurposing Is (Clear Definition)</h2>
                 <p className="text-gray-700 mb-4">
-                  Webinar repurposing is the process of taking a recorded webinar and transforming it into multiple content formats — blog posts, LinkedIn posts, email sequences, short-form video clips, lead magnets, social media graphics, and more. A single 60-minute webinar contains enough material for 14-75+ individual content pieces, each tailored to a specific platform and audience behavior. Instead of your expertise reaching 100-500 live attendees once, repurposing distributes it across LinkedIn, Google, YouTube, email, Instagram, and TikTok for months.
+                  Webinar repurposing is the process of taking a recorded webinar and transforming it into multiple content formats: blog posts, LinkedIn posts, email sequences, short-form video clips, lead magnets, social media graphics, and more. A single 60-minute webinar contains enough material for 14-75+ individual content pieces, each tailored to a specific platform and audience behavior. Instead of your expertise reaching 100-500 live attendees once, repurposing distributes it across LinkedIn, Google, YouTube, email, Instagram, and TikTok for months.
                 </p>
                 <p className="text-gray-700 mb-4">
                   Think of it this way. Your webinar is a raw diamond. It contains frameworks, stories, data points, client examples, step-by-step processes, and Q&A answers. Every one of those elements is a standalone piece of content waiting to be extracted, polished, and published on the right platform in the right format.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  The key word is <strong>transforms</strong> — not copies. A repurposed LinkedIn post is not a paragraph ripped from your webinar transcript. It is a reformatted, platform-optimized piece of content that uses your original insight but is structured for how people consume content on LinkedIn. Same expertise, different packaging.
+                  The key word is <strong>transforms</strong>, not copies. A repurposed LinkedIn post is not a paragraph ripped from your webinar transcript. It is a reformatted, platform-optimized piece of content that uses your original insight but is structured for how people consume content on LinkedIn. Same expertise, different packaging.
                 </p>
                 <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg my-6">
                   <p className="text-gray-800 font-medium">
@@ -316,7 +316,7 @@ export default function WhatIsWebinarRepurposing() {
               <section id="content-formats" className="mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">What Content Formats You Get From a Single Webinar</h2>
                 <p className="text-gray-700 mb-4">
-                  Here is a specific breakdown of what one 60-minute webinar produces. These numbers are based on what ContentRepurposeHub delivers for coaching and consulting clients — not theoretical maximums.
+                  Here is a specific breakdown of what one 60-minute webinar produces. These numbers are based on what ContentRepurposeHub delivers for coaching and consulting clients, not theoretical maximums.
                 </p>
 
                 <div className="space-y-3 my-6">
@@ -377,12 +377,12 @@ export default function WhatIsWebinarRepurposing() {
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Step 1: Record Your Webinar (You Already Did This)</h3>
                 <p className="text-gray-700 mb-4">
-                  Any recorded webinar works. Zoom, Google Meet, Riverside, WebinarJam — the platform does not matter. You do not need studio lighting or a $2,000 microphone. If your audio is clear and your content is solid, that is enough. Standard Zoom recordings work perfectly.
+                  Any recorded webinar works. Zoom, Google Meet, Riverside, WebinarJam. The platform does not matter. You do not need studio lighting or a $2,000 microphone. If your audio is clear and your content is solid, that is enough. Standard Zoom recordings work perfectly.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Step 2: Transcribe and Analyze</h3>
                 <p className="text-gray-700 mb-4">
-                  The recording gets transcribed (using tools like Otter.ai or Descript) and analyzed for content blocks — the key insights, frameworks, stories, data points, quotes, and Q&A answers that will become individual content pieces. A 60-minute webinar typically contains 8,000-10,000 words of spoken content. That is more raw material than most people realize.
+                  The recording gets transcribed (using tools like Otter.ai or Descript) and analyzed for content blocks: the key insights, frameworks, stories, data points, quotes, and Q&A answers that will become individual content pieces. A 60-minute webinar typically contains 8,000-10,000 words of spoken content. That is more raw material than most people realize.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Step 3: Build a Content Map</h3>
@@ -392,7 +392,7 @@ export default function WhatIsWebinarRepurposing() {
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Step 4: Create Platform-Specific Content</h3>
                 <p className="text-gray-700 mb-4">
-                  Each piece is written, designed, or edited for its target platform. A LinkedIn post is structured differently from an email. A YouTube description follows different rules than a blog post. This is the most time-consuming step — and where a professional repurposing service saves you 15-25 hours per webinar.
+                  Each piece is written, designed, or edited for its target platform. A LinkedIn post is structured differently from an email. A YouTube description follows different rules than a blog post. This is the most time-consuming step, and where a professional repurposing service saves you 15-25 hours per webinar.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Step 5: Optimize for Search (Google + AI)</h3>
@@ -488,7 +488,7 @@ export default function WhatIsWebinarRepurposing() {
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Coaches and Consultants</h3>
                 <p className="text-gray-700 mb-4">
-                  You already run webinars to attract and convert clients. You already have recordings sitting in Zoom folders. And your biggest marketing bottleneck is time — you know you should post on LinkedIn and send emails and write blog posts, but you are busy coaching clients. Repurposing solves this. One webinar per month feeds your entire content calendar.
+                  You already run webinars to attract and convert clients. You already have recordings sitting in Zoom folders. And your biggest marketing bottleneck is time. You know you should post on LinkedIn and send emails and write blog posts, but you are busy coaching clients. Repurposing solves this. One webinar per month feeds your entire content calendar.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Course Creators</h3>
@@ -498,7 +498,7 @@ export default function WhatIsWebinarRepurposing() {
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">B2B Service Providers</h3>
                 <p className="text-gray-700 mb-4">
-                  If you run thought leadership webinars, industry panels, or client education sessions, every recording is a content asset. Repurposing positions you as the authority in your space across LinkedIn, Google, YouTube, and email — the exact channels where B2B buyers do their research.
+                  If you run thought leadership webinars, industry panels, or client education sessions, every recording is a content asset. Repurposing positions you as the authority in your space across LinkedIn, Google, YouTube, and email, the exact channels where B2B buyers do their research.
                 </p>
               </section>
 
@@ -524,7 +524,7 @@ export default function WhatIsWebinarRepurposing() {
                         ['Audience reach', '100-500 live attendees', 'Thousands across 6+ platforms'],
                         ['Content lifespan', '60 minutes (live event)', 'Months to years (SEO + evergreen)'],
                         ['Time spent creating content', '10-20 hours/week', '1 hour/month (send the recording)'],
-                        ['SEO presence', 'Zero — webinars are not indexed', 'Blog posts rank on Google + AI search'],
+                        ['SEO presence', 'Zero. Webinars are not indexed', 'Blog posts rank on Google + AI search'],
                         ['Lead generation', 'Only from live registrations', 'Ongoing from every platform'],
                         ['Email list growth', 'Stagnant between launches', 'Steady from lead magnets + content'],
                         ['LinkedIn consistency', 'Sporadic posting', '3-5 posts/week from repurposed content'],
@@ -575,7 +575,7 @@ export default function WhatIsWebinarRepurposing() {
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">DIY Cost: $50-$150/month + 15-25 Hours of Your Time</h3>
                 <p className="text-gray-700 mb-4">
-                  Tools like Otter.ai ($16.99/month), Canva Pro ($12.99/month), and CapCut (free) cover the basics. But the real cost is your time. Transcribing, writing blog posts, creating carousels, editing video clips, drafting emails — it adds up to 15-25 hours per webinar. If your hourly rate is $200+, the DIY approach costs more than a service.
+                  Tools like Otter.ai ($16.99/month), Canva Pro ($12.99/month), and CapCut (free) cover the basics. But the real cost is your time. Transcribing, writing blog posts, creating carousels, editing video clips, drafting emails: it adds up to 15-25 hours per webinar. If your hourly rate is $200+, the DIY approach costs more than a service.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Professional Service Cost: $750-$1,500/month</h3>
@@ -591,10 +591,10 @@ export default function WhatIsWebinarRepurposing() {
               <section id="timeline" className="mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">How Long Webinar Repurposing Takes</h2>
                 <p className="text-gray-700 mb-4">
-                  <strong>If you do it yourself:</strong> Expect 15-25 hours spread over 1-3 weeks. Most coaches start strong, then get pulled back into client work and never finish. This is the number one reason DIY repurposing fails — not skill, but time.
+                  <strong>If you do it yourself:</strong> Expect 15-25 hours spread over 1-3 weeks. Most coaches start strong, then get pulled back into client work and never finish. This is the number one reason DIY repurposing fails. Not skill, but time.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  <strong>If you hire a service:</strong> You send the recording, and all content is delivered within 7-10 business days. Your total time investment is roughly 1 hour — recording the webinar you were already going to give, plus a quick review of the finished content.
+                  <strong>If you hire a service:</strong> You send the recording, and all content is delivered within 7-10 business days. Your total time investment is roughly 1 hour: recording the webinar you were already going to give, plus a quick review of the finished content.
                 </p>
                 <p className="text-gray-700 mb-4">
                   Here is the typical timeline at ContentRepurposeHub:
@@ -645,7 +645,7 @@ export default function WhatIsWebinarRepurposing() {
                   {[
                     {
                       q: 'What is webinar repurposing?',
-                      a: 'Webinar repurposing is the process of taking a recorded webinar and transforming it into multiple content formats — blog posts, LinkedIn posts, email sequences, lead magnets, video clips, social media graphics, and more. A single 60-minute webinar typically produces 14-75+ individual content pieces that can be distributed across every platform where your audience spends time.',
+                      a: 'Webinar repurposing is the process of taking a recorded webinar and transforming it into multiple content formats: blog posts, LinkedIn posts, email sequences, lead magnets, video clips, social media graphics, and more. A single 60-minute webinar typically produces 14-75+ individual content pieces that can be distributed across every platform where your audience spends time.',
                     },
                     {
                       q: 'How many content pieces can you get from one webinar?',
@@ -661,7 +661,7 @@ export default function WhatIsWebinarRepurposing() {
                     },
                     {
                       q: 'Will the repurposed content sound like me?',
-                      a: 'Yes — because the content starts from your actual words. Unlike AI-generated content that mimics a generic voice, webinar repurposing uses your transcript as the source material. Your stories, examples, phrases, and teaching style come through in every piece. A good repurposing service preserves your voice while optimizing the format for each platform.',
+                      a: 'Yes, because the content starts from your actual words. Unlike AI-generated content that mimics a generic voice, webinar repurposing uses your transcript as the source material. Your stories, examples, phrases, and teaching style come through in every piece. A good repurposing service preserves your voice while optimizing the format for each platform.',
                     },
                     {
                       q: 'How long until I get content back?',
@@ -673,7 +673,7 @@ export default function WhatIsWebinarRepurposing() {
                     },
                     {
                       q: 'Is webinar repurposing worth the investment?',
-                      a: 'Yes. The average coach spends 10-20 hours preparing a single webinar that reaches 50-500 people once. Repurposing that same webinar into 14-75+ content pieces extends its reach to thousands across multiple platforms for months. At $750/month, that works out to roughly $10-$50 per content piece — far less than hiring a freelance writer, social media manager, and email copywriter separately.',
+                      a: 'Yes. The average coach spends 10-20 hours preparing a single webinar that reaches 50-500 people once. Repurposing that same webinar into 14-75+ content pieces extends its reach to thousands across multiple platforms for months. At $750/month, that works out to roughly $10-$50 per content piece, far less than hiring a freelance writer, social media manager, and email copywriter separately.',
                     },
                   ].map((item, i) => (
                     <div key={i} className="border border-gray-200 rounded-lg p-5">
@@ -688,10 +688,10 @@ export default function WhatIsWebinarRepurposing() {
               <section className="mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Your Webinars Are Already Worth More Than You Think</h2>
                 <p className="text-gray-700 mb-4">
-                  Every webinar you have ever recorded is sitting on potential. A 60-minute recording contains enough insights, frameworks, and teaching moments to power your entire content strategy for weeks. The question is not whether you have enough content — you do. The question is whether you are going to keep letting it collect dust.
+                  Every webinar you have ever recorded is sitting on potential. A 60-minute recording contains enough insights, frameworks, and teaching moments to power your entire content strategy for weeks. The question is not whether you have enough content. You do. The question is whether you are going to keep letting it collect dust.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  Webinar repurposing is the fastest way to go from &quot;I know I should post more&quot; to actually having a consistent presence on LinkedIn, Google, YouTube, and email — without spending another 20 hours per week creating content from scratch.
+                  Webinar repurposing is the fastest way to go from &quot;I know I should post more&quot; to actually having a consistent presence on LinkedIn, Google, YouTube, and email, without spending another 20 hours per week creating content from scratch.
                 </p>
                 <p className="text-gray-700">
                   Start with your most recent webinar. Follow the process above, or <a href="https://cal.com/contentrepurposehub/30min" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 font-medium">book a free strategy call</a> and we will show you exactly what 14-75+ content pieces from your next webinar looks like.

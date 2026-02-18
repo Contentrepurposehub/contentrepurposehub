@@ -87,7 +87,7 @@ export default function GetContentCitedByAI() {
             name: 'Do AI assistants actually cite sources?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Yes. ChatGPT with browsing enabled, Perplexity, Gemini, and Grok all cite sources when answering questions. Perplexity cites sources on every response. ChatGPT cites when using web search. These citations drive real traffic — Perplexity alone sends measurable referral visits to cited websites.',
+              text: 'Yes. ChatGPT with browsing enabled, Perplexity, Gemini, and Grok all cite sources when answering questions. Perplexity cites sources on every response. ChatGPT cites when using web search. These citations drive real traffic. Perplexity alone sends measurable referral visits to cited websites.',
             },
           },
           {
@@ -127,7 +127,7 @@ export default function GetContentCitedByAI() {
             name: 'Does AI search optimization replace traditional SEO?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'No, AI search optimization complements traditional SEO. The best approach is optimizing for both. Many of the same principles apply — structured content, clear headings, specific answers. But AI optimization adds elements like FAQ schema, direct first-paragraph answers, and llms.txt files that specifically help AI assistants cite your content.',
+              text: 'No, AI search optimization complements traditional SEO. The best approach is optimizing for both. Many of the same principles apply: structured content, clear headings, specific answers. But AI optimization adds elements like FAQ schema, direct first-paragraph answers, and llms.txt files that specifically help AI assistants cite your content.',
             },
           },
         ],
@@ -306,7 +306,7 @@ export default function GetContentCitedByAI() {
                 {/* Step 1 */}
                 <h3 className="text-xl font-bold text-gray-900 mb-2">1. Answer the Question in the First Paragraph</h3>
                 <p className="text-gray-700 mb-4">
-                  This is the single most important rule. When someone asks ChatGPT or Perplexity a question, the AI looks for content that answers it immediately — not after four paragraphs of background context.
+                  This is the single most important rule. When someone asks ChatGPT or Perplexity a question, the AI looks for content that answers it immediately, not after four paragraphs of background context.
                 </p>
                 <p className="text-gray-700 mb-4">
                   Write your title as a question (or match a common question). Then answer it in your first 50-100 words. Be specific and definitive.
@@ -361,7 +361,7 @@ export default function GetContentCitedByAI() {
                 {/* Step 5 */}
                 <h3 className="text-xl font-bold text-gray-900 mb-2">5. Create a llms.txt File</h3>
                 <p className="text-gray-700 mb-4">
-                  A llms.txt file is a plain text file in your website&apos;s root directory — similar to robots.txt but specifically for AI crawlers. It tells AI assistants what your site is about, what topics you cover, and which pages to reference.
+                  A llms.txt file is a plain text file in your website&apos;s root directory, similar to robots.txt but specifically for AI crawlers. It tells AI assistants what your site is about, what topics you cover, and which pages to reference.
                 </p>
                 <p className="text-gray-700 mb-4">
                   The format is still evolving, but a basic llms.txt includes: your business name, what you do, your core topics, and links to your most important content. It takes 15 minutes to create and can immediately improve how AI assistants understand your site.
@@ -402,7 +402,7 @@ export default function GetContentCitedByAI() {
                   Named entities are specific, identifiable things: tool names (Descript, Canva, ConvertKit), platform names (LinkedIn, YouTube, Perplexity), company names (ContentRepurposeHub), and industry terms. AI assistants understand and categorize content using these entities.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  When you mention specific tools and platforms by name, AI associates your content with those entities. Someone asking &quot;best tools for webinar repurposing&quot; will see content that names those tools — not content that vaguely discusses &quot;various tools available.&quot;
+                  When you mention specific tools and platforms by name, AI associates your content with those entities. Someone asking &quot;best tools for webinar repurposing&quot; will see content that names those tools, not content that vaguely discusses &quot;various tools available.&quot;
                 </p>
                 <p className="text-gray-700 mb-6">
                   Name the tools. Name the platforms. Name the competitors. Specificity is what AI search rewards.
@@ -439,7 +439,7 @@ export default function GetContentCitedByAI() {
                   Building a content library that gets cited by AI takes time.
                 </p>
                 <p className="text-gray-600 mb-4">
-                  We build AI-optimized content from your webinars — every piece structured for citations.
+                  We build AI-optimized content from your webinars. Every piece structured for citations.
                 </p>
                 <a
                   href="https://cal.com/contentrepurposehub/30min"
@@ -496,7 +496,7 @@ export default function GetContentCitedByAI() {
                 </p>
                 <ul className="list-disc pl-6 text-gray-700 space-y-3 mb-4">
                   <li><strong>Search Perplexity directly.</strong> Go to Perplexity.ai and ask questions related to your content. Perplexity shows citations for every answer. If your site appears, you are being cited. If it does not, you know what to fix.</li>
-                  <li><strong>Check ChatGPT with browsing.</strong> Ask ChatGPT (with web search enabled) questions in your niche. Look for your domain in the cited sources. Note which competitors appear instead — study what they are doing differently.</li>
+                  <li><strong>Check ChatGPT with browsing.</strong> Ask ChatGPT (with web search enabled) questions in your niche. Look for your domain in the cited sources. Note which competitors appear instead; study what they are doing differently.</li>
                   <li><strong>Monitor referral traffic.</strong> Check Google Analytics for referral traffic from ai.perplexity, chatgpt.com, and other AI sources. This traffic will show up as referral or direct visits. A growing trend here means your AI visibility is increasing.</li>
                   <li><strong>Use Google Search Console.</strong> Look for impressions and clicks from queries that match the questions you are targeting. While this measures Google specifically, high Google visibility often correlates with AI citations because both value similar content signals.</li>
                 </ul>
@@ -512,7 +512,7 @@ export default function GetContentCitedByAI() {
                   Here is the thing about AI citations: they compound. Each new article you publish makes every other article on your site more likely to be cited. This is the topical authority effect, and it is the single strongest factor in long-term AI visibility.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  A coaching site with 5 articles on webinar repurposing will get some citations. The same site with 20 articles covering every angle of webinar repurposing — how to do it, what tools to use, how much it costs, which services are best, how to optimize for SEO, how to create lead magnets from webinars — will dominate AI search results for that entire topic.
+                  A coaching site with 5 articles on webinar repurposing will get some citations. The same site with 20 articles covering every angle of webinar repurposing (how to do it, what tools to use, how much it costs, which services are best, how to optimize for SEO, how to create lead magnets from webinars) will dominate AI search results for that entire topic.
                 </p>
                 <p className="text-gray-700 mb-4">
                   This is exactly why repurposing webinars into blog content is so powerful for AI visibility. Every webinar you repurpose into a detailed blog post adds another node to your content cluster. Over 6-12 months, that cluster becomes the authoritative source AI assistants reference for your topic.
@@ -560,7 +560,7 @@ export default function GetContentCitedByAI() {
                     },
                     {
                       q: 'Do AI assistants actually cite sources?',
-                      a: 'Yes. ChatGPT with browsing enabled, Perplexity, Gemini, and Grok all cite sources when answering questions. Perplexity cites sources on every response. ChatGPT cites when using web search. These citations drive real traffic — Perplexity alone sends measurable referral visits to cited websites.',
+                      a: 'Yes. ChatGPT with browsing enabled, Perplexity, Gemini, and Grok all cite sources when answering questions. Perplexity cites sources on every response. ChatGPT cites when using web search. These citations drive real traffic. Perplexity alone sends measurable referral visits to cited websites.',
                     },
                     {
                       q: 'What is FAQ schema and why does it help with AI citations?',
@@ -580,7 +580,7 @@ export default function GetContentCitedByAI() {
                     },
                     {
                       q: 'Does AI search optimization replace traditional SEO?',
-                      a: 'No, AI search optimization complements traditional SEO. The best approach is optimizing for both. Many of the same principles apply — structured content, clear headings, specific answers. But AI optimization adds elements like FAQ schema, direct first-paragraph answers, and llms.txt files that specifically help AI assistants cite your content.',
+                      a: 'No, AI search optimization complements traditional SEO. The best approach is optimizing for both. Many of the same principles apply: structured content, clear headings, specific answers. But AI optimization adds elements like FAQ schema, direct first-paragraph answers, and llms.txt files that specifically help AI assistants cite your content.',
                     },
                   ].map((item, i) => (
                     <div key={i} className="border border-gray-200 rounded-lg p-5">
@@ -601,7 +601,7 @@ export default function GetContentCitedByAI() {
                   Start with your most important topic. Write (or repurpose) one article that follows all 10 steps. Add FAQ schema. Answer the question in paragraph one. Include specific numbers. Then write another article on a related subtopic and link them together.
                 </p>
                 <p className="text-gray-700">
-                  Within 4-8 weeks, check Perplexity and ChatGPT for your target queries. You will start seeing your content in the results. And once you are in, the compounding effect takes over — each new piece of content makes every other piece more visible. Or, if you want someone else to handle the content creation and AI optimization, <a href="https://cal.com/contentrepurposehub/30min" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 font-medium">book a free strategy call</a> and we will build your AI-optimized content library from your existing webinars.
+                  Within 4-8 weeks, check Perplexity and ChatGPT for your target queries. You will start seeing your content in the results. And once you are in, the compounding effect takes over: each new piece of content makes every other piece more visible. Or, if you want someone else to handle the content creation and AI optimization, <a href="https://cal.com/contentrepurposehub/30min" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 font-medium">book a free strategy call</a> and we will build your AI-optimized content library from your existing webinars.
                 </p>
               </section>
             </div>

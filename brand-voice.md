@@ -100,9 +100,27 @@ Sounds like a smart friend who's actually done this work explaining it over coff
 - Use the word "just" to minimize effort ("just repurpose your content!")
 - Stack multiple adjectives ("innovative, cutting-edge, comprehensive")
 
-## AI Detection Avoidance
+## Anti-AI Writing Rules (Mandatory)
 
-To ensure content doesn't read as AI-generated:
+**Source:** `.claude/anti-ai-writing-rules.json` — These 10 rules are NON-NEGOTIABLE on all content output.
+
+### Structural Rules
+1. **Break the Rule of 3** — Don't consistently organize ideas in triplets. Vary with 2, 4, 5, or asymmetrical groupings. Three bullet points every time is an AI tell.
+2. **Use varied paragraph structures** — Don't consistently use odd-numbered structures (5, 7, or 9 paragraphs). Vary paragraph lengths based on content needs.
+3. **Limit hypophora** — Reduce the pattern of posing a question then immediately answering it. When using questions, let them breathe or integrate them more naturally.
+
+### Language Rules
+4. **Avoid contrast framing** — Reduce "while X, Y" or "although X, Y" constructions that artificially create tension between concepts.
+5. **Eliminate poetic shift phrases** — Never use "in a world where," "in an era of," "in a landscape defined by," or similar dramatic transitions.
+6. **Moderate adverb usage** — Avoid overusing -ly adverbs (significantly, dramatically, effectively, ultimately, fundamentally). Choose stronger verbs instead.
+7. **Avoid marketing cliche pairings** — Never use "seamless integration," "robust solution," "game-changing innovation," "comprehensive approach," or similar predictable word combinations.
+
+### Flow Rules
+8. **Use natural transitions** — Replace formulaic transitions ("Let's explore," "Let's dive into," "Now, let's turn to") with contextual connections between ideas.
+9. **End paragraphs naturally** — Don't conclude paragraphs with vague emotional insights or forced inspirational statements. End with substantive points that advance the argument.
+10. **No em dashes** — Absolutely zero em dashes (—) in any content. Replace with periods (preferred), commas, colons, or parentheses. See em-dash-destroyer skill for replacement rules.
+
+### General AI Detection Avoidance
 - Vary sentence length deliberately (follow a long sentence with a two-word sentence)
 - Include specific, opinionated takes that AI wouldn't generate
 - Reference real tools by name with honest opinions

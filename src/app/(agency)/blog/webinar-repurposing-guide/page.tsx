@@ -111,7 +111,7 @@ export default function WebinarRepurposingGuide() {
             name: 'Is webinar repurposing worth it for coaches?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Yes. Coaches already spend hours creating webinar content. Without repurposing, that content reaches attendees once and disappears. With repurposing, a single webinar can generate months of content across LinkedIn, email, blog, and social media — bringing in new leads long after the webinar ends.',
+              text: 'Yes. Coaches already spend hours creating webinar content. Without repurposing, that content reaches attendees once and disappears. With repurposing, a single webinar can generate months of content across LinkedIn, email, blog, and social media, bringing in new leads long after the webinar ends.',
             },
           },
         ],
@@ -282,7 +282,7 @@ export default function WebinarRepurposingGuide() {
               <section id="what-is-webinar-repurposing" className="mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">What Is Webinar Repurposing?</h2>
                 <p className="text-gray-700 mb-4">
-                  Webinar repurposing is the process of transforming a recorded webinar into multiple content formats — blog posts, LinkedIn posts, email sequences, lead magnets, video clips, social media content, and more.
+                  Webinar repurposing is the process of transforming a recorded webinar into multiple content formats: blog posts, LinkedIn posts, email sequences, lead magnets, video clips, social media content, and more.
                 </p>
                 <p className="text-gray-700 mb-4">
                   Instead of delivering your expertise once to a live audience and letting it disappear, you extract the insights, frameworks, stories, and teaching moments from your webinar and repackage them for every platform where your audience spends time.
@@ -308,7 +308,7 @@ export default function WebinarRepurposingGuide() {
                   {[
                     { label: 'Reach', before: '100 live attendees', after: 'Thousands across every platform' },
                     { label: 'Lifespan', before: '60 minutes, then forgotten', after: 'Months of content from one recording' },
-                    { label: 'SEO Impact', before: 'Zero — webinars are not indexed', after: 'Blog posts rank on Google for years' },
+                    { label: 'SEO Impact', before: 'Zero (webinars are not indexed)', after: 'Blog posts rank on Google for years' },
                     { label: 'Lead Generation', before: 'Only from live signups', after: 'Ongoing leads from every platform' },
                   ].map((item, i) => (
                     <div key={i} className="bg-white border border-gray-200 rounded-lg p-4">
@@ -319,7 +319,7 @@ export default function WebinarRepurposingGuide() {
                   ))}
                 </div>
                 <p className="text-gray-700 mb-4">
-                  The math is simple: you already created the content. Repurposing extracts maximum value from the work you already did — without creating anything from scratch.
+                  The math is simple: you already created the content. Repurposing extracts maximum value from the work you already did, without creating anything from scratch.
                 </p>
                 <p className="text-gray-700">
                   For coaches and consultants who run webinars regularly, repurposing turns each recording into a lead-generation machine. Your webinar content reaches people on LinkedIn who missed the live event, on Google when they search for answers you already gave, and in their inbox through email sequences built from your teaching.
@@ -420,13 +420,13 @@ export default function WebinarRepurposingGuide() {
               <section id="14-ways" className="mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">14 Ways to Repurpose a Single Webinar</h2>
                 <p className="text-gray-700 mb-6">
-                  Here are 14 proven content formats you can create from every webinar. Each format reaches a different audience on a different platform — maximizing your exposure from one piece of source content.
+                  Here are 14 proven content formats you can create from every webinar. Each format reaches a different audience on a different platform, maximizing your exposure from one piece of source content.
                 </p>
 
                 {/* Format 1 */}
                 <h3 className="text-xl font-bold text-gray-900 mb-2">1. Vertical Video Clips (3-5 per webinar)</h3>
                 <p className="text-gray-700 mb-4">
-                  Short-form video is the highest-reach content format in 2026. Watch your webinar at 1.5x speed and timestamp the moments where you explained something perfectly, told a compelling story, or dropped a memorable one-liner. Cut each moment into a 30-60 second vertical clip. Add captions — 85% of people watch on mute. Post to TikTok, Instagram Reels, YouTube Shorts, and LinkedIn.
+                  Short-form video is the highest-reach content format in 2026. Watch your webinar at 1.5x speed and timestamp the moments where you explained something perfectly, told a compelling story, or dropped a memorable one-liner. Cut each moment into a 30-60 second vertical clip. Add captions. 85% of people watch on mute. Post to TikTok, Instagram Reels, YouTube Shorts, and LinkedIn.
                 </p>
                 <p className="text-gray-700 mb-6">
                   <strong>Why it works:</strong> Short clips have the widest organic reach of any content format. One viral clip can drive more awareness than the entire live webinar.
@@ -444,7 +444,7 @@ export default function WebinarRepurposingGuide() {
                 {/* Format 3 */}
                 <h3 className="text-xl font-bold text-gray-900 mb-2">3. LinkedIn Carousel (8-12 slides)</h3>
                 <p className="text-gray-700 mb-4">
-                  Take a framework, process, or list from your webinar and turn it into a swipeable LinkedIn carousel. Slide 1 is your hook — make it stop the scroll. Slides 2-10 cover one point each. The last slide is your CTA. Carousels consistently outperform regular LinkedIn posts for saves and shares.
+                  Take a framework, process, or list from your webinar and turn it into a swipeable LinkedIn carousel. Slide 1 is your hook. Make it stop the scroll. Slides 2-10 cover one point each. The last slide is your CTA. Carousels consistently outperform regular LinkedIn posts for saves and shares.
                 </p>
                 <p className="text-gray-700 mb-6">
                   <strong>Why it works:</strong> LinkedIn carousels get 2-3x more engagement than text posts. The swipe mechanic keeps people on your content longer, which the algorithm rewards.
@@ -525,16 +525,16 @@ export default function WebinarRepurposingGuide() {
                 {/* Format 12 */}
                 <h3 className="text-xl font-bold text-gray-900 mb-2">12. Podcast Episode</h3>
                 <p className="text-gray-700 mb-4">
-                  Extract the audio from your webinar, add a brief intro and outro, and publish it as a podcast episode. If you already have a podcast, this is free content. If you do not, this is the easiest way to start one — you already have the material.
+                  Extract the audio from your webinar, add a brief intro and outro, and publish it as a podcast episode. If you already have a podcast, this is free content. If you do not, this is the easiest way to start one. You already have the material.
                 </p>
                 <p className="text-gray-700 mb-6">
-                  <strong>Why it works:</strong> Podcasts reach people during commutes, workouts, and downtime — times when they would not read a blog post or scroll LinkedIn. It is an entirely new audience channel from the same content.
+                  <strong>Why it works:</strong> Podcasts reach people during commutes, workouts, and downtime, times when they would not read a blog post or scroll LinkedIn. It is an entirely new audience channel from the same content.
                 </p>
 
                 {/* Format 13 */}
                 <h3 className="text-xl font-bold text-gray-900 mb-2">13. Slide Deck Download</h3>
                 <p className="text-gray-700 mb-4">
-                  Clean up your presentation slides, add your branding, and offer them as a downloadable resource. Many webinar attendees want the slides for reference. Non-attendees will download them too — it is another lead magnet opportunity.
+                  Clean up your presentation slides, add your branding, and offer them as a downloadable resource. Many webinar attendees want the slides for reference. Non-attendees will download them too. It is another lead magnet opportunity.
                 </p>
                 <p className="text-gray-700 mb-6">
                   <strong>Why it works:</strong> Slides are a low-effort, high-value asset. Platforms like SlideShare still drive traffic, and they work as gated content for email capture.
@@ -546,7 +546,7 @@ export default function WebinarRepurposingGuide() {
                   Upload your full webinar to YouTube with proper chapters, a keyword-rich title, and a detailed description. YouTube is the second-largest search engine. Your webinar can rank for relevant keywords and bring in new audience members for years.
                 </p>
                 <p className="text-gray-700 mb-6">
-                  <strong>Why it works:</strong> YouTube videos compound over time. A well-optimized webinar upload can drive hundreds of views per month indefinitely — turning a one-time event into a permanent lead source.
+                  <strong>Why it works:</strong> YouTube videos compound over time. A well-optimized webinar upload can drive hundreds of views per month indefinitely, turning a one-time event into a permanent lead source.
                 </p>
               </section>
 
@@ -701,7 +701,7 @@ export default function WebinarRepurposingGuide() {
 
                 <div className="space-y-4 my-6">
                   {[
-                    { category: 'Transcription', tools: 'Otter.ai, Descript, Rev', note: 'Start here — everything else depends on a good transcript' },
+                    { category: 'Transcription', tools: 'Otter.ai, Descript, Rev', note: 'Start here. Everything else depends on a good transcript.' },
                     { category: 'Video Editing', tools: 'Descript, CapCut, Opus Clip', note: 'For cutting short-form clips from your webinar' },
                     { category: 'Design', tools: 'Canva, Figma', note: 'For carousels, quote cards, and thumbnails' },
                     { category: 'Writing', tools: 'Google Docs, Notion', note: 'For drafting blog posts and email sequences' },
@@ -726,11 +726,11 @@ export default function WebinarRepurposingGuide() {
                   If you are a coach or consultant, webinar repurposing solves your biggest content marketing problem: <strong>you have the expertise but not the time to create content consistently.</strong>
                 </p>
                 <p className="text-gray-700 mb-4">
-                  You already run webinars. You already have recordings. That means you already have the raw material for weeks of content — it just needs to be reformatted and distributed.
+                  You already run webinars. You already have recordings. That means you already have the raw material for weeks of content. It just needs to be reformatted and distributed.
                 </p>
                 <p className="text-gray-700 mb-4">Here is why repurposing is especially powerful for coaches:</p>
                 <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-                  <li><strong>Authentic voice:</strong> The content uses your actual words from your webinar, so it sounds like you — not like generic AI-generated marketing copy.</li>
+                  <li><strong>Authentic voice:</strong> The content uses your actual words from your webinar, so it sounds like you, not like generic AI-generated marketing copy.</li>
                   <li><strong>Demonstrate expertise:</strong> Every repurposed piece showcases your knowledge. A LinkedIn carousel from your framework is a mini-demonstration of your coaching ability.</li>
                   <li><strong>Build trust at scale:</strong> People who see your content across multiple platforms (LinkedIn, blog, email, YouTube) develop familiarity and trust before they ever book a call.</li>
                   <li><strong>Compound over time:</strong> Blog posts rank higher as they age. Email sequences nurture leads automatically. YouTube videos accumulate views. Your one webinar keeps working for you.</li>
@@ -827,7 +827,7 @@ export default function WebinarRepurposingGuide() {
                     },
                     {
                       q: 'Is webinar repurposing worth it for coaches?',
-                      a: 'Yes. Coaches already spend hours creating webinar content. Without repurposing, that content reaches attendees once and disappears. With repurposing, a single webinar can generate months of content across LinkedIn, email, blog, and social media — bringing in new leads long after the webinar ends.',
+                      a: 'Yes. Coaches already spend hours creating webinar content. Without repurposing, that content reaches attendees once and disappears. With repurposing, a single webinar can generate months of content across LinkedIn, email, blog, and social media, bringing in new leads long after the webinar ends.',
                     },
                     {
                       q: 'Should I repurpose webinars myself or hire a service?',
@@ -853,7 +853,7 @@ export default function WebinarRepurposingGuide() {
                   You already have the content. Your webinars contain hours of expertise, frameworks, stories, and insights that your audience needs. The only question is whether that content stays locked in a Zoom folder or becomes a lead-generating machine across every platform.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  Start with one webinar. Pick the most recent recording you are proud of. Follow the 14-format process above and see what happens when your best content reaches people on LinkedIn, Google, YouTube, email, and social media — all from a single recording.
+                  Start with one webinar. Pick the most recent recording you are proud of. Follow the 14-format process above and see what happens when your best content reaches people on LinkedIn, Google, YouTube, email, and social media, all from a single recording.
                 </p>
                 <p className="text-gray-700">
                   Or, if you would rather focus on coaching and let someone else handle the repurposing, <a href="https://cal.com/contentrepurposehub/30min" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 font-medium">book a free strategy call</a> and we will show you exactly how we turn your webinars into 14-75+ content pieces every month.

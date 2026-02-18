@@ -95,7 +95,7 @@ export default function HowToChooseContentRepurposingService() {
             name: 'What is the typical turnaround time for content repurposing?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Professional content repurposing services typically deliver within 7-10 business days after receiving your webinar recording. Some premium services offer faster turnaround of 5 business days. Be cautious of services promising 24-48 hour delivery — this usually means templated, low-quality output that does not match your voice.',
+              text: 'Professional content repurposing services typically deliver within 7-10 business days after receiving your webinar recording. Some premium services offer faster turnaround of 5 business days. Be cautious of services promising 24-48 hour delivery. This usually means templated, low-quality output that does not match your voice.',
             },
           },
           {
@@ -119,7 +119,7 @@ export default function HowToChooseContentRepurposingService() {
             name: 'Is it better to hire a repurposing service or do it myself?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'If you have 15-25 hours per webinar to spare and enjoy content creation, DIY works. If your hourly rate as a coach exceeds $100/hour, outsourcing to a repurposing service is almost always more cost-effective. A service costing $750/month replaces 15-25 hours of work — that is an effective rate of $30-$50/hour for professional, optimized content.',
+              text: 'If you have 15-25 hours per webinar to spare and enjoy content creation, DIY works. If your hourly rate as a coach exceeds $100/hour, outsourcing to a repurposing service is almost always more cost-effective. A service costing $750/month replaces 15-25 hours of work. That is an effective rate of $30-$50/hour for professional, optimized content.',
             },
           },
           {
@@ -127,7 +127,7 @@ export default function HowToChooseContentRepurposingService() {
             name: 'Do repurposing services require long-term contracts?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Some services require 3-6 month commitments, while others operate month-to-month. Month-to-month services are generally preferable because they earn your business every month. ContentRepurposeHub offers month-to-month plans with no long-term commitment required — if the content does not perform, you can cancel anytime.',
+              text: 'Some services require 3-6 month commitments, while others operate month-to-month. Month-to-month services are generally preferable because they earn your business every month. ContentRepurposeHub offers month-to-month plans with no long-term commitment required. If the content does not perform, you can cancel anytime.',
             },
           },
         ],
@@ -238,13 +238,13 @@ export default function HowToChooseContentRepurposingService() {
               <section id="8-questions" className="mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">The 8 Questions to Ask Before Hiring a Repurposing Service</h2>
                 <p className="text-gray-700 mb-6">
-                  These are the questions that reveal whether a service will actually deliver results. For each one, I will explain what a good answer looks like — and what should make you walk away.
+                  These are the questions that reveal whether a service will actually deliver results. For each one, I will explain what a good answer looks like and what should make you walk away.
                 </p>
 
                 {/* Question 1 */}
                 <h3 className="text-xl font-bold text-gray-900 mb-2">1. Do You Match My Voice or Use Templates?</h3>
                 <p className="text-gray-700 mb-4">
-                  This is the question that matters most. Your content needs to sound like you — your phrases, your rhythm, your personality. If it reads like it could have been written for any coach in your industry, it defeats the purpose.
+                  This is the question that matters most. Your content needs to sound like you: your phrases, your rhythm, your personality. If it reads like it could have been written for any coach in your industry, it defeats the purpose.
                 </p>
                 <p className="text-gray-700 mb-4">
                   <strong>Good answer:</strong> &quot;We create a voice profile from your existing content before we write anything. We study your webinars, your website, and your social media to capture how you actually talk. You approve a sample before we go into production.&quot;
@@ -286,16 +286,16 @@ export default function HowToChooseContentRepurposingService() {
                   <strong>Good answer:</strong> &quot;7-10 business days from receiving your recording. We send a preview for approval before finalizing.&quot;
                 </p>
                 <p className="text-gray-700 mb-6">
-                  <strong>Bad answer:</strong> &quot;24-48 hours.&quot; Extremely fast turnaround usually means templated, low-quality output. Quality voice matching, SEO optimization, and thorough content creation take time. Also watch out for &quot;2-4 weeks&quot; — that is too slow to maintain a consistent publishing cadence.
+                  <strong>Bad answer:</strong> &quot;24-48 hours.&quot; Extremely fast turnaround usually means templated, low-quality output. Quality voice matching, SEO optimization, and thorough content creation take time. Also watch out for &quot;2-4 weeks&quot;; that is too slow to maintain a consistent publishing cadence.
                 </p>
 
                 {/* Question 5 */}
                 <h3 className="text-xl font-bold text-gray-900 mb-2">5. Can I See Samples or Past Work?</h3>
                 <p className="text-gray-700 mb-4">
-                  Every service should be able to show you real content they have created for real clients. Not hypothetical examples or generic portfolio pieces — actual repurposed webinar content.
+                  Every service should be able to show you real content they have created for real clients. Not hypothetical examples or generic portfolio pieces, but actual repurposed webinar content.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  <strong>Good answer:</strong> &quot;Here are three blog posts we created from client webinars. Notice how each one sounds different — that is because we match each client&apos;s voice.&quot;
+                  <strong>Good answer:</strong> &quot;Here are three blog posts we created from client webinars. Notice how each one sounds different. That is because we match each client&apos;s voice.&quot;
                 </p>
                 <p className="text-gray-700 mb-6">
                   <strong>Bad answer:</strong> &quot;We do not share client work due to confidentiality.&quot; While confidentiality is legitimate, a good service will have case studies, anonymized samples, or clients willing to serve as references. If they cannot show you anything, that is a red flag.
@@ -322,7 +322,7 @@ export default function HowToChooseContentRepurposingService() {
                   <strong>Good answer:</strong> &quot;Month-to-month. We earn your business every month. If the content is not performing, you can cancel anytime.&quot;
                 </p>
                 <p className="text-gray-700 mb-6">
-                  <strong>Bad answer:</strong> &quot;We require a 6-month commitment upfront.&quot; Long contracts protect the service, not you. A confident service does not need to lock you in. The exception is if they offer significant discounts for longer commitments — but even then, start with one month to verify quality.
+                  <strong>Bad answer:</strong> &quot;We require a 6-month commitment upfront.&quot; Long contracts protect the service, not you. A confident service does not need to lock you in. The exception is if they offer significant discounts for longer commitments, but even then, start with one month to verify quality.
                 </p>
 
                 {/* Question 8 */}
@@ -334,7 +334,7 @@ export default function HowToChooseContentRepurposingService() {
                   <strong>Good answer:</strong> &quot;Two rounds of revisions included with every delivery. Revision turnaround is 2-3 business days. We want you to be 100% satisfied with every piece.&quot;
                 </p>
                 <p className="text-gray-700 mb-6">
-                  <strong>Bad answer:</strong> &quot;Revisions are available at an additional cost&quot; or &quot;We do not do revisions — the content is final.&quot; A service that will not revise is a service that does not stand behind its work.
+                  <strong>Bad answer:</strong> &quot;Revisions are available at an additional cost&quot; or &quot;We do not do revisions. The content is final.&quot; A service that will not revise is a service that does not stand behind its work.
                 </p>
               </section>
 
@@ -344,7 +344,7 @@ export default function HowToChooseContentRepurposingService() {
                   Know what to ask. Know what to expect.
                 </p>
                 <p className="text-blue-100 mb-4">
-                  Book a call with us and we will answer all 8 questions — transparently, with samples.
+                  Book a call with us and we will answer all 8 questions, transparently, with samples.
                 </p>
                 <a
                   href="https://cal.com/contentrepurposehub/30min"
@@ -473,7 +473,7 @@ export default function HowToChooseContentRepurposingService() {
                   </table>
                 </div>
                 <p className="text-gray-700 mb-4">
-                  <strong>The math that matters:</strong> If your coaching rate is $200/hour and a repurposing service saves you 15-25 hours per webinar, the service needs to cost less than $3,000-$5,000/month to break even on time alone. At $750-$1,500/month, the ROI is substantial — even before counting the leads the content generates.
+                  <strong>The math that matters:</strong> If your coaching rate is $200/hour and a repurposing service saves you 15-25 hours per webinar, the service needs to cost less than $3,000-$5,000/month to break even on time alone. At $750-$1,500/month, the ROI is substantial, even before counting the leads the content generates.
                 </p>
                 <p className="text-gray-700 mb-4">
                   ContentRepurposeHub plans start at $750/month for 14+ content pieces per webinar, with all Google and AI search optimization included. For detailed pricing and what each tier includes, see our <Link href="/blog/content-repurposing-cost-pricing" className="text-blue-600 hover:text-blue-800 font-medium">content repurposing cost and pricing guide</Link>.
@@ -496,7 +496,7 @@ export default function HowToChooseContentRepurposingService() {
                     },
                     {
                       q: 'What is the typical turnaround time for content repurposing?',
-                      a: 'Professional content repurposing services typically deliver within 7-10 business days after receiving your webinar recording. Some premium services offer faster turnaround of 5 business days. Be cautious of services promising 24-48 hour delivery — this usually means templated, low-quality output that does not match your voice.',
+                      a: 'Professional content repurposing services typically deliver within 7-10 business days after receiving your webinar recording. Some premium services offer faster turnaround of 5 business days. Be cautious of services promising 24-48 hour delivery. This usually means templated, low-quality output that does not match your voice.',
                     },
                     {
                       q: 'Should a repurposing service optimize for AI search or just Google?',
@@ -508,11 +508,11 @@ export default function HowToChooseContentRepurposingService() {
                     },
                     {
                       q: 'Is it better to hire a repurposing service or do it myself?',
-                      a: 'If you have 15-25 hours per webinar to spare and enjoy content creation, DIY works. If your hourly rate as a coach exceeds $100/hour, outsourcing to a repurposing service is almost always more cost-effective. A service costing $750/month replaces 15-25 hours of work — that is an effective rate of $30-$50/hour for professional, optimized content.',
+                      a: 'If you have 15-25 hours per webinar to spare and enjoy content creation, DIY works. If your hourly rate as a coach exceeds $100/hour, outsourcing to a repurposing service is almost always more cost-effective. A service costing $750/month replaces 15-25 hours of work. That is an effective rate of $30-$50/hour for professional, optimized content.',
                     },
                     {
                       q: 'Do repurposing services require long-term contracts?',
-                      a: 'Some services require 3-6 month commitments, while others operate month-to-month. Month-to-month services are generally preferable because they earn your business every month. ContentRepurposeHub offers month-to-month plans with no long-term commitment required — if the content does not perform, you can cancel anytime.',
+                      a: 'Some services require 3-6 month commitments, while others operate month-to-month. Month-to-month services are generally preferable because they earn your business every month. ContentRepurposeHub offers month-to-month plans with no long-term commitment required. If the content does not perform, you can cancel anytime.',
                     },
                   ].map((item, i) => (
                     <div key={i} className="border border-gray-200 rounded-lg p-5">
@@ -527,13 +527,13 @@ export default function HowToChooseContentRepurposingService() {
               <section className="mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Make the Right Choice the First Time</h2>
                 <p className="text-gray-700 mb-4">
-                  Switching repurposing services is expensive — not because of cancellation fees, but because of lost time. Every month with the wrong service is a month of webinar content that did not reach its potential.
+                  Switching repurposing services is expensive, not because of cancellation fees, but because of lost time. Every month with the wrong service is a month of webinar content that did not reach its potential.
                 </p>
                 <p className="text-gray-700 mb-4">
                   Use the 8 questions above on every service you evaluate. Check the green flags and red flags table. Ask for specific numbers, specific formats, and specific timelines. The right service will answer every question clearly because they have nothing to hide.
                 </p>
                 <p className="text-gray-700">
-                  And if you want to see how ContentRepurposeHub would repurpose your most recent webinar, <a href="https://cal.com/contentrepurposehub/30min" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 font-medium">book a free strategy call</a>. We will walk through your recording, show you the content plan, and answer every one of these 8 questions — with specifics.
+                  And if you want to see how ContentRepurposeHub would repurpose your most recent webinar, <a href="https://cal.com/contentrepurposehub/30min" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 font-medium">book a free strategy call</a>. We will walk through your recording, show you the content plan, and answer every one of these 8 questions, with specifics.
                 </p>
               </section>
             </div>

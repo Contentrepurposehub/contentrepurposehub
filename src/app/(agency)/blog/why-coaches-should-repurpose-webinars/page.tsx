@@ -79,7 +79,7 @@ export default function WhyCoachesShouldRepurposeWebinars() {
             name: 'Why repurpose instead of creating new content?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Because repurposing uses content you already created — your webinar — and transforms it into 14-75+ pieces for different platforms. Creating from scratch takes 15-25 hours per week to match the same output. Repurposing takes 1 hour (sending your recording). The quality is higher because the content is based on your real expertise delivered to a real audience, not something manufactured for a social media calendar.',
+              text: 'Because repurposing uses content you already created (your webinar) and transforms it into 14-75+ pieces for different platforms. Creating from scratch takes 15-25 hours per week to match the same output. Repurposing takes 1 hour (sending your recording). The quality is higher because the content is based on your real expertise delivered to a real audience, not something manufactured for a social media calendar.',
             },
           },
           {
@@ -87,7 +87,7 @@ export default function WhyCoachesShouldRepurposeWebinars() {
             name: 'How much time does repurposing save coaches?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Most coaches spend 10-20 hours per week creating content from scratch (writing LinkedIn posts, drafting emails, brainstorming blog topics). Webinar repurposing reduces that to roughly 1 hour per month — the time it takes to deliver your webinar and review the finished content. That is a net savings of 15-20+ hours per week that goes back to coaching, selling, or personal time.',
+              text: 'Most coaches spend 10-20 hours per week creating content from scratch (writing LinkedIn posts, drafting emails, brainstorming blog topics). Webinar repurposing reduces that to roughly 1 hour per month, the time it takes to deliver your webinar and review the finished content. That is a net savings of 15-20+ hours per week that goes back to coaching, selling, or personal time.',
             },
           },
           {
@@ -95,7 +95,7 @@ export default function WhyCoachesShouldRepurposeWebinars() {
             name: 'Do coaching clients care about repurposed content?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Clients do not know or care whether your LinkedIn post was written from scratch or repurposed from a webinar. What they care about is whether the content is valuable, relevant, and demonstrates your expertise. Repurposed content often performs better than original content because it is based on real teaching moments that resonated with a live audience — not hypothetical ideas brainstormed at a desk.',
+              text: 'Clients do not know or care whether your LinkedIn post was written from scratch or repurposed from a webinar. What they care about is whether the content is valuable, relevant, and demonstrates your expertise. Repurposed content often performs better than original content because it is based on real teaching moments that resonated with a live audience, not hypothetical ideas brainstormed at a desk.',
             },
           },
           {
@@ -111,7 +111,7 @@ export default function WhyCoachesShouldRepurposeWebinars() {
             name: 'How many webinars do I need to start?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'One. A single 60-minute webinar produces 14-75+ content pieces — enough to fill 2-4 weeks of content across all platforms. If you run one webinar per month, you will never run out of content. If you have a backlog of recorded webinars, even better — you can repurpose one per month from your existing library while continuing to run new ones.',
+              text: 'One. A single 60-minute webinar produces 14-75+ content pieces, enough to fill 2-4 weeks of content across all platforms. If you run one webinar per month, you will never run out of content. If you have a backlog of recorded webinars, even better. You can repurpose one per month from your existing library while continuing to run new ones.',
             },
           },
           {
@@ -119,7 +119,7 @@ export default function WhyCoachesShouldRepurposeWebinars() {
             name: 'What if my webinars are not polished?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Polished production does not matter for repurposing. What matters is the content — your insights, frameworks, stories, and expertise. A Zoom recording with standard audio quality is perfectly fine. The repurposing process extracts and reformats your ideas, not your video production. Some of the best-performing repurposed content comes from casual, unscripted webinars where coaches speak naturally.',
+              text: 'Polished production does not matter for repurposing. What matters is the content: your insights, frameworks, stories, and expertise. A Zoom recording with standard audio quality is perfectly fine. The repurposing process extracts and reformats your ideas, not your video production. Some of the best-performing repurposed content comes from casual, unscripted webinars where coaches speak naturally.',
             },
           },
           {
@@ -127,7 +127,7 @@ export default function WhyCoachesShouldRepurposeWebinars() {
             name: 'Does repurposed content perform as well as original content?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Repurposed content frequently outperforms original content. The reason: it is based on real expertise delivered to a real audience, refined by live interaction. When you teach something live, you naturally explain it more clearly, use better examples, and respond to audience reactions. That raw material — your best thinking under pressure — is higher quality than most content written from scratch at a desk.',
+              text: 'Repurposed content frequently outperforms original content. The reason: it is based on real expertise delivered to a real audience, refined by live interaction. When you teach something live, you naturally explain it more clearly, use better examples, and respond to audience reactions. That raw material, your best thinking under pressure, is higher quality than most content written from scratch at a desk.',
             },
           },
         ],
@@ -215,10 +215,10 @@ export default function WhyCoachesShouldRepurposeWebinars() {
               <section id="webinar-waste" className="mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">The Webinar Waste Problem</h2>
                 <p className="text-gray-700 mb-4">
-                  Because you already did the hard work. A single 60-minute webinar contains 8,000-10,000 words of expert content — frameworks, stories, client examples, step-by-step processes — that 92% of coaches never use again after the live event ends. That is 10-20 hours of preparation and delivery that reaches 100-500 people once, then disappears into a Zoom recordings folder forever.
+                  Because you already did the hard work. A single 60-minute webinar contains 8,000-10,000 words of expert content (frameworks, stories, client examples, step-by-step processes) that 92% of coaches never use again after the live event ends. That is 10-20 hours of preparation and delivery that reaches 100-500 people once, then disappears into a Zoom recordings folder forever.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  The numbers paint a clear picture. The average business coach runs 2-4 webinars per month. Each one takes 10-20 hours to prepare, promote, and deliver. That is 40-80 hours of expert content creation per month — and almost none of it gets reused.
+                  The numbers paint a clear picture. The average business coach runs 2-4 webinars per month. Each one takes 10-20 hours to prepare, promote, and deliver. That is 40-80 hours of expert content creation per month, and almost none of it gets reused.
                 </p>
                 <p className="text-gray-700 mb-4">
                   Meanwhile, those same coaches struggle to post on LinkedIn consistently, send regular emails, write blog posts, or show up on YouTube. They think they have a content creation problem. They do not. They have a content <strong>distribution</strong> problem. The content already exists. It is sitting in their webinar recordings.
@@ -236,7 +236,7 @@ export default function WhyCoachesShouldRepurposeWebinars() {
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">1. You Save 15-20 Hours Per Week on Content Creation</h3>
                 <p className="text-gray-700 mb-4">
-                  Creating content from scratch is a time sinkhole. Writing a single LinkedIn post takes 30-60 minutes. A blog post takes 3-5 hours. An email sequence takes 2-4 hours. Add them up and you are spending 15-20 hours per week on content — time you are not coaching, selling, or resting.
+                  Creating content from scratch is a time sinkhole. Writing a single LinkedIn post takes 30-60 minutes. A blog post takes 3-5 hours. An email sequence takes 2-4 hours. Add them up and you are spending 15-20 hours per week on content. That is time you are not coaching, selling, or resting.
                 </p>
                 <p className="text-gray-700 mb-6">
                   Webinar repurposing collapses that to roughly 1 hour per month. You deliver the webinar you were already going to give. A service like ContentRepurposeHub handles the rest. You get 14-75+ content pieces delivered within 7-10 business days. That is 15-20 hours per week back in your calendar. Every week. For a deeper look at time-saving workflows, read our <Link href="/blog/content-repurposing-workflow-coaches" className="text-blue-600 hover:text-blue-800 font-medium">content repurposing workflow guide for coaches</Link>.
@@ -247,7 +247,7 @@ export default function WhyCoachesShouldRepurposeWebinars() {
                   Here is something most people get backward: repurposed content is often <strong>better</strong> than content written from scratch. When you deliver a webinar live, you are at your best. You explain things more clearly because a real audience is listening. You use better examples because you can see when something lands. You go deeper on topics because someone asked a great question.
                 </p>
                 <p className="text-gray-700 mb-6">
-                  That live performance — your best thinking, refined by audience interaction — becomes the raw material for every repurposed piece. Compare that to staring at a blank Google Doc on a Tuesday morning trying to come up with a LinkedIn post. The webinar version wins every time.
+                  That live performance, your best thinking refined by audience interaction, becomes the raw material for every repurposed piece. Compare that to staring at a blank Google Doc on a Tuesday morning trying to come up with a LinkedIn post. The webinar version wins every time.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">3. You Build a Multi-Platform Presence Without Multi-Platform Effort</h3>
@@ -255,7 +255,7 @@ export default function WhyCoachesShouldRepurposeWebinars() {
                   Your potential clients are not all on LinkedIn. Some scroll Instagram. Some search Google. Some listen to podcasts. Some open emails. Some watch YouTube. To reach all of them, you need to be present on all of those platforms.
                 </p>
                 <p className="text-gray-700 mb-6">
-                  Creating original content for each platform is a full-time job (or a full-time team). Repurposing one webinar into platform-specific content pieces covers LinkedIn, your blog, email, YouTube, Instagram, TikTok, and Twitter/X — all from a single source recording. Same expertise. Different packaging for each platform&apos;s format and audience behavior.
+                  Creating original content for each platform is a full-time job (or a full-time team). Repurposing one webinar into platform-specific content pieces covers LinkedIn, your blog, email, YouTube, Instagram, TikTok, and Twitter/X, all from a single source recording. Same expertise, different packaging for each platform&apos;s format and audience behavior.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">4. Your Content Sounds Like You (Because It Is You)</h3>
@@ -263,7 +263,7 @@ export default function WhyCoachesShouldRepurposeWebinars() {
                   One of the biggest complaints coaches have about outsourced content is that it does not sound like them. Generic copywriters produce generic content. AI tools produce AI-sounding content. Neither captures the specific way you teach, the stories you tell, or the frameworks you use.
                 </p>
                 <p className="text-gray-700 mb-6">
-                  Repurposed content starts from your words. Your transcript. Your delivery. The person reading your LinkedIn post is reading something you actually said to a real audience. That authenticity is impossible to manufacture — and your audience can feel the difference.
+                  Repurposed content starts from your words. Your transcript. Your delivery. The person reading your LinkedIn post is reading something you actually said to a real audience. That authenticity is impossible to manufacture, and your audience can feel the difference.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">5. The ROI Compounds Over Time</h3>
@@ -271,7 +271,7 @@ export default function WhyCoachesShouldRepurposeWebinars() {
                   A LinkedIn post gets engagement for 24-48 hours. A webinar gets watched once. But a blog post from that webinar? It ranks on Google for years. An email sequence built from that webinar? It nurtures every new subscriber automatically. A YouTube video? It accumulates views month after month.
                 </p>
                 <p className="text-gray-700 mb-6">
-                  Over 12 months, one repurposed webinar per month produces 168-900+ content pieces. Each blog post adds to your SEO footprint. Each email sequence adds to your nurture engine. Each YouTube video adds to your searchable library. This is the compound effect — and it is why coaches who repurpose consistently build content machines that generate leads without ongoing effort. For the full ROI breakdown with real numbers, read our <Link href="/blog/webinar-repurposing-roi" className="text-blue-600 hover:text-blue-800 font-medium">webinar repurposing ROI analysis</Link>.
+                  Over 12 months, one repurposed webinar per month produces 168-900+ content pieces. Each blog post adds to your SEO footprint. Each email sequence adds to your nurture engine. Each YouTube video adds to your searchable library. This is the compound effect, and it is why coaches who repurpose consistently build content machines that generate leads without ongoing effort. For the full ROI breakdown with real numbers, read our <Link href="/blog/webinar-repurposing-roi" className="text-blue-600 hover:text-blue-800 font-medium">webinar repurposing ROI analysis</Link>.
                 </p>
               </section>
 
@@ -349,7 +349,7 @@ export default function WhyCoachesShouldRepurposeWebinars() {
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Mistake 2: Believing They Need to Be on Every Platform Manually</h3>
                 <p className="text-gray-700 mb-4">
-                  Some coaches try to create unique content for LinkedIn, Instagram, YouTube, email, their blog, and Twitter — all separately. That is not a strategy. That is a recipe for burnout. Repurposing gives you presence on every platform from a single content source. One hour of work, six platforms of output.
+                  Some coaches try to create unique content for LinkedIn, Instagram, YouTube, email, their blog, and Twitter, all separately. That is not a strategy. That is a recipe for burnout. Repurposing gives you presence on every platform from a single content source. One hour of work, six platforms of output.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Mistake 3: Waiting Until They Have &quot;Enough Time&quot; for Content</h3>
@@ -359,7 +359,7 @@ export default function WhyCoachesShouldRepurposeWebinars() {
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Mistake 4: Hiring a Generic Content Writer</h3>
                 <p className="text-gray-700 mb-4">
-                  A freelance writer who does not know your niche produces generic content. It technically exists, but it does not sound like you, does not use your frameworks, and does not demonstrate your specific expertise. Repurposing solves this because the source material is <em>your</em> webinar — your voice, your examples, your process. No briefing document can replicate that.
+                  A freelance writer who does not know your niche produces generic content. It technically exists, but it does not sound like you, does not use your frameworks, and does not demonstrate your specific expertise. Repurposing solves this because the source material is <em>your</em> webinar: your voice, your examples, your process. No briefing document can replicate that.
                 </p>
               </section>
 
@@ -412,10 +412,10 @@ export default function WhyCoachesShouldRepurposeWebinars() {
                 <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-4">
                   <li><strong>You already run webinars</strong> (or could start). If you have recordings, you have raw material. Skip the blank page.</li>
                   <li><strong>You struggle with consistency.</strong> Repurposing guarantees a steady stream of content regardless of how busy your coaching schedule gets.</li>
-                  <li><strong>You want to be on multiple platforms</strong> but do not have a content team. One webinar covers LinkedIn, blog, email, YouTube, and social — all at once.</li>
+                  <li><strong>You want to be on multiple platforms</strong> but do not have a content team. One webinar covers LinkedIn, blog, email, YouTube, and social, all at once.</li>
                   <li><strong>Your expertise is your content.</strong> Coaches do not need to research new topics. Your webinars already contain your best thinking. Repurposing packages it for distribution.</li>
                   <li><strong>You need SEO content.</strong> Blog posts from repurposed webinars rank on Google and get cited by AI assistants. That is organic traffic and leads on autopilot.</li>
-                  <li><strong>Budget is limited.</strong> At $750-$1,500/month, a repurposing service costs less than a single freelance writer — and produces 10-20x more content.</li>
+                  <li><strong>Budget is limited.</strong> At $750-$1,500/month, a repurposing service costs less than a single freelance writer, and produces 10-20x more content.</li>
                 </ul>
                 <p className="text-gray-700">
                   For a complete walkthrough of the repurposing process from start to finish, read our <Link href="/blog/webinar-repurposing-guide" className="text-blue-600 hover:text-blue-800 font-medium">webinar repurposing guide</Link>.
@@ -430,7 +430,7 @@ export default function WhyCoachesShouldRepurposeWebinars() {
                 </p>
                 <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-4">
                   <li><strong>You are launching something new</strong> that you have never talked about in a webinar. A new offer, a new methodology, or a pivot in your niche requires fresh content.</li>
-                  <li><strong>You need to respond to a trending topic quickly.</strong> If your industry had a major shift yesterday, you need a timely post — not a repurposed webinar from last month.</li>
+                  <li><strong>You need to respond to a trending topic quickly.</strong> If your industry had a major shift yesterday, you need a timely post, not a repurposed webinar from last month.</li>
                   <li><strong>You have no webinar recordings.</strong> If you have never run a webinar (or do not have recordings), you need to create from scratch until you build a content library. But consider: your first repurposing project could be a webinar you record specifically for this purpose.</li>
                   <li><strong>Your content is outdated.</strong> If your webinar from 2023 references tools, trends, or strategies that have changed significantly, new content is the right call.</li>
                 </ul>
@@ -473,15 +473,15 @@ export default function WhyCoachesShouldRepurposeWebinars() {
                   {[
                     {
                       q: 'Why repurpose instead of creating new content?',
-                      a: 'Because repurposing uses content you already created — your webinar — and transforms it into 14-75+ pieces for different platforms. Creating from scratch takes 15-25 hours per week to match the same output. Repurposing takes 1 hour (sending your recording). The quality is higher because the content is based on your real expertise delivered to a real audience, not something manufactured for a social media calendar.',
+                      a: 'Because repurposing uses content you already created (your webinar) and transforms it into 14-75+ pieces for different platforms. Creating from scratch takes 15-25 hours per week to match the same output. Repurposing takes 1 hour (sending your recording). The quality is higher because the content is based on your real expertise delivered to a real audience, not something manufactured for a social media calendar.',
                     },
                     {
                       q: 'How much time does repurposing save coaches?',
-                      a: 'Most coaches spend 10-20 hours per week creating content from scratch (writing LinkedIn posts, drafting emails, brainstorming blog topics). Webinar repurposing reduces that to roughly 1 hour per month — the time it takes to deliver your webinar and review the finished content. That is a net savings of 15-20+ hours per week that goes back to coaching, selling, or personal time.',
+                      a: 'Most coaches spend 10-20 hours per week creating content from scratch (writing LinkedIn posts, drafting emails, brainstorming blog topics). Webinar repurposing reduces that to roughly 1 hour per month, the time it takes to deliver your webinar and review the finished content. That is a net savings of 15-20+ hours per week that goes back to coaching, selling, or personal time.',
                     },
                     {
                       q: 'Do coaching clients care about repurposed content?',
-                      a: 'Clients do not know or care whether your LinkedIn post was written from scratch or repurposed from a webinar. What they care about is whether the content is valuable, relevant, and demonstrates your expertise. Repurposed content often performs better than original content because it is based on real teaching moments that resonated with a live audience — not hypothetical ideas brainstormed at a desk.',
+                      a: 'Clients do not know or care whether your LinkedIn post was written from scratch or repurposed from a webinar. What they care about is whether the content is valuable, relevant, and demonstrates your expertise. Repurposed content often performs better than original content because it is based on real teaching moments that resonated with a live audience, not hypothetical ideas brainstormed at a desk.',
                     },
                     {
                       q: 'Can I repurpose old webinars?',
@@ -489,15 +489,15 @@ export default function WhyCoachesShouldRepurposeWebinars() {
                     },
                     {
                       q: 'How many webinars do I need to start?',
-                      a: 'One. A single 60-minute webinar produces 14-75+ content pieces — enough to fill 2-4 weeks of content across all platforms. If you run one webinar per month, you will never run out of content. If you have a backlog of recorded webinars, even better — you can repurpose one per month from your existing library while continuing to run new ones.',
+                      a: 'One. A single 60-minute webinar produces 14-75+ content pieces, enough to fill 2-4 weeks of content across all platforms. If you run one webinar per month, you will never run out of content. If you have a backlog of recorded webinars, even better. You can repurpose one per month from your existing library while continuing to run new ones.',
                     },
                     {
                       q: 'What if my webinars are not polished?',
-                      a: 'Polished production does not matter for repurposing. What matters is the content — your insights, frameworks, stories, and expertise. A Zoom recording with standard audio quality is perfectly fine. The repurposing process extracts and reformats your ideas, not your video production. Some of the best-performing repurposed content comes from casual, unscripted webinars where coaches speak naturally.',
+                      a: 'Polished production does not matter for repurposing. What matters is the content: your insights, frameworks, stories, and expertise. A Zoom recording with standard audio quality is perfectly fine. The repurposing process extracts and reformats your ideas, not your video production. Some of the best-performing repurposed content comes from casual, unscripted webinars where coaches speak naturally.',
                     },
                     {
                       q: 'Does repurposed content perform as well as original content?',
-                      a: 'Repurposed content frequently outperforms original content. The reason: it is based on real expertise delivered to a real audience, refined by live interaction. When you teach something live, you naturally explain it more clearly, use better examples, and respond to audience reactions. That raw material — your best thinking under pressure — is higher quality than most content written from scratch at a desk.',
+                      a: 'Repurposed content frequently outperforms original content. The reason: it is based on real expertise delivered to a real audience, refined by live interaction. When you teach something live, you naturally explain it more clearly, use better examples, and respond to audience reactions. That raw material, your best thinking under pressure, is higher quality than most content written from scratch at a desk.',
                     },
                   ].map((item, i) => (
                     <div key={i} className="border border-gray-200 rounded-lg p-5">
@@ -512,7 +512,7 @@ export default function WhyCoachesShouldRepurposeWebinars() {
               <section className="mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">The Bottom Line for Coaches</h2>
                 <p className="text-gray-700 mb-4">
-                  You are already creating expert content every time you run a webinar. The question is whether that content works for you once or works for you forever. Repurposing turns a single recording into a content engine that generates leads across LinkedIn, Google, YouTube, email, and social media — without you spending another minute at the keyboard.
+                  You are already creating expert content every time you run a webinar. The question is whether that content works for you once or works for you forever. Repurposing turns a single recording into a content engine that generates leads across LinkedIn, Google, YouTube, email, and social media, without you spending another minute at the keyboard.
                 </p>
                 <p className="text-gray-700 mb-4">
                   The coaches who build the biggest audiences in 2026 will not be the ones who create the most content. They will be the ones who distribute their best content the most effectively. And repurposing is the most effective distribution strategy that exists for coaches.

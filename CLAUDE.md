@@ -69,6 +69,58 @@ Next.js 16 marketing site for ContentRepurposeHub (webinar repurposing service).
 | Reddit/X trend research, what people are saying about a topic | `/last30days` |
 | Unsure / need routing | `/orchestrator` |
 
+## Mandatory Post-Processing Rules (Non-Negotiable)
+
+**EVERY piece of written content MUST pass these checks before it is considered done. No exceptions. This applies to all content skills (`/seo-content`, `/direct-response-copy`, `/newsletter`, `/email-sequences`, `/content-atomizer`, `/lead-magnet`, `/brand-voice`, `/positioning-angles`) and any manually written content (blog posts, landing pages, client deliverables).**
+
+### Rule 1: Em Dash Destroyer (Zero Tolerance)
+
+After writing ANY content, scan for and replace ALL em dashes:
+- `—` (em dash, U+2014)
+- ` — ` (em dash with spaces)
+- `--` (double hyphen used as em dash)
+
+**Replacement priority:** Period > Comma > Colon > Parentheses > Semicolon. See `skills/em-dash-destroyer/SKILL.md` for context-specific replacement rules. Zero em dashes in the final output.
+
+### Rule 2: Anti-AI Writing Rules (10 Rules)
+
+Full rules in `.claude/anti-ai-writing-rules.json`. Apply ALL of these:
+
+1. **Break the Rule of 3** — Don't consistently organize ideas in triplets. Vary with 2, 4, 5, or asymmetrical groupings.
+2. **Avoid contrast framing** — Reduce "while X, Y" and "although X, Y" constructions.
+3. **Eliminate poetic shift phrases** — Never use "in a world where," "in an era of," "in a landscape defined by."
+4. **Use varied paragraph structures** — Don't default to odd-numbered structures (5, 7, 9 paragraphs).
+5. **Limit hypophora** — Don't pose a question then immediately answer it. Let questions breathe.
+6. **Moderate adverb usage** — Avoid -ly adverbs (significantly, dramatically, effectively). Use stronger verbs.
+7. **Avoid marketing cliche pairings** — Never use "seamless integration," "robust solution," "game-changing innovation."
+8. **Use natural transitions** — Never use "Let's explore," "Let's dive into," "Now, let's turn to."
+9. **End paragraphs naturally** — No vague emotional insights or forced inspirational closers.
+10. **No em dashes** — Reinforces Rule 1. Zero em dashes in any output.
+
+### Rule 3: Brand Voice Compliance
+
+All content must match `brand-voice.md`. Key checks:
+- **Anti-slop vocabulary:** No "unlock," "unleash," "supercharge," "game-changer," "revolutionary," "cutting-edge," "leverage," "synergy," "comprehensive solution," "robust platform," "in today's fast-paced digital landscape," "let's dive in," "without further ado"
+- **Sentence rhythm:** Mix short (3-8 words) and medium (10-18 words). Fragments for punch. Never exceed 20 words.
+- **Paragraphs:** 1-3 sentences max. Lots of white space.
+- **Openings:** Start with the problem or a bold statement. Never "In this article, we'll explore..."
+- **POV:** "We" for service, "You" for reader, expert peer tone
+
+### Post-Processing Checklist (Run After Every Content Piece)
+
+```
+[ ] Zero em dashes in output (scan and replace all)
+[ ] No Rule-of-3 patterns (check for consistent triplets)
+[ ] No contrast framing overuse ("while X, Y")
+[ ] No poetic shift phrases ("in a world where")
+[ ] No -ly adverb overuse
+[ ] No marketing cliche pairings
+[ ] No formulaic transitions ("Let's dive in")
+[ ] Paragraphs end with substance, not inspiration
+[ ] Matches brand-voice.md vocabulary and rhythm
+[ ] Anti-slop word check passed
+```
+
 ## Client Delivery System
 
 **The flywheel:** Webinar -> Transcription -> Content Pieces -> Grow Email List -> Promote Next Webinar -> Repeat

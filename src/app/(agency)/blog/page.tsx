@@ -177,7 +177,7 @@ const comparisons: Post[] = [
   },
   {
     slug: 'content-repurposing-diy-vs-service',
-    title: 'Content Repurposing: DIY Tools vs. Done-for-You Services — An Honest Comparison',
+    title: 'Content Repurposing: DIY Tools vs. Done-for-You Services, An Honest Comparison',
     description: 'Should you repurpose content yourself or hire a service? An honest breakdown of 6 popular DIY tools, real costs, time investment, and the math behind when outsourcing pays for itself.',
     date: '2026-02-14',
     readTime: '12 min read',
@@ -227,7 +227,7 @@ const comparisons: Post[] = [
   {
     slug: 'repurpose-my-webinar-alternative',
     title: 'RepurposeMyWebinar Alternative: Full-Funnel Webinar Repurposing for Coaches',
-    description: 'Looking beyond replay promotion? See how full-funnel webinar repurposing creates blog posts, lead magnets, email sequences, and social content — not just video clips.',
+    description: 'Looking beyond replay promotion? See how full-funnel webinar repurposing creates blog posts, lead magnets, email sequences, and social content, not just video clips.',
     date: '2026-02-18',
     readTime: '10 min read',
     category: 'Alternative',

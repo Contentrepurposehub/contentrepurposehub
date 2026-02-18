@@ -79,7 +79,7 @@ export default function ContentRepurposingSmallBusiness() {
             name: 'What is content repurposing for small business?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Content repurposing for small business is the process of taking existing content — webinars, videos, presentations, podcast episodes, or blog posts — and reformatting it into multiple new content pieces for different platforms. A single 60-minute webinar can become 14-75+ pieces including blog posts, LinkedIn posts, email sequences, video clips, carousels, and lead magnets. It is the highest-ROI content strategy for small businesses because you build on work you already did instead of creating from scratch.',
+              text: 'Content repurposing for small business is the process of taking existing content (webinars, videos, presentations, podcast episodes, or blog posts) and reformatting it into multiple new content pieces for different platforms. A single 60-minute webinar can become 14-75+ pieces including blog posts, LinkedIn posts, email sequences, video clips, carousels, and lead magnets. It is the highest-ROI content strategy for small businesses because you build on work you already did instead of creating from scratch.',
             },
           },
           {
@@ -87,7 +87,7 @@ export default function ContentRepurposingSmallBusiness() {
             name: 'How much does content repurposing cost for a small business?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Content repurposing costs vary by approach. DIY costs $0-$50/month in tools but requires 15-25 hours of your time per piece of source content. Tool-assisted repurposing (using AI tools like Descript and Canva) costs $50-$200/month plus 8-12 hours of your time. Done-for-you services like ContentRepurposeHub start at $750/month and require about 1 hour of your time — you send the recording and receive 14-75+ finished content pieces.',
+              text: 'Content repurposing costs vary by approach. DIY costs $0-$50/month in tools but requires 15-25 hours of your time per piece of source content. Tool-assisted repurposing (using AI tools like Descript and Canva) costs $50-$200/month plus 8-12 hours of your time. Done-for-you services like ContentRepurposeHub start at $750/month and require about 1 hour of your time. You send the recording and receive 14-75+ finished content pieces.',
             },
           },
           {
@@ -95,7 +95,7 @@ export default function ContentRepurposingSmallBusiness() {
             name: 'What is the best content to repurpose for small business?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'The three best content types for small businesses to repurpose are: (1) Webinars and live presentations — these produce the most content pieces per hour of source material (14-75+ pieces from one 60-minute recording). (2) Long-form videos and tutorials — a 20-30 minute YouTube video can become 8-15 content pieces. (3) Podcast episodes — each episode yields 5-10 pieces including audiograms, quote cards, blog posts, and social clips.',
+              text: 'The three best content types for small businesses to repurpose are: (1) Webinars and live presentations, which produce the most content pieces per hour of source material (14-75+ pieces from one 60-minute recording). (2) Long-form videos and tutorials, where a 20-30 minute YouTube video can become 8-15 content pieces. (3) Podcast episodes, where each episode yields 5-10 pieces including audiograms, quote cards, blog posts, and social clips.',
             },
           },
           {
@@ -103,7 +103,7 @@ export default function ContentRepurposingSmallBusiness() {
             name: 'Can I repurpose content myself or do I need to hire someone?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'You can absolutely repurpose content yourself if you have 15-25 hours per month and basic skills with tools like Canva, Descript, and a writing platform. DIY works well if your budget is under $500/month. However, if your time is worth $100+/hour, outsourcing to a repurposing service often costs less than the value of the time you would spend doing it yourself. A service like ContentRepurposeHub charges $750-$1,500/month and handles everything — transcription, writing, design, video editing, and SEO optimization.',
+              text: 'You can absolutely repurpose content yourself if you have 15-25 hours per month and basic skills with tools like Canva, Descript, and a writing platform. DIY works well if your budget is under $500/month. However, if your time is worth $100+/hour, outsourcing to a repurposing service often costs less than the value of the time you would spend doing it yourself. A service like ContentRepurposeHub charges $750-$1,500/month and handles everything: transcription, writing, design, video editing, and SEO optimization.',
             },
           },
           {
@@ -111,7 +111,7 @@ export default function ContentRepurposingSmallBusiness() {
             name: 'Which platforms should small businesses prioritize for repurposed content?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'For most small businesses, the platform priority by ROI is: (1) Email list — highest conversion rate at 3-5%, direct access to your audience. (2) LinkedIn — best organic reach for B2B businesses and professional services. (3) Blog/SEO — compounds over time, drives traffic for months or years. (4) YouTube — second-largest search engine, long content lifespan. (5) Instagram/TikTok — best for visual businesses and consumer-facing brands. Start with 2-3 platforms and expand as your repurposing system matures.',
+              text: 'For most small businesses, the platform priority by ROI is: (1) Email list, with the highest conversion rate at 3-5% and direct access to your audience. (2) LinkedIn, with the best organic reach for B2B businesses and professional services. (3) Blog/SEO, which compounds over time and drives traffic for months or years. (4) YouTube, the second-largest search engine with long content lifespan. (5) Instagram/TikTok, best for visual businesses and consumer-facing brands. Start with 2-3 platforms and expand as your repurposing system matures.',
             },
           },
           {
@@ -119,7 +119,7 @@ export default function ContentRepurposingSmallBusiness() {
             name: 'How often should a small business repurpose content?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Most small businesses should repurpose one piece of source content per month — typically a webinar, video, or presentation. This produces enough repurposed pieces (14-75+) to maintain a consistent presence across all platforms for 4-8 weeks. If you run webinars or create videos more frequently, you can repurpose 2-4 source pieces monthly. The key is consistency, not volume — repurposing one webinar every month beats creating content in random bursts.',
+              text: 'Most small businesses should repurpose one piece of source content per month, typically a webinar, video, or presentation. This produces enough repurposed pieces (14-75+) to maintain a consistent presence across all platforms for 4-8 weeks. If you run webinars or create videos more frequently, you can repurpose 2-4 source pieces monthly. The key is consistency, not volume. Repurposing one webinar every month beats creating content in random bursts.',
             },
           },
           {
@@ -189,7 +189,7 @@ export default function ContentRepurposingSmallBusiness() {
                 Content Repurposing for Small Business: How to Get Maximum ROI From Content You Already Have
               </h1>
               <p className="text-xl text-gray-600">
-                Content repurposing is the highest-ROI content strategy for small businesses. One 60-minute webinar becomes 14-75+ content pieces across LinkedIn, email, blog, YouTube, and social media — for a fraction of what new content creation costs. Small businesses that repurpose consistently generate 3-5x more content at 60-80% lower cost than those creating everything from scratch.
+                Content repurposing is the highest-ROI content strategy for small businesses. One 60-minute webinar becomes 14-75+ content pieces across LinkedIn, email, blog, YouTube, and social media, for a fraction of what new content creation costs. Small businesses that repurpose consistently generate 3-5x more content at 60-80% lower cost than those creating everything from scratch.
               </p>
             </header>
 
@@ -220,7 +220,7 @@ export default function ContentRepurposingSmallBusiness() {
                   That is 60-70% of your content being used once and forgotten. For a small business where every marketing dollar matters, that waste is unacceptable.
                 </p>
                 <p className="text-gray-700">
-                  Content repurposing fixes this. And you do not need a big budget or a marketing team to start. Here is how small businesses actually do it — from free DIY methods to done-for-you services. For a complete walkthrough of the repurposing process, start with our <Link href="/blog/webinar-repurposing-guide" className="text-blue-600 hover:text-blue-800 font-medium">webinar repurposing guide</Link>.
+                  Content repurposing fixes this. And you do not need a big budget or a marketing team to start. Here is how small businesses actually do it, from free DIY methods to done-for-you services. For a complete walkthrough of the repurposing process, start with our <Link href="/blog/webinar-repurposing-guide" className="text-blue-600 hover:text-blue-800 font-medium">webinar repurposing guide</Link>.
                 </p>
               </section>
 
@@ -228,7 +228,7 @@ export default function ContentRepurposingSmallBusiness() {
               <section id="content-waste" className="mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Why Small Businesses Waste Most of Their Content</h2>
                 <p className="text-gray-700 mb-4">
-                  The average small business creates 4-8 pieces of substantial content per month — blog posts, webinars, videos, presentations, or podcast episodes. Of those, most get published once on one platform and never reformatted for anywhere else.
+                  The average small business creates 4-8 pieces of substantial content per month: blog posts, webinars, videos, presentations, or podcast episodes. Of those, most get published once on one platform and never reformatted for anywhere else.
                 </p>
                 <p className="text-gray-700 mb-4">The numbers tell the story:</p>
                 <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-4">
@@ -259,7 +259,7 @@ export default function ContentRepurposingSmallBusiness() {
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">1. Webinars and live presentations (best ROI)</h3>
                 <p className="text-gray-700 mb-4">
-                  A single 60-minute webinar produces <strong>14-75+ content pieces</strong>: blog posts, LinkedIn posts, carousels, email sequences, video clips, quote graphics, podcast episodes, lead magnets, and newsletter editions. Webinars are the gold standard for repurposing because they contain structured teaching, stories, frameworks, and Q&A — all in your own voice.
+                  A single 60-minute webinar produces <strong>14-75+ content pieces</strong>: blog posts, LinkedIn posts, carousels, email sequences, video clips, quote graphics, podcast episodes, lead magnets, and newsletter editions. Webinars are the gold standard for repurposing because they contain structured teaching, stories, frameworks, and Q&A, all in your own voice.
                 </p>
                 <p className="text-gray-700 mb-6">
                   <strong>Output per hour:</strong> 14-75+ pieces per 60 minutes of source content. Nothing else comes close.
@@ -313,7 +313,7 @@ export default function ContentRepurposingSmallBusiness() {
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Step 1: Transcribe (30-45 minutes)</h3>
                 <p className="text-gray-700 mb-4">
-                  Upload your webinar or video to Descript ($24/month) or Otter.ai ($12/month). Clean up the transcript — remove filler words, fix speaker names, break into sections. This transcript is the foundation for everything else.
+                  Upload your webinar or video to Descript ($24/month) or Otter.ai ($12/month). Clean up the transcript: remove filler words, fix speaker names, break into sections. This transcript is the foundation for everything else.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Step 2: Write the blog post (2-3 hours)</h3>
@@ -323,12 +323,12 @@ export default function ContentRepurposingSmallBusiness() {
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Step 3: Create LinkedIn posts (1-2 hours)</h3>
                 <p className="text-gray-700 mb-4">
-                  Pull 5-8 key insights from the transcript. Each one becomes a LinkedIn post: hook line, insight or story, takeaway. Write them in batches — it is faster than writing one at a time.
+                  Pull 5-8 key insights from the transcript. Each one becomes a LinkedIn post: hook line, insight or story, takeaway. Write them in batches. It is faster than writing one at a time.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Step 4: Cut video clips (2-4 hours)</h3>
                 <p className="text-gray-700 mb-4">
-                  Watch the recording at 1.5x speed. Timestamp the 3-5 best moments — clear explanations, stories, quotable lines. Cut them into 30-60 second vertical clips using CapCut (free) or Descript. Add captions. Post to LinkedIn, Instagram Reels, YouTube Shorts, and TikTok.
+                  Watch the recording at 1.5x speed. Timestamp the 3-5 best moments: clear explanations, stories, quotable lines. Cut them into 30-60 second vertical clips using CapCut (free) or Descript. Add captions. Post to LinkedIn, Instagram Reels, YouTube Shorts, and TikTok.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Step 5: Build the email sequence (2-3 hours)</h3>
@@ -338,7 +338,7 @@ export default function ContentRepurposingSmallBusiness() {
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Step 6: Design graphics (1-2 hours)</h3>
                 <p className="text-gray-700 mb-6">
-                  Create a LinkedIn carousel (8-12 slides) and 5 quote cards in Canva ($13/month for Pro). Use your brand colors and fonts. Batch the design work — template one carousel and one quote card, then duplicate and edit.
+                  Create a LinkedIn carousel (8-12 slides) and 5 quote cards in Canva ($13/month for Pro). Use your brand colors and fonts. Batch the design work: template one carousel and one quote card, then duplicate and edit.
                 </p>
 
                 <p className="text-gray-700 mb-4">
@@ -362,7 +362,7 @@ export default function ContentRepurposingSmallBusiness() {
                   <li><strong>If your time is worth $75+/hour:</strong> Outsourcing saves you money. Every hour you spend on DIY repurposing costs more than the service fee.</li>
                 </ul>
                 <p className="text-gray-700">
-                  Most coaches and consultants we work with bill $150-$500/hour. For them, DIY repurposing is the most expensive option — it literally costs more in lost billable hours than hiring a service.
+                  Most coaches and consultants we work with bill $150-$500/hour. For them, DIY repurposing is the most expensive option. It literally costs more in lost billable hours than hiring a service.
                 </p>
               </section>
 
@@ -434,12 +434,12 @@ export default function ContentRepurposingSmallBusiness() {
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">1. Email list (highest ROI)</h3>
                 <p className="text-gray-700 mb-4">
-                  Email converts at 3-5% — higher than any social platform. Your email list is the only audience you own. Repurpose webinar insights into welcome sequences, weekly newsletters, and promotional emails. Every small business should make email their top distribution channel.
+                  Email converts at 3-5%, higher than any social platform. Your email list is the only audience you own. Repurpose webinar insights into welcome sequences, weekly newsletters, and promotional emails. Every small business should make email their top distribution channel.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">2. LinkedIn (best organic reach for B2B)</h3>
                 <p className="text-gray-700 mb-4">
-                  LinkedIn posts still reach 5-15% of your followers organically — far more than Facebook (1-2%) or Instagram (3-5%). For B2B small businesses, consultants, and professional service providers, LinkedIn is where your buyers spend time. Post 3-5 times per week with repurposed insights from your webinars.
+                  LinkedIn posts still reach 5-15% of your followers organically, far more than Facebook (1-2%) or Instagram (3-5%). For B2B small businesses, consultants, and professional service providers, LinkedIn is where your buyers spend time. Post 3-5 times per week with repurposed insights from your webinars.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">3. Blog/SEO (compounds over time)</h3>
@@ -449,7 +449,7 @@ export default function ContentRepurposingSmallBusiness() {
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">4. YouTube (long lifespan)</h3>
                 <p className="text-gray-700 mb-4">
-                  YouTube is the second-largest search engine. Upload your full webinar with chapters, a keyword-rich title, and a detailed description. Also post your short clips as YouTube Shorts. YouTube content has the longest lifespan of any platform — videos from 3-5 years ago still drive views.
+                  YouTube is the second-largest search engine. Upload your full webinar with chapters, a keyword-rich title, and a detailed description. Also post your short clips as YouTube Shorts. YouTube content has the longest lifespan of any platform. Videos from 3-5 years ago still drive views.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">5. Instagram/TikTok (best for consumer brands)</h3>
@@ -498,7 +498,7 @@ export default function ContentRepurposingSmallBusiness() {
                 </div>
 
                 <p className="text-gray-700 mb-4">
-                  <strong>Our recommendation:</strong> Start with DIY if your budget is under $500/month. Move to tool-assisted when you want to save time. Graduate to done-for-you when your time is worth more than the service fee — or when consistency matters more than saving money.
+                  <strong>Our recommendation:</strong> Start with DIY if your budget is under $500/month. Move to tool-assisted when you want to save time. Graduate to done-for-you when your time is worth more than the service fee, or when consistency matters more than saving money.
                 </p>
                 <p className="text-gray-700">
                   ContentRepurposeHub is the done-for-you option. You send your webinar recording, and within 7-10 business days you receive 14-75+ finished, optimized content pieces ready to publish. Plans start at $750/month.
@@ -513,15 +513,15 @@ export default function ContentRepurposingSmallBusiness() {
                   {[
                     {
                       q: 'What is content repurposing for small business?',
-                      a: 'Content repurposing for small business is the process of taking existing content — webinars, videos, presentations, podcast episodes, or blog posts — and reformatting it into multiple new content pieces for different platforms. A single 60-minute webinar can become 14-75+ pieces including blog posts, LinkedIn posts, email sequences, video clips, carousels, and lead magnets. It is the highest-ROI content strategy for small businesses because you build on work you already did.',
+                      a: 'Content repurposing for small business is the process of taking existing content (webinars, videos, presentations, podcast episodes, or blog posts) and reformatting it into multiple new content pieces for different platforms. A single 60-minute webinar can become 14-75+ pieces including blog posts, LinkedIn posts, email sequences, video clips, carousels, and lead magnets. It is the highest-ROI content strategy for small businesses because you build on work you already did.',
                     },
                     {
                       q: 'How much does content repurposing cost for a small business?',
-                      a: 'DIY costs $0-$50/month in tools but requires 15-25 hours of your time per piece of source content. Tool-assisted repurposing costs $50-$200/month plus 8-12 hours of your time. Done-for-you services like ContentRepurposeHub start at $750/month and require about 1 hour of your time — you send the recording and receive 14-75+ finished content pieces.',
+                      a: 'DIY costs $0-$50/month in tools but requires 15-25 hours of your time per piece of source content. Tool-assisted repurposing costs $50-$200/month plus 8-12 hours of your time. Done-for-you services like ContentRepurposeHub start at $750/month and require about 1 hour of your time. You send the recording and receive 14-75+ finished content pieces.',
                     },
                     {
                       q: 'What is the best content to repurpose for small business?',
-                      a: 'The three best content types are: (1) Webinars and live presentations — 14-75+ pieces per 60 minutes of source material. (2) Long-form videos and tutorials — 8-15 pieces per 30 minutes. (3) Podcast episodes — 5-10 pieces per episode. Webinars produce the most output because they contain structured teaching, stories, frameworks, and Q&A.',
+                      a: 'The three best content types are: (1) Webinars and live presentations, producing 14-75+ pieces per 60 minutes of source material. (2) Long-form videos and tutorials, producing 8-15 pieces per 30 minutes. (3) Podcast episodes, producing 5-10 pieces per episode. Webinars produce the most output because they contain structured teaching, stories, frameworks, and Q&A.',
                     },
                     {
                       q: 'Can I repurpose content myself or do I need to hire someone?',
@@ -529,11 +529,11 @@ export default function ContentRepurposingSmallBusiness() {
                     },
                     {
                       q: 'Which platforms should small businesses prioritize for repurposed content?',
-                      a: 'For most small businesses, the priority by ROI is: (1) Email list — highest conversion at 3-5%. (2) LinkedIn — best organic reach for B2B at 5-15%. (3) Blog/SEO — compounds over time, plus gets cited by AI search engines. (4) YouTube — long content lifespan. (5) Instagram/TikTok — best for consumer-facing brands. Start with 2-3 platforms and expand.',
+                      a: 'For most small businesses, the priority by ROI is: (1) Email list, with the highest conversion at 3-5%. (2) LinkedIn, with the best organic reach for B2B at 5-15%. (3) Blog/SEO, which compounds over time and gets cited by AI search engines. (4) YouTube, with long content lifespan. (5) Instagram/TikTok, best for consumer-facing brands. Start with 2-3 platforms and expand.',
                     },
                     {
                       q: 'How often should a small business repurpose content?',
-                      a: 'Repurpose one piece of source content per month — typically a webinar, video, or presentation. This produces 14-75+ pieces, enough content for 4-8 weeks across all platforms. Consistency beats volume. One webinar repurposed every month is better than random bursts of content creation.',
+                      a: 'Repurpose one piece of source content per month, typically a webinar, video, or presentation. This produces 14-75+ pieces, enough content for 4-8 weeks across all platforms. Consistency beats volume. One webinar repurposed every month is better than random bursts of content creation.',
                     },
                     {
                       q: 'What tools do small businesses need for content repurposing?',
@@ -555,7 +555,7 @@ export default function ContentRepurposingSmallBusiness() {
                   You do not need to create more content. You need to get more from the content you already have.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  Pick one webinar, video, or presentation from the past 6 months. Follow the DIY process above or hand it to a repurposing service. Either way, you will go from one piece of content to 14-75+ pieces — across email, LinkedIn, blog, YouTube, and social media.
+                  Pick one webinar, video, or presentation from the past 6 months. Follow the DIY process above or hand it to a repurposing service. Either way, you will go from one piece of content to 14-75+ pieces across email, LinkedIn, blog, YouTube, and social media.
                 </p>
                 <p className="text-gray-700">
                   That is what content repurposing for small business looks like in practice. Not more work. Better use of the work you already did. And if you want someone else to handle the entire process, <a href="https://cal.com/contentrepurposehub/30min" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 font-medium">book a free strategy call</a> and we will map out exactly what your existing content can become.

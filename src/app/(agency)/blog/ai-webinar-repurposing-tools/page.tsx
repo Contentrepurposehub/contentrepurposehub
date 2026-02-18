@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Can AI Repurpose Your Webinar Content? Tools, Limitations, and What Still Needs a Human',
-    description: 'An honest breakdown of 6 AI repurposing tools — what they do well, where they fall short, and when you still need human expertise.',
+    description: 'An honest breakdown of 6 AI repurposing tools: what they do well, where they fall short, and when you still need human expertise.',
     url: 'https://contentrepurposehub.com/blog/ai-webinar-repurposing-tools',
     siteName: 'ContentRepurposeHub',
     type: 'article',
@@ -78,7 +78,7 @@ export default function AIWebinarRepurposingTools() {
             name: 'Can AI fully repurpose a webinar?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'No. AI tools can handle about 30-40% of webinar repurposing — transcription, clip identification, and basic reformatting. But they cannot replicate your brand voice, understand your audience\'s pain points, build a strategic content calendar, or ensure quality across formats. The best results come from a hybrid approach: AI for the mechanical tasks, humans for strategy and voice.',
+              text: 'No. AI tools can handle about 30-40% of webinar repurposing: transcription, clip identification, and basic reformatting. But they cannot replicate your brand voice, understand your audience\'s pain points, build a strategic content calendar, or ensure quality across formats. The best results come from a hybrid approach: AI for the mechanical tasks, humans for strategy and voice.',
             },
           },
           {
@@ -102,7 +102,7 @@ export default function AIWebinarRepurposingTools() {
             name: 'Can ChatGPT repurpose webinar content?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'ChatGPT can reformat webinar transcripts into blog posts, social media posts, and email drafts. However, it produces generic output that lacks your specific voice, misses audience nuances, and requires significant editing. It works best as a first-draft tool — expect to spend 30-45 minutes editing every piece it generates to match your brand voice and quality standards.',
+              text: 'ChatGPT can reformat webinar transcripts into blog posts, social media posts, and email drafts. However, it produces generic output that lacks your specific voice, misses audience nuances, and requires significant editing. It works best as a first-draft tool. Expect to spend 30-45 minutes editing every piece it generates to match your brand voice and quality standards.',
             },
           },
           {
@@ -188,7 +188,7 @@ export default function AIWebinarRepurposingTools() {
                 Can AI Repurpose Your Webinar Content? Tools, Limitations, and What Still Needs a Human
               </h1>
               <p className="text-xl text-gray-600">
-                AI tools can handle about 30-40% of webinar repurposing — transcription, clip identification, and basic reformatting. But they can&apos;t replicate your voice, understand your audience&apos;s pain points, or build a strategic content calendar. Here&apos;s an honest breakdown of 6 popular AI repurposing tools, what they actually do well, and where human expertise still matters.
+                AI tools can handle about 30-40% of webinar repurposing: transcription, clip identification, and basic reformatting. But they can&apos;t replicate your voice, understand your audience&apos;s pain points, or build a strategic content calendar. Here&apos;s an honest breakdown of 6 popular AI repurposing tools, what they actually do well, and where human expertise still matters.
               </p>
             </header>
 
@@ -224,12 +224,12 @@ export default function AIWebinarRepurposingTools() {
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Short-Form Clip Identification</h3>
                 <p className="text-gray-700 mb-4">
-                  Tools like Opus Clip and Vizard analyze your webinar and automatically identify the most engaging 30-90 second segments. They score clips based on factors like speaking energy, topic completeness, and hook potential. The best clips they find are genuinely good — roughly 60-70% of what a skilled human editor would choose.
+                  Tools like Opus Clip and Vizard analyze your webinar and automatically identify the most engaging 30-90 second segments. They score clips based on factors like speaking energy, topic completeness, and hook potential. The best clips they find are genuinely good, roughly 60-70% of what a skilled human editor would choose.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Basic Reformatting</h3>
                 <p className="text-gray-700 mb-4">
-                  ChatGPT and Castmagic can take a transcript and restructure it into blog post format, social media posts, or email drafts. The output is a usable first draft. Not a finished product — but it beats staring at a blank page.
+                  ChatGPT and Castmagic can take a transcript and restructure it into blog post format, social media posts, or email drafts. The output is a usable first draft. Not a finished product, but it beats staring at a blank page.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Auto-Captioning</h3>
@@ -248,7 +248,7 @@ export default function AIWebinarRepurposingTools() {
               <section id="what-ai-cant-do" className="mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">What AI Can&apos;t Do (Yet)</h2>
                 <p className="text-gray-700 mb-4">
-                  Here is where every AI repurposing tool hits a wall. And these are not minor gaps — they are the difference between content that generates leads and content that gets scrolled past.
+                  Here is where every AI repurposing tool hits a wall. And these are not minor gaps. They are the difference between content that generates leads and content that gets scrolled past.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Match Your Brand Voice</h3>
@@ -258,7 +258,7 @@ export default function AIWebinarRepurposingTools() {
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Understand Your Audience&apos;s Pain Points</h3>
                 <p className="text-gray-700 mb-4">
-                  You know which topics make your audience lean forward. You know which objections they raise on sales calls. You know what keeps them up at night. AI knows none of this. It will repurpose the section about tax strategy and the section about mindset with equal weight — even if your audience only cares about one of those.
+                  You know which topics make your audience lean forward. You know which objections they raise on sales calls. You know what keeps them up at night. AI knows none of this. It will repurpose the section about tax strategy and the section about mindset with equal weight, even if your audience only cares about one of those.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Build a Strategic Content Calendar</h3>
@@ -268,12 +268,12 @@ export default function AIWebinarRepurposingTools() {
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Quality Control Across Formats</h3>
                 <p className="text-gray-700 mb-4">
-                  A blog post has different quality standards than a LinkedIn carousel. An email sequence needs a different structure than a Twitter thread. AI treats everything the same way — dump text into a template. The result is content that is technically correct but misses the nuances of each platform. A LinkedIn post that reads like a blog paragraph. An email that reads like a social caption.
+                  A blog post has different quality standards than a LinkedIn carousel. An email sequence needs a different structure than a Twitter thread. AI treats everything the same way: dump text into a template. The result is content that is technically correct but misses the nuances of each platform. A LinkedIn post that reads like a blog paragraph. An email that reads like a social caption.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">SEO and AI Search Optimization</h3>
                 <p className="text-gray-700 mb-4">
-                  Real search optimization — the kind that gets your content ranking on Google and cited by ChatGPT, Perplexity, and Gemini — requires keyword research, competitive analysis, structured data markup, and strategic internal linking. AI tools do not do any of this. They reformat text. That is not the same as optimizing it.
+                  Real search optimization, the kind that gets your content ranking on Google and cited by ChatGPT, Perplexity, and Gemini, requires keyword research, competitive analysis, structured data markup, and strategic internal linking. AI tools do not do any of this. They reformat text. That is not the same as optimizing it.
                 </p>
               </section>
 
@@ -297,15 +297,15 @@ export default function AIWebinarRepurposingTools() {
               <section id="tool-reviews" className="mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">6 AI Webinar Repurposing Tools Reviewed (Honest Ratings)</h2>
                 <p className="text-gray-700 mb-6">
-                  We tested each of these tools with real webinar recordings from coaching clients. Here is what actually happened — not what the marketing pages promise.
+                  We tested each of these tools with real webinar recordings from coaching clients. Here is what actually happened, not what the marketing pages promise.
                 </p>
 
                 {/* Tool 1: Descript */}
-                <h3 className="text-xl font-bold text-gray-900 mb-2">1. Descript — Best All-in-One Editing Tool</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">1. Descript: Best All-in-One Editing Tool</h3>
                 <p className="text-gray-700 mb-2"><strong>Rating: 8/10 for transcription and editing, 4/10 for repurposing</strong></p>
                 <p className="text-gray-700 mb-2"><strong>Pricing:</strong> Free plan available. Pro at $24/month. Business at $33/month.</p>
                 <p className="text-gray-700 mb-4">
-                  Descript is the best transcription and video editing tool for webinar content. Edit your video by editing the text transcript — delete a sentence from the transcript, and it removes the corresponding video segment. That alone is worth the subscription for anyone cutting webinar clips regularly.
+                  Descript is the best transcription and video editing tool for webinar content. Edit your video by editing the text transcript. Delete a sentence from the transcript, and it removes the corresponding video segment. That alone is worth the subscription for anyone cutting webinar clips regularly.
                 </p>
                 <p className="text-gray-700 mb-4">
                   Where it falls short: Descript does not repurpose content into different formats. It gives you a clean transcript and lets you cut video clips. Turning that into blog posts, LinkedIn carousels, email sequences, and social content? That is still on you.
@@ -315,21 +315,21 @@ export default function AIWebinarRepurposingTools() {
                 </p>
 
                 {/* Tool 2: Opus Clip */}
-                <h3 className="text-xl font-bold text-gray-900 mb-2">2. Opus Clip — Best for Automated Short-Form Clips</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">2. Opus Clip: Best for Automated Short-Form Clips</h3>
                 <p className="text-gray-700 mb-2"><strong>Rating: 7/10 for clip generation, 3/10 for content repurposing</strong></p>
                 <p className="text-gray-700 mb-2"><strong>Pricing:</strong> Free plan (limited). Starter at $15/month. Pro at $48/month.</p>
                 <p className="text-gray-700 mb-4">
                   Upload your webinar, and Opus Clip uses AI to find the best moments and automatically cut them into vertical shorts with captions. It assigns each clip a &quot;virality score&quot; from 0-100. In our testing, clips scoring above 70 were genuinely good about 65% of the time. Clips below 50 were mostly unusable.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  The limitation: it only produces short-form video clips. No blog posts, no email content, no LinkedIn text posts, no lead magnets. And the clips still need review — sometimes it cuts mid-sentence or misses the actual punchline.
+                  The limitation: it only produces short-form video clips. No blog posts, no email content, no LinkedIn text posts, no lead magnets. And the clips still need review. Sometimes it cuts mid-sentence or misses the actual punchline.
                 </p>
                 <p className="text-gray-700 mb-6">
                   <strong>Best for:</strong> Creators who prioritize TikTok, Instagram Reels, and YouTube Shorts and want to speed up the clip-cutting process.
                 </p>
 
                 {/* Tool 3: Repurpose.io */}
-                <h3 className="text-xl font-bold text-gray-900 mb-2">3. Repurpose.io — Best for Cross-Platform Distribution</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">3. Repurpose.io: Best for Cross-Platform Distribution</h3>
                 <p className="text-gray-700 mb-2"><strong>Rating: 6/10 for distribution, 2/10 for actual repurposing</strong></p>
                 <p className="text-gray-700 mb-2"><strong>Pricing:</strong> $32/month (Content Marketer plan). $83/month (Agency plan).</p>
                 <p className="text-gray-700 mb-4">
@@ -340,21 +340,21 @@ export default function AIWebinarRepurposingTools() {
                 </p>
 
                 {/* Tool 4: ChatGPT */}
-                <h3 className="text-xl font-bold text-gray-900 mb-2">4. ChatGPT — Best for First Drafts (With Heavy Editing)</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">4. ChatGPT: Best for First Drafts (With Heavy Editing)</h3>
                 <p className="text-gray-700 mb-2"><strong>Rating: 6/10 for draft generation, 3/10 for publish-ready content</strong></p>
                 <p className="text-gray-700 mb-2"><strong>Pricing:</strong> Free version available. Plus at $20/month. Pro at $200/month.</p>
                 <p className="text-gray-700 mb-4">
-                  Paste your webinar transcript into ChatGPT and ask it to create a blog post, LinkedIn posts, or email sequence. It will produce something. The structure will be reasonable. The tone will be generic. Every post will have that unmistakable AI voice — the predictable sentence patterns, the safe phrasing, the lack of specific opinions.
+                  Paste your webinar transcript into ChatGPT and ask it to create a blog post, LinkedIn posts, or email sequence. It will produce something. The structure will be reasonable. The tone will be generic. Every post will have that unmistakable AI voice: the predictable sentence patterns, the safe phrasing, the lack of specific opinions.
                 </p>
                 <p className="text-gray-700 mb-4">
                   Here is the real cost: you will spend 30-45 minutes editing each piece to sound like you instead of a language model. Multiply that across 14+ content pieces and you are looking at 8-12 hours of editing work. You saved time on the blank page but traded it for editing time.
                 </p>
                 <p className="text-gray-700 mb-6">
-                  <strong>Best for:</strong> Coaches who are decent writers and want a first draft to work from. Not a replacement for writing — a starting point.
+                  <strong>Best for:</strong> Coaches who are decent writers and want a first draft to work from. Not a replacement for writing. A starting point.
                 </p>
 
                 {/* Tool 5: Castmagic */}
-                <h3 className="text-xl font-bold text-gray-900 mb-2">5. Castmagic — Best for Podcast-Style Repurposing</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">5. Castmagic: Best for Podcast-Style Repurposing</h3>
                 <p className="text-gray-700 mb-2"><strong>Rating: 7/10 for content generation, 4/10 for quality without editing</strong></p>
                 <p className="text-gray-700 mb-2"><strong>Pricing:</strong> Starter at $23/month. Pro at $49/month. Enterprise at $99/month.</p>
                 <p className="text-gray-700 mb-4">
@@ -368,11 +368,11 @@ export default function AIWebinarRepurposingTools() {
                 </p>
 
                 {/* Tool 6: Vizard */}
-                <h3 className="text-xl font-bold text-gray-900 mb-2">6. Vizard — Best for Video-to-Video Repurposing</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">6. Vizard: Best for Video-to-Video Repurposing</h3>
                 <p className="text-gray-700 mb-2"><strong>Rating: 7/10 for video clips, 2/10 for non-video content</strong></p>
                 <p className="text-gray-700 mb-2"><strong>Pricing:</strong> Free plan available. Pro at $20/month. Business at $60/month.</p>
                 <p className="text-gray-700 mb-4">
-                  Vizard works similarly to Opus Clip but with a stronger focus on longer-form clips (1-3 minutes) alongside shorts. It auto-detects topics within your webinar and creates clips organized by subject. The topic detection is surprisingly accurate — it correctly identified distinct teaching segments about 80% of the time in our tests.
+                  Vizard works similarly to Opus Clip but with a stronger focus on longer-form clips (1-3 minutes) alongside shorts. It auto-detects topics within your webinar and creates clips organized by subject. The topic detection is surprisingly accurate. It correctly identified distinct teaching segments about 80% of the time in our tests.
                 </p>
                 <p className="text-gray-700 mb-6">
                   <strong>Best for:</strong> Creators who want both short-form and mid-length clips from webinars, organized by topic.
@@ -400,11 +400,11 @@ export default function AIWebinarRepurposingTools() {
                     <tbody>
                       {[
                         ['Descript', '$24-$33', 'Transcription + editing', 'Transcript, video clips', 'No multi-format repurposing'],
-                        ['Opus Clip', '$15-$48', 'Auto short-form clips', 'Vertical video clips', 'Video only — no text content'],
+                        ['Opus Clip', '$15-$48', 'Auto short-form clips', 'Vertical video clips', 'Video only, no text content'],
                         ['Repurpose.io', '$32-$83', 'Cross-platform posting', 'Distribution only', 'Does not create new content'],
                         ['ChatGPT', '$0-$20', 'First drafts from transcript', 'Text in any format', 'Generic voice, heavy editing needed'],
                         ['Castmagic', '$23-$99', 'Multi-format text content', 'Blog, social, email drafts', 'No visual or video content'],
-                        ['Vizard', '$0-$60', 'Topic-based video clips', 'Short + mid-length clips', 'Video only — no text content'],
+                        ['Vizard', '$0-$60', 'Topic-based video clips', 'Short + mid-length clips', 'Video only, no text content'],
                       ].map((row, i) => (
                         <tr key={i}>
                           <td className="p-3 border border-gray-200 font-medium text-gray-900">{row[0]}</td>
@@ -420,7 +420,7 @@ export default function AIWebinarRepurposingTools() {
 
                 <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg my-6">
                   <p className="text-gray-800 font-medium">
-                    Notice the pattern? Every tool does one thing reasonably well. None of them handle the full repurposing workflow — from raw webinar recording to 14+ publish-ready, search-optimized content pieces across all platforms.
+                    Notice the pattern? Every tool does one thing reasonably well. None of them handle the full repurposing workflow, from raw webinar recording to 14+ publish-ready, search-optimized content pieces across all platforms.
                   </p>
                 </div>
               </section>
@@ -435,11 +435,11 @@ export default function AIWebinarRepurposingTools() {
 
                 <div className="space-y-4 my-6">
                   {[
-                    { step: 'Step 1', task: 'AI transcribes the webinar', detail: '5 minutes, 90-95% accuracy. Human reviews and fixes errors — 20 minutes.' },
-                    { step: 'Step 2', task: 'AI identifies potential clips', detail: 'AI flags 15-20 candidate moments. Human selects the best 5-8 and refines the cut points — 30 minutes.' },
-                    { step: 'Step 3', task: 'AI generates content drafts', detail: 'ChatGPT or Castmagic creates first drafts for blog, social, and email. Human rewrites for voice, accuracy, and platform fit — 3-5 hours.' },
-                    { step: 'Step 4', task: 'Human builds the content strategy', detail: 'Which pieces publish when. Which platforms get which angles. How the pieces link together for SEO. How content drives toward a CTA. Pure human work — 1-2 hours.' },
-                    { step: 'Step 5', task: 'Human handles search optimization', detail: 'Keyword research, meta descriptions, structured data, internal linking, AI search optimization. No AI tool does this reliably — 1-2 hours.' },
+                    { step: 'Step 1', task: 'AI transcribes the webinar', detail: '5 minutes, 90-95% accuracy. Human reviews and fixes errors, about 20 minutes.' },
+                    { step: 'Step 2', task: 'AI identifies potential clips', detail: 'AI flags 15-20 candidate moments. Human selects the best 5-8 and refines the cut points, about 30 minutes.' },
+                    { step: 'Step 3', task: 'AI generates content drafts', detail: 'ChatGPT or Castmagic creates first drafts for blog, social, and email. Human rewrites for voice, accuracy, and platform fit, about 3-5 hours.' },
+                    { step: 'Step 4', task: 'Human builds the content strategy', detail: 'Which pieces publish when. Which platforms get which angles. How the pieces link together for SEO. How content drives toward a CTA. Pure human work, about 1-2 hours.' },
+                    { step: 'Step 5', task: 'Human handles search optimization', detail: 'Keyword research, meta descriptions, structured data, internal linking, AI search optimization. No AI tool does this reliably. About 1-2 hours.' },
                   ].map((item, i) => (
                     <div key={i} className="flex gap-4 items-start">
                       <div className="bg-blue-100 text-blue-700 px-3 py-1 rounded-lg text-sm font-medium whitespace-nowrap">{item.step}</div>
@@ -452,7 +452,7 @@ export default function AIWebinarRepurposingTools() {
                 </div>
 
                 <p className="text-gray-700 mb-4">
-                  This is exactly the process ContentRepurposeHub uses. We are not anti-AI — we use AI tools throughout our workflow. But we add the strategic thinking, voice matching, and search optimization that AI cannot do. The result is content that sounds like you, not like a chatbot. For a deeper look at the full repurposing workflow, see our <Link href="/blog/content-repurposing-workflow-coaches" className="text-blue-600 hover:text-blue-800 font-medium">content repurposing workflow guide for coaches</Link>.
+                  This is exactly the process ContentRepurposeHub uses. We are not anti-AI. We use AI tools throughout our workflow. But we add the strategic thinking, voice matching, and search optimization that AI cannot do. The result is content that sounds like you, not like a chatbot. For a deeper look at the full repurposing workflow, see our <Link href="/blog/content-repurposing-workflow-coaches" className="text-blue-600 hover:text-blue-800 font-medium">content repurposing workflow guide for coaches</Link>.
                 </p>
               </section>
 
@@ -495,10 +495,10 @@ export default function AIWebinarRepurposingTools() {
                 <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-4">
                   <li>Your brand voice is a key differentiator (it usually is for coaches)</li>
                   <li>You want content that ranks on Google and gets cited by AI search engines</li>
-                  <li>You need all formats — blog, social, email, video, lead magnets</li>
-                  <li>Your time is worth more than $50/hour (the breakeven point — see cost comparison below)</li>
+                  <li>You need all formats: blog, social, email, video, lead magnets</li>
+                  <li>Your time is worth more than $50/hour (the breakeven point; see cost comparison below)</li>
                   <li>You want a strategic content calendar, not a random pile of content</li>
-                  <li>Consistency matters — you need content delivered every month, not when you find time</li>
+                  <li>Consistency matters. You need content delivered every month, not when you find time</li>
                 </ul>
 
                 <p className="text-gray-700 mb-4">
@@ -544,7 +544,7 @@ export default function AIWebinarRepurposingTools() {
                 </div>
 
                 <p className="text-gray-700 mb-4">
-                  <strong>The breakeven calculation:</strong> If your time is worth $75/hour (reasonable for most coaches), 10 hours of editing work per webinar costs you $750 in opportunity cost. Add $150 for the AI tool stack. That is $900/month total — more than the starting price of a done-for-you service that delivers better quality, more content pieces, and full search optimization.
+                  <strong>The breakeven calculation:</strong> If your time is worth $75/hour (reasonable for most coaches), 10 hours of editing work per webinar costs you $750 in opportunity cost. Add $150 for the AI tool stack. That is $900/month total, more than the starting price of a done-for-you service that delivers better quality, more content pieces, and full search optimization.
                 </p>
                 <p className="text-gray-700 mb-4">
                   The math shifts even further when you factor in what AI tools do not produce: SEO-optimized content that ranks on Google, AI-search-optimized content that gets cited by ChatGPT and Perplexity, and a strategic content calendar that builds authority over time. For a complete breakdown of repurposing costs, see our <Link href="/blog/webinar-repurposing-guide" className="text-blue-600 hover:text-blue-800 font-medium">webinar repurposing guide</Link>.
@@ -585,7 +585,7 @@ export default function AIWebinarRepurposingTools() {
                   {[
                     {
                       q: 'Can AI fully repurpose a webinar?',
-                      a: 'No. AI tools can handle about 30-40% of webinar repurposing — transcription, clip identification, and basic reformatting. But they cannot replicate your brand voice, understand your audience\'s pain points, build a strategic content calendar, or ensure quality across formats. The best results come from a hybrid approach: AI for the mechanical tasks, humans for strategy and voice.',
+                      a: 'No. AI tools can handle about 30-40% of webinar repurposing: transcription, clip identification, and basic reformatting. But they cannot replicate your brand voice, understand your audience\'s pain points, build a strategic content calendar, or ensure quality across formats. The best results come from a hybrid approach: AI for the mechanical tasks, humans for strategy and voice.',
                     },
                     {
                       q: 'What is the best AI tool for webinar repurposing?',
@@ -597,7 +597,7 @@ export default function AIWebinarRepurposingTools() {
                     },
                     {
                       q: 'Can ChatGPT repurpose webinar content?',
-                      a: 'ChatGPT can reformat webinar transcripts into blog posts, social media posts, and email drafts. However, it produces generic output that lacks your specific voice, misses audience nuances, and requires significant editing. It works best as a first-draft tool — expect to spend 30-45 minutes editing every piece it generates to match your brand voice and quality standards.',
+                      a: 'ChatGPT can reformat webinar transcripts into blog posts, social media posts, and email drafts. However, it produces generic output that lacks your specific voice, misses audience nuances, and requires significant editing. It works best as a first-draft tool. Expect to spend 30-45 minutes editing every piece it generates to match your brand voice and quality standards.',
                     },
                     {
                       q: 'Is AI-repurposed content good enough to publish?',
@@ -627,7 +627,7 @@ export default function AIWebinarRepurposingTools() {
                   AI tools are useful. They are not sufficient. Descript will give you a great transcript. Opus Clip will find decent short-form clips. ChatGPT will produce a workable first draft. But none of them will give you a voice-matched, search-optimized, strategically planned content library from your webinar.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  That is not a knock on the tools. They do what they are designed to do. The problem is that webinar repurposing requires more than what any single tool — or stack of tools — is designed to do.
+                  That is not a knock on the tools. They do what they are designed to do. The problem is that webinar repurposing requires more than what any single tool, or stack of tools, is designed to do.
                 </p>
                 <p className="text-gray-700">
                   If you want to test the waters, start with Descript for transcription and ChatGPT for first drafts. Budget 8-12 hours per webinar for editing and strategy. And if you reach the point where your time is better spent coaching clients than editing AI output, <a href="https://cal.com/contentrepurposehub/30min" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 font-medium">book a free strategy call</a> and we will show you how the hybrid approach works.

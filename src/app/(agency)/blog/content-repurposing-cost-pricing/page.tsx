@@ -197,7 +197,7 @@ export default function ContentRepurposingCostPricing() {
                 How Much Does Content Repurposing Cost? Complete Pricing Breakdown for 2026
               </h1>
               <p className="text-xl text-gray-600">
-                Content repurposing costs between $500-$3,000/month for done-for-you services, or $30-$200/month for DIY tools (plus 15-20 hours of your time). The sweet spot for most coaches is $750-$1,500/month, which produces 14-75+ content pieces per webinar. At $750/month for 14 pieces, that&apos;s roughly $54 per content piece — compared to $200-$500 per piece from a freelance writer.
+                Content repurposing costs between $500-$3,000/month for done-for-you services, or $30-$200/month for DIY tools (plus 15-20 hours of your time). The sweet spot for most coaches is $750-$1,500/month, which produces 14-75+ content pieces per webinar. At $750/month for 14 pieces, that&apos;s roughly $54 per content piece, compared to $200-$500 per piece from a freelance writer.
               </p>
             </header>
 
@@ -387,7 +387,7 @@ export default function ContentRepurposingCostPricing() {
                   <strong>Total DIY tool cost: $63-$129/month.</strong> Some coaches already pay for a few of these, so your actual new spend might be lower.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  But here&apos;s the thing. The tools are the cheap part. The expensive part is you. Repurposing one 60-minute webinar into 14+ content pieces takes 15-20 hours of focused work — transcribing, writing, editing, designing, formatting, and scheduling. If your coaching rate is $150-$300/hour, that&apos;s $2,250-$6,000 in opportunity cost sitting behind a screen instead of serving clients.
+                  But here&apos;s the thing. The tools are the cheap part. The expensive part is you. Repurposing one 60-minute webinar into 14+ content pieces takes 15-20 hours of focused work: transcribing, writing, editing, designing, formatting, and scheduling. If your coaching rate is $150-$300/hour, that&apos;s $2,250-$6,000 in opportunity cost sitting behind a screen instead of serving clients.
                 </p>
                 <p className="text-gray-700">
                   DIY works if you genuinely enjoy content creation and have the hours to spare. For a deeper comparison, check our guide on <Link href="/blog/content-repurposing-diy-vs-service" className="text-blue-600 hover:text-blue-800 font-medium">DIY vs. hiring a repurposing service</Link>.
@@ -430,13 +430,13 @@ export default function ContentRepurposingCostPricing() {
                 </div>
 
                 <p className="text-gray-700 mb-4">
-                  <strong>Total freelancer cost per webinar: $1,400-$4,100.</strong> And that is before you factor in your time managing the freelancer — sending the recording, explaining your voice and audience, reviewing drafts, requesting revisions, and coordinating delivery across formats.
+                  <strong>Total freelancer cost per webinar: $1,400-$4,100.</strong> And that is before you factor in your time managing the freelancer: sending the recording, explaining your voice and audience, reviewing drafts, requesting revisions, and coordinating delivery across formats.
                 </p>
                 <p className="text-gray-700 mb-4">
                   Most freelancers specialize in one format. Your blog writer probably does not edit video clips. Your video editor does not write email sequences. So you end up managing 2-3 freelancers per webinar, which adds another 5-8 hours of project management to your plate.
                 </p>
                 <p className="text-gray-700">
-                  The quality can be excellent — but only if you find great freelancers and invest time training them on your voice. That process alone typically takes 2-3 months.
+                  The quality can be excellent, but only if you find great freelancers and invest time training them on your voice. That process alone typically takes 2-3 months.
                 </p>
               </section>
 
@@ -469,7 +469,7 @@ export default function ContentRepurposingCostPricing() {
                   <li><strong>$5,000+/month:</strong> Full-service content marketing. 25+ pieces, multiple formats, paid ad creative, reporting. Weekly calls.</li>
                 </ul>
                 <p className="text-gray-700 mb-4">
-                  The problem with agencies for webinar repurposing specifically: most are generalists. They create content from scratch and treat your webinar as one input among many. They do not specialize in extracting maximum content from a single recording. And very few optimize content for AI search engines like ChatGPT, Perplexity, and Gemini — which is increasingly where your potential clients discover you.
+                  The problem with agencies for webinar repurposing specifically: most are generalists. They create content from scratch and treat your webinar as one input among many. They do not specialize in extracting maximum content from a single recording. And very few optimize content for AI search engines like ChatGPT, Perplexity, and Gemini, which is increasingly where your potential clients discover you.
                 </p>
                 <p className="text-gray-700">
                   Agencies also typically require 3-6 month contracts. If the fit is not right, you are locked in.
@@ -518,7 +518,7 @@ export default function ContentRepurposingCostPricing() {
                 </div>
 
                 <p className="text-gray-700 mb-4">
-                  Every plan includes Google SEO optimization and AI search optimization — meaning your content is structured to get cited by ChatGPT, Perplexity, Gemini, and other AI assistants. First delivery in 7-10 business days.
+                  Every plan includes Google SEO optimization and AI search optimization, meaning your content is structured to get cited by ChatGPT, Perplexity, Gemini, and other AI assistants. First delivery in 7-10 business days.
                 </p>
                 <p className="text-gray-700">
                   Your time commitment: roughly 1 hour per month. Send the webinar recording, approve the content, done. Compare that to 15-20 hours of DIY work or 5-8 hours of freelancer management. For help deciding which approach fits your situation, read our guide on <Link href="/blog/how-to-choose-content-repurposing-service" className="text-blue-600 hover:text-blue-800 font-medium">how to choose a content repurposing service</Link>.
@@ -676,7 +676,7 @@ export default function ContentRepurposingCostPricing() {
                     {/* Bottom comparison callout */}
                     <div className="bg-gray-50 border-t border-gray-200 px-6 py-4">
                       <p className="text-center text-sm text-gray-600">
-                        <span className="font-semibold text-gray-900">The takeaway:</span> ContentRepurposeHub delivers each piece for <span className="font-bold text-emerald-700">$54</span> — that is <span className="font-bold text-emerald-700">74% less</span> than a freelancer and <span className="font-bold text-emerald-700">75% less</span> than an agency, with SEO + AI search optimization included.
+                        <span className="font-semibold text-gray-900">The takeaway:</span> ContentRepurposeHub delivers each piece for <span className="font-bold text-emerald-700">$54</span>. That is <span className="font-bold text-emerald-700">74% less</span> than a freelancer and <span className="font-bold text-emerald-700">75% less</span> than an agency, with SEO + AI search optimization included.
                       </p>
                     </div>
                   </div>
@@ -686,7 +686,7 @@ export default function ContentRepurposingCostPricing() {
                 </figure>
 
                 <p className="text-gray-700">
-                  The math is simple. At $54 per content piece (Growth plan), ContentRepurposeHub costs less than one-third of what a freelancer charges per piece — and delivers SEO and AI search optimization included. At the Authority level ($20/piece), you are getting professional, optimized content for roughly the cost of a cup of coffee.
+                  The math is simple. At $54 per content piece (Growth plan), ContentRepurposeHub costs less than one-third of what a freelancer charges per piece, and delivers SEO and AI search optimization included. At the Authority level ($20/piece), you are getting professional, optimized content for roughly the cost of a cup of coffee.
                 </p>
               </section>
 
@@ -717,17 +717,17 @@ export default function ContentRepurposingCostPricing() {
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Your Time (The Biggest Hidden Cost)</h3>
                 <p className="text-gray-700 mb-4">
-                  If you earn $200/hour coaching clients, every hour you spend repurposing content costs you $200 in lost revenue. DIY repurposing eats 15-20 hours per webinar. That is $3,000-$4,000 in opportunity cost — more than double the price of a done-for-you service.
+                  If you earn $200/hour coaching clients, every hour you spend repurposing content costs you $200 in lost revenue. DIY repurposing eats 15-20 hours per webinar. That is $3,000-$4,000 in opportunity cost, more than double the price of a done-for-you service.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Revision Rounds</h3>
                 <p className="text-gray-700 mb-4">
-                  Freelancers and agencies typically include 1-2 revision rounds. After that, you pay extra — usually $50-$150 per revision per piece. If your freelancer does not nail your voice right away (and they rarely do on the first try), revision costs add up. Three rounds of revisions on 10 pieces can add $500-$1,500 to your monthly bill.
+                  Freelancers and agencies typically include 1-2 revision rounds. After that, you pay extra, usually $50-$150 per revision per piece. If your freelancer does not nail your voice right away (and they rarely do on the first try), revision costs add up. Three rounds of revisions on 10 pieces can add $500-$1,500 to your monthly bill.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Strategy and Direction</h3>
                 <p className="text-gray-700 mb-4">
-                  Freelancers execute. They do not create strategy. Deciding which content to create from each webinar, which keywords to target, how to structure pieces for SEO and AI search — that is either on you (more hours) or costs extra from an agency ($500-$1,500/month for a strategy layer).
+                  Freelancers execute. They do not create strategy. Deciding which content to create from each webinar, which keywords to target, how to structure pieces for SEO and AI search: that is either on you (more hours) or costs extra from an agency ($500-$1,500/month for a strategy layer).
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Tool Subscriptions You Forget About</h3>
@@ -737,7 +737,7 @@ export default function ContentRepurposingCostPricing() {
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Inconsistency Tax</h3>
                 <p className="text-gray-700">
-                  The biggest hidden cost is not financial — it is the cost of inconsistency. When you skip a month because you got busy, your SEO momentum stalls, your email list cools down, and your social media reach drops. Rebuilding that momentum costs more than maintaining it ever would. A service delivers every month regardless of how busy you are.
+                  The biggest hidden cost is not financial. It is the cost of inconsistency. When you skip a month because you got busy, your SEO momentum stalls, your email list cools down, and your social media reach drops. Rebuilding that momentum costs more than maintaining it ever would. A service delivers every month regardless of how busy you are.
                 </p>
               </section>
 
@@ -756,7 +756,7 @@ export default function ContentRepurposingCostPricing() {
                 </div>
 
                 <p className="text-gray-700 mb-4">
-                  Here is a real example. Say you pay $750/month for the ContentRepurposeHub Growth plan. Over 6 months, that is $4,500. If your repurposed content (blog posts ranking on Google, LinkedIn posts reaching new audiences, email sequences nurturing leads) brings in 2 new coaching clients at $3,000 each, that is $6,000 in revenue — a 33% return on your investment.
+                  Here is a real example. Say you pay $750/month for the ContentRepurposeHub Growth plan. Over 6 months, that is $4,500. If your repurposed content (blog posts ranking on Google, LinkedIn posts reaching new audiences, email sequences nurturing leads) brings in 2 new coaching clients at $3,000 each, that is $6,000 in revenue, a 33% return on your investment.
                 </p>
                 <p className="text-gray-700 mb-4">
                   But here is what makes repurposing different from paid ads: the content keeps working. That blog post you published in month 1 still ranks on Google in month 12. Your email sequence still nurtures every new subscriber. The return compounds over time instead of stopping the moment you stop paying.
@@ -790,12 +790,12 @@ export default function ContentRepurposingCostPricing() {
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">SEO and AI Search Optimization</h3>
                 <p className="text-gray-700 mb-4">
-                  Basic content creation is cheaper than content that is optimized for Google SEO and AI search engines. Adding keyword research, proper heading structure, JSON-LD schema markup, and AI-citation formatting increases the cost — but also dramatically increases the value of every piece.
+                  Basic content creation is cheaper than content that is optimized for Google SEO and AI search engines. Adding keyword research, proper heading structure, JSON-LD schema markup, and AI-citation formatting increases the cost, but also dramatically increases the value of every piece.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Voice Matching</h3>
                 <p className="text-gray-700">
-                  Generic content is cheap. Content that sounds like you — matching your voice, tone, vocabulary, and personality — requires more skill and time. This is why working with a service that specializes in coaching and consulting content matters. They learn your voice once and apply it to every piece, month after month.
+                  Generic content is cheap. Content that sounds like you, matching your voice, tone, vocabulary, and personality, requires more skill and time. This is why working with a service that specializes in coaching and consulting content matters. They learn your voice once and apply it to every piece, month after month.
                 </p>
               </section>
 
@@ -876,7 +876,7 @@ export default function ContentRepurposingCostPricing() {
               <section className="mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">The Bottom Line on Content Repurposing Costs</h2>
                 <p className="text-gray-700 mb-4">
-                  You have four paths. DIY costs the least in dollars but the most in time. Freelancers give you quality but eat your budget per piece. Agencies offer full service but at a premium. And specialized done-for-you services like ContentRepurposeHub hit the sweet spot — professional content, high volume, low cost per piece, and almost zero time required from you.
+                  You have four paths. DIY costs the least in dollars but the most in time. Freelancers give you quality but eat your budget per piece. Agencies offer full service but at a premium. And specialized done-for-you services like ContentRepurposeHub hit the sweet spot: professional content, high volume, low cost per piece, and almost zero time required from you.
                 </p>
                 <p className="text-gray-700 mb-4">
                   For most coaches and consultants, the real question is not &quot;can I afford a repurposing service?&quot; It is &quot;can I afford not to have one?&quot; Every month without consistent content is a month where potential clients do not find you on Google, do not see you on LinkedIn, and do not get nurtured by your email sequences.

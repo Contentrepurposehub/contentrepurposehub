@@ -103,7 +103,7 @@ export default function WebinarRepurposingVsNewContent() {
             name: 'Does repurposed content perform as well as original content?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Yes. Repurposed content often outperforms original content because it starts from proven material — your webinar is already a tested presentation of your ideas. Blog posts repurposed from webinars rank on Google the same as original posts when properly optimized. LinkedIn posts built from webinar insights perform equally well because the ideas are already refined.',
+              text: 'Yes. Repurposed content often outperforms original content because it starts from proven material. Your webinar is already a tested presentation of your ideas. Blog posts repurposed from webinars rank on Google the same as original posts when properly optimized. LinkedIn posts built from webinar insights perform equally well because the ideas are already refined.',
             },
           },
           {
@@ -119,7 +119,7 @@ export default function WebinarRepurposingVsNewContent() {
             name: 'Can I combine repurposing and new content creation?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'The hybrid approach is what most successful coaches use. Repurpose existing webinars for 70-80% of your content calendar — this handles your consistent, ongoing content across LinkedIn, email, blog, and social media. Then create new original content for the remaining 20-30%, targeting specific gaps, trends, or new topics. This gives you volume from repurposing and freshness from original creation.',
+              text: 'The hybrid approach is what most successful coaches use. Repurpose existing webinars for 70-80% of your content calendar. This handles your consistent, ongoing content across LinkedIn, email, blog, and social media. Then create new original content for the remaining 20-30%, targeting specific gaps, trends, or new topics. This gives you volume from repurposing and freshness from original creation.',
             },
           },
           {
@@ -213,10 +213,10 @@ export default function WebinarRepurposingVsNewContent() {
               {/* Opening context */}
               <section className="mb-12">
                 <p className="text-gray-700 mb-4">
-                  Every coach and consultant faces this question eventually. You know you need more content — LinkedIn posts, blog articles, emails, video clips — but should you sit down and create it all from scratch? Or can you get better results by repurposing the webinars you already have?
+                  Every coach and consultant faces this question eventually. You know you need more content (LinkedIn posts, blog articles, emails, video clips) but should you sit down and create it all from scratch? Or can you get better results by repurposing the webinars you already have?
                 </p>
                 <p className="text-gray-700 mb-4">
-                  We have worked with dozens of coaches on both approaches. Here is what the numbers actually show — and a framework for deciding which strategy fits your situation.
+                  We have worked with dozens of coaches on both approaches. Here is what the numbers actually show, along with a framework for deciding which strategy fits your situation.
                 </p>
               </section>
 
@@ -242,7 +242,7 @@ export default function WebinarRepurposingVsNewContent() {
                         ['Monthly cost', '$750-$1,500 (service) or 15-25 hrs (DIY)', '$3,000-$8,000 (freelancers/agency)'],
                         ['Content pieces produced', '14-75+ from one webinar', '10-15 pieces (at most)'],
                         ['Turnaround time', '7-10 business days', '3-6 weeks for same volume'],
-                        ['Voice consistency', 'High — based on your actual words', 'Variable — depends on the writer'],
+                        ['Voice consistency', 'High (based on your actual words)', 'Variable (depends on the writer)'],
                         ['SEO quality', 'Professional optimization included', 'Depends on writer\'s SEO skills'],
                         ['Content quality', 'Proven ideas (already tested live)', 'Untested until published'],
                         ['Consistency', 'Predictable monthly output', 'Depends on your schedule/budget'],
@@ -263,7 +263,7 @@ export default function WebinarRepurposingVsNewContent() {
 
                 <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg my-6">
                   <p className="text-gray-800 font-medium">
-                    The math is simple: if you ran a webinar, you already did the hard part. The ideas, frameworks, stories, and insights are all there. Repurposing is reformatting — not re-creating.
+                    The math is simple: if you ran a webinar, you already did the hard part. The ideas, frameworks, stories, and insights are all there. Repurposing is reformatting, not re-creating.
                   </p>
                 </div>
               </section>
@@ -277,7 +277,7 @@ export default function WebinarRepurposingVsNewContent() {
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">1. You have webinar recordings sitting unused</h3>
                 <p className="text-gray-700 mb-4">
-                  Most coaches have 3-12 webinar recordings from the past year that reached their live audience and then disappeared. Each one contains 60+ minutes of expert content. That is 3-12 months of content already created — it is waiting to be reformatted. There is no reason to write from scratch when you are sitting on this much raw material. For a breakdown of exactly what you can extract, read our guide on <Link href="/blog/webinar-content-pieces-breakdown" className="text-blue-600 hover:text-blue-800 font-medium">how one webinar becomes 75+ content pieces</Link>.
+                  Most coaches have 3-12 webinar recordings from the past year that reached their live audience and then disappeared. Each one contains 60+ minutes of expert content. That is 3-12 months of content already created; it is waiting to be reformatted. There is no reason to write from scratch when you are sitting on this much raw material. For a breakdown of exactly what you can extract, read our guide on <Link href="/blog/webinar-content-pieces-breakdown" className="text-blue-600 hover:text-blue-800 font-medium">how one webinar becomes 75+ content pieces</Link>.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">2. You need content volume fast</h3>
@@ -297,7 +297,7 @@ export default function WebinarRepurposingVsNewContent() {
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">5. You want content that sounds like you</h3>
                 <p className="text-gray-700 mb-6">
-                  When you hire a freelance writer, they write in their voice — not yours. Repurposed webinar content uses your actual words, stories, and examples. It sounds like you because it <em>is</em> you. Your audience recognizes your voice whether they see a LinkedIn post, read a blog article, or open an email. That consistency builds trust faster than anything a hired writer can produce.
+                  When you hire a freelance writer, they write in their voice, not yours. Repurposed webinar content uses your actual words, stories, and examples. It sounds like you because it <em>is</em> you. Your audience recognizes your voice whether they see a LinkedIn post, read a blog article, or open an email. That consistency builds trust faster than anything a hired writer can produce.
                 </p>
               </section>
 
@@ -326,12 +326,12 @@ export default function WebinarRepurposingVsNewContent() {
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">1. You are covering a brand-new topic</h3>
                 <p className="text-gray-700 mb-4">
-                  If you have never discussed a topic in any webinar, presentation, or video, there is nothing to repurpose. Suppose you are a leadership coach and want to publish content about AI&apos;s impact on management — but you have never addressed it in a webinar. You need to create that content from scratch. The fix: run a webinar on the new topic first, then repurpose it.
+                  If you have never discussed a topic in any webinar, presentation, or video, there is nothing to repurpose. Suppose you are a leadership coach and want to publish content about AI&apos;s impact on management, but you have never addressed it in a webinar. You need to create that content from scratch. The fix: run a webinar on the new topic first, then repurpose it.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">2. You need to react to a trending topic quickly</h3>
                 <p className="text-gray-700 mb-4">
-                  Trending topics have a 48-72 hour window. If a news story breaks that is relevant to your niche, you need to write a hot take now — not wait to run a webinar and then repurpose it. Reactive content like LinkedIn commentary on industry news, quick-take blog posts, and timely email sends need to be written fresh. This represents maybe 10-15% of a good content calendar.
+                  Trending topics have a 48-72 hour window. If a news story breaks that is relevant to your niche, you need to write a hot take now, not wait to run a webinar and then repurpose it. Reactive content like LinkedIn commentary on industry news, quick-take blog posts, and timely email sends need to be written fresh. This represents maybe 10-15% of a good content calendar.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">3. You are entering an entirely new market</h3>
@@ -356,7 +356,7 @@ export default function WebinarRepurposingVsNewContent() {
                   Here is what that looks like in practice:
                 </p>
                 <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-                  <li><strong>70-80% repurposed content:</strong> Your monthly webinar (or existing recordings) gets turned into blog posts, LinkedIn posts, email sequences, video clips, carousels, and lead magnets by a repurposing service. This is your content engine — consistent, high-volume, and built from your own voice.</li>
+                  <li><strong>70-80% repurposed content:</strong> Your monthly webinar (or existing recordings) gets turned into blog posts, LinkedIn posts, email sequences, video clips, carousels, and lead magnets by a repurposing service. This is your content engine: consistent, high-volume, and built from your own voice.</li>
                   <li><strong>10-15% reactive content:</strong> You personally write 2-4 LinkedIn posts per month reacting to industry news, sharing client wins, or commenting on trends. Takes 1-2 hours total. These keep your feed feeling current and personal.</li>
                   <li><strong>10-15% strategic new content:</strong> Once a quarter, create an original piece targeting a keyword or topic that none of your webinars have covered. This fills gaps in your content library and can become the seed for a future webinar.</li>
                 </ul>
@@ -411,7 +411,7 @@ export default function WebinarRepurposingVsNewContent() {
                   <strong>Total monthly comparison:</strong> Producing 30 content pieces from scratch with freelancers costs $3,750-$7,500. Producing 30+ pieces through repurposing costs $750-$1,500. That is a 75-80% cost reduction for comparable (often better) content.
                 </p>
                 <p className="text-gray-700">
-                  The per-piece economics explain why repurposing is the dominant strategy for coaches who want consistent content without a massive budget. You are not cutting corners — you are being efficient with material you already created.
+                  The per-piece economics explain why repurposing is the dominant strategy for coaches who want consistent content without a massive budget. You are not cutting corners. You are being efficient with material you already created.
                 </p>
               </section>
 
@@ -445,9 +445,9 @@ export default function WebinarRepurposingVsNewContent() {
                   <li>You have 2+ webinar recordings from the past 12 months</li>
                   <li>You run webinars monthly or quarterly and will keep producing new source material</li>
                   <li>Your content budget is under $2,000/month</li>
-                  <li>Consistency has been a problem — you post in bursts, then go quiet</li>
+                  <li>Consistency has been a problem: you post in bursts, then go quiet</li>
                   <li>You want content across multiple platforms (LinkedIn, blog, email, YouTube) but lack the time to create for each one</li>
-                  <li>Your expertise is already developed — you are teaching proven frameworks, not experimenting with new ideas</li>
+                  <li>Your expertise is already developed; you are teaching proven frameworks, not experimenting with new ideas</li>
                   <li>You value your time at $200+/hour and would rather spend it on clients than content creation</li>
                 </ul>
 
@@ -467,7 +467,7 @@ export default function WebinarRepurposingVsNewContent() {
                 </ul>
 
                 <p className="text-gray-700">
-                  For most coaches and consultants reading this, the answer is repurposing (or the hybrid approach). If you already have webinars — and 87% of coaches we talk to do — you are sitting on months of untapped content.
+                  For most coaches and consultants reading this, the answer is repurposing (or the hybrid approach). If you already have webinars, and 87% of coaches we talk to do, you are sitting on months of untapped content.
                 </p>
               </section>
 
@@ -491,7 +491,7 @@ export default function WebinarRepurposingVsNewContent() {
                     },
                     {
                       q: 'Does repurposed content perform as well as original content?',
-                      a: 'Yes. Repurposed content often outperforms original content because it starts from proven material — your webinar is already a tested presentation of your ideas. Blog posts repurposed from webinars rank on Google the same as original posts when properly optimized. LinkedIn posts built from webinar insights perform equally well because the ideas are already refined.',
+                      a: 'Yes. Repurposed content often outperforms original content because it starts from proven material. Your webinar is already a tested presentation of your ideas. Blog posts repurposed from webinars rank on Google the same as original posts when properly optimized. LinkedIn posts built from webinar insights perform equally well because the ideas are already refined.',
                     },
                     {
                       q: 'When should I create new content instead of repurposing?',
@@ -499,7 +499,7 @@ export default function WebinarRepurposingVsNewContent() {
                     },
                     {
                       q: 'Can I combine repurposing and new content creation?',
-                      a: 'The hybrid approach is what most successful coaches use. Repurpose existing webinars for 70-80% of your content calendar — this handles your consistent, ongoing content across LinkedIn, email, blog, and social media. Then create new original content for the remaining 20-30%, targeting specific gaps, trends, or new topics.',
+                      a: 'The hybrid approach is what most successful coaches use. Repurpose existing webinars for 70-80% of your content calendar. This handles your consistent, ongoing content across LinkedIn, email, blog, and social media. Then create new original content for the remaining 20-30%, targeting specific gaps, trends, or new topics.',
                     },
                     {
                       q: 'How many content pieces can you get from repurposing one webinar?',
@@ -521,10 +521,10 @@ export default function WebinarRepurposingVsNewContent() {
                   If you have webinar recordings, repurposing beats creating from scratch on cost (75-80% less), speed (5-10x faster), volume (3-5x more pieces), and voice consistency. It is not even a close comparison.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  Creating new content still has a place — for new topics, reactive posts, and original research. But it should be 20-30% of your content calendar, not the whole thing.
+                  Creating new content still has a place: new topics, reactive posts, and original research. But it should be 20-30% of your content calendar, not the whole thing.
                 </p>
                 <p className="text-gray-700">
-                  The coaches who build the strongest content presence are the ones who repurpose every webinar and supplement with targeted original pieces. They get the volume of a large content team at a fraction of the cost — because they are smart about the material they already have.
+                  The coaches who build the strongest content presence are the ones who repurpose every webinar and supplement with targeted original pieces. They get the volume of a large content team at a fraction of the cost, because they are smart about the material they already have.
                 </p>
               </section>
             </div>

@@ -79,7 +79,7 @@ export default function AISearchOptimizationGuide() {
             name: 'What is AI search optimization?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'AI search optimization (AIO) is the practice of structuring your content so AI assistants — ChatGPT, Perplexity, Gemini, Claude, and Grok — cite it when users ask questions about your topic. It involves formatting content with clear definitions, specific data, structured markup, and authoritative answers that large language models can easily extract and reference.',
+              text: 'AI search optimization (AIO) is the practice of structuring your content so AI assistants (ChatGPT, Perplexity, Gemini, Claude, and Grok) cite it when users ask questions about your topic. It involves formatting content with clear definitions, specific data, structured markup, and authoritative answers that large language models can easily extract and reference.',
             },
           },
           {
@@ -111,7 +111,7 @@ export default function AISearchOptimizationGuide() {
             name: 'What is the difference between SEO and AIO?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'SEO (search engine optimization) optimizes content for Google\'s ranking algorithm — keywords, backlinks, page speed, and user engagement signals. AIO (AI search optimization) optimizes content for how large language models extract and cite information — clear definitions, specific data, structured formatting, and definitive answers. The best content strategy in 2026 optimizes for both simultaneously, since well-structured content performs well in both Google and AI search.',
+              text: 'SEO (search engine optimization) optimizes content for Google\'s ranking algorithm: keywords, backlinks, page speed, and user engagement signals. AIO (AI search optimization) optimizes content for how large language models extract and cite information: clear definitions, specific data, structured formatting, and definitive answers. The best content strategy in 2026 optimizes for both simultaneously, since well-structured content performs well in both Google and AI search.',
             },
           },
           {
@@ -197,7 +197,7 @@ export default function AISearchOptimizationGuide() {
                 What Is AI Search Optimization? How to Get Your Content Cited by ChatGPT, Perplexity, and Gemini
               </h1>
               <p className="text-xl text-gray-600">
-                AI search optimization (AIO) is the practice of structuring your content so AI assistants — ChatGPT, Perplexity, Gemini, Claude, Grok — cite it when users ask questions about your topic. Unlike traditional SEO which optimizes for Google&apos;s algorithm, AIO optimizes for how large language models select, summarize, and recommend content. It&apos;s the next frontier of content marketing, and most businesses haven&apos;t started.
+                AI search optimization (AIO) is the practice of structuring your content so AI assistants (ChatGPT, Perplexity, Gemini, Claude, Grok) cite it when users ask questions about your topic. Unlike traditional SEO which optimizes for Google&apos;s algorithm, AIO optimizes for how large language models select, summarize, and recommend content. It&apos;s the next frontier of content marketing, and most businesses haven&apos;t started.
               </p>
             </header>
 
@@ -224,16 +224,16 @@ export default function AISearchOptimizationGuide() {
               <section id="what-is-aio" className="mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">What AI Search Optimization Is (And Why It Matters Now)</h2>
                 <p className="text-gray-700 mb-4">
-                  AI search optimization — also called AIO or LLM optimization — is the practice of creating content that AI assistants will find, understand, extract from, and cite when answering user questions.
+                  AI search optimization, also called AIO or LLM optimization, is the practice of creating content that AI assistants will find, understand, extract from, and cite when answering user questions.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  Here is a concrete example. When someone asks Perplexity &quot;What is the best way to repurpose a webinar?&quot; — Perplexity searches the web, reads dozens of pages, and synthesizes an answer. It picks 3-5 sources to cite. Those cited sources get direct traffic and massive credibility.
+                  Here is a concrete example. When someone asks Perplexity &quot;What is the best way to repurpose a webinar?&quot;, Perplexity searches the web, reads dozens of pages, and synthesizes an answer. It picks 3-5 sources to cite. Those cited sources get direct traffic and massive credibility.
                 </p>
                 <p className="text-gray-700 mb-4">
                   Getting cited by an AI assistant is like getting a personal recommendation. The AI does not show a list of 10 blue links. It gives a direct answer and says &quot;according to ContentRepurposeHub&quot; or links to your article. That single citation can be worth more than a page-one Google ranking because the user is getting your content hand-delivered as <em>the</em> answer.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  The numbers are hard to ignore. Over 180 million people use ChatGPT monthly. Perplexity processes over 100 million queries per month. Gemini is integrated into Google Search for billions of users. These are not niche platforms. They are becoming how people find information — and they are growing fast.
+                  The numbers are hard to ignore. Over 180 million people use ChatGPT monthly. Perplexity processes over 100 million queries per month. Gemini is integrated into Google Search for billions of users. These are not niche platforms. They are becoming how people find information, and they are growing fast.
                 </p>
 
                 <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg my-6">
@@ -262,7 +262,7 @@ export default function AISearchOptimizationGuide() {
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Gemini: Google Integration</h3>
                 <p className="text-gray-700 mb-4">
-                  Gemini has the deepest connection to Google&apos;s search index. Content that performs well in Google search has an advantage in Gemini responses. This means traditional SEO and AIO reinforce each other when optimizing for Gemini. Google&apos;s AI Overviews — the AI-generated summaries at the top of search results — use the same underlying technology.
+                  Gemini has the deepest connection to Google&apos;s search index. Content that performs well in Google search has an advantage in Gemini responses. This means traditional SEO and AIO reinforce each other when optimizing for Gemini. Google&apos;s AI Overviews, the AI-generated summaries at the top of search results, use the same underlying technology.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Claude and Grok</h3>
@@ -275,7 +275,7 @@ export default function AISearchOptimizationGuide() {
               <section id="ai-vs-google" className="mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">AI Search vs. Google Search: Key Differences</h2>
                 <p className="text-gray-700 mb-4">
-                  These two search paradigms work fundamentally differently. Optimizing for one does not automatically optimize for the other — though there is significant overlap.
+                  These two search paradigms work fundamentally differently. Optimizing for one does not automatically optimize for the other, though there is significant overlap.
                 </p>
 
                 <div className="overflow-x-auto my-6">
@@ -293,10 +293,10 @@ export default function AISearchOptimizationGuide() {
                         ['What gets rewarded', 'Keywords, backlinks, page speed, engagement', 'Clear answers, specific data, structured content, authority'],
                         ['Authority signals', 'Domain authority, backlink profile, site age', 'Content specificity, factual density, topical depth'],
                         ['Content format', 'Any format can rank', 'Structured content with clear Q&A patterns preferred'],
-                        ['Barrier to entry', 'High — years of domain authority needed', 'Lower — content quality matters more than domain age'],
+                        ['Barrier to entry', 'High. Years of domain authority needed', 'Lower. Content quality matters more than domain age'],
                         ['Traffic pattern', 'Continuous clicks from search results', 'Citation with potential direct link; brand mention even without click'],
                         ['Speed to results', '3-12 months for organic ranking', '1-4 months for Perplexity; varies for ChatGPT/Gemini'],
-                        ['Competition level', 'Extremely competitive in most niches', 'Low competition — most businesses are not optimizing for this yet'],
+                        ['Competition level', 'Extremely competitive in most niches', 'Low competition. Most businesses are not optimizing for this yet'],
                       ].map((row, i) => (
                         <tr key={i}>
                           <td className="p-3 border border-gray-200 font-medium text-gray-900">{row[0]}</td>
@@ -319,7 +319,7 @@ export default function AISearchOptimizationGuide() {
                   We build AI search optimization into every content piece.
                 </p>
                 <p className="text-blue-100 mb-4">
-                  Every blog post, every social post, every piece of repurposed content — optimized for Google and AI search. Starting at $750/month.
+                  Every blog post, every social post, every piece of repurposed content, optimized for Google and AI search. Starting at $750/month.
                 </p>
                 <a
                   href="https://contentrepurposehub.com/#pricing"
@@ -338,10 +338,10 @@ export default function AISearchOptimizationGuide() {
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">1. Answer the Question in the First Paragraph</h3>
                 <p className="text-gray-700 mb-4">
-                  AI assistants extract the most concise, direct answer they can find. If your article takes 300 words to get to the point, the AI will cite a competitor who answers in 50 words. Put your clearest, most definitive answer in the first paragraph — 50-100 words. Front-load the value.
+                  AI assistants extract the most concise, direct answer they can find. If your article takes 300 words to get to the point, the AI will cite a competitor who answers in 50 words. Put your clearest, most definitive answer in the first paragraph, in 50-100 words. Front-load the value.
                 </p>
                 <p className="text-gray-700 mb-6">
-                  This is the single most important principle. Look at the first paragraph of this article — it defines AIO in two sentences. That is what AI assistants extract.
+                  This is the single most important principle. Look at the first paragraph of this article. It defines AIO in two sentences. That is what AI assistants extract.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">2. Use Specific Numbers and Data</h3>
@@ -354,7 +354,7 @@ export default function AISearchOptimizationGuide() {
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">3. Structure Content with Clear Headings as Questions</h3>
                 <p className="text-gray-700 mb-4">
-                  People ask AI assistants questions. Your headings should match those questions. &quot;What is AI search optimization?&quot; as a heading directly maps to the user query &quot;What is AI search optimization?&quot; — making your content an obvious source for the AI to cite.
+                  People ask AI assistants questions. Your headings should match those questions. &quot;What is AI search optimization?&quot; as a heading directly maps to the user query &quot;What is AI search optimization?&quot;, making your content an obvious source for the AI to cite.
                 </p>
                 <p className="text-gray-700 mb-6">
                   Use H2 and H3 headings that mirror actual questions your audience asks. Each section should provide a complete, standalone answer under its heading.
@@ -365,7 +365,7 @@ export default function AISearchOptimizationGuide() {
                   AI assistants cite sources that make clear claims. &quot;The best transcription tool for webinar repurposing is Descript because it combines transcript-based editing with 95% accuracy&quot; is citable. &quot;There are many great transcription tools and the best one depends on your needs&quot; is not.
                 </p>
                 <p className="text-gray-700 mb-6">
-                  This does not mean being dishonest. It means having a perspective and stating it clearly. Take a position. Support it with evidence. AI assistants surface confident, well-supported answers — not wishy-washy hedging.
+                  This does not mean being dishonest. It means having a perspective and stating it clearly. Take a position. Support it with evidence. AI assistants surface confident, well-supported answers, not wishy-washy hedging.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">5. Include Comparison Tables</h3>
@@ -381,7 +381,7 @@ export default function AISearchOptimizationGuide() {
                   FAQ sections are AIO gold. Each question-and-answer pair is a self-contained, citable unit. And when you add FAQPage schema markup (the structured data that tells search engines &quot;this is a FAQ&quot;), you make it even easier for both Google and AI assistants to parse and cite your content.
                 </p>
                 <p className="text-gray-700 mb-6">
-                  Aim for 6-8 FAQ questions per article. Write the answers as standalone paragraphs that make sense without any surrounding context — because that is exactly how an AI will present them.
+                  Aim for 6-8 FAQ questions per article. Write the answers as standalone paragraphs that make sense without any surrounding context, because that is exactly how an AI will present them.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">7. Name Entities Explicitly</h3>
@@ -408,7 +408,7 @@ export default function AISearchOptimizationGuide() {
                     { element: 'Specific numbers in context', detail: 'Percentages, dollar amounts, time estimates, quantities. Every claim should have a number attached.' },
                     { element: 'Question-based H2/H3 headings', detail: 'Match the exact phrasing people use when querying AI assistants.' },
                     { element: 'Self-contained FAQ answers', detail: '6-8 Q&A pairs where each answer stands alone without needing context from the article.' },
-                    { element: 'Named entity references', detail: 'Brand names, tool names, platform names, competitor names — all mentioned explicitly.' },
+                    { element: 'Named entity references', detail: 'Brand names, tool names, platform names, competitor names, all mentioned explicitly.' },
                     { element: '2,000+ words of depth', detail: 'AI assistants prefer comprehensive sources. Thin content rarely gets cited.' },
                   ].map((item, i) => (
                     <div key={i} className="flex gap-4 items-start">
@@ -455,12 +455,12 @@ export default function AISearchOptimizationGuide() {
                 <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-6">
                   <li><strong>Every blog post</strong> includes Article, FAQPage, and BreadcrumbList schema markup, question-based headings that match AI queries, a direct-answer first paragraph, comparison tables, and 6-8 FAQ questions with standalone answers.</li>
                   <li><strong>Every content piece</strong> includes specific numbers, named entity references, definitive statements, and structured formatting that AI assistants can easily parse.</li>
-                  <li><strong>Every content calendar</strong> is built to establish topical authority — publishing clusters of related content that signal to AI assistants you are an authority on your subject.</li>
+                  <li><strong>Every content calendar</strong> is built to establish topical authority by publishing clusters of related content that signal to AI assistants you are an authority on your subject.</li>
                   <li><strong>Internal linking</strong> is strategically planned to create a web of related content that both Google and AI assistants can crawl and understand as a cohesive body of expertise.</li>
                 </ul>
 
                 <p className="text-gray-700 mb-4">
-                  This is not an add-on or upsell. It is built into our standard process for every client, at every pricing tier. Because content that is not optimized for AI search in 2026 is leaving citations — and traffic — on the table. For a complete overview of how webinar repurposing feeds into search optimization, see our <Link href="/blog/webinar-evergreen-seo-content" className="text-blue-600 hover:text-blue-800 font-medium">guide to creating evergreen SEO content from webinars</Link>.
+                  This is not an add-on or upsell. It is built into our standard process for every client, at every pricing tier. Because content that is not optimized for AI search in 2026 is leaving citations, and traffic, on the table. For a complete overview of how webinar repurposing feeds into search optimization, see our <Link href="/blog/webinar-evergreen-seo-content" className="text-blue-600 hover:text-blue-800 font-medium">guide to creating evergreen SEO content from webinars</Link>.
                 </p>
               </section>
 
@@ -508,7 +508,7 @@ export default function AISearchOptimizationGuide() {
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Manual Testing (Free, 30 Minutes)</h3>
                 <p className="text-gray-700 mb-4">
-                  The simplest approach. Go to ChatGPT, Perplexity, Gemini, Claude, and Grok. Ask the exact questions your target audience asks — the questions your content answers. See if your brand, website, or content appears in the responses. Do this monthly and track results in a spreadsheet. Start with 10-15 queries that directly relate to your expertise.
+                  The simplest approach. Go to ChatGPT, Perplexity, Gemini, Claude, and Grok. Ask the exact questions your target audience asks, the questions your content answers. See if your brand, website, or content appears in the responses. Do this monthly and track results in a spreadsheet. Start with 10-15 queries that directly relate to your expertise.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Perplexity Testing (Most Transparent)</h3>
@@ -523,7 +523,7 @@ export default function AISearchOptimizationGuide() {
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Content Audit Against the AIO Checklist</h3>
                 <p className="text-gray-700 mb-4">
-                  Review your existing content against the 7 principles and structural checklist above. Score each piece. Most businesses find their existing content scores 1-2 out of 8 on the structural checklist. That is normal — and it is fixable. Prioritize updating your highest-traffic pages first.
+                  Review your existing content against the 7 principles and structural checklist above. Score each piece. Most businesses find their existing content scores 1-2 out of 8 on the structural checklist. That is normal, and it is fixable. Prioritize updating your highest-traffic pages first.
                 </p>
 
                 <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg my-6">
@@ -567,7 +567,7 @@ export default function AISearchOptimizationGuide() {
                   {[
                     {
                       q: 'What is AI search optimization?',
-                      a: 'AI search optimization (AIO) is the practice of structuring your content so AI assistants — ChatGPT, Perplexity, Gemini, Claude, and Grok — cite it when users ask questions about your topic. It involves formatting content with clear definitions, specific data, structured markup, and authoritative answers that large language models can easily extract and reference.',
+                      a: 'AI search optimization (AIO) is the practice of structuring your content so AI assistants (ChatGPT, Perplexity, Gemini, Claude, and Grok) cite it when users ask questions about your topic. It involves formatting content with clear definitions, specific data, structured markup, and authoritative answers that large language models can easily extract and reference.',
                     },
                     {
                       q: 'How is AI search different from Google search?',
@@ -583,7 +583,7 @@ export default function AISearchOptimizationGuide() {
                     },
                     {
                       q: 'What is the difference between SEO and AIO?',
-                      a: 'SEO (search engine optimization) optimizes content for Google\'s ranking algorithm — keywords, backlinks, page speed, and user engagement signals. AIO (AI search optimization) optimizes content for how large language models extract and cite information — clear definitions, specific data, structured formatting, and definitive answers. The best content strategy in 2026 optimizes for both simultaneously, since well-structured content performs well in both Google and AI search.',
+                      a: 'SEO (search engine optimization) optimizes content for Google\'s ranking algorithm: keywords, backlinks, page speed, and user engagement signals. AIO (AI search optimization) optimizes content for how large language models extract and cite information: clear definitions, specific data, structured formatting, and definitive answers. The best content strategy in 2026 optimizes for both simultaneously, since well-structured content performs well in both Google and AI search.',
                     },
                     {
                       q: 'How do I check if my content is being cited by AI?',
@@ -610,7 +610,7 @@ export default function AISearchOptimizationGuide() {
               <section className="mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Start Building Your AI Search Presence</h2>
                 <p className="text-gray-700 mb-4">
-                  AI search is not coming. It is here. Over 280 million people use AI assistants monthly to find information, compare options, and make decisions. The question is not whether your target audience is using AI search — they are. The question is whether your content shows up when they do.
+                  AI search is not coming. It is here. Over 280 million people use AI assistants monthly to find information, compare options, and make decisions. The question is not whether your target audience is using AI search. They are. The question is whether your content shows up when they do.
                 </p>
                 <p className="text-gray-700 mb-4">
                   Start with the 7 principles above. Audit your existing content. Test your visibility on Perplexity and ChatGPT. And begin building AIO into every new piece of content you publish.
