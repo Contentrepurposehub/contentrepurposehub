@@ -475,7 +475,7 @@ export default function WhatIsWebinarRepurposing() {
                   </div>
                 </div>
                 <figcaption className="text-center text-sm text-gray-500 mt-3">
-                  From recording to published content in 7-10 business days. You handle step 1 -- we handle the rest.
+                  From recording to published content in 7-10 business days. You handle step 1. We handle the rest.
                 </figcaption>
               </figure>
 

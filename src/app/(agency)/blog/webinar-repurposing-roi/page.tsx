@@ -189,7 +189,7 @@ export default function WebinarRepurposingROI() {
                 The ROI of Webinar Repurposing: Data, Math, and What It Actually Saves You
               </h1>
               <p className="text-xl text-gray-600">
-                You know content repurposing is a good idea. But is it worth the investment? Here are the real numbers: what it costs, what it saves, and when it pays for itself -- backed by industry data and straightforward math.
+                You know content repurposing is a good idea. But is it worth the investment? Here are the real numbers: what it costs, what it saves, and when it pays for itself. Backed by industry data and straightforward math.
               </p>
             </header>
 
@@ -203,7 +203,7 @@ export default function WebinarRepurposingROI() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-blue-600 font-bold mt-0.5">--</span>
-                  <span>Coaches spend an average of 10-15 hours per week on content creation -- time that could be spent coaching clients</span>
+                  <span>Coaches spend an average of 10-15 hours per week on content creation, time that could be spent coaching clients</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-blue-600 font-bold mt-0.5">--</span>
@@ -246,7 +246,7 @@ export default function WebinarRepurposingROI() {
                   A typical webinar takes 8-12 hours of total work. That includes researching and outlining the content, building the slide deck, rehearsing, promoting the event, delivering the presentation, and handling follow-up. If you bill $300/hour for coaching, those 10 hours represent $3,000 worth of your time.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  After the live event, most coaches save the recording to a folder and never touch it again. The 50-200 people who attended live saw the content once. Everyone else -- the thousands of potential clients who were not in the room -- never see it at all.
+                  After the live event, most coaches save the recording to a folder and never touch it again. The 50-200 people who attended live saw the content once. Everyone else, the thousands of potential clients who were not in the room, never see it at all.
                 </p>
                 <p className="text-gray-700 mb-4">
                   That is a $3,000 asset sitting idle. Multiply it by the 4, 8, or 12 webinars you run per year, and you are looking at $12,000-$36,000 in unused content. This is not a theoretical number. It is the real opportunity cost of not repurposing.
@@ -257,7 +257,7 @@ export default function WebinarRepurposingROI() {
                   </p>
                 </div>
                 <p className="text-gray-700 mb-4">
-                  The question is not whether you can afford to invest in repurposing. The question is whether you can afford not to -- when you are already sitting on thousands of dollars in unused content. For a deeper look at what webinar repurposing involves and the full range of content you can extract, see our <Link href="/blog/webinar-repurposing-guide" className="text-blue-600 hover:text-blue-800 font-medium">complete webinar repurposing guide</Link>.
+                  The question is not whether you can afford to invest in repurposing. The question is whether you can afford not to, when you are already sitting on thousands of dollars in unused content. For a deeper look at what webinar repurposing involves and the full range of content you can extract, see our <Link href="/blog/webinar-repurposing-guide" className="text-blue-600 hover:text-blue-800 font-medium">complete webinar repurposing guide</Link>.
                 </p>
               </section>
 
@@ -287,7 +287,7 @@ export default function WebinarRepurposingROI() {
                     },
                     {
                       stat: '#5',
-                      description: 'most popular digital marketing trend of 2026 -- content repurposing',
+                      description: 'most popular digital marketing trend of 2026: content repurposing',
                       source: 'HubSpot State of Marketing',
                     },
                   ].map((item, i) => (
@@ -300,7 +300,7 @@ export default function WebinarRepurposingROI() {
                 </div>
 
                 <p className="text-gray-700 mb-4">
-                  Let that first statistic sink in: a majority of marketers are getting <strong>better results from repurposed content than from content they created from scratch</strong>. That might seem counterintuitive, but it makes sense when you consider the mechanics. Repurposed content starts from proven material -- ideas that already resonated with a live audience. You are not guessing what will work. You are reformatting what already worked.
+                  Let that first statistic sink in: a majority of marketers are getting <strong>better results from repurposed content than from content they created from scratch</strong>. That might seem counterintuitive, but it makes sense when you consider the mechanics. Repurposed content starts from proven material, ideas that already resonated with a live audience. You are not guessing what will work. You are reformatting what already worked.
                 </p>
                 <p className="text-gray-700 mb-4">
                   The 3x engagement figure tells a similar story. When you take a framework from your webinar and turn it into a LinkedIn carousel, it performs better than a carousel you brainstormed from scratch. Why? Because the framework was already refined through the process of preparing and delivering a live presentation. The content is tighter, more structured, and more audience-tested.
@@ -376,7 +376,7 @@ export default function WebinarRepurposingROI() {
                   This is the content creation trap that burns out so many coaches. You know you need to post consistently to attract clients. But every hour you spend writing a LinkedIn post is an hour you are not spending on billable coaching sessions, program development, or sales conversations.
                 </p>
                 <p className="text-gray-700">
-                  The math gets uncomfortable quickly when you attach a dollar value to those hours -- which is exactly what we are about to do.
+                  The math gets uncomfortable quickly when you attach a dollar value to those hours. Which is exactly what we are about to do.
                 </p>
               </section>
 
@@ -438,7 +438,7 @@ export default function WebinarRepurposingROI() {
               <section id="roi-framework" className="mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">5. ROI Calculation Framework</h2>
                 <p className="text-gray-700 mb-4">
-                  Now let us build a proper ROI framework for webinar repurposing. This is the formula you can use to evaluate any repurposing investment -- whether it is a service, a VA, or a set of tools.
+                  Now let us build a proper ROI framework for webinar repurposing. This is the formula you can use to evaluate any repurposing investment, whether it is a service, a VA, or a set of tools.
                 </p>
 
                 <div className="bg-gray-900 rounded-xl p-6 md:p-8 my-6">
@@ -549,7 +549,7 @@ export default function WebinarRepurposingROI() {
                       </div>
                       <div>
                         <p className="font-medium text-gray-900">Stress level</p>
-                        <p>High -- always behind on posting</p>
+                        <p>High. Always behind on posting</p>
                       </div>
                     </div>
                   </div>
@@ -579,14 +579,14 @@ export default function WebinarRepurposingROI() {
                       </div>
                       <div>
                         <p className="font-medium text-gray-900">Stress level</p>
-                        <p>Low -- content runs on autopilot</p>
+                        <p>Low. Content runs on autopilot</p>
                       </div>
                     </div>
                   </div>
                 </div>
 
                 <p className="text-gray-700 mb-4">
-                  The Scenario B coach gains back 13 hours per week. At $300/hour, those 13 hours represent $3,900/week in recovered capacity -- or $15,600/month. The service costs $997. The net gain is $14,603 per month, plus they are publishing 2-5x more content at a higher quality.
+                  The Scenario B coach gains back 13 hours per week. At $300/hour, those 13 hours represent $3,900/week in recovered capacity, or $15,600/month. The service costs $997. The net gain is $14,603 per month, plus they are publishing 2-5x more content at a higher quality.
                 </p>
                 <p className="text-gray-700 mb-4">
                   But the benefits go beyond the direct math. The Scenario B coach is publishing more consistently, which builds algorithmic momentum on LinkedIn and Google. They are publishing across more platforms, which increases discoverability. And they are doing it without the creative fatigue that comes from producing 15+ pieces of content every week.
@@ -639,13 +639,13 @@ export default function WebinarRepurposingROI() {
                 </div>
 
                 <p className="text-gray-700 mb-4">
-                  Notice the pattern: each new post adds to the traffic base, while older posts continue to rank and often improve their positions over time. By month 12, you have 24 blog posts working for you around the clock -- all derived from webinars you already delivered. (For a full breakdown of how a single webinar becomes 75+ individual pieces, see our <Link href="/blog/webinar-content-pieces-breakdown" className="text-blue-600 hover:text-blue-800 font-medium">complete content pieces breakdown</Link>.)
+                  Notice the pattern: each new post adds to the traffic base, while older posts continue to rank and often improve their positions over time. By month 12, you have 24 blog posts working for you around the clock, all derived from webinars you already delivered. (For a full breakdown of how a single webinar becomes 75+ individual pieces, see our <Link href="/blog/webinar-content-pieces-breakdown" className="text-blue-600 hover:text-blue-800 font-medium">complete content pieces breakdown</Link>.)
                 </p>
                 <p className="text-gray-700 mb-4">
                   This compounding effect means that the ROI of webinar repurposing actually <em>increases</em> over time. The service cost stays the same, but the total traffic, leads, and authority generated by your growing content library keeps climbing.
                 </p>
                 <p className="text-gray-700">
-                  In 2026, this compounding also applies to AI search engines. Every well-structured article you publish becomes a potential source that ChatGPT, Perplexity, and Gemini can reference when users ask questions in your area of expertise. Your repurposed webinar content does not just rank on Google -- it gets cited by AI assistants, driving an entirely new channel of discovery.
+                  In 2026, this compounding also applies to AI search engines. Every well-structured article you publish becomes a potential source that ChatGPT, Perplexity, and Gemini can reference when users ask questions in your area of expertise. Your repurposed webinar content does not just rank on Google. It gets cited by AI assistants, driving an entirely new channel of discovery.
                 </p>
               </section>
 
@@ -691,7 +691,7 @@ export default function WebinarRepurposingROI() {
                 <p className="text-gray-500 text-xs mb-4">*Total effective cost includes the dollar value of your time spent on the process, calculated at $300/hour.</p>
 
                 <p className="text-gray-700 mb-4">
-                  <strong>DIY Tools</strong> (Repurpose.io, Descript, Canva, ChatGPT): The sticker price is low -- $29-$100/month for a tool stack. But you are trading 10-20 hours of your time per webinar, which at $300/hour is $3,000-$6,000 in hidden cost. This approach makes sense for new coaches with more time than money, but it is the most expensive option for established coaches when you factor in opportunity cost.
+                  <strong>DIY Tools</strong> (Repurpose.io, Descript, Canva, ChatGPT): The sticker price is low, $29-$100/month for a tool stack. But you are trading 10-20 hours of your time per webinar, which at $300/hour is $3,000-$6,000 in hidden cost. This approach makes sense for new coaches with more time than money, but it is the most expensive option for established coaches when you factor in opportunity cost.
                 </p>
                 <p className="text-gray-700 mb-4">
                   <strong>Virtual Assistant</strong>: A competent VA costs $1,500-$3,000/month and still requires 3-5 hours/week of your time for management, quality control, and direction. VAs need training on your brand voice, SEO best practices, and platform-specific formatting. Quality is inconsistent, and you need separate specialists for writing, design, and video editing.
@@ -723,7 +723,7 @@ export default function WebinarRepurposingROI() {
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Break-Even on Traffic Value</h3>
                 <p className="text-gray-700 mb-4">
-                  Organic search traffic has a measurable value. If a blog post ranks for a keyword with a $5-$15 cost-per-click (CPC) in Google Ads and drives 200 visits per month, that post is delivering $1,000-$3,000/month in equivalent paid traffic value. Two or three ranking blog posts -- all created from webinar content you already delivered -- can cover the entire service cost in equivalent ad spend.
+                  Organic search traffic has a measurable value. If a blog post ranks for a keyword with a $5-$15 cost-per-click (CPC) in Google Ads and drives 200 visits per month, that post is delivering $1,000-$3,000/month in equivalent paid traffic value. Two or three ranking blog posts, all created from webinar content you already delivered, can cover the entire service cost in equivalent ad spend.
                 </p>
 
                 <div className="bg-gray-900 rounded-xl p-6 md:p-8 my-6">
@@ -749,7 +749,7 @@ export default function WebinarRepurposingROI() {
                 </div>
 
                 <p className="text-gray-700 mb-4">
-                  The key insight is that a repurposing service is not a cost -- it is an investment with measurable, compounding returns. The break-even happens fast (often within the first month), and the gap between cost and return widens every month as your content library grows and your older content continues to drive traffic and leads.
+                  The key insight is that a repurposing service is not a cost; it is an investment with measurable, compounding returns. The break-even happens fast (often within the first month), and the gap between cost and return widens every month as your content library grows and your older content continues to drive traffic and leads.
                 </p>
                 <p className="text-gray-700">
                   For coaches billing $200/hour or more, the math is overwhelmingly clear. The only scenario where DIY makes financial sense is if you have zero clients, zero pipeline, and cannot monetize any recovered time. Once you have even modest client demand, every hour you spend on content creation instead of coaching is a net financial loss.
@@ -832,10 +832,10 @@ export default function WebinarRepurposingROI() {
                   This is not a conceptual argument. The ROI of webinar repurposing is based on straightforward math: the value of your time, the cost of the service, and the content output you receive in return.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  The data from HubSpot and industry research confirms that repurposed content outperforms original content in engagement and lead generation. The time audit shows that coaches spend 13-20 hours per week on content creation -- time that could be redirected to revenue-generating activities. The cost comparison demonstrates that a done-for-you service is the most cost-effective option for any coach billing $150/hour or more. If you are ready to put these numbers into action, our <Link href="/blog/content-repurposing-workflow-coaches" className="text-blue-600 hover:text-blue-800 font-medium">content repurposing workflow for coaches</Link> lays out the step-by-step process.
+                  The data from HubSpot and industry research confirms that repurposed content outperforms original content in engagement and lead generation. The time audit shows that coaches spend 13-20 hours per week on content creation, time that could be redirected to revenue-generating activities. The cost comparison demonstrates that a done-for-you service is the most cost-effective option for any coach billing $150/hour or more. If you are ready to put these numbers into action, our <Link href="/blog/content-repurposing-workflow-coaches" className="text-blue-600 hover:text-blue-800 font-medium">content repurposing workflow for coaches</Link> lays out the step-by-step process.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  And the compounding effect means the ROI gets better every month. Your content library grows, your rankings improve, and your organic traffic increases -- all from webinars you already delivered.
+                  And the compounding effect means the ROI gets better every month. Your content library grows, your rankings improve, and your organic traffic increases. All from webinars you already delivered.
                 </p>
                 <p className="text-gray-700 mb-4">
                   If you are already running webinars, you are sitting on a content asset worth thousands of dollars. The only question is whether you will extract that value or let it sit in a Zoom folder.

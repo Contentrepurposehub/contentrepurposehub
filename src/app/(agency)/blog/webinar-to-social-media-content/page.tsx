@@ -135,7 +135,7 @@ export default function WebinarToSocialMediaContent() {
             name: 'What is the difference between repurposing and cross-posting?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Cross-posting means sharing the identical content on multiple platforms. Repurposing means adapting the core idea to fit each platform natively -- respecting character limits, preferred formats, audience expectations, and algorithmic preferences. Repurposed content outperforms cross-posted content because each piece is optimized for where it appears.',
+              text: 'Cross-posting means sharing the identical content on multiple platforms. Repurposing means adapting the core idea to fit each platform natively, respecting character limits, preferred formats, audience expectations, and algorithmic preferences. Repurposed content outperforms cross-posted content because each piece is optimized for where it appears.',
             },
           },
         ],
@@ -197,7 +197,7 @@ export default function WebinarToSocialMediaContent() {
                 How to Turn Your Webinar Into 30 Days of Social Media Content (LinkedIn, Instagram, and More)
               </h1>
               <p className="text-xl text-gray-600">
-                You delivered a packed webinar full of frameworks, insights, and stories. Now it is sitting in a folder while you scramble to figure out what to post on LinkedIn tomorrow. Here is how to turn that single recording into a full month of social media content -- platform by platform, format by format.
+                You delivered a packed webinar full of frameworks, insights, and stories. Now it is sitting in a folder while you scramble to figure out what to post on LinkedIn tomorrow. Here is how to turn that single recording into a full month of social media content, platform by platform, format by format.
               </p>
             </header>
 
@@ -257,7 +257,7 @@ export default function WebinarToSocialMediaContent() {
                   The numbers back this up. According to HubSpot, repurposed content generates 3x more engagement than single-use content while reducing creation time by up to 60 percent. And yet only about 20 percent of marketers who run webinars actually repurpose that content for social media. That gap is your opportunity.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  If you have been following our <Link href="/blog/webinar-repurposing-guide" className="text-blue-600 hover:text-blue-800 font-medium">complete guide to webinar repurposing</Link>, you already know that a single webinar can yield <Link href="/blog/webinar-content-pieces-breakdown" className="text-blue-600 hover:text-blue-800 font-medium">75+ content pieces across all formats</Link>. This article focuses specifically on the social media portion -- taking you platform by platform through exactly what to create, how to format it, and how to spread it over 30 days.
+                  If you have been following our <Link href="/blog/webinar-repurposing-guide" className="text-blue-600 hover:text-blue-800 font-medium">complete guide to webinar repurposing</Link>, you already know that a single webinar can yield <Link href="/blog/webinar-content-pieces-breakdown" className="text-blue-600 hover:text-blue-800 font-medium">75+ content pieces across all formats</Link>. This article focuses specifically on the social media portion, taking you platform by platform through exactly what to create, how to format it, and how to spread it over 30 days.
                 </p>
                 <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg my-6">
                   <p className="text-gray-800 font-medium">
@@ -290,10 +290,10 @@ export default function WebinarToSocialMediaContent() {
                   ))}
                 </div>
                 <p className="text-gray-700 mb-4">
-                  A typical 60-minute webinar yields 5-8 quotable moments, 4-6 key insights, 3-5 stories, 1-3 frameworks, and 5-10 Q&amp;A answers. That is roughly 20-30 distinct content seeds -- more than enough for a full month of daily social media posting.
+                  A typical 60-minute webinar yields 5-8 quotable moments, 4-6 key insights, 3-5 stories, 1-3 frameworks, and 5-10 Q&amp;A answers. That is roughly 20-30 distinct content seeds. More than enough for a full month of daily social media posting.
                 </p>
                 <p className="text-gray-700">
-                  If you also create <Link href="/blog/webinar-to-blog-post" className="text-blue-600 hover:text-blue-800 font-medium">blog posts from your webinar</Link>, you can pull additional social content from the blog itself -- teasing key sections, quoting statistics, and linking back to the full article.
+                  If you also create <Link href="/blog/webinar-to-blog-post" className="text-blue-600 hover:text-blue-800 font-medium">blog posts from your webinar</Link>, you can pull additional social content from the blog itself: teasing key sections, quoting statistics, and linking back to the full article.
                 </p>
               </section>
 
@@ -325,7 +325,7 @@ export default function WebinarToSocialMediaContent() {
                   Every key insight, story, and lesson from your webinar is a standalone LinkedIn post. The best-performing structure follows a simple pattern: a hook on the first line that stops the scroll, a story or insight in the body (3-8 short paragraphs), and a takeaway or question at the end that drives comments.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  Write the hook by pulling the most surprising or counterintuitive statement from your webinar. If you said &quot;Most coaches waste 80 percent of their webinar content&quot; during the presentation, that becomes your first line. The body expands the insight in written format -- shorter sentences, more line breaks, no filler. The ending asks the reader a question or gives them a single clear takeaway.
+                  Write the hook by pulling the most surprising or counterintuitive statement from your webinar. If you said &quot;Most coaches waste 80 percent of their webinar content&quot; during the presentation, that becomes your first line. The body expands the insight in written format: shorter sentences, more line breaks, no filler. The ending asks the reader a question or gives them a single clear takeaway.
                 </p>
                 <p className="text-gray-700 mb-6">
                   <strong>Pro tip:</strong> LinkedIn rewards posts that keep people on the platform. Avoid external links in the post body. If you want to drive traffic to a blog post or landing page, put the link in the first comment instead.
@@ -336,7 +336,7 @@ export default function WebinarToSocialMediaContent() {
                   Any framework, numbered process, or list from your webinar translates perfectly into a swipeable carousel. Carousels get 2-3x more engagement than text posts on LinkedIn because the swipe mechanic keeps users on your content longer, which the algorithm rewards.
                 </p>
                 <p className="text-gray-700 mb-6">
-                  Structure: Slide 1 is your hook (make it bold and specific). Slides 2-9 cover one point per slide with minimal text. The final slide includes your call to action -- follow for more, book a call, or visit your website. Design in Canva using your brand colors at 1080 x 1350 pixels (4:5 ratio) or 1080 x 1080 (1:1 square).
+                  Structure: Slide 1 is your hook (make it bold and specific). Slides 2-9 cover one point per slide with minimal text. The final slide includes your call to action: follow for more, book a call, or visit your website. Design in Canva using your brand colors at 1080 x 1350 pixels (4:5 ratio) or 1080 x 1080 (1:1 square).
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">LinkedIn Articles (1 per webinar)</h3>
@@ -344,7 +344,7 @@ export default function WebinarToSocialMediaContent() {
                   Take the deepest or most nuanced topic from your webinar and expand it into an 800-1,200 word LinkedIn article. Unlike feed posts that disappear after 48 hours, articles live permanently on your profile and can rank in Google search. This is your long-form thought leadership play on the platform.
                 </p>
                 <p className="text-gray-700 mb-6">
-                  Articles work best for topics that require more depth than a 3,000-character post allows -- detailed case studies, multi-step frameworks, or industry analyses that you covered in your webinar.
+                  Articles work best for topics that require more depth than a 3,000-character post allows: detailed case studies, multi-step frameworks, or industry analyses that you covered in your webinar.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">LinkedIn Video Clips (2-3 per webinar)</h3>
@@ -365,7 +365,7 @@ export default function WebinarToSocialMediaContent() {
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Instagram Reels (3-5 per webinar)</h3>
                 <p className="text-gray-700 mb-4">
-                  Reels are Instagram&apos;s highest-reach format. Pull 15-60 second clips from your webinar where you delivered a clear, punchy insight or told a compelling story. The first 3 seconds must hook the viewer -- start with a bold statement or question, not &quot;Hey everyone, today I want to talk about...&quot;
+                  Reels are Instagram&apos;s highest-reach format. Pull 15-60 second clips from your webinar where you delivered a clear, punchy insight or told a compelling story. The first 3 seconds must hook the viewer. Start with a bold statement or question, not &quot;Hey everyone, today I want to talk about...&quot;
                 </p>
                 <p className="text-gray-700 mb-6">
                   Add captions, use a strong opening text overlay, and include 3-5 relevant hashtags in the caption. Reels are discoverable by non-followers, which makes them your best tool for reaching new audiences on Instagram.
@@ -373,7 +373,7 @@ export default function WebinarToSocialMediaContent() {
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Instagram Carousels (2-3 per webinar)</h3>
                 <p className="text-gray-700 mb-4">
-                  The same carousels you create for LinkedIn can be adapted for Instagram with slight adjustments. Instagram carousels allow up to 10 slides at 1080 x 1350 pixels. The content can be identical, but the design should be more visually engaging -- bolder colors, larger text, and more white space.
+                  The same carousels you create for LinkedIn can be adapted for Instagram with slight adjustments. Instagram carousels allow up to 10 slides at 1080 x 1350 pixels. The content can be identical, but the design should be more visually engaging: bolder colors, larger text, and more white space.
                 </p>
                 <p className="text-gray-700 mb-6">
                   Instagram carousels get saved and shared more than any other post type on the platform. When someone saves your carousel, the algorithm shows your next post to more people.
@@ -389,10 +389,10 @@ export default function WebinarToSocialMediaContent() {
               <section id="twitter" className="mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Twitter/X Threads From Webinar Talking Points</h2>
                 <p className="text-gray-700 mb-4">
-                  Twitter/X threads are the platform&apos;s highest-engagement format for educational content. A thread lets you break down a complex topic into bite-sized tweets -- which is exactly what your webinar already does in spoken form.
+                  Twitter/X threads are the platform&apos;s highest-engagement format for educational content. A thread lets you break down a complex topic into bite-sized tweets, which is exactly what your webinar already does in spoken form.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  From each webinar, create 2-3 threads of 8-15 tweets each. The first tweet is your hook -- it should be a bold claim, a surprising statistic, or a promise of what the reader will learn. Each subsequent tweet delivers one point. The final tweet summarizes the key lesson and includes a call to action (follow, bookmark, reply).
+                  From each webinar, create 2-3 threads of 8-15 tweets each. The first tweet is your hook: a bold claim, a surprising statistic, or a promise of what the reader will learn. Each subsequent tweet delivers one point. The final tweet summarizes the key lesson and includes a call to action (follow, bookmark, reply).
                 </p>
                 <p className="text-gray-700 mb-4">
                   <strong>Thread structure from a webinar:</strong>
@@ -424,7 +424,7 @@ export default function WebinarToSocialMediaContent() {
                   <li><strong>Strong opening:</strong> The first 2 seconds hook the viewer (no slow intros)</li>
                 </ul>
                 <p className="text-gray-700 mb-4">
-                  Aim for 4-5 clips per webinar. Each clip should be under 60 seconds (YouTube Shorts requires this). Add large, easy-to-read captions and a text hook at the top of the frame. Post the same clips to both YouTube Shorts and TikTok -- the format requirements are nearly identical.
+                  Aim for 4-5 clips per webinar. Each clip should be under 60 seconds (YouTube Shorts requires this). Add large, easy-to-read captions and a text hook at the top of the frame. Post the same clips to both YouTube Shorts and TikTok. The format requirements are nearly identical.
                 </p>
                 <p className="text-gray-700">
                   <strong>Editing tip:</strong> Use CapCut or Descript to crop your horizontal webinar recording into vertical format. Center the framing on your face. If your webinar used screen share, focus on clips where you were speaking to camera instead. For a complete step-by-step system to manage all of this efficiently, see our <Link href="/blog/content-repurposing-workflow-coaches" className="text-blue-600 hover:text-blue-800 font-medium">content repurposing workflow for coaches</Link>.
@@ -530,7 +530,7 @@ export default function WebinarToSocialMediaContent() {
                   </p>
                 </div>
                 <p className="text-gray-700">
-                  This is one webinar. If you run a monthly webinar, you have a perpetual content engine that never runs dry. For the full picture of everything you can create beyond social media -- including blog posts, email sequences, and lead magnets -- see our <Link href="/blog/webinar-content-pieces-breakdown" className="text-blue-600 hover:text-blue-800 font-medium">breakdown of 75+ content pieces from a single webinar</Link>.
+                  This is one webinar. If you run a monthly webinar, you have a perpetual content engine that never runs dry. For the full picture of everything you can create beyond social media, including blog posts, email sequences, and lead magnets, see our <Link href="/blog/webinar-content-pieces-breakdown" className="text-blue-600 hover:text-blue-800 font-medium">breakdown of 75+ content pieces from a single webinar</Link>.
                 </p>
               </section>
 
@@ -543,7 +543,7 @@ export default function WebinarToSocialMediaContent() {
 
                 <div className="space-y-4 my-6">
                   {[
-                    { category: 'Transcription', tools: 'Otter.ai, Descript, Rev', note: 'The foundation -- you need a transcript before you can extract content' },
+                    { category: 'Transcription', tools: 'Otter.ai, Descript, Rev', note: 'The foundation. You need a transcript before you can extract content' },
                     { category: 'Video Clipping', tools: 'Descript, CapCut, Opus Clip', note: 'For cutting and reformatting short-form clips from your webinar' },
                     { category: 'Design', tools: 'Canva, Figma', note: 'For carousels, quote cards, and branded graphics' },
                     { category: 'Writing', tools: 'Google Docs, Notion, ChatGPT', note: 'For drafting and refining text posts, threads, and captions' },
@@ -564,7 +564,7 @@ export default function WebinarToSocialMediaContent() {
                   <strong>The DIY reality check:</strong> Even with these tools, converting one webinar into 30 social media posts takes 10-15 hours of work. That includes transcribing, reading and tagging the transcript, writing each post, editing video clips, designing carousels, adding captions, and scheduling everything. If you are a coach billing $200/hour for your time, that is $2,000-$3,000 worth of hours spent on content formatting instead of client work.
                 </p>
                 <p className="text-gray-700">
-                  A done-for-you repurposing service eliminates that time investment entirely. You send the webinar recording, and you receive a full month of ready-to-publish social content back -- written in your voice, formatted for each platform, and scheduled on your calendar. At $750-$1,500/month, the math works in your favor the moment your hourly rate exceeds $75.
+                  A done-for-you repurposing service eliminates that time investment entirely. You send the webinar recording, and you receive a full month of ready-to-publish social content back, written in your voice, formatted for each platform, and scheduled on your calendar. At $750-$1,500/month, the math works in your favor the moment your hourly rate exceeds $75.
                 </p>
               </section>
 
@@ -750,7 +750,7 @@ export default function WebinarToSocialMediaContent() {
                   Stop scrambling for content ideas every morning.
                 </p>
                 <p className="text-blue-100 mb-4">
-                  We turn your webinars into a full month of social media content -- formatted for every platform, written in your voice, ready to post.
+                  We turn your webinars into a full month of social media content, formatted for every platform, written in your voice, ready to post.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
                   <a
@@ -802,7 +802,7 @@ export default function WebinarToSocialMediaContent() {
                     },
                     {
                       q: 'What is the difference between repurposing and cross-posting?',
-                      a: 'Cross-posting means sharing the identical content on multiple platforms. Repurposing means adapting the core idea to fit each platform natively -- respecting character limits, preferred formats, audience expectations, and algorithmic preferences. Repurposed content outperforms cross-posted content because each piece is optimized for where it appears.',
+                      a: 'Cross-posting means sharing the identical content on multiple platforms. Repurposing means adapting the core idea to fit each platform natively, respecting character limits, preferred formats, audience expectations, and algorithmic preferences. Repurposed content outperforms cross-posted content because each piece is optimized for where it appears.',
                     },
                   ].map((item, i) => (
                     <div key={i} className="border border-gray-200 rounded-lg p-5">
@@ -820,7 +820,7 @@ export default function WebinarToSocialMediaContent() {
                   You do not need more ideas. You do not need to spend another hour staring at a blank screen wondering what to post. You need a system that extracts the content you already created and puts it where your audience can find it.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  Every webinar you have already delivered is a 30-day social media calendar waiting to be unpacked. The frameworks are there. The stories are there. The insights, the data, the Q&amp;A answers -- all of it is ready to be formatted for LinkedIn, Instagram, Twitter/X, YouTube, and TikTok.
+                  Every webinar you have already delivered is a 30-day social media calendar waiting to be unpacked. The frameworks are there. The stories are there. The insights, the data, the Q&amp;A answers. All of it is ready to be formatted for LinkedIn, Instagram, Twitter/X, YouTube, and TikTok.
                 </p>
                 <p className="text-gray-700 mb-4">
                   Start with your most recent webinar. Follow the extraction process in section two. Build your first 30-day calendar using the template in section seven. Post consistently for one month and measure the results.

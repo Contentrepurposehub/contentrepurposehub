@@ -230,7 +230,7 @@ export default function WebinarLeadMagnets() {
                   Notice a pattern? The top three formats are all things you can pull directly from a webinar transcript. A cheat sheet is your key takeaways on one page. A checklist is your action items listed out. An ebook is one section of your webinar expanded.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  You already did the hard work. The expertise, the examples, the structure -- it is all in the recording. You do not need to create a lead magnet from nothing. You need to <em>extract</em> one from something you already made.
+                  You already did the hard work. The expertise, the examples, the structure: it is all in the recording. You do not need to create a lead magnet from nothing. You need to <em>extract</em> one from something you already made.
                 </p>
                 <p className="text-gray-700">
                   If you want a deeper look at the full range of content you can pull from a webinar (not just lead magnets), check out our <Link href="/blog/webinar-content-pieces-breakdown" className="text-blue-600 hover:text-blue-800 font-medium">complete breakdown of 75+ content pieces from one webinar</Link>.
@@ -253,7 +253,7 @@ export default function WebinarLeadMagnets() {
                 <h3 className="text-lg font-bold text-gray-900 mb-2 mt-6">How to create it</h3>
                 <ol className="list-decimal pl-6 text-gray-700 space-y-2 mb-4">
                   <li>Pull up your webinar transcript (or re-watch at 2x speed with a notepad).</li>
-                  <li>Extract 5-8 core takeaways -- the things you would tell someone if they had 60 seconds to listen.</li>
+                  <li>Extract 5-8 core takeaways, the things you would tell someone if they had 60 seconds to listen.</li>
                   <li>Add any specific numbers, formulas, or frameworks you taught.</li>
                   <li>Format in Canva using a single-page template with your brand colors. One column or two columns. Keep it scannable.</li>
                   <li>Export as PDF. Total time: 30-60 minutes.</li>
@@ -270,7 +270,7 @@ export default function WebinarLeadMagnets() {
                   <strong>Conversion rate: 27%.</strong>
                 </p>
                 <p className="text-gray-700 mb-4">
-                  If your webinar walked people through a process -- and most coaching webinars do -- you already have a checklist. The steps are in your presentation. You taught them live. Now put them on paper.
+                  If your webinar walked people through a process (and most coaching webinars do), you already have a checklist. The steps are in your presentation. You taught them live. Now put them on paper.
                 </p>
                 <p className="text-gray-700 mb-4">
                   Checklists work because they are actionable. Someone downloads it, prints it out, and starts checking things off. It feels like progress. And every time they look at it, they see your name and logo.
@@ -279,7 +279,7 @@ export default function WebinarLeadMagnets() {
                 <h3 className="text-lg font-bold text-gray-900 mb-2 mt-6">How to create it</h3>
                 <ol className="list-decimal pl-6 text-gray-700 space-y-2 mb-4">
                   <li>Identify the process or framework from your webinar. What did you walk attendees through step by step?</li>
-                  <li>Break each step into a checkbox item. Be specific -- &quot;Write your welcome email&quot; is better than &quot;Set up email.&quot;</li>
+                  <li>Break each step into a checkbox item. Be specific: &quot;Write your welcome email&quot; is better than &quot;Set up email.&quot;</li>
                   <li>Add 1-2 sentences of context under each item if it needs clarification.</li>
                   <li>Group related steps under section headers if the process has distinct phases.</li>
                   <li>Design in Canva or Google Docs. Keep it to 1-2 pages. Add your branding and a link back to your site.</li>
@@ -296,7 +296,7 @@ export default function WebinarLeadMagnets() {
                   <strong>Conversion rate: 24%.</strong>
                 </p>
                 <p className="text-gray-700 mb-4">
-                  A mini ebook is not a 50-page monster. It is 10-15 pages that go deep on one section of your webinar. Pick the part where you taught something substantial -- a framework, a methodology, a case study breakdown -- and expand it.
+                  A mini ebook is not a 50-page monster. It is 10-15 pages that go deep on one section of your webinar. Pick the part where you taught something substantial (a framework, a methodology, a case study breakdown) and expand it.
                 </p>
                 <p className="text-gray-700 mb-4">
                   Your webinar transcript gives you 70-80% of the content. The rest is adding examples, data points, and visual formatting.
@@ -347,7 +347,7 @@ export default function WebinarLeadMagnets() {
                   <li>Re-watch or scan the transcript for every tool, book, person, study, or website you mentioned.</li>
                   <li>Organize by category (e.g., &quot;Email Tools,&quot; &quot;Design Tools,&quot; &quot;Books,&quot; &quot;Studies/Data&quot;).</li>
                   <li>Add a one-sentence description and a link for each resource.</li>
-                  <li>Include your honest take where relevant -- &quot;I use X for Y because Z.&quot;</li>
+                  <li>Include your honest take where relevant: &quot;I use X for Y because Z.&quot;</li>
                   <li>Format as a clean 2-3 page PDF. This one can be simple. Utility beats design.</li>
                 </ol>
                 <p className="text-gray-700">
@@ -391,7 +391,7 @@ export default function WebinarLeadMagnets() {
                 <h3 className="text-lg font-bold text-gray-900 mb-2 mt-6">How to create it</h3>
                 <ol className="list-decimal pl-6 text-gray-700 space-y-2 mb-4">
                   <li>Upload your webinar recording to a hosting platform (Vimeo, Wistia, or even an unlisted YouTube video).</li>
-                  <li>Record a 10-15 minute bonus segment. Screen share works fine. No production value needed -- your audience wants the content, not cinema.</li>
+                  <li>Record a 10-15 minute bonus segment. Screen share works fine. No production value needed. Your audience wants the content, not cinema.</li>
                   <li>Stitch the bonus onto the end of the webinar, or provide both as separate links.</li>
                   <li>Create a landing page with an email gate. ConvertKit, Leadpages, or even a simple Carrd page works.</li>
                   <li>Promote it to people who missed the live event and to new audience members finding you through search or social.</li>
@@ -416,7 +416,7 @@ export default function WebinarLeadMagnets() {
                   <li>Divide your webinar into 5 logical sections. Most 60-minute webinars have a natural structure you can follow.</li>
                   <li>Write each email as a standalone lesson: 300-500 words. Subject line, one teaching point, one action item.</li>
                   <li>Set up an automated sequence in your email platform (ConvertKit, ActiveCampaign, Mailchimp). Space them 24 hours apart.</li>
-                  <li>Email 5 should include a soft CTA -- a link to book a call, check out your program, or reply with questions.</li>
+                  <li>Email 5 should include a soft CTA: a link to book a call, check out your program, or reply with questions.</li>
                   <li>Promote the mini-course the same way you would any lead magnet: landing page, social posts, blog CTAs.</li>
                 </ol>
                 <p className="text-gray-700">
@@ -487,7 +487,7 @@ export default function WebinarLeadMagnets() {
                   <strong>Our recommendation if you are unsure:</strong> start with the cheat sheet. It takes the least time, converts the best, and gives you a quick win. Then build out the checklist and worksheet as your second and third lead magnets.
                 </p>
                 <p className="text-gray-700">
-                  And if you want the full picture of what one webinar can produce beyond lead magnets -- <Link href="/blog/webinar-repurposing-guide" className="text-blue-600 hover:text-blue-800 font-medium">our complete webinar repurposing guide</Link> covers all 14+ content formats.
+                  And if you want the full picture of what one webinar can produce beyond lead magnets, <Link href="/blog/webinar-repurposing-guide" className="text-blue-600 hover:text-blue-800 font-medium">our complete webinar repurposing guide</Link> covers all 14+ content formats.
                 </p>
               </section>
 
@@ -510,7 +510,7 @@ export default function WebinarLeadMagnets() {
 
                 <h3 className="text-lg font-bold text-gray-900 mb-2 mt-6">Step 3: Add a welcome email (15 minutes)</h3>
                 <p className="text-gray-700 mb-4">
-                  The delivery email should include the download link, a brief introduction to who you are, and a single question -- &quot;What is your biggest challenge with [topic]?&quot; Replies to this email are gold for understanding your audience.
+                  The delivery email should include the download link, a brief introduction to who you are, and a single question: &quot;What is your biggest challenge with [topic]?&quot; Replies to this email are gold for understanding your audience.
                 </p>
 
                 <h3 className="text-lg font-bold text-gray-900 mb-2 mt-6">Step 4: Promote it everywhere (20 minutes)</h3>
@@ -530,11 +530,11 @@ export default function WebinarLeadMagnets() {
                   {[
                     {
                       q: 'What is the best lead magnet to create from a webinar?',
-                      a: 'Cheat sheets convert at 34%, making them the highest-converting format. They are also the fastest to create -- under 60 minutes from a webinar transcript. If your webinar teaches a process, a checklist (27% conversion rate) is a close second.',
+                      a: 'Cheat sheets convert at 34%, making them the highest-converting format. They are also the fastest to create: under 60 minutes from a webinar transcript. If your webinar teaches a process, a checklist (27% conversion rate) is a close second.',
                     },
                     {
                       q: 'How many lead magnets can I create from one webinar?',
-                      a: 'At least 7. A single 60-minute webinar has enough material for a cheat sheet, checklist, mini ebook, resource guide, worksheet, gated replay, and email mini-course. You do not need to create all of them -- start with one and expand over time.',
+                      a: 'At least 7. A single 60-minute webinar has enough material for a cheat sheet, checklist, mini ebook, resource guide, worksheet, gated replay, and email mini-course. You do not need to create all of them. Start with one and expand over time.',
                     },
                     {
                       q: 'How do I turn a webinar into an ebook?',
@@ -542,7 +542,7 @@ export default function WebinarLeadMagnets() {
                     },
                     {
                       q: 'Do I need design skills to create lead magnets?',
-                      a: 'No. Canva has templates for every format -- cheat sheets, checklists, ebooks, and worksheets. Google Docs works fine for simpler formats. The content matters more than the design. A plain checklist with great content outperforms a beautiful PDF with generic advice.',
+                      a: 'No. Canva has templates for every format: cheat sheets, checklists, ebooks, and worksheets. Google Docs works fine for simpler formats. The content matters more than the design. A plain checklist with great content outperforms a beautiful PDF with generic advice.',
                     },
                     {
                       q: 'How do I promote my webinar lead magnet?',
@@ -561,10 +561,10 @@ export default function WebinarLeadMagnets() {
               <section className="mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Stop Building Lead Magnets From Scratch</h2>
                 <p className="text-gray-700 mb-4">
-                  Your webinar already did the hard part. The thinking, the structuring, the teaching -- that is where the real effort goes. Turning that material into a lead magnet is extraction, not creation.
+                  Your webinar already did the hard part. The thinking, the structuring, the teaching: that is where the real effort goes. Turning that material into a lead magnet is extraction, not creation.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  Start with a cheat sheet. It takes 30-60 minutes and converts at 34%. Once that is working, add a checklist. Then a worksheet. Before long, you have multiple lead magnets -- all from one webinar, all driving email subscribers while you sleep.
+                  Start with a cheat sheet. It takes 30-60 minutes and converts at 34%. Once that is working, add a checklist. Then a worksheet. Before long, you have multiple lead magnets, all from one webinar, all driving email subscribers while you sleep.
                 </p>
                 <p className="text-gray-700 mb-4">
                   And lead magnets are only one piece of the puzzle. A single webinar can produce <Link href="/blog/webinar-content-pieces-breakdown" className="text-blue-600 hover:text-blue-800 font-medium">75+ content pieces</Link> across blog posts, social media, email, and more. The lead magnet captures the email. The rest of the system turns that subscriber into a client.

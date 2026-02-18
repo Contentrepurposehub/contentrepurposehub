@@ -103,7 +103,7 @@ export default function WebinarFollowUpEmailSequence() {
             name: 'What should a webinar follow-up email include?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'An effective webinar follow-up email should include a personal greeting, a reference to the webinar topic, specific value (key takeaway, resource, or insight), a single clear call-to-action, and a P.S. line with an additional hook. Avoid cramming multiple CTAs into one email -- each email should have one primary purpose.',
+              text: 'An effective webinar follow-up email should include a personal greeting, a reference to the webinar topic, specific value (key takeaway, resource, or insight), a single clear call-to-action, and a P.S. line with an additional hook. Avoid cramming multiple CTAs into one email. Each email should have one primary purpose.',
             },
           },
           {
@@ -189,7 +189,7 @@ export default function WebinarFollowUpEmailSequence() {
                 Webinar Follow-Up Email Sequences That Convert: Templates and Strategy for Coaches
               </h1>
               <p className="text-xl text-gray-600">
-                Your webinar just ended. Attendees are excited, no-shows are curious, and your offer is fresh. What you send in the next 10 days determines whether those leads become clients or vanish forever. Here is the exact 6-email webinar follow-up sequence -- with copy-and-paste templates.
+                Your webinar just ended. Attendees are excited, no-shows are curious, and your offer is fresh. What you send in the next 10 days determines whether those leads become clients or vanish forever. Here is the exact 6-email webinar follow-up sequence, complete with copy-and-paste templates.
               </p>
             </header>
 
@@ -201,7 +201,7 @@ export default function WebinarFollowUpEmailSequence() {
                 <li>-- The first email must go out within 2-4 hours of the webinar ending (open rates drop 50% after 24 hours).</li>
                 <li>-- Segmenting attendees vs. no-shows can increase overall conversion rates by 20-30%.</li>
                 <li>-- Each email has one job: deliver value, build trust, or present the offer. Never all three at once.</li>
-                <li>-- Your webinar content is the raw material for every email -- no need to write from scratch.</li>
+                <li>-- Your webinar content is the raw material for every email, so there is no need to write from scratch.</li>
               </ul>
             </div>
 
@@ -234,7 +234,7 @@ export default function WebinarFollowUpEmailSequence() {
                   You spent hours planning your webinar. You promoted it, rehearsed it, delivered it. People showed up. You taught something valuable and made your offer at the end. Then you sent one follow-up email with the replay link and... nothing. No sales. No booked calls. Just silence.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  This is the most common mistake coaches make with their <strong>webinar follow-up email sequence</strong> -- or rather, the lack of one. A single email is not a sequence. It is a missed opportunity disguised as effort.
+                  This is the most common mistake coaches make with their <strong>webinar follow-up email sequence</strong>, or rather, the lack of one. A single email is not a sequence. It is a missed opportunity disguised as effort.
                 </p>
                 <p className="text-gray-700 mb-4">
                   Here is why it matters: research consistently shows that most buyers need 5-8 touches before they make a purchase decision. Your webinar was touch number one. If your only follow-up is a single replay email, you are abandoning the conversation right when it should be deepening.
@@ -248,7 +248,7 @@ export default function WebinarFollowUpEmailSequence() {
                   </p>
                 </div>
                 <p className="text-gray-700 mb-4">
-                  The good news: if you have a webinar recording, you already have everything you need to build a high-converting follow-up sequence. Every email in the sequence can be sourced directly from the content you already delivered. You do not need to create anything from scratch -- you need to repurpose what you already said into a strategic email flow. (If you want to understand the broader strategy behind this, read our <Link href="/blog/webinar-content-strategy-coaches" className="text-blue-600 hover:text-blue-800 font-medium">webinar-first content strategy guide</Link>.)
+                  The good news: if you have a webinar recording, you already have everything you need to build a high-converting follow-up sequence. Every email in the sequence can be sourced directly from the content you already delivered. You do not need to create anything from scratch. You need to repurpose what you already said into a strategic email flow. (If you want to understand the broader strategy behind this, read our <Link href="/blog/webinar-content-strategy-coaches" className="text-blue-600 hover:text-blue-800 font-medium">webinar-first content strategy guide</Link>.)
                 </p>
               </section>
 
@@ -296,7 +296,7 @@ export default function WebinarFollowUpEmailSequence() {
                 </div>
 
                 <p className="text-gray-700 mb-4">
-                  Notice the pacing. Emails are closer together at the start (when engagement is highest) and spread out toward the end. The first three emails are pure value. The last three introduce your offer. This ratio -- roughly 50% value, 50% conversion -- is the sweet spot for coaching audiences who are wary of aggressive sales tactics.
+                  Notice the pacing. Emails are closer together at the start (when engagement is highest) and spread out toward the end. The first three emails are pure value. The last three introduce your offer. This ratio (roughly 50% value, 50% conversion) is the sweet spot for coaching audiences who are wary of aggressive sales tactics.
                 </p>
                 <p className="text-gray-700">
                   Let us walk through each email in detail.
@@ -313,7 +313,7 @@ export default function WebinarFollowUpEmailSequence() {
                   <strong>Purpose:</strong> Thank attendees, deliver the replay link, and set expectations for the rest of the sequence.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  This is the most important email in the sequence. Open rates for same-day webinar follow-ups average 40-50% -- roughly double the rate of standard marketing emails. That makes this email your highest-visibility touchpoint outside of the webinar itself.
+                  This is the most important email in the sequence. Open rates for same-day webinar follow-ups average 40-50%, roughly double the rate of standard marketing emails. That makes this email your highest-visibility touchpoint outside of the webinar itself.
                 </p>
                 <p className="text-gray-700 mb-4">
                   The email should be short and personal. Do not try to sell anything. Do not dump five links. The primary goal is to deliver the replay and remind them what they learned. A secondary goal is to plant a seed: mention that you will be sharing additional resources over the coming days.
@@ -341,10 +341,10 @@ export default function WebinarFollowUpEmailSequence() {
                   <strong>Purpose:</strong> Reinforce the webinar content and deliver immediate, actionable value.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  This email distills the webinar into 3-5 key takeaways and pairs each one with a specific action the reader can take today. The goal is to make the reader think: &quot;This person is generous with their expertise. The free content is this good -- imagine what their paid program delivers.&quot;
+                  This email distills the webinar into 3-5 key takeaways and pairs each one with a specific action the reader can take today. The goal is to make the reader think: &quot;This person is generous with their expertise. The free content is this good. Imagine what their paid program delivers.&quot;
                 </p>
                 <p className="text-gray-700 mb-4">
-                  Pull these takeaways directly from your webinar. If you taught a framework, summarize the steps. If you shared statistics, highlight the most surprising one. If you told a client story, reference it briefly. Everything in this email should come from the webinar itself -- you are <Link href="/blog/webinar-repurposing-guide" className="text-blue-600 hover:text-blue-800 font-medium">repurposing your webinar content</Link> into email format.
+                  Pull these takeaways directly from your webinar. If you taught a framework, summarize the steps. If you shared statistics, highlight the most surprising one. If you told a client story, reference it briefly. Everything in this email should come from the webinar itself. You are <Link href="/blog/webinar-repurposing-guide" className="text-blue-600 hover:text-blue-800 font-medium">repurposing your webinar content</Link> into email format.
                 </p>
                 <p className="text-gray-700 mb-4">
                   <strong>Key elements:</strong>
@@ -353,7 +353,7 @@ export default function WebinarFollowUpEmailSequence() {
                   <li>3-5 numbered takeaways (easy to scan)</li>
                   <li>One &quot;quick win&quot; action item for each takeaway</li>
                   <li>A link back to the replay for context</li>
-                  <li>No sales pitch -- pure value delivery</li>
+                  <li>No sales pitch. Pure value delivery</li>
                   <li>P.S. line teasing the deeper content coming in Email 3</li>
                 </ul>
               </section>
@@ -384,10 +384,10 @@ export default function WebinarFollowUpEmailSequence() {
                   <strong>Purpose:</strong> Drive traffic to a longer-form content piece (blog post, guide, or video) that expands on a specific webinar topic.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  This email bridges the gap between short-form email content and the deeper expertise you offer. Take one section of your webinar -- the part that generated the most questions or the most engagement -- and point readers to a <Link href="/blog/webinar-to-blog-post" className="text-blue-600 hover:text-blue-800 font-medium">blog post created from your webinar</Link> or guide that goes deeper.
+                  This email bridges the gap between short-form email content and the deeper expertise you offer. Take one section of your webinar, the part that generated the most questions or the most engagement, and point readers to a <Link href="/blog/webinar-to-blog-post" className="text-blue-600 hover:text-blue-800 font-medium">blog post created from your webinar</Link> or guide that goes deeper.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  If you have turned your webinar into a blog post (and you should -- see our <Link href="/blog/webinar-repurposing-guide" className="text-blue-600 hover:text-blue-800 font-medium">complete webinar repurposing guide</Link> for how), this email writes itself. Introduce the topic, explain why it matters, and link to the full piece.
+                  If you have turned your webinar into a blog post (and you should; see our <Link href="/blog/webinar-repurposing-guide" className="text-blue-600 hover:text-blue-800 font-medium">complete webinar repurposing guide</Link> for how), this email writes itself. Introduce the topic, explain why it matters, and link to the full piece.
                 </p>
                 <p className="text-gray-700 mb-4">
                   This email serves a dual purpose: it provides value to the reader and it drives traffic to your website, which gives Google positive engagement signals and builds your SEO. If that blog post is optimized for a target keyword, every click from this email helps it rank higher.
@@ -417,10 +417,10 @@ export default function WebinarFollowUpEmailSequence() {
                   This is where the sequence transitions from pure value delivery to the conversion phase. Email 4 introduces your offer indirectly by telling a story about someone who got results using the approach you taught in the webinar.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  The structure is simple: situation (where the client started), action (what they did -- ideally using your framework), result (specific, measurable outcomes). The more specific the numbers, the more persuasive the story. &quot;Sarah doubled her revenue&quot; is weaker than &quot;Sarah went from $4,200/month to $11,500/month in 90 days.&quot;
+                  The structure is simple: situation (where the client started), action (what they did, ideally using your framework), result (specific, measurable outcomes). The more specific the numbers, the more persuasive the story. &quot;Sarah doubled her revenue&quot; is weaker than &quot;Sarah went from $4,200/month to $11,500/month in 90 days.&quot;
                 </p>
                 <p className="text-gray-700 mb-4">
-                  If you referenced a client success story during your webinar, use it here with more detail. If you did not, pull from testimonials, coaching call wins, or community results. The key is that the case study demonstrates the same principles you taught in the webinar -- this creates a logical connection between your free teaching and your paid offer.
+                  If you referenced a client success story during your webinar, use it here with more detail. If you did not, pull from testimonials, coaching call wins, or community results. The key is that the case study demonstrates the same principles you taught in the webinar. This creates a logical connection between your free teaching and your paid offer.
                 </p>
                 <p className="text-gray-700 mb-4">
                   <strong>Key elements:</strong>
@@ -447,7 +447,7 @@ export default function WebinarFollowUpEmailSequence() {
                   By day 7, the people still opening your emails are interested. They are considering your offer. But something is holding them back. This email names those objections directly and addresses each one.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  The most common objections for coaching programs are: cost (&quot;Can I afford this?&quot;), time (&quot;Do I have time for this?&quot;), readiness (&quot;Am I far enough along?&quot;), and trust (&quot;Will this work for my situation?&quot;). Your webinar Q&amp;A section is a goldmine for identifying the exact objections your audience has -- pull directly from the questions people asked during the live session.
+                  The most common objections for coaching programs are: cost (&quot;Can I afford this?&quot;), time (&quot;Do I have time for this?&quot;), readiness (&quot;Am I far enough along?&quot;), and trust (&quot;Will this work for my situation?&quot;). Your webinar Q&amp;A section is a goldmine for identifying the exact objections your audience has. Pull directly from the questions people asked during the live session.
                 </p>
                 <p className="text-gray-700 mb-4">
                   Structure this email as a FAQ. List 4-6 of the most common questions and answer each one honestly. Do not dodge the hard questions. If your program costs $5,000, address the cost objection directly by reframing the investment.
@@ -498,7 +498,7 @@ export default function WebinarFollowUpEmailSequence() {
                   Building email sequences from webinar content takes time.
                 </p>
                 <p className="text-gray-600 mb-4">
-                  We write the entire sequence for you -- pulled directly from your webinar recording. Ready to send.
+                  We write the entire sequence for you, pulled directly from your webinar recording. Ready to send.
                 </p>
                 <a
                   href="https://cal.com/contentrepurposehub/30min"
@@ -517,7 +517,7 @@ export default function WebinarFollowUpEmailSequence() {
                   Not everyone who registers for your webinar actually shows up. Industry data shows that webinar attendance rates average 35-45% of registrants. That means more than half of your list signed up because they were interested in the topic but did not attend.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  These two groups -- attendees and no-shows -- need different messaging. Sending the same emails to both is a missed opportunity. Here is how to adjust:
+                  These two groups, attendees and no-shows, need different messaging. Sending the same emails to both is a missed opportunity. Here is how to adjust:
                 </p>
 
                 <div className="overflow-x-auto my-6">
@@ -533,10 +533,10 @@ export default function WebinarFollowUpEmailSequence() {
                       {[
                         ['Email 1', 'Thank you for attending + replay link', '"Sorry we missed you" + replay link (stronger emphasis on watching)'],
                         ['Email 2', 'Key takeaways as a refresher', 'Key takeaways as a summary of what they missed'],
-                        ['Email 3', 'Deeper dive on a specific topic', 'Same content -- works for both groups'],
-                        ['Email 4', 'Case study (reference shared experience from webinar)', 'Case study (no webinar references -- focus on results)'],
+                        ['Email 3', 'Deeper dive on a specific topic', 'Same content (works for both groups)'],
+                        ['Email 4', 'Case study (reference shared experience from webinar)', 'Case study (no webinar references; focus on results)'],
                         ['Email 5', 'FAQ based on live Q&A questions', 'FAQ based on common objections (skip Q&A references)'],
-                        ['Email 6', '"You saw the value live -- here is your chance to go deeper"', '"You were interested enough to register -- here is what you missed and how to take the next step"'],
+                        ['Email 6', '"You saw the value live. Here is your chance to go deeper"', '"You were interested enough to register. Here is what you missed and how to take the next step"'],
                       ].map((row, i) => (
                         <tr key={i}>
                           <td className="p-3 border border-gray-200 font-medium text-gray-900 whitespace-nowrap">{row[0]}</td>
@@ -581,7 +581,7 @@ export default function WebinarFollowUpEmailSequence() {
                     <p>Thank you for showing up to [Webinar Name] today. I know your time is valuable, and I appreciate you spending it with me.</p>
                     <p>Here is your replay link in case you want to rewatch any section: [Replay Link]</p>
                     <p>If I had to pick the single biggest takeaway from today, it would be this: [One-sentence summary of the most valuable insight from the webinar].</p>
-                    <p>Over the next few days, I am going to send you some additional resources that build on what we covered -- including [brief mention of what is coming: templates, a deeper guide, case studies, etc.].</p>
+                    <p>Over the next few days, I am going to send you some additional resources that build on what we covered, including [brief mention of what is coming: templates, a deeper guide, case studies, etc.].</p>
                     <p>Keep an eye on your inbox.</p>
                     <p>[Your Name]</p>
                     <p>P.S. Tomorrow I am sending you the [3/5] key takeaways from the session with specific action steps you can implement right away.</p>
@@ -639,8 +639,8 @@ export default function WebinarFollowUpEmailSequence() {
                     <p>---</p>
                     <p>Hey [First Name],</p>
                     <p>I want to tell you about [Client Name/Description].</p>
-                    <p>When [he/she/they] came to me, [he/she/they] was [describe the before state -- the problem they were facing, ideally the same problem your webinar addressed].</p>
-                    <p>[He/She/They] started by [describe the specific actions taken -- connect to the framework or method from your webinar].</p>
+                    <p>When [he/she/they] came to me, [he/she/they] was [describe the before state, the problem they were facing, ideally the same problem your webinar addressed].</p>
+                    <p>[He/She/They] started by [describe the specific actions taken; connect to the framework or method from your webinar].</p>
                     <p>Within [timeframe], [he/she/they] [describe the specific, measurable result].</p>
                     <p>The part that surprised [him/her/them] most? [Share one unexpected insight or benefit].</p>
                     <p>This is the kind of transformation that happens when [describe the principle or approach from your webinar]. It is exactly what we covered in [Webinar Name], and it is exactly what I help my clients implement inside [Program/Service Name].</p>
@@ -662,10 +662,10 @@ export default function WebinarFollowUpEmailSequence() {
                     <p>---</p>
                     <p>Hey [First Name],</p>
                     <p>Over the past week, I have gotten several questions from people who attended [Webinar Name]. I want to answer the most common ones directly:</p>
-                    <p><strong>Q: &quot;[Most common question -- usually about cost or investment]&quot;</strong><br/>A: [Honest, specific answer. If it is a cost question, reframe as investment vs. cost of inaction.]</p>
+                    <p><strong>Q: &quot;[Most common question, usually about cost or investment]&quot;</strong><br/>A: [Honest, specific answer. If it is a cost question, reframe as investment vs. cost of inaction.]</p>
                     <p><strong>Q: &quot;[Question about time commitment or difficulty]&quot;</strong><br/>A: [Honest answer with specific time expectations and what support looks like.]</p>
                     <p><strong>Q: &quot;[Question about whether it will work for their specific situation]&quot;</strong><br/>A: [Answer that addresses their concern and gives examples of similar clients.]</p>
-                    <p><strong>Q: &quot;[Question about what makes this different from other options]&quot;</strong><br/>A: [Clear differentiation -- what you do that others do not.]</p>
+                    <p><strong>Q: &quot;[Question about what makes this different from other options]&quot;</strong><br/>A: [Clear differentiation: what you do that others do not.]</p>
                     <p>If you have a question I did not cover, reply to this email. I will answer personally.</p>
                     <p>And if you are ready to talk about your specific situation, here is a link to book a free call: [Booking Link]</p>
                     <p>Even if you decide it is not the right fit, you will walk away with a clear plan.</p>
@@ -680,7 +680,7 @@ export default function WebinarFollowUpEmailSequence() {
                     <span className="text-xs text-gray-500">Send: Day 10 (final email)</span>
                   </div>
                   <div className="text-gray-300 text-sm font-mono space-y-3">
-                    <p><span className="text-yellow-400">Subject:</span> Last chance: [specific urgency element -- bonus, spots, deadline]</p>
+                    <p><span className="text-yellow-400">Subject:</span> Last chance: [specific urgency element, e.g. bonus, spots, deadline]</p>
                     <p>---</p>
                     <p>Hey [First Name],</p>
                     <p>This is the last email in this series, so I will be direct.</p>
@@ -691,7 +691,7 @@ export default function WebinarFollowUpEmailSequence() {
                     <p>Here is the link to book: [Booking Link]</p>
                     <p>Either way, I am glad you attended the webinar. I hope the emails over the past 10 days were valuable.</p>
                     <p>[Your Name]</p>
-                    <p>P.S. &quot;[One final, powerful testimonial quote that speaks to the transformation.]&quot; -- [Client Name/Description]</p>
+                    <p>P.S. &quot;[One final, powerful testimonial quote that speaks to the transformation.]&quot; — [Client Name/Description]</p>
                   </div>
                 </div>
 
@@ -707,15 +707,15 @@ export default function WebinarFollowUpEmailSequence() {
                     <span className="text-xs text-gray-500">Send: Same day, 2-4 hours after</span>
                   </div>
                   <div className="text-gray-300 text-sm font-mono space-y-3">
-                    <p><span className="text-yellow-400">Subject:</span> You missed [Webinar Name] -- here is the replay</p>
+                    <p><span className="text-yellow-400">Subject:</span> You missed [Webinar Name]. Here is the replay</p>
                     <p>---</p>
                     <p>Hey [First Name],</p>
-                    <p>I noticed you were not able to make it to [Webinar Name] today. No worries -- life happens.</p>
+                    <p>I noticed you were not able to make it to [Webinar Name] today. No worries. Life happens.</p>
                     <p>But I do not want you to miss what we covered, because it was one of the most valuable sessions I have done on [topic].</p>
                     <p>Here is what you missed:</p>
                     <p>- [Key point #1 from the webinar]<br/>- [Key point #2 from the webinar]<br/>- [Key point #3 from the webinar]</p>
                     <p>Watch the full replay here: [Replay Link]</p>
-                    <p>It is [length] long, but if you are short on time, skip to the [timestamp] mark -- that is where I share the [most valuable framework/insight].</p>
+                    <p>It is [length] long, but if you are short on time, skip to the [timestamp] mark. That is where I share the [most valuable framework/insight].</p>
                     <p>[Your Name]</p>
                     <p>P.S. I will be sending you a few more emails this week with the key takeaways and resources from the session. Even if you cannot watch the full replay, you will get the most important pieces.</p>
                   </div>
@@ -732,7 +732,7 @@ export default function WebinarFollowUpEmailSequence() {
                   Here is how the email sequence fits into the broader content ecosystem:
                 </p>
                 <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-                  <li><strong>Email 3 links to your blog post</strong> -- which was also repurposed from the webinar. One piece of content fuels the other.</li>
+                  <li><strong>Email 3 links to your blog post,</strong> which was also repurposed from the webinar. One piece of content fuels the other.</li>
                   <li><strong>Email 4 uses the same case study</strong> you shared as a LinkedIn post earlier that week. Consistent messaging across channels.</li>
                   <li><strong>The key takeaways from Email 2</strong> become quote cards for Instagram and carousel slides for LinkedIn.</li>
                   <li><strong>The FAQ answers from Email 5</strong> become an FAQ section on your blog post, improving its SEO.</li>
@@ -745,7 +745,7 @@ export default function WebinarFollowUpEmailSequence() {
                   Most coaches look at this list and think: &quot;I do not have time to do all of that.&quot; That is a rational response. Building a full email sequence from a webinar takes 5-10 hours if you do it yourself. Repurposing that same webinar into 14-75+ content pieces across all channels takes significantly more. When you look at the <Link href="/blog/webinar-repurposing-roi" className="text-blue-600 hover:text-blue-800 font-medium">ROI of webinar repurposing</Link>, however, the investment pays for itself many times over.
                 </p>
                 <p className="text-gray-700">
-                  That is why done-for-you repurposing services exist. You send the webinar recording. A team handles the transcription, extraction, writing, formatting, and delivery of every content piece -- including the complete email sequence with segmented versions for attendees and no-shows. You focus on coaching. The content gets created anyway.
+                  That is why done-for-you repurposing services exist. You send the webinar recording. A team handles the transcription, extraction, writing, formatting, and delivery of every content piece, including the complete email sequence with segmented versions for attendees and no-shows. You focus on coaching. The content gets created anyway.
                 </p>
               </section>
 
@@ -795,7 +795,7 @@ export default function WebinarFollowUpEmailSequence() {
                     },
                     {
                       q: 'What should a webinar follow-up email include?',
-                      a: 'An effective webinar follow-up email should include a personal greeting, a reference to the webinar topic, specific value (key takeaway, resource, or insight), a single clear call-to-action, and a P.S. line with an additional hook. Avoid cramming multiple CTAs into one email -- each email should have one primary purpose.',
+                      a: 'An effective webinar follow-up email should include a personal greeting, a reference to the webinar topic, specific value (key takeaway, resource, or insight), a single clear call-to-action, and a P.S. line with an additional hook. Avoid cramming multiple CTAs into one email. Each email should have one primary purpose.',
                     },
                     {
                       q: 'How do I write a webinar follow-up email that converts?',
@@ -831,7 +831,7 @@ export default function WebinarFollowUpEmailSequence() {
                   Take your most recent webinar recording. Pull out 3-5 key takeaways. Draft Email 1 and Email 2 using the templates above. Set them up in your email platform. Then build out the remaining four emails over the next few days. By your next webinar, you will have a complete sequence ready to go.
                 </p>
                 <p className="text-gray-700">
-                  Or, if you would rather have someone build the entire sequence for you -- along with blog posts, social content, lead magnets, and everything else your webinar can become -- <a href="https://cal.com/contentrepurposehub/30min" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 font-medium">book a free strategy call</a> and we will show you how we turn one webinar recording into a complete content engine.
+                  Or, if you would rather have someone build the entire sequence for you (blog posts, social content, lead magnets, and everything else your webinar can become), <a href="https://cal.com/contentrepurposehub/30min" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 font-medium">book a free strategy call</a> and we will show you how we turn one webinar recording into a complete content engine.
                 </p>
               </section>
             </div>
@@ -860,7 +860,7 @@ export default function WebinarFollowUpEmailSequence() {
               Your Webinar Content Deserves a Real Follow-Up Strategy
             </h2>
             <p className="text-blue-100 text-lg mb-6">
-              Complete email sequences, blog posts, social content, and more -- all from your webinar recording. Starting at $750/month.
+              Complete email sequences, blog posts, social content, and more, all from your webinar recording. Starting at $750/month.
             </p>
             <a
               href="https://cal.com/contentrepurposehub/30min"

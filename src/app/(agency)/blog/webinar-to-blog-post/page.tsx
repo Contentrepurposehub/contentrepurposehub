@@ -244,7 +244,7 @@ export default function WebinarToBlogPost() {
                   A blog post changes everything. Unlike a webinar recording (which requires registration and a time commitment to watch), a blog post is findable on Google, shareable on social media, and readable in 5-10 minutes. It works around the clock, bringing in new visitors who never attended your webinar and never would have found your content otherwise.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  This guide walks you through the exact process to turn a webinar into a blog post -- from transcription to final publication. You will learn how to identify the strongest sections, restructure spoken content for written format, optimize for search engines, and publish posts that generate leads for months after your webinar ends.
+                  This guide walks you through the exact process to turn a webinar into a blog post, from transcription to final publication. You will learn how to identify the strongest sections, restructure spoken content for written format, optimize for search engines, and publish posts that generate leads for months after your webinar ends.
                 </p>
                 <p className="text-gray-700">
                   If you are looking for the broader picture of all the content types you can extract from a single webinar, start with our <Link href="/blog/webinar-repurposing-guide" className="text-blue-600 hover:text-blue-800 font-medium">complete webinar repurposing guide</Link>. This post goes deep on one specific output: the blog post.
@@ -261,10 +261,10 @@ export default function WebinarToBlogPost() {
                   <strong>Webinars are structured teaching.</strong> Unlike casual social media posts or podcast conversations, a webinar has a clear beginning, middle, and end. You built it around a thesis. You organized sections. You included examples and frameworks. That structure translates directly into blog post headings, sections, and logical flow.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  <strong>Webinars contain your authentic expertise.</strong> When you teach live, you draw on years of experience. You explain concepts in the language your audience understands. You share stories that make abstract ideas concrete. This is exactly what makes blog content resonate -- and it is already done. You do not need to stare at a blank page and try to manufacture insights.
+                  <strong>Webinars contain your authentic expertise.</strong> When you teach live, you draw on years of experience. You explain concepts in the language your audience understands. You share stories that make abstract ideas concrete. This is exactly what makes blog content resonate, and it is already done. You do not need to stare at a blank page and try to manufacture insights.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  <strong>Webinars have built-in audience validation.</strong> Your attendees asked questions. They reacted to certain points. They stayed engaged during specific sections and dropped off during others. This real-time feedback tells you which parts of your content are strongest -- which is exactly what you want to lead with in a blog post. When optimized properly, these blog posts become <Link href="/blog/webinar-evergreen-seo-content" className="text-blue-600 hover:text-blue-800 font-medium">evergreen SEO assets</Link> that drive traffic for years.
+                  <strong>Webinars have built-in audience validation.</strong> Your attendees asked questions. They reacted to certain points. They stayed engaged during specific sections and dropped off during others. This real-time feedback tells you which parts of your content are strongest, which is exactly what you want to lead with in a blog post. When optimized properly, these blog posts become <Link href="/blog/webinar-evergreen-seo-content" className="text-blue-600 hover:text-blue-800 font-medium">evergreen SEO assets</Link> that drive traffic for years.
                 </p>
 
                 <div className="grid md:grid-cols-2 gap-4 my-6">
@@ -283,7 +283,7 @@ export default function WebinarToBlogPost() {
                 </div>
 
                 <p className="text-gray-700">
-                  HubSpot research shows that 60% of marketers report getting more leads from repurposed content than from original content. When you repurpose a webinar into a blog post, you are not creating lesser content -- you are creating a different format that reaches a different audience through a different channel. And because the source material is your best teaching, the blog post carries the same authority. In fact, a single webinar can yield <Link href="/blog/webinar-content-pieces-breakdown" className="text-blue-600 hover:text-blue-800 font-medium">75+ content pieces across all formats</Link> -- the blog post is just one of the most impactful.
+                  HubSpot research shows that 60% of marketers report getting more leads from repurposed content than from original content. When you repurpose a webinar into a blog post, you are not creating lesser content. You are creating a different format that reaches a different audience through a different channel. And because the source material is your best teaching, the blog post carries the same authority. In fact, a single webinar can yield <Link href="/blog/webinar-content-pieces-breakdown" className="text-blue-600 hover:text-blue-800 font-medium">75+ content pieces across all formats</Link>. The blog post is just one of the most impactful.
                 </p>
               </section>
 
@@ -396,7 +396,7 @@ export default function WebinarToBlogPost() {
                 </div>
 
                 <p className="text-gray-700 mb-4">
-                  <strong>The math works in your favor.</strong> A typical 60-minute webinar contains 7,000-9,000 spoken words. A strong blog post is 1,500-2,500 words. That means one webinar holds enough material for 2-4 separate blog posts -- not counting Q&A content.
+                  <strong>The math works in your favor.</strong> A typical 60-minute webinar contains 7,000-9,000 spoken words. A strong blog post is 1,500-2,500 words. That means one webinar holds enough material for 2-4 separate blog posts, not counting Q&A content.
                 </p>
                 <p className="text-gray-700">
                   Highlight the strongest sections in your transcript. Rank them by which topics your audience would most likely search for on Google. The section with the highest search potential becomes your first blog post.
@@ -407,7 +407,7 @@ export default function WebinarToBlogPost() {
               <section id="restructuring-for-written-format" className="mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">4. Restructuring Conversational Content for Written Format</h2>
                 <p className="text-gray-700 mb-4">
-                  Spoken content and written content follow different rules. What works in a live webinar does not automatically work on a blog. The restructuring step is where most DIY attempts fail -- people either publish cleaned-up transcripts that read like someone talking (not writing), or they rewrite so heavily that they lose the authentic voice that made the webinar compelling.
+                  Spoken content and written content follow different rules. What works in a live webinar does not automatically work on a blog. The restructuring step is where most DIY attempts fail. People either publish cleaned-up transcripts that read like someone talking (not writing), or they rewrite so heavily that they lose the authentic voice that made the webinar compelling.
                 </p>
                 <p className="text-gray-700 mb-4">
                   Here is how to restructure effectively:
@@ -415,7 +415,7 @@ export default function WebinarToBlogPost() {
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Change the Structure (Not the Substance)</h3>
                 <p className="text-gray-700 mb-4">
-                  Webinars follow a presentation structure: setup, build, payoff. Blog posts follow a search structure: answer first, details second, context third. Readers who find your blog post on Google want the answer immediately -- they do not want a 500-word preamble before you get to the point.
+                  Webinars follow a presentation structure: setup, build, payoff. Blog posts follow a search structure: answer first, details second, context third. Readers who find your blog post on Google want the answer immediately. They do not want a 500-word preamble before you get to the point.
                 </p>
                 <p className="text-gray-700 mb-4">
                   Rearrange your webinar content so the most valuable insight appears early. In your webinar, you may have built up to your key framework over 15 minutes of context-setting. In the blog post, lead with the framework, then provide the context for readers who want to go deeper.
@@ -496,7 +496,7 @@ export default function WebinarToBlogPost() {
                   <li>Include clear, direct answers to common questions in the first 200 words of each section.</li>
                   <li>Use structured headers that match natural language queries (the way people ask questions).</li>
                   <li>Include specific statistics and data points that AI models can reference.</li>
-                  <li>Add a FAQ section with concise answers -- AI search engines love pulling from FAQ content.</li>
+                  <li>Add a FAQ section with concise answers. AI search engines love pulling from FAQ content.</li>
                 </ul>
               </section>
 
@@ -626,7 +626,7 @@ export default function WebinarToBlogPost() {
                 <div className="bg-red-50 border border-red-200 rounded-xl p-6 my-6">
                   <h3 className="text-lg font-bold text-red-800 mb-3">BEFORE: Raw Transcript</h3>
                   <p className="text-gray-700 text-sm italic leading-relaxed">
-                    &quot;So, um, the thing I always tell people is -- and this is something I learned the hard way, honestly -- you have to have some kind of onboarding process. Like, I cannot stress this enough. When I started coaching, I would just, you know, hop on calls with people and we would kind of figure it out as we went. And honestly it was a mess. People did not know what to expect, I did not know what they needed, and like half the time they would ghost after two sessions because there was no structure. So what I did was -- and this is what I teach all my clients now -- I created what I call the First 48 system. Basically in the first 48 hours after someone pays you, you do three things. Number one, you send them a welcome email that sets expectations. Here is what we are going to do, here is how it works, here is what I need from you. Number two, you send them a pre-coaching questionnaire. Super important. You need to understand their goals, their challenges, what they have already tried. And number three, you schedule their first three sessions upfront. Not just the first one -- the first three. Because that creates commitment and momentum. So those three things -- welcome email, questionnaire, schedule three sessions -- that is the First 48 system and it literally cut my client dropout rate in half.&quot;
+                    &quot;So, um, the thing I always tell people is, and this is something I learned the hard way, honestly, you have to have some kind of onboarding process. Like, I cannot stress this enough. When I started coaching, I would just, you know, hop on calls with people and we would kind of figure it out as we went. And honestly it was a mess. People did not know what to expect, I did not know what they needed, and like half the time they would ghost after two sessions because there was no structure. So what I did was, and this is what I teach all my clients now, I created what I call the First 48 system. Basically in the first 48 hours after someone pays you, you do three things. Number one, you send them a welcome email that sets expectations. Here is what we are going to do, here is how it works, here is what I need from you. Number two, you send them a pre-coaching questionnaire. Super important. You need to understand their goals, their challenges, what they have already tried. And number three, you schedule their first three sessions upfront. Not just the first one. The first three. Because that creates commitment and momentum. So those three things, welcome email, questionnaire, schedule three sessions, that is the First 48 system and it literally cut my client dropout rate in half.&quot;
                   </p>
                 </div>
 
@@ -636,7 +636,7 @@ export default function WebinarToBlogPost() {
                   <div className="text-gray-700 text-sm leading-relaxed">
                     <p className="font-bold text-gray-900 text-base mb-2">The First 48 System: 3 Steps to Onboard Coaching Clients and Cut Dropout Rates in Half</p>
                     <p className="mb-3">
-                      Most coaches lose clients in the first two weeks -- not because their coaching is bad, but because their onboarding is nonexistent. Without a structured process, new clients do not know what to expect, coaches do not understand what their clients need, and momentum dies before it starts.
+                      Most coaches lose clients in the first two weeks, not because their coaching is bad, but because their onboarding is nonexistent. Without a structured process, new clients do not know what to expect, coaches do not understand what their clients need, and momentum dies before it starts.
                     </p>
                     <p className="mb-3">
                       The First 48 system solves this. Within the first 48 hours after a client pays, you complete three specific actions:
@@ -672,7 +672,7 @@ export default function WebinarToBlogPost() {
                         ['Filler words', '12 instances of "um," "like," "you know"', 'Zero filler words'],
                         ['Opening', 'Personal ramble before the insight', 'Problem statement that hooks the reader immediately'],
                         ['Core content', 'Same 3 steps', 'Same 3 steps (the substance is preserved)'],
-                        ['Readability', 'Requires listening context', 'Standalone -- makes sense without watching the webinar'],
+                        ['Readability', 'Requires listening context', 'Standalone: makes sense without watching the webinar'],
                         ['SEO potential', 'None', 'Keyword-rich heading, scannable structure, clear answer'],
                         ['Word count', '227 words (rambling)', '198 words (tighter, more impactful)'],
                       ].map((row, i) => (
@@ -687,7 +687,7 @@ export default function WebinarToBlogPost() {
                 </div>
 
                 <p className="text-gray-700">
-                  Notice that the core teaching is identical. The coach&apos;s expertise, framework, and results claim are all preserved. What changed is the packaging -- from conversational speech to structured, scannable, search-optimized writing. That is the entire goal of webinar-to-blog-post repurposing: <strong>same expertise, different format, wider reach.</strong>
+                  Notice that the core teaching is identical. The coach&apos;s expertise, framework, and results claim are all preserved. What changed is the packaging: from conversational speech to structured, scannable, search-optimized writing. That is the entire goal of webinar-to-blog-post repurposing: <strong>same expertise, different format, wider reach.</strong>
                 </p>
               </section>
 
@@ -732,31 +732,31 @@ export default function WebinarToBlogPost() {
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="bg-blue-600 text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5">2</span>
-                      <span><strong>Clean the transcript</strong> -- remove filler words, fix errors, delete housekeeping talk (30-45 minutes)</span>
+                      <span><strong>Clean the transcript:</strong> remove filler words, fix errors, delete housekeeping talk (30-45 minutes)</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="bg-blue-600 text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5">3</span>
-                      <span><strong>Identify blog-worthy sections</strong> -- highlight frameworks, stories, data, insights, and Q&A answers (20-30 minutes)</span>
+                      <span><strong>Identify blog-worthy sections:</strong> highlight frameworks, stories, data, insights, and Q&A answers (20-30 minutes)</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="bg-blue-600 text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5">4</span>
-                      <span><strong>Choose a template</strong> -- How-To, Framework, or Lessons/Insights (5 minutes)</span>
+                      <span><strong>Choose a template:</strong> How-To, Framework, or Lessons/Insights (5 minutes)</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="bg-blue-600 text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5">5</span>
-                      <span><strong>Restructure the content</strong> -- rearrange for written format, edit spoken patterns, add subheadings (60-90 minutes)</span>
+                      <span><strong>Restructure the content:</strong> rearrange for written format, edit spoken patterns, add subheadings (60-90 minutes)</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="bg-blue-600 text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5">6</span>
-                      <span><strong>Optimize for SEO</strong> -- target keyword in title, headings, first 100 words; write meta description (20-30 minutes)</span>
+                      <span><strong>Optimize for SEO:</strong> target keyword in title, headings, first 100 words; write meta description (20-30 minutes)</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="bg-blue-600 text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5">7</span>
-                      <span><strong>Add visuals</strong> -- export relevant slides, add alt text, compress for web (15-30 minutes)</span>
+                      <span><strong>Add visuals:</strong> export relevant slides, add alt text, compress for web (15-30 minutes)</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="bg-blue-600 text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5">8</span>
-                      <span><strong>Final edit and publish</strong> -- proofread, format, add internal links, schedule or publish (20-30 minutes)</span>
+                      <span><strong>Final edit and publish:</strong> proofread, format, add internal links, schedule or publish (20-30 minutes)</span>
                     </li>
                   </ol>
                   <div className="mt-4 pt-4 border-t border-gray-200">
@@ -770,13 +770,13 @@ export default function WebinarToBlogPost() {
               <section className="mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">What Comes Next: Beyond the Blog Post</h2>
                 <p className="text-gray-700 mb-4">
-                  A blog post is one of the most valuable outputs from a webinar -- but it is just one format. The same webinar that produced your blog post also contains material for social media content, email sequences, and lead magnets that drive subscribers and sales.
+                  A blog post is one of the most valuable outputs from a webinar, but it is just one format. The same webinar that produced your blog post also contains material for social media content, email sequences, and lead magnets that drive subscribers and sales.
                 </p>
                 <p className="text-gray-700 mb-4">
                   For the complete picture of everything you can create from a single webinar, read our <Link href="/blog/webinar-repurposing-guide" className="text-blue-600 hover:text-blue-800 font-medium">complete webinar repurposing guide</Link> which covers all 14+ content formats.
                 </p>
                 <p className="text-gray-700">
-                  Coming soon on the blog: detailed guides on turning your webinars into <strong>30 days of social media content</strong> and <strong>high-converting lead magnets</strong> -- two formats that pair perfectly with the blog post workflow covered in this guide.
+                  Coming soon on the blog: detailed guides on turning your webinars into <strong>30 days of social media content</strong> and <strong>high-converting lead magnets</strong>, two formats that pair perfectly with the blog post workflow covered in this guide.
                 </p>
               </section>
 
@@ -833,7 +833,7 @@ export default function WebinarToBlogPost() {
                   Pick your most recent webinar. The one where you delivered your best teaching. Follow the transcript-first method, choose one of the three templates above, and publish your first webinar-to-blog-post conversion this week.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  Once you see the results -- organic traffic from Google, new visitors discovering your expertise, leads coming in from content you already created -- you will never let a webinar recording sit unused again.
+                  Once you see the results (organic traffic from Google, new visitors discovering your expertise, leads coming in from content you already created), you will never let a webinar recording sit unused again.
                 </p>
                 <p className="text-gray-700">
                   And if you would rather skip the 3-5 hours of DIY work and have it done professionally, <a href="https://cal.com/contentrepurposehub/30min" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 font-medium">book a free strategy call</a> and we will show you how we turn your webinars into SEO-optimized blog posts (plus 13 other content formats) every month.

@@ -229,7 +229,7 @@ export default function WebinarContentPiecesBreakdown() {
                   Industry data backs this up. HubSpot reports that 60% of marketers generate more leads from repurposed content than from original content. Repurposed content generates 3x more engagement while reducing creation time by up to 60%. Yet despite 52% of marketers using webinars in their strategy, only about 20% of that content ever gets repurposed.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  That is an enormous missed opportunity. If you are a coach or consultant running webinars and not repurposing them, you are leaving dozens of content pieces -- and the traffic, leads, and authority they would generate -- on the table every single month.
+                  That is an enormous missed opportunity. If you are a coach or consultant running webinars and not repurposing them, you are leaving dozens of content pieces, and the traffic, leads, and authority they would generate, on the table every single month.
                 </p>
                 <p className="text-gray-700">
                   For a deeper look at the full repurposing process, see our <Link href="/blog/webinar-repurposing-guide" className="text-blue-600 hover:text-blue-800 font-medium">complete guide to webinar repurposing</Link>. Below, we break down exactly what those 75+ pieces look like, organized by category.
@@ -296,7 +296,7 @@ export default function WebinarContentPiecesBreakdown() {
 
                 <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg my-6">
                   <p className="text-gray-800 font-medium">
-                    Written content total: 28+ pieces from a single webinar. These pieces cover LinkedIn, X/Twitter, email, your blog, newsletters, and social media captions -- all sourced from one recording.
+                    Written content total: 28+ pieces from a single webinar. These pieces cover LinkedIn, X/Twitter, email, your blog, newsletters, and social media captions, all sourced from one recording.
                   </p>
                 </div>
               </section>
@@ -335,7 +335,7 @@ export default function WebinarContentPiecesBreakdown() {
 
                 <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg my-6">
                   <p className="text-gray-800 font-medium">
-                    Visual content total: 16+ pieces. Quote graphics, carousels, infographics, slide decks, and thumbnails -- all pulled from the same source material as your written content.
+                    Visual content total: 16+ pieces. Quote graphics, carousels, infographics, slide decks, and thumbnails, all pulled from the same source material as your written content.
                   </p>
                 </div>
               </section>
@@ -344,7 +344,7 @@ export default function WebinarContentPiecesBreakdown() {
               <section id="audio-video" className="mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Audio and Video Content (14+ Pieces)</h2>
                 <p className="text-gray-700 mb-6">
-                  Video and audio formats reach audiences during moments when they would not read a blog post or scroll through text. Commutes, workouts, cooking -- these are times your content can reach people through entirely different channels from the same recording.
+                  Video and audio formats reach audiences during moments when they would not read a blog post or scroll through text. Commutes, workouts, cooking. These are times your content can reach people through entirely different channels from the same recording.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Short-Form Video Clips (5-8)</h3>
@@ -354,7 +354,7 @@ export default function WebinarContentPiecesBreakdown() {
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Podcast Episode (1)</h3>
                 <p className="text-gray-700 mb-4">
-                  Extract the audio from your webinar, add a brief intro and outro, and publish it as a podcast episode. If you already have a podcast, this is free content. If you do not have one yet, this is the easiest way to start -- you already have the material recorded and ready.
+                  Extract the audio from your webinar, add a brief intro and outro, and publish it as a podcast episode. If you already have a podcast, this is free content. If you do not have one yet, this is the easiest way to start. You already have the material recorded and ready.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Audiograms (2-3)</h3>
@@ -374,7 +374,7 @@ export default function WebinarContentPiecesBreakdown() {
 
                 <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg my-6">
                   <p className="text-gray-800 font-medium">
-                    Audio and video total: 14+ pieces. Short clips, a full podcast episode, audiograms, YouTube Shorts, and a long-form YouTube upload -- all from one recording session.
+                    Audio and video total: 14+ pieces. Short clips, a full podcast episode, audiograms, YouTube Shorts, and a long-form YouTube upload, all from one recording session.
                   </p>
                 </div>
               </section>
@@ -401,7 +401,7 @@ export default function WebinarContentPiecesBreakdown() {
               <section id="lead-gen" className="mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Lead Generation Content (8+ Pieces)</h2>
                 <p className="text-gray-700 mb-6">
-                  Lead generation content turns your webinar from an awareness play into a list-building machine. These pieces capture email addresses and move prospects into your nurture funnel. Leadpages data shows that cheat sheets convert at 34%, checklists at 27%, and ebooks at 24% -- and all three can be built from content you already delivered in your webinar.
+                  Lead generation content turns your webinar from an awareness play into a list-building machine. These pieces capture email addresses and move prospects into your nurture funnel. Leadpages data shows that cheat sheets convert at 34%, checklists at 27%, and ebooks at 24%. All three can be built from content you already delivered in your webinar.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">PDF Checklist or Cheat Sheet (1)</h3>
@@ -421,7 +421,7 @@ export default function WebinarContentPiecesBreakdown() {
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Webinar Replay Landing Page (1)</h3>
                 <p className="text-gray-700 mb-4">
-                  Create a dedicated landing page for the webinar replay with a summary of key takeaways and a gated registration form. People who missed the live event still want to watch -- gate the replay behind an email capture to grow your list. Include chapter markers so viewers can jump to the sections most relevant to them.
+                  Create a dedicated landing page for the webinar replay with a summary of key takeaways and a gated registration form. People who missed the live event still want to watch. Gate the replay behind an email capture to grow your list. Include chapter markers so viewers can jump to the sections most relevant to them.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Resource Guide (1)</h3>
@@ -469,7 +469,7 @@ export default function WebinarContentPiecesBreakdown() {
 
                 <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg my-6">
                   <p className="text-gray-800 font-medium">
-                    SEO content total: 9+ pieces. FAQ pages, pillar sections, glossary entries, and meta optimization -- all feeding long-term organic discovery.
+                    SEO content total: 9+ pieces. FAQ pages, pillar sections, glossary entries, and meta optimization, all feeding long-term organic discovery.
                   </p>
                 </div>
               </section>
@@ -614,11 +614,11 @@ export default function WebinarContentPiecesBreakdown() {
                   <strong>If you are going to do it yourself, prioritize these five formats:</strong>
                 </p>
                 <ol className="list-decimal pl-6 text-gray-700 space-y-2 mb-4">
-                  <li><strong>One SEO blog post</strong> -- for long-term organic traffic that compounds over time</li>
-                  <li><strong>Five to ten LinkedIn posts</strong> -- for immediate visibility and authority with your professional network</li>
-                  <li><strong>One PDF lead magnet</strong> -- for capturing email addresses from every piece of content you share</li>
-                  <li><strong>One email sequence</strong> -- for nurturing new leads toward a sales conversation automatically</li>
-                  <li><strong>Two to three short video clips</strong> -- for maximum reach on social platforms where video outperforms everything else</li>
+                  <li><strong>One SEO blog post</strong>, for long-term organic traffic that compounds over time</li>
+                  <li><strong>Five to ten LinkedIn posts</strong>, for immediate visibility and authority with your professional network</li>
+                  <li><strong>One PDF lead magnet</strong>, for capturing email addresses from every piece of content you share</li>
+                  <li><strong>One email sequence</strong>, for nurturing new leads toward a sales conversation automatically</li>
+                  <li><strong>Two to three short video clips</strong>, for maximum reach on social platforms where video outperforms everything else</li>
                 </ol>
                 <p className="text-gray-700 mb-4">
                   Those five formats cover all four business outcomes: traffic, leads, authority, and sales. They are the highest-leverage pieces if your time is limited.
@@ -678,7 +678,7 @@ export default function WebinarContentPiecesBreakdown() {
                   One webinar. 75+ content pieces. Five categories covering written, visual, audio/video, lead generation, and SEO content. That is the math of the webinar content multiplier, and it applies to every single recording you have sitting in a Zoom folder or Google Drive right now.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  The coaches and consultants who understand this math have an unfair advantage. While their competitors are grinding out content from scratch every week, they are running one webinar per month and getting a full content engine in return -- blog posts that rank on Google, LinkedIn posts that build authority, lead magnets that grow their list, and email sequences that convert subscribers into clients.
+                  The coaches and consultants who understand this math have an unfair advantage. While their competitors are grinding out content from scratch every week, they are running one webinar per month and getting a full content engine in return: blog posts that rank on Google, LinkedIn posts that build authority, lead magnets that grow their list, and email sequences that convert subscribers into clients.
                 </p>
                 <p className="text-gray-700 mb-4">
                   You already have the expertise. You already have the recordings. The only question is whether you will extract the full value from the content you already created, or leave 70+ content pieces on the table every month.

@@ -235,18 +235,18 @@ export default function WebinarRepurposingBenchmarks2026() {
                   For each webinar, we measured:
                 </p>
                 <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-                  <li><strong>Content yield</strong> -- total number of distinct, publication-ready content pieces produced</li>
-                  <li><strong>Talking point density</strong> -- unique standalone insights per webinar (frameworks, stories, data points, actionable steps, Q&amp;A answers)</li>
-                  <li><strong>Repurposing time</strong> -- hours from transcript to delivered content, tracked across three methods (manual, AI-assisted, professional service)</li>
-                  <li><strong>Cost per piece</strong> -- total cost divided by total pieces, segmented by method</li>
-                  <li><strong>Engagement patterns</strong> -- which webinar segments produce the highest-density content</li>
+                  <li><strong>Content yield:</strong> total number of distinct, publication-ready content pieces produced</li>
+                  <li><strong>Talking point density:</strong> unique standalone insights per webinar (frameworks, stories, data points, actionable steps, Q&amp;A answers)</li>
+                  <li><strong>Repurposing time:</strong> hours from transcript to delivered content, tracked across three methods (manual, AI-assisted, professional service)</li>
+                  <li><strong>Cost per piece:</strong> total cost divided by total pieces, segmented by method</li>
+                  <li><strong>Engagement patterns:</strong> which webinar segments produce the highest-density content</li>
                 </ul>
                 <p className="text-gray-700 mb-4">
                   All 127 webinars were recorded on standard platforms (Zoom, Google Meet, Riverside). We excluded webinars shorter than 15 minutes and pre-recorded course modules. Every webinar included a live audience of at least 12 attendees.
                 </p>
                 <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg my-6">
                   <p className="text-gray-800 font-medium">
-                    This is observational data from real client engagements -- not a lab experiment. The benchmarks reflect what professional repurposing produces when applied to typical coaching webinars in active use.
+                    This is observational data from real client engagements, not a lab experiment. The benchmarks reflect what professional repurposing produces when applied to typical coaching webinars in active use.
                   </p>
                 </div>
               </section>
@@ -280,7 +280,7 @@ export default function WebinarRepurposingBenchmarks2026() {
                       <div>
                         <h3 className="text-lg font-bold text-gray-900 mb-2">Average unique talking points per webinar: 23</h3>
                         <p className="text-gray-700">
-                          A &quot;talking point&quot; is a standalone insight that can become its own content piece -- a framework explanation, a client story, a data point, a step-by-step process, or a direct answer to an audience question. The range was 11 to 38. Webinars that included structured Q&amp;A sections averaged 27.4 talking points versus 19.1 for those without.
+                          A &quot;talking point&quot; is a standalone insight that can become its own content piece: a framework explanation, a client story, a data point, a step-by-step process, or a direct answer to an audience question. The range was 11 to 38. Webinars that included structured Q&amp;A sections averaged 27.4 talking points versus 19.1 for those without.
                         </p>
                       </div>
                     </div>
@@ -319,7 +319,7 @@ export default function WebinarRepurposingBenchmarks2026() {
                       <div>
                         <h3 className="text-lg font-bold text-gray-900 mb-2">Framework-based webinars produce 34% more content</h3>
                         <p className="text-gray-700">
-                          Webinars built around a named framework or model (e.g., &quot;The 4-Step Client Acquisition System&quot; or &quot;The GROW coaching model&quot;) averaged 54.1 pieces versus 40.4 for pure lecture format. Frameworks create natural content boundaries -- each step becomes a post, each principle becomes an email, each component becomes a carousel slide.
+                          Webinars built around a named framework or model (e.g., &quot;The 4-Step Client Acquisition System&quot; or &quot;The GROW coaching model&quot;) averaged 54.1 pieces versus 40.4 for pure lecture format. Frameworks create natural content boundaries. Each step becomes a post, each principle becomes an email, each component becomes a carousel slide.
                         </p>
                       </div>
                     </div>
@@ -332,7 +332,7 @@ export default function WebinarRepurposingBenchmarks2026() {
                       <div>
                         <h3 className="text-lg font-bold text-gray-900 mb-2">Q&amp;A sections yield 2.8x more social content per minute</h3>
                         <p className="text-gray-700">
-                          Presentation sections averaged 0.74 social-ready content pieces per minute. Q&amp;A sections averaged 2.07 pieces per minute -- a 2.8x multiplier. Q&amp;A answers are already concise, address real pain points, and use conversational language that maps directly to how people write on LinkedIn and Twitter/X. Coaches who cut Q&amp;A short are leaving the highest-density content on the table.
+                          Presentation sections averaged 0.74 social-ready content pieces per minute. Q&amp;A sections averaged 2.07 pieces per minute, a 2.8x multiplier. Q&amp;A answers are already concise, address real pain points, and use conversational language that maps directly to how people write on LinkedIn and Twitter/X. Coaches who cut Q&amp;A short are leaving the highest-density content on the table.
                         </p>
                       </div>
                     </div>
@@ -358,7 +358,7 @@ export default function WebinarRepurposingBenchmarks2026() {
                       <div>
                         <h3 className="text-lg font-bold text-gray-900 mb-2">73% of webinars contain at least 1 unextracted lead magnet concept</h3>
                         <p className="text-gray-700">
-                          93 of 127 webinars contained at least one clearly defined framework, checklist, or assessment that could become a standalone lead magnet -- but the coach had never packaged it as one. The average was 1.7 lead magnet concepts per webinar. These ranged from scoring rubrics to decision matrices to self-assessment quizzes embedded in the teaching content.
+                          93 of 127 webinars contained at least one clearly defined framework, checklist, or assessment that could become a standalone lead magnet, but the coach had never packaged it as one. The average was 1.7 lead magnet concepts per webinar. These ranged from scoring rubrics to decision matrices to self-assessment quizzes embedded in the teaching content.
                         </p>
                       </div>
                     </div>
@@ -371,7 +371,7 @@ export default function WebinarRepurposingBenchmarks2026() {
                       <div>
                         <h3 className="text-lg font-bold text-gray-900 mb-2">Repurposing time: 4.2 hours (manual) vs. 1.8 hours (AI-assisted)</h3>
                         <p className="text-gray-700">
-                          The median time to fully repurpose a coaching webinar was 4.2 hours for a trained human using standard tools. With AI assistance (transcript analysis, draft generation, format adaptation), that dropped to 1.8 hours -- a 57% reduction. DIY repurposing by the coach themselves averaged 8.6 hours due to context-switching, unfamiliarity with production tools, and the lack of extraction workflows.
+                          The median time to fully repurpose a coaching webinar was 4.2 hours for a trained human using standard tools. With AI assistance (transcript analysis, draft generation, format adaptation), that dropped to 1.8 hours, a 57% reduction. DIY repurposing by the coach themselves averaged 8.6 hours due to context-switching, unfamiliarity with production tools, and the lack of extraction workflows.
                         </p>
                       </div>
                     </div>
@@ -384,7 +384,7 @@ export default function WebinarRepurposingBenchmarks2026() {
                       <div>
                         <h3 className="text-lg font-bold text-gray-900 mb-2">Cost per piece: $11.40 (professional) vs. $34.70 (DIY)</h3>
                         <p className="text-gray-700">
-                          At a professional service price point of $750-$1,500/month and an average yield of 47.3 pieces, the average cost per content piece is $11.40. DIY cost -- factoring in the coach&apos;s hourly rate at the median of $175/hour and 8.6 hours of repurposing time -- is $34.70 per piece. AI-assisted DIY falls between at $22.10 per piece (3.4 hours at $175/hour plus $48 in tool costs, producing 29 pieces on average without professional extraction workflows).
+                          At a professional service price point of $750-$1,500/month and an average yield of 47.3 pieces, the average cost per content piece is $11.40. DIY cost (factoring in the coach&apos;s hourly rate at the median of $175/hour and 8.6 hours of repurposing time) is $34.70 per piece. AI-assisted DIY falls between at $22.10 per piece (3.4 hours at $175/hour plus $48 in tool costs, producing 29 pieces on average without professional extraction workflows).
                         </p>
                       </div>
                     </div>
@@ -448,7 +448,7 @@ export default function WebinarRepurposingBenchmarks2026() {
                 </div>
 
                 <p className="text-gray-700 mb-4">
-                  Medium-length webinars (36-55 minutes) have the highest pieces-per-minute ratio at 1.07. Long webinars produce more total pieces, but efficiency drops because the extra minutes often contain repetition, extended tangents, or slow pacing in the latter third. Short webinars suffer from limited depth -- there are fewer frameworks, fewer examples, and typically no Q&amp;A section.
+                  Medium-length webinars (36-55 minutes) have the highest pieces-per-minute ratio at 1.07. Long webinars produce more total pieces, but efficiency drops because the extra minutes often contain repetition, extended tangents, or slow pacing in the latter third. Short webinars suffer from limited depth: fewer frameworks, fewer examples, and typically no Q&amp;A section.
                 </p>
                 <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg my-6">
                   <p className="text-gray-800 font-medium">
@@ -510,7 +510,7 @@ export default function WebinarRepurposingBenchmarks2026() {
                 </div>
 
                 <p className="text-gray-700 mb-4">
-                  Financial and executive coaching webinars lead because they tend to include specific numbers (revenue targets, ROI calculations, salary benchmarks), named frameworks, and case studies with measurable outcomes. Each of those elements becomes a standalone content piece. Relationship coaching, by contrast, relies more on open-ended dialogue and empathetic storytelling -- valuable for the audience, but harder to break into discrete, platform-specific content blocks.
+                  Financial and executive coaching webinars lead because they tend to include specific numbers (revenue targets, ROI calculations, salary benchmarks), named frameworks, and case studies with measurable outcomes. Each of those elements becomes a standalone content piece. Relationship coaching, by contrast, relies more on open-ended dialogue and empathetic storytelling, valuable for the audience but harder to break into discrete, platform-specific content blocks.
                 </p>
                 <p className="text-gray-700">
                   For a complete breakdown of what content formats come from a typical coaching webinar, read our <Link href="/blog/webinar-content-pieces-breakdown" className="text-blue-600 hover:text-blue-800 font-medium">75+ content pieces breakdown</Link>.
@@ -670,7 +670,7 @@ export default function WebinarRepurposingBenchmarks2026() {
                 </div>
 
                 <p className="text-gray-700 mb-4">
-                  The professional service achieves a lower per-piece cost through two mechanisms: higher total yield (47.3 vs. 29 pieces) and standardized extraction workflows that reduce production time. The coach&apos;s total time investment drops to approximately 1 hour -- recording the webinar they were already going to give, plus a brief review of the finished content.
+                  The professional service achieves a lower per-piece cost through two mechanisms: higher total yield (47.3 vs. 29 pieces) and standardized extraction workflows that reduce production time. The coach&apos;s total time investment drops to approximately 1 hour: recording the webinar they were already going to give, plus a brief review of the finished content.
                 </p>
                 <p className="text-gray-700 mb-4">
                   Note that DIY and AI-assisted DIY both cap at around 29 pieces because most coaches lack the expertise to extract every viable format. Professional services identify lead magnet concepts, multi-part email sequences, and long-tail blog angles that DIY repurposing misses.
@@ -707,7 +707,7 @@ export default function WebinarRepurposingBenchmarks2026() {
                     },
                     {
                       title: 'Include at least 3 specific numbers or data points',
-                      detail: 'Webinars with specific, citable numbers produce more LinkedIn posts and blog content than those without. Revenue figures, time savings, percentage improvements, client results -- these become the hooks for your highest-performing repurposed content.',
+                      detail: 'Webinars with specific, citable numbers produce more LinkedIn posts and blog content than those without. Revenue figures, time savings, percentage improvements, client results. These become the hooks for your highest-performing repurposed content.',
                     },
                     {
                       title: 'Tell at least 2 client stories with outcomes',
@@ -818,7 +818,7 @@ export default function WebinarRepurposingBenchmarks2026() {
               <section className="mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">The Bottom Line</h2>
                 <p className="text-gray-700 mb-4">
-                  The average coaching webinar is a 47-minute recording containing 23 unique talking points, 1.7 unextracted lead magnet concepts, and enough raw material for 47.3 published content pieces. Most coaches extract fewer than 10 pieces from each webinar -- if they repurpose at all.
+                  The average coaching webinar is a 47-minute recording containing 23 unique talking points, 1.7 unextracted lead magnet concepts, and enough raw material for 47.3 published content pieces. Most coaches extract fewer than 10 pieces from each webinar, if they repurpose at all.
                 </p>
                 <p className="text-gray-700 mb-4">
                   The gap between what a typical coaching webinar contains and what most coaches actually produce from it is enormous. That gap represents months of content, thousands of new audience touchpoints, and dozens of leads that never materialize because the content never gets published.

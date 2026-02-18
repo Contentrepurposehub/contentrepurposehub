@@ -79,7 +79,7 @@ export default function WebinarContentStrategyCoaches() {
             name: 'What is a webinar-first content strategy?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'A webinar-first content strategy is a marketing approach where you create one webinar per month and repurpose that single recording into dozens of content pieces across every platform -- blog posts, LinkedIn posts, email sequences, lead magnets, video clips, and more. Instead of creating content from scratch for each channel, the webinar serves as your single content input that fuels everything else.',
+              text: 'A webinar-first content strategy is a marketing approach where you create one webinar per month and repurpose that single recording into dozens of content pieces across every platform: blog posts, LinkedIn posts, email sequences, lead magnets, video clips, and more. Instead of creating content from scratch for each channel, the webinar serves as your single content input that fuels everything else.',
             },
           },
           {
@@ -95,7 +95,7 @@ export default function WebinarContentStrategyCoaches() {
             name: 'How do coaches build a content strategy around webinars?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Coaches build a webinar-first content strategy by choosing one webinar topic per month that aligns with their core offer, delivering that webinar live, then systematically repurposing the recording into content for every platform. The key is planning webinar topics that map to your ideal client journey -- awareness topics to attract new leads, consideration topics to build trust, and decision topics to drive sales.',
+              text: 'Coaches build a webinar-first content strategy by choosing one webinar topic per month that aligns with their core offer, delivering that webinar live, then systematically repurposing the recording into content for every platform. The key is planning webinar topics that map to your ideal client journey: awareness topics to attract new leads, consideration topics to build trust, and decision topics to drive sales.',
             },
           },
           {
@@ -244,7 +244,7 @@ export default function WebinarContentStrategyCoaches() {
                   The result is predictable. You start strong for 2-3 weeks. Then you miss a few posts. Then the newsletter slips. Then the blog goes quiet. Within 60 days, your content calendar has more gaps than entries. You feel guilty about it, which makes you avoid it even more.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  This is not a discipline problem. It is a <strong>strategy problem.</strong> You are trying to create original content for 5-7 different platforms from scratch, every single week. That is not a content strategy -- it is a content treadmill.
+                  This is not a discipline problem. It is a <strong>strategy problem.</strong> You are trying to create original content for 5-7 different platforms from scratch, every single week. That is not a content strategy. It is a content treadmill.
                 </p>
                 <p className="text-gray-700 mb-4">
                   According to HubSpot&apos;s 2026 State of Marketing report, content repurposing is the 5th most popular digital marketing trend of the year. And for good reason: <strong>60% of marketers report getting more leads from repurposed content than from original content.</strong> Repurposed content also generates 3x more engagement while reducing creation time by up to 60%.
@@ -258,7 +258,7 @@ export default function WebinarContentStrategyCoaches() {
                   </p>
                 </div>
                 <p className="text-gray-700">
-                  If you are already running webinars as part of your coaching or consulting business -- or if you have ever considered it -- you are sitting on the most powerful content engine available to you. A single 60-minute webinar, repurposed systematically, can fuel your entire content marketing plan for months. (For a deep dive into the specific formats you can create, read our <Link href="/blog/webinar-repurposing-guide" className="text-blue-600 hover:text-blue-800 font-medium">complete guide to webinar repurposing</Link>.)
+                  If you are already running webinars as part of your coaching or consulting business (or if you have ever considered it), you are sitting on the most powerful content engine available to you. A single 60-minute webinar, repurposed systematically, can fuel your entire content marketing plan for months. (For a deep dive into the specific formats you can create, read our <Link href="/blog/webinar-repurposing-guide" className="text-blue-600 hover:text-blue-800 font-medium">complete guide to webinar repurposing</Link>.)
                 </p>
               </section>
 
@@ -356,7 +356,7 @@ export default function WebinarContentStrategyCoaches() {
               <section id="monthly-content-calendar" className="mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Monthly Content Calendar Powered by a Single Webinar</h2>
                 <p className="text-gray-700 mb-4">
-                  Here is what a coach content marketing plan looks like when it is built around the webinar-first model. This example shows how a single webinar delivered in Week 1 feeds every content channel for the remaining 3-4 weeks of the month -- and beyond.
+                  Here is what a coach content marketing plan looks like when it is built around the webinar-first model. This example shows how a single webinar delivered in Week 1 feeds every content channel for the remaining 3-4 weeks of the month, and beyond.
                 </p>
 
                 {/* Visual Content Calendar */}
@@ -458,7 +458,7 @@ export default function WebinarContentStrategyCoaches() {
                 </div>
 
                 <p className="text-gray-700 mb-4">
-                  Notice the pattern: you create once on Tuesday of Week 1, and then you distribute for 4 consecutive weeks. That is 16+ pieces of content across blog, LinkedIn, email, video, and lead generation -- all from a single recording.
+                  Notice the pattern: you create once on Tuesday of Week 1, and then you distribute for 4 consecutive weeks. That is 16+ pieces of content across blog, LinkedIn, email, video, and lead generation, all from a single recording.
                 </p>
                 <p className="text-gray-700 mb-4">
                   And this calendar is conservative. If you are aggressive about extraction, a single webinar can produce enough content for 8-12 weeks, not just 4. That means one webinar per month builds a <strong>compounding content library</strong> where this month&apos;s webinar is still generating posts while next month&apos;s webinar is being prepared.
@@ -472,7 +472,7 @@ export default function WebinarContentStrategyCoaches() {
               <section id="funnel-stages" className="mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Mapping Content Types to Funnel Stages (Awareness, Consideration, Decision)</h2>
                 <p className="text-gray-700 mb-4">
-                  Not all content serves the same purpose. The smartest webinar marketing strategy for coaches maps each repurposed content piece to a specific stage of the buyer journey. This ensures your content is not just filling a calendar -- it is moving people toward becoming clients.
+                  Not all content serves the same purpose. The smartest webinar marketing strategy for coaches maps each repurposed content piece to a specific stage of the buyer journey. This ensures your content is not just filling a calendar. It is moving people toward becoming clients.
                 </p>
 
                 {/* Funnel Visualization */}
@@ -530,7 +530,7 @@ export default function WebinarContentStrategyCoaches() {
                   The power of this mapping is that every single webinar you deliver produces content for all three stages simultaneously. Your video clips attract new audience members at the top. Your blog posts and carousels nurture them in the middle. Your email sequences convert them at the bottom.
                 </p>
                 <p className="text-gray-700">
-                  This is what makes the webinar-first approach a true content strategy for coaches -- not just a content creation hack. You are building a system where every piece of content has a job, and all the pieces work together to move people from &quot;I just discovered this person&quot; to &quot;I want to work with them.&quot;
+                  This is what makes the webinar-first approach a true content strategy for coaches, not just a content creation hack. You are building a system where every piece of content has a job, and all the pieces work together to move people from &quot;I just discovered this person&quot; to &quot;I want to work with them.&quot;
                 </p>
               </section>
 
@@ -693,7 +693,7 @@ export default function WebinarContentStrategyCoaches() {
                   <strong>How to choose your specific topics:</strong> Start with the 5-10 questions your ideal clients ask most frequently during discovery calls. Each question is a potential webinar topic. Group them by funnel stage: questions about problems are awareness topics, questions about approaches are consideration topics, and questions about results or pricing are decision topics.
                 </p>
                 <p className="text-gray-700">
-                  Then repeat. Your next quarter covers three new topics from the list. After a year, you have 12 webinars covering every major question your market asks -- and a content library that positions you as the definitive authority in your space.
+                  Then repeat. Your next quarter covers three new topics from the list. After a year, you have 12 webinars covering every major question your market asks, and a content library that positions you as the definitive authority in your space.
                 </p>
               </section>
 
@@ -701,7 +701,7 @@ export default function WebinarContentStrategyCoaches() {
               <section id="real-math" className="mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Real Math: Time Invested vs. Content Produced (DIY vs. Done-for-You)</h2>
                 <p className="text-gray-700 mb-4">
-                  Let us be honest about the numbers. The webinar-first content strategy is the most efficient approach available to coaches and consultants, but there is still work involved -- especially if you do it all yourself. Here is the real breakdown.
+                  Let us be honest about the numbers. The webinar-first content strategy is the most efficient approach available to coaches and consultants, but there is still work involved, especially if you do it all yourself. Here is the real breakdown.
                 </p>
 
                 {/* DIY Math */}
@@ -804,7 +804,7 @@ export default function WebinarContentStrategyCoaches() {
                 </div>
 
                 <p className="text-gray-700 mb-4">
-                  <strong>The bottom line for a coach content marketing plan:</strong> the webinar-first strategy works whether you DIY or outsource. But the ROI improves dramatically when you remove yourself from the production process and focus on what only you can do -- preparing and delivering the webinar, coaching clients, and building relationships.
+                  <strong>The bottom line for a coach content marketing plan:</strong> the webinar-first strategy works whether you DIY or outsource. But the ROI improves dramatically when you remove yourself from the production process and focus on what only you can do: preparing and delivering the webinar, coaching clients, and building relationships.
                 </p>
                 <p className="text-gray-700">
                   If you want to start with DIY and transition later, that works too. The important thing is adopting the webinar-first model itself. Stop creating content from scratch for every platform. Start creating once and distributing everywhere. For a full breakdown of every content format you can extract from a single webinar, see our <Link href="/blog/webinar-repurposing-guide" className="text-blue-600 hover:text-blue-800 font-medium">complete webinar repurposing guide</Link>.
@@ -817,7 +817,7 @@ export default function WebinarContentStrategyCoaches() {
                   Stop creating from scratch. Start repurposing.
                 </p>
                 <p className="text-blue-100 mb-4">
-                  We turn your monthly webinar into 30-75+ content pieces. Blog posts, LinkedIn content, email sequences, lead magnets, and more -- all done for you.
+                  We turn your monthly webinar into 30-75+ content pieces. Blog posts, LinkedIn content, email sequences, lead magnets, and more, all done for you.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
                   <a
@@ -845,7 +845,7 @@ export default function WebinarContentStrategyCoaches() {
                   {[
                     {
                       q: 'What is a webinar-first content strategy?',
-                      a: 'A webinar-first content strategy is a marketing approach where you create one webinar per month and repurpose that single recording into dozens of content pieces across every platform -- blog posts, LinkedIn posts, email sequences, lead magnets, video clips, and more. Instead of creating content from scratch for each channel, the webinar serves as your single content input that fuels everything else.',
+                      a: 'A webinar-first content strategy is a marketing approach where you create one webinar per month and repurpose that single recording into dozens of content pieces across every platform: blog posts, LinkedIn posts, email sequences, lead magnets, video clips, and more. Instead of creating content from scratch for each channel, the webinar serves as your single content input that fuels everything else.',
                     },
                     {
                       q: 'How much content can I create from one monthly webinar?',
@@ -853,7 +853,7 @@ export default function WebinarContentStrategyCoaches() {
                     },
                     {
                       q: 'How do coaches build a content strategy around webinars?',
-                      a: 'Coaches build a webinar-first content strategy by choosing one webinar topic per month that aligns with their core offer, delivering that webinar live, then systematically repurposing the recording into content for every platform. The key is planning webinar topics that map to your ideal client journey -- awareness topics to attract new leads, consideration topics to build trust, and decision topics to drive sales.',
+                      a: 'Coaches build a webinar-first content strategy by choosing one webinar topic per month that aligns with their core offer, delivering that webinar live, then systematically repurposing the recording into content for every platform. The key is planning webinar topics that map to your ideal client journey: awareness topics to attract new leads, consideration topics to build trust, and decision topics to drive sales.',
                     },
                     {
                       q: 'How long does it take to repurpose a webinar into 3 months of content?',
@@ -890,10 +890,10 @@ export default function WebinarContentStrategyCoaches() {
                   The webinar-first content strategy solves this by giving you a single creation event (your monthly webinar) that produces everything else. One hour of teaching becomes weeks of blog posts, LinkedIn content, email sequences, video clips, lead magnets, and more.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  Here is your next step: pick one webinar topic from the 90-day framework above. Schedule it for this month. Deliver it. Then repurpose it using the content calendar template in this guide -- or follow our step-by-step <Link href="/blog/content-repurposing-workflow-coaches" className="text-blue-600 hover:text-blue-800 font-medium">content repurposing workflow for coaches</Link>. Within 30 days, you will have more content published than most coaches produce in a quarter.
+                  Here is your next step: pick one webinar topic from the 90-day framework above. Schedule it for this month. Deliver it. Then repurpose it using the content calendar template in this guide, or follow our step-by-step <Link href="/blog/content-repurposing-workflow-coaches" className="text-blue-600 hover:text-blue-800 font-medium">content repurposing workflow for coaches</Link>. Within 30 days, you will have more content published than most coaches produce in a quarter.
                 </p>
                 <p className="text-gray-700">
-                  Or, if you want the content calendar delivered to you -- fully written, designed, and ready to publish -- <a href="https://cal.com/contentrepurposehub/30min" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 font-medium">book a free strategy call</a> and we will show you exactly how ContentRepurposeHub turns your monthly webinar into 30-75+ content pieces. No more creating from scratch. No more content burnout. Just one webinar, repurposed everywhere.
+                  Or, if you want the content calendar delivered to you, fully written, designed, and ready to publish, <a href="https://cal.com/contentrepurposehub/30min" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 font-medium">book a free strategy call</a> and we will show you exactly how ContentRepurposeHub turns your monthly webinar into 30-75+ content pieces. No more creating from scratch. No more content burnout. Just one webinar, repurposed everywhere.
                 </p>
               </section>
 

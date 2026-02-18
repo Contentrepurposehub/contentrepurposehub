@@ -241,7 +241,7 @@ export default function ContentRepurposingWorkflowCoaches() {
                 <ol className="list-decimal pl-6 text-gray-700 space-y-2 mb-4">
                   <li>Record your webinar with both video and audio (Zoom, Riverside, or StreamYard all work)</li>
                   <li>Upload the recording to a transcription tool immediately after the session</li>
-                  <li>Review the transcript for accuracy -- fix names, technical terms, and any garbled sections</li>
+                  <li>Review the transcript for accuracy: fix names, technical terms, and any garbled sections</li>
                   <li>Add timestamps at natural topic transitions (this saves hours later)</li>
                 </ol>
                 <p className="text-gray-700 mb-4">
@@ -360,7 +360,7 @@ export default function ContentRepurposingWorkflowCoaches() {
                   This is where the real work happens. And where most DIY repurposers stall out.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  You have your extracted assets from Stage 2. Now you turn each one into a finished content piece. The key word is <em>finished</em> -- not a rough draft sitting in Google Docs. A piece ready to publish.
+                  You have your extracted assets from Stage 2. Now you turn each one into a finished content piece. The key word is <em>finished</em>, not a rough draft sitting in Google Docs. A piece ready to publish.
                 </p>
                 <p className="text-gray-700 mb-4">
                   Work in this order (it is deliberate):
@@ -404,7 +404,7 @@ export default function ContentRepurposingWorkflowCoaches() {
                   ))}
                 </div>
                 <p className="text-gray-700">
-                  The 5-8 hour estimate assumes you are reasonably fast at writing and basic design. If you are not, double it. Be honest with yourself here -- this is the stage that separates coaches who stick with a content repurposing workflow from those who abandon it after one try.
+                  The 5-8 hour estimate assumes you are reasonably fast at writing and basic design. If you are not, double it. Be honest with yourself here. This is the stage that separates coaches who stick with a content repurposing workflow from those who abandon it after one try.
                 </p>
               </section>
 
@@ -579,7 +579,7 @@ export default function ContentRepurposingWorkflowCoaches() {
                   Three sessions. About 10-12 hours total. A month of content done.
                 </p>
                 <p className="text-gray-700">
-                  But here is the thing -- that is 10-12 hours on top of running your coaching business. On top of client calls, program delivery, sales conversations, and the admin work that never ends. Which brings us to the most important section of this guide.
+                  But here is the thing. That is 10-12 hours on top of running your coaching business. On top of client calls, program delivery, sales conversations, and the admin work that never ends. Which brings us to the most important section of this guide.
                 </p>
               </section>
 
@@ -623,17 +623,17 @@ export default function ContentRepurposingWorkflowCoaches() {
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Trigger 3: Quality is slipping</h3>
                 <p className="text-gray-700 mb-4">
-                  You are rushing through Stage 3. Blog posts are thin. LinkedIn posts feel repetitive. Video clips have no captions. When you are cutting corners to save time, the content stops working. Bad repurposed content is worse than no content -- it actively hurts your brand.
+                  You are rushing through Stage 3. Blog posts are thin. LinkedIn posts feel repetitive. Video clips have no captions. When you are cutting corners to save time, the content stops working. Bad repurposed content is worse than no content. It actively hurts your brand.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Trigger 4: You are doing 2+ webinars per month</h3>
                 <p className="text-gray-700 mb-4">
-                  One webinar per month at 12-20 hours of repurposing is manageable (barely). Two webinars per month means 24-40 hours. That is a part-time job. At that volume, outsourcing is not a luxury -- it is a necessity.
+                  One webinar per month at 12-20 hours of repurposing is manageable (barely). Two webinars per month means 24-40 hours. That is a part-time job. At that volume, outsourcing is not a luxury. It is a necessity.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Trigger 5: You want SEO and AI search optimization</h3>
                 <p className="text-gray-700 mb-4">
-                  Basic repurposing -- posting clips and writing LinkedIn posts -- you can learn. But optimizing blog posts for Google and AI search engines like ChatGPT, Perplexity, and Gemini requires specialized knowledge. Keyword research. Schema markup. Internal linking strategy. If you want your repurposed content to drive organic traffic for years (not weeks), professional optimization makes a measurable difference.
+                  Basic repurposing (posting clips and writing LinkedIn posts) you can learn. But optimizing blog posts for Google and AI search engines like ChatGPT, Perplexity, and Gemini requires specialized knowledge. Keyword research. Schema markup. Internal linking strategy. If you want your repurposed content to drive organic traffic for years (not weeks), professional optimization makes a measurable difference.
                 </p>
 
                 <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg my-6">
@@ -721,10 +721,10 @@ export default function ContentRepurposingWorkflowCoaches() {
                   This 5-stage workflow gives you that process. Follow it consistently and you will never stare at a blank screen wondering what to post. Your webinars become your content engine.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  And if the 12-20 hours per webinar is more than your schedule can absorb -- that is a legitimate business decision, not a failure. <a href="https://cal.com/contentrepurposehub/30min" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 font-medium">Book a free strategy call</a> and we will walk you through exactly how we run this workflow for coaches like you. You send the recording. We handle the rest.
+                  And if the 12-20 hours per webinar is more than your schedule can absorb, that is a legitimate business decision, not a failure. <a href="https://cal.com/contentrepurposehub/30min" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 font-medium">Book a free strategy call</a> and we will walk you through exactly how we run this workflow for coaches like you. You send the recording. We handle the rest.
                 </p>
                 <p className="text-gray-700">
-                  Either way -- DIY or done-for-you -- the worst thing you can do is nothing. Your webinars are too valuable to leave sitting in a folder.
+                  Either way, DIY or done-for-you, the worst thing you can do is nothing. Your webinars are too valuable to leave sitting in a folder.
                 </p>
               </section>
 

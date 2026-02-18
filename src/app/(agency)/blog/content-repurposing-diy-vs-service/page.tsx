@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Content Repurposing: DIY Tools vs. Done-for-You Services -- Which Is Right for Your Coaching Business?',
+  title: 'Content Repurposing: DIY Tools vs. Done-for-You Services — Which Is Right for Your Coaching Business?',
   description: 'Honest comparison of DIY content repurposing tools (Repurpose.io, Descript, Canva) vs. done-for-you services. Includes pricing, time costs, and a 5-question decision framework for coaches.',
   keywords: 'content repurposing service vs DIY, done for you content repurposing, content repurposing tools vs agency, best content repurposing service for coaches, DIY content repurposing tools, content repurposing for coaches',
   alternates: {
@@ -39,7 +39,7 @@ export default function ContentRepurposingDIYvsService() {
       {
         '@type': 'Article',
         '@id': 'https://contentrepurposehub.com/blog/content-repurposing-diy-vs-service#article',
-        headline: 'Content Repurposing: DIY Tools vs. Done-for-You Services -- Which Is Right for Your Coaching Business?',
+        headline: 'Content Repurposing: DIY Tools vs. Done-for-You Services — Which Is Right for Your Coaching Business?',
         description: 'Honest comparison of DIY content repurposing tools vs. done-for-you services with real pricing, time costs, and a 5-question decision framework for coaches and consultants.',
         datePublished: '2026-02-18',
         dateModified: '2026-02-18',
@@ -95,7 +95,7 @@ export default function ContentRepurposingDIYvsService() {
             name: 'Should I use DIY tools or hire a content repurposing service?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'It depends on your hourly rate and available time. If you bill clients $150+ per hour, the 10-20 hours spent on DIY repurposing costs you $1,500-$3,000 in lost billable time -- more than most done-for-you services charge. If you are a newer coach with more time than clients, DIY tools can work well while you build your business.',
+              text: 'It depends on your hourly rate and available time. If you bill clients $150+ per hour, the 10-20 hours spent on DIY repurposing costs you $1,500-$3,000 in lost billable time, more than most done-for-you services charge. If you are a newer coach with more time than clients, DIY tools can work well while you build your business.',
             },
           },
           {
@@ -170,10 +170,10 @@ export default function ContentRepurposingDIYvsService() {
                 <a href="/about" className="text-xs text-gray-500 hover:text-blue-600 transition">By Marius Galatan</a>
               </div>
               <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
-                Content Repurposing: DIY Tools vs. Done-for-You Services -- Which Is Right for Your Coaching Business?
+                Content Repurposing: DIY Tools vs. Done-for-You Services. Which Is Right for Your Coaching Business?
               </h1>
               <p className="text-xl text-gray-600">
-                Both options cost you something. DIY costs you time. A service costs you money. Here is the honest breakdown -- with real prices, real time estimates, and a framework to figure out which one actually makes sense for where you are right now.
+                Both options cost you something. DIY costs you time. A service costs you money. Here is the honest breakdown, with real prices, real time estimates, and a framework to figure out which one actually makes sense for where you are right now.
               </p>
             </header>
 
@@ -211,7 +211,7 @@ export default function ContentRepurposingDIYvsService() {
               <section id="the-decision" className="mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">The Decision Every Coach Faces</h2>
                 <p className="text-gray-700 mb-4">
-                  You know you should be repurposing your webinars. You have heard the numbers -- <Link href="/blog/webinar-repurposing-guide" className="text-blue-600 hover:text-blue-800 font-medium">a single webinar can become 14-75+ content pieces</Link>. You have seen other coaches show up everywhere on LinkedIn, email, and YouTube while somehow running their actual business at the same time.
+                  You know you should be repurposing your webinars. You have heard the numbers. <Link href="/blog/webinar-repurposing-guide" className="text-blue-600 hover:text-blue-800 font-medium">a single webinar can become 14-75+ content pieces</Link>. You have seen other coaches show up everywhere on LinkedIn, email, and YouTube while somehow running their actual business at the same time.
                 </p>
                 <p className="text-gray-700 mb-4">
                   So now you are standing at a fork.
@@ -223,7 +223,7 @@ export default function ContentRepurposingDIYvsService() {
                   Both paths work. Neither one is free. The question is which one costs you less when you factor in time, money, quality, and consistency.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  Here is the thing -- most comparison articles on this topic are written by agencies trying to sell you their service, or by tool companies trying to sell you software. This one is going to be honest about when each option makes sense. Because the right answer depends entirely on where your coaching business is right now.
+                  Here is the thing. Most comparison articles on this topic are written by agencies trying to sell you their service, or by tool companies trying to sell you software. This one is going to be honest about when each option makes sense. Because the right answer depends entirely on where your coaching business is right now.
                 </p>
               </section>
 
@@ -326,7 +326,7 @@ export default function ContentRepurposingDIYvsService() {
 
                   {/* Bottom Bar */}
                   <div className="bg-gray-900 px-6 py-3 text-center">
-                    <p className="text-gray-300 text-xs">At $150/hr, 15 hours of DIY = <span className="text-white font-semibold">$2,250 in lost billable time</span> -- more than the service costs.</p>
+                    <p className="text-gray-300 text-xs">At $150/hr, 15 hours of DIY = <span className="text-white font-semibold">$2,250 in lost billable time</span>, more than the service costs.</p>
                   </div>
                 </div>
                 <figcaption className="text-center text-xs text-gray-400 mt-3">Quick Verdict: The true cost of DIY goes beyond tool subscriptions.</figcaption>
@@ -377,7 +377,7 @@ export default function ContentRepurposingDIYvsService() {
                 </div>
 
                 <p className="text-gray-700 mb-4">
-                  <strong>Total tool cost: roughly $100-$130/month.</strong> Not bad. You could go leaner by skipping Opus Clip and using the free tiers of CapCut and Buffer. A bare-minimum stack -- Descript, Canva free, ChatGPT, and manual posting -- runs about $44/month.
+                  <strong>Total tool cost: roughly $100-$130/month.</strong> Not bad. You could go leaner by skipping Opus Clip and using the free tiers of CapCut and Buffer. A bare-minimum stack (Descript, Canva free, ChatGPT, and manual posting) runs about $44/month.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-3 mt-8">The Real Time Cost of DIY Repurposing</h3>
@@ -422,12 +422,12 @@ export default function ContentRepurposingDIYvsService() {
                   <strong>Total: 13-22 hours per webinar.</strong> And that is after you know what you are doing. The first two or three times, add another 5-10 hours for the learning curve.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  Now the math that matters. If you bill coaching clients $200/hour, those 15 hours of repurposing cost you $3,000 in lost billable time. At $300/hour, it is $4,500. Even at $100/hour, that is $1,500 worth of your time -- per webinar.
+                  Now the math that matters. If you bill coaching clients $200/hour, those 15 hours of repurposing cost you $3,000 in lost billable time. At $300/hour, it is $4,500. Even at $100/hour, that is $1,500 worth of your time. Per webinar.
                 </p>
 
                 <div className="bg-gray-50 border-l-4 border-gray-400 p-4 rounded-r-lg my-6">
                   <p className="text-gray-800">
-                    <strong>DIY is best for:</strong> Coaches in their first 1-2 years who have more available hours than paying clients. If your calendar has open slots you cannot fill with coaching, those hours have a lower opportunity cost -- making DIY a smart choice while you build your client base.
+                    <strong>DIY is best for:</strong> Coaches in their first 1-2 years who have more available hours than paying clients. If your calendar has open slots you cannot fill with coaching, those hours have a lower opportunity cost, making DIY a smart choice while you build your client base.
                   </p>
                 </div>
 
@@ -442,7 +442,7 @@ export default function ContentRepurposingDIYvsService() {
                   Want to skip the 15-hour DIY process?
                 </p>
                 <p className="text-blue-100 mb-4">
-                  We repurpose your webinars into 14-75+ content pieces. You send the recording -- we handle the rest.
+                  We repurpose your webinars into 14-75+ content pieces. You send the recording. We handle the rest.
                 </p>
                 <a
                   href="https://contentrepurposehub.com/#pricing"
@@ -456,7 +456,7 @@ export default function ContentRepurposingDIYvsService() {
               <section id="done-for-you-path" className="mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">The Done-for-You Path: Services, Investment, and Output</h2>
                 <p className="text-gray-700 mb-4">
-                  A done-for-you content repurposing service takes your webinar recording and turns it into finished, platform-ready content. You do roughly one hour of work -- sending the recording and reviewing drafts. They do the other 14.
+                  A done-for-you content repurposing service takes your webinar recording and turns it into finished, platform-ready content. You do roughly one hour of work (sending the recording and reviewing drafts). They do the other 14.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-3 mt-8">The Pricing Landscape</h3>
@@ -502,12 +502,12 @@ export default function ContentRepurposingDIYvsService() {
                   Most coaches are strong writers. But can you also edit video clips with captions? Design carousels that stop the scroll? Optimize blog posts for Google AND AI search engines? Do keyword research? Build email sequences with proper segmentation?
                 </p>
                 <p className="text-gray-700 mb-4">
-                  A specialist service handles all of that. And the content is consistent -- same brand voice, same quality, same schedule, month after month.
+                  A specialist service handles all of that. And the content is consistent: same brand voice, same quality, same schedule, month after month.
                 </p>
 
                 <div className="bg-gray-50 border-l-4 border-gray-400 p-4 rounded-r-lg my-6">
                   <p className="text-gray-800">
-                    <strong>Done-for-you is best for:</strong> Established coaches billing $150+/hour who run 1-4 webinars per month. At that rate, the <Link href="/blog/webinar-repurposing-roi" className="text-blue-600 hover:text-blue-800 font-medium">ROI math is straightforward</Link> -- the service costs less than the billable hours you would lose doing it yourself.
+                    <strong>Done-for-you is best for:</strong> Established coaches billing $150+/hour who run 1-4 webinars per month. At that rate, the <Link href="/blog/webinar-repurposing-roi" className="text-blue-600 hover:text-blue-800 font-medium">ROI math is straightforward</Link>. The service costs less than the billable hours you would lose doing it yourself.
                   </p>
                 </div>
               </section>
@@ -516,7 +516,7 @@ export default function ContentRepurposingDIYvsService() {
               <section id="head-to-head" className="mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Head-to-Head Comparison</h2>
                 <p className="text-gray-700 mb-4">
-                  Here is the full side-by-side breakdown. No spin -- both approaches have genuine strengths and weaknesses.
+                  Here is the full side-by-side breakdown. No spin. Both approaches have genuine strengths and weaknesses.
                 </p>
 
                 <div className="overflow-x-auto my-6">
@@ -539,7 +539,7 @@ export default function ContentRepurposingDIYvsService() {
                         ['SEO optimization', 'Basic unless you know SEO', 'Full Google + AI search optimization'],
                         ['Consistency', 'Drops off when you get busy', 'Same output every month'],
                         ['Creative control', 'Total control', 'You approve everything, but less hands-on'],
-                        ['Scalability', 'Linear -- more webinars = more hours', 'Scales easily to 2-4 webinars/month'],
+                        ['Scalability', 'Linear: more webinars = more hours', 'Scales easily to 2-4 webinars/month'],
                         ['Brand voice accuracy', 'Perfect (it is your voice)', 'Good with onboarding, improves over time'],
                       ].map((row, i) => (
                         <tr key={i}>
@@ -627,7 +627,7 @@ export default function ContentRepurposingDIYvsService() {
                         </div>
                         <div className="bg-white rounded-lg border border-amber-200 p-4">
                           <p className="font-bold text-gray-900 text-sm mb-1">Consider a freelancer</p>
-                          <p className="text-gray-500 text-xs">Hybrid approach -- handle social yourself, outsource blogs and SEO.</p>
+                          <p className="text-gray-500 text-xs">Hybrid approach: handle social yourself, outsource blogs and SEO.</p>
                         </div>
                       </div>
 
@@ -685,7 +685,7 @@ export default function ContentRepurposingDIYvsService() {
                 </div>
 
                 <p className="text-gray-700 mb-4">
-                  This keeps your monthly cost lower than full done-for-you (some services offer content-only packages without distribution). And you stay connected to your content -- which matters for coaches whose personal brand IS the business.
+                  This keeps your monthly cost lower than full done-for-you (some services offer content-only packages without distribution). And you stay connected to your content, which matters for coaches whose personal brand IS the business.
                 </p>
                 <p className="text-gray-700 mb-4">
                   The hybrid approach also works well as a transition. Start DIY, learn what works for your audience, then gradually hand off the pieces that eat the most time. By the time you move to full done-for-you, you understand exactly what good repurposed content looks like. That makes you a better client and gets you better results.
@@ -698,7 +698,7 @@ export default function ContentRepurposingDIYvsService() {
                   Not sure which approach fits your business?
                 </p>
                 <p className="text-gray-600 mb-4">
-                  We will walk you through the math for your specific situation. No pitch -- just an honest assessment.
+                  We will walk you through the math for your specific situation. No pitch, just an honest assessment.
                 </p>
                 <a
                   href="https://cal.com/contentrepurposehub/30min"
@@ -721,7 +721,7 @@ export default function ContentRepurposingDIYvsService() {
                   <div className="border border-gray-200 rounded-lg p-5">
                     <h3 className="text-lg font-bold text-gray-900 mb-2">Question 1: What is your effective hourly rate?</h3>
                     <p className="text-gray-700 mb-3">
-                      Not your aspirational rate. Your actual rate -- what you earned last month divided by the hours you worked.
+                      Not your aspirational rate. Your actual rate: what you earned last month divided by the hours you worked.
                     </p>
                     <div className="bg-gray-50 rounded-lg p-4">
                       <p className="text-sm text-gray-700 mb-1"><strong>Under $75/hour:</strong> DIY makes financial sense. Your time is cheaper than a service.</p>
@@ -737,7 +737,7 @@ export default function ContentRepurposingDIYvsService() {
                     </p>
                     <div className="bg-gray-50 rounded-lg p-4">
                       <p className="text-sm text-gray-700 mb-1"><strong>5+ hours/week available:</strong> DIY is feasible for 1 webinar/month.</p>
-                      <p className="text-sm text-gray-700 mb-1"><strong>2-5 hours/week:</strong> Hybrid -- you can handle distribution but need help with creation.</p>
+                      <p className="text-sm text-gray-700 mb-1"><strong>2-5 hours/week:</strong> Hybrid. You can handle distribution but need help with creation.</p>
                       <p className="text-sm text-gray-700"><strong>Under 2 hours/week:</strong> Done-for-you. You do not have the bandwidth for DIY.</p>
                     </div>
                   </div>
@@ -749,7 +749,7 @@ export default function ContentRepurposingDIYvsService() {
                     </p>
                     <div className="bg-gray-50 rounded-lg p-4">
                       <p className="text-sm text-gray-700 mb-1"><strong>Not a priority right now:</strong> DIY is fine. Focus on social content you can create quickly.</p>
-                      <p className="text-sm text-gray-700 mb-1"><strong>Somewhat important:</strong> Hybrid -- outsource blog posts and SEO, handle social yourself.</p>
+                      <p className="text-sm text-gray-700 mb-1"><strong>Somewhat important:</strong> Hybrid. Outsource blog posts and SEO, handle social yourself.</p>
                       <p className="text-sm text-gray-700"><strong>Critical to your growth:</strong> Done-for-you. Professional SEO + AI search optimization pays off for years.</p>
                     </div>
                   </div>
@@ -773,7 +773,7 @@ export default function ContentRepurposingDIYvsService() {
                     </p>
                     <div className="bg-gray-50 rounded-lg p-4">
                       <p className="text-sm text-gray-700 mb-1"><strong>Yes, consistently:</strong> DIY can keep working. You have the discipline.</p>
-                      <p className="text-sm text-gray-700 mb-1"><strong>Sometimes, with gaps:</strong> Hybrid -- outsource the pieces that fall off first.</p>
+                      <p className="text-sm text-gray-700 mb-1"><strong>Sometimes, with gaps:</strong> Hybrid. Outsource the pieces that fall off first.</p>
                       <p className="text-sm text-gray-700"><strong>Honestly, no:</strong> Done-for-you. Remove yourself from the bottleneck.</p>
                     </div>
                   </div>
@@ -861,7 +861,7 @@ export default function ContentRepurposingDIYvsService() {
                     },
                     {
                       q: 'Can I use a hybrid approach to content repurposing?',
-                      a: 'Yes -- and for many coaches it is the best starting point. Handle quick tasks yourself (LinkedIn posts, scheduling, simple video clips) and outsource the skill-intensive, time-heavy work (SEO blog posts, email sequences, carousels, lead magnets) to a service.',
+                      a: 'Yes, and for many coaches it is the best starting point. Handle quick tasks yourself (LinkedIn posts, scheduling, simple video clips) and outsource the skill-intensive, time-heavy work (SEO blog posts, email sequences, carousels, lead magnets) to a service.',
                     },
                   ].map((item, i) => (
                     <div key={i} className="border border-gray-200 rounded-lg p-5">
@@ -888,7 +888,7 @@ export default function ContentRepurposingDIYvsService() {
                   What matters is that you stop letting your webinars die after the live event. Whether you repurpose them yourself or hire someone to do it, the content is already there. You already did the hard work. The only question is whether it sits in a Zoom folder or turns into months of content that brings in clients.
                 </p>
                 <p className="text-gray-700">
-                  If you want to talk through which option makes sense for your specific coaching business, <a href="https://cal.com/contentrepurposehub/30min" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 font-medium">book a free strategy call</a>. We will walk through the math together and give you an honest recommendation -- even if that recommendation is to start with DIY.
+                  If you want to talk through which option makes sense for your specific coaching business, <a href="https://cal.com/contentrepurposehub/30min" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 font-medium">book a free strategy call</a>. We will walk through the math together and give you an honest recommendation, even if that recommendation is to start with DIY.
                 </p>
               </section>
             </div>

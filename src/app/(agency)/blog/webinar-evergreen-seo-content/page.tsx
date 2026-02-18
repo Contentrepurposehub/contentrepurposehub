@@ -161,7 +161,7 @@ export default function WebinarEvergreenSeoContent() {
                 How to Turn Your Webinars Into Evergreen SEO Assets That Drive Traffic for Years
               </h1>
               <p className="text-xl text-gray-600">
-                Your webinar had a shelf life of about 48 hours. The blog post you pull from it can bring in traffic for 3 years. Here is how to make that happen -- on Google and in AI search results.
+                Your webinar had a shelf life of about 48 hours. The blog post you pull from it can bring in traffic for 3 years. Here is how to make that happen, on both Google and AI search results.
               </p>
             </header>
 
@@ -169,10 +169,10 @@ export default function WebinarEvergreenSeoContent() {
             <div className="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-r-lg mb-10">
               <h2 className="text-base font-semibold text-gray-900 mb-2">Key Takeaways</h2>
               <ul className="text-gray-700 space-y-1 text-sm">
-                <li>-- A single webinar contains enough material for 4-8 evergreen blog posts that can rank on Google for years.</li>
-                <li>-- Evergreen webinar content compounds: traffic grows month over month instead of spiking and dying.</li>
-                <li>-- Optimizing for AI search (ChatGPT, Perplexity, Gemini) requires different formatting than traditional Google SEO.</li>
-                <li>-- The content flywheel turns organic traffic into email subscribers into webinar attendees into more SEO content.</li>
+                <li>A single webinar contains enough material for 4-8 evergreen blog posts that can rank on Google for years.</li>
+                <li>Evergreen webinar content compounds: traffic grows month over month instead of spiking and dying.</li>
+                <li>Optimizing for AI search (ChatGPT, Perplexity, Gemini) requires different formatting than traditional Google SEO.</li>
+                <li>The content flywheel turns organic traffic into email subscribers into webinar attendees into more SEO content.</li>
               </ul>
             </div>
 
@@ -209,10 +209,10 @@ export default function WebinarEvergreenSeoContent() {
                   The replay link gets a few clicks the first week. By week two, nobody is watching. Your webinar joins the graveyard of Zoom recordings sitting on a hard drive or buried in a cloud folder.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  Here is the thing: 52% of marketers use webinars in their content strategy, but only about 20% of that content ever gets repurposed. That means 80% of webinar content -- hours and hours of real expertise -- dies after one use.
+                  Here is the thing: 52% of marketers use webinars in their content strategy, but only about 20% of that content ever gets repurposed. That means 80% of webinar content, hours and hours of real expertise, dies after one use.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  But the insights inside your webinar are not time-sensitive. The frameworks, the processes, the answers to your audience&apos;s biggest questions -- those are <strong>evergreen</strong>. They are relevant today, next month, and two years from now.
+                  But the insights inside your webinar are not time-sensitive. The frameworks, the processes, the answers to your audience&apos;s biggest questions. Those are <strong>evergreen</strong>. They are relevant today, next month, and two years from now.
                 </p>
                 <p className="text-gray-700">
                   The problem is not your content. The problem is the format. Webinars are locked behind registration pages and replay links. Google cannot index them. ChatGPT cannot cite them. Your ideal client cannot find them by searching.
@@ -271,7 +271,7 @@ export default function WebinarEvergreenSeoContent() {
                   Every webinar you deliver is answering a question your audience actually has. And if your audience is asking it on a webinar, other people are typing it into Google.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  That is the foundation of a webinar SEO strategy. You already know what your audience cares about -- your webinar topics prove it. Now you need to turn those topics into search-optimized content.
+                  That is the foundation of a webinar SEO strategy. You already know what your audience cares about. Your webinar topics prove it. Now you need to turn those topics into search-optimized content.
                 </p>
                 <p className="text-gray-700 mb-4">
                   Here is the process:
@@ -322,7 +322,7 @@ export default function WebinarEvergreenSeoContent() {
                   Want your webinars to rank on Google and AI search?
                 </p>
                 <p className="text-blue-100 mb-4">
-                  We turn your recordings into SEO-optimized evergreen content. Blog posts, FAQ pages, pillar articles -- all included.
+                  We turn your recordings into SEO-optimized evergreen content. Blog posts, FAQ pages, and pillar articles, all included.
                 </p>
                 <a
                   href="https://contentrepurposehub.com/#pricing"
@@ -358,7 +358,7 @@ export default function WebinarEvergreenSeoContent() {
               <section id="ai-search" className="mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Optimizing for AI Search Engines (ChatGPT, Perplexity, Gemini)</h2>
                 <p className="text-gray-700 mb-4">
-                  In 2026, Google is not the only search engine that matters. ChatGPT, Perplexity, and Google&apos;s Gemini are answering millions of questions daily -- and they are pulling answers from web content.
+                  In 2026, Google is not the only search engine that matters. ChatGPT, Perplexity, and Google&apos;s Gemini are answering millions of questions daily, and they are pulling answers from web content.
                 </p>
                 <p className="text-gray-700 mb-4">
                   Your webinar content. If it is formatted correctly.
@@ -377,7 +377,7 @@ export default function WebinarEvergreenSeoContent() {
                   The good news: if you are already creating well-structured, factual content from your webinars, you are 80% of the way there. The extra 20% is intentional formatting.
                 </p>
                 <p className="text-gray-700">
-                  And here is what most coaches miss -- AI search traffic is growing fast. Perplexity reported 100 million+ monthly queries in early 2026. ChatGPT search is integrated into the browser for hundreds of millions of users. If your webinar content is formatted to be cited by these tools, you are reaching an audience that traditional SEO alone cannot touch.
+                  And here is what most coaches miss: AI search traffic is growing fast. Perplexity reported 100 million+ monthly queries in early 2026. ChatGPT search is integrated into the browser for hundreds of millions of users. If your webinar content is formatted to be cited by these tools, you are reaching an audience that traditional SEO alone cannot touch.
                 </p>
               </section>
 
@@ -391,7 +391,7 @@ export default function WebinarEvergreenSeoContent() {
                 <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 my-6">
                   <h3 className="text-lg font-bold text-gray-900 mb-4">Google SEO Fundamentals</h3>
                   <ul className="space-y-3 text-gray-700">
-                    <li className="flex gap-2"><span className="text-blue-600 font-bold">[ ]</span> Target keyword in the title tag (H1) -- front-loaded when possible</li>
+                    <li className="flex gap-2"><span className="text-blue-600 font-bold">[ ]</span> Target keyword in the title tag (H1), front-loaded when possible</li>
                     <li className="flex gap-2"><span className="text-blue-600 font-bold">[ ]</span> Target keyword in the first 100 words of the article</li>
                     <li className="flex gap-2"><span className="text-blue-600 font-bold">[ ]</span> Target keyword in at least 2 H2 subheadings</li>
                     <li className="flex gap-2"><span className="text-blue-600 font-bold">[ ]</span> Meta description (150-160 characters) with target keyword and clear value proposition</li>
@@ -400,7 +400,7 @@ export default function WebinarEvergreenSeoContent() {
                     <li className="flex gap-2"><span className="text-blue-600 font-bold">[ ]</span> Internal links to 2-3 related posts on your site</li>
                     <li className="flex gap-2"><span className="text-blue-600 font-bold">[ ]</span> External links to 2-3 authoritative sources (industry reports, research)</li>
                     <li className="flex gap-2"><span className="text-blue-600 font-bold">[ ]</span> Heading hierarchy: one H1, then H2s for major sections, H3s for subsections</li>
-                    <li className="flex gap-2"><span className="text-blue-600 font-bold">[ ]</span> Word count: 1,500+ words for competitive keywords (longer is not always better -- be thorough, not padded)</li>
+                    <li className="flex gap-2"><span className="text-blue-600 font-bold">[ ]</span> Word count: 1,500+ words for competitive keywords (longer is not always better; be thorough, not padded)</li>
                     <li className="flex gap-2"><span className="text-blue-600 font-bold">[ ]</span> Mobile-friendly formatting: short paragraphs, readable font sizes</li>
                     <li className="flex gap-2"><span className="text-blue-600 font-bold">[ ]</span> Page loads in under 3 seconds</li>
                   </ul>
@@ -510,7 +510,7 @@ export default function WebinarEvergreenSeoContent() {
                   Ready to build your content flywheel?
                 </p>
                 <p className="text-gray-600 mb-4">
-                  We turn each webinar into 14-75+ content pieces -- including the SEO assets that compound over time.
+                  We turn each webinar into 14-75+ content pieces, including the SEO assets that compound over time.
                 </p>
                 <a
                   href="https://cal.com/contentrepurposehub/30min"
@@ -571,14 +571,14 @@ export default function WebinarEvergreenSeoContent() {
                   From that single webinar, 5 blog posts get published:
                 </p>
                 <ol className="list-decimal pl-6 text-gray-700 space-y-2 mb-4">
-                  <li>&quot;How to Price a Group Coaching Program&quot; -- targets &quot;group coaching pricing&quot;</li>
-                  <li>&quot;Group Coaching vs. 1:1 Coaching: Which Model Fits Your Business?&quot; -- targets &quot;group coaching vs 1:1&quot;</li>
-                  <li>&quot;How to Fill Your Group Coaching Program Without Paid Ads&quot; -- targets &quot;fill group coaching program&quot;</li>
-                  <li>&quot;Designing a Group Coaching Curriculum That Gets Results&quot; -- targets &quot;group coaching curriculum&quot;</li>
-                  <li>&quot;FAQ: Everything You Need to Know About Starting a Group Coaching Program&quot; -- FAQ page with schema</li>
+                  <li>&quot;How to Price a Group Coaching Program&quot; (targets &quot;group coaching pricing&quot;)</li>
+                  <li>&quot;Group Coaching vs. 1:1 Coaching: Which Model Fits Your Business?&quot; (targets &quot;group coaching vs 1:1&quot;)</li>
+                  <li>&quot;How to Fill Your Group Coaching Program Without Paid Ads&quot; (targets &quot;fill group coaching program&quot;)</li>
+                  <li>&quot;Designing a Group Coaching Curriculum That Gets Results&quot; (targets &quot;group coaching curriculum&quot;)</li>
+                  <li>&quot;FAQ: Everything You Need to Know About Starting a Group Coaching Program&quot; (FAQ page with schema)</li>
                 </ol>
                 <p className="text-gray-700 mb-4">
-                  Month 1: Combined traffic from all 5 posts -- 47 organic visits. Not exciting. But the content is indexing.
+                  Month 1: Combined traffic from all 5 posts totals 47 organic visits. Not exciting. But the content is indexing.
                 </p>
                 <p className="text-gray-700 mb-4">
                   Month 3: 189 visits. The pricing post hits page 2 for its target keyword.
