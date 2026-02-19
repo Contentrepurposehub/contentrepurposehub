@@ -1,8 +1,7 @@
 'use client'
 
-import { m, useReducedMotion } from 'framer-motion'
-
-const easing: [number, number, number, number] = [0.25, 0.1, 0.25, 1.0]
+import { useRef, useState, useEffect } from 'react'
+import { useInView, useReducedMotion } from 'framer-motion'
 
 export default function AnimatedCard({
   children,
@@ -15,25 +14,32 @@ export default function AnimatedCard({
   className?: string
   staggerDelay?: number
 }) {
+  const ref = useRef<HTMLDivElement>(null)
+  const isInView = useInView(ref, { once: true, amount: 0.1 })
   const shouldReduceMotion = useReducedMotion()
+  const [mounted, setMounted] = useState(false)
 
-  if (shouldReduceMotion) {
-    return <div className={className}>{children}</div>
-  }
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  // Before JS hydration: fully visible (no blank pages)
+  // After hydration, below fold: hidden, then animate on scroll
+  // After hydration, above fold: isInView is already true, stays visible
+  const shouldAnimate = mounted && !shouldReduceMotion
+  const isVisible = !shouldAnimate || isInView
 
   return (
-    <m.div
+    <div
+      ref={ref}
       className={className}
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{
-        duration: 0.5,
-        delay: index * staggerDelay,
-        ease: easing,
-      }}
+      style={shouldAnimate ? {
+        opacity: isVisible ? 1 : 0,
+        transform: isVisible ? 'none' : 'translateY(40px)',
+        transition: `opacity 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) ${index * staggerDelay}s, transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) ${index * staggerDelay}s`,
+      } : undefined}
     >
       {children}
-    </m.div>
+    </div>
   )
 }

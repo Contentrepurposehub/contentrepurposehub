@@ -1,7 +1,7 @@
 'use client'
 
-import { m, useInView, useReducedMotion } from 'framer-motion'
-import { useRef, useEffect, useState } from 'react'
+import { useRef, useState, useEffect } from 'react'
+import { useInView, useReducedMotion } from 'framer-motion'
 
 function easeOutCubic(t: number): number {
   return 1 - Math.pow(1 - t, 3)
@@ -11,7 +11,6 @@ export default function AnimatedCounter({
   target,
   prefix = '',
   suffix = '',
-  className,
   duration = 1500,
 }: {
   target: number
@@ -23,16 +22,20 @@ export default function AnimatedCounter({
   const ref = useRef<HTMLSpanElement>(null)
   const isInView = useInView(ref, { once: true })
   const shouldReduceMotion = useReducedMotion()
-  const [display, setDisplay] = useState(`${prefix}0${suffix}`)
+  // SSR: show final value (visible, no blank)
+  const [display, setDisplay] = useState(`${prefix}${target}${suffix}`)
+  const hasAnimated = useRef(false)
 
   useEffect(() => {
-    if (!isInView) return
+    if (!isInView || hasAnimated.current) return
+    hasAnimated.current = true
 
     if (shouldReduceMotion) {
       setDisplay(`${prefix}${target}${suffix}`)
       return
     }
 
+    setDisplay(`${prefix}0${suffix}`)
     const startTime = performance.now()
 
     function tick(now: number) {
@@ -50,16 +53,5 @@ export default function AnimatedCounter({
     requestAnimationFrame(tick)
   }, [isInView, shouldReduceMotion, target, prefix, suffix, duration])
 
-  return (
-    <m.span
-      ref={ref}
-      className={className}
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.3 }}
-    >
-      {display}
-    </m.span>
-  )
+  return <span ref={ref}>{display}</span>
 }

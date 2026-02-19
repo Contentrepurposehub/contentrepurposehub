@@ -1,7 +1,6 @@
 import BeehiivSubscribeForm from "@/components/BeehiivSubscribeForm"
 import CheckoutButton from "@/components/CheckoutButton"
 import MobileNav from "@/components/MobileNav"
-import MotionProvider from "@/components/MotionProvider"
 import AnimatedSection from "@/components/AnimatedSection"
 import AnimatedCard from "@/components/AnimatedCard"
 import AnimatedCounter from "@/components/AnimatedCounter"
@@ -323,7 +322,6 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
-      <MotionProvider>
       <main className="min-h-screen">
         {/* Navigation */}
         <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-sm border-b border-gray-100 z-50">
@@ -1406,7 +1404,6 @@ export default function Home() {
           </div>
         </footer>
       </main>
-      </MotionProvider>
     </>
   );
 }

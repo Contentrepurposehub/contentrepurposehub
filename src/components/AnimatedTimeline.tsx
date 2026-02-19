@@ -1,8 +1,7 @@
 'use client'
 
-import { m, useReducedMotion } from 'framer-motion'
-
-const easing: [number, number, number, number] = [0.25, 0.1, 0.25, 1.0]
+import { useRef, useState, useEffect } from 'react'
+import { useInView, useReducedMotion } from 'framer-motion'
 
 export default function AnimatedTimeline({
   children,
@@ -13,25 +12,29 @@ export default function AnimatedTimeline({
   index: number
   className?: string
 }) {
+  const ref = useRef<HTMLDivElement>(null)
+  const isInView = useInView(ref, { once: true, amount: 0.1 })
   const shouldReduceMotion = useReducedMotion()
+  const [mounted, setMounted] = useState(false)
 
-  if (shouldReduceMotion) {
-    return <div className={className}>{children}</div>
-  }
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  const shouldAnimate = mounted && !shouldReduceMotion
+  const isVisible = !shouldAnimate || isInView
 
   return (
-    <m.div
+    <div
+      ref={ref}
       className={className}
-      initial={{ opacity: 0, x: -30 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true }}
-      transition={{
-        duration: 0.5,
-        delay: index * 0.25,
-        ease: easing,
-      }}
+      style={shouldAnimate ? {
+        opacity: isVisible ? 1 : 0,
+        transform: isVisible ? 'none' : 'translateX(-30px)',
+        transition: `opacity 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) ${index * 0.25}s, transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) ${index * 0.25}s`,
+      } : undefined}
     >
       {children}
-    </m.div>
+    </div>
   )
 }
