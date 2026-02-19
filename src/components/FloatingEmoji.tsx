@@ -31,20 +31,21 @@ export default function FloatingEmoji({
           observer.disconnect()
 
           const pop = el.animate([
-            { opacity: 0, transform: 'scale(0)' },
-            { opacity: 1, transform: 'scale(1.2)', offset: 0.6 },
-            { opacity: 1, transform: 'scale(0.95)', offset: 0.8 },
-            { opacity: 1, transform: 'scale(1)' },
+            { opacity: '0', transform: 'scale(0)' },
+            { opacity: '1', transform: 'scale(1.2)', offset: 0.6 },
+            { opacity: '1', transform: 'scale(0.95)', offset: 0.8 },
+            { opacity: '1', transform: 'scale(1)' },
           ], {
             duration: 600,
             delay,
             easing: 'ease-out',
-            fill: 'forwards',
+            fill: 'both',
           })
 
           pop.onfinish = () => {
             el.style.opacity = '1'
             el.style.transform = 'scale(1)'
+            pop.cancel()
             startFloat()
           }
         }

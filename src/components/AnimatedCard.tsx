@@ -30,19 +30,24 @@ export default function AnimatedCard({
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
         observer.disconnect()
-        // Scale Bounce: from nothing → overshoot → settle
-        el.animate([
-          { opacity: 0, transform: 'scale(0)' },
-          { opacity: 1, transform: 'scale(1.35)', offset: 0.5 },
-          { opacity: 1, transform: 'scale(0.85)', offset: 0.7 },
-          { opacity: 1, transform: 'scale(1.1)', offset: 0.85 },
-          { opacity: 1, transform: 'scale(1)' },
+        // Scale Bounce: from nothing -> overshoot -> settle
+        const anim = el.animate([
+          { opacity: '0', transform: 'scale(0)' },
+          { opacity: '1', transform: 'scale(1.35)', offset: 0.5 },
+          { opacity: '1', transform: 'scale(0.85)', offset: 0.7 },
+          { opacity: '1', transform: 'scale(1.1)', offset: 0.85 },
+          { opacity: '1', transform: 'scale(1)' },
         ], {
           duration: 800,
           delay: index * (staggerDelay * 1000),
           easing: 'ease-out',
-          fill: 'forwards',
+          fill: 'both',
         })
+        anim.onfinish = () => {
+          el.style.opacity = '1'
+          el.style.transform = 'scale(1)'
+          anim.cancel()
+        }
       }
     }, { threshold: 0.08 })
     observer.observe(el)

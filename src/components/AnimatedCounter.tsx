@@ -30,7 +30,6 @@ export default function AnimatedCounter({
     const rect = el.getBoundingClientRect()
     if (rect.top < window.innerHeight) return
 
-    // Start from nothing
     setDisplay(`${prefix}0${suffix}`)
     el.style.opacity = '0'
     el.style.transform = 'scale(0)'
@@ -40,17 +39,22 @@ export default function AnimatedCounter({
         hasAnimated.current = true
         observer.disconnect()
 
-        // Scale Pop in, then start counting
-        el.animate([
-          { opacity: 0, transform: 'scale(0)' },
-          { opacity: 1, transform: 'scale(1.2)', offset: 0.6 },
-          { opacity: 1, transform: 'scale(0.95)', offset: 0.8 },
-          { opacity: 1, transform: 'scale(1)' },
+        // Scale Pop in
+        const pop = el.animate([
+          { opacity: '0', transform: 'scale(0)' },
+          { opacity: '1', transform: 'scale(1.2)', offset: 0.6 },
+          { opacity: '1', transform: 'scale(0.95)', offset: 0.8 },
+          { opacity: '1', transform: 'scale(1)' },
         ], {
           duration: 500,
           easing: 'ease-out',
-          fill: 'forwards',
+          fill: 'both',
         })
+        pop.onfinish = () => {
+          el.style.opacity = '1'
+          el.style.transform = 'scale(1)'
+          pop.cancel()
+        }
 
         // Start counting after the pop
         const startTime = performance.now() + 300
@@ -69,7 +73,6 @@ export default function AnimatedCounter({
           if (progress < 1) {
             requestAnimationFrame(tick)
           } else {
-            // Pop on finish
             if (el) {
               el.animate([
                 { transform: 'scale(1)' },

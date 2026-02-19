@@ -28,18 +28,22 @@ export default function PopHeading({
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
         observer.disconnect()
-        // Flip In: rotates down into place with a subtle bounce
-        el.animate([
-          { opacity: 0, transform: 'perspective(600px) rotateX(90deg)' },
-          { opacity: 1, transform: 'perspective(600px) rotateX(-10deg)', offset: 0.6 },
-          { opacity: 1, transform: 'perspective(600px) rotateX(5deg)', offset: 0.8 },
-          { opacity: 1, transform: 'perspective(600px) rotateX(0deg)' },
+        const anim = el.animate([
+          { opacity: '0', transform: 'perspective(600px) rotateX(90deg)' },
+          { opacity: '1', transform: 'perspective(600px) rotateX(-10deg)', offset: 0.6 },
+          { opacity: '1', transform: 'perspective(600px) rotateX(5deg)', offset: 0.8 },
+          { opacity: '1', transform: 'perspective(600px) rotateX(0deg)' },
         ], {
           duration: 700,
           delay,
           easing: 'ease-out',
-          fill: 'forwards',
+          fill: 'both',
         })
+        anim.onfinish = () => {
+          el.style.opacity = '1'
+          el.style.transform = 'none'
+          anim.cancel()
+        }
       }
     }, { threshold: 0.1 })
     observer.observe(el)
