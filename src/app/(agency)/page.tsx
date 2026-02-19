@@ -1,6 +1,11 @@
 import BeehiivSubscribeForm from "@/components/BeehiivSubscribeForm"
 import CheckoutButton from "@/components/CheckoutButton"
 import MobileNav from "@/components/MobileNav"
+import MotionProvider from "@/components/MotionProvider"
+import AnimatedSection from "@/components/AnimatedSection"
+import AnimatedCard from "@/components/AnimatedCard"
+import AnimatedCounter from "@/components/AnimatedCounter"
+import AnimatedTimeline from "@/components/AnimatedTimeline"
 
 export default function Home() {
   const structuredData = {
@@ -318,6 +323,7 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
+      <MotionProvider>
       <main className="min-h-screen">
         {/* Navigation */}
         <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-sm border-b border-gray-100 z-50">
@@ -346,7 +352,7 @@ export default function Home() {
 
         {/* Hero Section */}
         <section className="pt-32 pb-20 px-4">
-          <div className="max-w-4xl mx-auto text-center">
+          <AnimatedSection hero className="max-w-4xl mx-auto text-center">
             <div className="inline-block bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-sm font-medium mb-6">
               For Coaches &amp; Consultants With Recorded Webinars
             </div>
@@ -379,7 +385,7 @@ export default function Home() {
             <p className="text-sm text-gray-500 mt-4">
               ✓ No contracts &nbsp; ✓ First delivery in 7 days &nbsp; ✓ 30-day &quot;Sounds Like Me&quot; guarantee
             </p>
-          </div>
+          </AnimatedSection>
         </section>
 
         {/* Problem Section */}
@@ -416,11 +422,11 @@ export default function Home() {
                   desc: "Right now, someone is asking ChatGPT: 'Who's the best coach for [your topic]?' If your content isn't structured for AI search, the answer won't be you."
                 },
               ].map((item, i) => (
-                <div key={i} className="bg-white p-8 rounded-xl card-shadow">
+                <AnimatedCard key={i} index={i} className="bg-white p-8 rounded-xl card-shadow">
                   <div className="text-4xl mb-4">{item.emoji}</div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">{item.title}</h3>
                   <p className="text-gray-600">{item.desc}</p>
-                </div>
+                </AnimatedCard>
               ))}
             </div>
           </div>
@@ -695,14 +701,14 @@ export default function Home() {
                   tag: 'Expands Reach'
                 },
               ].map((item, i) => (
-                <div key={i} className="border border-gray-200 p-6 rounded-xl hover:border-blue-300 transition">
+                <AnimatedCard key={i} index={i} staggerDelay={0.12} className="border border-gray-200 p-6 rounded-xl hover:border-blue-300 transition">
                   <div className="flex justify-between items-start mb-3">
                     <div className="text-3xl">{item.icon}</div>
                     <span className="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">{item.tag}</span>
                   </div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">{item.title}</h3>
                   <p className="text-gray-600 text-sm">{item.desc}</p>
-                </div>
+                </AnimatedCard>
               ))}
             </div>
 
@@ -1022,12 +1028,12 @@ export default function Home() {
                 { month: 'Month 6', posts: '6 blog posts', linkedin: '60 LinkedIn posts', extra: 'Post #1 ranks higher because #2-6 link to it' },
                 { month: 'Month 12', posts: '12 blog posts', linkedin: '120 LinkedIn posts', extra: 'Full content engine + growing email list' },
               ].map((item, i) => (
-                <div key={i} className="bg-white rounded-xl p-5 border border-gray-200 text-center">
+                <AnimatedTimeline key={i} index={i} className="bg-white rounded-xl p-5 border border-gray-200 text-center">
                   <div className="text-blue-600 font-bold text-lg mb-2">{item.month}</div>
                   <div className="text-gray-900 font-semibold text-sm">{item.posts}</div>
                   <div className="text-gray-600 text-sm">{item.linkedin}</div>
                   <div className="text-gray-500 text-xs mt-3 italic leading-snug">{item.extra}</div>
-                </div>
+                </AnimatedTimeline>
               ))}
             </div>
 
@@ -1118,16 +1124,18 @@ export default function Home() {
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-4 gap-8 text-center">
               {[
-                { stat: '14-75+', label: 'Content Pieces Per Month', desc: 'From one webinar recording' },
-                { stat: '7 Days', label: 'To First Delivery', desc: 'Blog, scorecard, landing page' },
-                { stat: '15-20 hrs', label: 'Saved Per Month', desc: 'Time you\'d spend doing this yourself' },
-                { stat: '$54', label: 'Per Content Piece', desc: 'Starter plan. Freelancers charge $200-500.' },
+                { target: 75, prefix: '14-', suffix: '+', label: 'Content Pieces Per Month', desc: 'From one webinar recording' },
+                { target: 7, prefix: '', suffix: ' Days', label: 'To First Delivery', desc: 'Blog, scorecard, landing page' },
+                { target: 20, prefix: '15-', suffix: ' hrs', label: 'Saved Per Month', desc: 'Time you\'d spend doing this yourself' },
+                { target: 54, prefix: '$', suffix: '', label: 'Per Content Piece', desc: 'Starter plan. Freelancers charge $200-500.' },
               ].map((item, i) => (
-                <div key={i}>
-                  <div className="text-4xl font-bold gradient-text mb-2">{item.stat}</div>
+                <AnimatedCard key={i} index={i} className="">
+                  <div className="text-4xl font-bold gradient-text mb-2">
+                    <AnimatedCounter target={item.target} prefix={item.prefix} suffix={item.suffix} />
+                  </div>
                   <div className="text-lg font-semibold text-gray-900 mb-1">{item.label}</div>
                   <p className="text-gray-600 text-sm">{item.desc}</p>
-                </div>
+                </AnimatedCard>
               ))}
             </div>
           </div>
@@ -1147,7 +1155,7 @@ export default function Home() {
 
             {/* Credibility Pillars - 4 cards, breaking Rule of 3 */}
             <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <div className="bg-white rounded-xl p-6 border border-gray-200">
+              <AnimatedCard index={0} className="bg-white rounded-xl p-6 border border-gray-200">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                   <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                 </div>
@@ -1155,8 +1163,8 @@ export default function Home() {
                 <p className="text-gray-600 text-sm">
                   Every piece starts from your webinar transcript. We extract your stories, examples, and insights, then structure them for search and social. The content sounds like you because it IS you. Your audience can tell the difference.
                 </p>
-              </div>
-              <div className="bg-white rounded-xl p-6 border border-gray-200">
+              </AnimatedCard>
+              <AnimatedCard index={1} className="bg-white rounded-xl p-6 border border-gray-200">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                   <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
                 </div>
@@ -1164,8 +1172,8 @@ export default function Home() {
                 <p className="text-gray-600 text-sm">
                   Most services optimize for Google only. We structure every piece for both Google and AI assistants (ChatGPT, Perplexity, Gemini). When someone asks an AI &quot;who&apos;s the best coach for [your topic]?&quot; your content can be the answer.
                 </p>
-              </div>
-              <div className="bg-white rounded-xl p-6 border border-gray-200">
+              </AnimatedCard>
+              <AnimatedCard index={2} className="bg-white rounded-xl p-6 border border-gray-200">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                   <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                 </div>
@@ -1173,8 +1181,8 @@ export default function Home() {
                 <p className="text-gray-600 text-sm">
                   First delivery in 7-10 days. Something new every week after that. Each month adds to a compounding content library. More blog posts. More LinkedIn posts. More SEO authority. Month 6 is worth more than Month 1.
                 </p>
-              </div>
-              <div className="bg-white rounded-xl p-6 border border-gray-200">
+              </AnimatedCard>
+              <AnimatedCard index={3} className="bg-white rounded-xl p-6 border border-gray-200">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                   <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
                 </div>
@@ -1182,7 +1190,7 @@ export default function Home() {
                 <p className="text-gray-600 text-sm">
                   Your blog post, scorecard, and landing page are live web pages, not PDFs in a Google Drive. Real URLs that rank on Google, capture emails, and grow your authority. We handle the hosting and technical setup.
                 </p>
-              </div>
+              </AnimatedCard>
             </div>
 
             {/* The Math */}
@@ -1398,6 +1406,7 @@ export default function Home() {
           </div>
         </footer>
       </main>
+      </MotionProvider>
     </>
   );
 }
