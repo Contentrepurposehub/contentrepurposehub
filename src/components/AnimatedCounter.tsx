@@ -25,35 +25,41 @@ export default function AnimatedCounter({
   useEffect(() => {
     const el = ref.current
     if (!el) return
-
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
 
     const rect = el.getBoundingClientRect()
     if (rect.top < window.innerHeight) return
 
-    // Start scaled down and blurred
+    // Start from nothing
     setDisplay(`${prefix}0${suffix}`)
-    el.style.filter = 'blur(4px)'
-    el.style.transform = 'scale(0.6)'
-    el.style.opacity = '0.3'
-
-    requestAnimationFrame(() => {
-      el.style.transition = 'filter 0.6s ease, transform 0.6s ease, opacity 0.6s ease'
-    })
+    el.style.opacity = '0'
+    el.style.transform = 'scale(0)'
 
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting && !hasAnimated.current) {
         hasAnimated.current = true
         observer.disconnect()
 
-        // Unblur and scale up as counting starts
-        el.style.filter = 'blur(0px)'
-        el.style.transform = 'scale(1)'
-        el.style.opacity = '1'
+        // Scale Pop in, then start counting
+        el.animate([
+          { opacity: 0, transform: 'scale(0)' },
+          { opacity: 1, transform: 'scale(1.2)', offset: 0.6 },
+          { opacity: 1, transform: 'scale(0.95)', offset: 0.8 },
+          { opacity: 1, transform: 'scale(1)' },
+        ], {
+          duration: 500,
+          easing: 'ease-out',
+          fill: 'forwards',
+        })
 
-        const startTime = performance.now()
+        // Start counting after the pop
+        const startTime = performance.now() + 300
 
         function tick(now: number) {
+          if (now < startTime) {
+            requestAnimationFrame(tick)
+            return
+          }
           const elapsed = now - startTime
           const progress = Math.min(elapsed / duration, 1)
           const eased = easeOutCubic(progress)
@@ -63,19 +69,16 @@ export default function AnimatedCounter({
           if (progress < 1) {
             requestAnimationFrame(tick)
           } else {
-            // Big pop + glow when counting finishes
+            // Pop on finish
             if (el) {
-              el.animate(
-                [
-                  { transform: 'scale(1)', textShadow: '0 0 0px transparent' },
-                  { transform: 'scale(1.25)', textShadow: '0 0 20px rgba(59, 130, 246, 0.6)' },
-                  { transform: 'scale(1)', textShadow: '0 0 0px transparent' },
-                ],
-                {
-                  duration: 500,
-                  easing: 'cubic-bezier(0.34, 1.56, 0.64, 1)',
-                }
-              )
+              el.animate([
+                { transform: 'scale(1)' },
+                { transform: 'scale(1.25)' },
+                { transform: 'scale(1)' },
+              ], {
+                duration: 400,
+                easing: 'cubic-bezier(0.34, 1.56, 0.64, 1)',
+              })
             }
           }
         }

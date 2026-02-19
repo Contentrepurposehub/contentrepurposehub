@@ -2,14 +2,14 @@
 
 import { useRef, useEffect } from 'react'
 
-export default function AnimatedTimeline({
+export default function PopHeading({
   children,
-  index,
   className,
+  delay = 0,
 }: {
   children: React.ReactNode
-  index: number
   className?: string
+  delay?: number
 }) {
   const ref = useRef<HTMLDivElement>(null)
 
@@ -21,31 +21,31 @@ export default function AnimatedTimeline({
     const rect = el.getBoundingClientRect()
     if (rect.top < window.innerHeight) return
 
+    // Start flipped up and invisible
     el.style.opacity = '0'
-    el.style.transform = 'scale(0)'
+    el.style.transform = 'perspective(600px) rotateX(90deg)'
 
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
         observer.disconnect()
-        // Scale Bounce: from nothing → overshoot → settle
+        // Flip In: rotates down into place with a subtle bounce
         el.animate([
-          { opacity: 0, transform: 'scale(0)' },
-          { opacity: 1, transform: 'scale(1.35)', offset: 0.5 },
-          { opacity: 1, transform: 'scale(0.85)', offset: 0.7 },
-          { opacity: 1, transform: 'scale(1.1)', offset: 0.85 },
-          { opacity: 1, transform: 'scale(1)' },
+          { opacity: 0, transform: 'perspective(600px) rotateX(90deg)' },
+          { opacity: 1, transform: 'perspective(600px) rotateX(-10deg)', offset: 0.6 },
+          { opacity: 1, transform: 'perspective(600px) rotateX(5deg)', offset: 0.8 },
+          { opacity: 1, transform: 'perspective(600px) rotateX(0deg)' },
         ], {
-          duration: 800,
-          delay: index * 200,
+          duration: 700,
+          delay,
           easing: 'ease-out',
           fill: 'forwards',
         })
       }
-    }, { threshold: 0.08 })
+    }, { threshold: 0.1 })
     observer.observe(el)
 
     return () => observer.disconnect()
-  }, [index])
+  }, [delay])
 
   return (
     <div ref={ref} className={className}>

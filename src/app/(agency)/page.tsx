@@ -8,6 +8,7 @@ import AnimatedTimeline from "@/components/AnimatedTimeline"
 import PulsingCTA from "@/components/PulsingCTA"
 import FloatingEmoji from "@/components/FloatingEmoji"
 import ParallaxBand from "@/components/ParallaxBand"
+import PopHeading from "@/components/PopHeading"
 
 export default function Home() {
   const structuredData = {
@@ -393,9 +394,11 @@ export default function Home() {
         <section className="py-20 bg-gray-50 px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                You Already Created the Content. It&apos;s Sitting in a Zoom Folder.
-              </h2>
+              <PopHeading>
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                  You Already Created the Content. It&apos;s Sitting in a Zoom Folder.
+                </h2>
+              </PopHeading>
               <p className="text-gray-600 text-lg max-w-2xl mx-auto">
                 10-20 hours of prep. Your best frameworks. Your real stories. Delivered once, then buried. Meanwhile, you&apos;re staring at a blank page trying to create something new for next week.
               </p>
@@ -460,9 +463,11 @@ export default function Home() {
               <div className="inline-block bg-green-100 text-green-700 px-4 py-1 rounded-full text-sm font-medium mb-4">
                 Free Resource. No Email Required.
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Webinar Repurposing Checklist: 5 of 14 Ways to Repurpose Your Webinar
-              </h2>
+              <PopHeading>
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                  Webinar Repurposing Checklist: 5 of 14 Ways to Repurpose Your Webinar
+                </h2>
+              </PopHeading>
               <p className="text-gray-600 text-lg max-w-2xl mx-auto">
                 Here are 5 proven content formats you can create from every webinar you run, with step-by-step instructions. Get all 14 by subscribing below.
               </p>
@@ -651,9 +656,11 @@ export default function Home() {
               <div className="inline-block bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-sm font-medium mb-4">
                 The Webinar Flywheel
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Not Just Content. A System That Compounds.
-              </h2>
+              <PopHeading>
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                  Not Just Content. A System That Compounds.
+                </h2>
+              </PopHeading>
               <p className="text-gray-600 text-lg max-w-2xl mx-auto">
                 Other services hand you clips and posts. We build the engine: your webinar feeds content, content captures leads, leads fill your next webinar. Every month strengthens what came before.
               </p>
@@ -783,9 +790,11 @@ export default function Home() {
         <section id="how-it-works" className="py-20 px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                How It Works Month Over Month
-              </h2>
+              <PopHeading>
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                  How It Works Month Over Month
+                </h2>
+              </PopHeading>
               <p className="text-gray-600 text-lg max-w-2xl mx-auto">
                 Month 1 builds the foundation. Every month after that builds on it. Faster for us to produce. More valuable for you. The system gets stronger with every cycle.
               </p>
@@ -882,9 +891,11 @@ export default function Home() {
         <section id="pricing" className="py-20 bg-gray-50 px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Monthly Webinar Repurposing Plans
-              </h2>
+              <PopHeading>
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                  Monthly Webinar Repurposing Plans
+                </h2>
+              </PopHeading>
               <p className="text-gray-600 text-lg max-w-2xl mx-auto">
                 Send us a webinar or podcast each month. We turn it into a content engine that compounds over time. All content is Google + AI Search optimized.
               </p>
@@ -1027,9 +1038,11 @@ export default function Home() {
         <section className="py-20 px-4">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Why Month 6 Is Worth More Than Month 1
-              </h2>
+              <PopHeading>
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                  Why Month 6 Is Worth More Than Month 1
+                </h2>
+              </PopHeading>
               <p className="text-gray-600 text-lg max-w-2xl mx-auto">
                 Content repurposing isn&apos;t a one-time project. It&apos;s an engine. Every month you stay, the engine gets more powerful.
               </p>
@@ -1160,9 +1173,11 @@ export default function Home() {
         <section className="py-20 bg-gray-50 px-4">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Why Coaches Choose This Over DIY or AI Tools
-              </h2>
+              <PopHeading>
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                  Why Coaches Choose This Over DIY or AI Tools
+                </h2>
+              </PopHeading>
               <p className="text-gray-600 text-lg max-w-2xl mx-auto">
                 A $99/month AI tool gives you clips. A VA gives you generic posts. Neither builds a system. Here&apos;s what makes this different.
               </p>
@@ -1295,9 +1310,11 @@ export default function Home() {
         <section id="faq" className="py-20 bg-gray-50 px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Frequently Asked Questions
-              </h2>
+              <PopHeading>
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                  Frequently Asked Questions
+                </h2>
+              </PopHeading>
             </div>
             <div className="space-y-6">
               {[
