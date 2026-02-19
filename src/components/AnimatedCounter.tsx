@@ -28,17 +28,28 @@ export default function AnimatedCounter({
 
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
 
-    // Already in viewport? Show final value immediately
     const rect = el.getBoundingClientRect()
     if (rect.top < window.innerHeight) return
 
-    // Set initial display to 0
+    // Start scaled down and blurred
     setDisplay(`${prefix}0${suffix}`)
+    el.style.filter = 'blur(4px)'
+    el.style.transform = 'scale(0.6)'
+    el.style.opacity = '0.3'
+
+    requestAnimationFrame(() => {
+      el.style.transition = 'filter 0.6s ease, transform 0.6s ease, opacity 0.6s ease'
+    })
 
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting && !hasAnimated.current) {
         hasAnimated.current = true
         observer.disconnect()
+
+        // Unblur and scale up as counting starts
+        el.style.filter = 'blur(0px)'
+        el.style.transform = 'scale(1)'
+        el.style.opacity = '1'
 
         const startTime = performance.now()
 
@@ -52,16 +63,16 @@ export default function AnimatedCounter({
           if (progress < 1) {
             requestAnimationFrame(tick)
           } else {
-            // Pop effect when counting finishes
+            // Big pop + glow when counting finishes
             if (el) {
               el.animate(
                 [
-                  { transform: 'scale(1)' },
-                  { transform: 'scale(1.15)' },
-                  { transform: 'scale(1)' },
+                  { transform: 'scale(1)', textShadow: '0 0 0px transparent' },
+                  { transform: 'scale(1.25)', textShadow: '0 0 20px rgba(59, 130, 246, 0.6)' },
+                  { transform: 'scale(1)', textShadow: '0 0 0px transparent' },
                 ],
                 {
-                  duration: 400,
+                  duration: 500,
                   easing: 'cubic-bezier(0.34, 1.56, 0.64, 1)',
                 }
               )
