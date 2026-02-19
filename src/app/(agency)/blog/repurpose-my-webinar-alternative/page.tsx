@@ -213,7 +213,7 @@ export default function RepurposeMyWebinarAlternative() {
                   Webinar replays have a shelf life. Research consistently shows that replay engagement drops sharply after 7-14 days. People who did not attend live are unlikely to sit through a 60-minute recording three weeks later, no matter how good the content is. The urgency is gone.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  This creates a structural problem with replay-focused repurposing. If the core strategy is &quot;drive more people to watch the replay,&quot; you are fighting against declining interest. Your best content gets a two-week window before it effectively disappears.
+                  This creates a structural problem with replay-focused repurposing. If the core strategy is &quot;drive more people to watch the replay,&quot; you are fighting against declining interest. Your best content gets a two-week window before it disappears.
                 </p>
                 <p className="text-gray-700 mb-4">
                   Written content works differently. A blog post optimized for search does not decay after two weeks. It compounds. An SEO article published in February can generate leads in July, October, and the following year. A lead magnet keeps collecting email addresses as long as it is live. An email sequence nurtures every subscriber who enters your funnel, whenever they enter.

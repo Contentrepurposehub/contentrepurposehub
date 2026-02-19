@@ -111,7 +111,7 @@ export default function GetContentCitedByAI() {
             name: 'What is a llms.txt file?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'A llms.txt file is a plain text file placed in your website root directory (like robots.txt) that tells AI assistants about your site, your expertise, and what content you want them to reference. It is an emerging standard that helps AI crawlers understand and cite your content more effectively.',
+              text: 'A llms.txt file is a plain text file placed in your website root directory (like robots.txt) that tells AI assistants about your site, your expertise, and what content you want them to reference. It is an emerging standard that helps AI crawlers understand and cite your content more reliably.',
             },
           },
           {
@@ -373,7 +373,7 @@ export default function GetContentCitedByAI() {
                 {/* Step 6 */}
                 <h3 className="text-xl font-bold text-gray-900 mb-2">6. Use Clear Headers That Match Questions</h3>
                 <p className="text-gray-700 mb-4">
-                  When Perplexity crawls your page, it looks at your H2 and H3 headers to understand the structure. Headers that match the questions people ask make it dramatically easier for AI to find and cite the relevant section.
+                  When Perplexity crawls your page, it looks at your H2 and H3 headers to understand the structure. Headers that match the questions people ask make it far easier for AI to find and cite the relevant section.
                 </p>
                 <p className="text-gray-700 mb-4">
                   Instead of creative headers like &quot;The Content Puzzle&quot; or &quot;A New Paradigm,&quot; use headers like &quot;How Many Content Pieces Can You Get From One Webinar?&quot; or &quot;What Does Content Repurposing Cost?&quot; These match real queries. They are the questions people type into ChatGPT.
@@ -414,7 +414,7 @@ export default function GetContentCitedByAI() {
                   AI assistants heavily favor fresh content. A blog post titled &quot;Best Repurposing Services (2026)&quot; will be cited over one titled &quot;Best Repurposing Services&quot; with no date. Including the current year, current pricing, and current platform features signals to AI that your content is up-to-date and reliable.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  Update your key articles quarterly. Change the year in your title. Refresh any pricing or statistics. Add references to new tools or platform features. This takes 30-60 minutes per article and significantly improves citation rates.
+                  Update your key articles quarterly. Change the year in your title. Refresh any pricing or statistics. Add references to new tools or platform features. This takes 30-60 minutes per article and measurably improves citation rates.
                 </p>
                 <p className="text-gray-700 mb-6">
                   Stale content does not get cited. Current content does. The update frequency matters.
@@ -572,7 +572,7 @@ export default function GetContentCitedByAI() {
                     },
                     {
                       q: 'What is a llms.txt file?',
-                      a: 'A llms.txt file is a plain text file placed in your website root directory (like robots.txt) that tells AI assistants about your site, your expertise, and what content you want them to reference. It is an emerging standard that helps AI crawlers understand and cite your content more effectively.',
+                      a: 'A llms.txt file is a plain text file placed in your website root directory (like robots.txt) that tells AI assistants about your site, your expertise, and what content you want them to reference. It is an emerging standard that helps AI crawlers understand and cite your content more reliably.',
                     },
                     {
                       q: 'Can small coaching websites get cited by AI or only big brands?',

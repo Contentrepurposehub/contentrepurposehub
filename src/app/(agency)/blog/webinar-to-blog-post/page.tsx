@@ -93,7 +93,7 @@ export default function WebinarToBlogPost() {
             name: 'How many blog posts can you get from one webinar?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'A typical 60-minute webinar contains enough material for 2-4 standalone blog posts. You can create one comprehensive pillar post covering the full topic (2,000-3,000 words) and 2-3 shorter posts that go deeper on individual sections, frameworks, or Q&A answers from the webinar.',
+              text: 'A typical 60-minute webinar contains enough material for 2-4 standalone blog posts. You can create one in-depth pillar post covering the full topic (2,000-3,000 words) and 2-3 shorter posts that go deeper on individual sections, frameworks, or Q&A answers from the webinar.',
             },
           },
           {
@@ -410,7 +410,7 @@ export default function WebinarToBlogPost() {
                   Spoken content and written content follow different rules. What works in a live webinar does not automatically work on a blog. The restructuring step is where most DIY attempts fail. People either publish cleaned-up transcripts that read like someone talking (not writing), or they rewrite so heavily that they lose the authentic voice that made the webinar compelling.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  Here is how to restructure effectively:
+                  Here is how to restructure it:
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Change the Structure (Not the Substance)</h3>
@@ -648,7 +648,7 @@ export default function WebinarToBlogPost() {
                       <strong>2. Deliver a pre-coaching questionnaire.</strong> Before your first session, understand your client&apos;s goals, current challenges, and what they have already tried. This makes your first session productive from minute one instead of spending it on discovery questions.
                     </p>
                     <p className="mb-2">
-                      <strong>3. Schedule the first three sessions upfront.</strong> Do not just book the first call. Schedule three. This creates commitment, builds momentum, and makes it significantly harder for a new client to fade away after one session.
+                      <strong>3. Schedule the first three sessions upfront.</strong> Do not just book the first call. Schedule three. This creates commitment, builds momentum, and makes it much harder for a new client to fade away after one session.
                     </p>
                     <p>
                       Implementing the First 48 system can cut client dropout rates by 50% or more. It takes 30 minutes to set up and pays dividends with every new client.
@@ -792,7 +792,7 @@ export default function WebinarToBlogPost() {
                     },
                     {
                       q: 'How many blog posts can you get from one webinar?',
-                      a: 'A typical 60-minute webinar contains enough material for 2-4 standalone blog posts. You can create one comprehensive pillar post covering the full topic (2,000-3,000 words) and 2-3 shorter posts that go deeper on individual sections, frameworks, or Q&A answers from the webinar.',
+                      a: 'A typical 60-minute webinar contains enough material for 2-4 standalone blog posts. You can create one in-depth pillar post covering the full topic (2,000-3,000 words) and 2-3 shorter posts that go deeper on individual sections, frameworks, or Q&A answers from the webinar.',
                     },
                     {
                       q: 'Should I transcribe my webinar before writing a blog post?',

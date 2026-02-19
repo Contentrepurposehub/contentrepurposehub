@@ -261,7 +261,7 @@ export default function WebinarContentPiecesBreakdown() {
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">SEO Blog Post (1)</h3>
                 <p className="text-gray-700 mb-4">
-                  Your webinar is already a rough draft of a comprehensive blog post. Transcribe the recording, restructure it with proper headings, optimize for a target keyword, and you have a 1,500-2,500 word article that ranks on Google and drives organic traffic for months. This is often the single most valuable content piece from any webinar because it compounds over time. For a step-by-step walkthrough of this process, read our guide on <Link href="/blog/webinar-to-blog-post" className="text-blue-600 hover:text-blue-800 font-medium">how to turn a webinar into a blog post</Link>.
+                  Your webinar is already a rough draft of an in-depth blog post. Transcribe the recording, restructure it with proper headings, optimize for a target keyword, and you have a 1,500-2,500 word article that ranks on Google and drives organic traffic for months. This is often the single most valuable content piece from any webinar because it compounds over time. For a step-by-step walkthrough of this process, read our guide on <Link href="/blog/webinar-to-blog-post" className="text-blue-600 hover:text-blue-800 font-medium">how to turn a webinar into a blog post</Link>.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">LinkedIn Text Posts (10)</h3>
@@ -454,7 +454,7 @@ export default function WebinarContentPiecesBreakdown() {
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Pillar Article Sections (2-3)</h3>
                 <p className="text-gray-700 mb-4">
-                  If you run a series of webinars on related topics, each one becomes a section of a larger pillar article. Pillar content is the backbone of topical authority in SEO. By contributing webinar content to a comprehensive resource page, you build the kind of depth that search engines reward with higher rankings. This is the strategy behind our <Link href="/blog/webinar-content-strategy-coaches" className="text-blue-600 hover:text-blue-800 font-medium">webinar-first content strategy for coaches</Link>.
+                  If you run a series of webinars on related topics, each one becomes a section of a larger pillar article. Pillar content is the backbone of topical authority in SEO. By contributing webinar content to a deep resource page, you build the kind of depth that search engines reward with higher rankings. This is the strategy behind our <Link href="/blog/webinar-content-strategy-coaches" className="text-blue-600 hover:text-blue-800 font-medium">webinar-first content strategy for coaches</Link>.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Glossary or Definition Entries (3-5)</h3>
@@ -621,7 +621,7 @@ export default function WebinarContentPiecesBreakdown() {
                   <li><strong>Two to three short video clips</strong>, for maximum reach on social platforms where video outperforms everything else</li>
                 </ol>
                 <p className="text-gray-700 mb-4">
-                  Those five formats cover all four business outcomes: traffic, leads, authority, and sales. They are the highest-leverage pieces if your time is limited.
+                  Those five formats cover all four business outcomes: traffic, leads, authority, and sales. They are the highest-impact pieces if your time is limited.
                 </p>
                 <p className="text-gray-700">
                   For coaches who want the full 75+ piece output without the 40-60 hour time investment, that is exactly what a <Link href="/blog/webinar-repurposing-guide" className="text-blue-600 hover:text-blue-800 font-medium">professional webinar repurposing service</Link> delivers. You send your recording, and you receive all 75+ pieces optimized, formatted, and ready to publish across every platform.

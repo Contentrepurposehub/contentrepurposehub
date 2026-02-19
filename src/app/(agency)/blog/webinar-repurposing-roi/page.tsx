@@ -87,7 +87,7 @@ export default function WebinarRepurposingROI() {
             name: 'Is content repurposing worth it for coaches?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Yes. Coaches who repurpose webinar content save 10-15 hours per week on content creation. At a billing rate of $200-$500/hour, that time savings alone represents $8,000-$30,000/month in recovered capacity. When combined with the fact that repurposed content generates 3x more engagement, the return significantly exceeds the cost of the service.',
+              text: 'Yes. Coaches who repurpose webinar content save 10-15 hours per week on content creation. At a billing rate of $200-$500/hour, that time savings alone represents $8,000-$30,000/month in recovered capacity. When combined with the fact that repurposed content generates 3x more engagement, the return far exceeds the cost of the service.',
             },
           },
           {
@@ -422,7 +422,7 @@ export default function WebinarRepurposingROI() {
                 </div>
 
                 <p className="text-gray-700 mb-4">
-                  Read that again: a coach billing $300/hour who spends 15 hours per week on content creation is effectively spending <strong>$18,000 per month</strong> on content. That is $216,000 per year in opportunity cost.
+                  Read that again: a coach billing $300/hour who spends 15 hours per week on content creation is spending <strong>$18,000 per month</strong> on content. That is $216,000 per year in opportunity cost.
                 </p>
                 <p className="text-gray-700 mb-4">
                   Even at a conservative rate of $150/hour, 15 hours per week of content creation costs $9,000/month. Compared to a repurposing service at $750-$1,500/month, the DIY approach is 6-12x more expensive when you account for the value of your time.
@@ -794,7 +794,7 @@ export default function WebinarRepurposingROI() {
                     },
                     {
                       q: 'Is content repurposing worth it for coaches?',
-                      a: 'Yes. Coaches who repurpose webinar content save 10-15 hours per week on content creation. At a billing rate of $200-$500/hour, that time savings alone represents $8,000-$30,000/month in recovered capacity. When combined with the fact that repurposed content generates 3x more engagement, the return significantly exceeds the cost of any repurposing service.',
+                      a: 'Yes. Coaches who repurpose webinar content save 10-15 hours per week on content creation. At a billing rate of $200-$500/hour, that time savings alone represents $8,000-$30,000/month in recovered capacity. When combined with the fact that repurposed content generates 3x more engagement, the return far exceeds the cost of any repurposing service.',
                     },
                     {
                       q: 'How much does content repurposing cost?',

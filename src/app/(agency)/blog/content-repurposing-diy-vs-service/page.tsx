@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Content Repurposing: DIY Tools vs. Done-for-You Services — Which Is Right for Your Coaching Business?',
+  title: 'Content Repurposing: DIY Tools vs. Done-for-You Services. Which Is Right for Your Coaching Business?',
   description: 'Honest comparison of DIY content repurposing tools (Repurpose.io, Descript, Canva) vs. done-for-you services. Includes pricing, time costs, and a 5-question decision framework for coaches.',
   keywords: 'content repurposing service vs DIY, done for you content repurposing, content repurposing tools vs agency, best content repurposing service for coaches, DIY content repurposing tools, content repurposing for coaches',
   alternates: {
@@ -39,7 +39,7 @@ export default function ContentRepurposingDIYvsService() {
       {
         '@type': 'Article',
         '@id': 'https://contentrepurposehub.com/blog/content-repurposing-diy-vs-service#article',
-        headline: 'Content Repurposing: DIY Tools vs. Done-for-You Services — Which Is Right for Your Coaching Business?',
+        headline: 'Content Repurposing: DIY Tools vs. Done-for-You Services. Which Is Right for Your Coaching Business?',
         description: 'Honest comparison of DIY content repurposing tools vs. done-for-you services with real pricing, time costs, and a 5-question decision framework for coaches and consultants.',
         datePublished: '2026-02-18',
         dateModified: '2026-02-18',
@@ -336,7 +336,7 @@ export default function ContentRepurposingDIYvsService() {
               <section id="diy-path" className="mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">The DIY Path: Tools, Costs, and Real Time Estimates</h2>
                 <p className="text-gray-700 mb-4">
-                  The DIY repurposing toolkit has gotten significantly better in the last two years. Tools that used to require a video editor on staff are now point-and-click. And AI has genuinely sped up certain steps.
+                  The DIY repurposing toolkit has gotten much better in the last two years. Tools that used to require a video editor on staff are now point-and-click. And AI has genuinely sped up certain steps.
                 </p>
                 <p className="text-gray-700 mb-4">
                   But the tools are only part of the equation. The bigger cost is your time.

@@ -304,7 +304,7 @@ export default function WebinarEvergreenSeoContent() {
                 </p>
                 <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-4">
                   <li><strong>Pull every question from your webinar Q&amp;A.</strong> Most 60-minute webinars generate 10-25 audience questions.</li>
-                  <li><strong>Group related questions.</strong> Cluster them by topic. Three questions about pricing become one comprehensive pricing FAQ.</li>
+                  <li><strong>Group related questions.</strong> Cluster them by topic. Three questions about pricing become one complete pricing FAQ.</li>
                   <li><strong>Write clear, direct answers.</strong> 50-150 words each. Start with the answer, then add context. Google rewards content that answers the question in the first sentence.</li>
                   <li><strong>Add FAQ schema markup.</strong> This tells Google your content is in Q&amp;A format, making you eligible for rich results (those expandable answer boxes in search).</li>
                 </ul>
@@ -342,7 +342,7 @@ export default function WebinarEvergreenSeoContent() {
                   Here is how it works:
                 </p>
                 <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-                  <li><strong>Pillar page:</strong> One long, comprehensive article (2,500-4,000 words) covering your core topic. Built from your flagship webinar.</li>
+                  <li><strong>Pillar page:</strong> One long, in-depth article (2,500-4,000 words) covering your core topic. Built from your flagship webinar.</li>
                   <li><strong>Cluster posts:</strong> Shorter, more specific articles (1,500-2,500 words each) covering subtopics. Built from individual webinar sections or different webinars in a series.</li>
                   <li><strong>Internal links:</strong> Every cluster post links back to the pillar. The pillar links out to every cluster post. This signals to Google that you own this topic.</li>
                 </ul>

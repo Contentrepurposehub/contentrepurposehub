@@ -111,7 +111,7 @@ export default function ChopcastAlternative() {
             name: 'What should I look for in a Chopcast replacement?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Three things: (1) Active development and support. Check when the product last shipped an update and whether support actually responds. (2) Output quality. AI clip detection and auto-generated captions are often low quality, so look for human oversight or a done-for-you service. (3) Full content coverage. Most clip tools only handle video. If you need blog posts, email sequences, lead magnets, and social content, you need a comprehensive repurposing solution, not just a clip editor.',
+              text: 'Three things: (1) Active development and support. Check when the product last shipped an update and whether support actually responds. (2) Output quality. AI clip detection and auto-generated captions are often low quality, so look for human oversight or a done-for-you service. (3) Full content coverage. Most clip tools only handle video. If you need blog posts, email sequences, lead magnets, and social content, you need a full-service repurposing solution, not just a clip editor.',
             },
           },
         ],
@@ -512,7 +512,7 @@ export default function ChopcastAlternative() {
                     },
                     {
                       q: 'What should I look for in a Chopcast replacement?',
-                      a: 'Three things: (1) Active development and support. Check when the product last shipped an update and whether support actually responds. (2) Output quality. AI clip detection and auto-generated captions are often low quality, so look for human oversight or a done-for-you service. (3) Full content coverage. Most clip tools only handle video. If you need blog posts, email sequences, lead magnets, and social content, you need a comprehensive repurposing solution, not just a clip editor.',
+                      a: 'Three things: (1) Active development and support. Check when the product last shipped an update and whether support actually responds. (2) Output quality. AI clip detection and auto-generated captions are often low quality, so look for human oversight or a done-for-you service. (3) Full content coverage. Most clip tools only handle video. If you need blog posts, email sequences, lead magnets, and social content, you need a full-service repurposing solution, not just a clip editor.',
                     },
                   ].map((item, i) => (
                     <div key={i} className="border border-gray-200 rounded-lg p-5">

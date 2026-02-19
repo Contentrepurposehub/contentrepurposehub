@@ -461,7 +461,7 @@ export default function WebinarRepurposingBenchmarks2026() {
               <section id="yield-by-niche" className="mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Content Yield by Coaching Niche</h2>
                 <p className="text-gray-700 mb-6">
-                  Not all coaching content repurposes equally. Niches with heavy framework usage and specific, number-driven advice produce significantly more content than those built around exploratory conversation.
+                  Not all coaching content repurposes equally. Niches with heavy framework usage and specific, number-driven advice produce far more content than those built around exploratory conversation.
                 </p>
 
                 {/* Niche Benchmark Cards */}
@@ -824,7 +824,7 @@ export default function WebinarRepurposingBenchmarks2026() {
                   The gap between what a typical coaching webinar contains and what most coaches actually produce from it is enormous. That gap represents months of content, thousands of new audience touchpoints, and dozens of leads that never materialize because the content never gets published.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  The data says the most efficient path is a professional repurposing service at $11.40 per piece versus $34.70 DIY. But regardless of which path you choose, the single highest-leverage change you can make is structural: build your webinars around named frameworks, protect your Q&amp;A time, and aim for 40-55 minutes.
+                  The data says the most efficient path is a professional repurposing service at $11.40 per piece versus $34.70 DIY. But regardless of which path you choose, the single highest-impact change you can make is structural: build your webinars around named frameworks, protect your Q&amp;A time, and aim for 40-55 minutes.
                 </p>
                 <p className="text-gray-700">
                   If you want to see exactly what 47+ content pieces from your next webinar looks like, <a href="https://cal.com/contentrepurposehub/30min" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 font-medium">book a free content audit</a>. We will analyze your most recent recording and show you what is sitting untapped.

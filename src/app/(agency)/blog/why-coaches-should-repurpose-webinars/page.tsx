@@ -432,7 +432,7 @@ export default function WhyCoachesShouldRepurposeWebinars() {
                   <li><strong>You are launching something new</strong> that you have never talked about in a webinar. A new offer, a new methodology, or a pivot in your niche requires fresh content.</li>
                   <li><strong>You need to respond to a trending topic quickly.</strong> If your industry had a major shift yesterday, you need a timely post, not a repurposed webinar from last month.</li>
                   <li><strong>You have no webinar recordings.</strong> If you have never run a webinar (or do not have recordings), you need to create from scratch until you build a content library. But consider: your first repurposing project could be a webinar you record specifically for this purpose.</li>
-                  <li><strong>Your content is outdated.</strong> If your webinar from 2023 references tools, trends, or strategies that have changed significantly, new content is the right call.</li>
+                  <li><strong>Your content is outdated.</strong> If your webinar from 2023 references tools, trends, or strategies that have shifted, new content is the right call.</li>
                 </ul>
                 <p className="text-gray-700 mb-4">
                   The smart approach is a mix: 80% of your content comes from repurposed webinars (the efficient path), and 20% is new content for time-sensitive topics, launches, and fresh angles. That ratio keeps your content calendar full while leaving room for strategic originality.
@@ -515,7 +515,7 @@ export default function WhyCoachesShouldRepurposeWebinars() {
                   You are already creating expert content every time you run a webinar. The question is whether that content works for you once or works for you forever. Repurposing turns a single recording into a content engine that generates leads across LinkedIn, Google, YouTube, email, and social media, without you spending another minute at the keyboard.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  The coaches who build the biggest audiences in 2026 will not be the ones who create the most content. They will be the ones who distribute their best content the most effectively. And repurposing is the most effective distribution strategy that exists for coaches.
+                  The coaches who build the biggest audiences in 2026 will not be the ones who create the most content. They will be the ones who distribute their best content the most consistently. And repurposing is the most reliable distribution strategy that exists for coaches.
                 </p>
                 <p className="text-gray-700">
                   Start with your next webinar. Or start with the best recording you already have. If you want someone to handle the entire process, <a href="https://cal.com/contentrepurposehub/30min" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 font-medium">book a free strategy call</a> and we will map out exactly what 14-75+ content pieces from your webinar looks like.

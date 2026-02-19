@@ -804,7 +804,7 @@ export default function WebinarContentStrategyCoaches() {
                 </div>
 
                 <p className="text-gray-700 mb-4">
-                  <strong>The bottom line for a coach content marketing plan:</strong> the webinar-first strategy works whether you DIY or outsource. But the ROI improves dramatically when you remove yourself from the production process and focus on what only you can do: preparing and delivering the webinar, coaching clients, and building relationships.
+                  <strong>The bottom line for a coach content marketing plan:</strong> the webinar-first strategy works whether you DIY or outsource. But the ROI jumps when you remove yourself from the production process and focus on what only you can do: preparing and delivering the webinar, coaching clients, and building relationships.
                 </p>
                 <p className="text-gray-700">
                   If you want to start with DIY and transition later, that works too. The important thing is adopting the webinar-first model itself. Stop creating content from scratch for every platform. Start creating once and distributing everywhere. For a full breakdown of every content format you can extract from a single webinar, see our <Link href="/blog/webinar-repurposing-guide" className="text-blue-600 hover:text-blue-800 font-medium">complete webinar repurposing guide</Link>.

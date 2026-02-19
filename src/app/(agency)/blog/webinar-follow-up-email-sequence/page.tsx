@@ -87,7 +87,7 @@ export default function WebinarFollowUpEmailSequence() {
             name: 'When should I send the first email after a webinar?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Send your first follow-up email within 2-4 hours of the webinar ending. This same-day email should include a thank-you, a link to the replay, and a brief recap of what was covered. Open rates for same-day webinar follow-ups average 40-50%, significantly higher than standard marketing emails.',
+              text: 'Send your first follow-up email within 2-4 hours of the webinar ending. This same-day email should include a thank-you, a link to the replay, and a brief recap of what was covered. Open rates for same-day webinar follow-ups average 40-50%, much higher than standard marketing emails.',
             },
           },
           {
@@ -127,7 +127,7 @@ export default function WebinarFollowUpEmailSequence() {
             name: 'What is a good open rate for webinar follow-up emails?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Webinar follow-up emails typically see open rates of 35-50% for the first email (sent same day), declining to 20-30% by email 6. These rates are significantly higher than standard email marketing averages (15-25%) because the recipients have a recent, specific reason to engage with your content.',
+              text: 'Webinar follow-up emails typically see open rates of 35-50% for the first email (sent same day), declining to 20-30% by email 6. These rates are much higher than standard email marketing averages (15-25%) because the recipients have a recent, specific reason to engage with your content.',
             },
           },
         ],
@@ -556,7 +556,7 @@ export default function WebinarFollowUpEmailSequence() {
                 </p>
                 <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg my-6">
                   <p className="text-gray-800 font-medium">
-                    Segmenting attendees and no-shows can increase your overall conversion rate by 20-30%. It is one of the highest-leverage changes you can make to your post-webinar email strategy.
+                    Segmenting attendees and no-shows can increase your overall conversion rate by 20-30%. It is one of the highest-impact changes you can make to your post-webinar email strategy.
                   </p>
                 </div>
               </section>
@@ -691,7 +691,7 @@ export default function WebinarFollowUpEmailSequence() {
                     <p>Here is the link to book: [Booking Link]</p>
                     <p>Either way, I am glad you attended the webinar. I hope the emails over the past 10 days were valuable.</p>
                     <p>[Your Name]</p>
-                    <p>P.S. &quot;[One final, powerful testimonial quote that speaks to the transformation.]&quot; — [Client Name/Description]</p>
+                    <p>P.S. &quot;[One final, powerful testimonial quote that speaks to the transformation.]&quot;, [Client Name/Description]</p>
                   </div>
                 </div>
 
@@ -742,7 +742,7 @@ export default function WebinarFollowUpEmailSequence() {
                   This is the power of a <Link href="/blog/webinar-content-strategy-coaches" className="text-blue-600 hover:text-blue-800 font-medium">webinar-first content strategy</Link>. You create once and distribute everywhere. The webinar is the engine. Email, blog, social, and video are the distribution channels. And every channel reinforces every other channel.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  Most coaches look at this list and think: &quot;I do not have time to do all of that.&quot; That is a rational response. Building a full email sequence from a webinar takes 5-10 hours if you do it yourself. Repurposing that same webinar into 14-75+ content pieces across all channels takes significantly more. When you look at the <Link href="/blog/webinar-repurposing-roi" className="text-blue-600 hover:text-blue-800 font-medium">ROI of webinar repurposing</Link>, however, the investment pays for itself many times over.
+                  Most coaches look at this list and think: &quot;I do not have time to do all of that.&quot; That is a rational response. Building a full email sequence from a webinar takes 5-10 hours if you do it yourself. Repurposing that same webinar into 14-75+ content pieces across all channels takes far more. When you look at the <Link href="/blog/webinar-repurposing-roi" className="text-blue-600 hover:text-blue-800 font-medium">ROI of webinar repurposing</Link>, however, the investment pays for itself many times over.
                 </p>
                 <p className="text-gray-700">
                   That is why done-for-you repurposing services exist. You send the webinar recording. A team handles the transcription, extraction, writing, formatting, and delivery of every content piece, including the complete email sequence with segmented versions for attendees and no-shows. You focus on coaching. The content gets created anyway.
@@ -787,7 +787,7 @@ export default function WebinarFollowUpEmailSequence() {
                     },
                     {
                       q: 'When should I send the first email after a webinar?',
-                      a: 'Send your first follow-up email within 2-4 hours of the webinar ending. This same-day email should include a thank-you, a link to the replay, and a brief recap of what was covered. Open rates for same-day webinar follow-ups average 40-50%, significantly higher than standard marketing emails. Waiting until the next day cuts open rates roughly in half.',
+                      a: 'Send your first follow-up email within 2-4 hours of the webinar ending. This same-day email should include a thank-you, a link to the replay, and a brief recap of what was covered. Open rates for same-day webinar follow-ups average 40-50%, much higher than standard marketing emails. Waiting until the next day cuts open rates roughly in half.',
                     },
                     {
                       q: 'Should I send different emails to webinar attendees and no-shows?',
@@ -807,7 +807,7 @@ export default function WebinarFollowUpEmailSequence() {
                     },
                     {
                       q: 'What is a good open rate for webinar follow-up emails?',
-                      a: 'Webinar follow-up emails typically see open rates of 35-50% for the first email (sent same day), declining to 20-30% by email 6. These rates are significantly higher than standard email marketing averages (15-25%) because the recipients have a recent, specific reason to engage with your content. If your open rates are lower than these benchmarks, check your subject lines and send timing.',
+                      a: 'Webinar follow-up emails typically see open rates of 35-50% for the first email (sent same day), declining to 20-30% by email 6. These rates are much higher than standard email marketing averages (15-25%) because the recipients have a recent, specific reason to engage with your content. If your open rates are lower than these benchmarks, check your subject lines and send timing.',
                     },
                   ].map((item, i) => (
                     <div key={i} className="border border-gray-200 rounded-lg p-5">

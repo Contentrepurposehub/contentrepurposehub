@@ -255,7 +255,7 @@ export default function ContentRepurposingCostPricing() {
                     <p className="text-xs text-gray-500">5-8 hrs managing</p>
                   </div>
 
-                  {/* Specialized Services — Best Value */}
+                  {/* Specialized Services: Best Value */}
                   <div className="rounded-lg border-2 border-emerald-500 bg-emerald-50 p-4 relative ring-2 ring-emerald-300 ring-offset-2">
                     <div className="absolute -top-3 left-1/2 -translate-x-1/2">
                       <span className="bg-emerald-600 text-white text-[10px] md:text-xs font-bold px-3 py-0.5 rounded-full shadow-md whitespace-nowrap">
@@ -790,7 +790,7 @@ export default function ContentRepurposingCostPricing() {
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">SEO and AI Search Optimization</h3>
                 <p className="text-gray-700 mb-4">
-                  Basic content creation is cheaper than content that is optimized for Google SEO and AI search engines. Adding keyword research, proper heading structure, JSON-LD schema markup, and AI-citation formatting increases the cost, but also dramatically increases the value of every piece.
+                  Basic content creation is cheaper than content that is optimized for Google SEO and AI search engines. Adding keyword research, proper heading structure, JSON-LD schema markup, and AI-citation formatting increases the cost, but also multiplies the value of every piece.
                 </p>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Voice Matching</h3>

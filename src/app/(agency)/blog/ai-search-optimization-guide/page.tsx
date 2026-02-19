@@ -409,7 +409,7 @@ export default function AISearchOptimizationGuide() {
                     { element: 'Question-based H2/H3 headings', detail: 'Match the exact phrasing people use when querying AI assistants.' },
                     { element: 'Self-contained FAQ answers', detail: '6-8 Q&A pairs where each answer stands alone without needing context from the article.' },
                     { element: 'Named entity references', detail: 'Brand names, tool names, platform names, competitor names, all mentioned explicitly.' },
-                    { element: '2,000+ words of depth', detail: 'AI assistants prefer comprehensive sources. Thin content rarely gets cited.' },
+                    { element: '2,000+ words of depth', detail: 'AI assistants prefer thorough sources. Thin content rarely gets cited.' },
                   ].map((item, i) => (
                     <div key={i} className="flex gap-4 items-start">
                       <div className="bg-blue-100 text-blue-700 px-3 py-1 rounded-lg text-sm font-medium whitespace-nowrap min-w-fit">{i + 1}</div>

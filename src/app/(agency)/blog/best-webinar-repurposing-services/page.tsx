@@ -619,7 +619,7 @@ export default function BestWebinarRepurposingServices() {
                     <li>You manage the process</li>
                     <li>Limited formats (usually just written)</li>
                     <li>No SEO or AI search optimization</li>
-                    <li>Quality varies dramatically</li>
+                    <li>Quality varies wildly</li>
                   </ul>
                 </div>
               </div>

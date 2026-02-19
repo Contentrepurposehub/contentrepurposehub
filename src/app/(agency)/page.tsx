@@ -348,36 +348,36 @@ export default function Home() {
         <section className="pt-32 pb-20 px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-block bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-sm font-medium mb-6">
-              Webinar Repurposing for Coaches & Consultants
+              For Coaches &amp; Consultants With Recorded Webinars
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Turn 1 Webinar Into{' '}
-              <span className="gradient-text">75+ Content Pieces</span>
+              Your Webinar Already Did the Hard Part.{' '}
+              <span className="gradient-text">We Turn It Into the System That Fills Your Next One.</span>
             </h1>
             <p className="text-xl text-gray-600 mb-4 max-w-2xl mx-auto">
-              Stop creating content from scratch. We turn your webinars into lead magnets, LinkedIn posts, blog articles, newsletters, and email sequences — ready to publish.
+              One recording becomes a live blog, a lead-capturing scorecard, 30 days of LinkedIn posts, newsletters, and email sequences. Each month compounds on the last. By Month 6, your first post ranks higher than it ever could alone.
             </p>
             <p className="text-lg text-blue-600 font-medium mb-8">
-              All content optimized for Google + AI Search (ChatGPT, Perplexity, Gemini)
+              Every piece optimized for Google + AI search (ChatGPT, Perplexity, Gemini)
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a 
-                href="https://cal.com/contentrepurposehub/30min" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="https://cal.com/contentrepurposehub/30min"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="gradient-bg text-white px-8 py-4 rounded-lg hover:opacity-90 transition font-semibold text-lg"
               >
-                Book Your Free Strategy Call →
+                See How Many Months of Content You Already Have →
               </a>
-              <a 
-                href="#pricing" 
+              <a
+                href="#pricing"
                 className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-lg hover:border-gray-400 transition font-semibold text-lg"
               >
                 See Pricing
               </a>
             </div>
             <p className="text-sm text-gray-500 mt-4">
-              ✓ No long-term contracts &nbsp; ✓ First delivery in 7 days &nbsp; ✓ Cancel anytime
+              ✓ No contracts &nbsp; ✓ First delivery in 7 days &nbsp; ✓ 30-day &quot;Sounds Like Me&quot; guarantee
             </p>
           </div>
         </section>
@@ -387,28 +387,33 @@ export default function Home() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Your Webinars Are Sitting Unused
+                You Already Created the Content. It&apos;s Sitting in a Zoom Folder.
               </h2>
               <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-                You spent hours preparing and delivering that webinar. Then what? It disappeared into a Zoom folder.
+                10-20 hours of prep. Your best frameworks. Your real stories. Delivered once, then buried. Meanwhile, you&apos;re staring at a blank page trying to create something new for next week.
               </p>
             </div>
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
-                { 
-                  emoji: '📁', 
-                  title: 'Content Graveyard', 
-                  desc: "You spent hours preparing and delivering that webinar. Real frameworks. Real stories. Hours of your best thinking — now sitting in a Zoom folder while you create content from scratch next week." 
+                {
+                  emoji: '📁',
+                  title: 'The Content Graveyard',
+                  desc: "5, 10, maybe 20 webinars sitting in Google Drive. Each one contains frameworks, stories, and insights your audience has never seen as written content."
                 },
-                { 
-                  emoji: '⏰', 
-                  title: 'No Time to Repurpose', 
-                  desc: "Between client sessions, business development, and actually having a life — who has 15-20 hours to properly turn a webinar into posts, articles, and lead magnets?" 
+                {
+                  emoji: '⏰',
+                  title: 'The Time Trap',
+                  desc: "15-20 hours to properly repurpose one webinar into posts, articles, and lead magnets. Between client sessions and running your business, that time doesn't exist."
                 },
-                { 
-                  emoji: '📉', 
-                  title: 'Invisible to AI Search', 
-                  desc: "Someone is asking ChatGPT right now: 'who's the best coach for [your topic]?' If your content isn't structured for AI search, you're invisible to them." 
+                {
+                  emoji: '🔄',
+                  title: 'The Content Treadmill',
+                  desc: "You post when you can. Skip weeks. Start over. Nothing compounds because there's no system connecting one piece to the next."
+                },
+                {
+                  emoji: '🤖',
+                  title: 'Invisible to AI Search',
+                  desc: "Right now, someone is asking ChatGPT: 'Who's the best coach for [your topic]?' If your content isn't structured for AI search, the answer won't be you."
                 },
               ].map((item, i) => (
                 <div key={i} className="bg-white p-8 rounded-xl card-shadow">
@@ -424,13 +429,13 @@ export default function Home() {
         {/* Mini CTA after Problem Section */}
         <div className="py-8 px-4 text-center bg-white">
           <p className="text-gray-700 text-lg mb-3">
-            Ready to put your webinars to work? <span className="font-semibold text-gray-900">We handle the repurposing for you.</span>
+            The content already exists. <span className="font-semibold text-gray-900">You just need someone to turn it into a system.</span>
           </p>
           <a
             href="#pricing"
             className="inline-block gradient-bg text-white px-6 py-3 rounded-lg hover:opacity-90 transition font-medium"
           >
-            See Plans & Pricing →
+            See Plans &amp; Pricing →
           </a>
         </div>
 
@@ -439,13 +444,13 @@ export default function Home() {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <div className="inline-block bg-green-100 text-green-700 px-4 py-1 rounded-full text-sm font-medium mb-4">
-                Free Resource — No Email Required
+                Free Resource. No Email Required.
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                 Webinar Repurposing Checklist: 5 of 14 Ways to Repurpose Your Webinar
               </h2>
               <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-                Here are 5 proven content formats you can create from every webinar you run — with step-by-step instructions. Get all 14 by subscribing below.
+                Here are 5 proven content formats you can create from every webinar you run, with step-by-step instructions. Get all 14 by subscribing below.
               </p>
             </div>
 
@@ -460,7 +465,7 @@ export default function Home() {
                 <h3 className="text-xl font-bold text-gray-900 mb-1">Vertical Video Clips</h3>
                 <p className="text-sm text-blue-600 font-medium mb-3">Create 3-5 clips per webinar</p>
                 <p className="text-gray-600 mb-4">
-                  Your webinar is full of gold. Those moments where you explained something perfectly or told a compelling story — those moments become TikToks, Reels, and YouTube Shorts.
+                  Your webinar is full of gold. Those moments where you explained something perfectly or told a story that made people lean in. Those moments become TikToks, Reels, and YouTube Shorts.
                 </p>
                 <div className="bg-green-50 border-l-4 border-green-400 p-4 rounded-r-lg">
                   <p className="text-xs font-bold text-green-700 uppercase tracking-wide mb-1">How To Do It</p>
@@ -554,7 +559,7 @@ export default function Home() {
                   + 9 More Ways to Repurpose Your Webinar
                 </h3>
                 <p className="text-gray-600 mt-2 text-lg">
-                  Get the complete checklist with all 14 content formats — free.
+                  Get the complete checklist with all 14 content formats. Free.
                 </p>
               </div>
               <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -594,7 +599,7 @@ export default function Home() {
             <div className="bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl p-6 sm:p-8 md:p-12 card-shadow">
               <div className="text-center">
                 <div className="inline-block bg-white/20 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
-                  Free Download — All 14 Checklists
+                  Free Download: All 14 Checklists
                 </div>
                 <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
                   Get the Complete Webinar Repurposing Checklist
@@ -603,7 +608,7 @@ export default function Home() {
                   All 14 Content Ideas + Step-by-Step Instructions
                 </p>
                 <p className="text-blue-100 mb-8 max-w-lg mx-auto">
-                  You just saw 5 of the 14 ways to repurpose your webinar. Get the full checklist with all 14 content formats — including the 9 you haven&apos;t seen yet.
+                  You just saw 5 of the 14 ways to repurpose your webinar. Get the full checklist with all 14 content formats, including the 9 you haven&apos;t seen yet.
                 </p>
 
                 {/* Beehiiv Embed Form */}
@@ -625,72 +630,69 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Solution Section */}
+        {/* Solution Section - The Webinar Flywheel */}
         <section id="what-you-get" className="py-20 px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
+              <div className="inline-block bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-sm font-medium mb-4">
+                The Webinar Flywheel
+              </div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                What We Create From Your Webinar
+                Not Just Content. A System That Compounds.
               </h2>
               <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-                Every piece is optimized for Google ranking AND AI search citation.
+                Other services hand you clips and posts. We build the engine: your webinar feeds content, content captures leads, leads fill your next webinar. Every month strengthens what came before.
               </p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { 
-                  icon: '📚', 
-                  title: 'Lead Magnets', 
-                  desc: 'Your best framework, packaged as a downloadable PDF. Builds your email list on autopilot — every download is a potential client who found you through search.',
-                  tag: 'Google + AI Optimized'
+                {
+                  icon: '📝',
+                  title: 'SEO Blog Posts',
+                  desc: 'Each post is a chapter in a serialized series. Post 1 links to Post 2. Post 4 strengthens Posts 1-3. By Month 6, Google sees topical authority. AI assistants cite you as the source.',
+                  tag: 'Compounds Monthly'
                 },
-                { 
-                  icon: '💼', 
-                  title: 'LinkedIn Posts', 
-                  desc: 'Written from your actual webinar words — your stories, your frameworks, your one-liners. They sound like you because they came from you.',
-                  tag: 'Algorithm Optimized'
+                {
+                  icon: '📚',
+                  title: 'Interactive Scorecards',
+                  desc: 'Your best framework, turned into a lead-capturing scorecard on a live page we build and host. Visitors take the quiz, enter their email, land on your list. Works 24/7.',
+                  tag: 'Captures Leads'
                 },
-                { 
-                  icon: '📝', 
-                  title: 'SEO Blog Posts', 
-                  desc: 'Long-form articles that rank on Google and get cited by AI assistants like ChatGPT and Perplexity. One post can drive traffic for years.',
-                  tag: 'Google + AI Optimized'
+                {
+                  icon: '💼',
+                  title: 'LinkedIn Posts',
+                  desc: 'Written from your actual words. Your stories. Your frameworks. Your one-liners. Posted 3x/week, they build authority and drive traffic back to your blog and scorecard.',
+                  tag: 'Drives Traffic'
                 },
-                { 
-                  icon: '📧', 
-                  title: 'Email Newsletters', 
-                  desc: 'Ready-to-send editions that keep your list engaged and drive them back to your offers. Consistent publishing without the weekly scramble.',
-                  tag: 'Conversion Optimized'
+                {
+                  icon: '📧',
+                  title: 'Email Newsletters',
+                  desc: 'Ready-to-send editions that keep subscribers engaged between webinars. Every edition links to your blog, your scorecard, your next event. The list grows. The flywheel spins.',
+                  tag: 'Nurtures Leads'
                 },
-                { 
-                  icon: '📨', 
-                  title: 'Email Sequences', 
-                  desc: 'Automated sequences that turn new subscribers into clients while you focus on coaching. Set up once, converts on repeat.',
-                  tag: 'Conversion Optimized'
+                {
+                  icon: '📨',
+                  title: 'Email Sequences',
+                  desc: 'New subscriber signs up through your scorecard. The welcome sequence fires automatically. By email 3, they know your methodology. By email 5, they book a call.',
+                  tag: 'Converts Leads'
                 },
-                { 
-                  icon: '🐦', 
-                  title: 'Twitter/X Threads', 
-                  desc: 'Your webinar insights broken into viral-ready threads. Built for the X algorithm and designed to get saves and retweets.',
-                  tag: 'Algorithm Optimized'
+                {
+                  icon: '📄',
+                  title: 'Landing Pages',
+                  desc: 'A live, hosted page that ties everything together. Your blog, scorecard, and social content all point here. One URL that captures leads and promotes your next webinar.',
+                  tag: 'Central Hub'
                 },
-                { 
-                  icon: '📸', 
-                  title: 'Instagram Captions', 
-                  desc: 'Scroll-stopping hooks that drive profile visits and DMs. Each caption pulls from real moments in your webinar.',
-                  tag: 'Algorithm Optimized'
+                {
+                  icon: '🐦',
+                  title: 'Twitter/X Threads',
+                  desc: 'Your webinar insights structured for the X algorithm. Each thread ends with a CTA back to your landing page. Reach new audiences, capture them into the system.',
+                  tag: 'Expands Reach'
                 },
-                { 
-                  icon: '🎬', 
-                  title: 'YouTube Short Scripts', 
-                  desc: 'Short-form video scripts that turn your webinar insights into discoverable content on YouTube Shorts.',
-                  tag: 'Video Optimized'
-                },
-                { 
-                  icon: '📄', 
-                  title: 'Landing Page Copy', 
-                  desc: 'Pages that turn visitors into leads. Written to convert, optimized for search.',
-                  tag: 'Conversion Optimized'
+                {
+                  icon: '📸',
+                  title: 'Instagram Captions',
+                  desc: 'Hooks pulled from real moments in your webinar. Each caption drives profile visits and DMs. Every touchpoint feeds back to your landing page.',
+                  tag: 'Expands Reach'
                 },
               ].map((item, i) => (
                 <div key={i} className="border border-gray-200 p-6 rounded-xl hover:border-blue-300 transition">
@@ -702,6 +704,19 @@ export default function Home() {
                   <p className="text-gray-600 text-sm">{item.desc}</p>
                 </div>
               ))}
+            </div>
+
+            {/* The Flywheel Visual */}
+            <div className="mt-12 max-w-3xl mx-auto bg-blue-50 border border-blue-200 rounded-xl p-8 text-center">
+              <p className="text-blue-900 font-bold text-lg mb-3">
+                The Flywheel in Action
+              </p>
+              <p className="text-blue-800 text-sm leading-relaxed">
+                Webinar → Blog post ranks on Google → Visitor finds your scorecard → Enters email → Welcome sequence nurtures them → They attend your next webinar → You record it → We repurpose it → The cycle accelerates.
+              </p>
+              <p className="text-blue-600 text-sm font-medium mt-3">
+                That&apos;s the difference between &quot;more content&quot; and a growth engine.
+              </p>
             </div>
           </div>
         </section>
@@ -751,7 +766,7 @@ export default function Home() {
                 How It Works Month Over Month
               </h2>
               <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-                Month 1 builds the foundation. Every month after that builds on it &mdash; faster, cheaper for us to produce, and more valuable for you.
+                Month 1 builds the foundation. Every month after that builds on it. Faster for us to produce. More valuable for you. The system gets stronger with every cycle.
               </p>
             </div>
 
@@ -787,7 +802,7 @@ export default function Home() {
               </div>
               <div className="sm:pl-[52px]">
                 <p className="text-gray-600 mb-4">
-                  Send us your next webinar or podcast episode &mdash; or one from your back catalog. We skip the foundation work (already done) and go straight to content production:
+                  Send us your next webinar or podcast episode. Or one from your back catalog. We skip the foundation work (already done) and go straight to content production:
                 </p>
                 <div className="grid sm:grid-cols-3 gap-3 mb-4">
                   {[
@@ -822,7 +837,7 @@ export default function Home() {
         {/* Mini CTA after How It Works */}
         <div className="py-8 px-4 text-center bg-gray-50">
           <p className="text-gray-700 text-lg mb-3">
-            That&apos;s it. <span className="font-semibold text-gray-900">You record. We repurpose. You publish. It compounds.</span>
+            That&apos;s the system. <span className="font-semibold text-gray-900">You record. We build. You publish. It compounds.</span>
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -968,7 +983,7 @@ export default function Home() {
             <div className="mt-10 max-w-3xl mx-auto bg-white border border-blue-200 rounded-xl p-6 text-center">
               <p className="text-blue-600 font-semibold text-sm uppercase tracking-wide mb-2">Optional Add-On</p>
               <p className="text-gray-900 font-bold text-lg mb-2">
-                Back Catalog Sprint &mdash; Process 3&ndash;5 extra recordings in Month 1
+                Back Catalog Sprint: Process 3-5 Extra Recordings in Month 1
               </p>
               <p className="text-gray-600 text-sm mb-3">
                 Have 10+ webinars sitting in Zoom? We&apos;ll process 3 recordings for $500 or 5 for $750 alongside your regular delivery. Only available at signup.
@@ -1019,11 +1034,11 @@ export default function Home() {
             {/* What compounds */}
             <div className="grid md:grid-cols-2 gap-6 mb-12">
               {[
-                { title: 'SEO Topical Authority', desc: '6 blog posts in a serialized series tells Google you\'re THE authority on this topic. Post #1 ranks BETTER in Month 6 than it does alone in Month 1.' },
-                { title: 'AI Search Citations', desc: 'More pages with FAQ schema + direct answers = more chances ChatGPT, Perplexity, and Gemini cite your content. We track this monthly via our AI Ranking Report.' },
-                { title: 'Email List Growth', desc: 'More blog traffic = more signups through your landing page = larger newsletter list = more webinar attendees = more source material. The flywheel accelerates itself.' },
-                { title: 'LinkedIn Consistency', desc: 'LinkedIn\'s algorithm rewards consistent 3x/week posting. 10 posts last ~3.5 weeks. You need monthly refills. By Month 6, your reach is measurably higher.' },
-                { title: 'Internal Link Network', desc: 'Each new blog post links to your landing page + previous posts. Link equity distributes across your whole content library. Every new post makes every old post stronger.' },
+                { title: 'SEO Topical Authority', desc: '6 blog posts in a serialized series tells Google you\'re THE authority on this topic. Post #1 ranks better in Month 6 than it ever could alone in Month 1.' },
+                { title: 'AI Search Citations', desc: 'More pages with FAQ schema and direct answers means more chances ChatGPT, Perplexity, and Gemini cite your content. We track this monthly in your AI Ranking Report.' },
+                { title: 'Email List Growth', desc: 'More blog traffic means more signups through your scorecard. Larger list means more webinar attendees. More attendees means more source material. The flywheel accelerates itself.' },
+                { title: 'LinkedIn Consistency', desc: 'LinkedIn\'s algorithm rewards consistent 3x/week posting. 10 posts last about 3.5 weeks. You need monthly refills. By Month 6, your reach is measurably higher.' },
+                { title: 'Internal Link Network', desc: 'Each new blog post links to your landing page and previous posts. Link equity distributes across your whole content library. Every new post makes every old post stronger.' },
                 { title: 'Content Freshness', desc: 'Google decays content that doesn\'t get updated. We keep adding to your series, refreshing older posts with new internal links and updated data. Your content stays alive.' },
               ].map((item, i) => (
                 <div key={i} className="flex gap-3">
@@ -1044,7 +1059,7 @@ export default function Home() {
                 The compounding return only works if you stay
               </p>
               <p className="text-gray-300 text-sm leading-relaxed">
-                Canceling after Month 2 means your blog post series stops at Chapter 2. Your reader never gets Chapters 3-12. Google never sees the topical cluster that makes Post 1 rank. Your LinkedIn runs out of posts in 3.5 weeks. The 6-month commitment discount exists because clients who stay 6 months see dramatically better results than clients who leave at Month 2.
+                Canceling after Month 2 means your blog series stops at Chapter 2. Your reader never gets Chapters 3-12. Google never sees the topical cluster that makes Post 1 rank. Your LinkedIn runs out of posts in 3.5 weeks. The 6-month discount exists because clients who stay 6 months see measurably better results than those who leave at Month 2.
               </p>
             </div>
           </div>
@@ -1065,7 +1080,7 @@ export default function Home() {
             {/* The pitch */}
             <div className="bg-white rounded-xl border border-gray-200 p-8 mb-8">
               <p className="text-gray-900 text-lg leading-relaxed mb-6">
-                We process <strong>one recording per month</strong> (Starter), <strong>two per month</strong> (Growth), or <strong>four per month</strong> (Scale). At your current library size, that&apos;s months of content already waiting &mdash; and you don&apos;t need to record a single new thing.
+                We process <strong>one recording per month</strong> (Starter), <strong>two per month</strong> (Growth), or <strong>four per month</strong> (Scale). At your current library size, that&apos;s months of content already waiting. You don&apos;t need to record a single new thing.
               </p>
               <div className="grid sm:grid-cols-3 gap-4 mb-6">
                 {[
@@ -1081,7 +1096,7 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-gray-500 text-sm">
-                <strong>What counts as source material:</strong> Zoom webinars, YouTube videos, podcast episodes, conference talks, workshop recordings, live Q&amp;A sessions, training videos &mdash; any recording where you&apos;re speaking and teaching.
+                <strong>What counts as source material:</strong> Zoom webinars, YouTube videos, podcast episodes, conference talks, workshop recordings, live Q&amp;A sessions, training videos. Any recording where you&apos;re speaking and teaching.
               </p>
             </div>
 
@@ -1103,10 +1118,10 @@ export default function Home() {
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-4 gap-8 text-center">
               {[
-                { stat: '14-75+', label: 'Content Pieces Per Month', desc: 'From a single webinar' },
-                { stat: '7 Days', label: 'First Delivery', desc: 'Fast turnaround' },
-                { stat: '2X', label: 'Search Visibility', desc: 'Google + AI search' },
-                { stat: '$0', label: 'Extra for SEO', desc: 'All optimization included' },
+                { stat: '14-75+', label: 'Content Pieces Per Month', desc: 'From one webinar recording' },
+                { stat: '7 Days', label: 'To First Delivery', desc: 'Blog, scorecard, landing page' },
+                { stat: '15-20 hrs', label: 'Saved Per Month', desc: 'Time you\'d spend doing this yourself' },
+                { stat: '$54', label: 'Per Content Piece', desc: 'Starter plan. Freelancers charge $200-500.' },
               ].map((item, i) => (
                 <div key={i}>
                   <div className="text-4xl font-bold gradient-text mb-2">{item.stat}</div>
@@ -1123,40 +1138,49 @@ export default function Home() {
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Why This Works for Coaches
+                Why Coaches Choose This Over DIY or AI Tools
               </h2>
               <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-                We don&apos;t just repurpose content. We build content engines that drive traffic, generate leads, and position you as the authority in your niche.
+                A $99/month AI tool gives you clips. A VA gives you generic posts. Neither builds a system. Here&apos;s what makes this different.
               </p>
             </div>
 
-            {/* Credibility Pillars */}
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
+            {/* Credibility Pillars - 4 cards, breaking Rule of 3 */}
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div className="bg-white rounded-xl p-6 border border-gray-200">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                   <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">Your Words, Not Templates</h3>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Your Words, Not AI Slop</h3>
                 <p className="text-gray-600 text-sm">
-                  Every piece starts from your webinar transcript. We extract your stories, examples, and insights — then structure them for maximum reach. The content sounds like you because it IS you.
+                  Every piece starts from your webinar transcript. We extract your stories, examples, and insights, then structure them for search and social. The content sounds like you because it IS you. Your audience can tell the difference.
                 </p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-gray-200">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                   <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">Google + AI Search Optimized</h3>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Optimized for Google AND AI Search</h3>
                 <p className="text-gray-600 text-sm">
-                  Most services optimize for Google only. We structure every piece for both Google AND AI assistants (ChatGPT, Perplexity, Gemini). When someone asks an AI &quot;who&apos;s the best coach for X?&quot; — your content can be the answer.
+                  Most services optimize for Google only. We structure every piece for both Google and AI assistants (ChatGPT, Perplexity, Gemini). When someone asks an AI &quot;who&apos;s the best coach for [your topic]?&quot; your content can be the answer.
                 </p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-gray-200">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                   <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">Monthly Engine, Not a One-Off</h3>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">A Monthly Engine, Not a One-Off Project</h3>
                 <p className="text-gray-600 text-sm">
-                  First delivery in 7-10 days. Something new every week after that. Each month adds to a compounding content library &mdash; more blog posts, more LinkedIn posts, more SEO authority. Month 6 is worth more than Month 1.
+                  First delivery in 7-10 days. Something new every week after that. Each month adds to a compounding content library. More blog posts. More LinkedIn posts. More SEO authority. Month 6 is worth more than Month 1.
+                </p>
+              </div>
+              <div className="bg-white rounded-xl p-6 border border-gray-200">
+                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                  <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Live Pages We Build and Host</h3>
+                <p className="text-gray-600 text-sm">
+                  Your blog post, scorecard, and landing page are live web pages, not PDFs in a Google Drive. Real URLs that rank on Google, capture emails, and grow your authority. We handle the hosting and technical setup.
                 </p>
               </div>
             </div>
@@ -1211,14 +1235,14 @@ export default function Home() {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-green-500 mt-0.5">&#10003;</span>
-                      <span>AI search optimized — get cited by ChatGPT, Perplexity</span>
+                      <span>AI search optimized: cited by ChatGPT, Perplexity</span>
                     </li>
                   </ul>
                 </div>
               </div>
               <div className="mt-8 text-center bg-gray-50 rounded-lg p-4">
                 <p className="text-gray-900 font-medium">
-                  At $750/month for 14 pieces, that&apos;s <span className="text-blue-600 font-bold">$54 per content piece</span>. A freelance writer charges $200-$500 per piece — without SEO or AI optimization.
+                  At $750/month for 14 pieces, that&apos;s <span className="text-blue-600 font-bold">$54 per content piece</span>. A freelance writer charges $200-$500 per piece. And they don&apos;t include SEO, AI optimization, or live hosted pages.
                 </p>
               </div>
             </div>
@@ -1269,23 +1293,23 @@ export default function Home() {
                 },
                 {
                   q: 'How long until I get my content?',
-                  a: 'First delivery within 7-10 business days. After that, you receive something every week — blog posts in Week 1, LinkedIn posts and newsletters in Weeks 2-3, and your AI Ranking Report in Week 4. Never a single dump.',
+                  a: 'First delivery within 7-10 business days. After that, you receive something every week. Blog posts in Week 1, LinkedIn posts and newsletters in Weeks 2-3, and your AI Ranking Report in Week 4. Never a single dump.',
                 },
                 {
                   q: 'What formats do you accept?',
-                  a: 'Zoom recordings, YouTube videos, Vimeo, Google Drive links, Loom — any video format. If you can share it, we can repurpose it.',
+                  a: 'Zoom recordings, YouTube videos, Vimeo, Google Drive links, Loom. Any video format. If you can share it, we can repurpose it.',
                 },
                 {
                   q: 'What happens month over month?',
-                  a: 'Month 1 builds the foundation — your brand voice, positioning, landing page, lead magnet, and first blog post. Month 2+ we skip all of that (it\'s already done) and go straight to content production: new blog post, new LinkedIn posts, new newsletter, updated posting schedule, AI Ranking Report. Each month is faster because we already know your voice. Each month is more valuable because the content compounds.',
+                  a: 'Month 1 builds the foundation: your brand voice, positioning, landing page, lead magnet, and first blog post. Month 2+ we skip all of that (it\'s already done) and go straight to content production. New blog post, new LinkedIn posts, new newsletter, updated posting schedule, AI Ranking Report. Each month is faster because we already know your voice. Each month is more valuable because the content compounds.',
                 },
                 {
                   q: 'What if I run out of webinars to send?',
-                  a: 'Three options: (1) Each webinar brief contains enough material for 3-4 blog posts, not just 1 — we can mine deeper angles from existing material. (2) We can refresh and expand existing blog posts with new data, which Google rewards. (3) Conference talks, guest podcast appearances, live Q&A sessions — any recording where you\'re speaking works. If you truly have no source material, we offer a 2-month pause to preserve the relationship.',
+                  a: 'Three options. (1) Each webinar brief contains enough material for 3-4 blog posts, not just 1. We can mine deeper angles from existing material. (2) We can refresh and expand existing blog posts with new data, which Google rewards. (3) Conference talks, guest podcast appearances, live Q&A sessions. Any recording where you\'re speaking works. If you truly have no source material, we offer a 2-month pause to preserve the relationship.',
                 },
                 {
                   q: 'Can I cancel anytime?',
-                  a: 'Yes. All plans are month-to-month. Cancel before your next billing date. That said, the compounding return only works over time — your Month 1 blog post ranks dramatically better in Month 6 when Posts 2-6 link back to it. The 6-month commitment discount (20% off) exists because clients who stay see the compounding return.',
+                  a: 'Yes. All plans are month-to-month. Cancel before your next billing date. That said, the compounding return only works over time. Your Month 1 blog post ranks measurably better in Month 6 when Posts 2-6 link back to it. The 6-month commitment discount (20% off) exists because clients who stay see the compounding return.',
                 },
                 {
                   q: 'Who is this for?',
@@ -1293,11 +1317,11 @@ export default function Home() {
                 },
                 {
                   q: 'How is this different from hiring a VA or writer?',
-                  a: 'A VA might transcribe your webinar. A writer might create a few disconnected posts. We build a compounding content system: serialized blog posts that form a topical cluster, a lead capture page that grows your email list, LinkedIn posts that reference each other and drive back to your blog, and monthly AI Ranking Reports no other service provides. Plus, everything is hosted on live pages we maintain — your brand voice, positioning, and content strategy are embedded in our system.',
+                  a: 'A VA might transcribe your webinar. A writer might create a few disconnected posts. We build a compounding content system: serialized blog posts that form a topical cluster, a lead capture page that grows your email list, LinkedIn posts that reference each other and drive back to your blog, and monthly AI Ranking Reports no other service provides. Everything is hosted on live pages we maintain. Your brand voice, positioning, and content strategy are embedded in our system.',
                 },
                 {
                   q: 'Is ContentRepurposeHub a new service?',
-                  a: 'Yes — we launched in 2026, and that actually works in your favor. Early clients get more personal attention, faster turnaround, and direct access to the founder. Every piece gets hands-on review. Plus there\'s zero risk: our 30-day guarantee means you get a full refund if the content doesn\'t meet your standards.',
+                  a: 'Yes. We launched in 2026, and that works in your favor. Early clients get more personal attention, faster turnaround, and direct access to the founder. Every piece gets hands-on review. Zero risk: our 30-day guarantee means you get a full refund if the content doesn\'t meet your standards.',
                 },
               ].map((item, i) => (
                 <div key={i} className="bg-white p-6 rounded-xl border border-gray-200">
@@ -1313,13 +1337,13 @@ export default function Home() {
         <section className="py-20 gradient-bg px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Your Webinars Already Have the Content. Let Us Prove It.
+              How Many Months of Content Are Already in Your Back Catalog?
             </h2>
             <p className="text-blue-100 text-lg mb-4">
-              Book a free 20-minute strategy call. Tell us how many webinars and podcast episodes you have recorded. We&apos;ll map out exactly how many months of content are already sitting in your back catalog &mdash; and which recording to process first.
+              Tell us how many webinars and podcast episodes you have recorded. We&apos;ll map out exactly how long your existing library can fuel the flywheel, and which recording to process first for maximum impact.
             </p>
             <p className="text-blue-200 text-sm mb-8">
-              Early clients get direct access to the founder and more personal attention than any agency juggling 50 accounts. That window won&apos;t last forever.
+              Early clients get direct access to the founder. Every content piece gets hands-on review. That level of attention has an expiration date.
             </p>
             <a
               href="https://cal.com/contentrepurposehub/30min"
@@ -1327,10 +1351,10 @@ export default function Home() {
               rel="noopener noreferrer"
               className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition text-lg"
             >
-              Book Free Strategy Call →
+              Book Your Free 20-Minute Strategy Call →
             </a>
             <p className="text-blue-200 text-sm mt-4">
-              ✓ 20 minutes &nbsp; ✓ 30-day money-back guarantee &nbsp; ✓ No contracts
+              ✓ 20 minutes &nbsp; ✓ 30-day &quot;Sounds Like Me&quot; guarantee &nbsp; ✓ No contracts
             </p>
           </div>
         </section>

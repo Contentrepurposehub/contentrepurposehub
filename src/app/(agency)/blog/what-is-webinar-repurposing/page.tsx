@@ -87,7 +87,7 @@ export default function WhatIsWebinarRepurposing() {
             name: 'How many content pieces can you get from one webinar?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'A single 60-minute webinar can produce 14-75+ content pieces depending on the depth of the content and the service level. A basic repurposing package typically yields 14-25 pieces (blog post, LinkedIn posts, email sequence, video clips, quote cards). A comprehensive package produces 50-75+ pieces by adding podcast episodes, LinkedIn carousels, Twitter threads, newsletter editions, lead magnets, and YouTube content.',
+              text: 'A single 60-minute webinar can produce 14-75+ content pieces depending on the depth of the content and the service level. A basic repurposing package typically yields 14-25 pieces (blog post, LinkedIn posts, email sequence, video clips, quote cards). A full-service package produces 50-75+ pieces by adding podcast episodes, LinkedIn carousels, Twitter threads, newsletter editions, lead magnets, and YouTube content.',
             },
           },
           {
@@ -246,7 +246,7 @@ export default function WhatIsWebinarRepurposing() {
                   className="rounded-xl shadow-lg overflow-hidden border border-gray-200"
                 >
                   <div className="grid grid-cols-1 md:grid-cols-2">
-                    {/* Left Side — Without Repurposing */}
+                    {/* Left Side: Without Repurposing */}
                     <div className="bg-gray-100 p-6 md:p-8 relative">
                       <div className="absolute top-0 left-0 w-full h-1 bg-gray-400" />
                       <h3 className="text-lg font-bold text-gray-500 mb-6 uppercase tracking-wide">Without Repurposing</h3>
@@ -276,7 +276,7 @@ export default function WhatIsWebinarRepurposing() {
                       </div>
                     </div>
 
-                    {/* Right Side — With Repurposing */}
+                    {/* Right Side: With Repurposing */}
                     <div className="bg-blue-50 p-6 md:p-8 relative">
                       <div className="absolute top-0 left-0 w-full h-1 bg-blue-600" />
                       <h3 className="text-lg font-bold text-blue-600 mb-6 uppercase tracking-wide">With Repurposing</h3>
@@ -345,7 +345,7 @@ export default function WhatIsWebinarRepurposing() {
                 </div>
 
                 <p className="text-gray-700 mb-4">
-                  That is 25-40+ content pieces from a basic repurposing pass. A comprehensive package (like ContentRepurposeHub&apos;s Growth or Scale plans) pushes this to 50-75+ pieces by adding audiograms, slide deck downloads, additional blog variations, and platform-specific adaptations.
+                  That is 25-40+ content pieces from a basic repurposing pass. A full-service package (like ContentRepurposeHub&apos;s Growth or Scale plans) pushes this to 50-75+ pieces by adding audiograms, slide deck downloads, additional blog variations, and platform-specific adaptations.
                 </p>
                 <p className="text-gray-700 mb-4">
                   For a detailed walkthrough of every content format and how each one works, read our <Link href="/blog/webinar-content-pieces-breakdown" className="text-blue-600 hover:text-blue-800 font-medium">complete breakdown of 75+ content pieces from a single webinar</Link>.
@@ -649,7 +649,7 @@ export default function WhatIsWebinarRepurposing() {
                     },
                     {
                       q: 'How many content pieces can you get from one webinar?',
-                      a: 'A single 60-minute webinar can produce 14-75+ content pieces depending on the depth of the content and the service level. A basic package typically yields 14-25 pieces (blog post, LinkedIn posts, email sequence, video clips, quote cards). A comprehensive package produces 50-75+ pieces by adding podcast episodes, LinkedIn carousels, Twitter threads, newsletter editions, lead magnets, and YouTube content.',
+                      a: 'A single 60-minute webinar can produce 14-75+ content pieces depending on the depth of the content and the service level. A basic package typically yields 14-25 pieces (blog post, LinkedIn posts, email sequence, video clips, quote cards). A full-service package produces 50-75+ pieces by adding podcast episodes, LinkedIn carousels, Twitter threads, newsletter editions, lead magnets, and YouTube content.',
                     },
                     {
                       q: 'How much does webinar repurposing cost?',

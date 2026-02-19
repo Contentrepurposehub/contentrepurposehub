@@ -492,7 +492,7 @@ export default function WebinarRepurposingGuide() {
                   Break your webinar into a thread that teaches one complete concept. Start with a hook tweet, deliver value in 8-12 subsequent tweets, and end with a summary and CTA. Threads are X&apos;s highest-engagement content format for educational content.
                 </p>
                 <p className="text-gray-700 mb-6">
-                  <strong>Why it works:</strong> Threads get significantly more impressions than single tweets. The format rewards depth, which plays perfectly to webinar content.
+                  <strong>Why it works:</strong> Threads get 3-5x more impressions than single tweets. The format rewards depth, which plays perfectly to webinar content.
                 </p>
 
                 {/* Format 9 */}

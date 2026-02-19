@@ -352,7 +352,7 @@ export default function WebinarToSocialMediaContent() {
                   Short video clips from your webinar perform extremely well on LinkedIn because they show you speaking with authority and conviction. Watch your recording and timestamp the 30-90 second segments where you made a point clearly and concisely. Cut those into vertical clips, add captions (85 percent of LinkedIn users watch on mute), and upload natively.
                 </p>
                 <p className="text-gray-700 mb-6">
-                  <strong>Important:</strong> Upload the video directly to LinkedIn rather than posting a YouTube link. Native video gets significantly more reach in the LinkedIn algorithm.
+                  <strong>Important:</strong> Upload the video directly to LinkedIn rather than posting a YouTube link. Native video gets far more reach in the LinkedIn algorithm.
                 </p>
               </section>
 
