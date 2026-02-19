@@ -35,8 +35,8 @@ export default function AnimatedCard({
       className={className}
       style={shouldAnimate ? {
         opacity: isVisible ? 1 : 0,
-        transform: isVisible ? 'none' : 'translateY(40px)',
-        transition: `opacity 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) ${index * staggerDelay}s, transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) ${index * staggerDelay}s`,
+        transform: isVisible ? 'none' : 'translateY(60px) scale(0.95)',
+        transition: `opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1) ${index * staggerDelay}s, transform 0.7s cubic-bezier(0.16, 1, 0.3, 1) ${index * staggerDelay}s`,
       } : undefined}
     >
       {children}

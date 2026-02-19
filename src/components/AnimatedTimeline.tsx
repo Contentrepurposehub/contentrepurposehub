@@ -30,8 +30,8 @@ export default function AnimatedTimeline({
       className={className}
       style={shouldAnimate ? {
         opacity: isVisible ? 1 : 0,
-        transform: isVisible ? 'none' : 'translateX(-30px)',
-        transition: `opacity 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) ${index * 0.25}s, transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) ${index * 0.25}s`,
+        transform: isVisible ? 'none' : 'translateX(-40px) scale(0.95)',
+        transition: `opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1) ${index * 0.25}s, transform 0.7s cubic-bezier(0.16, 1, 0.3, 1) ${index * 0.25}s`,
       } : undefined}
     >
       {children}

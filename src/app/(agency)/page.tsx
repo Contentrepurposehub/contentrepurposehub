@@ -356,7 +356,7 @@ export default function Home() {
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
               Your Webinar Already Did the Hard Part.{' '}
-              <span className="gradient-text">We Turn It Into the System That Fills Your Next One.</span>
+              <span className="gradient-text-animated">We Turn It Into the System That Fills Your Next One.</span>
             </h1>
             <p className="text-xl text-gray-600 mb-4 max-w-2xl mx-auto">
               One recording becomes a live blog, a lead-capturing scorecard, 30 days of LinkedIn posts, newsletters, and email sequences. Each month compounds on the last. By Month 6, your first post ranks higher than it ever could alone.
@@ -369,7 +369,7 @@ export default function Home() {
                 href="https://cal.com/contentrepurposehub/30min"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="gradient-bg text-white px-8 py-4 rounded-lg hover:opacity-90 transition font-semibold text-lg"
+                className="gradient-bg text-white px-8 py-4 rounded-lg hover:opacity-90 transition font-semibold text-lg cta-glow"
               >
                 See How Many Months of Content You Already Have →
               </a>
@@ -420,8 +420,8 @@ export default function Home() {
                   desc: "Right now, someone is asking ChatGPT: 'Who's the best coach for [your topic]?' If your content isn't structured for AI search, the answer won't be you."
                 },
               ].map((item, i) => (
-                <AnimatedCard key={i} index={i} className="bg-white p-8 rounded-xl card-shadow">
-                  <div className="text-4xl mb-4">{item.emoji}</div>
+                <AnimatedCard key={i} index={i} className="bg-white p-8 rounded-xl card-shadow card-hover-glow border border-transparent">
+                  <div className={`text-4xl mb-4 emoji-float emoji-float-${i + 1}`}>{item.emoji}</div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">{item.title}</h3>
                   <p className="text-gray-600">{item.desc}</p>
                 </AnimatedCard>
@@ -699,7 +699,7 @@ export default function Home() {
                   tag: 'Expands Reach'
                 },
               ].map((item, i) => (
-                <AnimatedCard key={i} index={i} staggerDelay={0.12} className="border border-gray-200 p-6 rounded-xl hover:border-blue-300 transition">
+                <AnimatedCard key={i} index={i} staggerDelay={0.12} className="border border-gray-200 p-6 rounded-xl card-hover-glow">
                   <div className="flex justify-between items-start mb-3">
                     <div className="text-3xl">{item.icon}</div>
                     <span className="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">{item.tag}</span>
@@ -907,8 +907,8 @@ export default function Home() {
               </div>
 
               {/* Growth - Featured */}
-              <div className="bg-white border-2 border-blue-600 rounded-2xl p-8 relative">
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-medium">
+              <div className="bg-white border-2 border-blue-600 rounded-2xl p-8 relative pricing-glow">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-medium shimmer-badge">
                   Recommended
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-1">Growth</h3>
@@ -1128,7 +1128,7 @@ export default function Home() {
                 { target: 54, prefix: '$', suffix: '', label: 'Per Content Piece', desc: 'Starter plan. Freelancers charge $200-500.' },
               ].map((item, i) => (
                 <AnimatedCard key={i} index={i} className="">
-                  <div className="text-4xl font-bold gradient-text mb-2">
+                  <div className="text-4xl font-bold gradient-text-animated mb-2">
                     <AnimatedCounter target={item.target} prefix={item.prefix} suffix={item.suffix} />
                   </div>
                   <div className="text-lg font-semibold text-gray-900 mb-1">{item.label}</div>
@@ -1153,7 +1153,7 @@ export default function Home() {
 
             {/* Credibility Pillars - 4 cards, breaking Rule of 3 */}
             <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <AnimatedCard index={0} className="bg-white rounded-xl p-6 border border-gray-200">
+              <AnimatedCard index={0} className="bg-white rounded-xl p-6 border border-gray-200 card-hover-glow">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                   <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                 </div>
@@ -1162,7 +1162,7 @@ export default function Home() {
                   Every piece starts from your webinar transcript. We extract your stories, examples, and insights, then structure them for search and social. The content sounds like you because it IS you. Your audience can tell the difference.
                 </p>
               </AnimatedCard>
-              <AnimatedCard index={1} className="bg-white rounded-xl p-6 border border-gray-200">
+              <AnimatedCard index={1} className="bg-white rounded-xl p-6 border border-gray-200 card-hover-glow">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                   <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
                 </div>
@@ -1171,7 +1171,7 @@ export default function Home() {
                   Most services optimize for Google only. We structure every piece for both Google and AI assistants (ChatGPT, Perplexity, Gemini). When someone asks an AI &quot;who&apos;s the best coach for [your topic]?&quot; your content can be the answer.
                 </p>
               </AnimatedCard>
-              <AnimatedCard index={2} className="bg-white rounded-xl p-6 border border-gray-200">
+              <AnimatedCard index={2} className="bg-white rounded-xl p-6 border border-gray-200 card-hover-glow">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                   <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                 </div>
@@ -1180,7 +1180,7 @@ export default function Home() {
                   First delivery in 7-10 days. Something new every week after that. Each month adds to a compounding content library. More blog posts. More LinkedIn posts. More SEO authority. Month 6 is worth more than Month 1.
                 </p>
               </AnimatedCard>
-              <AnimatedCard index={3} className="bg-white rounded-xl p-6 border border-gray-200">
+              <AnimatedCard index={3} className="bg-white rounded-xl p-6 border border-gray-200 card-hover-glow">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                   <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
                 </div>
@@ -1355,7 +1355,7 @@ export default function Home() {
               href="https://cal.com/contentrepurposehub/30min"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition text-lg"
+              className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition text-lg cta-glow"
             >
               Book Your Free 20-Minute Strategy Call →
             </a>
