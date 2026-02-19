@@ -22,7 +22,6 @@ export default function AnimatedCounter({
   const ref = useRef<HTMLSpanElement>(null)
   const isInView = useInView(ref, { once: true })
   const shouldReduceMotion = useReducedMotion()
-  // SSR: show final value (visible, no blank)
   const [display, setDisplay] = useState(`${prefix}${target}${suffix}`)
   const hasAnimated = useRef(false)
 
@@ -47,11 +46,27 @@ export default function AnimatedCounter({
 
       if (progress < 1) {
         requestAnimationFrame(tick)
+      } else {
+        // Pop effect when counting finishes
+        const el = ref.current
+        if (el) {
+          el.animate(
+            [
+              { transform: 'scale(1)' },
+              { transform: 'scale(1.15)' },
+              { transform: 'scale(1)' },
+            ],
+            {
+              duration: 400,
+              easing: 'cubic-bezier(0.34, 1.56, 0.64, 1)',
+            }
+          )
+        }
       }
     }
 
     requestAnimationFrame(tick)
   }, [isInView, shouldReduceMotion, target, prefix, suffix, duration])
 
-  return <span ref={ref}>{display}</span>
+  return <span ref={ref} style={{ display: 'inline-block' }}>{display}</span>
 }

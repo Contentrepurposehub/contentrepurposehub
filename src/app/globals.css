@@ -45,66 +45,13 @@ body {
    MOTION SYSTEM — Eye-catching animations
    ======================================== */
 
-/* Hero fade-in — CSS-only, no JS needed */
-@keyframes heroFadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(30px) scale(0.98);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
+/* Hero fade-in — now handled by AnimatedSection.tsx (Web Animations API) */
 
-.animate-hero {
-  animation: heroFadeIn 1s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
-}
+/* Animated gradient text removed — caused rendering issues, using static gradient-text instead */
 
-/* Animated gradient text — shifts colors, draws the eye */
-@keyframes textGradientShift {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-}
+/* CTA glow — now handled by PulsingCTA.tsx (Web Animations API) */
 
-.gradient-text-animated {
-  background: linear-gradient(135deg, #2563eb, #7c3aed, #3b82f6, #9333ea, #2563eb);
-  background-size: 300% 300%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: textGradientShift 4s ease infinite;
-}
-
-/* Pulsing CTA glow — impossible to ignore */
-@keyframes pulseGlow {
-  0%, 100% {
-    box-shadow: 0 0 15px rgba(37, 99, 235, 0.3), 0 4px 15px rgba(124, 58, 237, 0.2);
-  }
-  50% {
-    box-shadow: 0 0 30px rgba(37, 99, 235, 0.5), 0 0 60px rgba(124, 58, 237, 0.3), 0 4px 20px rgba(0, 0, 0, 0.1);
-  }
-}
-
-.cta-glow {
-  animation: pulseGlow 2.5s ease-in-out infinite;
-}
-
-/* Floating emoji — gentle bob, adds life */
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
-}
-
-.emoji-float {
-  display: inline-block;
-  animation: float 3s ease-in-out infinite;
-}
-
-.emoji-float-1 { animation-delay: 0s; }
-.emoji-float-2 { animation-delay: 0.75s; }
-.emoji-float-3 { animation-delay: 1.5s; }
-.emoji-float-4 { animation-delay: 2.25s; }
+/* Floating emoji — now handled by FloatingEmoji.tsx (Web Animations API) */
 
 /* Card hover lift + glow — makes page feel interactive */
 .card-hover-glow {
@@ -112,9 +59,9 @@ body {
 }
 
 .card-hover-glow:hover {
-  border-color: rgba(37, 99, 235, 0.4);
-  box-shadow: 0 0 20px rgba(37, 99, 235, 0.12), 0 12px 40px rgba(0, 0, 0, 0.08);
-  transform: translateY(-6px);
+  border-color: rgba(37, 99, 235, 0.5);
+  box-shadow: 0 0 30px rgba(37, 99, 235, 0.2), 0 16px 50px rgba(0, 0, 0, 0.12);
+  transform: translateY(-10px);
 }
 
 /* Shimmer badge — draws eye to Recommended */
@@ -152,12 +99,12 @@ body {
 
 /* Pricing card featured border glow */
 @keyframes borderGlow {
-  0%, 100% { border-color: #2563eb; box-shadow: 0 0 15px rgba(37, 99, 235, 0.15); }
-  50% { border-color: #7c3aed; box-shadow: 0 0 30px rgba(124, 58, 237, 0.2); }
+  0%, 100% { border-color: #2563eb; box-shadow: 0 0 20px rgba(37, 99, 235, 0.25), 0 8px 30px rgba(0, 0, 0, 0.08); }
+  50% { border-color: #7c3aed; box-shadow: 0 0 40px rgba(124, 58, 237, 0.35), 0 12px 40px rgba(0, 0, 0, 0.1); }
 }
 
 .pricing-glow {
-  animation: borderGlow 3s ease-in-out infinite;
+  animation: borderGlow 2.5s ease-in-out infinite;
 }
 
 /* Flywheel visual rotation hint */
@@ -168,10 +115,6 @@ body {
 
 /* Reduce all motion for accessibility */
 @media (prefers-reduced-motion: reduce) {
-  .animate-hero,
-  .gradient-text-animated,
-  .cta-glow,
-  .emoji-float,
   .shimmer-badge::after,
   .stat-pop,
   .pricing-glow {
@@ -180,10 +123,5 @@ body {
 
   .card-hover-glow:hover {
     transform: none;
-  }
-
-  .gradient-text-animated {
-    background: linear-gradient(135deg, var(--primary) 0%, #7c3aed 100%);
-    background-size: 100% 100%;
   }
 }

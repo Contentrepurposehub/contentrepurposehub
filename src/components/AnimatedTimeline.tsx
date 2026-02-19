@@ -13,27 +13,60 @@ export default function AnimatedTimeline({
   className?: string
 }) {
   const ref = useRef<HTMLDivElement>(null)
-  const isInView = useInView(ref, { once: true, amount: 0.1 })
+  const isInView = useInView(ref, { once: true, amount: 0.15 })
   const shouldReduceMotion = useReducedMotion()
-  const [mounted, setMounted] = useState(false)
+  const [phase, setPhase] = useState<'ssr' | 'hidden' | 'ready' | 'visible'>('ssr')
 
   useEffect(() => {
-    setMounted(true)
-  }, [])
+    if (shouldReduceMotion) {
+      setPhase('visible')
+      return
+    }
+    if (isInView) {
+      setPhase('visible')
+      return
+    }
+    setPhase('hidden')
+    const raf = requestAnimationFrame(() => {
+      setPhase(prev => prev === 'hidden' ? 'ready' : prev)
+    })
+    return () => cancelAnimationFrame(raf)
+  }, [shouldReduceMotion, isInView])
 
-  const shouldAnimate = mounted && !shouldReduceMotion
-  const isVisible = !shouldAnimate || isInView
+  useEffect(() => {
+    if (isInView && phase === 'ready') {
+      setPhase('visible')
+    }
+  }, [isInView, phase])
+
+  const delay = index * 0.25
+
+  const getStyle = (): React.CSSProperties | undefined => {
+    switch (phase) {
+      case 'ssr':
+        return undefined
+      case 'hidden':
+        return {
+          opacity: 0,
+          transform: 'translateX(-50px) scale(0.92)',
+        }
+      case 'ready':
+        return {
+          opacity: 0,
+          transform: 'translateX(-50px) scale(0.92)',
+          transition: `opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1) ${delay}s, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1) ${delay}s`,
+        }
+      case 'visible':
+        return {
+          opacity: 1,
+          transform: 'none',
+          transition: `opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1) ${delay}s, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1) ${delay}s`,
+        }
+    }
+  }
 
   return (
-    <div
-      ref={ref}
-      className={className}
-      style={shouldAnimate ? {
-        opacity: isVisible ? 1 : 0,
-        transform: isVisible ? 'none' : 'translateX(-40px) scale(0.95)',
-        transition: `opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1) ${index * 0.25}s, transform 0.7s cubic-bezier(0.16, 1, 0.3, 1) ${index * 0.25}s`,
-      } : undefined}
-    >
+    <div ref={ref} className={className} style={getStyle()}>
       {children}
     </div>
   )

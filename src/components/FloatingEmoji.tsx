@@ -2,37 +2,38 @@
 
 import { useRef, useEffect } from 'react'
 
-export default function AnimatedSection({
+export default function FloatingEmoji({
   children,
   className,
-  hero = false,
+  delay = 0,
 }: {
   children: React.ReactNode
   className?: string
-  hero?: boolean
+  delay?: number
 }) {
   const ref = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    if (!hero) return
     const el = ref.current
     if (!el) return
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
 
-    // Direct Web Animations API for guaranteed hero entrance
-    el.animate(
+    const animation = el.animate(
       [
-        { opacity: 0, transform: 'translateY(40px) scale(0.97)' },
-        { opacity: 1, transform: 'none' },
+        { transform: 'translateY(0) rotate(0deg)' },
+        { transform: 'translateY(-18px) rotate(6deg)' },
       ],
       {
-        duration: 1000,
-        easing: 'cubic-bezier(0.16, 1, 0.3, 1)',
-        delay: 100,
-        fill: 'both' as FillMode,
+        duration: 2000,
+        iterations: Infinity,
+        direction: 'alternate' as PlaybackDirection,
+        easing: 'ease-in-out',
+        delay,
       }
     )
-  }, [hero])
+
+    return () => animation.cancel()
+  }, [delay])
 
   return (
     <div ref={ref} className={className}>

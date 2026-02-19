@@ -5,6 +5,8 @@ import AnimatedSection from "@/components/AnimatedSection"
 import AnimatedCard from "@/components/AnimatedCard"
 import AnimatedCounter from "@/components/AnimatedCounter"
 import AnimatedTimeline from "@/components/AnimatedTimeline"
+import PulsingCTA from "@/components/PulsingCTA"
+import FloatingEmoji from "@/components/FloatingEmoji"
 
 export default function Home() {
   const structuredData = {
@@ -356,7 +358,7 @@ export default function Home() {
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
               Your Webinar Already Did the Hard Part.{' '}
-              <span className="gradient-text-animated">We Turn It Into the System That Fills Your Next One.</span>
+              <span className="gradient-text">We Turn It Into the System That Fills Your Next One.</span>
             </h1>
             <p className="text-xl text-gray-600 mb-4 max-w-2xl mx-auto">
               One recording becomes a live blog, a lead-capturing scorecard, 30 days of LinkedIn posts, newsletters, and email sequences. Each month compounds on the last. By Month 6, your first post ranks higher than it ever could alone.
@@ -365,14 +367,14 @@ export default function Home() {
               Every piece optimized for Google + AI search (ChatGPT, Perplexity, Gemini)
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
+              <PulsingCTA
                 href="https://cal.com/contentrepurposehub/30min"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="gradient-bg text-white px-8 py-4 rounded-lg hover:opacity-90 transition font-semibold text-lg cta-glow"
+                className="gradient-bg text-white px-8 py-4 rounded-lg hover:opacity-90 transition font-semibold text-lg inline-block"
               >
                 See How Many Months of Content You Already Have →
-              </a>
+              </PulsingCTA>
               <a
                 href="#pricing"
                 className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-lg hover:border-gray-400 transition font-semibold text-lg"
@@ -421,7 +423,7 @@ export default function Home() {
                 },
               ].map((item, i) => (
                 <AnimatedCard key={i} index={i} className="bg-white p-8 rounded-xl card-shadow card-hover-glow border border-transparent">
-                  <div className={`text-4xl mb-4 emoji-float emoji-float-${i + 1}`}>{item.emoji}</div>
+                  <FloatingEmoji className="text-4xl mb-4" delay={i * 500}>{item.emoji}</FloatingEmoji>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">{item.title}</h3>
                   <p className="text-gray-600">{item.desc}</p>
                 </AnimatedCard>
@@ -1128,7 +1130,7 @@ export default function Home() {
                 { target: 54, prefix: '$', suffix: '', label: 'Per Content Piece', desc: 'Starter plan. Freelancers charge $200-500.' },
               ].map((item, i) => (
                 <AnimatedCard key={i} index={i} className="">
-                  <div className="text-4xl font-bold gradient-text-animated mb-2">
+                  <div className="text-4xl font-bold gradient-text mb-2">
                     <AnimatedCounter target={item.target} prefix={item.prefix} suffix={item.suffix} />
                   </div>
                   <div className="text-lg font-semibold text-gray-900 mb-1">{item.label}</div>
@@ -1351,14 +1353,14 @@ export default function Home() {
             <p className="text-blue-200 text-sm mb-8">
               Early clients get direct access to the founder. Every content piece gets hands-on review. That level of attention has an expiration date.
             </p>
-            <a
+            <PulsingCTA
               href="https://cal.com/contentrepurposehub/30min"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition text-lg cta-glow"
+              className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition text-lg"
             >
               Book Your Free 20-Minute Strategy Call →
-            </a>
+            </PulsingCTA>
             <p className="text-blue-200 text-sm mt-4">
               ✓ 20 minutes &nbsp; ✓ 30-day &quot;Sounds Like Me&quot; guarantee &nbsp; ✓ No contracts
             </p>
