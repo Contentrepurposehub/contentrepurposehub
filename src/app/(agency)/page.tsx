@@ -7,6 +7,7 @@ import AnimatedCounter from "@/components/AnimatedCounter"
 import AnimatedTimeline from "@/components/AnimatedTimeline"
 import PulsingCTA from "@/components/PulsingCTA"
 import FloatingEmoji from "@/components/FloatingEmoji"
+import ParallaxBand from "@/components/ParallaxBand"
 
 export default function Home() {
   const structuredData = {
@@ -445,6 +446,13 @@ export default function Home() {
           </a>
         </div>
 
+        {/* Parallax Band 1 */}
+        <ParallaxBand
+          imageUrl="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&w=1920&q=80"
+          headline="One Webinar. Eight Content Types. Zero Extra Work."
+          subtext="Your recording already contains the frameworks, stories, and data points. We extract and structure them for every platform."
+        />
+
         {/* Free Webinar Repurposing Checklists Section */}
         <section id="free-checklists" className="py-20 px-4">
           <div className="max-w-4xl mx-auto">
@@ -763,6 +771,13 @@ export default function Home() {
             </p>
           </div>
         </section>
+
+        {/* Parallax Band 2 */}
+        <ParallaxBand
+          imageUrl="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&w=1920&q=80"
+          headline="Your Content Library Compounds. Every Month Builds on the Last."
+          subtext="Month 1 plants the seed. Month 6, your first post ranks higher than it ever could alone."
+        />
 
         {/* How It Works */}
         <section id="how-it-works" className="py-20 px-4">
@@ -1268,6 +1283,13 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Parallax Band 3 */}
+        <ParallaxBand
+          imageUrl="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&w=1920&q=80"
+          headline="Stop Creating From Scratch. Start Compounding."
+          subtext="Every coach we work with already has the content. It just needs a system."
+        />
 
         {/* FAQ Section */}
         <section id="faq" className="py-20 bg-gray-50 px-4">

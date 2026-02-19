@@ -1,7 +1,6 @@
 'use client'
 
-import { useRef, useState, useEffect } from 'react'
-import { useInView, useReducedMotion } from 'framer-motion'
+import { useRef, useEffect } from 'react'
 
 export default function AnimatedTimeline({
   children,
@@ -13,60 +12,41 @@ export default function AnimatedTimeline({
   className?: string
 }) {
   const ref = useRef<HTMLDivElement>(null)
-  const isInView = useInView(ref, { once: true, amount: 0.15 })
-  const shouldReduceMotion = useReducedMotion()
-  const [phase, setPhase] = useState<'ssr' | 'hidden' | 'ready' | 'visible'>('ssr')
 
   useEffect(() => {
-    if (shouldReduceMotion) {
-      setPhase('visible')
-      return
-    }
-    if (isInView) {
-      setPhase('visible')
-      return
-    }
-    setPhase('hidden')
-    const raf = requestAnimationFrame(() => {
-      setPhase(prev => prev === 'hidden' ? 'ready' : prev)
+    const el = ref.current
+    if (!el) return
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+
+    // Already in viewport? Don't animate
+    const rect = el.getBoundingClientRect()
+    if (rect.top < window.innerHeight) return
+
+    // Hide instantly (no transition yet)
+    el.style.opacity = '0'
+    el.style.transform = 'translateX(-50px) scale(0.95)'
+
+    // Add transition on next frame
+    const delay = index * 0.25
+    requestAnimationFrame(() => {
+      el.style.transition = `opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1) ${delay}s, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1) ${delay}s`
     })
-    return () => cancelAnimationFrame(raf)
-  }, [shouldReduceMotion, isInView])
 
-  useEffect(() => {
-    if (isInView && phase === 'ready') {
-      setPhase('visible')
-    }
-  }, [isInView, phase])
+    // Animate in when scrolled into view
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        el.style.opacity = '1'
+        el.style.transform = 'none'
+        observer.disconnect()
+      }
+    }, { threshold: 0.1 })
+    observer.observe(el)
 
-  const delay = index * 0.25
-
-  const getStyle = (): React.CSSProperties | undefined => {
-    switch (phase) {
-      case 'ssr':
-        return undefined
-      case 'hidden':
-        return {
-          opacity: 0,
-          transform: 'translateX(-50px) scale(0.92)',
-        }
-      case 'ready':
-        return {
-          opacity: 0,
-          transform: 'translateX(-50px) scale(0.92)',
-          transition: `opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1) ${delay}s, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1) ${delay}s`,
-        }
-      case 'visible':
-        return {
-          opacity: 1,
-          transform: 'none',
-          transition: `opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1) ${delay}s, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1) ${delay}s`,
-        }
-    }
-  }
+    return () => observer.disconnect()
+  }, [index])
 
   return (
-    <div ref={ref} className={className} style={getStyle()}>
+    <div ref={ref} className={className}>
       {children}
     </div>
   )
