@@ -291,8 +291,8 @@ function PostCard({ post, colorName }: { post: Post; colorName: string }) {
         <span className="text-xs text-gray-400">{new Date(post.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</span>
       </div>
       <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition">{post.title}</h3>
-      <p className="text-gray-600 text-sm md:text-base">{post.description}</p>
-      <span className="inline-block mt-4 text-blue-600 font-medium text-sm">Read the full guide &rarr;</span>
+      <p className="text-gray-600 text-base md:text-lg">{post.description}</p>
+      <span className="inline-block mt-4 text-blue-600 font-medium text-base">Read the full guide &rarr;</span>
     </Link>
   )
 }

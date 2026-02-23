@@ -409,41 +409,41 @@ export default function BestWebinarRepurposingServices() {
             </figure>
 
             {/* Section 1: What Makes a Great Service */}
-            <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">What Makes a Great Webinar Repurposing Service?</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">What Makes a Great Webinar Repurposing Service?</h2>
 
-            <p className="text-gray-700 mb-4">
+            <p className="text-gray-700 text-lg mb-4">
               Before comparing options, you need to know what to measure. Most coaches pick a service based on price alone. That&apos;s how you end up with 5 generic blog posts that sound nothing like you.
             </p>
 
-            <p className="text-gray-700 mb-4">
+            <p className="text-gray-700 text-lg mb-4">
               Five things separate a great repurposing service from an expensive mistake:
             </p>
 
             <div className="space-y-4 mb-8">
               <div className="bg-white border border-gray-200 rounded-lg p-4">
                 <p className="font-semibold text-gray-900">1. Voice Matching</p>
-                <p className="text-gray-600 text-sm mt-1">Does the content sound like you, or like a template? A good service uses your actual webinar words: your phrases, your examples, your personality. Not generic marketing copy.</p>
+                <p className="text-gray-600 text-base mt-1">Does the content sound like you, or like a template? A good service uses your actual webinar words: your phrases, your examples, your personality. Not generic marketing copy.</p>
               </div>
               <div className="bg-white border border-gray-200 rounded-lg p-4">
                 <p className="font-semibold text-gray-900">2. Output Volume</p>
-                <p className="text-gray-600 text-sm mt-1">A single 60-minute webinar contains enough material for <Link href="/blog/webinar-content-pieces-breakdown" className="text-blue-600 hover:underline">75+ content pieces</Link>. If a service gives you 4-5 pieces, they&apos;re leaving 90% of the value on the table.</p>
+                <p className="text-gray-600 text-base mt-1">A single 60-minute webinar contains enough material for <Link href="/blog/webinar-content-pieces-breakdown" className="text-blue-600 hover:underline">75+ content pieces</Link>. If a service gives you 4-5 pieces, they&apos;re leaving 90% of the value on the table.</p>
               </div>
               <div className="bg-white border border-gray-200 rounded-lg p-4">
                 <p className="font-semibold text-gray-900">3. Dual Search Optimization</p>
-                <p className="text-gray-600 text-sm mt-1">In 2026, optimizing only for Google is half a strategy. Your content should also be structured for <Link href="/blog/ai-search-optimization-guide" className="text-blue-600 hover:underline">AI search engines</Link>, including ChatGPT, Perplexity, Gemini, Claude, and Grok.</p>
+                <p className="text-gray-600 text-base mt-1">In 2026, optimizing only for Google is half a strategy. Your content should also be structured for <Link href="/blog/ai-search-optimization-guide" className="text-blue-600 hover:underline">AI search engines</Link>, including ChatGPT, Perplexity, Gemini, Claude, and Grok.</p>
               </div>
               <div className="bg-white border border-gray-200 rounded-lg p-4">
                 <p className="font-semibold text-gray-900">4. Turnaround Speed</p>
-                <p className="text-gray-600 text-sm mt-1">Content has a shelf life. If it takes 4-6 weeks to get your repurposed content back, the moment has passed. Look for 7-10 business day first delivery.</p>
+                <p className="text-gray-600 text-base mt-1">Content has a shelf life. If it takes 4-6 weeks to get your repurposed content back, the moment has passed. Look for 7-10 business day first delivery.</p>
               </div>
               <div className="bg-white border border-gray-200 rounded-lg p-4">
                 <p className="font-semibold text-gray-900">5. No Long-Term Lock-In</p>
-                <p className="text-gray-600 text-sm mt-1">Month-to-month means the service has to earn your business every single month. If they need a 6-month contract to keep you, that tells you something.</p>
+                <p className="text-gray-600 text-base mt-1">Month-to-month means the service has to earn your business every single month. If they need a 6-month contract to keep you, that tells you something.</p>
               </div>
             </div>
 
             {/* Section 2: The 6 Options Compared */}
-            <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">The 6 Options for Webinar Repurposing in 2026</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">The 6 Options for Webinar Repurposing in 2026</h2>
 
             {/* Option 1: ContentRepurposeHub */}
             <div className="border-2 border-blue-500 rounded-xl p-6 md:p-8 mb-8 bg-blue-50/30">
@@ -451,7 +451,7 @@ export default function BestWebinarRepurposingServices() {
                 <span className="bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full">#1 Best for Coaches</span>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">ContentRepurposeHub</h3>
-              <p className="text-gray-600 mb-4">Specialized webinar repurposing service built specifically for coaches, consultants, and course creators.</p>
+              <p className="text-gray-600 text-lg mb-4">Specialized webinar repurposing service built specifically for coaches, consultants, and course creators.</p>
 
               <div className="grid md:grid-cols-2 gap-4 mb-4">
                 <div>
@@ -475,7 +475,7 @@ export default function BestWebinarRepurposingServices() {
               <div className="grid md:grid-cols-2 gap-4 mb-4">
                 <div>
                   <p className="text-sm font-semibold text-green-700 mb-2">What&apos;s Included</p>
-                  <ul className="text-sm text-gray-700 space-y-1">
+                  <ul className="text-base text-gray-700 space-y-1">
                     <li>Blog posts (SEO optimized)</li>
                     <li>LinkedIn posts (10-40 per month)</li>
                     <li>Email sequences &amp; newsletters</li>
@@ -489,7 +489,7 @@ export default function BestWebinarRepurposingServices() {
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-green-700 mb-2">Key Differentiators</p>
-                  <ul className="text-sm text-gray-700 space-y-1">
+                  <ul className="text-base text-gray-700 space-y-1">
                     <li>Google + AI search optimization</li>
                     <li>Uses your actual words from webinars</li>
                     <li>Built for coaches (not generic)</li>
@@ -501,13 +501,13 @@ export default function BestWebinarRepurposingServices() {
               </div>
 
               <div className="bg-white rounded-lg p-4 mb-4">
-                <p className="text-sm"><strong>Best for:</strong> Coaches, consultants, and course creators who run webinars and want maximum content output with AI search visibility.</p>
+                <p className="text-base"><strong>Best for:</strong> Coaches, consultants, and course creators who run webinars and want maximum content output with AI search visibility.</p>
               </div>
 
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <p className="text-sm font-semibold text-green-600">Pros</p>
-                  <ul className="text-sm text-gray-700 mt-1 space-y-1">
+                  <ul className="text-base text-gray-700 mt-1 space-y-1">
                     <li>Highest output per dollar</li>
                     <li>Only service with AI search optimization</li>
                     <li>Specialist in coaching niche</li>
@@ -516,7 +516,7 @@ export default function BestWebinarRepurposingServices() {
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-red-600">Cons</p>
-                  <ul className="text-sm text-gray-700 mt-1 space-y-1">
+                  <ul className="text-base text-gray-700 mt-1 space-y-1">
                     <li>Requires recorded webinars to start</li>
                     <li>Not for enterprise brands</li>
                     <li>Newer company (founded 2026)</li>
@@ -528,7 +528,7 @@ export default function BestWebinarRepurposingServices() {
             {/* Option 2: General Content Agencies */}
             <div className="border border-gray-200 rounded-xl p-6 md:p-8 mb-8">
               <h3 className="text-xl font-bold text-gray-900 mb-2">#2 General Content Marketing Agencies</h3>
-              <p className="text-gray-600 mb-4">Full-service agencies that offer content repurposing as part of a broader marketing package.</p>
+              <p className="text-gray-600 text-lg mb-4">Full-service agencies that offer content repurposing as part of a broader marketing package.</p>
 
               <div className="grid md:grid-cols-2 gap-4 mb-4">
                 <div>
@@ -550,13 +550,13 @@ export default function BestWebinarRepurposingServices() {
               </div>
 
               <div className="bg-white rounded-lg p-4 mb-4 border border-gray-100">
-                <p className="text-sm"><strong>Best for:</strong> Businesses that need a full marketing team, not just repurposing. Agencies bundle content creation, strategy, and sometimes paid ads.</p>
+                <p className="text-base"><strong>Best for:</strong> Businesses that need a full marketing team, not just repurposing. Agencies bundle content creation, strategy, and sometimes paid ads.</p>
               </div>
 
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <p className="text-sm font-semibold text-green-600">Pros</p>
-                  <ul className="text-sm text-gray-700 mt-1 space-y-1">
+                  <ul className="text-base text-gray-700 mt-1 space-y-1">
                     <li>Full marketing support</li>
                     <li>Dedicated account manager</li>
                     <li>Strategy included</li>
@@ -564,7 +564,7 @@ export default function BestWebinarRepurposingServices() {
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-red-600">Cons</p>
-                  <ul className="text-sm text-gray-700 mt-1 space-y-1">
+                  <ul className="text-base text-gray-700 mt-1 space-y-1">
                     <li>2-4x more expensive</li>
                     <li>Low output per webinar (4-10 pieces)</li>
                     <li>Not coaching-specific</li>
@@ -578,7 +578,7 @@ export default function BestWebinarRepurposingServices() {
             {/* Option 3: Freelance Writers */}
             <div className="border border-gray-200 rounded-xl p-6 md:p-8 mb-8">
               <h3 className="text-xl font-bold text-gray-900 mb-2">#3 Freelance Content Writers</h3>
-              <p className="text-gray-600 mb-4">Individual writers you hire to transform your webinar content into written formats.</p>
+              <p className="text-gray-600 text-lg mb-4">Individual writers you hire to transform your webinar content into written formats.</p>
 
               <div className="grid md:grid-cols-2 gap-4 mb-4">
                 <div>
@@ -600,13 +600,13 @@ export default function BestWebinarRepurposingServices() {
               </div>
 
               <div className="bg-white rounded-lg p-4 mb-4 border border-gray-100">
-                <p className="text-sm"><strong>Best for:</strong> Coaches who need a few high-quality blog posts and don&apos;t mind managing the writer themselves. Not ideal for high-volume multi-format repurposing.</p>
+                <p className="text-base"><strong>Best for:</strong> Coaches who need a few high-quality blog posts and don&apos;t mind managing the writer themselves. Not ideal for high-volume multi-format repurposing.</p>
               </div>
 
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <p className="text-sm font-semibold text-green-600">Pros</p>
-                  <ul className="text-sm text-gray-700 mt-1 space-y-1">
+                  <ul className="text-base text-gray-700 mt-1 space-y-1">
                     <li>Lower starting cost</li>
                     <li>Flexible arrangements</li>
                     <li>Can find niche writers</li>
@@ -614,7 +614,7 @@ export default function BestWebinarRepurposingServices() {
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-red-600">Cons</p>
-                  <ul className="text-sm text-gray-700 mt-1 space-y-1">
+                  <ul className="text-base text-gray-700 mt-1 space-y-1">
                     <li>Very low output (2-6 pieces)</li>
                     <li>You manage the process</li>
                     <li>Limited formats (usually just written)</li>
@@ -628,7 +628,7 @@ export default function BestWebinarRepurposingServices() {
             {/* Option 4: VA Teams */}
             <div className="border border-gray-200 rounded-xl p-6 md:p-8 mb-8">
               <h3 className="text-xl font-bold text-gray-900 mb-2">#4 Virtual Assistant Teams</h3>
-              <p className="text-gray-600 mb-4">Overseas VA teams that handle transcription, basic formatting, and social media scheduling.</p>
+              <p className="text-gray-600 text-lg mb-4">Overseas VA teams that handle transcription, basic formatting, and social media scheduling.</p>
 
               <div className="grid md:grid-cols-2 gap-4 mb-4">
                 <div>
@@ -650,13 +650,13 @@ export default function BestWebinarRepurposingServices() {
               </div>
 
               <div className="bg-white rounded-lg p-4 mb-4 border border-gray-100">
-                <p className="text-sm"><strong>Best for:</strong> Coaches on a tight budget who need basic transcription and simple social media posts. Not suitable for SEO content or lead magnets.</p>
+                <p className="text-base"><strong>Best for:</strong> Coaches on a tight budget who need basic transcription and simple social media posts. Not suitable for SEO content or lead magnets.</p>
               </div>
 
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <p className="text-sm font-semibold text-green-600">Pros</p>
-                  <ul className="text-sm text-gray-700 mt-1 space-y-1">
+                  <ul className="text-base text-gray-700 mt-1 space-y-1">
                     <li>Lowest cost option</li>
                     <li>Can handle volume</li>
                     <li>Good for simple tasks</li>
@@ -664,7 +664,7 @@ export default function BestWebinarRepurposingServices() {
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-red-600">Cons</p>
-                  <ul className="text-sm text-gray-700 mt-1 space-y-1">
+                  <ul className="text-base text-gray-700 mt-1 space-y-1">
                     <li>Low quality output</li>
                     <li>No strategic thinking</li>
                     <li>No SEO or AI optimization</li>
@@ -678,7 +678,7 @@ export default function BestWebinarRepurposingServices() {
             {/* Option 5: AI Tool Suites */}
             <div className="border border-gray-200 rounded-xl p-6 md:p-8 mb-8">
               <h3 className="text-xl font-bold text-gray-900 mb-2">#5 AI Tool Suites (Descript + ChatGPT + Opus Clip)</h3>
-              <p className="text-gray-600 mb-4">Combining multiple AI tools to handle transcription, clip creation, and content generation yourself.</p>
+              <p className="text-gray-600 text-lg mb-4">Combining multiple AI tools to handle transcription, clip creation, and content generation yourself.</p>
 
               <div className="grid md:grid-cols-2 gap-4 mb-4">
                 <div>
@@ -700,13 +700,13 @@ export default function BestWebinarRepurposingServices() {
               </div>
 
               <div className="bg-white rounded-lg p-4 mb-4 border border-gray-100">
-                <p className="text-sm"><strong>Best for:</strong> Tech-savvy coaches with time to spare who enjoy the content creation process. For a deeper look at specific tools, see our guide to <Link href="/blog/ai-webinar-repurposing-tools" className="text-blue-600 hover:underline">AI webinar repurposing tools</Link>.</p>
+                <p className="text-base"><strong>Best for:</strong> Tech-savvy coaches with time to spare who enjoy the content creation process. For a deeper look at specific tools, see our guide to <Link href="/blog/ai-webinar-repurposing-tools" className="text-blue-600 hover:underline">AI webinar repurposing tools</Link>.</p>
               </div>
 
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <p className="text-sm font-semibold text-green-600">Pros</p>
-                  <ul className="text-sm text-gray-700 mt-1 space-y-1">
+                  <ul className="text-base text-gray-700 mt-1 space-y-1">
                     <li>Lowest dollar cost</li>
                     <li>Full control over output</li>
                     <li>Learn useful skills</li>
@@ -714,7 +714,7 @@ export default function BestWebinarRepurposingServices() {
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-red-600">Cons</p>
-                  <ul className="text-sm text-gray-700 mt-1 space-y-1">
+                  <ul className="text-base text-gray-700 mt-1 space-y-1">
                     <li>15-20 hours/month of YOUR time</li>
                     <li>AI output needs heavy editing</li>
                     <li>No SEO or AI search optimization</li>
@@ -728,7 +728,7 @@ export default function BestWebinarRepurposingServices() {
             {/* Option 6: DIY */}
             <div className="border border-gray-200 rounded-xl p-6 md:p-8 mb-8">
               <h3 className="text-xl font-bold text-gray-900 mb-2">#6 Full DIY (No Tools, No Help)</h3>
-              <p className="text-gray-600 mb-4">Repurposing everything yourself using free tools and manual work.</p>
+              <p className="text-gray-600 text-lg mb-4">Repurposing everything yourself using free tools and manual work.</p>
 
               <div className="grid md:grid-cols-2 gap-4 mb-4">
                 <div>
@@ -750,13 +750,13 @@ export default function BestWebinarRepurposingServices() {
               </div>
 
               <div className="bg-white rounded-lg p-4 mb-4 border border-gray-100">
-                <p className="text-sm"><strong>Best for:</strong> Coaches who are just starting and have more time than money. Check our <Link href="/blog/content-repurposing-diy-vs-service" className="text-blue-600 hover:underline">DIY vs. service comparison</Link> for the full breakdown.</p>
+                <p className="text-base"><strong>Best for:</strong> Coaches who are just starting and have more time than money. Check our <Link href="/blog/content-repurposing-diy-vs-service" className="text-blue-600 hover:underline">DIY vs. service comparison</Link> for the full breakdown.</p>
               </div>
 
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <p className="text-sm font-semibold text-green-600">Pros</p>
-                  <ul className="text-sm text-gray-700 mt-1 space-y-1">
+                  <ul className="text-base text-gray-700 mt-1 space-y-1">
                     <li>Zero dollar cost</li>
                     <li>Total creative control</li>
                     <li>Deep content knowledge</li>
@@ -764,7 +764,7 @@ export default function BestWebinarRepurposingServices() {
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-red-600">Cons</p>
-                  <ul className="text-sm text-gray-700 mt-1 space-y-1">
+                  <ul className="text-base text-gray-700 mt-1 space-y-1">
                     <li>20-30 hours/month</li>
                     <li>Most coaches quit after month 1</li>
                     <li>No SEO knowledge</li>
@@ -777,14 +777,14 @@ export default function BestWebinarRepurposingServices() {
             </div>
 
             {/* Master Comparison Table */}
-            <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">Master Comparison: All 6 Options Side-by-Side</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Master Comparison: All 6 Options Side-by-Side</h2>
 
             <p className="text-gray-700 mb-6">
               Here&apos;s the complete picture. The numbers that matter most: cost per content piece, total output, and whether the service optimizes for AI search (which is where discovery is heading in 2026).
             </p>
 
             <div className="overflow-x-auto mb-8">
-              <table className="w-full text-sm border-collapse">
+              <table className="w-full text-base border-collapse">
                 <thead>
                   <tr className="bg-gray-50">
                     <th className="border border-gray-200 p-3 text-left font-semibold">Option</th>
@@ -930,17 +930,17 @@ export default function BestWebinarRepurposingServices() {
             </figure>
 
             {/* Section: Why AI Search is the Differentiator */}
-            <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">Why AI Search Optimization Is the Differentiator in 2026</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Why AI Search Optimization Is the Differentiator in 2026</h2>
 
-            <p className="text-gray-700 mb-4">
+            <p className="text-gray-700 text-lg mb-4">
               Here&apos;s what most comparison guides won&apos;t tell you: the biggest shift in content marketing isn&apos;t happening on Google. It&apos;s happening in AI assistants.
             </p>
 
-            <p className="text-gray-700 mb-4">
+            <p className="text-gray-700 text-lg mb-4">
               When a potential client asks ChatGPT &quot;What&apos;s the best webinar repurposing service for coaches?&quot;, you want to be the answer. When someone asks Perplexity &quot;How much does content repurposing cost?&quot;, you want your data cited.
             </p>
 
-            <p className="text-gray-700 mb-4">
+            <p className="text-gray-700 text-lg mb-4">
               This is <Link href="/blog/ai-search-optimization-guide" className="text-blue-600 hover:underline">AI search optimization</Link>: structuring content so large language models can find, parse, and recommend it. And as of February 2026, ContentRepurposeHub is one of the only repurposing services that builds this into every piece of content.
             </p>
 
@@ -949,7 +949,7 @@ export default function BestWebinarRepurposingServices() {
             </p>
 
             {/* Decision Framework */}
-            <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">How to Decide: A Quick Decision Framework</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">How to Decide: A Quick Decision Framework</h2>
 
             <div className="space-y-4 mb-8">
               <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
@@ -970,13 +970,13 @@ export default function BestWebinarRepurposingServices() {
             </div>
 
             {/* The Bottom Line */}
-            <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">The Bottom Line</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">The Bottom Line</h2>
 
-            <p className="text-gray-700 mb-4">
+            <p className="text-gray-700 text-lg mb-4">
               For most coaches and consultants running webinars in 2026, a specialized repurposing service delivers the best return. You get professional content, SEO optimization, AI search visibility, and you keep your 15-20 hours per month focused on what you do best: coaching clients.
             </p>
 
-            <p className="text-gray-700 mb-4">
+            <p className="text-gray-700 text-lg mb-4">
               The math is straightforward. If your time is worth $100/hour, spending 20 hours on DIY repurposing costs you $2,000 in opportunity cost. A service that charges $750/month and saves you those 20 hours isn&apos;t an expense. It&apos;s a $1,250/month savings. And that&apos;s before the service produces better, more optimized content than most coaches can create themselves.
             </p>
 

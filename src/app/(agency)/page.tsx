@@ -429,7 +429,7 @@ export default function Home() {
                 <AnimatedCard key={i} index={i} className="bg-white p-8 rounded-xl card-shadow card-hover-glow border border-transparent">
                   <FloatingEmoji className="text-4xl mb-4" delay={i * 500}>{item.emoji}</FloatingEmoji>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">{item.title}</h3>
-                  <p className="text-gray-600">{item.desc}</p>
+                  <p className="text-gray-600 text-lg">{item.desc}</p>
                 </AnimatedCard>
               ))}
             </div>
@@ -482,13 +482,13 @@ export default function Home() {
                   <span className="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full font-medium">Short-Form Video</span>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-1">Vertical Video Clips</h3>
-                <p className="text-sm text-blue-600 font-medium mb-3">Create 3-5 clips per webinar</p>
-                <p className="text-gray-600 mb-4">
+                <p className="text-base text-blue-600 font-medium mb-3">Create 3-5 clips per webinar</p>
+                <p className="text-gray-600 text-lg mb-4">
                   Your webinar is full of gold. Those moments where you explained something perfectly or told a story that made people lean in. Those moments become TikToks, Reels, and YouTube Shorts.
                 </p>
                 <div className="bg-green-50 border-l-4 border-green-400 p-4 rounded-r-lg">
-                  <p className="text-xs font-bold text-green-700 uppercase tracking-wide mb-1">How To Do It</p>
-                  <p className="text-gray-700 text-sm">
+                  <p className="text-sm font-bold text-green-700 uppercase tracking-wide mb-1">How To Do It</p>
+                  <p className="text-gray-700 text-base">
                     Watch at 1.5x speed. Timestamp the good moments. Cut 30-60 second clips. Add captions (85% watch on mute). Post everywhere.
                   </p>
                 </div>
@@ -501,13 +501,13 @@ export default function Home() {
                   <span className="text-xs bg-purple-100 text-purple-700 px-3 py-1 rounded-full font-medium">Long-Form Content</span>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-1">Full Blog Post</h3>
-                <p className="text-sm text-blue-600 font-medium mb-3">1,500-2,500 words for SEO</p>
-                <p className="text-gray-600 mb-4">
+                <p className="text-base text-blue-600 font-medium mb-3">1,500-2,500 words for SEO</p>
+                <p className="text-gray-600 text-lg mb-4">
                   Your webinar is a rough draft of a blog post. The structure, examples, and expertise are already there. It just needs reformatting for readers.
                 </p>
                 <div className="bg-green-50 border-l-4 border-green-400 p-4 rounded-r-lg">
-                  <p className="text-xs font-bold text-green-700 uppercase tracking-wide mb-1">How To Do It</p>
-                  <p className="text-gray-700 text-sm">
+                  <p className="text-sm font-bold text-green-700 uppercase tracking-wide mb-1">How To Do It</p>
+                  <p className="text-gray-700 text-base">
                     Transcribe with Otter.ai. Remove filler words. Add H2 headers every 200-300 words. Include target keyword in title. This becomes evergreen content.
                   </p>
                 </div>
@@ -520,13 +520,13 @@ export default function Home() {
                   <span className="text-xs bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full font-medium">Social Media</span>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-1">LinkedIn Carousel</h3>
-                <p className="text-sm text-blue-600 font-medium mb-3">8-12 swipeable slides</p>
-                <p className="text-gray-600 mb-4">
+                <p className="text-base text-blue-600 font-medium mb-3">8-12 swipeable slides</p>
+                <p className="text-gray-600 text-lg mb-4">
                   Carousels outperform regular posts on LinkedIn. Take a framework from your webinar, design one slide per point, and watch the saves pile up.
                 </p>
                 <div className="bg-green-50 border-l-4 border-green-400 p-4 rounded-r-lg">
-                  <p className="text-xs font-bold text-green-700 uppercase tracking-wide mb-1">How To Do It</p>
-                  <p className="text-gray-700 text-sm">
+                  <p className="text-sm font-bold text-green-700 uppercase tracking-wide mb-1">How To Do It</p>
+                  <p className="text-gray-700 text-base">
                     Slide 1: Hook. Slides 2-10: One point each. Last slide: CTA. Use Canva carousel templates.
                   </p>
                 </div>
@@ -539,13 +539,13 @@ export default function Home() {
                   <span className="text-xs bg-orange-100 text-orange-700 px-3 py-1 rounded-full font-medium">Email Content</span>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-1">Welcome Email Sequence</h3>
-                <p className="text-sm text-blue-600 font-medium mb-3">3-5 emails that nurture leads</p>
-                <p className="text-gray-600 mb-4">
+                <p className="text-base text-blue-600 font-medium mb-3">3-5 emails that nurture leads</p>
+                <p className="text-gray-600 text-lg mb-4">
                   Someone downloads your lead magnet. Then what? A welcome sequence keeps you top of mind and builds the relationship that converts subscribers into clients.
                 </p>
                 <div className="bg-green-50 border-l-4 border-green-400 p-4 rounded-r-lg">
-                  <p className="text-xs font-bold text-green-700 uppercase tracking-wide mb-1">How To Do It</p>
-                  <p className="text-gray-700 text-sm">
+                  <p className="text-sm font-bold text-green-700 uppercase tracking-wide mb-1">How To Do It</p>
+                  <p className="text-gray-700 text-base">
                     Email 1: Deliver the magnet. Emails 2-4: One insight from your webinar each. Email 5: Soft CTA. Keep emails short and valuable.
                   </p>
                 </div>
@@ -558,13 +558,13 @@ export default function Home() {
                   <span className="text-xs bg-red-100 text-red-700 px-3 py-1 rounded-full font-medium">Evergreen Assets</span>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-1">YouTube Long-Form Video</h3>
-                <p className="text-sm text-blue-600 font-medium mb-3">Full webinar for search traffic</p>
-                <p className="text-gray-600 mb-4">
+                <p className="text-base text-blue-600 font-medium mb-3">Full webinar for search traffic</p>
+                <p className="text-gray-600 text-lg mb-4">
                   Upload to YouTube with chapters and a keyword-rich description. Your webinar often becomes your top-performing content for organic search traffic.
                 </p>
                 <div className="bg-green-50 border-l-4 border-green-400 p-4 rounded-r-lg">
-                  <p className="text-xs font-bold text-green-700 uppercase tracking-wide mb-1">How To Do It</p>
-                  <p className="text-gray-700 text-sm">
+                  <p className="text-sm font-bold text-green-700 uppercase tracking-wide mb-1">How To Do It</p>
+                  <p className="text-gray-700 text-base">
                     Edit out dead time. Add chapter markers. Write a searchable title. Create a thumbnail. Let the YouTube algorithm work for you.
                   </p>
                 </div>
@@ -603,8 +603,8 @@ export default function Home() {
                       <span className="bg-gray-300 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0">{item.num}</span>
                       <span className="text-xs text-gray-400 font-medium">{item.category}</span>
                     </div>
-                    <h4 className="text-base font-semibold text-gray-900 mb-1">{item.title}</h4>
-                    <p className="text-xs text-gray-500">{item.subtitle}</p>
+                    <h4 className="text-lg font-semibold text-gray-900 mb-1">{item.title}</h4>
+                    <p className="text-sm text-gray-500">{item.subtitle}</p>
                   </div>
                 ))}
               </div>
@@ -626,7 +626,7 @@ export default function Home() {
                 <p className="text-xl text-blue-100 font-semibold mb-4">
                   All 14 Content Ideas + Step-by-Step Instructions
                 </p>
-                <p className="text-blue-100 mb-8 max-w-lg mx-auto">
+                <p className="text-blue-100 text-lg mb-8 max-w-lg mx-auto">
                   You just saw 5 of the 14 ways to repurpose your webinar. Get the full checklist with all 14 content formats, including the 9 you haven&apos;t seen yet.
                 </p>
 
@@ -722,7 +722,7 @@ export default function Home() {
                     <span className="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">{item.tag}</span>
                   </div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">{item.title}</h3>
-                  <p className="text-gray-600 text-sm">{item.desc}</p>
+                  <p className="text-gray-600 text-base">{item.desc}</p>
                 </AnimatedCard>
               ))}
             </div>
@@ -732,10 +732,10 @@ export default function Home() {
               <p className="text-blue-900 font-bold text-lg mb-3">
                 The Flywheel in Action
               </p>
-              <p className="text-blue-800 text-sm leading-relaxed">
+              <p className="text-blue-800 text-base leading-relaxed">
                 Webinar → Blog post ranks on Google → Visitor finds your scorecard → Enters email → Welcome sequence nurtures them → They attend your next webinar → You record it → We repurpose it → The cycle accelerates.
               </p>
-              <p className="text-blue-600 text-sm font-medium mt-3">
+              <p className="text-blue-600 text-base font-medium mt-3">
                 That&apos;s the difference between &quot;more content&quot; and a growth engine.
               </p>
             </div>
@@ -754,7 +754,7 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-6 text-left">
               <div className="bg-white/10 backdrop-blur p-6 rounded-xl">
                 <h3 className="text-xl font-semibold text-white mb-3">Google Optimization</h3>
-                <ul className="space-y-2 text-blue-100">
+                <ul className="space-y-2 text-blue-100 text-lg">
                   <li>✓ Keyword research and targeting</li>
                   <li>✓ Proper heading structure (H1, H2, H3)</li>
                   <li>✓ Meta descriptions and title tags</li>
@@ -764,7 +764,7 @@ export default function Home() {
               </div>
               <div className="bg-white/10 backdrop-blur p-6 rounded-xl">
                 <h3 className="text-xl font-semibold text-white mb-3">AI Search Optimization</h3>
-                <ul className="space-y-2 text-blue-100">
+                <ul className="space-y-2 text-blue-100 text-lg">
                   <li>✓ Clear, factual content structure</li>
                   <li>✓ Question-answer formatting</li>
                   <li>✓ Entity and topic authority signals</li>
@@ -814,12 +814,12 @@ export default function Home() {
                   { week: 'Week 4', items: 'AI Ranking Report showing where your content appears in ChatGPT/Perplexity + next month planning' },
                 ].map((item, i) => (
                   <div key={i} className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                    <p className="text-blue-600 font-semibold text-sm mb-1">{item.week}</p>
-                    <p className="text-gray-700 text-sm">{item.items}</p>
+                    <p className="text-blue-600 font-semibold text-base mb-1">{item.week}</p>
+                    <p className="text-gray-700 text-base">{item.items}</p>
                   </div>
                 ))}
               </div>
-              <p className="text-gray-500 text-sm mt-4 sm:pl-[52px] italic">
+              <p className="text-gray-500 text-base mt-4 sm:pl-[52px] italic">
                 You receive something every week. Never a single dump.
               </p>
             </div>
@@ -831,7 +831,7 @@ export default function Home() {
                 <h3 className="text-xl font-bold text-gray-900">Month 2+: Send Another Recording, We Add to the Engine</h3>
               </div>
               <div className="sm:pl-[52px]">
-                <p className="text-gray-600 mb-4">
+                <p className="text-gray-600 text-lg mb-4">
                   Send us your next webinar or podcast episode. Or one from your back catalog. We skip the foundation work (already done) and go straight to content production:
                 </p>
                 <div className="grid sm:grid-cols-3 gap-3 mb-4">
@@ -841,12 +841,12 @@ export default function Home() {
                     { label: 'New newsletter', detail: 'Ready to paste into your email platform' },
                   ].map((item, i) => (
                     <div key={i} className="bg-white rounded-lg p-4 border border-gray-200">
-                      <p className="font-semibold text-gray-900 text-sm">{item.label}</p>
-                      <p className="text-gray-500 text-xs mt-1">{item.detail}</p>
+                      <p className="font-semibold text-gray-900 text-base">{item.label}</p>
+                      <p className="text-gray-500 text-sm mt-1">{item.detail}</p>
                     </div>
                   ))}
                 </div>
-                <p className="text-gray-600 text-sm">
+                <p className="text-gray-600 text-base">
                   Plus: updated posting schedule, AI Ranking Report, lead count summary, and your next month&apos;s plan. Same weekly cadence as Month 1.
                 </p>
               </div>
@@ -857,7 +857,7 @@ export default function Home() {
               <p className="text-blue-900 font-semibold text-lg mb-2">
                 Your blog posts form a serialized content series
               </p>
-              <p className="text-blue-800 text-sm">
+              <p className="text-blue-800 text-base">
                 Each monthly blog post is the next chapter in an ongoing series. Post 1 links to Post 2. Post 3 references Posts 1-2. A reader who finds Post 4 goes back and reads all of them. By Month 6, you have a 6-part deep dive that Google ranks as authoritative and AI assistants cite as comprehensive.
               </p>
             </div>
@@ -904,13 +904,13 @@ export default function Home() {
               {/* Starter */}
               <div className="bg-white border border-gray-200 rounded-2xl p-8">
                 <h3 className="text-xl font-semibold text-gray-900 mb-1">Starter</h3>
-                <p className="text-gray-600 text-sm mb-4">1 Webinar or Podcast / Month</p>
+                <p className="text-gray-600 text-base mb-4">1 Webinar or Podcast / Month</p>
                 <div className="mb-2">
                   <span className="text-4xl font-bold text-gray-900">$750</span>
                   <span className="text-gray-600">/month</span>
                 </div>
-                <p className="text-xs text-green-600 font-medium mb-4">$600/mo with 6-month commitment</p>
-                <div className="text-sm text-blue-600 font-medium mb-4">14 pieces/month</div>
+                <p className="text-sm text-green-600 font-medium mb-4">$600/mo with 6-month commitment</p>
+                <div className="text-base text-blue-600 font-medium mb-4">14 pieces/month</div>
                 <ul className="space-y-3 mb-8">
                   {[
                     '1 Blog Post (serialized, SEO + AI optimized)',
@@ -921,7 +921,7 @@ export default function Home() {
                     'Monthly AI Ranking Report',
                     'Google + AI Search Optimization',
                   ].map((item, i) => (
-                    <li key={i} className="flex items-start text-sm text-gray-600">
+                    <li key={i} className="flex items-start text-base text-gray-600">
                       <span className="text-green-500 mr-2 mt-0.5">&#10003;</span>{item}
                     </li>
                   ))}
@@ -940,13 +940,13 @@ export default function Home() {
                   Recommended
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-1">Growth</h3>
-                <p className="text-gray-600 text-sm mb-4">2 Webinars or Podcasts / Month</p>
+                <p className="text-gray-600 text-base mb-4">2 Webinars or Podcasts / Month</p>
                 <div className="mb-2">
                   <span className="text-4xl font-bold text-gray-900">$1,000</span>
                   <span className="text-gray-600">/month</span>
                 </div>
-                <p className="text-xs text-green-600 font-medium mb-4">$800/mo with 6-month commitment</p>
-                <div className="text-sm text-blue-600 font-medium mb-4">32+ pieces/month</div>
+                <p className="text-sm text-green-600 font-medium mb-4">$800/mo with 6-month commitment</p>
+                <div className="text-base text-blue-600 font-medium mb-4">32+ pieces/month</div>
                 <ul className="space-y-3 mb-8">
                   {[
                     '1 Blog Post (serialized, brand-matched)',
@@ -959,7 +959,7 @@ export default function Home() {
                     'Monthly AI Ranking Report',
                     'Google + AI Search Optimization',
                   ].map((item, i) => (
-                    <li key={i} className="flex items-start text-sm text-gray-600">
+                    <li key={i} className="flex items-start text-base text-gray-600">
                       <span className="text-green-500 mr-2 mt-0.5">&#10003;</span>{item}
                     </li>
                   ))}
@@ -975,13 +975,13 @@ export default function Home() {
               {/* Scale */}
               <div className="bg-white border border-gray-200 rounded-2xl p-8">
                 <h3 className="text-xl font-semibold text-gray-900 mb-1">Scale</h3>
-                <p className="text-gray-600 text-sm mb-4">4 Webinars or Podcasts / Month</p>
+                <p className="text-gray-600 text-base mb-4">4 Webinars or Podcasts / Month</p>
                 <div className="mb-2">
                   <span className="text-4xl font-bold text-gray-900">$1,500</span>
                   <span className="text-gray-600">/month</span>
                 </div>
-                <p className="text-xs text-green-600 font-medium mb-4">$1,200/mo with 6-month commitment</p>
-                <div className="text-sm text-blue-600 font-medium mb-4">75+ pieces/month</div>
+                <p className="text-sm text-green-600 font-medium mb-4">$1,200/mo with 6-month commitment</p>
+                <div className="text-base text-blue-600 font-medium mb-4">75+ pieces/month</div>
                 <ul className="space-y-3 mb-8">
                   {[
                     '4 Blog Posts (serialized, brand-matched)',
@@ -997,7 +997,7 @@ export default function Home() {
                     'Monthly AI Ranking Report',
                     'Google + AI Search Optimization',
                   ].map((item, i) => (
-                    <li key={i} className="flex items-start text-sm text-gray-600">
+                    <li key={i} className="flex items-start text-base text-gray-600">
                       <span className="text-green-500 mr-2 mt-0.5">&#10003;</span>{item}
                     </li>
                   ))}
@@ -1013,11 +1013,11 @@ export default function Home() {
 
             {/* Content Sprint Add-On */}
             <div className="mt-10 max-w-3xl mx-auto bg-white border border-blue-200 rounded-xl p-6 text-center">
-              <p className="text-blue-600 font-semibold text-sm uppercase tracking-wide mb-2">Optional Add-On</p>
+              <p className="text-blue-600 font-semibold text-base uppercase tracking-wide mb-2">Optional Add-On</p>
               <p className="text-gray-900 font-bold text-lg mb-2">
                 Back Catalog Sprint: Process 3-5 Extra Recordings in Month 1
               </p>
-              <p className="text-gray-600 text-sm mb-3">
+              <p className="text-gray-600 text-base mb-3">
                 Have 10+ webinars sitting in Zoom? We&apos;ll process 3 recordings for $500 or 5 for $750 alongside your regular delivery. Only available at signup.
               </p>
             </div>
@@ -1027,7 +1027,7 @@ export default function Home() {
               <p className="text-gray-900 font-semibold text-lg mb-2">
                 30-Day &quot;Sounds Like Me&quot; Guarantee
               </p>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-lg">
                 If your first delivery doesn&apos;t capture your voice and expertise, full refund. You keep everything we created.
               </p>
             </div>
@@ -1058,9 +1058,9 @@ export default function Home() {
               ].map((item, i) => (
                 <AnimatedTimeline key={i} index={i} className="bg-white rounded-xl p-5 border border-gray-200 text-center">
                   <div className="text-blue-600 font-bold text-lg mb-2">{item.month}</div>
-                  <div className="text-gray-900 font-semibold text-sm">{item.posts}</div>
-                  <div className="text-gray-600 text-sm">{item.linkedin}</div>
-                  <div className="text-gray-500 text-xs mt-3 italic leading-snug">{item.extra}</div>
+                  <div className="text-gray-900 font-semibold text-base">{item.posts}</div>
+                  <div className="text-gray-600 text-base">{item.linkedin}</div>
+                  <div className="text-gray-500 text-sm mt-3 italic leading-snug">{item.extra}</div>
                 </AnimatedTimeline>
               ))}
             </div>
@@ -1080,8 +1080,8 @@ export default function Home() {
                     <svg className="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
                   </div>
                   <div>
-                    <p className="font-semibold text-gray-900 text-sm">{item.title}</p>
-                    <p className="text-gray-600 text-sm mt-1">{item.desc}</p>
+                    <p className="font-semibold text-gray-900 text-base">{item.title}</p>
+                    <p className="text-gray-600 text-base mt-1">{item.desc}</p>
                   </div>
                 </div>
               ))}
@@ -1092,7 +1092,7 @@ export default function Home() {
               <p className="text-lg font-bold mb-3">
                 The compounding return only works if you stay
               </p>
-              <p className="text-gray-300 text-sm leading-relaxed">
+              <p className="text-gray-300 text-base leading-relaxed">
                 Canceling after Month 2 means your blog series stops at Chapter 2. Your reader never gets Chapters 3-12. Google never sees the topical cluster that makes Post 1 rank. Your LinkedIn runs out of posts in 3.5 weeks. The 6-month discount exists because clients who stay 6 months see measurably better results than those who leave at Month 2.
               </p>
             </div>
@@ -1125,11 +1125,11 @@ export default function Home() {
                   <div key={i} className="bg-gray-50 rounded-lg p-4 text-center">
                     <div className="text-2xl font-bold gradient-text">{item.recordings}</div>
                     <div className="text-sm font-semibold text-gray-900 mt-1">= {item.months}</div>
-                    <div className="text-xs text-gray-500 mt-1">{item.desc}</div>
+                    <div className="text-sm text-gray-500 mt-1">{item.desc}</div>
                   </div>
                 ))}
               </div>
-              <p className="text-gray-500 text-sm">
+              <p className="text-gray-500 text-base">
                 <strong>What counts as source material:</strong> Zoom webinars, YouTube videos, podcast episodes, conference talks, workshop recordings, live Q&amp;A sessions, training videos. Any recording where you&apos;re speaking and teaching.
               </p>
             </div>
@@ -1137,7 +1137,7 @@ export default function Home() {
             {/* Processing order */}
             <div className="bg-white rounded-xl border border-gray-200 p-6">
               <h3 className="font-bold text-gray-900 mb-3">Recommended processing order:</h3>
-              <ol className="space-y-2 text-sm text-gray-600">
+              <ol className="space-y-2 text-base text-gray-600">
                 <li className="flex gap-2"><span className="font-bold text-blue-600">1.</span> Most commercially relevant recording (closest to what you sell)</li>
                 <li className="flex gap-2"><span className="font-bold text-blue-600">2.</span> Most data-rich recording (numbers and frameworks = best blog content)</li>
                 <li className="flex gap-2"><span className="font-bold text-blue-600">3.</span> Most story-rich recording (personal stories = best LinkedIn content)</li>
@@ -1162,7 +1162,7 @@ export default function Home() {
                     <AnimatedCounter target={item.target} prefix={item.prefix} suffix={item.suffix} />
                   </div>
                   <div className="text-lg font-semibold text-gray-900 mb-1">{item.label}</div>
-                  <p className="text-gray-600 text-sm">{item.desc}</p>
+                  <p className="text-gray-600 text-base">{item.desc}</p>
                 </AnimatedCard>
               ))}
             </div>
@@ -1190,7 +1190,7 @@ export default function Home() {
                   <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 mb-2">Your Words, Not AI Slop</h3>
-                <p className="text-gray-600 text-sm">
+                <p className="text-gray-600 text-base">
                   Every piece starts from your webinar transcript. We extract your stories, examples, and insights, then structure them for search and social. The content sounds like you because it IS you. Your audience can tell the difference.
                 </p>
               </AnimatedCard>
@@ -1199,7 +1199,7 @@ export default function Home() {
                   <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 mb-2">Optimized for Google AND AI Search</h3>
-                <p className="text-gray-600 text-sm">
+                <p className="text-gray-600 text-base">
                   Most services optimize for Google only. We structure every piece for both Google and AI assistants (ChatGPT, Perplexity, Gemini). When someone asks an AI &quot;who&apos;s the best coach for [your topic]?&quot; your content can be the answer.
                 </p>
               </AnimatedCard>
@@ -1208,7 +1208,7 @@ export default function Home() {
                   <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 mb-2">A Monthly Engine, Not a One-Off Project</h3>
-                <p className="text-gray-600 text-sm">
+                <p className="text-gray-600 text-base">
                   First delivery in 7-10 days. Something new every week after that. Each month adds to a compounding content library. More blog posts. More LinkedIn posts. More SEO authority. Month 6 is worth more than Month 1.
                 </p>
               </AnimatedCard>
@@ -1217,7 +1217,7 @@ export default function Home() {
                   <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 mb-2">Live Pages We Build and Host</h3>
-                <p className="text-gray-600 text-sm">
+                <p className="text-gray-600 text-base">
                   Your blog post, scorecard, and landing page are live web pages, not PDFs in a Google Drive. Real URLs that rank on Google, capture emails, and grow your authority. We handle the hosting and technical setup.
                 </p>
               </AnimatedCard>
@@ -1228,8 +1228,8 @@ export default function Home() {
               <h3 className="text-xl font-bold text-gray-900 mb-6 text-center">The Math That Makes This a No-Brainer</h3>
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
-                  <p className="text-sm font-semibold text-red-600 uppercase mb-3">Without Repurposing</p>
-                  <ul className="space-y-3 text-gray-700 text-sm">
+                  <p className="text-base font-semibold text-red-600 uppercase mb-3">Without Repurposing</p>
+                  <ul className="space-y-3 text-gray-700 text-base">
                     <li className="flex items-start gap-2">
                       <span className="text-red-500 mt-0.5">&#10005;</span>
                       <span>10-20 hours creating one webinar</span>
@@ -1253,8 +1253,8 @@ export default function Home() {
                   </ul>
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-green-600 uppercase mb-3">With ContentRepurposeHub</p>
-                  <ul className="space-y-3 text-gray-700 text-sm">
+                  <p className="text-base font-semibold text-green-600 uppercase mb-3">With ContentRepurposeHub</p>
+                  <ul className="space-y-3 text-gray-700 text-base">
                     <li className="flex items-start gap-2">
                       <span className="text-green-500 mt-0.5">&#10003;</span>
                       <span>Same webinar becomes 14-75+ content pieces</span>
@@ -1373,7 +1373,7 @@ export default function Home() {
               ].map((item, i) => (
                 <div key={i} className="bg-white p-6 rounded-xl border border-gray-200">
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">{item.q}</h3>
-                  <p className="text-gray-600">{item.a}</p>
+                  <p className="text-gray-600 text-lg">{item.a}</p>
                 </div>
               ))}
             </div>
@@ -1389,7 +1389,7 @@ export default function Home() {
             <p className="text-blue-100 text-lg mb-4">
               Tell us how many webinars and podcast episodes you have recorded. We&apos;ll map out exactly how long your existing library can fuel the flywheel, and which recording to process first for maximum impact.
             </p>
-            <p className="text-blue-200 text-sm mb-8">
+            <p className="text-blue-200 text-base mb-8">
               Early clients get direct access to the founder. Every content piece gets hands-on review. That level of attention has an expiration date.
             </p>
             <PulsingCTA
