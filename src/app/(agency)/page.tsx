@@ -573,14 +573,16 @@ export default function Home() {
 
             {/* 9 Locked Checklists */}
             <div className="mt-16">
-              <div className="text-center mb-8">
-                <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
-                  + 9 More Ways to Repurpose Your Webinar
-                </h3>
-                <p className="text-gray-600 mt-2 text-lg">
-                  Get the complete checklist with all 14 content formats. Free.
-                </p>
-              </div>
+              <PopHeading>
+                <div className="text-center mb-8">
+                  <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
+                    + 9 More Ways to Repurpose Your Webinar
+                  </h3>
+                  <p className="text-gray-600 mt-2 text-lg">
+                    Get the complete checklist with all 14 content formats. Free.
+                  </p>
+                </div>
+              </PopHeading>
               <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
                 {[
                   { num: 6, title: 'Audiogram Clips', category: 'Short-Form Video', subtitle: '2-3 clips per webinar' },
@@ -592,8 +594,8 @@ export default function Home() {
                   { num: 12, title: 'Twitter/X Thread', category: 'Social Media', subtitle: '8-15 tweets that teach' },
                   { num: 13, title: 'Micro-Lesson Posts', category: 'Social Media', subtitle: '5-7 standalone posts' },
                   { num: 14, title: 'Newsletter Content', category: 'Email Content', subtitle: '2-3 editions ready to send' },
-                ].map((item) => (
-                  <div key={item.num} className="relative bg-white rounded-xl p-5 border border-gray-200 overflow-hidden">
+                ].map((item, i) => (
+                  <AnimatedCard key={item.num} index={i} staggerDelay={0.1} className="relative bg-white rounded-xl p-5 border border-gray-200 overflow-hidden card-hover-glow">
                     <div className="absolute inset-0 bg-white/60 backdrop-blur-[2px] z-10 flex items-center justify-center">
                       <div className="text-center">
                         <span className="text-2xl">🔒</span>
@@ -605,7 +607,7 @@ export default function Home() {
                     </div>
                     <h4 className="text-lg font-semibold text-gray-900 mb-1">{item.title}</h4>
                     <p className="text-sm text-gray-500">{item.subtitle}</p>
-                  </div>
+                  </AnimatedCard>
                 ))}
               </div>
             </div>
