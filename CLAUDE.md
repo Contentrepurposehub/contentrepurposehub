@@ -69,6 +69,16 @@ Next.js 16 marketing site for ContentRepurposeHub (webinar repurposing service).
 | Reddit/X trend research, what people are saying about a topic | `/last30days` |
 | Unsure / need routing | `/orchestrator` |
 
+## Vault Commands (Project Context)
+
+| Request Type | Skill |
+|-------------|-------|
+| Full session orientation (active clients, sprint state, site health, blockers) | `/crh-context` |
+| Prioritized day plan from sprint state and content pipeline | `/crh-today` |
+| Content and service ideas grounded in vault research data | `/crh-ideas` |
+| SEO and AI search rankings analysis + next priorities | `/crh-seo-report` |
+| Detect planning vs. execution drift, surface neglected items | `/crh-drift` |
+
 ## Mandatory Post-Processing Rules (Non-Negotiable)
 
 **EVERY piece of written content MUST pass these checks before it is considered done. No exceptions. This applies to all content skills (`/seo-content`, `/direct-response-copy`, `/newsletter`, `/email-sequences`, `/content-atomizer`, `/lead-magnet`, `/brand-voice`, `/positioning-angles`) and any manually written content (blog posts, landing pages, client deliverables).**
@@ -374,8 +384,38 @@ At the start of every content-related session, check AI rankings using `hive_dom
 
 **Problem:** Context compaction and session limits lose decisions, progress, and blockers. These rules prevent re-work.
 
-1. **Read `.claude/status.md` at every session start.** This is the "read this first" file. It contains active clients, current sprint state, decisions log, and blockers. If it's >3 days stale, reconstruct from `git log`.
-2. **Update status files after completing tasks, making decisions, or discovering blockers.** Update `.claude/status.md` for global state and `clients/[name]/status.md` for client-specific progress. Also update proactively every ~15-20 exchanges, before long operations, and when switching between topics/clients.
+### Primary Source of Truth: Obsidian Vault
+
+The project vault lives at: `/Users/galman/contentrepurposehub/Content repurpesing Hub/`
+
+**Session start protocol:**
+1. **Read vault CONTEXT.md first** — `/Users/galman/contentrepurposehub/Content repurpesing Hub/CONTEXT.md`
+2. If CONTEXT.md is >3 days old, also read `.claude/status.md` and run `git log --oneline -10`
+3. Check `src/lib/clients.ts` for active client list
+4. Or run `/crh-context` for a formatted summary
+
+**What goes in the vault vs. the project directory:**
+
+| Lives in Project Directory | Lives in Vault |
+|---------------------------|----------------|
+| Source code (`src/`, `scripts/`) | Decisions + reasoning |
+| Raw deliverable markdown files | Client knowledge graphs |
+| `.claude/` reference procedures | CONTEXT.md (session state) |
+| Blog post JSX/MDX | Research insights and patterns |
+| Image/video assets | SEO/ranking observations |
+
+**Vault sync triggers — write to vault when:**
+- New client onboarded -> `01-clients/[name]/snapshot.md`
+- Significant decision made -> `04-decisions/decisions-log.md`
+- Rankings checked -> `02-seo/rankings-log.md`
+- /last30days research run -> `03-research/trend-log.md`
+- New blog post published -> `05-content/content-inventory.md`
+- Session end with substantive work -> CONTEXT.md active state
+
+### File-Based Continuity (Fallback)
+
+1. **Read `.claude/status.md` at every session start** if vault is unavailable or stale. Contains active clients, current sprint state, decisions log, and blockers.
+2. **Update status files after completing tasks, making decisions, or discovering blockers.** Update `.claude/status.md` for global state and `clients/[name]/status.md` for client-specific progress.
 3. **Read `clients/[name]/status.md` before touching any client files.** This tracks every workflow step, pending client actions, created assets, and config values. Prevents duplicate work and missed steps.
 
 ## Reference Files (Read On-Demand)
