@@ -76,14 +76,33 @@ See `.claude/email-setup.md` for platform-specific credential instructions and g
 
 ---
 
-## Remotion (Pending)
+## Remotion
 
-Not installed. Researched Feb 2026.
+**Status:** Installed 2026-03-02. v4.0.431.
 
-**Install when ready:**
+**Packages:** `remotion`, `@remotion/cli`, `@remotion/player`
+
+**Agent skills:** Installed via `npx skills add remotion-dev/skills` to `.claude/skills/remotion-best-practices`
+
+**Project files:**
+- `remotion/index.ts` — Entry point (registers root)
+- `remotion/Root.tsx` — All compositions registered here
+- `remotion/Composition.tsx` — Starting composition (QuoteCard)
+
+**NPM scripts:**
 ```bash
-npm i remotion @remotion/cli @remotion/player
-npx skills add remotion-dev/skills
+npm run remotion:studio   # Open visual preview (localhost:3000 equivalent)
+npm run remotion:render   # Render to file
 ```
 
-**Use case:** Programmatic video generation — audiograms, quote cards, data viz videos.
+**Compositions registered:**
+- `QuoteCard` — 1080x1080 (LinkedIn/Instagram square), 3s, 30fps
+- `QuoteCardVertical` — 1080x1920 (LinkedIn video/Reels), 3s, 30fps
+
+**Use cases for client deliverables:**
+- Animated quote cards from webinar best quotes
+- Audiogram clips (waveform + captions)
+- Data viz / stat animations
+- LinkedIn video content
+
+**Cost:** Free (team ≤3). Lambda render ~$0.02/clip if needed.

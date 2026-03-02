@@ -350,27 +350,36 @@ NO TRAFFIC LEAKS
 
 **Options:** `--quick` (faster, fewer sources), `--deep` (comprehensive), `--days=7` (weekly), `--days=14` (two weeks)
 
-## Remotion Video Generation (Researched, Pending Installation)
+## Remotion Video Generation
 
-**Status:** Research complete (Feb 12, 2026). Not yet installed in the project. See `research-remotion-framework-feb-2026.md` for full report.
+**Status:** Installed 2026-03-02. v4.0.431. See `research-remotion-framework-feb-2026.md` for full research report.
 
-**What it is:** React-based framework for programmatic video generation. Free for teams of 3 or fewer. Official Claude Code agent skills (31 rule files) that teach Claude how to write Remotion code correctly.
+**What it is:** React-based framework for programmatic video generation. Free for teams of 3 or fewer. Agent skills installed at `.agents/skills/remotion-best-practices` (symlinked to `.claude/skills/`).
 
-**Planned use cases for client deliverables:**
-- Audiogram clips from webinars (waveform + animated captions)
-- Animated quote cards for social media
+**Project files:**
+- `remotion/index.ts` — Entry point
+- `remotion/Root.tsx` — Compositions registry
+- `remotion/Composition.tsx` — QuoteCard composition (starting template)
+
+**NPM scripts:**
+```bash
+npm run remotion:studio   # Visual preview
+npm run remotion:render   # Render to file
+```
+
+**Registered compositions:**
+- `QuoteCard` — 1080x1080 square (LinkedIn/Instagram), 3s
+- `QuoteCardVertical` — 1080x1920 vertical (LinkedIn video/Reels), 3s
+
+**Use cases for client deliverables:**
+- Animated quote cards from webinar best quotes
+- Audiogram clips (waveform + animated captions)
 - Data visualization videos (client stats/frameworks as animated explainers)
 - Batch social media clips from transcripts
 - Landing page hero animations
 - Personalized monthly recap videos for clients
 
-**Installation steps (when ready):**
-1. `npm i remotion @remotion/cli @remotion/player` — Add to project
-2. `npx skills add remotion-dev/skills` — Install Claude Code agent skills to `.claude/skills/`
-3. Create `remotion/` folder with Root.tsx, Composition.tsx, index.ts
-4. Render locally: `npx remotion render` (free) or Lambda (~$0.02/clip)
-
-**Landing page animation goal:** Add Remotion-powered animated elements to client landing pages (hero section animations, interactive elements). Tested in demo but not yet deployed.
+**Render cost:** Free locally. Lambda ~$0.02/clip if needed.
 
 ## AI Search Ranking Tracker (Hive-Rank)
 
