@@ -1,5 +1,6 @@
 import { Composition } from "remotion";
 import { QuoteCard } from "./Composition";
+import { ContentMap } from "./ContentMap";
 
 // ContentRepurposeHub — Remotion Root
 // All video compositions are registered here.
@@ -39,6 +40,15 @@ export const RemotionRoot: React.FC = () => {
           author: "ContentRepurposeHub.com",
           primaryColor: "#00C4A0",
         }}
+      />
+      {/* Post 1 — The Content Map (LinkedIn square, 25s) */}
+      <Composition
+        id="ContentMap"
+        component={ContentMap}
+        durationInFrames={750}
+        fps={30}
+        width={1080}
+        height={1080}
       />
     </>
   );
